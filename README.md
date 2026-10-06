@@ -65,3 +65,9 @@ See [the 11-vehicle research audit](docs/catalog-research.md) and [third-party a
 The GS300 now has eleven source-linked engine, timing, pump and A650E studies. See [mechanical research and validation](docs/s160-mechanical-v5.md). The assembly contains 413 rebuilt/new mechanical groups and 513 modeled groups overall; **zero complete parts are dimensionally verified**. The hosted GLB uses Meshopt compression; the built-in assembly viewer includes its decoder. Community uploads remain uncompressed.
 
 Run `node modeling/s160/validate_web.mjs` with Node 24 to check manifest/mesh IDs, study references and eight documented quantity groups. Native Blender geometry and modeling scripts are available in the downloadable source archive.
+
+## Next GS300 milestones and progress tracking
+
+The [prioritized S160 roadmap](docs/s160-roadmap.md) defines detailed solutions, dependencies and acceptance checks, beginning with reference evidence and inventory reconciliation, then measured timing/pump service geometry. The [baseline audit](docs/s160-priority-audit.md) explains the current blockers.
+
+Record each major step in the [progress ledger](docs/s160-progress.md), run relevant checks, commit it with a descriptive message and push to the GitHub remote. Confirm the pushed SHA. A planning or software checkpoint does not establish mechanical verification.
