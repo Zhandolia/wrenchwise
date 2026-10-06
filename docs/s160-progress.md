@@ -41,3 +41,9 @@ C1a evidence migration pushed as `d50aa3ee6501bec586e832bbff49b05bd55a94af`; Git
 Expanded catalog foundation pushed as `70193a5`; CI passed. The following checkpoint adds the licensed GR Supra reference, source preparation script, component index, immutable provenance, six-view review findings and GLB validation. It is a 136-group visual model, not a complete mechanical replica. Catalog total becomes 817 source records with five provisional asset entries. The application now suppresses the GS300 timing-belt checklist for other vehicle records.
 
 Validation for Toyota reference: five catalog/evidence/GLB tests passed locally; TypeScript passed. Local browser checks confirmed Toyota search, historical-record navigation, correctly scoped source attribution, GS300 quantity subjects and the Supra renderer without browser console errors. No frame-rate or mechanical accuracy claim follows from these checks.
+
+## Publication — 2026-10-06
+
+Toyota reference checkpoint pushed as `913370c63b850146f279c80f4386726afdc2b726`; GitHub confirms author/committer Zhandolia. The Sites production deployment of that exact source succeeded at 2026-10-06 15:49 UTC. The site's access audience was preserved. Catalog/evidence software is updated; GS300 geometry remains model v5. The GR Supra is a newly added CC BY visual reference, with no verified mechanical content.
+
+Completed software checks: deterministic evidence/catalog generation, five regression tests, GLB ID/license/embedding checks, TypeScript and production build. Full 1:1 geometry, complete worldwide Toyota/Lexus configuration coverage, measured performance and physical repair review remain outstanding.
