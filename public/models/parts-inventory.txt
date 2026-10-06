@@ -1,5 +1,4 @@
-GS 300 assembly v4 — unverified component groups, not an OEM bill of materials.
-Exterior CC BY 4.0; original mechanics MIT.
+GS300 v5 — reference-informed groups, not a verified OEM bill of materials.
 
 modeled  | structure      | floor | Floor pan
 modeled  | structure      | tunnel | Transmission tunnel
@@ -14,7 +13,6 @@ modeled  | structure      | subframe-rear | Rear subframe
 modeled  | structure      | subframe-mount-rear-1 | Subframe rubber mount
 modeled  | structure      | subframe-mount-rear1 | Subframe rubber mount
 modeled  | structure      | firewall | Firewall
-modeled  | structure      | radiator-support | Radiator support
 modeled  | structure      | rear-bulkhead | Rear bulkhead
 modeled  | exhaust        | exhaust-tip-left | Exhaust outlet left
 modeled  | exhaust        | exhaust-tip-dark-left | Exhaust outlet interior left
@@ -62,122 +60,8 @@ modeled  | suspension     | antiroll-front | Front stabilizer bar
 modeled  | suspension     | antiroll-rear | Rear stabilizer bar
 modeled  | suspension     | steering-rack | Steering rack
 modeled  | suspension     | steering-shaft | Steering intermediate shaft
-modeled  | engine         | engine-block | Inline-six cylinder block
-modeled  | engine         | cylinder-head | Cylinder head
-modeled  | engine         | oil-pan-upper | Upper oil pan
-modeled  | engine         | oil-pan-lower | Lower oil sump
-modeled  | engine         | drain-plug | Oil drain plug
-modeled  | engine         | valve-cover-exhaust | Valve cover exhaust
-modeled  | engine         | valve-rib-exhaust | Valve cover ribs exhaust
-modeled  | engine         | camshaft-exhaust | Camshaft exhaust
-modeled  | engine         | cam-lobes-exhaust | Cam lobes exhaust
-modeled  | engine         | cover-bolts-exhaust | Valve cover fasteners exhaust
 modeled  | structure      | engine-mount-exhaust | Engine mount exhaust
-modeled  | engine         | valve-cover-intake | Valve cover intake
-modeled  | engine         | valve-rib-intake | Valve cover ribs intake
-modeled  | engine         | camshaft-intake | Camshaft intake
-modeled  | engine         | cam-lobes-intake | Cam lobes intake
-modeled  | engine         | cover-bolts-intake | Valve cover fasteners intake
 modeled  | structure      | engine-mount-intake | Engine mount intake
-modeled  | engine         | crankshaft | Crankshaft main axis
-modeled  | engine         | cylinder-1 | Cylinder 1 bore envelope
-modeled  | engine         | piston-1 | Piston 1
-modeled  | engine         | piston-ring-1 | Piston ring study 1
-modeled  | engine         | rod-1 | Connecting rod 1
-modeled  | engine         | crank-web-1 | Crank counterweight 1
-modeled  | electrical     | spark-plug-1 | Spark plug 1
-modeled  | engine         | valves-1 | Valve pair study cylinder 1
-modeled  | intake         | intake-runner-1 | Intake runner 1
-modeled  | exhaust        | exhaust-runner-1 | Exhaust runner 1
-modeled  | engine         | cylinder-2 | Cylinder 2 bore envelope
-modeled  | engine         | piston-2 | Piston 2
-modeled  | engine         | piston-ring-2 | Piston ring study 2
-modeled  | engine         | rod-2 | Connecting rod 2
-modeled  | engine         | crank-web-2 | Crank counterweight 2
-modeled  | electrical     | spark-plug-2 | Spark plug 2
-modeled  | engine         | valves-2 | Valve pair study cylinder 2
-modeled  | intake         | intake-runner-2 | Intake runner 2
-modeled  | exhaust        | exhaust-runner-2 | Exhaust runner 2
-modeled  | engine         | cylinder-3 | Cylinder 3 bore envelope
-modeled  | engine         | piston-3 | Piston 3
-modeled  | engine         | piston-ring-3 | Piston ring study 3
-modeled  | engine         | rod-3 | Connecting rod 3
-modeled  | engine         | crank-web-3 | Crank counterweight 3
-modeled  | electrical     | spark-plug-3 | Spark plug 3
-modeled  | engine         | valves-3 | Valve pair study cylinder 3
-modeled  | intake         | intake-runner-3 | Intake runner 3
-modeled  | exhaust        | exhaust-runner-3 | Exhaust runner 3
-modeled  | engine         | cylinder-4 | Cylinder 4 bore envelope
-modeled  | engine         | piston-4 | Piston 4
-modeled  | engine         | piston-ring-4 | Piston ring study 4
-modeled  | engine         | rod-4 | Connecting rod 4
-modeled  | engine         | crank-web-4 | Crank counterweight 4
-modeled  | electrical     | spark-plug-4 | Spark plug 4
-modeled  | engine         | valves-4 | Valve pair study cylinder 4
-modeled  | intake         | intake-runner-4 | Intake runner 4
-modeled  | exhaust        | exhaust-runner-4 | Exhaust runner 4
-modeled  | engine         | cylinder-5 | Cylinder 5 bore envelope
-modeled  | engine         | piston-5 | Piston 5
-modeled  | engine         | piston-ring-5 | Piston ring study 5
-modeled  | engine         | rod-5 | Connecting rod 5
-modeled  | engine         | crank-web-5 | Crank counterweight 5
-modeled  | electrical     | spark-plug-5 | Spark plug 5
-modeled  | engine         | valves-5 | Valve pair study cylinder 5
-modeled  | intake         | intake-runner-5 | Intake runner 5
-modeled  | exhaust        | exhaust-runner-5 | Exhaust runner 5
-modeled  | engine         | cylinder-6 | Cylinder 6 bore envelope
-modeled  | engine         | piston-6 | Piston 6
-modeled  | engine         | piston-ring-6 | Piston ring study 6
-modeled  | engine         | rod-6 | Connecting rod 6
-modeled  | engine         | crank-web-6 | Crank counterweight 6
-modeled  | electrical     | spark-plug-6 | Spark plug 6
-modeled  | engine         | valves-6 | Valve pair study cylinder 6
-modeled  | intake         | intake-runner-6 | Intake runner 6
-modeled  | exhaust        | exhaust-runner-6 | Exhaust runner 6
-modeled  | intake         | intake-plenum | Intake plenum / ACIS envelope
-modeled  | intake         | throttle | Throttle body
-modeled  | intake         | fuel-rail | Fuel rail
-modeled  | intake         | injector-1 | Fuel injector 1
-modeled  | intake         | injector-2 | Fuel injector 2
-modeled  | intake         | injector-3 | Fuel injector 3
-modeled  | intake         | injector-4 | Fuel injector 4
-modeled  | intake         | injector-5 | Fuel injector 5
-modeled  | intake         | injector-6 | Fuel injector 6
-modeled  | engine         | exhaust-cam-sprocket | Exhaust cam sprocket
-modeled  | engine         | vvti-gear | VVT-i intake gear envelope
-modeled  | engine         | crank-pulley | Crankshaft timing pulley
-modeled  | engine         | timing-idler | Timing idler
-modeled  | engine         | timing-tensioner | Timing tensioner roller
-modeled  | engine         | timing-belt | Timing belt routing study
-modeled  | engine         | timing-cover-upper | Upper timing cover
-modeled  | engine         | timing-cover-lower | Lower timing cover
-modeled  | cooling        | water-pump | Water pump envelope
-modeled  | cooling        | thermostat | Thermostat housing
-modeled  | engine         | oil-filter | Oil filter
-modeled  | engine         | engine-cover | 2000 engine beauty cover study
-modeled  | engine         | engine-cover-ribs | Beauty cover raised ribs
-modeled  | engine         | oil-cap | Oil filler cap
-modeled  | engine         | alternator | Alternator
-modeled  | engine         | alternator-pulley | Alternator pulley
-modeled  | engine         | alternator-ribs | Alternator casing ribs
-modeled  | engine         | ac-compressor | Air conditioning compressor
-modeled  | engine         | ac-compressor-pulley | Air conditioning compressor pulley
-modeled  | engine         | ac-compressor-ribs | Air conditioning compressor casing ribs
-modeled  | engine         | ps-pump | Power steering pump
-modeled  | engine         | ps-pump-pulley | Power steering pump pulley
-modeled  | engine         | ps-pump-ribs | Power steering pump casing ribs
-modeled  | engine         | crank-damper | Crankshaft harmonic damper
-modeled  | engine         | accessory-belt | Accessory drive belt routing study
-modeled  | transmission   | bellhousing | Automatic transmission bellhousing
-modeled  | transmission   | torque-converter | Torque converter envelope
-modeled  | transmission   | transmission-case | Automatic transmission main casing
-modeled  | transmission   | tail-housing | Transmission extension housing
-modeled  | transmission   | transmission-pan | Transmission oil pan
-modeled  | transmission   | valve-body | Valve body envelope
-modeled  | transmission   | case-ribs | Transmission casing ribs
-modeled  | transmission   | solenoids | Solenoid positions unverified
-modeled  | transmission   | gear-train | Planetary gear envelope - not tooth accurate
-modeled  | transmission   | trans-pan-fasteners | Transmission pan fasteners
 modeled  | structure      | trans-mount | Transmission mount
 modeled  | driveline      | prop-shaft-front | Propeller shaft forward section
 modeled  | driveline      | prop-shaft-rear | Propeller shaft rear section
@@ -202,51 +86,10 @@ modeled  | intake         | tank-strap--1 | Fuel tank strap
 modeled  | intake         | tank-strap-1 | Fuel tank strap
 modeled  | intake         | fuel-line | Fuel supply line routing study
 modeled  | intake         | filler-neck | Fuel filler neck routing study
-modeled  | cooling        | radiator | Radiator core
-modeled  | cooling        | radiator-fins | Radiator fins
-modeled  | cooling        | radiator-tank-left | Radiator end tank left
-modeled  | cooling        | radiator-tank-right | Radiator end tank right
-modeled  | cooling        | condenser | A/C condenser
-modeled  | cooling        | radiator-cap | Radiator cap
-modeled  | cooling        | fan-shroud | Radiator fan shroud
-modeled  | cooling        | fan-hub-left | Cooling fan hub left
-modeled  | cooling        | fan-blades-left | Cooling fan blades left
-modeled  | cooling        | fan-hub-right | Cooling fan hub right
-modeled  | cooling        | fan-blades-right | Cooling fan blades right
-modeled  | cooling        | coolant-reservoir | Coolant expansion reservoir
-modeled  | cooling        | reservoir-cap | Coolant reservoir cap
-modeled  | cooling        | upper-radiator-hose | Upper radiator hose
-modeled  | cooling        | lower-radiator-hose | Lower radiator hose
-modeled  | cooling        | heater-hoses | Heater hose routing study
-modeled  | intake         | airbox | Air filter housing
-modeled  | intake         | airbox-ribs | Airbox molded ribs
-modeled  | intake         | air-intake-duct | Air intake duct
-modeled  | electrical     | maf | Airflow meter envelope
 modeled  | electrical     | washer-reservoir | Washer reservoir
 modeled  | electrical     | washer-cap | Washer reservoir cap
-modeled  | electrical     | battery | 12V battery
-modeled  | electrical     | battery-top | Battery top cover
-modeled  | electrical     | battery-terminal | Battery terminals
-modeled  | electrical     | battery-positive-cover | Positive terminal cover
-modeled  | electrical     | battery-hold-down | Battery hold-down
-modeled  | electrical     | fuse-box | Engine bay fuse box
-modeled  | electrical     | ecu-envelope | Engine control unit envelope
-modeled  | electrical     | ignition-coil-1 | Ignition coil pack 1
-modeled  | electrical     | ignition-coil-2 | Ignition coil pack 2
-modeled  | electrical     | ignition-coil-3 | Ignition coil pack 3
-modeled  | electrical     | engine-harness | Engine wiring loom routing study
-modeled  | electrical     | ignition-lead-1 | Ignition lead study 1
-modeled  | electrical     | ignition-lead-2 | Ignition lead study 2
-modeled  | electrical     | ignition-lead-3 | Ignition lead study 3
-modeled  | electrical     | ignition-lead-4 | Ignition lead study 4
-modeled  | electrical     | ignition-lead-5 | Ignition lead study 5
-modeled  | electrical     | ignition-lead-6 | Ignition lead study 6
 modeled  | brakes         | chassis-brake-line-left | Rigid brake line routing study left
 modeled  | brakes         | chassis-brake-line-right | Rigid brake line routing study right
-modeled  | brakes         | brake-booster | Brake booster envelope
-modeled  | brakes         | master-cylinder | Master brake cylinder
-modeled  | brakes         | brake-reservoir | Brake fluid reservoir
-modeled  | brakes         | abs-unit | ABS actuator envelope
 missing  | body           | pending-body-1 | Hood hinges left/right
 missing  | body           | pending-body-2 | Hood latch and cable
 missing  | body           | pending-body-3 | Hood gas supports
@@ -288,37 +131,24 @@ missing  | body           | pending-body-38 | License plate fasteners
 missing  | body           | pending-body-39 | Body panel shims
 missing  | body           | pending-body-40 | Seam sealer paths
 missing  | body           | pending-body-41 | Corrosion protection layers
-missing  | engine         | pending-engine-1 | Head gasket
 missing  | engine         | pending-engine-2 | Head bolts with exact pattern
-missing  | engine         | pending-engine-3 | Main bearing caps
 missing  | engine         | pending-engine-4 | Main bearings and clearances
 missing  | engine         | pending-engine-5 | Connecting rod bearings
 missing  | engine         | pending-engine-6 | Thrust washers
-missing  | engine         | pending-engine-7 | Piston wrist pins and retainers
-missing  | engine         | pending-engine-8 | Oil control rings
 missing  | engine         | pending-engine-9 | Cylinder honing texture
 missing  | engine         | pending-engine-10 | Valve guides
 missing  | engine         | pending-engine-11 | Valve seats
 missing  | engine         | pending-engine-12 | Valve stem seals
-missing  | engine         | pending-engine-13 | Valve springs
-missing  | engine         | pending-engine-14 | Spring seats and retainers
 missing  | engine         | pending-engine-15 | Valve keepers
-missing  | engine         | pending-engine-16 | Cam bearing caps
-missing  | engine         | pending-engine-17 | Cam seals
 missing  | engine         | pending-engine-18 | Rear main seal
 missing  | engine         | pending-engine-19 | Front crankshaft seal
 missing  | engine         | pending-engine-20 | Oil pump rotor and housing
-missing  | engine         | pending-engine-21 | Oil pickup and strainer
 missing  | engine         | pending-engine-22 | Oil pressure relief valve
 missing  | engine         | pending-engine-23 | Oil passages
 missing  | engine         | pending-engine-24 | Crankcase ventilation baffles
-missing  | engine         | pending-engine-25 | PCV valve and hose
-missing  | engine         | pending-engine-26 | Oil level dipstick and tube
-missing  | engine         | pending-engine-27 | Timing tensioner hydraulic actuator
 missing  | engine         | pending-engine-28 | Exact belt tooth geometry
 missing  | engine         | pending-engine-29 | Factory timing marks
 missing  | engine         | pending-engine-30 | Timing cover gaskets
-missing  | engine         | pending-engine-31 | VVT-i oil control valve
 missing  | engine         | pending-engine-32 | VVT-i filter and oil passage
 missing  | engine         | pending-engine-33 | Knock sensors
 missing  | engine         | pending-engine-34 | Crankshaft position sensor
@@ -328,38 +158,21 @@ missing  | engine         | pending-engine-37 | Oil pressure switch
 missing  | engine         | pending-engine-38 | Engine lifting brackets
 missing  | engine         | pending-engine-39 | Engine identification markings
 missing  | engine         | pending-engine-40 | Exact engine mount brackets
-missing  | engine         | pending-engine-41 | Starter motor
 missing  | engine         | pending-engine-42 | Starter pinion and ring gear
 missing  | engine         | pending-engine-43 | Flexplate and fasteners
-missing  | engine         | pending-engine-44 | Accessory tensioner
 missing  | engine         | pending-engine-45 | Accessory idler
 missing  | engine         | pending-engine-46 | Spark plug tube seals
 missing  | transmission   | pending-transmission-1 | A650E case casting measured surfaces
-missing  | transmission   | pending-transmission-2 | Front pump assembly
 missing  | transmission   | pending-transmission-3 | Input shaft splines
 missing  | transmission   | pending-transmission-4 | Output shaft splines
 missing  | transmission   | pending-transmission-5 | Planetary gear sets with exact tooth counts
-missing  | transmission   | pending-transmission-6 | Clutch drums
-missing  | transmission   | pending-transmission-7 | Clutch friction discs
-missing  | transmission   | pending-transmission-8 | Clutch separator plates
 missing  | transmission   | pending-transmission-9 | Brake bands or brake packs by exact variant
 missing  | transmission   | pending-transmission-10 | One-way clutches
 missing  | transmission   | pending-transmission-11 | Valve-body hydraulic channels
 missing  | transmission   | pending-transmission-12 | Check balls and separator plate
-missing  | transmission   | pending-transmission-13 | Filter and pickup
-missing  | transmission   | pending-transmission-14 | Shift solenoid variants
-missing  | transmission   | pending-transmission-15 | Solenoid wire harness
-missing  | transmission   | pending-transmission-16 | Transmission speed sensors
-missing  | transmission   | pending-transmission-17 | Selector shaft and range switch
 missing  | transmission   | pending-transmission-18 | Shift cable and bracket
-missing  | transmission   | pending-transmission-19 | ATF cooler lines
-missing  | transmission   | pending-transmission-20 | ATF dipstick and tube
-missing  | transmission   | pending-transmission-21 | Vent tube
-missing  | transmission   | pending-transmission-22 | Front pump seal
-missing  | transmission   | pending-transmission-23 | Output seal
 missing  | transmission   | pending-transmission-24 | Case gaskets
-missing  | transmission   | pending-transmission-25 | Transmission pan gasket
-missing  | transmission   | pending-transmission-26 | Drain and fill plugs
+missing  | transmission   | pending-transmission-25 | Pan FIPG bead path and sealing-face validation
 missing  | transmission   | pending-transmission-27 | Exact bellhousing fastener locations
 missing  | driveline      | pending-driveline-1 | Propeller shaft universal joints
 missing  | driveline      | pending-driveline-2 | Propeller shaft flange fasteners
@@ -427,18 +240,12 @@ missing  | wheels         | pending-wheels-7 | Full-size spare wheel
 missing  | wheels         | pending-wheels-8 | Spare-wheel retainer
 missing  | wheels         | pending-wheels-9 | Jack and handle
 missing  | wheels         | pending-wheels-10 | Lug wrench
-missing  | cooling        | pending-cooling-1 | Water pump impeller
 missing  | cooling        | pending-cooling-2 | Water pump seal
 missing  | cooling        | pending-cooling-3 | Water pump backing plate
-missing  | cooling        | pending-cooling-4 | Water pump gasket
-missing  | cooling        | pending-cooling-5 | Thermostat element and seal
 missing  | cooling        | pending-cooling-6 | Exact coolant passages
-missing  | cooling        | pending-cooling-7 | Radiator drain cock
-missing  | cooling        | pending-cooling-8 | Radiator mounting cushions
 missing  | cooling        | pending-cooling-9 | Cooling fan drive arrangement verification
 missing  | cooling        | pending-cooling-10 | A/C compressor internal mechanism
 missing  | cooling        | pending-cooling-11 | A/C refrigerant hoses
-missing  | cooling        | pending-cooling-12 | A/C receiver drier
 missing  | cooling        | pending-cooling-13 | Expansion valve
 missing  | cooling        | pending-cooling-14 | Evaporator core
 missing  | cooling        | pending-cooling-15 | Heater core
@@ -446,15 +253,8 @@ missing  | cooling        | pending-cooling-16 | HVAC blower and housing
 missing  | cooling        | pending-cooling-17 | Blend doors and actuators
 missing  | cooling        | pending-cooling-18 | Cabin air ducts
 missing  | cooling        | pending-cooling-19 | Cabin air filter fitment verification
-missing  | intake         | pending-intake-1 | Air filter element
-missing  | intake         | pending-intake-2 | Intake snorkel
-missing  | intake         | pending-intake-3 | Throttle plate and motor
-missing  | intake         | pending-intake-4 | Throttle position sensor
 missing  | intake         | pending-intake-5 | ACIS control valve
-missing  | intake         | pending-intake-6 | ACIS vacuum actuator
 missing  | intake         | pending-intake-7 | Intake plenum gaskets
-missing  | intake         | pending-intake-8 | Intake runner gaskets
-missing  | intake         | pending-intake-9 | Injector seals
 missing  | intake         | pending-intake-10 | Fuel pressure regulation by variant
 missing  | intake         | pending-intake-11 | Fuel filter fitment
 missing  | intake         | pending-intake-12 | Fuel pump strainer
@@ -474,8 +274,6 @@ missing  | exhaust        | pending-exhaust-7 | Exhaust flange fasteners
 missing  | exhaust        | pending-exhaust-8 | Exhaust heat shields
 missing  | exhaust        | pending-exhaust-9 | Exhaust underbody isolators
 missing  | exhaust        | pending-exhaust-10 | Muffler internal baffles
-missing  | electrical     | pending-electrical-1 | Battery tray
-missing  | electrical     | pending-electrical-2 | Battery negative ground straps
 missing  | electrical     | pending-electrical-3 | Main fusible links
 missing  | electrical     | pending-electrical-4 | Fuse and relay positions
 missing  | electrical     | pending-electrical-5 | Starter wiring
@@ -548,3 +346,416 @@ modeled  | wheels         | gs300-left-rear-wheel | Gs300 Left Rear Wheel
 modeled  | wheels         | gs300-left-front-wheel | Gs300 Left Front Wheel
 modeled  | body           | gs300-chrome | Gs300 Chrome
 modeled  | interior       | gs300-cabin-interior | Gs300 Cabin Interior
+modeled  | engine         | engine-block | 2JZ-GE cylinder block casting
+modeled  | engine         | cylinder-liners | Six cylinder bore surfaces
+modeled  | engine         | block-core-plugs | Block core plugs
+modeled  | engine         | block-casting-ribs | Block cast webs
+modeled  | engine         | block-deck | Block deck side rail
+modeled  | engine         | head-gasket | Cylinder head gasket / bore fire rings
+modeled  | engine         | cylinder-head | Cylinder head casting
+modeled  | engine         | head-port-faces | Cylinder head port flanges
+modeled  | engine         | valve-cover-exhaust | Cylinder head cover exhaust
+modeled  | engine         | valve-cover-gaskets | Cylinder head cover gaskets
+modeled  | engine         | head-cover-bolt--1-0 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt--1-1 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt--1-2 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt--1-3 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt--1-4 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt--1-5 | Cylinder head cover bolt
+modeled  | engine         | camshaft--1 | Exhaust camshaft
+modeled  | engine         | cam-lobes--1 | Camshaft lobes
+modeled  | engine         | valve-stems | 24 valve stems
+modeled  | engine         | valve-heads | 24 valve heads
+modeled  | engine         | valve-springs | 24 valve springs
+modeled  | engine         | valve-retainers | Valve spring retainers
+modeled  | engine         | valve-lifters | Valve lifter buckets
+modeled  | engine         | cam-bearing-caps | Camshaft bearing cap study
+modeled  | engine         | cam-cap-fasteners | Cam cap fastener study
+modeled  | engine         | camshaft-seals | Intake/exhaust camshaft seals
+modeled  | engine         | valve-cover-intake | Cylinder head cover intake
+modeled  | engine         | head-cover-bolt-1-0 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt-1-1 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt-1-2 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt-1-3 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt-1-4 | Cylinder head cover bolt
+modeled  | engine         | head-cover-bolt-1-5 | Cylinder head cover bolt
+modeled  | engine         | camshaft-1 | Intake camshaft
+modeled  | engine         | cam-lobes-1 | Camshaft lobes
+modeled  | engine         | piston-1 | Piston 1
+modeled  | engine         | piston-rings-1 | Compression rings 1
+modeled  | engine         | oil-rings-1 | Oil control ring 1
+modeled  | engine         | wrist-pins | Piston wrist pins
+modeled  | engine         | rod-1 | Connecting rod 1
+modeled  | engine         | rod-bearing-1 | Rod big end 1
+modeled  | engine         | crank-counterweights | Crankshaft counterweight study
+modeled  | electrical     | spark-plug-1 | Spark plug 1
+modeled  | engine         | piston-2 | Piston 2
+modeled  | engine         | piston-rings-2 | Compression rings 2
+modeled  | engine         | oil-rings-2 | Oil control ring 2
+modeled  | engine         | rod-2 | Connecting rod 2
+modeled  | engine         | rod-bearing-2 | Rod big end 2
+modeled  | electrical     | spark-plug-2 | Spark plug 2
+modeled  | engine         | piston-3 | Piston 3
+modeled  | engine         | piston-rings-3 | Compression rings 3
+modeled  | engine         | oil-rings-3 | Oil control ring 3
+modeled  | engine         | rod-3 | Connecting rod 3
+modeled  | engine         | rod-bearing-3 | Rod big end 3
+modeled  | electrical     | spark-plug-3 | Spark plug 3
+modeled  | engine         | piston-4 | Piston 4
+modeled  | engine         | piston-rings-4 | Compression rings 4
+modeled  | engine         | oil-rings-4 | Oil control ring 4
+modeled  | engine         | rod-4 | Connecting rod 4
+modeled  | engine         | rod-bearing-4 | Rod big end 4
+modeled  | electrical     | spark-plug-4 | Spark plug 4
+modeled  | engine         | piston-5 | Piston 5
+modeled  | engine         | piston-rings-5 | Compression rings 5
+modeled  | engine         | oil-rings-5 | Oil control ring 5
+modeled  | engine         | rod-5 | Connecting rod 5
+modeled  | engine         | rod-bearing-5 | Rod big end 5
+modeled  | electrical     | spark-plug-5 | Spark plug 5
+modeled  | engine         | piston-6 | Piston 6
+modeled  | engine         | piston-rings-6 | Compression rings 6
+modeled  | engine         | oil-rings-6 | Oil control ring 6
+modeled  | engine         | rod-6 | Connecting rod 6
+modeled  | engine         | rod-bearing-6 | Rod big end 6
+modeled  | electrical     | spark-plug-6 | Spark plug 6
+modeled  | engine         | crankshaft | Crankshaft main axis
+modeled  | engine         | main-bearing-caps | Main bearing cap study
+modeled  | engine         | oil-pan-upper | Cast upper oil pan
+modeled  | engine         | oil-pan-lower | Stamped lower sump
+modeled  | engine         | sump-fasteners | Sump perimeter fasteners / placement estimated
+modeled  | engine         | oil-pickup | Oil pickup tube
+modeled  | engine         | oil-strainer-engine | Engine oil pickup screen
+modeled  | engine         | drain-plug | Engine oil drain plug
+modeled  | engine         | exhaust-cam-sprocket | Exhaust cam timing pulley
+modeled  | engine         | exhaust-cam-sprocket-center | Exhaust cam timing pulley center fastener
+modeled  | engine         | exhaust-cam-sprocket-seal | Exhaust cam timing pulley shaft seal
+modeled  | engine         | vvti-gear | VVT-i intake timing pulley
+modeled  | engine         | vvti-gear-locked-fasteners | VVT-i pulley factory-set bolts — do not loosen
+modeled  | engine         | vvti-gear-center | VVT-i intake timing pulley center fastener
+modeled  | engine         | vvti-gear-seal | VVT-i intake timing pulley shaft seal
+modeled  | engine         | crank-pulley | Crankshaft timing pulley
+modeled  | engine         | crank-pulley-center | Crankshaft timing pulley center fastener
+modeled  | engine         | crank-pulley-seal | Crankshaft timing pulley shaft seal
+modeled  | engine         | timing-idler | Timing-belt idler pulley
+modeled  | engine         | timing-idler-bearing | Idler bearing seal
+modeled  | engine         | timing-idler-bolt | Timing idler pivot bolt
+modeled  | engine         | timing-idler-arm | Timing idler pivot arm
+modeled  | engine         | timing-tensioner | Hydraulic timing-belt tensioner
+modeled  | engine         | timing-tensioner-rod | Tensioner pushrod
+modeled  | engine         | timing-tensioner-boot | Tensioner dust boot
+modeled  | engine         | timing-tensioner-bolt-1 | Timing tensioner mounting bolt 1
+modeled  | engine         | timing-tensioner-bolt-2 | Timing tensioner mounting bolt 2
+modeled  | engine         | timing-belt | Timing belt — routing study
+modeled  | engine         | timing-cover-upper | No.2 timing belt cover
+modeled  | engine         | timing-cover-lower | No.1 timing belt cover
+modeled  | engine         | timing-cover-rear | No.4 rear timing cover
+modeled  | engine         | timing-cover-upper-bolt-1 | timing cover upper bolt 1
+modeled  | engine         | timing-cover-upper-bolt-2 | timing cover upper bolt 2
+modeled  | engine         | timing-cover-upper-bolt-3 | timing cover upper bolt 3
+modeled  | engine         | timing-cover-lower-bolt-1 | timing cover lower bolt 1
+modeled  | engine         | timing-cover-lower-bolt-2 | timing cover lower bolt 2
+modeled  | engine         | timing-cover-lower-bolt-3 | timing cover lower bolt 3
+modeled  | engine         | timing-cover-lower-bolt-4 | timing cover lower bolt 4
+modeled  | engine         | timing-cover-lower-bolt-5 | timing cover lower bolt 5
+modeled  | engine         | engine-cover | Engine appearance cover / forward head
+modeled  | engine         | timing-cover-top | No.3 timing belt cover / plug valley
+modeled  | engine         | engine-cover-nut-1 | Engine cover retaining nut 1
+modeled  | engine         | engine-cover-nut-2 | Engine cover retaining nut 2
+modeled  | engine         | engine-cover-nut-3 | Engine cover retaining nut 3
+modeled  | engine         | engine-cover-nut-4 | Engine cover retaining nut 4
+modeled  | engine         | timing-cover-top-bolt-1 | No.3 timing cover bolt 1
+modeled  | engine         | timing-cover-top-bolt-2 | No.3 timing cover bolt 2
+modeled  | engine         | timing-cover-top-bolt-3 | No.3 timing cover bolt 3
+modeled  | engine         | timing-cover-top-bolt-4 | No.3 timing cover bolt 4
+modeled  | engine         | engine-cover-lettering | VVT-i
+modeled  | engine         | oil-cap | Oil filler cap
+modeled  | engine         | vvti-oil-control-valve | VVT-i camshaft timing oil control valve
+modeled  | electrical     | vvti-ocv-connector | VVT-i oil-control-valve connector
+modeled  | engine         | vvti-oil-pipe | No.1 VVT-i oil supply pipe
+modeled  | engine         | vvti-oil-filter | VVT-i oil control filter housing
+modeled  | engine         | vvti-filter-screen | VVT-i filter screen study
+modeled  | intake         | intake-runner-1 | Lower intake runner 1
+modeled  | intake         | intake-gasket-1 | Intake runner seal 1
+modeled  | intake         | injector-1 | Fuel injector 1
+modeled  | electrical     | injector-connector-1 | Injector connector 1
+modeled  | intake         | injector-seals | Injector O-rings
+modeled  | exhaust        | exhaust-runner-1 | Exhaust manifold runner 1
+modeled  | intake         | intake-runner-2 | Lower intake runner 2
+modeled  | intake         | intake-gasket-2 | Intake runner seal 2
+modeled  | intake         | injector-2 | Fuel injector 2
+modeled  | electrical     | injector-connector-2 | Injector connector 2
+modeled  | exhaust        | exhaust-runner-2 | Exhaust manifold runner 2
+modeled  | intake         | intake-runner-3 | Lower intake runner 3
+modeled  | intake         | intake-gasket-3 | Intake runner seal 3
+modeled  | intake         | injector-3 | Fuel injector 3
+modeled  | electrical     | injector-connector-3 | Injector connector 3
+modeled  | exhaust        | exhaust-runner-3 | Exhaust manifold runner 3
+modeled  | intake         | intake-runner-4 | Lower intake runner 4
+modeled  | intake         | intake-gasket-4 | Intake runner seal 4
+modeled  | intake         | injector-4 | Fuel injector 4
+modeled  | electrical     | injector-connector-4 | Injector connector 4
+modeled  | exhaust        | exhaust-runner-4 | Exhaust manifold runner 4
+modeled  | intake         | intake-runner-5 | Lower intake runner 5
+modeled  | intake         | intake-gasket-5 | Intake runner seal 5
+modeled  | intake         | injector-5 | Fuel injector 5
+modeled  | electrical     | injector-connector-5 | Injector connector 5
+modeled  | exhaust        | exhaust-runner-5 | Exhaust manifold runner 5
+modeled  | intake         | intake-runner-6 | Lower intake runner 6
+modeled  | intake         | intake-gasket-6 | Intake runner seal 6
+modeled  | intake         | injector-6 | Fuel injector 6
+modeled  | electrical     | injector-connector-6 | Injector connector 6
+modeled  | exhaust        | exhaust-runner-6 | Exhaust manifold runner 6
+modeled  | intake         | intake-plenum | ACIS intake air chamber
+modeled  | intake         | intake-crossover | Intake air connector crossover
+modeled  | intake         | intake-casting-ribs | Intake connector cast ribs
+modeled  | intake         | throttle | ETCS-i throttle body
+modeled  | intake         | throttle-flange | Throttle body flange
+modeled  | intake         | throttle-plate | Throttle butterfly plate / illustrative opening
+modeled  | intake         | throttle-motor | Throttle actuator motor
+modeled  | electrical     | throttle-sensor | Throttle position sensor
+modeled  | intake         | fuel-rail | Fuel delivery rail
+modeled  | intake         | fuel-pulsation-damper | Fuel pressure pulsation damper
+modeled  | intake         | acis-actuator | ACIS vacuum actuator
+modeled  | intake         | acis-link | ACIS actuator linkage
+modeled  | engine         | pcv-hose | PCV hose
+modeled  | engine         | pcv-valve | PCV valve
+modeled  | intake         | airbox | Air cleaner lower housing
+modeled  | intake         | airbox-lid | Air cleaner lid
+modeled  | intake         | air-filter | Air filter element
+modeled  | intake         | air-filter-pleats | Air filter pleats
+modeled  | intake         | airbox-ribs | Airbox lid molded ribs
+modeled  | intake         | air-intake-duct | Air cleaner to throttle duct
+modeled  | intake         | intake-bellows | Air duct flexible bellows
+modeled  | intake         | intake-clamps | Air duct clamp bands
+modeled  | electrical     | maf | Mass air flow meter body
+modeled  | electrical     | maf-connector | MAF electrical connector
+modeled  | intake         | intake-resonator | Intake resonator chamber
+modeled  | intake         | intake-snorkel | Air cleaner inlet snorkel
+modeled  | electrical     | ignition-coil-1 | Ignition coil 1
+modeled  | electrical     | ignition-boot-1 | Direct coil boot 1
+modeled  | electrical     | ignition-lead-1 | High-tension lead 1 / routing study
+modeled  | electrical     | ignition-coil-2 | Ignition coil 2
+modeled  | electrical     | ignition-boot-2 | Direct coil boot 2
+modeled  | electrical     | ignition-lead-2 | High-tension lead 2 / routing study
+modeled  | electrical     | ignition-coil-3 | Ignition coil 3
+modeled  | electrical     | ignition-boot-3 | Direct coil boot 3
+modeled  | electrical     | ignition-lead-3 | High-tension lead 3 / routing study
+modeled  | electrical     | engine-harness | Engine wiring loom
+modeled  | electrical     | injector-wiring | Injector harness branches
+modeled  | structure      | strut-tower-cap--0.6 | Front strut tower upper plate
+modeled  | structure      | strut-top-fasteners--0.6 | Strut upper fasteners / reference placement
+modeled  | structure      | strut-tower-cap-0.6 | Front strut tower upper plate
+modeled  | structure      | strut-top-fasteners-0.6 | Strut upper fasteners / reference placement
+modeled  | engine         | oil-dipstick-tube | Engine oil level gauge tube
+modeled  | engine         | oil-dipstick-handle | Engine dipstick handle
+modeled  | electrical     | starter | Starter motor
+modeled  | electrical     | starter-solenoid | Starter magnetic switch
+modeled  | electrical     | battery | Battery case
+modeled  | electrical     | battery-top | Battery lid
+modeled  | electrical     | battery-tray | Battery tray
+modeled  | electrical     | battery-terminals | Battery terminal posts
+modeled  | electrical     | battery-positive-cover | Positive terminal cover
+modeled  | electrical     | battery-hold-down | Battery retaining bar
+modeled  | electrical     | battery-ground | Battery ground cable
+modeled  | electrical     | fuse-box | Engine compartment relay box
+modeled  | brakes         | brake-booster | Brake booster, vehicle left
+modeled  | brakes         | master-cylinder | Brake master cylinder
+modeled  | brakes         | brake-reservoir | Brake fluid reservoir
+modeled  | brakes         | brake-reservoir-cap | Brake fluid reservoir cap
+modeled  | brakes         | abs-unit | ABS hydraulic actuator envelope
+modeled  | cooling        | water-pump | Water pump casting
+modeled  | cooling        | water-pump-gasket | Water pump gasket
+modeled  | cooling        | water-pump-hub | Water pump shaft and hub
+modeled  | cooling        | water-pump-pulley | Water pump accessory pulley
+modeled  | cooling        | pump-pulley-lip | Water pump pulley rim
+modeled  | cooling        | water-pump-pulley-nut-1 | Water pump pulley nut 1
+modeled  | cooling        | water-pump-pulley-nut-2 | Water pump pulley nut 2
+modeled  | cooling        | water-pump-pulley-nut-3 | Water pump pulley nut 3
+modeled  | cooling        | water-pump-pulley-nut-4 | Water pump pulley nut 4
+modeled  | cooling        | water-pump-bolt-1 | Water pump mounting bolt 1
+modeled  | cooling        | water-pump-bolt-2 | Water pump mounting bolt 2
+modeled  | cooling        | water-pump-bolt-3 | Water pump mounting bolt 3
+modeled  | cooling        | water-pump-bolt-4 | Water pump mounting bolt 4
+modeled  | cooling        | water-pump-bolt-5 | Water pump mounting bolt 5
+modeled  | cooling        | water-pump-bolt-6 | Water pump mounting bolt 6
+modeled  | cooling        | pump-impeller | Water pump impeller study
+modeled  | cooling        | pump-block-oring | Water pump block O-ring
+modeled  | cooling        | water-pump-drain | Water pump drain hose
+modeled  | cooling        | water-bypass-outlet | Water bypass outlet
+modeled  | cooling        | water-bypass-pipe-1 | No.1 water bypass pipe
+modeled  | cooling        | water-bypass-pipe-2 | No.2 water bypass pipe
+modeled  | cooling        | thermostat | Thermostat element
+modeled  | cooling        | thermostat-seal | Thermostat rubber seal
+modeled  | cooling        | water-inlet | Water inlet housing
+modeled  | cooling        | water-inlet-fasteners | Water inlet retaining nuts
+modeled  | engine         | alternator | Alternator
+modeled  | engine         | alternator-ribs | Accessory casing ribs
+modeled  | engine         | alternator-pulley | Accessory pulley
+modeled  | engine         | ac-compressor | Ac Compressor
+modeled  | engine         | ac-compressor-ribs | Accessory casing ribs
+modeled  | engine         | ac-compressor-pulley | Accessory pulley
+modeled  | engine         | ps-pump | Ps Pump
+modeled  | engine         | ps-pump-ribs | Accessory casing ribs
+modeled  | engine         | ps-pump-pulley | Accessory pulley
+modeled  | engine         | ps-reservoir | Power steering reservoir
+modeled  | engine         | ps-reservoir-cap | Power steering reservoir cap
+modeled  | engine         | crank-damper | Crankshaft harmonic damper
+modeled  | engine         | crank-damper-bolt | Crankshaft pulley retaining bolt
+modeled  | engine         | accessory-tensioner | Accessory drive belt tensioner
+modeled  | engine         | accessory-tensioner-arm | Accessory tensioner arm
+modeled  | engine         | accessory-tensioner-pulley | Accessory tensioner pulley
+modeled  | engine         | accessory-belt | Accessory belt / route awaiting validation
+modeled  | cooling        | radiator | Radiator core
+modeled  | cooling        | radiator-fins | Radiator fins
+modeled  | cooling        | radiator-tanks | Radiator side tanks
+modeled  | cooling        | fan-shroud | Fan shroud crossmember
+modeled  | cooling        | fan-motor--1 | Electric radiator fan motor
+modeled  | cooling        | fan-blades--1 | Cooling fan blades
+modeled  | electrical     | fan-wiring | Cooling fan wiring
+modeled  | cooling        | fan-motor-1 | Electric radiator fan motor
+modeled  | cooling        | fan-blades-1 | Cooling fan blades
+modeled  | cooling        | condenser | Air conditioning condenser
+modeled  | cooling        | receiver-drier | A/C receiver-drier envelope
+modeled  | structure      | radiator-support | Upper radiator support
+modeled  | cooling        | radiator-cap | Radiator filler cap
+modeled  | cooling        | radiator-cushions | Radiator mount cushions
+modeled  | cooling        | radiator-drain | Radiator drain cock
+modeled  | cooling        | upper-radiator-hose | Upper radiator hose
+modeled  | cooling        | lower-radiator-hose | Lower radiator hose
+modeled  | cooling        | coolant-hose-clamp-0 | Coolant hose clamp
+modeled  | cooling        | coolant-hose-clamp-1 | Coolant hose clamp
+modeled  | cooling        | coolant-hose-clamp-2 | Coolant hose clamp
+modeled  | cooling        | coolant-hose-clamp-3 | Coolant hose clamp
+modeled  | cooling        | coolant-reservoir | Coolant reservoir
+modeled  | cooling        | reservoir-cap | Coolant reservoir cap
+modeled  | cooling        | coolant-overflow | Coolant overflow hose
+modeled  | cooling        | heater-supply | Heater supply hose
+modeled  | cooling        | heater-return | Heater return hose
+modeled  | transmission   | bellhousing | A650E converter housing
+modeled  | transmission   | bellhousing-flange | Converter housing flange
+modeled  | transmission   | bellhousing-fasteners | Bellhousing fasteners / positions estimated
+modeled  | transmission   | transmission-case | A650E main case casting
+modeled  | transmission   | case-ribs | A650E transverse cast ribs
+modeled  | transmission   | case-longitudinal-ribs | A650E longitudinal ribs
+modeled  | transmission   | tail-housing | A650E extension housing
+modeled  | transmission   | tail-ribs | Extension casting ribs
+modeled  | transmission   | output-seal | Extension output seal
+modeled  | transmission   | trans-output-shaft | Transmission output shaft
+modeled  | transmission   | output-shaft-splines | Output splines / count illustrative
+modeled  | transmission   | torque-converter | Torque converter outer shell
+modeled  | transmission   | converter-weld | Converter circumferential weld
+modeled  | transmission   | trans-input-shaft | Transmission input shaft
+modeled  | transmission   | front-pump | Transmission front oil pump assembly
+modeled  | transmission   | front-pump-seal | Front pump seal
+modeled  | transmission   | od-direct-clutch-drum | Od Direct Clutch drum
+modeled  | transmission   | od-direct-clutch-frictions | Od Direct Clutch friction study
+modeled  | transmission   | od-direct-clutch-steels | Od Direct Clutch steel plate study
+modeled  | transmission   | direct-clutch-drum | Direct Clutch drum
+modeled  | transmission   | direct-clutch-frictions | Direct Clutch friction study
+modeled  | transmission   | direct-clutch-steels | Direct Clutch steel plate study
+modeled  | transmission   | forward-clutch-drum | Forward Clutch drum
+modeled  | transmission   | forward-clutch-frictions | Forward Clutch friction study
+modeled  | transmission   | forward-clutch-steels | Forward Clutch steel plate study
+modeled  | transmission   | second-brake-drum | Second Brake drum
+modeled  | transmission   | second-brake-frictions | Second Brake friction study
+modeled  | transmission   | second-brake-steels | Second Brake steel plate study
+modeled  | transmission   | low-reverse-clutch-drum | Low Reverse Clutch drum
+modeled  | transmission   | low-reverse-clutch-frictions | Low Reverse Clutch friction study
+modeled  | transmission   | low-reverse-clutch-steels | Low Reverse Clutch steel plate study
+modeled  | transmission   | planetary-sun-0 | Planetary sun gear study
+modeled  | transmission   | planetary-planets-0 | Planetary pinion study
+modeled  | transmission   | planetary-ring-0 | Planetary annulus study
+modeled  | transmission   | planetary-sun-1 | Planetary sun gear study
+modeled  | transmission   | planetary-planets-1 | Planetary pinion study
+modeled  | transmission   | planetary-ring-1 | Planetary annulus study
+modeled  | transmission   | planetary-sun-2 | Planetary sun gear study
+modeled  | transmission   | planetary-planets-2 | Planetary pinion study
+modeled  | transmission   | planetary-ring-2 | Planetary annulus study
+modeled  | transmission   | trans-pan-flange | Transmission pan mounting flange
+modeled  | transmission   | transmission-pan | A650E stamped oil pan
+modeled  | transmission   | trans-pan-sealant | Oil pan FIPG sealing bead
+modeled  | transmission   | trans-pan-bolt-1 | A650E pan bolt 1
+modeled  | transmission   | trans-pan-bolt-2 | A650E pan bolt 2
+modeled  | transmission   | trans-pan-bolt-3 | A650E pan bolt 3
+modeled  | transmission   | trans-pan-bolt-4 | A650E pan bolt 4
+modeled  | transmission   | trans-pan-bolt-5 | A650E pan bolt 5
+modeled  | transmission   | trans-pan-bolt-6 | A650E pan bolt 6
+modeled  | transmission   | trans-pan-bolt-7 | A650E pan bolt 7
+modeled  | transmission   | trans-pan-bolt-8 | A650E pan bolt 8
+modeled  | transmission   | trans-pan-bolt-9 | A650E pan bolt 9
+modeled  | transmission   | trans-pan-bolt-10 | A650E pan bolt 10
+modeled  | transmission   | trans-pan-bolt-11 | A650E pan bolt 11
+modeled  | transmission   | trans-pan-bolt-12 | A650E pan bolt 12
+modeled  | transmission   | trans-pan-bolt-13 | A650E pan bolt 13
+modeled  | transmission   | trans-pan-bolt-14 | A650E pan bolt 14
+modeled  | transmission   | trans-pan-bolt-15 | A650E pan bolt 15
+modeled  | transmission   | trans-pan-bolt-16 | A650E pan bolt 16
+modeled  | transmission   | trans-pan-bolt-17 | A650E pan bolt 17
+modeled  | transmission   | trans-pan-bolt-18 | A650E pan bolt 18
+modeled  | transmission   | trans-pan-bolt-19 | A650E pan bolt 19
+modeled  | transmission   | trans-pan-magnet-1 | Pan magnet 1
+modeled  | transmission   | trans-pan-magnet-2 | Pan magnet 2
+modeled  | transmission   | trans-pan-magnet-3 | Pan magnet 3
+modeled  | transmission   | trans-drain-plug | ATF drain plug
+modeled  | transmission   | trans-drain-washer | ATF drain plug sealing washer
+modeled  | transmission   | valve-body | Valve Body
+modeled  | transmission   | valve-body-lower-1 | Valve Body Lower 1
+modeled  | transmission   | valve-body-lower-2 | Valve Body Lower 2
+modeled  | transmission   | valve-body-channel-study | Valve body surface ribs — not hydraulic routing
+modeled  | transmission   | valve-body-separator | Valve body separator plate study
+modeled  | transmission   | valve-body-bolt-1 | Valve body retaining bolt 1
+modeled  | transmission   | valve-body-bolt-2 | Valve body retaining bolt 2
+modeled  | transmission   | valve-body-bolt-3 | Valve body retaining bolt 3
+modeled  | transmission   | valve-body-bolt-4 | Valve body retaining bolt 4
+modeled  | transmission   | valve-body-bolt-5 | Valve body retaining bolt 5
+modeled  | transmission   | valve-body-bolt-6 | Valve body retaining bolt 6
+modeled  | transmission   | valve-body-bolt-7 | Valve body retaining bolt 7
+modeled  | transmission   | valve-body-bolt-8 | Valve body retaining bolt 8
+modeled  | transmission   | valve-body-bolt-9 | Valve body retaining bolt 9
+modeled  | transmission   | valve-body-bolt-10 | Valve body retaining bolt 10
+modeled  | transmission   | valve-body-bolt-11 | Valve body retaining bolt 11
+modeled  | transmission   | valve-body-bolt-12 | Valve body retaining bolt 12
+modeled  | transmission   | valve-body-bolt-13 | Valve body retaining bolt 13
+modeled  | transmission   | valve-body-bolt-14 | Valve body retaining bolt 14
+modeled  | transmission   | valve-body-bolt-15 | Valve body retaining bolt 15
+modeled  | transmission   | valve-body-bolt-16 | Valve body retaining bolt 16
+modeled  | transmission   | valve-body-bolt-17 | Valve body retaining bolt 17
+modeled  | transmission   | valve-body-bolt-18 | Valve body retaining bolt 18
+modeled  | transmission   | valve-body-bolt-19 | Valve body retaining bolt 19
+modeled  | transmission   | valve-body-bolt-20 | Valve body retaining bolt 20
+modeled  | transmission   | valve-body-bolt-21 | Valve body retaining bolt 21
+modeled  | transmission   | solenoid-s1 | A650E solenoid S1
+modeled  | transmission   | solenoid-s1-connector | Solenoid S1 connector
+modeled  | transmission   | solenoid-s2 | A650E solenoid S2
+modeled  | transmission   | solenoid-s2-connector | Solenoid S2 connector
+modeled  | transmission   | solenoid-s3 | A650E solenoid S3
+modeled  | transmission   | solenoid-s3-connector | Solenoid S3 connector
+modeled  | transmission   | solenoid-s4 | A650E solenoid S4
+modeled  | transmission   | solenoid-s4-connector | Solenoid S4 connector
+modeled  | transmission   | solenoid-sln | A650E solenoid SLN
+modeled  | transmission   | solenoid-sln-connector | Solenoid SLN connector
+modeled  | transmission   | solenoid-slu | A650E solenoid SLU
+modeled  | transmission   | solenoid-slu-connector | Solenoid SLU connector
+modeled  | transmission   | solenoid-slt | A650E solenoid SLT
+modeled  | transmission   | solenoid-slt-connector | Solenoid SLT connector
+modeled  | transmission   | trans-strainer | A650E ATF strainer
+modeled  | transmission   | trans-strainer-bolt-1 | Oil strainer bolt 1
+modeled  | transmission   | trans-strainer-bolt-2 | Oil strainer bolt 2
+modeled  | transmission   | trans-strainer-bolt-3 | Oil strainer bolt 3
+modeled  | transmission   | trans-strainer-bolt-4 | Oil strainer bolt 4
+modeled  | transmission   | trans-strainer-seal-1 | Oil strainer seal 1
+modeled  | transmission   | trans-strainer-seal-2 | Oil strainer seal 2
+modeled  | transmission   | trans-strainer-seal-3 | Oil strainer seal 3
+modeled  | transmission   | trans-solenoid-harness | Solenoid wiring harness
+modeled  | transmission   | trans-temperature-sensor | ATF temperature sensor
+modeled  | transmission   | trans-case-connector | Transmission case electrical connector
+modeled  | transmission   | range-switch | Park/neutral position switch
+modeled  | transmission   | selector-lever | Transmission selector lever
+modeled  | transmission   | trans-speed-sensor-1 | Transmission speed sensor 1
+modeled  | transmission   | trans-speed-sensor-2 | Transmission speed sensor 2
+modeled  | transmission   | atf-dipstick-tube | ATF dipstick tube
+modeled  | transmission   | atf-dipstick-handle | ATF dipstick handle
+modeled  | transmission   | atf-cooler-line-1 | ATF cooler pipe 1
+modeled  | transmission   | atf-cooler-line-2 | ATF cooler pipe 2
+modeled  | transmission   | trans-breather | Transmission breather hose

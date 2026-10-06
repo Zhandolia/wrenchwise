@@ -46,7 +46,7 @@ Sources for every row, full URLs, photo hashes, per-image classification, wrong-
 
 ## Software validation
 
-TypeScript and the production build pass. Five GLBs have valid embedded buffers, license credits and part metadata. The combined GS manifest matches its 256 modeled groups; 291 inventoried gaps and zero verified parts remain. No frame-rate benchmark or mechanical validation is claimed.
+TypeScript and the production build pass. Five GLBs have valid embedded buffers, license credits and part metadata. At revision 4, the combined GS manifest matched 256 modeled groups with 291 inventoried gaps. See [revision 5](s160-mechanical-v5.md) for the later GS300 engine and transmission rebuild. Zero verified parts remain. No frame-rate benchmark or mechanical validation is claimed.
 
 ## Dimensional review
 

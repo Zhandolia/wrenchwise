@@ -1,0 +1,41 @@
+{
+  "revision": 5,
+  "vehicle": "2000 GS300 US stock automatic",
+  "renderViews": [
+    "engine-layout",
+    "engine-front",
+    "timing-detail",
+    "pump-detail",
+    "transmission-case",
+    "transmission-pan",
+    "transmission-valves",
+    "full-vehicle",
+    "engine-bay"
+  ],
+  "corrections": [
+    "Engine/hood interference",
+    "Intake crossover packaging",
+    "Pan/case service stack gap",
+    "Open flange instead of solid plate",
+    "Fastener shaft direction",
+    "Pump raised casting and mounting bosses",
+    "Review render overlapping prefix offsets"
+  ],
+  "browserChecks": {
+    "allElevenStudies": "passed",
+    "sourceAndQuantityInspector": "passed",
+    "meshoptAssetLoad": "passed",
+    "fullVehicleReset": "passed",
+    "workshopIntegration": "passed",
+    "consoleErrors": 0
+  },
+  "notValidated": [
+    "Factory dimensions",
+    "All-part collision detection",
+    "Service removal paths",
+    "Timing marks and belt pitch",
+    "Transmission hydraulic routing",
+    "Real-vehicle fitment",
+    "Frame rate across devices"
+  ]
+}

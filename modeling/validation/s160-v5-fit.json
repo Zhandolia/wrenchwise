@@ -1,0 +1,5 @@
+{
+  "scope": "Vertex-to-exterior hood surface check on this provisional asset only. Not factory fit verification. No full collision detection.",
+  "hoodSurfacePenetrations": [],
+  "maxPenetrationMetres": 0
+}

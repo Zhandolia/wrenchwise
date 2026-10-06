@@ -40,7 +40,7 @@ Upload a self-contained, uncompressed GLB via **Contribute a model**. Include ye
 
 Before publishing a real repair guide: obtain licensed model-specific CAD/scans; verify fitment by year/engine/market; capture fastener and connector locations; author sequencing, tools, parts, torque and timing specifications against authorized service information; obtain qualified mechanic review and validate on a physical vehicle; attach reviewer/source/version records. Never label a guide verified based solely on this demo.
 
-Factory service information reference: https://techinfo.toyota.com/ . No factory repair manual content or Lexus/Toyota CAD has been copied into this project. Wrenchwise is independent of Lexus/Toyota.
+Factory service information reference: https://techinfo.toyota.com/ . No factory manual pages, copied procedures, reference photographs or Lexus/Toyota CAD are redistributed. Original component studies cite manufacturer information and distinguish sourced quantities from estimated geometry. Wrenchwise is independent of Lexus/Toyota.
 
 See STARTER.md for the underlying framework and hosting integration.
 
@@ -59,3 +59,9 @@ Keep `modeling/gs300_exterior.py` alongside the build script. It exports the nam
 ## Catalog reconstruction audit
 
 See [the 11-vehicle research audit](docs/catalog-research.md) and [third-party asset licenses](THIRD_PARTY_ASSETS.md). The current build includes four exterior references derived from two CC BY sources, with seven vehicles still awaiting accepted geometry. No model or repair procedure is mechanically verified.
+
+## S160 mechanical revision 5
+
+The GS300 now has eleven source-linked engine, timing, pump and A650E studies. See [mechanical research and validation](docs/s160-mechanical-v5.md). The assembly contains 413 rebuilt/new mechanical groups and 513 modeled groups overall; **zero complete parts are dimensionally verified**. The hosted GLB uses Meshopt compression; the built-in assembly viewer includes its decoder. Community uploads remain uncompressed.
+
+Run `node modeling/s160/validate_web.mjs` with Node 24 to check manifest/mesh IDs, study references and eight documented quantity groups. Native Blender geometry and modeling scripts are available in the downloadable source archive.
