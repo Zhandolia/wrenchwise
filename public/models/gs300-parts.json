@@ -1,6 +1,6 @@
 {
   "title": "2000 Lexus GS 300 US automatic \u2014 provisional assembly",
-  "version": 2,
+  "version": 3,
   "units": "metres",
   "coordinateSystem": "Blender X lateral, Y rearward, Z up; GLB uses Y up",
   "accuracy": "Provisional original geometry, not a 1:1 verified replica",
@@ -18,6 +18,8 @@
     "basis": "Converted from rounded dimensions in Lexus US 2000 brochure. Overall width excludes mirrors. Target scale is not dimensional validation."
   },
   "openIssues": [
+    "Exterior rebuilt from pre-facelift reference photographs; dimensional surface validation is still pending.",
+    "Wheel face is a five-spoke photographic study; exact US OE wheel casting remains unverified.",
     "The specification sheet lists 55.9 inches height but its diagram shows 56.7; brochure 55.9 used provisionally.",
     "OEM archived pages disagree on 215/60R16 versus 225/60R16 tires. Wheel/tire details need placard confirmation.",
     "No factory CAD or measurements of mechanical parts supplied.",
@@ -54,10 +56,20 @@
       "id": "tis",
       "title": "Toyota / Lexus Technical Information System",
       "url": "https://techinfo.toyota.com/"
+    },
+    {
+      "id": "lexus-exterior",
+      "title": "Lexus pre-facelift exterior photographic references (UK; trim differences require US verification)",
+      "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-exterior/"
+    },
+    {
+      "id": "lexus-us-gallery",
+      "title": "Lexus USA 1998\u20132000 GS 300 reference album",
+      "url": "https://pressroom.lexus.com/album/1998-2000-lexus-gs-300-second-2nd-generation/"
     }
   ],
-  "meshCount": 402,
-  "triangleCount": 404204,
+  "meshCount": 445,
+  "triangleCount": 514792,
   "parts": [
     {
       "id": "floor",
@@ -326,9 +338,9 @@
       "source": "Original Blender geometry",
       "meshName": "front-fender-left__Front_Fender_left",
       "dimensionsMetres": [
-        0.12436,
-        1.74226,
-        0.65217
+        0.17446,
+        1.47,
+        0.725
       ]
     },
     {
@@ -343,14 +355,14 @@
       "source": "Original Blender geometry",
       "meshName": "front-door-left__Front_Door_left",
       "dimensionsMetres": [
-        0.03999,
-        1.04401,
-        0.66624
+        0.03631,
+        1.124,
+        0.73285
       ]
     },
     {
-      "id": "handle-front-door-left",
-      "name": "Door handle front-door left",
+      "id": "handle-recess-front-door-left",
+      "name": "Door handle recess left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -358,11 +370,28 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "handle-front-door-left__Door_handle_front-door_left",
+      "meshName": "handle-recess-front-door-left__Door_handle_recess_left",
       "dimensionsMetres": [
-        0.025,
-        0.15,
-        0.032
+        0.012,
+        0.16,
+        0.05
+      ]
+    },
+    {
+      "id": "handle-front-door-left",
+      "name": "Body-color door handle left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "handle-front-door-left__Body-color_door_handle_left",
+      "dimensionsMetres": [
+        0.022,
+        0.137,
+        0.027
       ]
     },
     {
@@ -377,14 +406,14 @@
       "source": "Original Blender geometry",
       "meshName": "rear-door-left__Rear_Door_left",
       "dimensionsMetres": [
-        0.03999,
-        0.80513,
-        0.66166
+        0.03544,
+        0.913,
+        0.75145
       ]
     },
     {
-      "id": "handle-rear-door-left",
-      "name": "Door handle rear-door left",
+      "id": "handle-recess-rear-door-left",
+      "name": "Door handle recess left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -392,11 +421,28 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "handle-rear-door-left__Door_handle_rear-door_left",
+      "meshName": "handle-recess-rear-door-left__Door_handle_recess_left",
       "dimensionsMetres": [
-        0.025,
-        0.15,
-        0.032
+        0.012,
+        0.16,
+        0.05
+      ]
+    },
+    {
+      "id": "handle-rear-door-left",
+      "name": "Body-color door handle left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "handle-rear-door-left__Body-color_door_handle_left",
+      "dimensionsMetres": [
+        0.022,
+        0.137,
+        0.027
       ]
     },
     {
@@ -411,14 +457,14 @@
       "source": "Original Blender geometry",
       "meshName": "rear-quarter-left__Rear_Quarter_left",
       "dimensionsMetres": [
-        0.12057,
-        1.01621,
-        0.62801
+        0.14951,
+        0.983,
+        0.755
       ]
     },
     {
       "id": "arch-front-left",
-      "name": "Wheel arch lip front left",
+      "name": "Wheel arch rolled lip front left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -426,16 +472,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "arch-front-left__Wheel_arch_lip_front_left",
+      "meshName": "arch-front-left__Wheel_arch_rolled_lip_front_left",
       "dimensionsMetres": [
-        0.02196,
-        0.75713,
-        0.37899
+        0.04041,
+        0.75154,
+        0.37585
       ]
     },
     {
       "id": "arch-rear-left",
-      "name": "Wheel arch lip rear left",
+      "name": "Wheel arch rolled lip rear left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -443,16 +489,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "arch-rear-left__Wheel_arch_lip_rear_left",
+      "meshName": "arch-rear-left__Wheel_arch_rolled_lip_rear_left",
       "dimensionsMetres": [
-        0.02191,
-        0.75746,
-        0.37916
+        0.0347,
+        0.75158,
+        0.37589
       ]
     },
     {
       "id": "belt-trim-left",
-      "name": "Body side molding left",
+      "name": "Body side protective molding left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -460,16 +506,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "belt-trim-left__Body_side_molding_left",
+      "meshName": "belt-trim-left__Body_side_protective_molding_left",
       "dimensionsMetres": [
         0.024,
-        1.96,
-        0.02283
+        2.05006,
+        0.02092
       ]
     },
     {
-      "id": "glass-front-left",
-      "name": "Front door glass left",
+      "id": "belt-trim-chrome-left",
+      "name": "Molding bright edge left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -477,16 +523,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "glass-front-left__Front_door_glass_left",
+      "meshName": "belt-trim-chrome-left__Molding_bright_edge_left",
       "dimensionsMetres": [
-        0.11375,
-        0.91012,
-        0.49209
+        0.009,
+        2.05002,
+        0.00666
       ]
     },
     {
-      "id": "window-seal-front-left",
-      "name": "Window weatherstrip front left",
+      "id": "rocker-left",
+      "name": "Rocker outer skin left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -494,113 +540,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "window-seal-front-left__Window_weatherstrip_front_left",
+      "meshName": "rocker-left__Rocker_outer_skin_left",
       "dimensionsMetres": [
-        0.17783,
-        1.02537,
-        0.66422
-      ]
-    },
-    {
-      "id": "glass-rear-left",
-      "name": "Rear door glass left",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "glass-rear-left__Rear_door_glass_left",
-      "dimensionsMetres": [
-        0.11375,
-        0.90006,
-        0.46212
-      ]
-    },
-    {
-      "id": "window-seal-rear-left",
-      "name": "Window weatherstrip rear left",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "window-seal-rear-left__Window_weatherstrip_rear_left",
-      "dimensionsMetres": [
-        0.18545,
-        1.00268,
-        0.67934
-      ]
-    },
-    {
-      "id": "pillar-b-left",
-      "name": "B pillar left",
-      "system": "structure",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "pillar-b-left__B_pillar_left",
-      "dimensionsMetres": [
-        0.052,
-        0.055,
-        0.47
-      ]
-    },
-    {
-      "id": "mirror-left",
-      "name": "Side mirror housing left",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-left__Side_mirror_housing_left",
-      "dimensionsMetres": [
-        0.22,
-        0.21,
-        0.11
-      ]
-    },
-    {
-      "id": "mirror-glass-left",
-      "name": "Side mirror glass left",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-glass-left__Side_mirror_glass_left",
-      "dimensionsMetres": [
-        0.17,
         0.01,
-        0.08
-      ]
-    },
-    {
-      "id": "mirror-arm-left",
-      "name": "Mirror mounting arm left",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-arm-left__Mirror_mounting_arm_left",
-      "dimensionsMetres": [
-        0.15806,
-        0.06361,
-        0.06149
+        2.04,
+        0.13
       ]
     },
     {
@@ -615,9 +559,9 @@
       "source": "Original Blender geometry",
       "meshName": "front-fender-right__Front_Fender_right",
       "dimensionsMetres": [
-        0.12407,
-        1.74001,
-        0.65057
+        0.17446,
+        1.47,
+        0.725
       ]
     },
     {
@@ -632,14 +576,14 @@
       "source": "Original Blender geometry",
       "meshName": "front-door-right__Front_Door_right",
       "dimensionsMetres": [
-        0.03994,
-        1.04401,
-        0.665
+        0.03631,
+        1.124,
+        0.73285
       ]
     },
     {
-      "id": "handle-front-door-right",
-      "name": "Door handle front-door right",
+      "id": "handle-recess-front-door-right",
+      "name": "Door handle recess right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -647,11 +591,28 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "handle-front-door-right__Door_handle_front-door_right",
+      "meshName": "handle-recess-front-door-right__Door_handle_recess_right",
       "dimensionsMetres": [
-        0.025,
-        0.15,
-        0.032
+        0.012,
+        0.16,
+        0.05
+      ]
+    },
+    {
+      "id": "handle-front-door-right",
+      "name": "Body-color door handle right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "handle-front-door-right__Body-color_door_handle_right",
+      "dimensionsMetres": [
+        0.022,
+        0.137,
+        0.027
       ]
     },
     {
@@ -666,14 +627,14 @@
       "source": "Original Blender geometry",
       "meshName": "rear-door-right__Rear_Door_right",
       "dimensionsMetres": [
-        0.03994,
-        0.804,
-        0.66039
+        0.03544,
+        0.913,
+        0.75145
       ]
     },
     {
-      "id": "handle-rear-door-right",
-      "name": "Door handle rear-door right",
+      "id": "handle-recess-rear-door-right",
+      "name": "Door handle recess right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -681,11 +642,28 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "handle-rear-door-right__Door_handle_rear-door_right",
+      "meshName": "handle-recess-rear-door-right__Door_handle_recess_right",
       "dimensionsMetres": [
-        0.025,
-        0.15,
-        0.032
+        0.012,
+        0.16,
+        0.05
+      ]
+    },
+    {
+      "id": "handle-rear-door-right",
+      "name": "Body-color door handle right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "handle-rear-door-right__Body-color_door_handle_right",
+      "dimensionsMetres": [
+        0.022,
+        0.137,
+        0.027
       ]
     },
     {
@@ -700,14 +678,14 @@
       "source": "Original Blender geometry",
       "meshName": "rear-quarter-right__Rear_Quarter_right",
       "dimensionsMetres": [
-        0.12031,
-        1.01493,
-        0.62628
+        0.14951,
+        0.983,
+        0.755
       ]
     },
     {
       "id": "arch-front-right",
-      "name": "Wheel arch lip front right",
+      "name": "Wheel arch rolled lip front right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -715,16 +693,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "arch-front-right__Wheel_arch_lip_front_right",
+      "meshName": "arch-front-right__Wheel_arch_rolled_lip_front_right",
       "dimensionsMetres": [
-        0.02196,
-        0.75713,
-        0.37899
+        0.04041,
+        0.75154,
+        0.37585
       ]
     },
     {
       "id": "arch-rear-right",
-      "name": "Wheel arch lip rear right",
+      "name": "Wheel arch rolled lip rear right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -732,16 +710,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "arch-rear-right__Wheel_arch_lip_rear_right",
+      "meshName": "arch-rear-right__Wheel_arch_rolled_lip_rear_right",
       "dimensionsMetres": [
-        0.02191,
-        0.75746,
-        0.37916
+        0.0347,
+        0.75158,
+        0.37589
       ]
     },
     {
       "id": "belt-trim-right",
-      "name": "Body side molding right",
+      "name": "Body side protective molding right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -749,16 +727,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "belt-trim-right__Body_side_molding_right",
+      "meshName": "belt-trim-right__Body_side_protective_molding_right",
       "dimensionsMetres": [
         0.024,
-        1.96,
-        0.02283
+        2.05006,
+        0.02092
       ]
     },
     {
-      "id": "glass-front-right",
-      "name": "Front door glass right",
+      "id": "belt-trim-chrome-right",
+      "name": "Molding bright edge right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -766,16 +744,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "glass-front-right__Front_door_glass_right",
+      "meshName": "belt-trim-chrome-right__Molding_bright_edge_right",
       "dimensionsMetres": [
-        0.11375,
-        0.91012,
-        0.49209
+        0.009,
+        2.05002,
+        0.00666
       ]
     },
     {
-      "id": "window-seal-front-right",
-      "name": "Window weatherstrip front right",
+      "id": "rocker-right",
+      "name": "Rocker outer skin right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -783,118 +761,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "window-seal-front-right__Window_weatherstrip_front_right",
+      "meshName": "rocker-right__Rocker_outer_skin_right",
       "dimensionsMetres": [
-        0.17783,
-        1.02537,
-        0.66422
-      ]
-    },
-    {
-      "id": "glass-rear-right",
-      "name": "Rear door glass right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "glass-rear-right__Rear_door_glass_right",
-      "dimensionsMetres": [
-        0.11375,
-        0.90006,
-        0.46212
-      ]
-    },
-    {
-      "id": "window-seal-rear-right",
-      "name": "Window weatherstrip rear right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "window-seal-rear-right__Window_weatherstrip_rear_right",
-      "dimensionsMetres": [
-        0.18545,
-        1.00268,
-        0.67934
-      ]
-    },
-    {
-      "id": "pillar-b-right",
-      "name": "B pillar right",
-      "system": "structure",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "pillar-b-right__B_pillar_right",
-      "dimensionsMetres": [
-        0.052,
-        0.055,
-        0.47
-      ]
-    },
-    {
-      "id": "mirror-right",
-      "name": "Side mirror housing right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-right__Side_mirror_housing_right",
-      "dimensionsMetres": [
-        0.22,
-        0.21,
-        0.11
-      ]
-    },
-    {
-      "id": "mirror-glass-right",
-      "name": "Side mirror glass right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-glass-right__Side_mirror_glass_right",
-      "dimensionsMetres": [
-        0.17,
         0.01,
-        0.08
-      ]
-    },
-    {
-      "id": "mirror-arm-right",
-      "name": "Mirror mounting arm right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "mirror-arm-right__Mirror_mounting_arm_right",
-      "dimensionsMetres": [
-        0.15806,
-        0.06361,
-        0.06149
+        2.04,
+        0.13
       ]
     },
     {
       "id": "hood",
-      "name": "Hood",
+      "name": "S160 contoured hood",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -902,16 +778,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "hood__Hood",
+      "meshName": "hood__S160_contoured_hood",
       "dimensionsMetres": [
-        1.6,
-        1.65587,
-        0.1768
+        1.584,
+        1.5305,
+        0.082
       ]
     },
     {
-      "id": "roof",
-      "name": "Roof panel",
+      "id": "fender-crown-left",
+      "name": "Front fender crown left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -919,11 +795,62 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "roof__Roof_panel",
+      "meshName": "fender-crown-left__Front_fender_crown_left",
       "dimensionsMetres": [
-        1.32,
-        0.945,
-        0.11148
+        0.07801,
+        1.349,
+        0.09251
+      ]
+    },
+    {
+      "id": "quarter-shoulder-left",
+      "name": "Rear quarter shoulder left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "quarter-shoulder-left__Rear_quarter_shoulder_left",
+      "dimensionsMetres": [
+        0.10662,
+        0.76,
+        0.052
+      ]
+    },
+    {
+      "id": "fender-crown-right",
+      "name": "Front fender crown right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "fender-crown-right__Front_fender_crown_right",
+      "dimensionsMetres": [
+        0.07801,
+        1.349,
+        0.09251
+      ]
+    },
+    {
+      "id": "quarter-shoulder-right",
+      "name": "Rear quarter shoulder right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "quarter-shoulder-right__Rear_quarter_shoulder_right",
+      "dimensionsMetres": [
+        0.10662,
+        0.76,
+        0.052
       ]
     },
     {
@@ -938,14 +865,31 @@
       "source": "Original Blender geometry",
       "meshName": "trunk-lid__Trunk_lid",
       "dimensionsMetres": [
-        1.5,
-        0.77055,
-        0.06498
+        1.532,
+        0.74,
+        0.054
+      ]
+    },
+    {
+      "id": "roof",
+      "name": "Continuous crowned roof panel",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "roof__Continuous_crowned_roof_panel",
+      "dimensionsMetres": [
+        1.37399,
+        1.18,
+        0.10905
       ]
     },
     {
       "id": "windshield",
-      "name": "Windshield",
+      "name": "Curved windshield",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -953,16 +897,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "windshield__Windshield",
+      "meshName": "windshield__Curved_windshield",
       "dimensionsMetres": [
-        1.554,
-        0.44548,
-        0.41983
+        1.582,
+        0.556,
+        0.43389
       ]
     },
     {
       "id": "rear-glass",
-      "name": "Rear window",
+      "name": "Curved rear glass",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -970,11 +914,130 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "rear-glass__Rear_window",
+      "meshName": "rear-glass__Curved_rear_glass",
       "dimensionsMetres": [
-        1.494,
-        0.52287,
-        0.40335
+        1.53,
+        0.52,
+        0.37581
+      ]
+    },
+    {
+      "id": "glass-front-left",
+      "name": "Front side glass left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "glass-front-left__Front_side_glass_left",
+      "dimensionsMetres": [
+        0.14785,
+        1.076,
+        0.42385
+      ]
+    },
+    {
+      "id": "window-seal-front-left",
+      "name": "Window weatherstrip front left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "window-seal-front-left__Window_weatherstrip_front_left",
+      "dimensionsMetres": [
+        0.15985,
+        1.088,
+        0.43534
+      ]
+    },
+    {
+      "id": "glass-rear-left",
+      "name": "Rear side glass left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "glass-rear-left__Rear_side_glass_left",
+      "dimensionsMetres": [
+        0.1474,
+        0.604,
+        0.42254
+      ]
+    },
+    {
+      "id": "window-seal-rear-left",
+      "name": "Window weatherstrip rear left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "window-seal-rear-left__Window_weatherstrip_rear_left",
+      "dimensionsMetres": [
+        0.15922,
+        0.616,
+        0.43354
+      ]
+    },
+    {
+      "id": "glass-quarter-left",
+      "name": "Quarter side glass left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "glass-quarter-left__Quarter_side_glass_left",
+      "dimensionsMetres": [
+        0.09738,
+        0.254,
+        0.27916
+      ]
+    },
+    {
+      "id": "window-seal-quarter-left",
+      "name": "Window weatherstrip quarter left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "window-seal-quarter-left__Window_weatherstrip_quarter_left",
+      "dimensionsMetres": [
+        0.10932,
+        0.266,
+        0.29019
+      ]
+    },
+    {
+      "id": "pillar-c-left",
+      "name": "C pillar sheet metal left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "pillar-c-left__C_pillar_sheet_metal_left",
+      "dimensionsMetres": [
+        0.175,
+        0.67,
+        0.36156
       ]
     },
     {
@@ -989,14 +1052,14 @@
       "source": "Original Blender geometry",
       "meshName": "pillar-a-left__A_pillar_left",
       "dimensionsMetres": [
-        0.16937,
-        0.49586,
-        0.48102
+        0.15928,
+        0.57163,
+        0.41917
       ]
     },
     {
-      "id": "pillar-c-left",
-      "name": "C pillar left",
+      "id": "roof-rail-left",
+      "name": "Roof side rail left",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1004,11 +1067,96 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "pillar-c-left__C_pillar_left",
+      "meshName": "roof-rail-left__Roof_side_rail_left",
       "dimensionsMetres": [
-        0.19799,
-        0.62248,
-        0.49138
+        0.052,
+        1.18263,
+        0.08723
+      ]
+    },
+    {
+      "id": "pillar-b-left",
+      "name": "Black B pillar left",
+      "system": "structure",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "pillar-b-left__Black_B_pillar_left",
+      "dimensionsMetres": [
+        0.17599,
+        0.032,
+        0.43214
+      ]
+    },
+    {
+      "id": "window-sill-left",
+      "name": "Window lower bright trim left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "window-sill-left__Window_lower_bright_trim_left",
+      "dimensionsMetres": [
+        0.006,
+        2.0,
+        0.00571
+      ]
+    },
+    {
+      "id": "mirror-left",
+      "name": "Door mirror housing left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-left__Door_mirror_housing_left",
+      "dimensionsMetres": [
+        0.197,
+        0.21,
+        0.115
+      ]
+    },
+    {
+      "id": "mirror-glass-left",
+      "name": "Door mirror glass left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-glass-left__Door_mirror_glass_left",
+      "dimensionsMetres": [
+        0.17,
+        0.006,
+        0.09
+      ]
+    },
+    {
+      "id": "mirror-arm-left",
+      "name": "Door mirror support left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-arm-left__Door_mirror_support_left",
+      "dimensionsMetres": [
+        0.042,
+        0.042,
+        0.12052
       ]
     },
     {
@@ -1023,14 +1171,14 @@
       "source": "Original Blender geometry",
       "meshName": "wiper-left__Windshield_wiper_left",
       "dimensionsMetres": [
-        0.47,
-        0.025,
-        0.017
+        0.50033,
+        0.024,
+        0.01541
       ]
     },
     {
-      "id": "headlight-outer-left",
-      "name": "Headlamp outer left",
+      "id": "glass-front-right",
+      "name": "Front side glass right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1038,16 +1186,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "headlight-outer-left__Headlamp_outer_left",
+      "meshName": "glass-front-right__Front_side_glass_right",
       "dimensionsMetres": [
-        0.39,
-        0.104,
-        0.182
+        0.14785,
+        1.076,
+        0.42385
       ]
     },
     {
-      "id": "headlight-bezel-outer-left",
-      "name": "Lamp bezel outer left",
+      "id": "window-seal-front-right",
+      "name": "Window weatherstrip front right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1055,16 +1203,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "headlight-bezel-outer-left__Lamp_bezel_outer_left",
+      "meshName": "window-seal-front-right__Window_weatherstrip_front_right",
       "dimensionsMetres": [
-        0.414,
-        0.092,
-        0.202
+        0.15985,
+        1.088,
+        0.43534
       ]
     },
     {
-      "id": "headlight-inner-left",
-      "name": "Headlamp inner left",
+      "id": "glass-rear-right",
+      "name": "Rear side glass right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1072,16 +1220,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "headlight-inner-left__Headlamp_inner_left",
+      "meshName": "glass-rear-right__Rear_side_glass_right",
       "dimensionsMetres": [
-        0.25,
-        0.104,
-        0.182
+        0.1474,
+        0.604,
+        0.42254
       ]
     },
     {
-      "id": "headlight-bezel-inner-left",
-      "name": "Lamp bezel inner left",
+      "id": "window-seal-rear-right",
+      "name": "Window weatherstrip rear right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1089,16 +1237,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "headlight-bezel-inner-left__Lamp_bezel_inner_left",
+      "meshName": "window-seal-rear-right__Window_weatherstrip_rear_right",
       "dimensionsMetres": [
-        0.274,
-        0.092,
-        0.202
+        0.15922,
+        0.616,
+        0.43354
       ]
     },
     {
-      "id": "marker-left",
-      "name": "Front side marker left",
+      "id": "glass-quarter-right",
+      "name": "Quarter side glass right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1106,16 +1254,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "marker-left__Front_side_marker_left",
+      "meshName": "glass-quarter-right__Quarter_side_glass_right",
       "dimensionsMetres": [
-        0.062,
-        0.144,
-        0.066
+        0.09738,
+        0.254,
+        0.27916
       ]
     },
     {
-      "id": "tail-lamp-left",
-      "name": "Tail lamp left",
+      "id": "window-seal-quarter-right",
+      "name": "Window weatherstrip quarter right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1123,16 +1271,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "tail-lamp-left__Tail_lamp_left",
+      "meshName": "window-seal-quarter-right__Window_weatherstrip_quarter_right",
       "dimensionsMetres": [
-        0.51,
-        0.064,
-        0.194
+        0.10932,
+        0.266,
+        0.29019
       ]
     },
     {
-      "id": "fog-lamp-left",
-      "name": "Fog lamp left",
+      "id": "pillar-c-right",
+      "name": "C pillar sheet metal right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1140,28 +1288,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "fog-lamp-left__Fog_lamp_left",
+      "meshName": "pillar-c-right__C_pillar_sheet_metal_right",
       "dimensionsMetres": [
-        0.2,
-        0.02,
-        0.065
-      ]
-    },
-    {
-      "id": "exhaust-tip-left",
-      "name": "Exhaust tip left",
-      "system": "exhaust",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "exhaust-tip-left__Exhaust_tip_left",
-      "dimensionsMetres": [
-        0.12,
-        0.16,
-        0.07
+        0.175,
+        0.67,
+        0.36156
       ]
     },
     {
@@ -1176,14 +1307,14 @@
       "source": "Original Blender geometry",
       "meshName": "pillar-a-right__A_pillar_right",
       "dimensionsMetres": [
-        0.16937,
-        0.49586,
-        0.48102
+        0.15928,
+        0.57163,
+        0.41917
       ]
     },
     {
-      "id": "pillar-c-right",
-      "name": "C pillar right",
+      "id": "roof-rail-right",
+      "name": "Roof side rail right",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1191,11 +1322,96 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "pillar-c-right__C_pillar_right",
+      "meshName": "roof-rail-right__Roof_side_rail_right",
       "dimensionsMetres": [
-        0.19799,
-        0.62248,
-        0.49138
+        0.052,
+        1.18263,
+        0.08723
+      ]
+    },
+    {
+      "id": "pillar-b-right",
+      "name": "Black B pillar right",
+      "system": "structure",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "pillar-b-right__Black_B_pillar_right",
+      "dimensionsMetres": [
+        0.17599,
+        0.032,
+        0.43214
+      ]
+    },
+    {
+      "id": "window-sill-right",
+      "name": "Window lower bright trim right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "window-sill-right__Window_lower_bright_trim_right",
+      "dimensionsMetres": [
+        0.006,
+        2.0,
+        0.00571
+      ]
+    },
+    {
+      "id": "mirror-right",
+      "name": "Door mirror housing right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-right__Door_mirror_housing_right",
+      "dimensionsMetres": [
+        0.197,
+        0.21,
+        0.115
+      ]
+    },
+    {
+      "id": "mirror-glass-right",
+      "name": "Door mirror glass right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-glass-right__Door_mirror_glass_right",
+      "dimensionsMetres": [
+        0.17,
+        0.006,
+        0.09
+      ]
+    },
+    {
+      "id": "mirror-arm-right",
+      "name": "Door mirror support right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "mirror-arm-right__Door_mirror_support_right",
+      "dimensionsMetres": [
+        0.042,
+        0.042,
+        0.12052
       ]
     },
     {
@@ -1210,298 +1426,9 @@
       "source": "Original Blender geometry",
       "meshName": "wiper-right__Windshield_wiper_right",
       "dimensionsMetres": [
-        0.47,
-        0.025,
-        0.017
-      ]
-    },
-    {
-      "id": "headlight-outer-right",
-      "name": "Headlamp outer right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "headlight-outer-right__Headlamp_outer_right",
-      "dimensionsMetres": [
-        0.39,
-        0.104,
-        0.182
-      ]
-    },
-    {
-      "id": "headlight-bezel-outer-right",
-      "name": "Lamp bezel outer right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "headlight-bezel-outer-right__Lamp_bezel_outer_right",
-      "dimensionsMetres": [
-        0.414,
-        0.092,
-        0.202
-      ]
-    },
-    {
-      "id": "headlight-inner-right",
-      "name": "Headlamp inner right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "headlight-inner-right__Headlamp_inner_right",
-      "dimensionsMetres": [
-        0.25,
-        0.104,
-        0.182
-      ]
-    },
-    {
-      "id": "headlight-bezel-inner-right",
-      "name": "Lamp bezel inner right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "headlight-bezel-inner-right__Lamp_bezel_inner_right",
-      "dimensionsMetres": [
-        0.274,
-        0.092,
-        0.202
-      ]
-    },
-    {
-      "id": "marker-right",
-      "name": "Front side marker right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "marker-right__Front_side_marker_right",
-      "dimensionsMetres": [
-        0.062,
-        0.144,
-        0.066
-      ]
-    },
-    {
-      "id": "tail-lamp-right",
-      "name": "Tail lamp right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "tail-lamp-right__Tail_lamp_right",
-      "dimensionsMetres": [
-        0.51,
-        0.064,
-        0.194
-      ]
-    },
-    {
-      "id": "fog-lamp-right",
-      "name": "Fog lamp right",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "fog-lamp-right__Fog_lamp_right",
-      "dimensionsMetres": [
-        0.2,
-        0.02,
-        0.065
-      ]
-    },
-    {
-      "id": "exhaust-tip-right",
-      "name": "Exhaust tip right",
-      "system": "exhaust",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "exhaust-tip-right__Exhaust_tip_right",
-      "dimensionsMetres": [
-        0.12,
-        0.16,
-        0.07
-      ]
-    },
-    {
-      "id": "front-bumper",
-      "name": "Front bumper cover",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "front-bumper__Front_bumper_cover",
-      "dimensionsMetres": [
-        1.74,
-        0.266,
-        0.32
-      ]
-    },
-    {
-      "id": "rear-bumper",
-      "name": "Rear bumper cover",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "rear-bumper__Rear_bumper_cover",
-      "dimensionsMetres": [
-        1.72,
-        0.28568,
-        0.35
-      ]
-    },
-    {
-      "id": "grille-back",
-      "name": "Grille backing",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "grille-back__Grille_backing",
-      "dimensionsMetres": [
-        0.46,
-        0.022,
-        0.22
-      ]
-    },
-    {
-      "id": "grille",
-      "name": "Front grille bars",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "grille__Front_grille_bars",
-      "dimensionsMetres": [
-        0.4418,
-        0.017,
-        0.175
-      ]
-    },
-    {
-      "id": "grille-surround",
-      "name": "Grille surround",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "grille-surround__Grille_surround",
-      "dimensionsMetres": [
-        0.465,
-        0.013,
-        0.192
-      ]
-    },
-    {
-      "id": "lower-grille",
-      "name": "Lower air intake",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "lower-grille__Lower_air_intake",
-      "dimensionsMetres": [
-        0.7,
-        0.014,
-        0.115
-      ]
-    },
-    {
-      "id": "lower-grille-slats",
-      "name": "Lower intake slats",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "lower-grille-slats__Lower_intake_slats",
-      "dimensionsMetres": [
-        0.7,
-        0.012,
-        0.088
-      ]
-    },
-    {
-      "id": "plate-front",
-      "name": "Front license plate bracket",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "plate-front__Front_license_plate_bracket",
-      "dimensionsMetres": [
-        0.3,
-        0.012,
-        0.12
-      ]
-    },
-    {
-      "id": "plate-rear",
-      "name": "Rear license plate bracket",
-      "system": "body",
-      "status": "modeled",
-      "accuracy": "unverified",
-      "oemPartNumber": null,
-      "quantityVerified": false,
-      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
-      "source": "Original Blender geometry",
-      "meshName": "plate-rear__Rear_license_plate_bracket",
-      "dimensionsMetres": [
-        0.3,
-        0.012,
-        0.15
+        0.50033,
+        0.024,
+        0.01541
       ]
     },
     {
@@ -1516,14 +1443,14 @@
       "source": "Original Blender geometry",
       "meshName": "fuel-door__Fuel_filler_door",
       "dimensionsMetres": [
-        0.009,
-        0.18,
-        0.14
+        0.01,
+        0.178,
+        0.16
       ]
     },
     {
-      "id": "front-fender-top-left",
-      "name": "Front Fender Top left",
+      "id": "front-bumper",
+      "name": "Front wraparound bumper cover",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1531,16 +1458,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "front-fender-top-left__Front_Fender_Top_left",
+      "meshName": "front-bumper__Front_wraparound_bumper_cover",
       "dimensionsMetres": [
-        0.22162,
-        1.65772,
-        0.18887
+        1.786,
+        0.22704,
+        0.4
       ]
     },
     {
-      "id": "rear-quarter-top-left",
-      "name": "Rear Quarter Top left",
+      "id": "front-bumper-molding",
+      "name": "Front bumper molding",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1548,16 +1475,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "rear-quarter-top-left__Rear_Quarter_Top_left",
+      "meshName": "front-bumper-molding__Front_bumper_molding",
       "dimensionsMetres": [
-        0.15101,
-        0.77158,
-        0.09535
+        1.76533,
+        0.22961,
+        0.02283
       ]
     },
     {
-      "id": "front-fender-top-right",
-      "name": "Front Fender Top right",
+      "id": "front-bumper-top",
+      "name": "Front fascia shoulder",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1565,16 +1492,16 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "front-fender-top-right__Front_Fender_Top_right",
+      "meshName": "front-bumper-top__Front_fascia_shoulder",
       "dimensionsMetres": [
-        0.21727,
-        1.65569,
-        0.18663
+        1.684,
+        0.27945,
+        0.018
       ]
     },
     {
-      "id": "rear-quarter-top-right",
-      "name": "Rear Quarter Top right",
+      "id": "rear-bumper",
+      "name": "Rear wraparound bumper cover",
       "system": "body",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1582,11 +1509,827 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "rear-quarter-top-right__Rear_Quarter_Top_right",
+      "meshName": "rear-bumper__Rear_wraparound_bumper_cover",
       "dimensionsMetres": [
-        0.14655,
-        0.77057,
-        0.09199
+        1.786,
+        0.23736,
+        0.36
+      ]
+    },
+    {
+      "id": "rear-bumper-molding",
+      "name": "Rear bumper molding",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "rear-bumper-molding__Rear_bumper_molding",
+      "dimensionsMetres": [
+        1.76572,
+        0.23892,
+        0.02283
+      ]
+    },
+    {
+      "id": "rear-bumper-top",
+      "name": "Rear fascia shoulder",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "rear-bumper-top__Rear_fascia_shoulder",
+      "dimensionsMetres": [
+        1.684,
+        0.2676,
+        0.018
+      ]
+    },
+    {
+      "id": "nose-panel",
+      "name": "Front nose and lamp surround",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "nose-panel__Front_nose_and_lamp_surround",
+      "dimensionsMetres": [
+        1.722,
+        0.32556,
+        0.289
+      ]
+    },
+    {
+      "id": "lamp-housing-outer-left",
+      "name": "Contoured headlamp lens outer left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-housing-outer-left__Contoured_headlamp_lens_outer_left",
+      "dimensionsMetres": [
+        0.28148,
+        0.20852,
+        0.25175
+      ]
+    },
+    {
+      "id": "lamp-seal-outer-left",
+      "name": "Headlamp seal outer left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-seal-outer-left__Headlamp_seal_outer_left",
+      "dimensionsMetres": [
+        0.28944,
+        0.21644,
+        0.2596
+      ]
+    },
+    {
+      "id": "reflector-outer-left",
+      "name": "Headlamp reflector outer left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "reflector-outer-left__Headlamp_reflector_outer_left",
+      "dimensionsMetres": [
+        0.114,
+        0.07244,
+        0.114
+      ]
+    },
+    {
+      "id": "lamp-optics-outer-left",
+      "name": "Headlamp optical ribs outer left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-optics-outer-left__Headlamp_optical_ribs_outer_left",
+      "dimensionsMetres": [
+        0.0875,
+        0.07038,
+        0.10339
+      ]
+    },
+    {
+      "id": "marker-left",
+      "name": "Amber side section left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "marker-left__Amber_side_section_left",
+      "dimensionsMetres": [
+        0.041,
+        0.0447,
+        0.049
+      ]
+    },
+    {
+      "id": "lamp-housing-inner-left",
+      "name": "Contoured headlamp lens inner left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-housing-inner-left__Contoured_headlamp_lens_inner_left",
+      "dimensionsMetres": [
+        0.16053,
+        0.08281,
+        0.15086
+      ]
+    },
+    {
+      "id": "lamp-seal-inner-left",
+      "name": "Headlamp seal inner left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-seal-inner-left__Headlamp_seal_inner_left",
+      "dimensionsMetres": [
+        0.16841,
+        0.09067,
+        0.15876
+      ]
+    },
+    {
+      "id": "reflector-inner-left",
+      "name": "Headlamp reflector inner left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "reflector-inner-left__Headlamp_reflector_inner_left",
+      "dimensionsMetres": [
+        0.076,
+        0.03724,
+        0.076
+      ]
+    },
+    {
+      "id": "lamp-optics-inner-left",
+      "name": "Headlamp optical ribs inner left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-optics-inner-left__Headlamp_optical_ribs_inner_left",
+      "dimensionsMetres": [
+        0.059,
+        0.03553,
+        0.06919
+      ]
+    },
+    {
+      "id": "grille-back",
+      "name": "Pre-facelift trapezoid grille backing",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "grille-back__Pre-facelift_trapezoid_grille_backing",
+      "dimensionsMetres": [
+        0.68,
+        0.08591,
+        0.178
+      ]
+    },
+    {
+      "id": "grille-bars",
+      "name": "Vertical grille bars",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "grille-bars__Vertical_grille_bars",
+      "dimensionsMetres": [
+        0.6028,
+        0.07911,
+        0.15011
+      ]
+    },
+    {
+      "id": "grille-surround",
+      "name": "Grille chrome perimeter",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "grille-surround__Grille_chrome_perimeter",
+      "dimensionsMetres": [
+        0.68909,
+        0.09709,
+        0.18683
+      ]
+    },
+    {
+      "id": "grille-emblem",
+      "name": "Lexus oval grille emblem",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "grille-emblem__Lexus_oval_grille_emblem",
+      "dimensionsMetres": [
+        0.09171,
+        0.00926,
+        0.06371
+      ]
+    },
+    {
+      "id": "fog-recess-left",
+      "name": "Fog lamp recess left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "fog-recess-left__Fog_lamp_recess_left",
+      "dimensionsMetres": [
+        0.2,
+        0.016,
+        0.13
+      ]
+    },
+    {
+      "id": "fog-lamp-left",
+      "name": "Rectangular fog lamp left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "fog-lamp-left__Rectangular_fog_lamp_left",
+      "dimensionsMetres": [
+        0.164,
+        0.015,
+        0.087
+      ]
+    },
+    {
+      "id": "lamp-housing-outer-right",
+      "name": "Contoured headlamp lens outer right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-housing-outer-right__Contoured_headlamp_lens_outer_right",
+      "dimensionsMetres": [
+        0.28148,
+        0.20852,
+        0.25175
+      ]
+    },
+    {
+      "id": "lamp-seal-outer-right",
+      "name": "Headlamp seal outer right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-seal-outer-right__Headlamp_seal_outer_right",
+      "dimensionsMetres": [
+        0.28944,
+        0.21644,
+        0.2596
+      ]
+    },
+    {
+      "id": "reflector-outer-right",
+      "name": "Headlamp reflector outer right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "reflector-outer-right__Headlamp_reflector_outer_right",
+      "dimensionsMetres": [
+        0.114,
+        0.07244,
+        0.114
+      ]
+    },
+    {
+      "id": "lamp-optics-outer-right",
+      "name": "Headlamp optical ribs outer right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-optics-outer-right__Headlamp_optical_ribs_outer_right",
+      "dimensionsMetres": [
+        0.0875,
+        0.07038,
+        0.10339
+      ]
+    },
+    {
+      "id": "marker-right",
+      "name": "Amber side section right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "marker-right__Amber_side_section_right",
+      "dimensionsMetres": [
+        0.041,
+        0.0447,
+        0.049
+      ]
+    },
+    {
+      "id": "lamp-housing-inner-right",
+      "name": "Contoured headlamp lens inner right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-housing-inner-right__Contoured_headlamp_lens_inner_right",
+      "dimensionsMetres": [
+        0.16053,
+        0.08281,
+        0.15086
+      ]
+    },
+    {
+      "id": "lamp-seal-inner-right",
+      "name": "Headlamp seal inner right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-seal-inner-right__Headlamp_seal_inner_right",
+      "dimensionsMetres": [
+        0.16841,
+        0.09067,
+        0.15876
+      ]
+    },
+    {
+      "id": "reflector-inner-right",
+      "name": "Headlamp reflector inner right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "reflector-inner-right__Headlamp_reflector_inner_right",
+      "dimensionsMetres": [
+        0.076,
+        0.03724,
+        0.076
+      ]
+    },
+    {
+      "id": "lamp-optics-inner-right",
+      "name": "Headlamp optical ribs inner right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lamp-optics-inner-right__Headlamp_optical_ribs_inner_right",
+      "dimensionsMetres": [
+        0.059,
+        0.03553,
+        0.06919
+      ]
+    },
+    {
+      "id": "fog-recess-right",
+      "name": "Fog lamp recess right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "fog-recess-right__Fog_lamp_recess_right",
+      "dimensionsMetres": [
+        0.2,
+        0.016,
+        0.13
+      ]
+    },
+    {
+      "id": "fog-lamp-right",
+      "name": "Rectangular fog lamp right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "fog-lamp-right__Rectangular_fog_lamp_right",
+      "dimensionsMetres": [
+        0.164,
+        0.015,
+        0.087
+      ]
+    },
+    {
+      "id": "lower-grille",
+      "name": "Lower intake recess",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lower-grille__Lower_intake_recess",
+      "dimensionsMetres": [
+        1.09,
+        0.018,
+        0.139
+      ]
+    },
+    {
+      "id": "lower-grille-bars",
+      "name": "Lower intake horizontal bars",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "lower-grille-bars__Lower_intake_horizontal_bars",
+      "dimensionsMetres": [
+        1.1002,
+        0.022,
+        0.09161
+      ]
+    },
+    {
+      "id": "plate-front",
+      "name": "Front plate mount",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "plate-front__Front_plate_mount",
+      "dimensionsMetres": [
+        0.31,
+        0.019,
+        0.155
+      ]
+    },
+    {
+      "id": "rear-panel",
+      "name": "Rear panel",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "rear-panel__Rear_panel",
+      "dimensionsMetres": [
+        1.61,
+        0.11,
+        0.325
+      ]
+    },
+    {
+      "id": "rear-plate-recess",
+      "name": "Rear plate recess",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "rear-plate-recess__Rear_plate_recess",
+      "dimensionsMetres": [
+        0.35,
+        0.02,
+        0.175
+      ]
+    },
+    {
+      "id": "tail-lamp-left",
+      "name": "Tail Lamp left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-lamp-left__Tail_Lamp_left",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.216
+      ]
+    },
+    {
+      "id": "tail-signal-left",
+      "name": "Tail Signal left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-signal-left__Tail_Signal_left",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.038
+      ]
+    },
+    {
+      "id": "tail-reverse-left",
+      "name": "Tail Reverse left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-reverse-left__Tail_Reverse_left",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.02
+      ]
+    },
+    {
+      "id": "inner-tail-left",
+      "name": "Trunk-mounted inner tail lamp left",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "inner-tail-left__Trunk-mounted_inner_tail_lamp_left",
+      "dimensionsMetres": [
+        0.128,
+        0.004,
+        0.124
+      ]
+    },
+    {
+      "id": "exhaust-tip-left",
+      "name": "Exhaust outlet left",
+      "system": "exhaust",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "exhaust-tip-left__Exhaust_outlet_left",
+      "dimensionsMetres": [
+        0.07,
+        0.07,
+        0.13
+      ]
+    },
+    {
+      "id": "exhaust-tip-dark-left",
+      "name": "Exhaust outlet interior left",
+      "system": "exhaust",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "exhaust-tip-dark-left__Exhaust_outlet_interior_left",
+      "dimensionsMetres": [
+        0.058,
+        0.058,
+        0.004
+      ]
+    },
+    {
+      "id": "tail-lamp-right",
+      "name": "Tail Lamp right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-lamp-right__Tail_Lamp_right",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.216
+      ]
+    },
+    {
+      "id": "tail-signal-right",
+      "name": "Tail Signal right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-signal-right__Tail_Signal_right",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.038
+      ]
+    },
+    {
+      "id": "tail-reverse-right",
+      "name": "Tail Reverse right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "tail-reverse-right__Tail_Reverse_right",
+      "dimensionsMetres": [
+        0.264,
+        0.0791,
+        0.02
+      ]
+    },
+    {
+      "id": "inner-tail-right",
+      "name": "Trunk-mounted inner tail lamp right",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "inner-tail-right__Trunk-mounted_inner_tail_lamp_right",
+      "dimensionsMetres": [
+        0.128,
+        0.004,
+        0.124
+      ]
+    },
+    {
+      "id": "exhaust-tip-right",
+      "name": "Exhaust outlet right",
+      "system": "exhaust",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "exhaust-tip-right__Exhaust_outlet_right",
+      "dimensionsMetres": [
+        0.07,
+        0.07,
+        0.13
+      ]
+    },
+    {
+      "id": "exhaust-tip-dark-right",
+      "name": "Exhaust outlet interior right",
+      "system": "exhaust",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "exhaust-tip-dark-right__Exhaust_outlet_interior_right",
+      "dimensionsMetres": [
+        0.058,
+        0.058,
+        0.004
+      ]
+    },
+    {
+      "id": "windshield-edge",
+      "name": "windshield edge trim",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "windshield-edge__windshield_edge_trim",
+      "dimensionsMetres": [
+        1.582,
+        0.564,
+        0.4415
+      ]
+    },
+    {
+      "id": "rear-glass-edge",
+      "name": "rear-glass edge trim",
+      "system": "body",
+      "status": "modeled",
+      "accuracy": "unverified",
+      "oemPartNumber": null,
+      "quantityVerified": false,
+      "notes": "Provisional original geometry; dimensions and fitment require measurement.",
+      "source": "Original Blender geometry",
+      "meshName": "rear-glass-edge__rear-glass_edge_trim",
+      "dimensionsMetres": [
+        1.53,
+        0.528,
+        0.38342
       ]
     },
     {
@@ -1601,14 +2344,14 @@
       "source": "Original Blender geometry",
       "meshName": "tire-front-left__Tire_front-left",
       "dimensionsMetres": [
-        0.664,
-        0.664,
-        0.12744
+        0.22,
+        0.66,
+        0.66
       ]
     },
     {
       "id": "wheel-front-left",
-      "name": "16 inch wheel barrel front-left",
+      "name": "16 inch open wheel barrel front-left",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1616,11 +2359,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "wheel-front-left__16_inch_wheel_barrel_front-left",
+      "meshName": "wheel-front-left__16_inch_open_wheel_barrel_front-left",
       "dimensionsMetres": [
-        0.404,
-        0.404,
-        0.175
+        0.408,
+        0.408,
+        0.18112
       ]
     },
     {
@@ -1635,9 +2378,9 @@
       "source": "Original Blender geometry",
       "meshName": "rim-front-left__Wheel_rim_lip_front-left",
       "dimensionsMetres": [
-        0.4,
-        0.4,
-        0.01902
+        0.41,
+        0.41,
+        0.01712
       ]
     },
     {
@@ -1652,14 +2395,14 @@
       "source": "Original Blender geometry",
       "meshName": "hub-cap-front-left__Wheel_center_cap_front-left",
       "dimensionsMetres": [
-        0.11,
-        0.11,
-        0.01
+        0.104,
+        0.104,
+        0.012
       ]
     },
     {
       "id": "spokes-front-left",
-      "name": "Wheel spokes front-left",
+      "name": "Five-spoke wheel face study front-left",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1667,11 +2410,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "spokes-front-left__Wheel_spokes_front-left",
+      "meshName": "spokes-front-left__Five-spoke_wheel_face_study_front-left",
       "dimensionsMetres": [
-        0.025,
-        0.374,
-        0.33339
+        0.027,
+        0.36669,
+        0.35529
       ]
     },
     {
@@ -1686,8 +2429,8 @@
       "source": "Original Blender geometry",
       "meshName": "lug-front-left__Wheel_lug_nuts_front-left",
       "dimensionsMetres": [
-        0.13681,
-        0.13357,
+        0.13335,
+        0.12957,
         0.014
       ]
     },
@@ -1890,14 +2633,14 @@
       "source": "Original Blender geometry",
       "meshName": "tire-front-right__Tire_front-right",
       "dimensionsMetres": [
-        0.664,
-        0.664,
-        0.12744
+        0.22,
+        0.66,
+        0.66
       ]
     },
     {
       "id": "wheel-front-right",
-      "name": "16 inch wheel barrel front-right",
+      "name": "16 inch open wheel barrel front-right",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1905,11 +2648,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "wheel-front-right__16_inch_wheel_barrel_front-right",
+      "meshName": "wheel-front-right__16_inch_open_wheel_barrel_front-right",
       "dimensionsMetres": [
-        0.404,
-        0.404,
-        0.175
+        0.408,
+        0.408,
+        0.18112
       ]
     },
     {
@@ -1924,9 +2667,9 @@
       "source": "Original Blender geometry",
       "meshName": "rim-front-right__Wheel_rim_lip_front-right",
       "dimensionsMetres": [
-        0.4,
-        0.4,
-        0.01902
+        0.41,
+        0.41,
+        0.01712
       ]
     },
     {
@@ -1941,14 +2684,14 @@
       "source": "Original Blender geometry",
       "meshName": "hub-cap-front-right__Wheel_center_cap_front-right",
       "dimensionsMetres": [
-        0.11,
-        0.11,
-        0.01
+        0.104,
+        0.104,
+        0.012
       ]
     },
     {
       "id": "spokes-front-right",
-      "name": "Wheel spokes front-right",
+      "name": "Five-spoke wheel face study front-right",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -1956,11 +2699,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "spokes-front-right__Wheel_spokes_front-right",
+      "meshName": "spokes-front-right__Five-spoke_wheel_face_study_front-right",
       "dimensionsMetres": [
-        0.025,
-        0.374,
-        0.33339
+        0.027,
+        0.36669,
+        0.35529
       ]
     },
     {
@@ -1975,8 +2718,8 @@
       "source": "Original Blender geometry",
       "meshName": "lug-front-right__Wheel_lug_nuts_front-right",
       "dimensionsMetres": [
-        0.13681,
-        0.13357,
+        0.13335,
+        0.12957,
         0.014
       ]
     },
@@ -2179,14 +2922,14 @@
       "source": "Original Blender geometry",
       "meshName": "tire-rear-left__Tire_rear-left",
       "dimensionsMetres": [
-        0.664,
-        0.664,
-        0.12744
+        0.22,
+        0.66,
+        0.66
       ]
     },
     {
       "id": "wheel-rear-left",
-      "name": "16 inch wheel barrel rear-left",
+      "name": "16 inch open wheel barrel rear-left",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -2194,11 +2937,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "wheel-rear-left__16_inch_wheel_barrel_rear-left",
+      "meshName": "wheel-rear-left__16_inch_open_wheel_barrel_rear-left",
       "dimensionsMetres": [
-        0.404,
-        0.404,
-        0.175
+        0.408,
+        0.408,
+        0.18112
       ]
     },
     {
@@ -2213,9 +2956,9 @@
       "source": "Original Blender geometry",
       "meshName": "rim-rear-left__Wheel_rim_lip_rear-left",
       "dimensionsMetres": [
-        0.4,
-        0.4,
-        0.01902
+        0.41,
+        0.41,
+        0.01712
       ]
     },
     {
@@ -2230,14 +2973,14 @@
       "source": "Original Blender geometry",
       "meshName": "hub-cap-rear-left__Wheel_center_cap_rear-left",
       "dimensionsMetres": [
-        0.11,
-        0.11,
-        0.01
+        0.104,
+        0.104,
+        0.012
       ]
     },
     {
       "id": "spokes-rear-left",
-      "name": "Wheel spokes rear-left",
+      "name": "Five-spoke wheel face study rear-left",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -2245,11 +2988,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "spokes-rear-left__Wheel_spokes_rear-left",
+      "meshName": "spokes-rear-left__Five-spoke_wheel_face_study_rear-left",
       "dimensionsMetres": [
-        0.025,
-        0.374,
-        0.33339
+        0.027,
+        0.36669,
+        0.35529
       ]
     },
     {
@@ -2264,8 +3007,8 @@
       "source": "Original Blender geometry",
       "meshName": "lug-rear-left__Wheel_lug_nuts_rear-left",
       "dimensionsMetres": [
-        0.13681,
-        0.13357,
+        0.13335,
+        0.12957,
         0.014
       ]
     },
@@ -2451,14 +3194,14 @@
       "source": "Original Blender geometry",
       "meshName": "tire-rear-right__Tire_rear-right",
       "dimensionsMetres": [
-        0.664,
-        0.664,
-        0.12744
+        0.22,
+        0.66,
+        0.66
       ]
     },
     {
       "id": "wheel-rear-right",
-      "name": "16 inch wheel barrel rear-right",
+      "name": "16 inch open wheel barrel rear-right",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -2466,11 +3209,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "wheel-rear-right__16_inch_wheel_barrel_rear-right",
+      "meshName": "wheel-rear-right__16_inch_open_wheel_barrel_rear-right",
       "dimensionsMetres": [
-        0.404,
-        0.404,
-        0.175
+        0.408,
+        0.408,
+        0.18112
       ]
     },
     {
@@ -2485,9 +3228,9 @@
       "source": "Original Blender geometry",
       "meshName": "rim-rear-right__Wheel_rim_lip_rear-right",
       "dimensionsMetres": [
-        0.4,
-        0.4,
-        0.01902
+        0.41,
+        0.41,
+        0.01712
       ]
     },
     {
@@ -2502,14 +3245,14 @@
       "source": "Original Blender geometry",
       "meshName": "hub-cap-rear-right__Wheel_center_cap_rear-right",
       "dimensionsMetres": [
-        0.11,
-        0.11,
-        0.01
+        0.104,
+        0.104,
+        0.012
       ]
     },
     {
       "id": "spokes-rear-right",
-      "name": "Wheel spokes rear-right",
+      "name": "Five-spoke wheel face study rear-right",
       "system": "wheels",
       "status": "modeled",
       "accuracy": "unverified",
@@ -2517,11 +3260,11 @@
       "quantityVerified": false,
       "notes": "Provisional original geometry; dimensions and fitment require measurement.",
       "source": "Original Blender geometry",
-      "meshName": "spokes-rear-right__Wheel_spokes_rear-right",
+      "meshName": "spokes-rear-right__Five-spoke_wheel_face_study_rear-right",
       "dimensionsMetres": [
-        0.025,
-        0.374,
-        0.33339
+        0.027,
+        0.36669,
+        0.35529
       ]
     },
     {
@@ -2536,8 +3279,8 @@
       "source": "Original Blender geometry",
       "meshName": "lug-rear-right__Wheel_lug_nuts_rear-right",
       "dimensionsMetres": [
-        0.13681,
-        0.13357,
+        0.13335,
+        0.12957,
         0.014
       ]
     },

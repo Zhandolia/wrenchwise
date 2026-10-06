@@ -5,7 +5,7 @@ An open-source 3D automotive learning workshop. The first experience is an illus
 ## Included
 
 - Three.js orbit, zoom, touch, keyboard controls and named component selection.
-- Engine and generic vehicle-layout views, opening hood, timing cover visibility, exploded assembly, chapter-linked highlighting.
+- Shared GS 300 vehicle/engine assembly, removable hood, timing cover visibility, exploded assembly and chapter-linked highlighting.
 - Six anatomy chapters, parts-planning checklist and link to Toyota/Lexus TIS.
 - Lexus sedan/SUV collection with explicit model-needed states.
 - Durable GLB storage in R2, source/fitment/license metadata in D1, and persistent vehicle/chapter comments.
@@ -28,7 +28,7 @@ Apply the initial migration once per local database. Do not replay it. Later sch
 
 ## Architecture
 
-React 19 / TypeScript, Vinext / Vite, Three.js, Shadcn/Radix UI; Cloudflare Worker-compatible server; D1 + R2. `app/page.tsx` owns the workshop interface, `components/workshop-viewer.tsx` owns the 3D scene, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, and `app/api/` contains storage routes. The viewer renders on camera/scene changes and limits pixel ratio to 1.75. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
+React 19 / TypeScript, Vinext / Vite, Three.js, Shadcn/Radix UI; Cloudflare Worker-compatible server; D1 + R2. `app/page.tsx` owns the workshop interface, `components/assembly-viewer.tsx` renders the GS 300 asset, `components/workshop-viewer.tsx` renders community uploads, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, and `app/api/` contains storage routes. The viewer renders on camera/scene changes and caps the assembly pixel ratio at 1.6. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
 
 This first hosted build is owner-private. Storage endpoints rely on that platform access boundary and enforce same-origin browser writes. Before opening community writes publicly, add verified contributor identity, moderation, quotas/rate limiting, ownership checks and deletion controls. Names on current comments are display names, not verified identities.
 
@@ -43,3 +43,15 @@ Before publishing a real repair guide: obtain licensed model-specific CAD/scans;
 Factory service information reference: https://techinfo.toyota.com/ . No factory repair manual content or Lexus/Toyota CAD has been copied into this project. Wrenchwise is independent of Lexus/Toyota.
 
 See STARTER.md for the underlying framework and hosting integration.
+
+## GS 300 model development
+
+Revision 3 replaces the generic exterior with an S160 pre-facelift photographic surface study. Both workshop views now use the same versioned model. This is still **not a verified 1:1 car**. Read [vehicle accuracy](docs/vehicle-accuracy.md) before contributing geometry. The searchable manifest distinguishes modeled groups from missing items; modeled groups may contain multiple physical pieces.
+
+Build with Blender 4.5:
+
+```sh
+blender --background --factory-startup --python modeling/build_gs300.py -- /absolute/output/directory
+```
+
+Keep `modeling/gs300_exterior.py` alongside the build script. It exports the named GLB, native Blender file, inventory JSON, perspective render and front/side/rear orthographic renders. Rebuild time depends on CPU/GPU. `public/models/` contains the current web export; `modeling/validation/` records review renders. Dimensions and photographs are references, not certification.

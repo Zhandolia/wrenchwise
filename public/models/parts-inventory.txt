@@ -1,775 +1,778 @@
-WRENCHWISE — 2000 LEXUS GS 300
-US market / left-hand drive / stock automatic
-WORKING INVENTORY — NOT AN EXHAUSTIVE OEM PARTS CATALOG
-
+2000 Lexus GS 300 US automatic — provisional assembly
 Provisional original geometry, not a 1:1 verified replica
-No geometry, fitment, fastener locations or repair procedure has been mechanically verified.
-Counts refer to named model groups, not individual physical parts. Grouped bolts and paired components still need separation and quantities.
+Inventory candidates, not a verified or exhaustive OEM bill of materials.
 
-BODY & GLAZING
-71 modeled groups / 41 missing items
+Body & glazing
+--------------
+[modeled; unverified] front-fender-left — Front Fender left
+[modeled; unverified] front-door-left — Front Door left
+[modeled; unverified] handle-recess-front-door-left — Door handle recess left
+[modeled; unverified] handle-front-door-left — Body-color door handle left
+[modeled; unverified] rear-door-left — Rear Door left
+[modeled; unverified] handle-recess-rear-door-left — Door handle recess left
+[modeled; unverified] handle-rear-door-left — Body-color door handle left
+[modeled; unverified] rear-quarter-left — Rear Quarter left
+[modeled; unverified] arch-front-left — Wheel arch rolled lip front left
+[modeled; unverified] arch-rear-left — Wheel arch rolled lip rear left
+[modeled; unverified] belt-trim-left — Body side protective molding left
+[modeled; unverified] belt-trim-chrome-left — Molding bright edge left
+[modeled; unverified] rocker-left — Rocker outer skin left
+[modeled; unverified] front-fender-right — Front Fender right
+[modeled; unverified] front-door-right — Front Door right
+[modeled; unverified] handle-recess-front-door-right — Door handle recess right
+[modeled; unverified] handle-front-door-right — Body-color door handle right
+[modeled; unverified] rear-door-right — Rear Door right
+[modeled; unverified] handle-recess-rear-door-right — Door handle recess right
+[modeled; unverified] handle-rear-door-right — Body-color door handle right
+[modeled; unverified] rear-quarter-right — Rear Quarter right
+[modeled; unverified] arch-front-right — Wheel arch rolled lip front right
+[modeled; unverified] arch-rear-right — Wheel arch rolled lip rear right
+[modeled; unverified] belt-trim-right — Body side protective molding right
+[modeled; unverified] belt-trim-chrome-right — Molding bright edge right
+[modeled; unverified] rocker-right — Rocker outer skin right
+[modeled; unverified] hood — S160 contoured hood
+[modeled; unverified] fender-crown-left — Front fender crown left
+[modeled; unverified] quarter-shoulder-left — Rear quarter shoulder left
+[modeled; unverified] fender-crown-right — Front fender crown right
+[modeled; unverified] quarter-shoulder-right — Rear quarter shoulder right
+[modeled; unverified] trunk-lid — Trunk lid
+[modeled; unverified] roof — Continuous crowned roof panel
+[modeled; unverified] windshield — Curved windshield
+[modeled; unverified] rear-glass — Curved rear glass
+[modeled; unverified] glass-front-left — Front side glass left
+[modeled; unverified] window-seal-front-left — Window weatherstrip front left
+[modeled; unverified] glass-rear-left — Rear side glass left
+[modeled; unverified] window-seal-rear-left — Window weatherstrip rear left
+[modeled; unverified] glass-quarter-left — Quarter side glass left
+[modeled; unverified] window-seal-quarter-left — Window weatherstrip quarter left
+[modeled; unverified] pillar-c-left — C pillar sheet metal left
+[modeled; unverified] pillar-a-left — A pillar left
+[modeled; unverified] roof-rail-left — Roof side rail left
+[modeled; unverified] window-sill-left — Window lower bright trim left
+[modeled; unverified] mirror-left — Door mirror housing left
+[modeled; unverified] mirror-glass-left — Door mirror glass left
+[modeled; unverified] mirror-arm-left — Door mirror support left
+[modeled; unverified] wiper-left — Windshield wiper left
+[modeled; unverified] glass-front-right — Front side glass right
+[modeled; unverified] window-seal-front-right — Window weatherstrip front right
+[modeled; unverified] glass-rear-right — Rear side glass right
+[modeled; unverified] window-seal-rear-right — Window weatherstrip rear right
+[modeled; unverified] glass-quarter-right — Quarter side glass right
+[modeled; unverified] window-seal-quarter-right — Window weatherstrip quarter right
+[modeled; unverified] pillar-c-right — C pillar sheet metal right
+[modeled; unverified] pillar-a-right — A pillar right
+[modeled; unverified] roof-rail-right — Roof side rail right
+[modeled; unverified] window-sill-right — Window lower bright trim right
+[modeled; unverified] mirror-right — Door mirror housing right
+[modeled; unverified] mirror-glass-right — Door mirror glass right
+[modeled; unverified] mirror-arm-right — Door mirror support right
+[modeled; unverified] wiper-right — Windshield wiper right
+[modeled; unverified] fuel-door — Fuel filler door
+[modeled; unverified] front-bumper — Front wraparound bumper cover
+[modeled; unverified] front-bumper-molding — Front bumper molding
+[modeled; unverified] front-bumper-top — Front fascia shoulder
+[modeled; unverified] rear-bumper — Rear wraparound bumper cover
+[modeled; unverified] rear-bumper-molding — Rear bumper molding
+[modeled; unverified] rear-bumper-top — Rear fascia shoulder
+[modeled; unverified] nose-panel — Front nose and lamp surround
+[modeled; unverified] lamp-housing-outer-left — Contoured headlamp lens outer left
+[modeled; unverified] lamp-seal-outer-left — Headlamp seal outer left
+[modeled; unverified] reflector-outer-left — Headlamp reflector outer left
+[modeled; unverified] lamp-optics-outer-left — Headlamp optical ribs outer left
+[modeled; unverified] marker-left — Amber side section left
+[modeled; unverified] lamp-housing-inner-left — Contoured headlamp lens inner left
+[modeled; unverified] lamp-seal-inner-left — Headlamp seal inner left
+[modeled; unverified] reflector-inner-left — Headlamp reflector inner left
+[modeled; unverified] lamp-optics-inner-left — Headlamp optical ribs inner left
+[modeled; unverified] grille-back — Pre-facelift trapezoid grille backing
+[modeled; unverified] grille-bars — Vertical grille bars
+[modeled; unverified] grille-surround — Grille chrome perimeter
+[modeled; unverified] grille-emblem — Lexus oval grille emblem
+[modeled; unverified] fog-recess-left — Fog lamp recess left
+[modeled; unverified] fog-lamp-left — Rectangular fog lamp left
+[modeled; unverified] lamp-housing-outer-right — Contoured headlamp lens outer right
+[modeled; unverified] lamp-seal-outer-right — Headlamp seal outer right
+[modeled; unverified] reflector-outer-right — Headlamp reflector outer right
+[modeled; unverified] lamp-optics-outer-right — Headlamp optical ribs outer right
+[modeled; unverified] marker-right — Amber side section right
+[modeled; unverified] lamp-housing-inner-right — Contoured headlamp lens inner right
+[modeled; unverified] lamp-seal-inner-right — Headlamp seal inner right
+[modeled; unverified] reflector-inner-right — Headlamp reflector inner right
+[modeled; unverified] lamp-optics-inner-right — Headlamp optical ribs inner right
+[modeled; unverified] fog-recess-right — Fog lamp recess right
+[modeled; unverified] fog-lamp-right — Rectangular fog lamp right
+[modeled; unverified] lower-grille — Lower intake recess
+[modeled; unverified] lower-grille-bars — Lower intake horizontal bars
+[modeled; unverified] plate-front — Front plate mount
+[modeled; unverified] rear-panel — Rear panel
+[modeled; unverified] rear-plate-recess — Rear plate recess
+[modeled; unverified] tail-lamp-left — Tail Lamp left
+[modeled; unverified] tail-signal-left — Tail Signal left
+[modeled; unverified] tail-reverse-left — Tail Reverse left
+[modeled; unverified] inner-tail-left — Trunk-mounted inner tail lamp left
+[modeled; unverified] tail-lamp-right — Tail Lamp right
+[modeled; unverified] tail-signal-right — Tail Signal right
+[modeled; unverified] tail-reverse-right — Tail Reverse right
+[modeled; unverified] inner-tail-right — Trunk-mounted inner tail lamp right
+[modeled; unverified] windshield-edge — windshield edge trim
+[modeled; unverified] rear-glass-edge — rear-glass edge trim
+[missing; unverified] pending-body-1 — Hood hinges left/right
+[missing; unverified] pending-body-2 — Hood latch and cable
+[missing; unverified] pending-body-3 — Hood gas supports
+[missing; unverified] pending-body-4 — Hood insulation
+[missing; unverified] pending-body-5 — Front door hinge assemblies
+[missing; unverified] pending-body-6 — Rear door hinge assemblies
+[missing; unverified] pending-body-7 — Door check straps
+[missing; unverified] pending-body-8 — Door latch actuators
+[missing; unverified] pending-body-9 — Door wiring boots
+[missing; unverified] pending-body-10 — Window regulators
+[missing; unverified] pending-body-11 — Window motors
+[missing; unverified] pending-body-12 — Outer belt moldings
+[missing; unverified] pending-body-13 — Inner weatherstrips
+[missing; unverified] pending-body-14 — Door aperture seals
+[missing; unverified] pending-body-15 — Trunk hinges
+[missing; unverified] pending-body-16 — Trunk weatherstrip
+[missing; unverified] pending-body-17 — Trunk latch actuator
+[missing; unverified] pending-body-18 — Trunk trim panels
+[missing; unverified] pending-body-19 — Front bumper reinforcement
+[missing; unverified] pending-body-20 — Rear bumper reinforcement
+[missing; unverified] pending-body-21 — Bumper energy absorbers
+[missing; unverified] pending-body-22 — Front inner fender liners
+[missing; unverified] pending-body-23 — Rear wheelhouse liners
+[missing; unverified] pending-body-24 — Under-engine splash panels
+[missing; unverified] pending-body-25 — Cowl grille
+[missing; unverified] pending-body-26 — Cowl drain channels
+[missing; unverified] pending-body-27 — Windshield adhesive bead
+[missing; unverified] pending-body-28 — Rear glass adhesive bead
+[missing; unverified] pending-body-29 — Washer nozzles
+[missing; unverified] pending-body-30 — Washer hoses
+[missing; unverified] pending-body-31 — Wiper motor and linkage
+[missing; unverified] pending-body-32 — Grille emblem and mounts
+[missing; unverified] pending-body-33 — Body badges
+[missing; unverified] pending-body-34 — Front parking lamp sockets
+[missing; unverified] pending-body-35 — Tail lamp sockets
+[missing; unverified] pending-body-36 — Center high-mounted stop lamp
+[missing; unverified] pending-body-37 — Trunk license plate lamps
+[missing; unverified] pending-body-38 — License plate fasteners
+[missing; unverified] pending-body-39 — Body panel shims
+[missing; unverified] pending-body-40 — Seam sealer paths
+[missing; unverified] pending-body-41 — Corrosion protection layers
 
-[MODELED / UNVERIFIED] Front Fender left (front-fender-left)
-[MODELED / UNVERIFIED] Front Door left (front-door-left)
-[MODELED / UNVERIFIED] Door handle front-door left (handle-front-door-left)
-[MODELED / UNVERIFIED] Rear Door left (rear-door-left)
-[MODELED / UNVERIFIED] Door handle rear-door left (handle-rear-door-left)
-[MODELED / UNVERIFIED] Rear Quarter left (rear-quarter-left)
-[MODELED / UNVERIFIED] Wheel arch lip front left (arch-front-left)
-[MODELED / UNVERIFIED] Wheel arch lip rear left (arch-rear-left)
-[MODELED / UNVERIFIED] Body side molding left (belt-trim-left)
-[MODELED / UNVERIFIED] Front door glass left (glass-front-left)
-[MODELED / UNVERIFIED] Window weatherstrip front left (window-seal-front-left)
-[MODELED / UNVERIFIED] Rear door glass left (glass-rear-left)
-[MODELED / UNVERIFIED] Window weatherstrip rear left (window-seal-rear-left)
-[MODELED / UNVERIFIED] Side mirror housing left (mirror-left)
-[MODELED / UNVERIFIED] Side mirror glass left (mirror-glass-left)
-[MODELED / UNVERIFIED] Mirror mounting arm left (mirror-arm-left)
-[MODELED / UNVERIFIED] Front Fender right (front-fender-right)
-[MODELED / UNVERIFIED] Front Door right (front-door-right)
-[MODELED / UNVERIFIED] Door handle front-door right (handle-front-door-right)
-[MODELED / UNVERIFIED] Rear Door right (rear-door-right)
-[MODELED / UNVERIFIED] Door handle rear-door right (handle-rear-door-right)
-[MODELED / UNVERIFIED] Rear Quarter right (rear-quarter-right)
-[MODELED / UNVERIFIED] Wheel arch lip front right (arch-front-right)
-[MODELED / UNVERIFIED] Wheel arch lip rear right (arch-rear-right)
-[MODELED / UNVERIFIED] Body side molding right (belt-trim-right)
-[MODELED / UNVERIFIED] Front door glass right (glass-front-right)
-[MODELED / UNVERIFIED] Window weatherstrip front right (window-seal-front-right)
-[MODELED / UNVERIFIED] Rear door glass right (glass-rear-right)
-[MODELED / UNVERIFIED] Window weatherstrip rear right (window-seal-rear-right)
-[MODELED / UNVERIFIED] Side mirror housing right (mirror-right)
-[MODELED / UNVERIFIED] Side mirror glass right (mirror-glass-right)
-[MODELED / UNVERIFIED] Mirror mounting arm right (mirror-arm-right)
-[MODELED / UNVERIFIED] Hood (hood)
-[MODELED / UNVERIFIED] Roof panel (roof)
-[MODELED / UNVERIFIED] Trunk lid (trunk-lid)
-[MODELED / UNVERIFIED] Windshield (windshield)
-[MODELED / UNVERIFIED] Rear window (rear-glass)
-[MODELED / UNVERIFIED] A pillar left (pillar-a-left)
-[MODELED / UNVERIFIED] C pillar left (pillar-c-left)
-[MODELED / UNVERIFIED] Windshield wiper left (wiper-left)
-[MODELED / UNVERIFIED] Headlamp outer left (headlight-outer-left)
-[MODELED / UNVERIFIED] Lamp bezel outer left (headlight-bezel-outer-left)
-[MODELED / UNVERIFIED] Headlamp inner left (headlight-inner-left)
-[MODELED / UNVERIFIED] Lamp bezel inner left (headlight-bezel-inner-left)
-[MODELED / UNVERIFIED] Front side marker left (marker-left)
-[MODELED / UNVERIFIED] Tail lamp left (tail-lamp-left)
-[MODELED / UNVERIFIED] Fog lamp left (fog-lamp-left)
-[MODELED / UNVERIFIED] A pillar right (pillar-a-right)
-[MODELED / UNVERIFIED] C pillar right (pillar-c-right)
-[MODELED / UNVERIFIED] Windshield wiper right (wiper-right)
-[MODELED / UNVERIFIED] Headlamp outer right (headlight-outer-right)
-[MODELED / UNVERIFIED] Lamp bezel outer right (headlight-bezel-outer-right)
-[MODELED / UNVERIFIED] Headlamp inner right (headlight-inner-right)
-[MODELED / UNVERIFIED] Lamp bezel inner right (headlight-bezel-inner-right)
-[MODELED / UNVERIFIED] Front side marker right (marker-right)
-[MODELED / UNVERIFIED] Tail lamp right (tail-lamp-right)
-[MODELED / UNVERIFIED] Fog lamp right (fog-lamp-right)
-[MODELED / UNVERIFIED] Front bumper cover (front-bumper)
-[MODELED / UNVERIFIED] Rear bumper cover (rear-bumper)
-[MODELED / UNVERIFIED] Grille backing (grille-back)
-[MODELED / UNVERIFIED] Front grille bars (grille)
-[MODELED / UNVERIFIED] Grille surround (grille-surround)
-[MODELED / UNVERIFIED] Lower air intake (lower-grille)
-[MODELED / UNVERIFIED] Lower intake slats (lower-grille-slats)
-[MODELED / UNVERIFIED] Front license plate bracket (plate-front)
-[MODELED / UNVERIFIED] Rear license plate bracket (plate-rear)
-[MODELED / UNVERIFIED] Fuel filler door (fuel-door)
-[MODELED / UNVERIFIED] Front Fender Top left (front-fender-top-left)
-[MODELED / UNVERIFIED] Rear Quarter Top left (rear-quarter-top-left)
-[MODELED / UNVERIFIED] Front Fender Top right (front-fender-top-right)
-[MODELED / UNVERIFIED] Rear Quarter Top right (rear-quarter-top-right)
-[MISSING / UNVERIFIED] Hood hinges left/right (pending-body-1)
-[MISSING / UNVERIFIED] Hood latch and cable (pending-body-2)
-[MISSING / UNVERIFIED] Hood gas supports (pending-body-3)
-[MISSING / UNVERIFIED] Hood insulation (pending-body-4)
-[MISSING / UNVERIFIED] Front door hinge assemblies (pending-body-5)
-[MISSING / UNVERIFIED] Rear door hinge assemblies (pending-body-6)
-[MISSING / UNVERIFIED] Door check straps (pending-body-7)
-[MISSING / UNVERIFIED] Door latch actuators (pending-body-8)
-[MISSING / UNVERIFIED] Door wiring boots (pending-body-9)
-[MISSING / UNVERIFIED] Window regulators (pending-body-10)
-[MISSING / UNVERIFIED] Window motors (pending-body-11)
-[MISSING / UNVERIFIED] Outer belt moldings (pending-body-12)
-[MISSING / UNVERIFIED] Inner weatherstrips (pending-body-13)
-[MISSING / UNVERIFIED] Door aperture seals (pending-body-14)
-[MISSING / UNVERIFIED] Trunk hinges (pending-body-15)
-[MISSING / UNVERIFIED] Trunk weatherstrip (pending-body-16)
-[MISSING / UNVERIFIED] Trunk latch actuator (pending-body-17)
-[MISSING / UNVERIFIED] Trunk trim panels (pending-body-18)
-[MISSING / UNVERIFIED] Front bumper reinforcement (pending-body-19)
-[MISSING / UNVERIFIED] Rear bumper reinforcement (pending-body-20)
-[MISSING / UNVERIFIED] Bumper energy absorbers (pending-body-21)
-[MISSING / UNVERIFIED] Front inner fender liners (pending-body-22)
-[MISSING / UNVERIFIED] Rear wheelhouse liners (pending-body-23)
-[MISSING / UNVERIFIED] Under-engine splash panels (pending-body-24)
-[MISSING / UNVERIFIED] Cowl grille (pending-body-25)
-[MISSING / UNVERIFIED] Cowl drain channels (pending-body-26)
-[MISSING / UNVERIFIED] Windshield adhesive bead (pending-body-27)
-[MISSING / UNVERIFIED] Rear glass adhesive bead (pending-body-28)
-[MISSING / UNVERIFIED] Washer nozzles (pending-body-29)
-[MISSING / UNVERIFIED] Washer hoses (pending-body-30)
-[MISSING / UNVERIFIED] Wiper motor and linkage (pending-body-31)
-[MISSING / UNVERIFIED] Grille emblem and mounts (pending-body-32)
-[MISSING / UNVERIFIED] Body badges (pending-body-33)
-[MISSING / UNVERIFIED] Front parking lamp sockets (pending-body-34)
-[MISSING / UNVERIFIED] Tail lamp sockets (pending-body-35)
-[MISSING / UNVERIFIED] Center high-mounted stop lamp (pending-body-36)
-[MISSING / UNVERIFIED] Trunk license plate lamps (pending-body-37)
-[MISSING / UNVERIFIED] License plate fasteners (pending-body-38)
-[MISSING / UNVERIFIED] Body panel shims (pending-body-39)
-[MISSING / UNVERIFIED] Seam sealer paths (pending-body-40)
-[MISSING / UNVERIFIED] Corrosion protection layers (pending-body-41)
+Engine & timing
+---------------
+[modeled; unverified] engine-block — Inline-six cylinder block
+[modeled; unverified] cylinder-head — Cylinder head
+[modeled; unverified] oil-pan-upper — Upper oil pan
+[modeled; unverified] oil-pan-lower — Lower oil sump
+[modeled; unverified] drain-plug — Oil drain plug
+[modeled; unverified] valve-cover-exhaust — Valve cover exhaust
+[modeled; unverified] valve-rib-exhaust — Valve cover ribs exhaust
+[modeled; unverified] camshaft-exhaust — Camshaft exhaust
+[modeled; unverified] cam-lobes-exhaust — Cam lobes exhaust
+[modeled; unverified] cover-bolts-exhaust — Valve cover fasteners exhaust
+[modeled; unverified] valve-cover-intake — Valve cover intake
+[modeled; unverified] valve-rib-intake — Valve cover ribs intake
+[modeled; unverified] camshaft-intake — Camshaft intake
+[modeled; unverified] cam-lobes-intake — Cam lobes intake
+[modeled; unverified] cover-bolts-intake — Valve cover fasteners intake
+[modeled; unverified] crankshaft — Crankshaft main axis
+[modeled; unverified] cylinder-1 — Cylinder 1 bore envelope
+[modeled; unverified] piston-1 — Piston 1
+[modeled; unverified] piston-ring-1 — Piston ring study 1
+[modeled; unverified] rod-1 — Connecting rod 1
+[modeled; unverified] crank-web-1 — Crank counterweight 1
+[modeled; unverified] valves-1 — Valve pair study cylinder 1
+[modeled; unverified] cylinder-2 — Cylinder 2 bore envelope
+[modeled; unverified] piston-2 — Piston 2
+[modeled; unverified] piston-ring-2 — Piston ring study 2
+[modeled; unverified] rod-2 — Connecting rod 2
+[modeled; unverified] crank-web-2 — Crank counterweight 2
+[modeled; unverified] valves-2 — Valve pair study cylinder 2
+[modeled; unverified] cylinder-3 — Cylinder 3 bore envelope
+[modeled; unverified] piston-3 — Piston 3
+[modeled; unverified] piston-ring-3 — Piston ring study 3
+[modeled; unverified] rod-3 — Connecting rod 3
+[modeled; unverified] crank-web-3 — Crank counterweight 3
+[modeled; unverified] valves-3 — Valve pair study cylinder 3
+[modeled; unverified] cylinder-4 — Cylinder 4 bore envelope
+[modeled; unverified] piston-4 — Piston 4
+[modeled; unverified] piston-ring-4 — Piston ring study 4
+[modeled; unverified] rod-4 — Connecting rod 4
+[modeled; unverified] crank-web-4 — Crank counterweight 4
+[modeled; unverified] valves-4 — Valve pair study cylinder 4
+[modeled; unverified] cylinder-5 — Cylinder 5 bore envelope
+[modeled; unverified] piston-5 — Piston 5
+[modeled; unverified] piston-ring-5 — Piston ring study 5
+[modeled; unverified] rod-5 — Connecting rod 5
+[modeled; unverified] crank-web-5 — Crank counterweight 5
+[modeled; unverified] valves-5 — Valve pair study cylinder 5
+[modeled; unverified] cylinder-6 — Cylinder 6 bore envelope
+[modeled; unverified] piston-6 — Piston 6
+[modeled; unverified] piston-ring-6 — Piston ring study 6
+[modeled; unverified] rod-6 — Connecting rod 6
+[modeled; unverified] crank-web-6 — Crank counterweight 6
+[modeled; unverified] valves-6 — Valve pair study cylinder 6
+[modeled; unverified] exhaust-cam-sprocket — Exhaust cam sprocket
+[modeled; unverified] vvti-gear — VVT-i intake gear envelope
+[modeled; unverified] crank-pulley — Crankshaft timing pulley
+[modeled; unverified] timing-idler — Timing idler
+[modeled; unverified] timing-tensioner — Timing tensioner roller
+[modeled; unverified] timing-belt — Timing belt routing study
+[modeled; unverified] timing-cover-upper — Upper timing cover
+[modeled; unverified] timing-cover-lower — Lower timing cover
+[modeled; unverified] oil-filter — Oil filter
+[modeled; unverified] engine-cover — 2000 engine beauty cover study
+[modeled; unverified] engine-cover-ribs — Beauty cover raised ribs
+[modeled; unverified] oil-cap — Oil filler cap
+[modeled; unverified] alternator — Alternator
+[modeled; unverified] alternator-pulley — Alternator pulley
+[modeled; unverified] alternator-ribs — Alternator casing ribs
+[modeled; unverified] ac-compressor — Air conditioning compressor
+[modeled; unverified] ac-compressor-pulley — Air conditioning compressor pulley
+[modeled; unverified] ac-compressor-ribs — Air conditioning compressor casing ribs
+[modeled; unverified] ps-pump — Power steering pump
+[modeled; unverified] ps-pump-pulley — Power steering pump pulley
+[modeled; unverified] ps-pump-ribs — Power steering pump casing ribs
+[modeled; unverified] crank-damper — Crankshaft harmonic damper
+[modeled; unverified] accessory-belt — Accessory drive belt routing study
+[missing; unverified] pending-engine-1 — Head gasket
+[missing; unverified] pending-engine-2 — Head bolts with exact pattern
+[missing; unverified] pending-engine-3 — Main bearing caps
+[missing; unverified] pending-engine-4 — Main bearings and clearances
+[missing; unverified] pending-engine-5 — Connecting rod bearings
+[missing; unverified] pending-engine-6 — Thrust washers
+[missing; unverified] pending-engine-7 — Piston wrist pins and retainers
+[missing; unverified] pending-engine-8 — Oil control rings
+[missing; unverified] pending-engine-9 — Cylinder honing texture
+[missing; unverified] pending-engine-10 — Valve guides
+[missing; unverified] pending-engine-11 — Valve seats
+[missing; unverified] pending-engine-12 — Valve stem seals
+[missing; unverified] pending-engine-13 — Valve springs
+[missing; unverified] pending-engine-14 — Spring seats and retainers
+[missing; unverified] pending-engine-15 — Valve keepers
+[missing; unverified] pending-engine-16 — Cam bearing caps
+[missing; unverified] pending-engine-17 — Cam seals
+[missing; unverified] pending-engine-18 — Rear main seal
+[missing; unverified] pending-engine-19 — Front crankshaft seal
+[missing; unverified] pending-engine-20 — Oil pump rotor and housing
+[missing; unverified] pending-engine-21 — Oil pickup and strainer
+[missing; unverified] pending-engine-22 — Oil pressure relief valve
+[missing; unverified] pending-engine-23 — Oil passages
+[missing; unverified] pending-engine-24 — Crankcase ventilation baffles
+[missing; unverified] pending-engine-25 — PCV valve and hose
+[missing; unverified] pending-engine-26 — Oil level dipstick and tube
+[missing; unverified] pending-engine-27 — Timing tensioner hydraulic actuator
+[missing; unverified] pending-engine-28 — Exact belt tooth geometry
+[missing; unverified] pending-engine-29 — Factory timing marks
+[missing; unverified] pending-engine-30 — Timing cover gaskets
+[missing; unverified] pending-engine-31 — VVT-i oil control valve
+[missing; unverified] pending-engine-32 — VVT-i filter and oil passage
+[missing; unverified] pending-engine-33 — Knock sensors
+[missing; unverified] pending-engine-34 — Crankshaft position sensor
+[missing; unverified] pending-engine-35 — Camshaft position sensor
+[missing; unverified] pending-engine-36 — Coolant temperature sensor
+[missing; unverified] pending-engine-37 — Oil pressure switch
+[missing; unverified] pending-engine-38 — Engine lifting brackets
+[missing; unverified] pending-engine-39 — Engine identification markings
+[missing; unverified] pending-engine-40 — Exact engine mount brackets
+[missing; unverified] pending-engine-41 — Starter motor
+[missing; unverified] pending-engine-42 — Starter pinion and ring gear
+[missing; unverified] pending-engine-43 — Flexplate and fasteners
+[missing; unverified] pending-engine-44 — Accessory tensioner
+[missing; unverified] pending-engine-45 — Accessory idler
+[missing; unverified] pending-engine-46 — Spark plug tube seals
 
-ENGINE & TIMING
-75 modeled groups / 46 missing items
+Automatic transmission
+----------------------
+[modeled; unverified] bellhousing — Automatic transmission bellhousing
+[modeled; unverified] torque-converter — Torque converter envelope
+[modeled; unverified] transmission-case — Automatic transmission main casing
+[modeled; unverified] tail-housing — Transmission extension housing
+[modeled; unverified] transmission-pan — Transmission oil pan
+[modeled; unverified] valve-body — Valve body envelope
+[modeled; unverified] case-ribs — Transmission casing ribs
+[modeled; unverified] solenoids — Solenoid positions unverified
+[modeled; unverified] gear-train — Planetary gear envelope - not tooth accurate
+[modeled; unverified] trans-pan-fasteners — Transmission pan fasteners
+[missing; unverified] pending-transmission-1 — A650E case casting measured surfaces
+[missing; unverified] pending-transmission-2 — Front pump assembly
+[missing; unverified] pending-transmission-3 — Input shaft splines
+[missing; unverified] pending-transmission-4 — Output shaft splines
+[missing; unverified] pending-transmission-5 — Planetary gear sets with exact tooth counts
+[missing; unverified] pending-transmission-6 — Clutch drums
+[missing; unverified] pending-transmission-7 — Clutch friction discs
+[missing; unverified] pending-transmission-8 — Clutch separator plates
+[missing; unverified] pending-transmission-9 — Brake bands or brake packs by exact variant
+[missing; unverified] pending-transmission-10 — One-way clutches
+[missing; unverified] pending-transmission-11 — Valve-body hydraulic channels
+[missing; unverified] pending-transmission-12 — Check balls and separator plate
+[missing; unverified] pending-transmission-13 — Filter and pickup
+[missing; unverified] pending-transmission-14 — Shift solenoid variants
+[missing; unverified] pending-transmission-15 — Solenoid wire harness
+[missing; unverified] pending-transmission-16 — Transmission speed sensors
+[missing; unverified] pending-transmission-17 — Selector shaft and range switch
+[missing; unverified] pending-transmission-18 — Shift cable and bracket
+[missing; unverified] pending-transmission-19 — ATF cooler lines
+[missing; unverified] pending-transmission-20 — ATF dipstick and tube
+[missing; unverified] pending-transmission-21 — Vent tube
+[missing; unverified] pending-transmission-22 — Front pump seal
+[missing; unverified] pending-transmission-23 — Output seal
+[missing; unverified] pending-transmission-24 — Case gaskets
+[missing; unverified] pending-transmission-25 — Transmission pan gasket
+[missing; unverified] pending-transmission-26 — Drain and fill plugs
+[missing; unverified] pending-transmission-27 — Exact bellhousing fastener locations
 
-[MODELED / UNVERIFIED] Inline-six cylinder block (engine-block)
-[MODELED / UNVERIFIED] Cylinder head (cylinder-head)
-[MODELED / UNVERIFIED] Upper oil pan (oil-pan-upper)
-[MODELED / UNVERIFIED] Lower oil sump (oil-pan-lower)
-[MODELED / UNVERIFIED] Oil drain plug (drain-plug)
-[MODELED / UNVERIFIED] Valve cover exhaust (valve-cover-exhaust)
-[MODELED / UNVERIFIED] Valve cover ribs exhaust (valve-rib-exhaust)
-[MODELED / UNVERIFIED] Camshaft exhaust (camshaft-exhaust)
-[MODELED / UNVERIFIED] Cam lobes exhaust (cam-lobes-exhaust)
-[MODELED / UNVERIFIED] Valve cover fasteners exhaust (cover-bolts-exhaust)
-[MODELED / UNVERIFIED] Valve cover intake (valve-cover-intake)
-[MODELED / UNVERIFIED] Valve cover ribs intake (valve-rib-intake)
-[MODELED / UNVERIFIED] Camshaft intake (camshaft-intake)
-[MODELED / UNVERIFIED] Cam lobes intake (cam-lobes-intake)
-[MODELED / UNVERIFIED] Valve cover fasteners intake (cover-bolts-intake)
-[MODELED / UNVERIFIED] Crankshaft main axis (crankshaft)
-[MODELED / UNVERIFIED] Cylinder 1 bore envelope (cylinder-1)
-[MODELED / UNVERIFIED] Piston 1 (piston-1)
-[MODELED / UNVERIFIED] Piston ring study 1 (piston-ring-1)
-[MODELED / UNVERIFIED] Connecting rod 1 (rod-1)
-[MODELED / UNVERIFIED] Crank counterweight 1 (crank-web-1)
-[MODELED / UNVERIFIED] Valve pair study cylinder 1 (valves-1)
-[MODELED / UNVERIFIED] Cylinder 2 bore envelope (cylinder-2)
-[MODELED / UNVERIFIED] Piston 2 (piston-2)
-[MODELED / UNVERIFIED] Piston ring study 2 (piston-ring-2)
-[MODELED / UNVERIFIED] Connecting rod 2 (rod-2)
-[MODELED / UNVERIFIED] Crank counterweight 2 (crank-web-2)
-[MODELED / UNVERIFIED] Valve pair study cylinder 2 (valves-2)
-[MODELED / UNVERIFIED] Cylinder 3 bore envelope (cylinder-3)
-[MODELED / UNVERIFIED] Piston 3 (piston-3)
-[MODELED / UNVERIFIED] Piston ring study 3 (piston-ring-3)
-[MODELED / UNVERIFIED] Connecting rod 3 (rod-3)
-[MODELED / UNVERIFIED] Crank counterweight 3 (crank-web-3)
-[MODELED / UNVERIFIED] Valve pair study cylinder 3 (valves-3)
-[MODELED / UNVERIFIED] Cylinder 4 bore envelope (cylinder-4)
-[MODELED / UNVERIFIED] Piston 4 (piston-4)
-[MODELED / UNVERIFIED] Piston ring study 4 (piston-ring-4)
-[MODELED / UNVERIFIED] Connecting rod 4 (rod-4)
-[MODELED / UNVERIFIED] Crank counterweight 4 (crank-web-4)
-[MODELED / UNVERIFIED] Valve pair study cylinder 4 (valves-4)
-[MODELED / UNVERIFIED] Cylinder 5 bore envelope (cylinder-5)
-[MODELED / UNVERIFIED] Piston 5 (piston-5)
-[MODELED / UNVERIFIED] Piston ring study 5 (piston-ring-5)
-[MODELED / UNVERIFIED] Connecting rod 5 (rod-5)
-[MODELED / UNVERIFIED] Crank counterweight 5 (crank-web-5)
-[MODELED / UNVERIFIED] Valve pair study cylinder 5 (valves-5)
-[MODELED / UNVERIFIED] Cylinder 6 bore envelope (cylinder-6)
-[MODELED / UNVERIFIED] Piston 6 (piston-6)
-[MODELED / UNVERIFIED] Piston ring study 6 (piston-ring-6)
-[MODELED / UNVERIFIED] Connecting rod 6 (rod-6)
-[MODELED / UNVERIFIED] Crank counterweight 6 (crank-web-6)
-[MODELED / UNVERIFIED] Valve pair study cylinder 6 (valves-6)
-[MODELED / UNVERIFIED] Exhaust cam sprocket (exhaust-cam-sprocket)
-[MODELED / UNVERIFIED] VVT-i intake gear envelope (vvti-gear)
-[MODELED / UNVERIFIED] Crankshaft timing pulley (crank-pulley)
-[MODELED / UNVERIFIED] Timing idler (timing-idler)
-[MODELED / UNVERIFIED] Timing tensioner roller (timing-tensioner)
-[MODELED / UNVERIFIED] Timing belt routing study (timing-belt)
-[MODELED / UNVERIFIED] Upper timing cover (timing-cover-upper)
-[MODELED / UNVERIFIED] Lower timing cover (timing-cover-lower)
-[MODELED / UNVERIFIED] Oil filter (oil-filter)
-[MODELED / UNVERIFIED] 2000 engine beauty cover study (engine-cover)
-[MODELED / UNVERIFIED] Beauty cover raised ribs (engine-cover-ribs)
-[MODELED / UNVERIFIED] Oil filler cap (oil-cap)
-[MODELED / UNVERIFIED] Alternator (alternator)
-[MODELED / UNVERIFIED] Alternator pulley (alternator-pulley)
-[MODELED / UNVERIFIED] Alternator casing ribs (alternator-ribs)
-[MODELED / UNVERIFIED] Air conditioning compressor (ac-compressor)
-[MODELED / UNVERIFIED] Air conditioning compressor pulley (ac-compressor-pulley)
-[MODELED / UNVERIFIED] Air conditioning compressor casing ribs (ac-compressor-ribs)
-[MODELED / UNVERIFIED] Power steering pump (ps-pump)
-[MODELED / UNVERIFIED] Power steering pump pulley (ps-pump-pulley)
-[MODELED / UNVERIFIED] Power steering pump casing ribs (ps-pump-ribs)
-[MODELED / UNVERIFIED] Crankshaft harmonic damper (crank-damper)
-[MODELED / UNVERIFIED] Accessory drive belt routing study (accessory-belt)
-[MISSING / UNVERIFIED] Head gasket (pending-engine-1)
-[MISSING / UNVERIFIED] Head bolts with exact pattern (pending-engine-2)
-[MISSING / UNVERIFIED] Main bearing caps (pending-engine-3)
-[MISSING / UNVERIFIED] Main bearings and clearances (pending-engine-4)
-[MISSING / UNVERIFIED] Connecting rod bearings (pending-engine-5)
-[MISSING / UNVERIFIED] Thrust washers (pending-engine-6)
-[MISSING / UNVERIFIED] Piston wrist pins and retainers (pending-engine-7)
-[MISSING / UNVERIFIED] Oil control rings (pending-engine-8)
-[MISSING / UNVERIFIED] Cylinder honing texture (pending-engine-9)
-[MISSING / UNVERIFIED] Valve guides (pending-engine-10)
-[MISSING / UNVERIFIED] Valve seats (pending-engine-11)
-[MISSING / UNVERIFIED] Valve stem seals (pending-engine-12)
-[MISSING / UNVERIFIED] Valve springs (pending-engine-13)
-[MISSING / UNVERIFIED] Spring seats and retainers (pending-engine-14)
-[MISSING / UNVERIFIED] Valve keepers (pending-engine-15)
-[MISSING / UNVERIFIED] Cam bearing caps (pending-engine-16)
-[MISSING / UNVERIFIED] Cam seals (pending-engine-17)
-[MISSING / UNVERIFIED] Rear main seal (pending-engine-18)
-[MISSING / UNVERIFIED] Front crankshaft seal (pending-engine-19)
-[MISSING / UNVERIFIED] Oil pump rotor and housing (pending-engine-20)
-[MISSING / UNVERIFIED] Oil pickup and strainer (pending-engine-21)
-[MISSING / UNVERIFIED] Oil pressure relief valve (pending-engine-22)
-[MISSING / UNVERIFIED] Oil passages (pending-engine-23)
-[MISSING / UNVERIFIED] Crankcase ventilation baffles (pending-engine-24)
-[MISSING / UNVERIFIED] PCV valve and hose (pending-engine-25)
-[MISSING / UNVERIFIED] Oil level dipstick and tube (pending-engine-26)
-[MISSING / UNVERIFIED] Timing tensioner hydraulic actuator (pending-engine-27)
-[MISSING / UNVERIFIED] Exact belt tooth geometry (pending-engine-28)
-[MISSING / UNVERIFIED] Factory timing marks (pending-engine-29)
-[MISSING / UNVERIFIED] Timing cover gaskets (pending-engine-30)
-[MISSING / UNVERIFIED] VVT-i oil control valve (pending-engine-31)
-[MISSING / UNVERIFIED] VVT-i filter and oil passage (pending-engine-32)
-[MISSING / UNVERIFIED] Knock sensors (pending-engine-33)
-[MISSING / UNVERIFIED] Crankshaft position sensor (pending-engine-34)
-[MISSING / UNVERIFIED] Camshaft position sensor (pending-engine-35)
-[MISSING / UNVERIFIED] Coolant temperature sensor (pending-engine-36)
-[MISSING / UNVERIFIED] Oil pressure switch (pending-engine-37)
-[MISSING / UNVERIFIED] Engine lifting brackets (pending-engine-38)
-[MISSING / UNVERIFIED] Engine identification markings (pending-engine-39)
-[MISSING / UNVERIFIED] Exact engine mount brackets (pending-engine-40)
-[MISSING / UNVERIFIED] Starter motor (pending-engine-41)
-[MISSING / UNVERIFIED] Starter pinion and ring gear (pending-engine-42)
-[MISSING / UNVERIFIED] Flexplate and fasteners (pending-engine-43)
-[MISSING / UNVERIFIED] Accessory tensioner (pending-engine-44)
-[MISSING / UNVERIFIED] Accessory idler (pending-engine-45)
-[MISSING / UNVERIFIED] Spark plug tube seals (pending-engine-46)
+Driveline
+---------
+[modeled; unverified] prop-shaft-front — Propeller shaft forward section
+[modeled; unverified] prop-shaft-rear — Propeller shaft rear section
+[modeled; unverified] center-bearing — Propeller shaft center support
+[modeled; unverified] differential-case — Rear differential housing
+[modeled; unverified] differential-cover — Differential rear cover
+[modeled; unverified] halfshaft-left — Rear halfshaft left
+[modeled; unverified] cv-boot-left — CV joint boots left
+[modeled; unverified] halfshaft-right — Rear halfshaft right
+[modeled; unverified] cv-boot-right — CV joint boots right
+[missing; unverified] pending-driveline-1 — Propeller shaft universal joints
+[missing; unverified] pending-driveline-2 — Propeller shaft flange fasteners
+[missing; unverified] pending-driveline-3 — Balance weights
+[missing; unverified] pending-driveline-4 — Slip joint splines
+[missing; unverified] pending-driveline-5 — Center bearing rubber carrier
+[missing; unverified] pending-driveline-6 — Differential ring gear
+[missing; unverified] pending-driveline-7 — Differential pinion gear
+[missing; unverified] pending-driveline-8 — Pinion bearings and preload shims
+[missing; unverified] pending-driveline-9 — Differential side gears
+[missing; unverified] pending-driveline-10 — Differential carrier bearings
+[missing; unverified] pending-driveline-11 — Differential oil seals
+[missing; unverified] pending-driveline-12 — Differential breather
+[missing; unverified] pending-driveline-13 — Differential drain and fill plugs
+[missing; unverified] pending-driveline-14 — CV joint inner races
+[missing; unverified] pending-driveline-15 — CV joint cages and balls
+[missing; unverified] pending-driveline-16 — CV boot clamps
+[missing; unverified] pending-driveline-17 — Halfshaft retaining clips
 
-AUTOMATIC TRANSMISSION
-10 modeled groups / 27 missing items
+Suspension & steering
+---------------------
+[modeled; unverified] control-arm-0.4-front-left — Control arm front-left 0.4
+[modeled; unverified] control-arm-0.56-front-left — Control arm front-left 0.56
+[modeled; unverified] damper-front-left — Damper front-left
+[modeled; unverified] spring-front-left — Coil spring front-left
+[modeled; unverified] strut-top-front-left — Upper suspension mount front-left
+[modeled; unverified] tie-rod-left — Steering tie rod left
+[modeled; unverified] control-arm-0.4-front-right — Control arm front-right 0.4
+[modeled; unverified] control-arm-0.56-front-right — Control arm front-right 0.56
+[modeled; unverified] damper-front-right — Damper front-right
+[modeled; unverified] spring-front-right — Coil spring front-right
+[modeled; unverified] strut-top-front-right — Upper suspension mount front-right
+[modeled; unverified] tie-rod-right — Steering tie rod right
+[modeled; unverified] control-arm-0.4-rear-left — Control arm rear-left 0.4
+[modeled; unverified] control-arm-0.56-rear-left — Control arm rear-left 0.56
+[modeled; unverified] damper-rear-left — Damper rear-left
+[modeled; unverified] spring-rear-left — Coil spring rear-left
+[modeled; unverified] strut-top-rear-left — Upper suspension mount rear-left
+[modeled; unverified] control-arm-0.4-rear-right — Control arm rear-right 0.4
+[modeled; unverified] control-arm-0.56-rear-right — Control arm rear-right 0.56
+[modeled; unverified] damper-rear-right — Damper rear-right
+[modeled; unverified] spring-rear-right — Coil spring rear-right
+[modeled; unverified] strut-top-rear-right — Upper suspension mount rear-right
+[modeled; unverified] antiroll-front — Front stabilizer bar
+[modeled; unverified] antiroll-rear — Rear stabilizer bar
+[modeled; unverified] steering-rack — Steering rack
+[modeled; unverified] steering-shaft — Steering intermediate shaft
+[missing; unverified] pending-suspension-1 — Front upper ball joints
+[missing; unverified] pending-suspension-2 — Front lower ball joints
+[missing; unverified] pending-suspension-3 — Rear knuckle castings
+[missing; unverified] pending-suspension-4 — Front steering knuckles
+[missing; unverified] pending-suspension-5 — Control-arm bushings
+[missing; unverified] pending-suspension-6 — Caster and camber adjustment hardware
+[missing; unverified] pending-suspension-7 — Rear toe-control arms
+[missing; unverified] pending-suspension-8 — Rear toe adjustment cams
+[missing; unverified] pending-suspension-9 — Spring isolators
+[missing; unverified] pending-suspension-10 — Damper bump stops
+[missing; unverified] pending-suspension-11 — Dust boots
+[missing; unverified] pending-suspension-12 — Stabilizer end links
+[missing; unverified] pending-suspension-13 — Stabilizer chassis bushings
+[missing; unverified] pending-suspension-14 — Steering rack bellows
+[missing; unverified] pending-suspension-15 — Rack pinion and hydraulic piston
+[missing; unverified] pending-suspension-16 — Power steering high-pressure hose
+[missing; unverified] pending-suspension-17 — Power steering return hose
+[missing; unverified] pending-suspension-18 — Power steering reservoir
+[missing; unverified] pending-suspension-19 — Power steering cooler loop
+[missing; unverified] pending-suspension-20 — Steering universal joints
 
-[MODELED / UNVERIFIED] Automatic transmission bellhousing (bellhousing)
-[MODELED / UNVERIFIED] Torque converter envelope (torque-converter)
-[MODELED / UNVERIFIED] Automatic transmission main casing (transmission-case)
-[MODELED / UNVERIFIED] Transmission extension housing (tail-housing)
-[MODELED / UNVERIFIED] Transmission oil pan (transmission-pan)
-[MODELED / UNVERIFIED] Valve body envelope (valve-body)
-[MODELED / UNVERIFIED] Transmission casing ribs (case-ribs)
-[MODELED / UNVERIFIED] Solenoid positions unverified (solenoids)
-[MODELED / UNVERIFIED] Planetary gear envelope - not tooth accurate (gear-train)
-[MODELED / UNVERIFIED] Transmission pan fasteners (trans-pan-fasteners)
-[MISSING / UNVERIFIED] A650E case casting measured surfaces (pending-transmission-1)
-[MISSING / UNVERIFIED] Front pump assembly (pending-transmission-2)
-[MISSING / UNVERIFIED] Input shaft splines (pending-transmission-3)
-[MISSING / UNVERIFIED] Output shaft splines (pending-transmission-4)
-[MISSING / UNVERIFIED] Planetary gear sets with exact tooth counts (pending-transmission-5)
-[MISSING / UNVERIFIED] Clutch drums (pending-transmission-6)
-[MISSING / UNVERIFIED] Clutch friction discs (pending-transmission-7)
-[MISSING / UNVERIFIED] Clutch separator plates (pending-transmission-8)
-[MISSING / UNVERIFIED] Brake bands or brake packs by exact variant (pending-transmission-9)
-[MISSING / UNVERIFIED] One-way clutches (pending-transmission-10)
-[MISSING / UNVERIFIED] Valve-body hydraulic channels (pending-transmission-11)
-[MISSING / UNVERIFIED] Check balls and separator plate (pending-transmission-12)
-[MISSING / UNVERIFIED] Filter and pickup (pending-transmission-13)
-[MISSING / UNVERIFIED] Shift solenoid variants (pending-transmission-14)
-[MISSING / UNVERIFIED] Solenoid wire harness (pending-transmission-15)
-[MISSING / UNVERIFIED] Transmission speed sensors (pending-transmission-16)
-[MISSING / UNVERIFIED] Selector shaft and range switch (pending-transmission-17)
-[MISSING / UNVERIFIED] Shift cable and bracket (pending-transmission-18)
-[MISSING / UNVERIFIED] ATF cooler lines (pending-transmission-19)
-[MISSING / UNVERIFIED] ATF dipstick and tube (pending-transmission-20)
-[MISSING / UNVERIFIED] Vent tube (pending-transmission-21)
-[MISSING / UNVERIFIED] Front pump seal (pending-transmission-22)
-[MISSING / UNVERIFIED] Output seal (pending-transmission-23)
-[MISSING / UNVERIFIED] Case gaskets (pending-transmission-24)
-[MISSING / UNVERIFIED] Transmission pan gasket (pending-transmission-25)
-[MISSING / UNVERIFIED] Drain and fill plugs (pending-transmission-26)
-[MISSING / UNVERIFIED] Exact bellhousing fastener locations (pending-transmission-27)
+Brakes
+------
+[modeled; unverified] rotor-front-left — Brake rotor front-left
+[modeled; unverified] hub-front-left — Wheel hub front-left
+[modeled; unverified] caliper-front-left — Brake caliper front-left
+[modeled; unverified] brake-hose-front-left — Flexible brake hose front-left
+[modeled; unverified] rotor-front-right — Brake rotor front-right
+[modeled; unverified] hub-front-right — Wheel hub front-right
+[modeled; unverified] caliper-front-right — Brake caliper front-right
+[modeled; unverified] brake-hose-front-right — Flexible brake hose front-right
+[modeled; unverified] rotor-rear-left — Brake rotor rear-left
+[modeled; unverified] hub-rear-left — Wheel hub rear-left
+[modeled; unverified] caliper-rear-left — Brake caliper rear-left
+[modeled; unverified] brake-hose-rear-left — Flexible brake hose rear-left
+[modeled; unverified] rotor-rear-right — Brake rotor rear-right
+[modeled; unverified] hub-rear-right — Wheel hub rear-right
+[modeled; unverified] caliper-rear-right — Brake caliper rear-right
+[modeled; unverified] brake-hose-rear-right — Flexible brake hose rear-right
+[modeled; unverified] chassis-brake-line-left — Rigid brake line routing study left
+[modeled; unverified] chassis-brake-line-right — Rigid brake line routing study right
+[modeled; unverified] brake-booster — Brake booster envelope
+[modeled; unverified] master-cylinder — Master brake cylinder
+[modeled; unverified] brake-reservoir — Brake fluid reservoir
+[modeled; unverified] abs-unit — ABS actuator envelope
+[missing; unverified] pending-brakes-1 — Brake pads by axle
+[missing; unverified] pending-brakes-2 — Pad shims and retaining clips
+[missing; unverified] pending-brakes-3 — Caliper pistons
+[missing; unverified] pending-brakes-4 — Caliper dust seals
+[missing; unverified] pending-brakes-5 — Caliper slide pins
+[missing; unverified] pending-brakes-6 — Bleed screws
+[missing; unverified] pending-brakes-7 — Rotor vent vane geometry
+[missing; unverified] pending-brakes-8 — Backing plates
+[missing; unverified] pending-brakes-9 — Wheel bearings
+[missing; unverified] pending-brakes-10 — Wheel speed sensors
+[missing; unverified] pending-brakes-11 — ABS tone rings
+[missing; unverified] pending-brakes-12 — Parking brake shoes
+[missing; unverified] pending-brakes-13 — Parking brake expander
+[missing; unverified] pending-brakes-14 — Parking brake cables
+[missing; unverified] pending-brakes-15 — Parking brake pedal mechanism
+[missing; unverified] pending-brakes-16 — Brake booster vacuum line
+[missing; unverified] pending-brakes-17 — Master cylinder reservoir seals
+[missing; unverified] pending-brakes-18 — Rigid line clips and unions
+[missing; unverified] pending-brakes-19 — ABS hydraulic port assignments
 
-DRIVELINE
-9 modeled groups / 17 missing items
+Wheels & tires
+--------------
+[modeled; unverified] tire-front-left — Tire front-left
+[modeled; unverified] wheel-front-left — 16 inch open wheel barrel front-left
+[modeled; unverified] rim-front-left — Wheel rim lip front-left
+[modeled; unverified] hub-cap-front-left — Wheel center cap front-left
+[modeled; unverified] spokes-front-left — Five-spoke wheel face study front-left
+[modeled; unverified] lug-front-left — Wheel lug nuts front-left
+[modeled; unverified] tread-front-left — Tire tread front-left
+[modeled; unverified] tire-front-right — Tire front-right
+[modeled; unverified] wheel-front-right — 16 inch open wheel barrel front-right
+[modeled; unverified] rim-front-right — Wheel rim lip front-right
+[modeled; unverified] hub-cap-front-right — Wheel center cap front-right
+[modeled; unverified] spokes-front-right — Five-spoke wheel face study front-right
+[modeled; unverified] lug-front-right — Wheel lug nuts front-right
+[modeled; unverified] tread-front-right — Tire tread front-right
+[modeled; unverified] tire-rear-left — Tire rear-left
+[modeled; unverified] wheel-rear-left — 16 inch open wheel barrel rear-left
+[modeled; unverified] rim-rear-left — Wheel rim lip rear-left
+[modeled; unverified] hub-cap-rear-left — Wheel center cap rear-left
+[modeled; unverified] spokes-rear-left — Five-spoke wheel face study rear-left
+[modeled; unverified] lug-rear-left — Wheel lug nuts rear-left
+[modeled; unverified] tread-rear-left — Tire tread rear-left
+[modeled; unverified] tire-rear-right — Tire rear-right
+[modeled; unverified] wheel-rear-right — 16 inch open wheel barrel rear-right
+[modeled; unverified] rim-rear-right — Wheel rim lip rear-right
+[modeled; unverified] hub-cap-rear-right — Wheel center cap rear-right
+[modeled; unverified] spokes-rear-right — Five-spoke wheel face study rear-right
+[modeled; unverified] lug-rear-right — Wheel lug nuts rear-right
+[modeled; unverified] tread-rear-right — Tire tread rear-right
+[missing; unverified] pending-wheels-1 — Confirm OE tire size from door placard
+[missing; unverified] pending-wheels-2 — Measured OE wheel spoke profile
+[missing; unverified] pending-wheels-3 — Tire sidewall markings
+[missing; unverified] pending-wheels-4 — Tire tread pattern by actual fitted tire
+[missing; unverified] pending-wheels-5 — Valve stems
+[missing; unverified] pending-wheels-6 — Wheel balancing weights
+[missing; unverified] pending-wheels-7 — Full-size spare wheel
+[missing; unverified] pending-wheels-8 — Spare-wheel retainer
+[missing; unverified] pending-wheels-9 — Jack and handle
+[missing; unverified] pending-wheels-10 — Lug wrench
 
-[MODELED / UNVERIFIED] Propeller shaft forward section (prop-shaft-front)
-[MODELED / UNVERIFIED] Propeller shaft rear section (prop-shaft-rear)
-[MODELED / UNVERIFIED] Propeller shaft center support (center-bearing)
-[MODELED / UNVERIFIED] Rear differential housing (differential-case)
-[MODELED / UNVERIFIED] Differential rear cover (differential-cover)
-[MODELED / UNVERIFIED] Rear halfshaft left (halfshaft-left)
-[MODELED / UNVERIFIED] CV joint boots left (cv-boot-left)
-[MODELED / UNVERIFIED] Rear halfshaft right (halfshaft-right)
-[MODELED / UNVERIFIED] CV joint boots right (cv-boot-right)
-[MISSING / UNVERIFIED] Propeller shaft universal joints (pending-driveline-1)
-[MISSING / UNVERIFIED] Propeller shaft flange fasteners (pending-driveline-2)
-[MISSING / UNVERIFIED] Balance weights (pending-driveline-3)
-[MISSING / UNVERIFIED] Slip joint splines (pending-driveline-4)
-[MISSING / UNVERIFIED] Center bearing rubber carrier (pending-driveline-5)
-[MISSING / UNVERIFIED] Differential ring gear (pending-driveline-6)
-[MISSING / UNVERIFIED] Differential pinion gear (pending-driveline-7)
-[MISSING / UNVERIFIED] Pinion bearings and preload shims (pending-driveline-8)
-[MISSING / UNVERIFIED] Differential side gears (pending-driveline-9)
-[MISSING / UNVERIFIED] Differential carrier bearings (pending-driveline-10)
-[MISSING / UNVERIFIED] Differential oil seals (pending-driveline-11)
-[MISSING / UNVERIFIED] Differential breather (pending-driveline-12)
-[MISSING / UNVERIFIED] Differential drain and fill plugs (pending-driveline-13)
-[MISSING / UNVERIFIED] CV joint inner races (pending-driveline-14)
-[MISSING / UNVERIFIED] CV joint cages and balls (pending-driveline-15)
-[MISSING / UNVERIFIED] CV boot clamps (pending-driveline-16)
-[MISSING / UNVERIFIED] Halfshaft retaining clips (pending-driveline-17)
+Cooling
+-------
+[modeled; unverified] water-pump — Water pump envelope
+[modeled; unverified] thermostat — Thermostat housing
+[modeled; unverified] radiator — Radiator core
+[modeled; unverified] radiator-fins — Radiator fins
+[modeled; unverified] radiator-tank-left — Radiator end tank left
+[modeled; unverified] radiator-tank-right — Radiator end tank right
+[modeled; unverified] condenser — A/C condenser
+[modeled; unverified] radiator-cap — Radiator cap
+[modeled; unverified] fan-shroud — Radiator fan shroud
+[modeled; unverified] fan-hub-left — Cooling fan hub left
+[modeled; unverified] fan-blades-left — Cooling fan blades left
+[modeled; unverified] fan-hub-right — Cooling fan hub right
+[modeled; unverified] fan-blades-right — Cooling fan blades right
+[modeled; unverified] coolant-reservoir — Coolant expansion reservoir
+[modeled; unverified] reservoir-cap — Coolant reservoir cap
+[modeled; unverified] upper-radiator-hose — Upper radiator hose
+[modeled; unverified] lower-radiator-hose — Lower radiator hose
+[modeled; unverified] heater-hoses — Heater hose routing study
+[missing; unverified] pending-cooling-1 — Water pump impeller
+[missing; unverified] pending-cooling-2 — Water pump seal
+[missing; unverified] pending-cooling-3 — Water pump backing plate
+[missing; unverified] pending-cooling-4 — Water pump gasket
+[missing; unverified] pending-cooling-5 — Thermostat element and seal
+[missing; unverified] pending-cooling-6 — Exact coolant passages
+[missing; unverified] pending-cooling-7 — Radiator drain cock
+[missing; unverified] pending-cooling-8 — Radiator mounting cushions
+[missing; unverified] pending-cooling-9 — Cooling fan drive arrangement verification
+[missing; unverified] pending-cooling-10 — A/C compressor internal mechanism
+[missing; unverified] pending-cooling-11 — A/C refrigerant hoses
+[missing; unverified] pending-cooling-12 — A/C receiver drier
+[missing; unverified] pending-cooling-13 — Expansion valve
+[missing; unverified] pending-cooling-14 — Evaporator core
+[missing; unverified] pending-cooling-15 — Heater core
+[missing; unverified] pending-cooling-16 — HVAC blower and housing
+[missing; unverified] pending-cooling-17 — Blend doors and actuators
+[missing; unverified] pending-cooling-18 — Cabin air ducts
+[missing; unverified] pending-cooling-19 — Cabin air filter fitment verification
 
-SUSPENSION & STEERING
-26 modeled groups / 20 missing items
+Intake & fuel
+-------------
+[modeled; unverified] intake-runner-1 — Intake runner 1
+[modeled; unverified] intake-runner-2 — Intake runner 2
+[modeled; unverified] intake-runner-3 — Intake runner 3
+[modeled; unverified] intake-runner-4 — Intake runner 4
+[modeled; unverified] intake-runner-5 — Intake runner 5
+[modeled; unverified] intake-runner-6 — Intake runner 6
+[modeled; unverified] intake-plenum — Intake plenum / ACIS envelope
+[modeled; unverified] throttle — Throttle body
+[modeled; unverified] fuel-rail — Fuel rail
+[modeled; unverified] injector-1 — Fuel injector 1
+[modeled; unverified] injector-2 — Fuel injector 2
+[modeled; unverified] injector-3 — Fuel injector 3
+[modeled; unverified] injector-4 — Fuel injector 4
+[modeled; unverified] injector-5 — Fuel injector 5
+[modeled; unverified] injector-6 — Fuel injector 6
+[modeled; unverified] fuel-tank — Fuel tank envelope
+[modeled; unverified] fuel-pump-module — Fuel pump module envelope
+[modeled; unverified] tank-strap--1 — Fuel tank strap
+[modeled; unverified] tank-strap-1 — Fuel tank strap
+[modeled; unverified] fuel-line — Fuel supply line routing study
+[modeled; unverified] filler-neck — Fuel filler neck routing study
+[modeled; unverified] airbox — Air filter housing
+[modeled; unverified] airbox-ribs — Airbox molded ribs
+[modeled; unverified] air-intake-duct — Air intake duct
+[missing; unverified] pending-intake-1 — Air filter element
+[missing; unverified] pending-intake-2 — Intake snorkel
+[missing; unverified] pending-intake-3 — Throttle plate and motor
+[missing; unverified] pending-intake-4 — Throttle position sensor
+[missing; unverified] pending-intake-5 — ACIS control valve
+[missing; unverified] pending-intake-6 — ACIS vacuum actuator
+[missing; unverified] pending-intake-7 — Intake plenum gaskets
+[missing; unverified] pending-intake-8 — Intake runner gaskets
+[missing; unverified] pending-intake-9 — Injector seals
+[missing; unverified] pending-intake-10 — Fuel pressure regulation by variant
+[missing; unverified] pending-intake-11 — Fuel filter fitment
+[missing; unverified] pending-intake-12 — Fuel pump strainer
+[missing; unverified] pending-intake-13 — Fuel level sender
+[missing; unverified] pending-intake-14 — EVAP charcoal canister
+[missing; unverified] pending-intake-15 — EVAP purge valve
+[missing; unverified] pending-intake-16 — EVAP vent plumbing
+[missing; unverified] pending-intake-17 — Tank vent and rollover valves
+[missing; unverified] pending-intake-18 — Fuel cap and tether
 
-[MODELED / UNVERIFIED] Control arm front-left 0.4 (control-arm-0.4-front-left)
-[MODELED / UNVERIFIED] Control arm front-left 0.56 (control-arm-0.56-front-left)
-[MODELED / UNVERIFIED] Damper front-left (damper-front-left)
-[MODELED / UNVERIFIED] Coil spring front-left (spring-front-left)
-[MODELED / UNVERIFIED] Upper suspension mount front-left (strut-top-front-left)
-[MODELED / UNVERIFIED] Steering tie rod left (tie-rod-left)
-[MODELED / UNVERIFIED] Control arm front-right 0.4 (control-arm-0.4-front-right)
-[MODELED / UNVERIFIED] Control arm front-right 0.56 (control-arm-0.56-front-right)
-[MODELED / UNVERIFIED] Damper front-right (damper-front-right)
-[MODELED / UNVERIFIED] Coil spring front-right (spring-front-right)
-[MODELED / UNVERIFIED] Upper suspension mount front-right (strut-top-front-right)
-[MODELED / UNVERIFIED] Steering tie rod right (tie-rod-right)
-[MODELED / UNVERIFIED] Control arm rear-left 0.4 (control-arm-0.4-rear-left)
-[MODELED / UNVERIFIED] Control arm rear-left 0.56 (control-arm-0.56-rear-left)
-[MODELED / UNVERIFIED] Damper rear-left (damper-rear-left)
-[MODELED / UNVERIFIED] Coil spring rear-left (spring-rear-left)
-[MODELED / UNVERIFIED] Upper suspension mount rear-left (strut-top-rear-left)
-[MODELED / UNVERIFIED] Control arm rear-right 0.4 (control-arm-0.4-rear-right)
-[MODELED / UNVERIFIED] Control arm rear-right 0.56 (control-arm-0.56-rear-right)
-[MODELED / UNVERIFIED] Damper rear-right (damper-rear-right)
-[MODELED / UNVERIFIED] Coil spring rear-right (spring-rear-right)
-[MODELED / UNVERIFIED] Upper suspension mount rear-right (strut-top-rear-right)
-[MODELED / UNVERIFIED] Front stabilizer bar (antiroll-front)
-[MODELED / UNVERIFIED] Rear stabilizer bar (antiroll-rear)
-[MODELED / UNVERIFIED] Steering rack (steering-rack)
-[MODELED / UNVERIFIED] Steering intermediate shaft (steering-shaft)
-[MISSING / UNVERIFIED] Front upper ball joints (pending-suspension-1)
-[MISSING / UNVERIFIED] Front lower ball joints (pending-suspension-2)
-[MISSING / UNVERIFIED] Rear knuckle castings (pending-suspension-3)
-[MISSING / UNVERIFIED] Front steering knuckles (pending-suspension-4)
-[MISSING / UNVERIFIED] Control-arm bushings (pending-suspension-5)
-[MISSING / UNVERIFIED] Caster and camber adjustment hardware (pending-suspension-6)
-[MISSING / UNVERIFIED] Rear toe-control arms (pending-suspension-7)
-[MISSING / UNVERIFIED] Rear toe adjustment cams (pending-suspension-8)
-[MISSING / UNVERIFIED] Spring isolators (pending-suspension-9)
-[MISSING / UNVERIFIED] Damper bump stops (pending-suspension-10)
-[MISSING / UNVERIFIED] Dust boots (pending-suspension-11)
-[MISSING / UNVERIFIED] Stabilizer end links (pending-suspension-12)
-[MISSING / UNVERIFIED] Stabilizer chassis bushings (pending-suspension-13)
-[MISSING / UNVERIFIED] Steering rack bellows (pending-suspension-14)
-[MISSING / UNVERIFIED] Rack pinion and hydraulic piston (pending-suspension-15)
-[MISSING / UNVERIFIED] Power steering high-pressure hose (pending-suspension-16)
-[MISSING / UNVERIFIED] Power steering return hose (pending-suspension-17)
-[MISSING / UNVERIFIED] Power steering reservoir (pending-suspension-18)
-[MISSING / UNVERIFIED] Power steering cooler loop (pending-suspension-19)
-[MISSING / UNVERIFIED] Steering universal joints (pending-suspension-20)
+Exhaust
+-------
+[modeled; unverified] exhaust-tip-left — Exhaust outlet left
+[modeled; unverified] exhaust-tip-dark-left — Exhaust outlet interior left
+[modeled; unverified] exhaust-tip-right — Exhaust outlet right
+[modeled; unverified] exhaust-tip-dark-right — Exhaust outlet interior right
+[modeled; unverified] exhaust-runner-1 — Exhaust runner 1
+[modeled; unverified] exhaust-runner-2 — Exhaust runner 2
+[modeled; unverified] exhaust-runner-3 — Exhaust runner 3
+[modeled; unverified] exhaust-runner-4 — Exhaust runner 4
+[modeled; unverified] exhaust-runner-5 — Exhaust runner 5
+[modeled; unverified] exhaust-runner-6 — Exhaust runner 6
+[modeled; unverified] exhaust-pipe-left — Exhaust pipe left
+[modeled; unverified] catalyst-left — Catalytic converter envelope left
+[modeled; unverified] muffler-left — Rear muffler left
+[modeled; unverified] exhaust-hanger-left — Exhaust hanger left
+[modeled; unverified] exhaust-pipe-right — Exhaust pipe right
+[modeled; unverified] catalyst-right — Catalytic converter envelope right
+[modeled; unverified] muffler-right — Rear muffler right
+[modeled; unverified] exhaust-hanger-right — Exhaust hanger right
+[missing; unverified] pending-exhaust-1 — Exhaust manifold heat shields
+[missing; unverified] pending-exhaust-2 — Manifold gaskets
+[missing; unverified] pending-exhaust-3 — Manifold studs and nuts
+[missing; unverified] pending-exhaust-4 — Oxygen sensors by emissions variant
+[missing; unverified] pending-exhaust-5 — Catalyst substrate
+[missing; unverified] pending-exhaust-6 — Front pipe flange gaskets
+[missing; unverified] pending-exhaust-7 — Exhaust flange fasteners
+[missing; unverified] pending-exhaust-8 — Exhaust heat shields
+[missing; unverified] pending-exhaust-9 — Exhaust underbody isolators
+[missing; unverified] pending-exhaust-10 — Muffler internal baffles
 
-BRAKES
-22 modeled groups / 19 missing items
+Electrical
+----------
+[modeled; unverified] spark-plug-1 — Spark plug 1
+[modeled; unverified] spark-plug-2 — Spark plug 2
+[modeled; unverified] spark-plug-3 — Spark plug 3
+[modeled; unverified] spark-plug-4 — Spark plug 4
+[modeled; unverified] spark-plug-5 — Spark plug 5
+[modeled; unverified] spark-plug-6 — Spark plug 6
+[modeled; unverified] maf — Airflow meter envelope
+[modeled; unverified] washer-reservoir — Washer reservoir
+[modeled; unverified] washer-cap — Washer reservoir cap
+[modeled; unverified] battery — 12V battery
+[modeled; unverified] battery-top — Battery top cover
+[modeled; unverified] battery-terminal — Battery terminals
+[modeled; unverified] battery-positive-cover — Positive terminal cover
+[modeled; unverified] battery-hold-down — Battery hold-down
+[modeled; unverified] fuse-box — Engine bay fuse box
+[modeled; unverified] ecu-envelope — Engine control unit envelope
+[modeled; unverified] ignition-coil-1 — Ignition coil pack 1
+[modeled; unverified] ignition-coil-2 — Ignition coil pack 2
+[modeled; unverified] ignition-coil-3 — Ignition coil pack 3
+[modeled; unverified] engine-harness — Engine wiring loom routing study
+[modeled; unverified] ignition-lead-1 — Ignition lead study 1
+[modeled; unverified] ignition-lead-2 — Ignition lead study 2
+[modeled; unverified] ignition-lead-3 — Ignition lead study 3
+[modeled; unverified] ignition-lead-4 — Ignition lead study 4
+[modeled; unverified] ignition-lead-5 — Ignition lead study 5
+[modeled; unverified] ignition-lead-6 — Ignition lead study 6
+[missing; unverified] pending-electrical-1 — Battery tray
+[missing; unverified] pending-electrical-2 — Battery negative ground straps
+[missing; unverified] pending-electrical-3 — Main fusible links
+[missing; unverified] pending-electrical-4 — Fuse and relay positions
+[missing; unverified] pending-electrical-5 — Starter wiring
+[missing; unverified] pending-electrical-6 — Alternator windings and rectifier
+[missing; unverified] pending-electrical-7 — Connector housings with pin counts
+[missing; unverified] pending-electrical-8 — Harness branches and exact routing
+[missing; unverified] pending-electrical-9 — Harness clips and tape wraps
+[missing; unverified] pending-electrical-10 — ECU connectors
+[missing; unverified] pending-electrical-11 — Body control module
+[missing; unverified] pending-electrical-12 — Airbag control module
+[missing; unverified] pending-electrical-13 — ABS controller
+[missing; unverified] pending-electrical-14 — Diagnostic connector
+[missing; unverified] pending-electrical-15 — Instrument cluster circuit board
+[missing; unverified] pending-electrical-16 — Immobilizer antenna
+[missing; unverified] pending-electrical-17 — Ignition switch assembly
+[missing; unverified] pending-electrical-18 — Door lock motors
+[missing; unverified] pending-electrical-19 — Horn pair
+[missing; unverified] pending-electrical-20 — Exterior lighting harness
+[missing; unverified] pending-electrical-21 — Trunk wiring harness
+[missing; unverified] pending-electrical-22 — Antenna and amplifier
 
-[MODELED / UNVERIFIED] Brake rotor front-left (rotor-front-left)
-[MODELED / UNVERIFIED] Wheel hub front-left (hub-front-left)
-[MODELED / UNVERIFIED] Brake caliper front-left (caliper-front-left)
-[MODELED / UNVERIFIED] Flexible brake hose front-left (brake-hose-front-left)
-[MODELED / UNVERIFIED] Brake rotor front-right (rotor-front-right)
-[MODELED / UNVERIFIED] Wheel hub front-right (hub-front-right)
-[MODELED / UNVERIFIED] Brake caliper front-right (caliper-front-right)
-[MODELED / UNVERIFIED] Flexible brake hose front-right (brake-hose-front-right)
-[MODELED / UNVERIFIED] Brake rotor rear-left (rotor-rear-left)
-[MODELED / UNVERIFIED] Wheel hub rear-left (hub-rear-left)
-[MODELED / UNVERIFIED] Brake caliper rear-left (caliper-rear-left)
-[MODELED / UNVERIFIED] Flexible brake hose rear-left (brake-hose-rear-left)
-[MODELED / UNVERIFIED] Brake rotor rear-right (rotor-rear-right)
-[MODELED / UNVERIFIED] Wheel hub rear-right (hub-rear-right)
-[MODELED / UNVERIFIED] Brake caliper rear-right (caliper-rear-right)
-[MODELED / UNVERIFIED] Flexible brake hose rear-right (brake-hose-rear-right)
-[MODELED / UNVERIFIED] Rigid brake line routing study left (chassis-brake-line-left)
-[MODELED / UNVERIFIED] Rigid brake line routing study right (chassis-brake-line-right)
-[MODELED / UNVERIFIED] Brake booster envelope (brake-booster)
-[MODELED / UNVERIFIED] Master brake cylinder (master-cylinder)
-[MODELED / UNVERIFIED] Brake fluid reservoir (brake-reservoir)
-[MODELED / UNVERIFIED] ABS actuator envelope (abs-unit)
-[MISSING / UNVERIFIED] Brake pads by axle (pending-brakes-1)
-[MISSING / UNVERIFIED] Pad shims and retaining clips (pending-brakes-2)
-[MISSING / UNVERIFIED] Caliper pistons (pending-brakes-3)
-[MISSING / UNVERIFIED] Caliper dust seals (pending-brakes-4)
-[MISSING / UNVERIFIED] Caliper slide pins (pending-brakes-5)
-[MISSING / UNVERIFIED] Bleed screws (pending-brakes-6)
-[MISSING / UNVERIFIED] Rotor vent vane geometry (pending-brakes-7)
-[MISSING / UNVERIFIED] Backing plates (pending-brakes-8)
-[MISSING / UNVERIFIED] Wheel bearings (pending-brakes-9)
-[MISSING / UNVERIFIED] Wheel speed sensors (pending-brakes-10)
-[MISSING / UNVERIFIED] ABS tone rings (pending-brakes-11)
-[MISSING / UNVERIFIED] Parking brake shoes (pending-brakes-12)
-[MISSING / UNVERIFIED] Parking brake expander (pending-brakes-13)
-[MISSING / UNVERIFIED] Parking brake cables (pending-brakes-14)
-[MISSING / UNVERIFIED] Parking brake pedal mechanism (pending-brakes-15)
-[MISSING / UNVERIFIED] Brake booster vacuum line (pending-brakes-16)
-[MISSING / UNVERIFIED] Master cylinder reservoir seals (pending-brakes-17)
-[MISSING / UNVERIFIED] Rigid line clips and unions (pending-brakes-18)
-[MISSING / UNVERIFIED] ABS hydraulic port assignments (pending-brakes-19)
+Interior
+--------
+[modeled; unverified] dashboard — Dashboard shell
+[modeled; unverified] console — Center console
+[modeled; unverified] console-trim — Center console trim
+[modeled; unverified] shifter-gate — Automatic selector gate
+[modeled; unverified] shifter-stalk — Selector lever
+[modeled; unverified] shift-knob — Automatic shift knob
+[modeled; unverified] radio — Audio head unit envelope
+[modeled; unverified] climate-panel — Climate control panel envelope
+[modeled; unverified] audio-knobs — Audio control knobs
+[modeled; unverified] dash-vent--0.56 — Dashboard air vent
+[modeled; unverified] dash-vent--0.16 — Dashboard air vent
+[modeled; unverified] dash-vent-0.16 — Dashboard air vent
+[modeled; unverified] dash-vent-0.56 — Dashboard air vent
+[modeled; unverified] instrument-binnacle — Instrument binnacle
+[modeled; unverified] gauges — Instrument gauge faces
+[modeled; unverified] gauge-rings — Gauge bezel rings
+[modeled; unverified] gauge-needles — Gauge needles
+[modeled; unverified] steering-column — Steering column
+[modeled; unverified] steering-wheel — Steering wheel rim
+[modeled; unverified] steering-airbag — Driver airbag cover
+[modeled; unverified] steering-spokes — Steering wheel spokes
+[modeled; unverified] seat-base-front-driver — Front seat cushion driver
+[modeled; unverified] seat-back-front-driver — Front seat back driver
+[modeled; unverified] headrest-front-driver — Front head restraint driver
+[modeled; unverified] headrest-post-front-driver — Headrest posts
+[modeled; unverified] seat-rail-driver — Seat rails driver
+[modeled; unverified] seat-base-rear-driver — Rear seat cushion driver
+[modeled; unverified] seat-back-rear-driver — Rear seat back driver
+[modeled; unverified] headrest-rear-driver — Rear head restraint driver
+[modeled; unverified] headrest-post-rear-driver — Headrest posts
+[modeled; unverified] door-card-driver — Door trim driver
+[modeled; unverified] door-wood-driver — Door trim insert driver
+[modeled; unverified] door-switch-driver — Window switch panel driver
+[modeled; unverified] belt-webbing-driver — Front seat belt webbing driver
+[modeled; unverified] seat-base-front-passenger — Front seat cushion passenger
+[modeled; unverified] seat-back-front-passenger — Front seat back passenger
+[modeled; unverified] headrest-front-passenger — Front head restraint passenger
+[modeled; unverified] headrest-post-front-passenger — Headrest posts
+[modeled; unverified] seat-rail-passenger — Seat rails passenger
+[modeled; unverified] seat-base-rear-passenger — Rear seat cushion passenger
+[modeled; unverified] seat-back-rear-passenger — Rear seat back passenger
+[modeled; unverified] headrest-rear-passenger — Rear head restraint passenger
+[modeled; unverified] headrest-post-rear-passenger — Headrest posts
+[modeled; unverified] door-card-passenger — Door trim passenger
+[modeled; unverified] door-wood-passenger — Door trim insert passenger
+[modeled; unverified] door-switch-passenger — Window switch panel passenger
+[modeled; unverified] belt-webbing-passenger — Front seat belt webbing passenger
+[modeled; unverified] rear-seat-center — Rear seat center cushion
+[modeled; unverified] rear-back-center — Rear center backrest
+[modeled; unverified] parcel-shelf — Rear parcel shelf
+[modeled; unverified] headliner — Headliner
+[modeled; unverified] rearview-mirror — Interior mirror
+[modeled; unverified] sun-visor--1 — Sun visor
+[modeled; unverified] sun-visor-1 — Sun visor
+[modeled; unverified] brake-pedal — Brake pedal
+[modeled; unverified] accelerator-pedal — Accelerator pedal
+[modeled; unverified] carpet — Cabin carpet
+[missing; unverified] pending-interior-1 — Seat frame mechanisms
+[missing; unverified] pending-interior-2 — Seat motors and switches
+[missing; unverified] pending-interior-3 — Seat occupancy sensor
+[missing; unverified] pending-interior-4 — Seat belt retractors
+[missing; unverified] pending-interior-5 — Seat belt pretensioners
+[missing; unverified] pending-interior-6 — Belt buckles
+[missing; unverified] pending-interior-7 — Driver airbag module
+[missing; unverified] pending-interior-8 — Passenger airbag module
+[missing; unverified] pending-interior-9 — Front side airbag modules
+[missing; unverified] pending-interior-10 — Clock spring
+[missing; unverified] pending-interior-11 — Steering wheel switches by trim
+[missing; unverified] pending-interior-12 — Turn signal stalk
+[missing; unverified] pending-interior-13 — Wiper stalk
+[missing; unverified] pending-interior-14 — Column tilt/telescope mechanisms
+[missing; unverified] pending-interior-15 — Glove box
+[missing; unverified] pending-interior-16 — Glove box hinges and damper
+[missing; unverified] pending-interior-17 — Glove box lamp
+[missing; unverified] pending-interior-18 — Armrest hinges
+[missing; unverified] pending-interior-19 — Cup holders
+[missing; unverified] pending-interior-20 — Ashtray and power socket
+[missing; unverified] pending-interior-21 — Audio speakers and wiring
+[missing; unverified] pending-interior-22 — Floor mats and retainers
+[missing; unverified] pending-interior-23 — Interior carpet insulation
+[missing; unverified] pending-interior-24 — A/B/C pillar trim
+[missing; unverified] pending-interior-25 — Dome light
+[missing; unverified] pending-interior-26 — Door courtesy lamps
+[missing; unverified] pending-interior-27 — Rear seat latches
+[missing; unverified] pending-interior-28 — Child seat anchor hardware
 
-WHEELS & TIRES
-28 modeled groups / 10 missing items
-
-[MODELED / UNVERIFIED] Tire front-left (tire-front-left)
-[MODELED / UNVERIFIED] 16 inch wheel barrel front-left (wheel-front-left)
-[MODELED / UNVERIFIED] Wheel rim lip front-left (rim-front-left)
-[MODELED / UNVERIFIED] Wheel center cap front-left (hub-cap-front-left)
-[MODELED / UNVERIFIED] Wheel spokes front-left (spokes-front-left)
-[MODELED / UNVERIFIED] Wheel lug nuts front-left (lug-front-left)
-[MODELED / UNVERIFIED] Tire tread front-left (tread-front-left)
-[MODELED / UNVERIFIED] Tire front-right (tire-front-right)
-[MODELED / UNVERIFIED] 16 inch wheel barrel front-right (wheel-front-right)
-[MODELED / UNVERIFIED] Wheel rim lip front-right (rim-front-right)
-[MODELED / UNVERIFIED] Wheel center cap front-right (hub-cap-front-right)
-[MODELED / UNVERIFIED] Wheel spokes front-right (spokes-front-right)
-[MODELED / UNVERIFIED] Wheel lug nuts front-right (lug-front-right)
-[MODELED / UNVERIFIED] Tire tread front-right (tread-front-right)
-[MODELED / UNVERIFIED] Tire rear-left (tire-rear-left)
-[MODELED / UNVERIFIED] 16 inch wheel barrel rear-left (wheel-rear-left)
-[MODELED / UNVERIFIED] Wheel rim lip rear-left (rim-rear-left)
-[MODELED / UNVERIFIED] Wheel center cap rear-left (hub-cap-rear-left)
-[MODELED / UNVERIFIED] Wheel spokes rear-left (spokes-rear-left)
-[MODELED / UNVERIFIED] Wheel lug nuts rear-left (lug-rear-left)
-[MODELED / UNVERIFIED] Tire tread rear-left (tread-rear-left)
-[MODELED / UNVERIFIED] Tire rear-right (tire-rear-right)
-[MODELED / UNVERIFIED] 16 inch wheel barrel rear-right (wheel-rear-right)
-[MODELED / UNVERIFIED] Wheel rim lip rear-right (rim-rear-right)
-[MODELED / UNVERIFIED] Wheel center cap rear-right (hub-cap-rear-right)
-[MODELED / UNVERIFIED] Wheel spokes rear-right (spokes-rear-right)
-[MODELED / UNVERIFIED] Wheel lug nuts rear-right (lug-rear-right)
-[MODELED / UNVERIFIED] Tire tread rear-right (tread-rear-right)
-[MISSING / UNVERIFIED] Confirm OE tire size from door placard (pending-wheels-1)
-[MISSING / UNVERIFIED] Measured OE wheel spoke profile (pending-wheels-2)
-[MISSING / UNVERIFIED] Tire sidewall markings (pending-wheels-3)
-[MISSING / UNVERIFIED] Tire tread pattern by actual fitted tire (pending-wheels-4)
-[MISSING / UNVERIFIED] Valve stems (pending-wheels-5)
-[MISSING / UNVERIFIED] Wheel balancing weights (pending-wheels-6)
-[MISSING / UNVERIFIED] Full-size spare wheel (pending-wheels-7)
-[MISSING / UNVERIFIED] Spare-wheel retainer (pending-wheels-8)
-[MISSING / UNVERIFIED] Jack and handle (pending-wheels-9)
-[MISSING / UNVERIFIED] Lug wrench (pending-wheels-10)
-
-COOLING
-18 modeled groups / 19 missing items
-
-[MODELED / UNVERIFIED] Water pump envelope (water-pump)
-[MODELED / UNVERIFIED] Thermostat housing (thermostat)
-[MODELED / UNVERIFIED] Radiator core (radiator)
-[MODELED / UNVERIFIED] Radiator fins (radiator-fins)
-[MODELED / UNVERIFIED] Radiator end tank left (radiator-tank-left)
-[MODELED / UNVERIFIED] Radiator end tank right (radiator-tank-right)
-[MODELED / UNVERIFIED] A/C condenser (condenser)
-[MODELED / UNVERIFIED] Radiator cap (radiator-cap)
-[MODELED / UNVERIFIED] Radiator fan shroud (fan-shroud)
-[MODELED / UNVERIFIED] Cooling fan hub left (fan-hub-left)
-[MODELED / UNVERIFIED] Cooling fan blades left (fan-blades-left)
-[MODELED / UNVERIFIED] Cooling fan hub right (fan-hub-right)
-[MODELED / UNVERIFIED] Cooling fan blades right (fan-blades-right)
-[MODELED / UNVERIFIED] Coolant expansion reservoir (coolant-reservoir)
-[MODELED / UNVERIFIED] Coolant reservoir cap (reservoir-cap)
-[MODELED / UNVERIFIED] Upper radiator hose (upper-radiator-hose)
-[MODELED / UNVERIFIED] Lower radiator hose (lower-radiator-hose)
-[MODELED / UNVERIFIED] Heater hose routing study (heater-hoses)
-[MISSING / UNVERIFIED] Water pump impeller (pending-cooling-1)
-[MISSING / UNVERIFIED] Water pump seal (pending-cooling-2)
-[MISSING / UNVERIFIED] Water pump backing plate (pending-cooling-3)
-[MISSING / UNVERIFIED] Water pump gasket (pending-cooling-4)
-[MISSING / UNVERIFIED] Thermostat element and seal (pending-cooling-5)
-[MISSING / UNVERIFIED] Exact coolant passages (pending-cooling-6)
-[MISSING / UNVERIFIED] Radiator drain cock (pending-cooling-7)
-[MISSING / UNVERIFIED] Radiator mounting cushions (pending-cooling-8)
-[MISSING / UNVERIFIED] Cooling fan drive arrangement verification (pending-cooling-9)
-[MISSING / UNVERIFIED] A/C compressor internal mechanism (pending-cooling-10)
-[MISSING / UNVERIFIED] A/C refrigerant hoses (pending-cooling-11)
-[MISSING / UNVERIFIED] A/C receiver drier (pending-cooling-12)
-[MISSING / UNVERIFIED] Expansion valve (pending-cooling-13)
-[MISSING / UNVERIFIED] Evaporator core (pending-cooling-14)
-[MISSING / UNVERIFIED] Heater core (pending-cooling-15)
-[MISSING / UNVERIFIED] HVAC blower and housing (pending-cooling-16)
-[MISSING / UNVERIFIED] Blend doors and actuators (pending-cooling-17)
-[MISSING / UNVERIFIED] Cabin air ducts (pending-cooling-18)
-[MISSING / UNVERIFIED] Cabin air filter fitment verification (pending-cooling-19)
-
-INTAKE & FUEL
-24 modeled groups / 18 missing items
-
-[MODELED / UNVERIFIED] Intake runner 1 (intake-runner-1)
-[MODELED / UNVERIFIED] Intake runner 2 (intake-runner-2)
-[MODELED / UNVERIFIED] Intake runner 3 (intake-runner-3)
-[MODELED / UNVERIFIED] Intake runner 4 (intake-runner-4)
-[MODELED / UNVERIFIED] Intake runner 5 (intake-runner-5)
-[MODELED / UNVERIFIED] Intake runner 6 (intake-runner-6)
-[MODELED / UNVERIFIED] Intake plenum / ACIS envelope (intake-plenum)
-[MODELED / UNVERIFIED] Throttle body (throttle)
-[MODELED / UNVERIFIED] Fuel rail (fuel-rail)
-[MODELED / UNVERIFIED] Fuel injector 1 (injector-1)
-[MODELED / UNVERIFIED] Fuel injector 2 (injector-2)
-[MODELED / UNVERIFIED] Fuel injector 3 (injector-3)
-[MODELED / UNVERIFIED] Fuel injector 4 (injector-4)
-[MODELED / UNVERIFIED] Fuel injector 5 (injector-5)
-[MODELED / UNVERIFIED] Fuel injector 6 (injector-6)
-[MODELED / UNVERIFIED] Fuel tank envelope (fuel-tank)
-[MODELED / UNVERIFIED] Fuel pump module envelope (fuel-pump-module)
-[MODELED / UNVERIFIED] Fuel tank strap (tank-strap--1)
-[MODELED / UNVERIFIED] Fuel tank strap (tank-strap-1)
-[MODELED / UNVERIFIED] Fuel supply line routing study (fuel-line)
-[MODELED / UNVERIFIED] Fuel filler neck routing study (filler-neck)
-[MODELED / UNVERIFIED] Air filter housing (airbox)
-[MODELED / UNVERIFIED] Airbox molded ribs (airbox-ribs)
-[MODELED / UNVERIFIED] Air intake duct (air-intake-duct)
-[MISSING / UNVERIFIED] Air filter element (pending-intake-1)
-[MISSING / UNVERIFIED] Intake snorkel (pending-intake-2)
-[MISSING / UNVERIFIED] Throttle plate and motor (pending-intake-3)
-[MISSING / UNVERIFIED] Throttle position sensor (pending-intake-4)
-[MISSING / UNVERIFIED] ACIS control valve (pending-intake-5)
-[MISSING / UNVERIFIED] ACIS vacuum actuator (pending-intake-6)
-[MISSING / UNVERIFIED] Intake plenum gaskets (pending-intake-7)
-[MISSING / UNVERIFIED] Intake runner gaskets (pending-intake-8)
-[MISSING / UNVERIFIED] Injector seals (pending-intake-9)
-[MISSING / UNVERIFIED] Fuel pressure regulation by variant (pending-intake-10)
-[MISSING / UNVERIFIED] Fuel filter fitment (pending-intake-11)
-[MISSING / UNVERIFIED] Fuel pump strainer (pending-intake-12)
-[MISSING / UNVERIFIED] Fuel level sender (pending-intake-13)
-[MISSING / UNVERIFIED] EVAP charcoal canister (pending-intake-14)
-[MISSING / UNVERIFIED] EVAP purge valve (pending-intake-15)
-[MISSING / UNVERIFIED] EVAP vent plumbing (pending-intake-16)
-[MISSING / UNVERIFIED] Tank vent and rollover valves (pending-intake-17)
-[MISSING / UNVERIFIED] Fuel cap and tether (pending-intake-18)
-
-EXHAUST
-16 modeled groups / 10 missing items
-
-[MODELED / UNVERIFIED] Exhaust tip left (exhaust-tip-left)
-[MODELED / UNVERIFIED] Exhaust tip right (exhaust-tip-right)
-[MODELED / UNVERIFIED] Exhaust runner 1 (exhaust-runner-1)
-[MODELED / UNVERIFIED] Exhaust runner 2 (exhaust-runner-2)
-[MODELED / UNVERIFIED] Exhaust runner 3 (exhaust-runner-3)
-[MODELED / UNVERIFIED] Exhaust runner 4 (exhaust-runner-4)
-[MODELED / UNVERIFIED] Exhaust runner 5 (exhaust-runner-5)
-[MODELED / UNVERIFIED] Exhaust runner 6 (exhaust-runner-6)
-[MODELED / UNVERIFIED] Exhaust pipe left (exhaust-pipe-left)
-[MODELED / UNVERIFIED] Catalytic converter envelope left (catalyst-left)
-[MODELED / UNVERIFIED] Rear muffler left (muffler-left)
-[MODELED / UNVERIFIED] Exhaust hanger left (exhaust-hanger-left)
-[MODELED / UNVERIFIED] Exhaust pipe right (exhaust-pipe-right)
-[MODELED / UNVERIFIED] Catalytic converter envelope right (catalyst-right)
-[MODELED / UNVERIFIED] Rear muffler right (muffler-right)
-[MODELED / UNVERIFIED] Exhaust hanger right (exhaust-hanger-right)
-[MISSING / UNVERIFIED] Exhaust manifold heat shields (pending-exhaust-1)
-[MISSING / UNVERIFIED] Manifold gaskets (pending-exhaust-2)
-[MISSING / UNVERIFIED] Manifold studs and nuts (pending-exhaust-3)
-[MISSING / UNVERIFIED] Oxygen sensors by emissions variant (pending-exhaust-4)
-[MISSING / UNVERIFIED] Catalyst substrate (pending-exhaust-5)
-[MISSING / UNVERIFIED] Front pipe flange gaskets (pending-exhaust-6)
-[MISSING / UNVERIFIED] Exhaust flange fasteners (pending-exhaust-7)
-[MISSING / UNVERIFIED] Exhaust heat shields (pending-exhaust-8)
-[MISSING / UNVERIFIED] Exhaust underbody isolators (pending-exhaust-9)
-[MISSING / UNVERIFIED] Muffler internal baffles (pending-exhaust-10)
-
-ELECTRICAL
-26 modeled groups / 22 missing items
-
-[MODELED / UNVERIFIED] Spark plug 1 (spark-plug-1)
-[MODELED / UNVERIFIED] Spark plug 2 (spark-plug-2)
-[MODELED / UNVERIFIED] Spark plug 3 (spark-plug-3)
-[MODELED / UNVERIFIED] Spark plug 4 (spark-plug-4)
-[MODELED / UNVERIFIED] Spark plug 5 (spark-plug-5)
-[MODELED / UNVERIFIED] Spark plug 6 (spark-plug-6)
-[MODELED / UNVERIFIED] Airflow meter envelope (maf)
-[MODELED / UNVERIFIED] Washer reservoir (washer-reservoir)
-[MODELED / UNVERIFIED] Washer reservoir cap (washer-cap)
-[MODELED / UNVERIFIED] 12V battery (battery)
-[MODELED / UNVERIFIED] Battery top cover (battery-top)
-[MODELED / UNVERIFIED] Battery terminals (battery-terminal)
-[MODELED / UNVERIFIED] Positive terminal cover (battery-positive-cover)
-[MODELED / UNVERIFIED] Battery hold-down (battery-hold-down)
-[MODELED / UNVERIFIED] Engine bay fuse box (fuse-box)
-[MODELED / UNVERIFIED] Engine control unit envelope (ecu-envelope)
-[MODELED / UNVERIFIED] Ignition coil pack 1 (ignition-coil-1)
-[MODELED / UNVERIFIED] Ignition coil pack 2 (ignition-coil-2)
-[MODELED / UNVERIFIED] Ignition coil pack 3 (ignition-coil-3)
-[MODELED / UNVERIFIED] Engine wiring loom routing study (engine-harness)
-[MODELED / UNVERIFIED] Ignition lead study 1 (ignition-lead-1)
-[MODELED / UNVERIFIED] Ignition lead study 2 (ignition-lead-2)
-[MODELED / UNVERIFIED] Ignition lead study 3 (ignition-lead-3)
-[MODELED / UNVERIFIED] Ignition lead study 4 (ignition-lead-4)
-[MODELED / UNVERIFIED] Ignition lead study 5 (ignition-lead-5)
-[MODELED / UNVERIFIED] Ignition lead study 6 (ignition-lead-6)
-[MISSING / UNVERIFIED] Battery tray (pending-electrical-1)
-[MISSING / UNVERIFIED] Battery negative ground straps (pending-electrical-2)
-[MISSING / UNVERIFIED] Main fusible links (pending-electrical-3)
-[MISSING / UNVERIFIED] Fuse and relay positions (pending-electrical-4)
-[MISSING / UNVERIFIED] Starter wiring (pending-electrical-5)
-[MISSING / UNVERIFIED] Alternator windings and rectifier (pending-electrical-6)
-[MISSING / UNVERIFIED] Connector housings with pin counts (pending-electrical-7)
-[MISSING / UNVERIFIED] Harness branches and exact routing (pending-electrical-8)
-[MISSING / UNVERIFIED] Harness clips and tape wraps (pending-electrical-9)
-[MISSING / UNVERIFIED] ECU connectors (pending-electrical-10)
-[MISSING / UNVERIFIED] Body control module (pending-electrical-11)
-[MISSING / UNVERIFIED] Airbag control module (pending-electrical-12)
-[MISSING / UNVERIFIED] ABS controller (pending-electrical-13)
-[MISSING / UNVERIFIED] Diagnostic connector (pending-electrical-14)
-[MISSING / UNVERIFIED] Instrument cluster circuit board (pending-electrical-15)
-[MISSING / UNVERIFIED] Immobilizer antenna (pending-electrical-16)
-[MISSING / UNVERIFIED] Ignition switch assembly (pending-electrical-17)
-[MISSING / UNVERIFIED] Door lock motors (pending-electrical-18)
-[MISSING / UNVERIFIED] Horn pair (pending-electrical-19)
-[MISSING / UNVERIFIED] Exterior lighting harness (pending-electrical-20)
-[MISSING / UNVERIFIED] Trunk wiring harness (pending-electrical-21)
-[MISSING / UNVERIFIED] Antenna and amplifier (pending-electrical-22)
-
-INTERIOR
-57 modeled groups / 28 missing items
-
-[MODELED / UNVERIFIED] Dashboard shell (dashboard)
-[MODELED / UNVERIFIED] Center console (console)
-[MODELED / UNVERIFIED] Center console trim (console-trim)
-[MODELED / UNVERIFIED] Automatic selector gate (shifter-gate)
-[MODELED / UNVERIFIED] Selector lever (shifter-stalk)
-[MODELED / UNVERIFIED] Automatic shift knob (shift-knob)
-[MODELED / UNVERIFIED] Audio head unit envelope (radio)
-[MODELED / UNVERIFIED] Climate control panel envelope (climate-panel)
-[MODELED / UNVERIFIED] Audio control knobs (audio-knobs)
-[MODELED / UNVERIFIED] Dashboard air vent (dash-vent--0.56)
-[MODELED / UNVERIFIED] Dashboard air vent (dash-vent--0.16)
-[MODELED / UNVERIFIED] Dashboard air vent (dash-vent-0.16)
-[MODELED / UNVERIFIED] Dashboard air vent (dash-vent-0.56)
-[MODELED / UNVERIFIED] Instrument binnacle (instrument-binnacle)
-[MODELED / UNVERIFIED] Instrument gauge faces (gauges)
-[MODELED / UNVERIFIED] Gauge bezel rings (gauge-rings)
-[MODELED / UNVERIFIED] Gauge needles (gauge-needles)
-[MODELED / UNVERIFIED] Steering column (steering-column)
-[MODELED / UNVERIFIED] Steering wheel rim (steering-wheel)
-[MODELED / UNVERIFIED] Driver airbag cover (steering-airbag)
-[MODELED / UNVERIFIED] Steering wheel spokes (steering-spokes)
-[MODELED / UNVERIFIED] Front seat cushion driver (seat-base-front-driver)
-[MODELED / UNVERIFIED] Front seat back driver (seat-back-front-driver)
-[MODELED / UNVERIFIED] Front head restraint driver (headrest-front-driver)
-[MODELED / UNVERIFIED] Headrest posts (headrest-post-front-driver)
-[MODELED / UNVERIFIED] Seat rails driver (seat-rail-driver)
-[MODELED / UNVERIFIED] Rear seat cushion driver (seat-base-rear-driver)
-[MODELED / UNVERIFIED] Rear seat back driver (seat-back-rear-driver)
-[MODELED / UNVERIFIED] Rear head restraint driver (headrest-rear-driver)
-[MODELED / UNVERIFIED] Headrest posts (headrest-post-rear-driver)
-[MODELED / UNVERIFIED] Door trim driver (door-card-driver)
-[MODELED / UNVERIFIED] Door trim insert driver (door-wood-driver)
-[MODELED / UNVERIFIED] Window switch panel driver (door-switch-driver)
-[MODELED / UNVERIFIED] Front seat belt webbing driver (belt-webbing-driver)
-[MODELED / UNVERIFIED] Front seat cushion passenger (seat-base-front-passenger)
-[MODELED / UNVERIFIED] Front seat back passenger (seat-back-front-passenger)
-[MODELED / UNVERIFIED] Front head restraint passenger (headrest-front-passenger)
-[MODELED / UNVERIFIED] Headrest posts (headrest-post-front-passenger)
-[MODELED / UNVERIFIED] Seat rails passenger (seat-rail-passenger)
-[MODELED / UNVERIFIED] Rear seat cushion passenger (seat-base-rear-passenger)
-[MODELED / UNVERIFIED] Rear seat back passenger (seat-back-rear-passenger)
-[MODELED / UNVERIFIED] Rear head restraint passenger (headrest-rear-passenger)
-[MODELED / UNVERIFIED] Headrest posts (headrest-post-rear-passenger)
-[MODELED / UNVERIFIED] Door trim passenger (door-card-passenger)
-[MODELED / UNVERIFIED] Door trim insert passenger (door-wood-passenger)
-[MODELED / UNVERIFIED] Window switch panel passenger (door-switch-passenger)
-[MODELED / UNVERIFIED] Front seat belt webbing passenger (belt-webbing-passenger)
-[MODELED / UNVERIFIED] Rear seat center cushion (rear-seat-center)
-[MODELED / UNVERIFIED] Rear center backrest (rear-back-center)
-[MODELED / UNVERIFIED] Rear parcel shelf (parcel-shelf)
-[MODELED / UNVERIFIED] Headliner (headliner)
-[MODELED / UNVERIFIED] Interior mirror (rearview-mirror)
-[MODELED / UNVERIFIED] Sun visor (sun-visor--1)
-[MODELED / UNVERIFIED] Sun visor (sun-visor-1)
-[MODELED / UNVERIFIED] Brake pedal (brake-pedal)
-[MODELED / UNVERIFIED] Accelerator pedal (accelerator-pedal)
-[MODELED / UNVERIFIED] Cabin carpet (carpet)
-[MISSING / UNVERIFIED] Seat frame mechanisms (pending-interior-1)
-[MISSING / UNVERIFIED] Seat motors and switches (pending-interior-2)
-[MISSING / UNVERIFIED] Seat occupancy sensor (pending-interior-3)
-[MISSING / UNVERIFIED] Seat belt retractors (pending-interior-4)
-[MISSING / UNVERIFIED] Seat belt pretensioners (pending-interior-5)
-[MISSING / UNVERIFIED] Belt buckles (pending-interior-6)
-[MISSING / UNVERIFIED] Driver airbag module (pending-interior-7)
-[MISSING / UNVERIFIED] Passenger airbag module (pending-interior-8)
-[MISSING / UNVERIFIED] Front side airbag modules (pending-interior-9)
-[MISSING / UNVERIFIED] Clock spring (pending-interior-10)
-[MISSING / UNVERIFIED] Steering wheel switches by trim (pending-interior-11)
-[MISSING / UNVERIFIED] Turn signal stalk (pending-interior-12)
-[MISSING / UNVERIFIED] Wiper stalk (pending-interior-13)
-[MISSING / UNVERIFIED] Column tilt/telescope mechanisms (pending-interior-14)
-[MISSING / UNVERIFIED] Glove box (pending-interior-15)
-[MISSING / UNVERIFIED] Glove box hinges and damper (pending-interior-16)
-[MISSING / UNVERIFIED] Glove box lamp (pending-interior-17)
-[MISSING / UNVERIFIED] Armrest hinges (pending-interior-18)
-[MISSING / UNVERIFIED] Cup holders (pending-interior-19)
-[MISSING / UNVERIFIED] Ashtray and power socket (pending-interior-20)
-[MISSING / UNVERIFIED] Audio speakers and wiring (pending-interior-21)
-[MISSING / UNVERIFIED] Floor mats and retainers (pending-interior-22)
-[MISSING / UNVERIFIED] Interior carpet insulation (pending-interior-23)
-[MISSING / UNVERIFIED] A/B/C pillar trim (pending-interior-24)
-[MISSING / UNVERIFIED] Dome light (pending-interior-25)
-[MISSING / UNVERIFIED] Door courtesy lamps (pending-interior-26)
-[MISSING / UNVERIFIED] Rear seat latches (pending-interior-27)
-[MISSING / UNVERIFIED] Child seat anchor hardware (pending-interior-28)
-
-STRUCTURE & MOUNTS
-20 modeled groups / 14 missing items
-
-[MODELED / UNVERIFIED] Floor pan (floor)
-[MODELED / UNVERIFIED] Transmission tunnel (tunnel)
-[MODELED / UNVERIFIED] Longitudinal rail -1 (rail--1)
-[MODELED / UNVERIFIED] Rocker reinforcement -1 (sill--1)
-[MODELED / UNVERIFIED] Longitudinal rail 1 (rail-1)
-[MODELED / UNVERIFIED] Rocker reinforcement 1 (sill-1)
-[MODELED / UNVERIFIED] Front subframe (subframe-front)
-[MODELED / UNVERIFIED] Subframe rubber mount (subframe-mount-front-1)
-[MODELED / UNVERIFIED] Subframe rubber mount (subframe-mount-front1)
-[MODELED / UNVERIFIED] Rear subframe (subframe-rear)
-[MODELED / UNVERIFIED] Subframe rubber mount (subframe-mount-rear-1)
-[MODELED / UNVERIFIED] Subframe rubber mount (subframe-mount-rear1)
-[MODELED / UNVERIFIED] Firewall (firewall)
-[MODELED / UNVERIFIED] Radiator support (radiator-support)
-[MODELED / UNVERIFIED] Rear bulkhead (rear-bulkhead)
-[MODELED / UNVERIFIED] B pillar left (pillar-b-left)
-[MODELED / UNVERIFIED] B pillar right (pillar-b-right)
-[MODELED / UNVERIFIED] Engine mount exhaust (engine-mount-exhaust)
-[MODELED / UNVERIFIED] Engine mount intake (engine-mount-intake)
-[MODELED / UNVERIFIED] Transmission mount (trans-mount)
-[MISSING / UNVERIFIED] Factory datum holes (pending-structure-1)
-[MISSING / UNVERIFIED] Weld flanges (pending-structure-2)
-[MISSING / UNVERIFIED] Spot weld locations (pending-structure-3)
-[MISSING / UNVERIFIED] Front crash rails internal reinforcements (pending-structure-4)
-[MISSING / UNVERIFIED] Rear crash rail reinforcements (pending-structure-5)
-[MISSING / UNVERIFIED] Suspension hardpoint coordinates (pending-structure-6)
-[MISSING / UNVERIFIED] Chassis seam details (pending-structure-7)
-[MISSING / UNVERIFIED] Underbody cavity plugs (pending-structure-8)
-[MISSING / UNVERIFIED] Grommets (pending-structure-9)
-[MISSING / UNVERIFIED] Earth studs (pending-structure-10)
-[MISSING / UNVERIFIED] Fasteners with thread/pitch/length/grade (pending-structure-11)
-[MISSING / UNVERIFIED] Hose clamps with size and position (pending-structure-12)
-[MISSING / UNVERIFIED] Cable clips with type and location (pending-structure-13)
-[MISSING / UNVERIFIED] All additional VIN-specific catalog subassemblies (pending-structure-14)
-
-OPEN ISSUES
-The specification sheet lists 55.9 inches height but its diagram shows 56.7; brochure 55.9 used provisionally.
-OEM archived pages disagree on 215/60R16 versus 225/60R16 tires. Wheel/tire details need placard confirmation.
-No factory CAD or measurements of mechanical parts supplied.
-Generic transmission internals only; gear/valve-body engineering not represented.
-No claimed exhaustive OEM parts count; reconcile all inventory against VIN-specific catalog.
-
-REFERENCE SOURCES
-Lexus 2000 US GS brochure (archived manufacturer publication)
-https://dgv4.xr793.org/wp-content/uploads/2018/11/2000-Lexus-GS.pdf
-Lexus 2000 GS specification sheet (archived manufacturer publication)
-https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf
-Toyota / Lexus Technical Information System
-https://techinfo.toyota.com/
-
-BUILD ORDER
-1. Confirm the reference vehicle and reconcile a VIN-specific catalog.
-2. Measure or scan engine service area: covers, pulleys, pump, tensioner, brackets, fasteners.
-3. Replace estimated meshes and review mounting surfaces, clearances and tool access.
-4. Repeat for transmission, driveline, brakes, suspension, structure, body, interior and electrical.
-5. Verify every repair step using licensed service information and qualified mechanical review.
-6. Bake measured materials, create levels of detail, and profile real target devices.
+Structure & mounts
+------------------
+[modeled; unverified] floor — Floor pan
+[modeled; unverified] tunnel — Transmission tunnel
+[modeled; unverified] rail--1 — Longitudinal rail -1
+[modeled; unverified] sill--1 — Rocker reinforcement -1
+[modeled; unverified] rail-1 — Longitudinal rail 1
+[modeled; unverified] sill-1 — Rocker reinforcement 1
+[modeled; unverified] subframe-front — Front subframe
+[modeled; unverified] subframe-mount-front-1 — Subframe rubber mount
+[modeled; unverified] subframe-mount-front1 — Subframe rubber mount
+[modeled; unverified] subframe-rear — Rear subframe
+[modeled; unverified] subframe-mount-rear-1 — Subframe rubber mount
+[modeled; unverified] subframe-mount-rear1 — Subframe rubber mount
+[modeled; unverified] firewall — Firewall
+[modeled; unverified] radiator-support — Radiator support
+[modeled; unverified] rear-bulkhead — Rear bulkhead
+[modeled; unverified] pillar-b-left — Black B pillar left
+[modeled; unverified] pillar-b-right — Black B pillar right
+[modeled; unverified] engine-mount-exhaust — Engine mount exhaust
+[modeled; unverified] engine-mount-intake — Engine mount intake
+[modeled; unverified] trans-mount — Transmission mount
+[missing; unverified] pending-structure-1 — Factory datum holes
+[missing; unverified] pending-structure-2 — Weld flanges
+[missing; unverified] pending-structure-3 — Spot weld locations
+[missing; unverified] pending-structure-4 — Front crash rails internal reinforcements
+[missing; unverified] pending-structure-5 — Rear crash rail reinforcements
+[missing; unverified] pending-structure-6 — Suspension hardpoint coordinates
+[missing; unverified] pending-structure-7 — Chassis seam details
+[missing; unverified] pending-structure-8 — Underbody cavity plugs
+[missing; unverified] pending-structure-9 — Grommets
+[missing; unverified] pending-structure-10 — Earth studs
+[missing; unverified] pending-structure-11 — Fasteners with thread/pitch/length/grade
+[missing; unverified] pending-structure-12 — Hose clamps with size and position
+[missing; unverified] pending-structure-13 — Cable clips with type and location
+[missing; unverified] pending-structure-14 — All additional VIN-specific catalog subassemblies

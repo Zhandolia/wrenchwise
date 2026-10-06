@@ -18,19 +18,19 @@ def material(name,color,metal=0,rough=.45,coat=0):
  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True
  p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough;p.inputs['Coat Weight'].default_value=coat
  return m
-paint=material('Millennium silver inspired - visual approximation',(.43,.50,.56),.82,.24,.4)
+paint=material('Millennium silver inspired - visual approximation',(.24,.29,.32),.42,.31,.6)
 chrome=material('Polished aluminum',(.7,.76,.8),.96,.2)
 cast=material('Cast aluminum',(.42,.46,.49),.78,.43)
 iron=material('Cast iron',(.11,.12,.13),.72,.54)
 steel=material('Satin zinc steel',(.35,.39,.41),.84,.32)
 black=material('Molded black polymer',(.021,.026,.031),.04,.49)
 rubber=material('Rubber',(.012,.014,.017),0,.72)
-glass=material('Blue green tinted glass',(.048,.10,.12),.45,.15,.4)
+glass=material('Blue green tinted glass',(.012,.021,.026),.08,.20,.4)
 cloth=material('Charcoal fabric',(.075,.085,.095),0,.91)
 wood=material('Walnut inspired trim',(.095,.04,.014),.12,.28,.5)
-red=material('Red lens',(.5,.016,.018),.1,.23,.4)
+red=material('Red lens',(.28,.006,.009),.05,.25,.4)
 amber=material('Amber lens',(.8,.24,.015),.1,.3,.3)
-lens=material('Clear headlamp reflector',(.55,.65,.71),.84,.17,.35)
+lens=material('Clear headlamp reflector',(.52,.56,.58),.18,.22,.4)
 copper=material('Copper',(.37,.15,.055),.8,.38)
 white=material('Reservoir polymer',(.66,.67,.58),0,.5)
 beltmat=material('Timing belt rubber',(.018,.020,.022),0,.8)
@@ -105,111 +105,31 @@ box('firewall','Firewall','structure',(0,-.40,.64),(1.52,.055,.68),paint,.04)
 box('radiator-support','Radiator support','structure',(0,-1.97,.58),(1.49,.055,.18),paint,.025)
 box('rear-bulkhead','Rear bulkhead','structure',(0,1.35,.61),(1.48,.05,.62),paint,.025)
 
-# Exterior side skins with cut wheel arches. Mesh boundaries expose panel seams.
-L=4.80568;W=1.80086;H=1.41986;WB=2.79908
-
-def half_width(y):
- return .895- .10*max(0,(abs(y)-1.7)/.70)**1.4
-
-def belt_height(y):
- return .79+.12*math.exp(-((y-.1)/1.9)**2)-.1*max(0,(-y-1.75)/.65)
-for side,st in [(-1,'left'),(1,'right')]:
- for ya,yb,key in [(-2.32,-.58,'front-fender'),(-.574,.47,'front-door'),(.476,1.28,'rear-door'),(1.286,2.30,'rear-quarter')]:
-  vs=[];ns=50
-  for i in range(ns+1):
-   y=ya+(yb-ya)*i/ns;bottom=.245
-   for wy in [-WB/2,WB/2]:
-    d=abs(y-wy)
-    if d<.367:bottom=max(bottom,.335+sqrt(.367*.367-d*d))
-   top=belt_height(y)
-   for j in range(5):
-    t=j/4;z=bottom+(top-bottom)*t;x=side*(half_width(y)-.026*(1-t)+.012*sin(t*pi));vs.append((x,y,z))
-  fs=[]
-  for i in range(ns):
-   for j in range(4):a=i*5+j;fs.append((a,a+5,a+6,a+1))
-  mesh(key+'-'+st,key.replace('-',' ').title()+' '+st,'body',vs,fs,paint,.012)
-  if 'door' in key:
-   hy=yb-.18;box('handle-'+key+'-'+st,'Door handle '+key+' '+st,'body',(side*.901,hy,.802),(.025,.15,.032),chrome,.011)
- for wy,ax in [(-WB/2,'front'),(WB/2,'rear')]:
-  points=[(side*(half_width(wy+cos(a)*.37)+.004),wy+cos(a)*.37,.336+sin(a)*.37) for a in [i*pi/32 for i in range(33)]]
-  tube('arch-'+ax+'-'+st,'Wheel arch lip '+ax+' '+st,'body',points,.009,paint)
- tube('belt-trim-'+st,'Body side molding '+st,'body',[(side*(half_width(y)+.007),y,.56) for y in [-.96,-.5,.2,.8,1.00]],.012,paint)
- # Side windows and separate pillar frames.
- windows=[([(-.51,.88),(-.10,1.32),(.38,1.37),(.40,.91)],'front'),([(.43,.91),(.42,1.37),(.84,1.33),(1.32,.91)],'rear')]
- for poly,name in windows:
-  vertices=[(side*(.78 if z<1 else .675),y,z) for y,z in poly]
-  mesh('glass-'+name+'-'+st,name.title()+' door glass '+st,'body',vertices,[(0,1,2,3)],glass,.009)
-  tube('window-seal-'+name+'-'+st,'Window weatherstrip '+name+' '+st,'body',vertices+[vertices[0]],.015,black)
- box('pillar-b-'+st,'B pillar '+st,'structure',(side*.755,.41,1.12),(.052,.055,.47),black,.016)
- ellipsoid('mirror-'+st,'Side mirror housing '+st,'body',(side*.99,-.42,.99),(.11,.105,.055),paint)
- ellipsoid('mirror-glass-'+st,'Side mirror glass '+st,'body',(side*.99,-.36,.99),(.085,.005,.040),chrome)
- tube('mirror-arm-'+st,'Mirror mounting arm '+st,'body',[(side*.78,-.44,.95),(side*.93,-.42,.97)],.022,black)
-
-# Curved hood, roof, trunk lid; explicit seam gaps.
-def panel(pid,label,ya,yb,zfunc,widthfunc):
- vs=[];nx=20;ny=25
- for i in range(ny+1):
-  t=i/ny;y=ya+(yb-ya)*t
-  for j in range(nx+1):u=-1+2*j/nx;vs.append((u*widthfunc(y),y,zfunc(y,u)))
- fs=[]
- for i in range(ny):
-  for j in range(nx):a=i*(nx+1)+j;fs.append((a,a+1,a+nx+2,a+nx+1))
- return mesh(pid,label,'body',vs,fs,paint,.012)
-panel('hood','Hood',-2.19,-.535,lambda y,u:.820+.105*((y+2.19)/1.655)+.060*(1-u*u),lambda y:.68+.12*((y+2.19)/1.655))
-panel('roof','Roof panel',-.085,.86,lambda y,u:1.37+.04986*sin(pi*(y+.085)/.945)-.05*u*u,lambda y:.66)
-panel('trunk-lid','Trunk lid',1.40,2.17,lambda y,u:.91-.035*((y-1.4)/.77)+.018*(1-u*u),lambda y:.75)
-mesh('windshield','Windshield','body',[(-.777,-.52,.911),(.777,-.52,.911),(.653,-.08,1.325),(-.653,-.08,1.325)],[(0,1,2,3)],glass,.008)
-mesh('rear-glass','Rear window','body',[(-.65,.872,1.325),(.65,.872,1.325),(.747,1.39,.928),(-.747,1.39,.928)],[(0,1,2,3)],glass,.008)
-for side,st in [(-1,'left'),(1,'right')]:
- tube('pillar-a-'+st,'A pillar '+st,'body',[(side*.795,-.53,.88),(side*.742,-.32,1.16),(side*.676,-.07,1.325)],.026,paint)
- tube('pillar-c-'+st,'C pillar '+st,'body',[(side*.676,.85,1.325),(side*.75,1.15,1.13),(side*.79,1.42,.9)],.043,paint)
- box('wiper-'+st,'Windshield wiper '+st,'body',(side*.34,-.51,.935),(.47,.025,.017),black,.007,rot=(0,0,side*.13))
- # Paired oval headlights give the S160 front its identifiable four-lamp arrangement.
- for x,r,name in [(side*.655,.195,'outer'),(side*.365,.125,'inner')]:
-  ellipsoid('headlight-'+name+'-'+st,'Headlamp '+name+' '+st,'body',(x,-2.20,.697),(r,.052,.091),lens)
-  ellipsoid('headlight-bezel-'+name+'-'+st,'Lamp bezel '+name+' '+st,'body',(x,-2.175,.697),(r+.012,.046,.101),black)
- ellipsoid('marker-'+st,'Front side marker '+st,'body',(side*.833,-2.12,.677),(.031,.072,.033),amber)
- ellipsoid('tail-lamp-'+st,'Tail lamp '+st,'body',(side*.58,2.228,.772),(.255,.032,.097),red)
- box('fog-lamp-'+st,'Fog lamp '+st,'body',(side*.57,-2.331,.408),(.20,.02,.065),lens,.02)
- box('exhaust-tip-'+st,'Exhaust tip '+st,'exhaust',(side*.57,2.36,.238),(.12,.16,.07),chrome,.022)
-box('front-bumper','Front bumper cover','body',(0,-2.27,.44),(1.74,.266,.32),paint,.095)
-box('rear-bumper','Rear bumper cover','body',(0,2.26,.445),(1.72,.28568,.35),paint,.085)
-box('grille-back','Grille backing','body',(0,-2.305,.70),(.46,.022,.22),black,.035)
-for i in range(15):box('grille','Front grille bars','body',(-.215+i*.0307,-2.322,.704),(.012,.017,.175),chrome,.005)
-for z in [.615,.795]:box('grille-surround','Grille surround','body',(0,-2.332,z),(.465,.013,.012),chrome,.005)
-box('lower-grille','Lower air intake','body',(0,-2.407,.402),(.70,.014,.115),black,.016)
-for z in [.365,.405,.445]:box('lower-grille-slats','Lower intake slats','body',(0,-2.416,z),(.7,.012,.008),steel,.002)
-box('plate-front','Front license plate bracket','body',(0,-2.421,.51),(.30,.012,.12),black,.01)
-box('plate-rear','Rear license plate bracket','body',(0,2.408,.67),(.30,.012,.15),black,.01)
-box('fuel-door','Fuel filler door','body',(-.893,1.67,.788),(.009,.18,.14),paint,.014)
-
-# Close the upper fender/deck surfaces with independently editable panels.
-for side,st in [(-1,'left'),(1,'right')]:
- for ya,yb,key,inner in [(-2.19,-.535,'front-fender-top',.74),(1.40,2.17,'rear-quarter-top',.75)]:
-  vs=[]
-  for i in range(41):
-   y=ya+(yb-ya)*i/40
-   w=.68+.12*((y+2.19)/1.655) if ya<0 else inner
-   zi=.820+.105*((y+2.19)/1.655) if ya<0 else .91-.035*((y-1.4)/.77)
-   for j in range(5):
-    t=j/4;vs.append((side*(w+(half_width(y)-w)*t),y,zi+(belt_height(y)-zi)*t+.013*sin(pi*t)))
-  fs=[]
-  for i in range(40):
-   for j in range(4):a=i*5+j;fs.append((a,a+1,a+6,a+5))
-  mesh(key+'-'+st,key.replace('-',' ').title()+' '+st,'body',vs,fs,paint,.012)
+# Separate reference-based S160 exterior module.
+exec(compile(open(os.path.join(os.path.dirname(__file__),'gs300_exterior.py')).read(),'gs300_exterior.py','exec'))
 
 # Four wheels, brakes, and chassis links. Tire outer diameter is provisional: OEM sources conflict on 215/60 versus 225/60.
 for y,ax in [(-WB/2,'front'),(WB/2,'rear')]:
  for s,side in [(-1,'left'),(1,'right')]:
   pos=(s*.769,y,.332);name=ax+'-'+side
-  torus('tire-'+name,'Tire '+name,'wheels',pos,.265,.067,rubber,'X')
-  cyl('wheel-'+name,'16 inch wheel barrel '+name,'wheels',pos,.202,.175,cast,'X')
-  torus('rim-'+name,'Wheel rim lip '+name,'wheels',(s*.878,y,.332),.190,.010,chrome,'X')
-  cyl('hub-cap-'+name,'Wheel center cap '+name,'wheels',(s*.883,y,.332),.055,.01,paint,'X')
-  for i in range(6):
-   a=i*2*pi/6;o=box('spokes-'+name,'Wheel spokes '+name,'wheels',(s*.876,y+cos(a)*.114,.332+sin(a)*.114),(.025,.146,.035),cast,.01);o.rotation_euler.x=a
+  # Tire shoulder and sidewall sections; barrel remains open between the spokes.
+  tv=[];tf=[];section=[(-.108,.206),(-.11,.268),(-.098,.311),(-.077,.330),(.077,.330),(.098,.311),(.11,.268),(.108,.206)]
+  for i in range(97):
+   a=i*2*pi/96
+   for dx,r in section:tv.append((s*.769+dx,y+r*cos(a),.332+r*sin(a)))
+  for i in range(96):
+   for k in range(7):n=i*8+k;tf.append((n,n+8,n+9,n+1))
+  mesh('tire-'+name,'Tire '+name,'wheels',tv,tf,rubber)
+  for dx in [-.082,.082]:torus('wheel-'+name,'16 inch open wheel barrel '+name,'wheels',(s*.769+dx,y,.332),.195,.009,cast,'X')
+  torus('rim-'+name,'Wheel rim lip '+name,'wheels',(s*.878,y,.332),.196,.009,chrome,'X')
+  cyl('hub-cap-'+name,'Wheel center cap '+name,'wheels',(s*.877,y,.332),.052,.012,paint,'X')
   for i in range(5):
-   a=i*2*pi/5;cyl('lug-'+name,'Wheel lug nuts '+name,'wheels',(s*.895,y+cos(a)*.061,.332+sin(a)*.061),.012,.014,steel,'X',verts=6)
+   a=i*2*pi/5+pi/2;verts=[]
+   for dx in [s*.853,s*.88]:
+    for r,da in [(.047,-.36),(.183,-.13),(.19,.13),(.047,.36)]:verts.append((dx,y+r*cos(a+da),.332+r*sin(a+da)))
+   mesh('spokes-'+name,'Five-spoke wheel face study '+name,'wheels',verts,[(0,1,2,3),(4,7,6,5),(0,4,5,1),(1,5,6,2),(2,6,7,3),(3,7,4,0)],cast)
+  for i in range(5):
+   a=i*2*pi/5;cyl('lug-'+name,'Wheel lug nuts '+name,'wheels',(s*.892,y+cos(a)*.061,.332+sin(a)*.061),.010,.014,steel,'X',verts=6)
   # Raised fine tread blocks and sidewall channels.
   for i in range(54):
    a=i*2*pi/54
@@ -398,7 +318,7 @@ box('rear-seat-center','Rear seat center cushion','interior',(0,.80,.575),(.35,.
 box('rear-back-center','Rear center backrest','interior',(0,1.02,.80),(.35,.12,.45),cloth,.05)
 box('parcel-shelf','Rear parcel shelf','interior',(0,1.40,.84),(1.39,.26,.055),cloth,.03)
 box('headliner','Headliner','interior',(0,.4,1.35),(1.22,.79,.027),cloth,.025)
-box('rearview-mirror','Interior mirror','interior',(0,-.36,1.24),(.23,.046,.068),black,.02)
+box('rearview-mirror','Interior mirror','interior',(0,-.19,1.24),(.23,.046,.068),black,.02)
 for s in [-1,1]:box('sun-visor-'+str(s),'Sun visor','interior',(s*.34,-.09,1.31),(.36,.14,.018),cloth,.018)
 for x,z,label in [(-.49,.35,'Brake pedal'),(-.36,.32,'Accelerator pedal')]:box(label.lower().replace(' ','-'),label,'interior',(x,-.30,z),(.055,.035,.085),rubber,.009)
 box('carpet','Cabin carpet','interior',(0,.40,.33),(1.40,1.9,.027),cloth,.025)
@@ -461,7 +381,7 @@ for mi,mat in enumerate([cast,iron,rubber,cloth,black]):
 meshes=[o for o in scene.objects if o.type=='MESH'];triangles=sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in meshes)
 for o in meshes:
  rec=records[o['partId']];rec['meshName']=o.name;rec['dimensionsMetres']=[round(float(x),5) for x in o.dimensions]
-manifest={'title':'2000 Lexus GS 300 US automatic — provisional assembly','version':2,'units':'metres','coordinateSystem':'Blender X lateral, Y rearward, Z up; GLB uses Y up','accuracy':'Provisional original geometry, not a 1:1 verified replica','validation':{'geometryVerified':False,'fitmentVerified':False,'fastenerLocationsVerified':False,'repairGuideReady':False},'dimensionTargets':{'lengthMetres':L,'bodyWidthMetres':W,'heightMetres':H,'wheelbaseMetres':WB,'basis':'Converted from rounded dimensions in Lexus US 2000 brochure. Overall width excludes mirrors. Target scale is not dimensional validation.'},'openIssues':['The specification sheet lists 55.9 inches height but its diagram shows 56.7; brochure 55.9 used provisionally.','OEM archived pages disagree on 215/60R16 versus 225/60R16 tires. Wheel/tire details need placard confirmation.','No factory CAD or measurements of mechanical parts supplied.','Generic transmission internals only; gear/valve-body engineering not represented.','No claimed exhaustive OEM parts count; reconcile all inventory against VIN-specific catalog.'],'systems':SYSTEMS,'sources':SOURCES,'meshCount':len(meshes),'triangleCount':triangles,'parts':list(records.values())}
+manifest={'title':'2000 Lexus GS 300 US automatic — provisional assembly','version':3,'units':'metres','coordinateSystem':'Blender X lateral, Y rearward, Z up; GLB uses Y up','accuracy':'Provisional original geometry, not a 1:1 verified replica','validation':{'geometryVerified':False,'fitmentVerified':False,'fastenerLocationsVerified':False,'repairGuideReady':False},'dimensionTargets':{'lengthMetres':L,'bodyWidthMetres':W,'heightMetres':H,'wheelbaseMetres':WB,'basis':'Converted from rounded dimensions in Lexus US 2000 brochure. Overall width excludes mirrors. Target scale is not dimensional validation.'},'openIssues':['Exterior rebuilt from pre-facelift reference photographs; dimensional surface validation is still pending.','Wheel face is a five-spoke photographic study; exact US OE wheel casting remains unverified.','The specification sheet lists 55.9 inches height but its diagram shows 56.7; brochure 55.9 used provisionally.','OEM archived pages disagree on 215/60R16 versus 225/60R16 tires. Wheel/tire details need placard confirmation.','No factory CAD or measurements of mechanical parts supplied.','Generic transmission internals only; gear/valve-body engineering not represented.','No claimed exhaustive OEM parts count; reconcile all inventory against VIN-specific catalog.'],'systems':SYSTEMS,'sources':SOURCES+[{'id':'lexus-exterior','title':'Lexus pre-facelift exterior photographic references (UK; trim differences require US verification)','url':'https://media.lexus.co.uk/images/gs-300-1998-2000-exterior/'},{'id':'lexus-us-gallery','title':'Lexus USA 1998–2000 GS 300 reference album','url':'https://pressroom.lexus.com/album/1998-2000-lexus-gs-300-second-2nd-generation/'}],'meshCount':len(meshes),'triangleCount':triangles,'parts':list(records.values())}
 with open(os.path.join(OUT,'gs300-parts.json'),'w') as f:json.dump(manifest,f,indent=2)
 # Scene and GLB share the same named geometry; cameras/lights excluded from model export.
 bpy.ops.object.select_all(action='DESELECT')
@@ -469,11 +389,14 @@ for o in scene.objects:o.select_set(True)
 bpy.ops.export_scene.gltf(filepath=os.path.join(OUT,'gs300-assembly.glb'),export_format='GLB',use_selection=True,export_extras=True,export_materials='EXPORT',export_yup=True)
 # Studio lighting saved in the native Blender project.
 world=scene.world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.05,.07,.10,1);world.node_tree.nodes['Background'].inputs[1].default_value=.35
-for name,loc,power,size in [('Key',(-3,-4,6),1900,5),('Fill',(4,-2,3),1400,4),('Rim',(1,4,5),2200,3)]:
+for name,loc,power,size in [('Key',(-3,-4,6),1300,5),('Fill',(4,-2,3),750,4),('Rim',(1,4,5),1400,3)]:
  bpy.ops.object.light_add(type='AREA',location=loc);o=bpy.context.object;o.name=name;o.data.energy=power;o.data.shape='DISK';o.data.size=size;o.rotation_euler=(Vector((0,0,.65))-o.location).to_track_quat('-Z','Y').to_euler()
-bpy.ops.object.camera_add(location=(5.8,-7.5,4.2));camera=bpy.context.object;camera.rotation_euler=(Vector((0,0,.70))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=6.45;scene.camera=camera
+bpy.ops.object.camera_add(location=(5.8,-8.5,3.0));camera=bpy.context.object;camera.rotation_euler=(Vector((0,0,.70))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=6.45;scene.camera=camera
 bpy.ops.mesh.primitive_plane_add(size=200,location=(0,0,-.011));floor=bpy.context.object;floor.name='Studio floor';floor.data.materials.append(material('Studio graphite',(.035,.046,.06),.15,.45))
-scene.render.engine='CYCLES';scene.cycles.samples=24;scene.cycles.use_denoising=True;scene.render.resolution_x=1400;scene.render.resolution_y=1000;scene.render.resolution_percentage=100;scene.view_settings.view_transform='AgX';scene.render.image_settings.file_format='PNG'
+scene.render.engine='CYCLES';scene.cycles.samples=32;scene.cycles.use_denoising=True;scene.render.resolution_x=1400;scene.render.resolution_y=1000;scene.render.resolution_percentage=100;scene.view_settings.view_transform='AgX';scene.render.image_settings.file_format='PNG'
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT,'gs300-assembly.blend'))
 scene.render.filepath=os.path.join(OUT,'gs300-assembly.png');bpy.ops.render.render(write_still=True)
+# Orthographic validation renders expose silhouette errors without perspective.
+for name,loc in [('front',(0,-9,.80)),('side',(9,0,.80)),('rear',(0,9,.80))]:
+ camera.location=loc;camera.rotation_euler=(Vector((0,0,.80))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.ortho_scale=5.5 if name=='side' else 2.7;scene.render.resolution_x=1200;scene.render.resolution_y=700;scene.render.filepath=os.path.join(OUT,'gs300-'+name+'.png');bpy.ops.render.render(write_still=True)
 print('ASSEMBLY_RESULT',json.dumps({'meshes':len(meshes),'triangles':triangles,'parts':len(records),'modeled':sum(r['status']=='modeled' for r in records.values()),'output':OUT}))

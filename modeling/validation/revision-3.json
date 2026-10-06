@@ -1,0 +1,22 @@
+{
+  "revision": 3,
+  "checks": {
+    "glbHeaderAndLength": "pass",
+    "uniqueInventoryIDs": "pass",
+    "meshInventoryParity": "pass",
+    "under25MiB": "pass"
+  },
+  "files": {
+    "gs300-assembly.glb": "cbcb007d17f43b268ae7b16ece507dff6a67605859390fb959d13c3b9f197434",
+    "gs300-parts.json": "58312562d4819341987d0b6ac1e96e0702d928d6a8286b903149804362795299",
+    "build_gs300.py": "a5b1db23b9a4884274fa25da2073760ec97a5903309f075de98c1cec0edcf605",
+    "gs300_exterior.py": "83082ba413264b5a18ea04394c7cc7d26333e948f84b3c9254b3b50e9f3d2ac8"
+  },
+  "geometryValidation": "Unverified. File integrity checks do not establish geometric or mechanical accuracy.",
+  "visibleLimitations": [
+    "Photographic interpretation still has body surface continuity errors.",
+    "Exact US trim/lamps/wheel casting not established.",
+    "Mechanical assemblies remain schematic."
+  ],
+  "references": "docs/vehicle-accuracy.md"
+}
