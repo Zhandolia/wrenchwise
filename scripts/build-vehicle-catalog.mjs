@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 const history=JSON.parse(fs.readFileSync('research/catalog/toyota-lineage-facts.json'));
 const regional=JSON.parse(fs.readFileSync('research/catalog/regional-nameplates.json'));
-const legacy=JSON.parse(fs.readFileSync('research/vehicle-sources.json'));
+const assets=JSON.parse(fs.readFileSync('research/catalog/asset-targets.json'));
 const slug=s=>s.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\+/g,' plus ').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const sources=[{id:'toyota-lineage',title:'Toyota 75-year vehicle lineage (2012 snapshot)',url:history.sourceUrl,scope:history.scope},
+const sources=[...assets.sources,{id:'toyota-lineage',title:'Toyota 75-year vehicle lineage (2012 snapshot)',url:history.sourceUrl,scope:history.scope},
  ...regional.sources.map(s=>({id:s.id,title:`${s.make} · ${s.region}`,url:s.url,scope:regional.scope})),
  {id:'legacy-audit',title:'Existing vehicle source audits',url:'/research/vehicle-sources.json',scope:'Eleven initial Lexus targets; only GS300 is user-confirmed. See individual audits.'}];
 const records=history.records.map(r=>({id:`lineage-${r.sourceId.toLowerCase()}`,make:r.name.startsWith('Lexus ')?'Lexus':'Toyota',
@@ -21,6 +21,7 @@ for(const [id,name,bodyType,generation] of targets)records.unshift({id,make:'Lex
  assetStatus:id==='gs300'?'provisional-assembly':['gs400','gs430','rx300'].includes(id)?'exterior-reference':'not-built',
  assetUrl:id==='gs300'?'/models/gs300-assembly.glb':['gs400','gs430','rx300'].includes(id)?`/models/catalog/${id}-reference.glb`:null,
  notes:id==='gs300'?'User-confirmed target. V5 assembly has no measured, verified parts. Physical reference and production month remain unidentified.':'Working target from initial catalog audit. Exact trim and installed components are unverified.'});
+records.push(...assets.records);
 records.sort((a,b)=>a.id==='gs300'?-1:b.id==='gs300'?1:a.kind==='workshop-target'&&b.kind!=='workshop-target'?-1:b.kind==='workshop-target'&&a.kind!=='workshop-target'?1:a.make.localeCompare(b.make)||a.name.localeCompare(b.name)||(a.introductionMonth||'').localeCompare(b.introductionMonth||''));
 const data={schemaVersion:1,updatedAt:'2026-10-06',makes:[{id:'toyota',name:'Toyota'},{id:'lexus',name:'Lexus'}],
  coverage:{status:'incomplete',historicalRecords:history.records.length,scope:'Toyota and Lexus road-vehicle discovery: historical lineage plus selected regional manufacturer catalogs. Records include generations, body variants and regional nameplate overviews; they are not a count of unique models.',

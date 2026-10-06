@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "vehicle": "toyota-gr-supra-reference",
+  "sourceSha256": "66d783670fd31ff8ac98d650327a503637ec2e6ee58bc7ec81203eade5e7e6ac",
+  "webSha256": "34e5237dc106b84ee365df5e10bdc49ebfec74cf74a7950a44040c641875ec00",
+  "bytes": 5351348,
+  "modeledGroups": 136,
+  "verifiedParts": 0,
+  "reviewedViews": [
+    "front oblique",
+    "rear oblique",
+    "left",
+    "right",
+    "top",
+    "underside"
+  ],
+  "observedIssues": [
+    "No usable engine/transmission anatomy",
+    "Flat underbody shell",
+    "Exact year, market, trim, markers and wheels unverified",
+    "Source has no bitmap textures; PBR colors approximated",
+    "Glass and trim subdivisions remain approximate"
+  ],
+  "rework": [
+    "Restored dark plastic, leather and wheel finish after initial washed-out materials",
+    "Corrected source scale for inspection",
+    "Corrected top/underbody review framing to prevent cropping"
+  ],
+  "acceptance": "Visual reference only; not accepted as a 1:1 vehicle or repair model"
+}

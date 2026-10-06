@@ -10,7 +10,7 @@ export default function VehicleCatalogBrowser({onChoose,currentId}:{onChoose?:(i
  const results=findCatalogRecords(query,make,coverage),size=24,pages=Math.max(1,Math.ceil(results.length/size)),safePage=Math.min(page,pages-1);
  const change=(fn:(s:string)=>void)=>(s:string)=>{fn(s);setPage(0)};
  return <section className="catalog-browser" aria-label="Toyota and Lexus vehicle catalog">
-  <div className="catalog-summary"><strong>{vehicleCatalog.records.length} catalog records</strong><span>2 makes</span><span>4 provisional 3D entries</span><span>0 verified replicas</span></div>
+  <div className="catalog-summary"><strong>{vehicleCatalog.records.length} catalog records</strong><span>2 makes</span><span>{vehicleCatalog.records.filter(r=>r.assetUrl).length} provisional 3D entries</span><span>0 verified replicas</span></div>
   <p className="catalog-note">Historical vehicles and regional model ranges. Records can describe a generation, body variant or model family. Worldwide coverage is still being reconciled.</p>
   <div className="catalog-filters"><div className="library-search"><Search size={17}/><Input value={query} onChange={e=>change(setQuery)(e.target.value)} placeholder="Search model, year, region or body type" aria-label="Search Toyota and Lexus catalog"/></div>
    <Select value={make} onValueChange={change(setMake)}><SelectTrigger aria-label="Filter make"><SelectValue/></SelectTrigger><SelectContent><SelectItem value="all">All makes</SelectItem>{vehicleCatalog.makes.map(m=><SelectItem key={m.id} value={m.name}>{m.name}</SelectItem>)}</SelectContent></Select>

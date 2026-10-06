@@ -1,3 +1,4 @@
+import {vehicleCatalog} from './vehicle-catalog';
 export {catalogVehicles as vehicles} from './vehicle-catalog';
 export const chapters=[
  {title:'Explore the engine bay',short:'Engine anatomy',part:'Engine block',body:'Start with the layout. Rotate the model to see the cylinder head, intake runners, and the front of the engine. The stock intake crossover and VVT-i hardware now follow GS300 references; individual dimensions remain estimates.',tip:'Select a visible part to identify it.'},
@@ -10,4 +11,5 @@ export const chapters=[
 export type ModelRecord={id:string;vehicle:string;name:string;fitment:string;source:string;license:string;size:number;created_at:number};
 export type CommentRecord={id:string;chapter:number;author:string;body:string;created_at:number};
 
-export const catalogExteriors:Record<string,string>={gs300:"/models/catalog/gs300-reference.glb",gs400:"/models/catalog/gs400-reference.glb",gs430:"/models/catalog/gs430-reference.glb",rx300:"/models/catalog/rx300-reference.glb"};
+export const catalogExteriors:Record<string,string>=Object.fromEntries(vehicleCatalog.records.filter(r=>r.assetStatus==='exterior-reference'&&r.assetUrl).map(r=>[r.id,r.assetUrl!]));
+export const exteriorCredits:Record<string,{author:string;source:string}>=Object.fromEntries(vehicleCatalog.records.filter(r=>r.assetStatus==='exterior-reference').map(r=>[r.id,{author:r.id==='toyota-gr-supra-reference'?'3dmodels.cars':'David_Holiday',source:r.sourceUrl}]));

@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "id": "supra-ccby",
+      "title": "Toyota GR Supra by 3dmodels.cars \u2014 CC BY 4.0",
+      "url": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+      "scope": "Community visual geometry; exact configuration and physical accuracy unverified."
+    },
+    {
+      "id": "supra-oem-spec",
+      "title": "Toyota 2020 Supra product information",
+      "url": "https://pressroom.toyota.com/2020-supra-product-supra/",
+      "scope": "Rounded overall length used for uniform normalization only; not dimensional validation."
+    }
+  ],
+  "records": [
+    {
+      "id": "toyota-gr-supra-reference",
+      "make": "Toyota",
+      "name": "GR Supra",
+      "kind": "workshop-target",
+      "bodyType": "Sports coupe",
+      "region": "Market unverified",
+      "generation": "A90 visual reference \u00b7 exact year unverified",
+      "introductionMonth": null,
+      "endMonth": null,
+      "configurationStatus": "unresolved",
+      "sourceIds": [
+        "supra-ccby",
+        "supra-oem-spec"
+      ],
+      "sourceRecordId": null,
+      "sourceUrl": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+      "assetStatus": "exterior-reference",
+      "assetUrl": "/models/catalog/gr-supra-reference.glb",
+      "notes": "Exterior and cabin reference by 3dmodels.cars, CC BY 4.0. Engine and transmission absent; flat underbody shell. Uniform scale and PBR materials adapted; exact year, trim and fitment unverified."
+    }
+  ]
+}

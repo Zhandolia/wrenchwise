@@ -11,7 +11,7 @@ test('catalog preserves targets and every imported lineage vehicle; no fake asse
   else assert.equal(r.assetStatus,'not-built');
   if(r.kind!=='workshop-target')assert.equal(r.configurationStatus,'unresolved');
  }
- assert.deepEqual(data.records.filter(r=>r.assetUrl).map(r=>r.id).sort(),['gs300','gs400','gs430','rx300']);
+ assert.deepEqual(data.records.filter(r=>r.assetUrl).map(r=>r.id).sort(),['gs300','gs400','gs430','rx300','toyota-gr-supra-reference']);
  for(const id of ['gs300','gs400','gs430','ls400','ls430','es300','es330','rx300','rx330','gx470','lx470'])assert(data.records.some(r=>r.id===id));
  for(const make of ['Toyota','Lexus'])assert(data.records.some(r=>r.make===make));
  assert.equal(data.coverage.status,'incomplete');

@@ -35,3 +35,9 @@ GitHub attribution diagnosis: GitHub reported `author: null` and `committer: nul
 ## Catalog foundation — 2026-10-06
 
 C1a evidence migration pushed as `d50aa3ee6501bec586e832bbff49b05bd55a94af`; GitHub confirms author and committer are Zhandolia. Its CI run passed. Expanded manufacturer catalog, shared upload/comment registry and paginated vehicle selection are recorded in the next catalog checkpoint. See `docs/toyota-lexus-catalog.md` for source scope and outstanding worldwide coverage. This expansion does not complete measured geometry milestones C2–C7.
+
+## Toyota visual-reference checkpoint — 2026-10-06
+
+Expanded catalog foundation pushed as `70193a5`; CI passed. The following checkpoint adds the licensed GR Supra reference, source preparation script, component index, immutable provenance, six-view review findings and GLB validation. It is a 136-group visual model, not a complete mechanical replica. Catalog total becomes 817 source records with five provisional asset entries. The application now suppresses the GS300 timing-belt checklist for other vehicle records.
+
+Validation for Toyota reference: five catalog/evidence/GLB tests passed locally; TypeScript passed. Local browser checks confirmed Toyota search, historical-record navigation, correctly scoped source attribution, GS300 quantity subjects and the Supra renderer without browser console errors. No frame-rate or mechanical accuracy claim follows from these checks.

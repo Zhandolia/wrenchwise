@@ -12,3 +12,7 @@ These assets were obtained through the public Allen Institute Objaverse distribu
 A source listing's license is the creator's stated license; it is not a factory CAD provenance certificate. Geometry and fitment remain unverified. The raw download is reproducible with `modeling/catalog/fetch_sources.py`. Preparation uses `modeling/catalog/prepare_downloaded.py` in Blender 4.5.
 
 OEM press photos were reviewed locally. Only their source URLs, hashes, and review notes are committed. They are not copied into the public website or repository, and are not offered as open-licensed textures.
+
+## Toyota GR Supra visual reference
+
+[Toyota GR Supra](https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca) by [3dmodels.cars](https://sketchfab.com/3dcarsmodels), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Acquired from its public Objaverse mirror; immutable source hash and URL are in `research/asset-licenses.json`. Adaptations: uniform length normalization, PBR material restoration, stable component IDs and Meshopt web compression. The model has no original bitmap textures in this distribution. Exact market/year, engine, transmission, underbody and physical accuracy are unverified. The derivative GLB and Blender output retain CC BY 4.0; application MIT licensing does not replace asset licensing.

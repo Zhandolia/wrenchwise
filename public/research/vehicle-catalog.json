@@ -31,6 +31,18 @@
   },
   "sources": [
     {
+      "id": "supra-ccby",
+      "title": "Toyota GR Supra by 3dmodels.cars — CC BY 4.0",
+      "url": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+      "scope": "Community visual geometry; exact configuration and physical accuracy unverified."
+    },
+    {
+      "id": "supra-oem-spec",
+      "title": "Toyota 2020 Supra product information",
+      "url": "https://pressroom.toyota.com/2020-supra-product-supra/",
+      "scope": "Rounded overall length used for uniform normalization only; not dimensional validation."
+    },
+    {
       "id": "toyota-lineage",
       "title": "Toyota 75-year vehicle lineage (2012 snapshot)",
       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/family_tree/index.html",
@@ -329,6 +341,27 @@
       "assetStatus": "not-built",
       "assetUrl": null,
       "notes": "Working target from initial catalog audit. Exact trim and installed components are unverified."
+    },
+    {
+      "id": "toyota-gr-supra-reference",
+      "make": "Toyota",
+      "name": "GR Supra",
+      "kind": "workshop-target",
+      "bodyType": "Sports coupe",
+      "region": "Market unverified",
+      "generation": "A90 visual reference · exact year unverified",
+      "introductionMonth": null,
+      "endMonth": null,
+      "configurationStatus": "unresolved",
+      "sourceIds": [
+        "supra-ccby",
+        "supra-oem-spec"
+      ],
+      "sourceRecordId": null,
+      "sourceUrl": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+      "assetStatus": "exterior-reference",
+      "assetUrl": "/models/catalog/gr-supra-reference.glb",
+      "notes": "Exterior and cabin reference by 3dmodels.cars, CC BY 4.0. Engine and transmission absent; flat underbody shell. Uniform scale and PBR materials adapted; exact year, trim and fitment unverified."
     },
     {
       "id": "lexus-eu-ct",

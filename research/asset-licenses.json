@@ -44,5 +44,28 @@
       "Wheels, markers, lamp internals and trim require further correction",
       "No usable engine or transmission anatomy in this source"
     ]
+  },
+  {
+    "vehicle": "toyota-gr-supra-reference",
+    "title": "Toyota GR Supra",
+    "author": "3dmodels.cars",
+    "authorUrl": "https://sketchfab.com/3dcarsmodels",
+    "sourceUrl": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+    "license": "CC BY 4.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "publicMirror": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-060/86f609515557438e93bd3c6145ef99ca.glb",
+    "sourceSha256": "66d783670fd31ff8ac98d650327a503637ec2e6ee58bc7ec81203eade5e7e6ac",
+    "sourceUID": "86f609515557438e93bd3c6145ef99ca",
+    "changes": [
+      "Uniform normalization to rounded 172.5-inch 2020 US brochure length, without non-uniform stretching",
+      "PBR material restoration; no source bitmap textures present",
+      "Stable component IDs and web compression"
+    ],
+    "limitations": [
+      "Exact year/market/trim/powertrain unverified",
+      "No usable engine/transmission service geometry",
+      "Flat approximate underbody",
+      "No dimensional or procedure validation"
+    ]
   }
 ]

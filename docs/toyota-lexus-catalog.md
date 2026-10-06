@@ -4,7 +4,7 @@ Wrenchwise is a multi-make platform. Toyota and Lexus are the first catalog scop
 
 ## Coverage
 
-The first expanded release contains 816 source-linked records: 607 historical Toyota lineage entries, 198 regional nameplate overview entries and 11 preserved workshop targets. These are mixed record types, not 816 unique cars or finished 3D models. The 2012 history snapshot is Japan-oriented and excludes timeline-only event markers. Source ordinals are not global generation numbers. Missing end dates do not imply ongoing production. Sources, dated fact snapshots and reproducible generation are committed.
+The first expanded release contains 817 source-linked records: 607 historical Toyota lineage entries, 198 regional nameplate overview entries and 11 preserved Lexus workshop targets and one Toyota GR Supra visual-reference target. These are mixed record types, not 816 unique cars or finished 3D models. The 2012 history snapshot is Japan-oriented and excludes timeline-only event markers. Source ordinals are not global generation numbers. Missing end dates do not imply ongoing production. Sources, dated fact snapshots and reproducible generation are committed.
 
 The regional sources cover manufacturer catalogs for Japan, US, Europe/UK, India, Indonesia and South Africa, plus the cited China BEV announcement. Worldwide generation/trim/market mapping remains incomplete, especially historical exports and China-specific models. The catalog makes those gaps visible. Concept-only vehicles, racing-only vehicles and marine products are excluded. Original Toyota historical commercial vehicles remain included.
 
@@ -23,3 +23,9 @@ Reuse candidate research order: GS/Aristo and related 2JZ installations; UZ-powe
 ## Reproduce
 
 Run `node scripts/build-vehicle-catalog.mjs`; `--check` detects stale generated data. `node scripts/migrate-s160-evidence.mjs --check` and `node --test tests/*.test.mjs` validate coverage/evidence invariants. The factual history snapshot records the fetched source hash and excludes source photographs, authored prose and layout data. No manufacturer source media was redistributed.
+
+## First Toyota geometry checkpoint
+
+Acquired and adapted the CC BY GR Supra exterior/cabin source by 3dmodels.cars. The browser export retains 136 selectable mesh groups and creator attribution; the source has no usable engine/transmission and a flat underside. Six inspection renders were reviewed, materials and vertical framing corrected, and a second render pass completed. No bitmap textures were present in the source; PBR materials are approximations. Uniform normalization to the rounded 2020 brochure length does not establish exact model-year fitment or dimensional accuracy. The model is attached to a dedicated unverified reference record, never to all Supra generations.
+
+Build: `blender -b --python modeling/catalog/prepare_supra.py -- source.glb output-dir`, followed by `npx @gltf-transform/cli@4.5.1 meshopt output-dir/gr-supra-reference.glb public/models/catalog/gr-supra-reference.glb --quantize-position 16`. Fetch source from the immutable URL/hash in the asset license ledger. No measured GS300 geometry has changed in this checkpoint.

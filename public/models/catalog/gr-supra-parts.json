@@ -1,0 +1,971 @@
+{
+  "title": "Toyota GR Supra visual reference",
+  "sourceUrl": "https://sketchfab.com/3d-models/86f609515557438e93bd3c6145ef99ca",
+  "license": "CC BY 4.0",
+  "author": "3dmodels.cars",
+  "boundsMetres": [
+    1.9888988733291626,
+    4.381499767303467,
+    1.302260398864746
+  ],
+  "parts": [
+    {
+      "id": "supra-base-corps-int-plastic2-0",
+      "name": "Base corps Int Plastic2 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Base_corps_Int_Plastic2_0"
+    },
+    {
+      "id": "supra-deatails-black-0",
+      "name": "Deatails Black 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Deatails_Black_0"
+    },
+    {
+      "id": "supra-fabric-top-base-teto-0",
+      "name": "Fabric top base Teto 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Fabric_top_base_Teto_0"
+    },
+    {
+      "id": "supra-floor-interior-floor-0",
+      "name": "Floor interior Floor 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Floor_interior_Floor_0"
+    },
+    {
+      "id": "supra-grid-panel-grid-sub-0",
+      "name": "Grid panel Grid Sub 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Grid_panel_Grid_Sub_0"
+    },
+    {
+      "id": "supra-interior-pedals-plastic-paint-0",
+      "name": "Interior Pedals Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Interior_Pedals_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-interior-visor-plastic-basemat-0",
+      "name": "Interior visor Plastic baseMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Interior_visor_Plastic_baseMat_0"
+    },
+    {
+      "id": "supra-logo-door-sub1-soleira-logo-0",
+      "name": "Logo door SUB1 Soleira Logo 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Logo_door_SUB1_Soleira_Logo_0"
+    },
+    {
+      "id": "supra-logo-door-sub0-soleira-0",
+      "name": "Logo door SUB0 Soleira 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Logo_door_SUB0_Soleira_0"
+    },
+    {
+      "id": "supra-metal-back-plane-metal-brushed-0",
+      "name": "Metal back plane Metal Brushed 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Metal_back_plane_Metal_Brushed_0"
+    },
+    {
+      "id": "supra-plate-top-black-0",
+      "name": "Plate top Black 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Plate_top_Black_0"
+    },
+    {
+      "id": "supra-ruber-door-ruber-0",
+      "name": "Ruber door Ruber 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Ruber_door_Ruber_0"
+    },
+    {
+      "id": "supra-trunk-plastic-plastic-paint-0",
+      "name": "Trunk Plastic Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Trunk_Plastic_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-backplastic-int-plastic-0",
+      "name": "BackPlastic Int Plastic 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "BackPlastic_Int_Plastic_0"
+    },
+    {
+      "id": "supra-chrome-1-int-chrome-0",
+      "name": "Chrome 1 Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Chrome_1_Int_Chrome_0"
+    },
+    {
+      "id": "supra-interior-mirror-mirror-0",
+      "name": "Interior Mirror Mirror 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Interior_Mirror_Mirror_0"
+    },
+    {
+      "id": "supra-monitor-screen-interior-0",
+      "name": "Monitor Screen interior 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Monitor_Screen_interior_0"
+    },
+    {
+      "id": "supra-monitorglass-glassmat-0",
+      "name": "MonitorGlass GlassMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "MonitorGlass_GlassMat_0"
+    },
+    {
+      "id": "supra-plasticbutton-int-button-0",
+      "name": "PlasticButton Int button 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "PlasticButton_Int_button_0"
+    },
+    {
+      "id": "supra-plasticspeed-plastic-paint-0",
+      "name": "PlasticSpeed Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "PlasticSpeed_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-speed-glass-dashboard-0",
+      "name": "Speed Glass Dashboard 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Speed_Glass_Dashboard_0"
+    },
+    {
+      "id": "supra-speedometr-screen-interior-0",
+      "name": "Speedometr Screen interior 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Speedometr_Screen_interior_0"
+    },
+    {
+      "id": "supra-stitches-panel-stitches-seat-0",
+      "name": "Stitches panel Stitches Seat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_panel_Stitches_Seat_0"
+    },
+    {
+      "id": "supra-topplastic-topplastic-0",
+      "name": "TopPlastic TopPlastic 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "TopPlastic_TopPlastic_0"
+    },
+    {
+      "id": "supra-torpedaleather-int-leather-painel-0",
+      "name": "TorpedaLeather Int Leather Painel 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "TorpedaLeather_Int_Leather_Painel_0"
+    },
+    {
+      "id": "supra-blackplastic-int-leather-red-0",
+      "name": "BlackPlastic Int Leather Red 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "BlackPlastic_Int_Leather_Red_0"
+    },
+    {
+      "id": "supra-console-base-int-blackpiano-0",
+      "name": "Console Base Int BlackPiano 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Console_Base_Int_BlackPiano_0"
+    },
+    {
+      "id": "supra-console-display-screen-interior-0",
+      "name": "Console Display Screen interior 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Console_Display_Screen_interior_0"
+    },
+    {
+      "id": "supra-stitches-transmision-stitches-seat-0",
+      "name": "Stitches transmision Stitches Seat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_transmision_Stitches_Seat_0"
+    },
+    {
+      "id": "supra-chrome-belt-int-chrome-0",
+      "name": "Chrome belt Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Chrome_belt_Int_Chrome_0"
+    },
+    {
+      "id": "supra-crome-seat-int-chrome-0",
+      "name": "Crome seat Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Crome_seat_Int_Chrome_0"
+    },
+    {
+      "id": "supra-fabric-belt-fabric-belt-mat-0",
+      "name": "Fabric belt Fabric belt Mat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Fabric_belt_Fabric_belt_Mat_0"
+    },
+    {
+      "id": "supra-letaher-seat-int-leather-red-0",
+      "name": "Letaher seat Int Leather Red 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Letaher_seat_Int_Leather_Red_0"
+    },
+    {
+      "id": "supra-plastic-black-belt-seat-leather-black-0",
+      "name": "Plastic black belt seat Leather Black 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_black_belt_seat_Leather_Black_0"
+    },
+    {
+      "id": "supra-plastic-button-seat-plastic-paint-0",
+      "name": "Plastic button seat Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_button_seat_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-plastic-red-belt-seat-plastic-red-belt-seatmat-0",
+      "name": "Plastic red belt seat Plastic red belt seatMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_red_belt_seat_Plastic_red_belt_seatMat_0"
+    },
+    {
+      "id": "supra-stitches-chair-sub2-stitches-blackmat-0",
+      "name": "Stitches Chair SUB2 Stitches blackMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Chair_SUB2_Stitches_blackMat_0"
+    },
+    {
+      "id": "supra-stitches-chair-sub1-stitches-whitemat-0",
+      "name": "Stitches Chair SUB1 Stitches whiteMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Chair_SUB1_Stitches_whiteMat_0"
+    },
+    {
+      "id": "supra-stitches-chair-sub0-stitches-redmat-0",
+      "name": "Stitches Chair SUB0 Stitches redMat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Chair_SUB0_Stitches_redMat_0"
+    },
+    {
+      "id": "supra-textplanebase-tex4-0",
+      "name": "TextPlaneBase Tex4 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "TextPlaneBase_Tex4_0"
+    },
+    {
+      "id": "supra-backparcktronik-black-plastic-0",
+      "name": "BackParckTronik Black Plastic 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "BackParckTronik_Black_Plastic_0"
+    },
+    {
+      "id": "supra-glass-ext-glass-0",
+      "name": "Glass Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Glass_Ext_Glass_0"
+    },
+    {
+      "id": "supra-bulb-breaking-light-0",
+      "name": "Bulb Breaking light 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Bulb_Breaking_light_0"
+    },
+    {
+      "id": "supra-redglass-ext-tail-light-2-0",
+      "name": "RedGlass Ext Tail Light 2 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "RedGlass_Ext_Tail Light 2_0"
+    },
+    {
+      "id": "supra-base-1-plastic-paint-0",
+      "name": "Base 1 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Base_1_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-glass-3-bulbmat-0",
+      "name": "Glass 3 BulbMat 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Glass_3_BulbMat_0"
+    },
+    {
+      "id": "supra-glass-4-ext-tail-light-2-0",
+      "name": "Glass 4 Ext Tail Light 2 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Glass_4_Ext_Tail Light 2_0"
+    },
+    {
+      "id": "supra-logo-gr-logo-gr-mat-0",
+      "name": "Logo GR Logo GR Mat 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Logo_GR_Logo_GR_Mat_0"
+    },
+    {
+      "id": "supra-plastic-3-plastic-paint-0",
+      "name": "Plastic 3 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_3_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-base-3-plastic-0",
+      "name": "Base 3 Plastic 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Base_3_Plastic_0"
+    },
+    {
+      "id": "supra-bulb-2-glass-light-0",
+      "name": "Bulb 2 Glass Light 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Bulb_2_Glass_Light_0"
+    },
+    {
+      "id": "supra-glass-5-ext-tail-light-2-0",
+      "name": "Glass 5 Ext Tail Light 2 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Glass_5_Ext_Tail Light 2_0"
+    },
+    {
+      "id": "supra-logos-chrome-ext-logos-0",
+      "name": "Logos Chrome Ext Logos 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Logos_Chrome_Ext_Logos_0"
+    },
+    {
+      "id": "supra-plastic-5-plastic-paint-0",
+      "name": "Plastic 5 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_5_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-setas-ext-glass-0",
+      "name": "Setas Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Setas_Ext_Glass_0"
+    },
+    {
+      "id": "supra-mirrorlight-11-mirror-led-0",
+      "name": "MirrorLight 11 Mirror Led 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "MirrorLight_11_Mirror_Led_0"
+    },
+    {
+      "id": "supra-orangeglass-ext-glass-0",
+      "name": "OrangeGlass Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "OrangeGlass_Ext_Glass_0"
+    },
+    {
+      "id": "supra-mirror-r-mirror-0",
+      "name": "Mirror R Mirror 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Mirror_R_Mirror_0"
+    },
+    {
+      "id": "supra-ext-glass-door-l-ext-glass-0",
+      "name": "Ext Glass Door L Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Ext_Glass_Door_L_Ext_Glass_0"
+    },
+    {
+      "id": "supra-mirror-l-mirror-0",
+      "name": "Mirror L Mirror 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Mirror_L_Mirror_0"
+    },
+    {
+      "id": "supra-textplaneleft-dif-0",
+      "name": "TextPlaneLeft Dif 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "TextPlaneLeft_Dif_0"
+    },
+    {
+      "id": "supra-base-metal-left-door-inside-car-paint-0",
+      "name": "Base metal left door inside Car Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Base_metal_left_door_inside_Car_Paint_0"
+    },
+    {
+      "id": "supra-grid-left-door-grid-sub-0",
+      "name": "Grid left door Grid Sub 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Grid_left_door_Grid_Sub_0"
+    },
+    {
+      "id": "supra-metal-left-door-metal-brushed-0",
+      "name": "Metal left door Metal Brushed 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Metal_left_door_Metal_Brushed_0"
+    },
+    {
+      "id": "supra-plastic-base-left-door-int-leather-0",
+      "name": "Plastic base left door Int Leather 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_base_left_door_Int_Leather_0"
+    },
+    {
+      "id": "supra-stitches-left-door-stitches-seat-0",
+      "name": "Stitches Left door Stitches Seat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Left_door_Stitches_Seat_0"
+    },
+    {
+      "id": "supra-ext-glass-door-r-ext-glass-0",
+      "name": "Ext Glass Door R Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Ext_Glass_Door_R_Ext_Glass_0"
+    },
+    {
+      "id": "supra-plasticmat-black-piano-0",
+      "name": "PlasticMat Black Piano 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "PlasticMat_Black_Piano_0"
+    },
+    {
+      "id": "supra-base-metal-right-door-inside-car-paint-0",
+      "name": "Base metal right door inside Car Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Base_metal_right_door_inside_Car_Paint_0"
+    },
+    {
+      "id": "supra-grid-right-door-grid-sub-0",
+      "name": "Grid right door Grid Sub 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Grid_right_door_Grid_Sub_0"
+    },
+    {
+      "id": "supra-metal-right-door-metal-brushed-0",
+      "name": "Metal right door Metal Brushed 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Metal_right_door_Metal_Brushed_0"
+    },
+    {
+      "id": "supra-stitches-right-door-stitches-seat-0",
+      "name": "Stitches Right door Stitches Seat 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Right_door_Stitches_Seat_0"
+    },
+    {
+      "id": "supra-textplaneright-tex3-0",
+      "name": "TextPlaneRight Tex3 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "TextPlaneRight_Tex3_0"
+    },
+    {
+      "id": "supra-front-wipes1-plastic-paint-0",
+      "name": "front wipes1 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "front_wipes1_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-front-wipes2-plastic-paint-0",
+      "name": "front wipes2 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "front_wipes2_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-plane-inside-plastic-paint-0",
+      "name": "Plane inside Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plane_inside_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-plashki-exterior-plastic-paint-0",
+      "name": "Plashki exterior Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plashki_exterior_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-red2-alerta-0",
+      "name": "Red2 Alerta 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Red2_Alerta_0"
+    },
+    {
+      "id": "supra-exhaust1-escape-0",
+      "name": "ExHaust1 Escape 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "ExHaust1_Escape_0"
+    },
+    {
+      "id": "supra-plastic2-f1-plastic-0",
+      "name": "Plastic2 F1  plastic 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic2_F1_ plastic_0"
+    },
+    {
+      "id": "supra-plastic-12-plastic-paint-0",
+      "name": "Plastic 12 Plastic Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_12_Plastic_Paint_0"
+    },
+    {
+      "id": "supra-tail-light-ext-tail-light-0",
+      "name": "Tail Light Ext Tail light 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Tail_Light_Ext_Tail light_0"
+    },
+    {
+      "id": "supra-mirrorlight1-mirror-led-0",
+      "name": "MirrorLight1 Mirror Led 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "MirrorLight1_Mirror_Led_0"
+    },
+    {
+      "id": "supra-black1-underbody-0",
+      "name": "Black1 Underbody 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Black1_Underbody_0"
+    },
+    {
+      "id": "supra-head-light-ext-headlight-0",
+      "name": "Head Light Ext HeadLight 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Head_Light_Ext_HeadLight_0"
+    },
+    {
+      "id": "supra-glasstobulb-ext-glass-0",
+      "name": "GlasstoBulb Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "GlasstoBulb_Ext_Glass_0"
+    },
+    {
+      "id": "supra-glass-6-ext-glass-0",
+      "name": "Glass 6 Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Glass_6_Ext_Glass_0"
+    },
+    {
+      "id": "supra-chromeglass-ext-glass-0",
+      "name": "ChromeGlass Ext Glass 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "ChromeGlass_Ext_Glass_0"
+    },
+    {
+      "id": "supra-baselight-ext-headlight-crhome-0",
+      "name": "BaseLight EXT Headlight Crhome 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "BaseLight_EXT_Headlight_Crhome_0"
+    },
+    {
+      "id": "supra-blackplastic2-plastic3-0",
+      "name": "BlackPlastic2 Plastic3 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "BlackPlastic2_Plastic3_0"
+    },
+    {
+      "id": "supra-grill-gril-0",
+      "name": "Grill Gril 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Grill_Gril_0"
+    },
+    {
+      "id": "supra-bottomair-black-plastic-0",
+      "name": "BottomAir Black Plastic 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "BottomAir_Black_Plastic_0"
+    },
+    {
+      "id": "supra-breaklight-light-on-0",
+      "name": "Breaklight Light on 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Breaklight_Light_on_0"
+    },
+    {
+      "id": "supra-plastic-brilliant-door-1-int-blackpiano-0",
+      "name": "Plastic brilliant door 1 Int BlackPiano 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_brilliant_door_1_Int_BlackPiano_0"
+    },
+    {
+      "id": "supra-body-car-paint-0",
+      "name": "Body Car Paint 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Body_Car_Paint_0"
+    },
+    {
+      "id": "supra-carbon-mirror-carbon-0",
+      "name": "Carbon Mirror Carbon 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Carbon_Mirror_Carbon_0"
+    },
+    {
+      "id": "supra-object002-int-plastic-painel-0",
+      "name": "Object002 Int Plastic Painel 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object002_Int_Plastic_Painel_0"
+    },
+    {
+      "id": "supra-hub-rr-hub-0",
+      "name": "Hub RR Hub 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Hub_RR_Hub_0"
+    },
+    {
+      "id": "supra-hub-lf-hub-front-0",
+      "name": "Hub LF Hub front 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Hub_LF_Hub_front_0"
+    },
+    {
+      "id": "supra-hub-rf-hub-front-0",
+      "name": "Hub RF Hub front 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Hub_RF_Hub_front_0"
+    },
+    {
+      "id": "supra-disk-lf-disk-0",
+      "name": "Disk LF Disk 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Disk_LF_Disk_0"
+    },
+    {
+      "id": "supra-rim-rr-sub1-rim-crhome-0",
+      "name": "Rim RR SUB1 Rim crhome 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_RR_SUB1_Rim_crhome_0"
+    },
+    {
+      "id": "supra-rim-rr-sub0-rim-blackpiano-0",
+      "name": "Rim RR SUB0 Rim BlackPiano 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_RR_SUB0_Rim_BlackPiano_0"
+    },
+    {
+      "id": "supra-tyre-rr-ext-tyre-0",
+      "name": "TYRE RR EXT tyre 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "TYRE_RR_EXT_tyre_0"
+    },
+    {
+      "id": "supra-disk-rf-disk-0",
+      "name": "Disk RF Disk 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Disk_RF_Disk_0"
+    },
+    {
+      "id": "supra-rim-rf-sub1-rim-crhome-0",
+      "name": "Rim RF SUB1 Rim crhome 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_RF_SUB1_Rim_crhome_0"
+    },
+    {
+      "id": "supra-rim-rf-sub0-rim-blackpiano-0",
+      "name": "Rim RF SUB0 Rim BlackPiano 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_RF_SUB0_Rim_BlackPiano_0"
+    },
+    {
+      "id": "supra-tyre-rf-ext-tyre-0",
+      "name": "TYRE RF EXT tyre 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "TYRE_RF_EXT_tyre_0"
+    },
+    {
+      "id": "supra-rim-lr-sub0-rim-crhome-0",
+      "name": "Rim LR SUB0 Rim crhome 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_LR_SUB0_Rim_crhome_0"
+    },
+    {
+      "id": "supra-rim-lr-sub1-rim-blackpiano-0",
+      "name": "Rim LR SUB1 Rim BlackPiano 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_LR_SUB1_Rim_BlackPiano_0"
+    },
+    {
+      "id": "supra-tyre-lr-ext-tyre-0",
+      "name": "TYRE LR EXT tyre 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "TYRE_LR_EXT_tyre_0"
+    },
+    {
+      "id": "supra-disk-rr-disk-0",
+      "name": "Disk RR Disk 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Disk_RR_Disk_0"
+    },
+    {
+      "id": "supra-rim-lf-sub1-rim-crhome-0",
+      "name": "Rim LF SUB1 Rim crhome 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_LF_SUB1_Rim_crhome_0"
+    },
+    {
+      "id": "supra-rim-lf-sub0-rim-blackpiano-0",
+      "name": "Rim LF SUB0 Rim BlackPiano 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Rim_LF_SUB0_Rim_BlackPiano_0"
+    },
+    {
+      "id": "supra-tyre-lf-ext-tyre-0",
+      "name": "TYRE LF EXT tyre 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "TYRE_LF_EXT_tyre_0"
+    },
+    {
+      "id": "supra-disk-lr-disk-0",
+      "name": "Disk LR Disk 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Disk_LR_Disk_0"
+    },
+    {
+      "id": "supra-hub-lr-hub-0",
+      "name": "Hub LR Hub 0",
+      "system": "wheels",
+      "accuracy": "unverified",
+      "sourceMesh": "Hub_LR_Hub_0"
+    },
+    {
+      "id": "supra-object006-int-plastic-0",
+      "name": "Object006 Int Plastic 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object006_Int_Plastic_0"
+    },
+    {
+      "id": "supra-stitches-helm-stitches-wide-0",
+      "name": "Stitches Helm Stitches Wide 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Stitches_Helm_Stitches_Wide_0"
+    },
+    {
+      "id": "supra-object009-int-blackpiano-0",
+      "name": "Object009 Int BlackPiano 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object009_Int_BlackPiano_0"
+    },
+    {
+      "id": "supra-object008-tex4-0",
+      "name": "Object008 Tex4 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Object008_Tex4_0"
+    },
+    {
+      "id": "supra-object007-int-leather-red-0",
+      "name": "Object007 Int Leather Red 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object007_Int_Leather_Red_0"
+    },
+    {
+      "id": "supra-object003-int-chrome-0",
+      "name": "Object003 Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object003_Int_Chrome_0"
+    },
+    {
+      "id": "supra-leatherhelm2-leather-steer-0",
+      "name": "LeatherHelm2 Leather steer 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "LeatherHelm2_Leather_steer_0"
+    },
+    {
+      "id": "supra-object004-sub1-int-plastic-0",
+      "name": "Object004 SUB1 Int Plastic 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object004_SUB1_Int_Plastic_0"
+    },
+    {
+      "id": "supra-object004-sub3-int-plastic-0",
+      "name": "Object004 SUB3 Int Plastic 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object004_SUB3_Int_Plastic_0"
+    },
+    {
+      "id": "supra-object004-sub0-int-chrome-0",
+      "name": "Object004 SUB0 Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object004_SUB0_Int_Chrome_0"
+    },
+    {
+      "id": "supra-object004-sub2-int-chrome-0",
+      "name": "Object004 SUB2 Int Chrome 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Object004_SUB2_Int_Chrome_0"
+    },
+    {
+      "id": "supra-ponteiro-ponteiro-0",
+      "name": "Ponteiro Ponteiro 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Ponteiro_Ponteiro_0"
+    },
+    {
+      "id": "supra-cylinder001-underbody-0",
+      "name": "Cylinder001 Underbody 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Cylinder001_Underbody_0"
+    },
+    {
+      "id": "supra-cylinder002-underbody-0",
+      "name": "Cylinder002 Underbody 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Cylinder002_Underbody_0"
+    },
+    {
+      "id": "supra-light-light-on-head-0",
+      "name": "Light Light on head 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Light_Light_on_head_0"
+    },
+    {
+      "id": "supra-plasticdoor-plastic-door-0",
+      "name": "Plasticdoor Plastic door 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Plasticdoor_Plastic_door_0"
+    },
+    {
+      "id": "supra-breaklight001-ext-tail-light-2-0",
+      "name": "Breaklight001 Ext Tail Light 2 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "Breaklight001_Ext_Tail Light 2_0"
+    },
+    {
+      "id": "supra-m-chrome-top-0",
+      "name": "m Chrome top 0",
+      "system": "body",
+      "accuracy": "unverified",
+      "sourceMesh": "m_Chrome_top_0"
+    },
+    {
+      "id": "supra-plastic-base-left-door001-int-leather-0",
+      "name": "Plastic base left door001 Int Leather 0",
+      "system": "interior",
+      "accuracy": "unverified",
+      "sourceMesh": "Plastic_base_left_door001_Int_Leather_0"
+    }
+  ],
+  "limits": [
+    "Exact year, market, powertrain and trim unverified",
+    "Engine and transmission service geometry absent",
+    "Dimensions are uniformly normalized visual geometry, not measured",
+    "PBR material adjustments; source has no bitmap textures"
+  ]
+}
