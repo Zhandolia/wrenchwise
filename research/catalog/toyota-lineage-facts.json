@@ -1,0 +1,4865 @@
+{
+  "sourceUrl": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/family_tree/index.html",
+  "dataUrl": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/family_tree/js/family_tree.js",
+  "retrievedAt": "2026-10-06",
+  "sourceSha256": "575b5754667501285a219c0ac4d5eb3deaeb6902c08a92f4b513c162d311a3d7",
+  "scope": "Historical source snapshot ending in 2012; not an exhaustive worldwide model-year or trim list. Ordinals belong to the source’s Japan-oriented lineage, not global generations. Blank end dates do not mean current production.",
+  "records": [
+    {
+      "sourceId": "60011174",
+      "name": "Toyoda Model AA",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "193604",
+      "endMonth": "194212"
+    },
+    {
+      "sourceId": "60011184",
+      "name": "Toyota Model AB Phaeton",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "193609",
+      "endMonth": "193809"
+    },
+    {
+      "sourceId": "70000035",
+      "name": "Toyota Model AC",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "194303",
+      "endMonth": "194803"
+    },
+    {
+      "sourceId": "70000036",
+      "name": "Toyota Model AE",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "194102",
+      "endMonth": "194307"
+    },
+    {
+      "sourceId": "70000038",
+      "name": "Toyopet Model SA",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "194710",
+      "endMonth": "195205"
+    },
+    {
+      "sourceId": "60011308",
+      "name": "Toyopet Model SD",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "194911",
+      "endMonth": "195202"
+    },
+    {
+      "sourceId": "60011144",
+      "name": "Toyota Model SF",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195111",
+      "endMonth": "195310"
+    },
+    {
+      "sourceId": "70000039",
+      "name": "Toyota Model SH",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195307",
+      "endMonth": "195310"
+    },
+    {
+      "sourceId": "60011151",
+      "name": "Toyopet Super Model RH",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195310",
+      "endMonth": "195410"
+    },
+    {
+      "sourceId": "60005913",
+      "name": "Crown Eight",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "196404",
+      "endMonth": "196707"
+    },
+    {
+      "sourceId": "60010388",
+      "name": "Century",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "196711",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010476",
+      "name": "Century",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "199704",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010294",
+      "name": "Celsior",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "198910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010321",
+      "name": "Celsior",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "199410",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010362",
+      "name": "Celsior",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "200008",
+      "endMonth": "200605"
+    },
+    {
+      "sourceId": "60012621",
+      "name": "Lexus LS (LS460)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200609",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008970",
+      "name": "Lexus LS Hybrid (LS600h)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000091",
+      "name": "Aristo",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199110",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000160",
+      "name": "Aristo",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "199708",
+      "endMonth": "200508"
+    },
+    {
+      "sourceId": "60012617",
+      "name": "Lexus GS (GS430/GS350)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017670A",
+      "name": "Lexus GS (GS350/GS250)",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "201201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012620",
+      "name": "Lexus GS Hybrid (GS450h)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200603",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017670B",
+      "name": "Lexus GS Hybrid (GS450h)",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "201203",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004580",
+      "name": "Toyopet Crown",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195501",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004715",
+      "name": "Toyopet Crown",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "196210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004831",
+      "name": "Toyopet Crown",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "196709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004938",
+      "name": "Crown",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "197102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005041A",
+      "name": "Crown",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "197410",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005165A",
+      "name": "Crown",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "197909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005311A",
+      "name": "Crown",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "198308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005430A",
+      "name": "Crown",
+      "generationLabel": "8",
+      "bodyType": "Sedan",
+      "introductionMonth": "198709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005480A",
+      "name": "Crown",
+      "generationLabel": "9",
+      "bodyType": "Sedan",
+      "introductionMonth": "199110",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005614",
+      "name": "Crown",
+      "generationLabel": "10",
+      "bodyType": "Sedan",
+      "introductionMonth": "199512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005782",
+      "name": "Crown",
+      "generationLabel": "11",
+      "bodyType": "Sedan",
+      "introductionMonth": "200108",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011155",
+      "name": "Toyopet Master",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195501",
+      "endMonth": "195611"
+    },
+    {
+      "sourceId": "60004935",
+      "name": "Crown 2door Hardtop",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005041B",
+      "name": "Crown 2door Hardtop",
+      "generationLabel": "5",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197411",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005165B",
+      "name": "Crown 2door Hardtop",
+      "generationLabel": "6",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197909",
+      "endMonth": "198308"
+    },
+    {
+      "sourceId": "60005041C",
+      "name": "Crown 4door Hardtop",
+      "generationLabel": "5",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197411",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005165C",
+      "name": "Crown 4door Hardtop",
+      "generationLabel": "6",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005311B",
+      "name": "Crown 4door Hardtop",
+      "generationLabel": "7",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005430B",
+      "name": "Crown 4door Hardtop",
+      "generationLabel": "8",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005492A",
+      "name": "Crown Royal Hardtop",
+      "generationLabel": "9",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199110",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005589",
+      "name": "Crown Royal Hardtop",
+      "generationLabel": "10",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005748",
+      "name": "Crown Royal/Crown Athlete",
+      "generationLabel": "11",
+      "bodyType": "Sedan",
+      "introductionMonth": "199909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005855",
+      "name": "Crown Royal/Crown Athlete",
+      "generationLabel": "12",
+      "bodyType": "Sedan",
+      "introductionMonth": "200312",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011641",
+      "name": "Crown Royal/Crown Athlete",
+      "generationLabel": "13",
+      "bodyType": "Sedan",
+      "introductionMonth": "200802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017841A",
+      "name": "Crown Royal/Crown Athlete",
+      "generationLabel": "14",
+      "bodyType": "Sedan",
+      "introductionMonth": "201212",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005492B",
+      "name": "Crown Majesta",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199110",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005600",
+      "name": "Crown Majesta",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "199508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005742",
+      "name": "Crown Majesta",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "199909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005880",
+      "name": "Crown Majesta",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "200407",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000957",
+      "name": "Crown Majesta",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "200903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011635",
+      "name": "Crown Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200805",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017841B",
+      "name": "Crown Hybrid",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "201212",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004734A",
+      "name": "Toyopet Crown Custom",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "196210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004845A",
+      "name": "Toyopet Crown Custom",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "196709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004950A",
+      "name": "Crown Custom",
+      "generationLabel": "4",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005046",
+      "name": "Crown Custom",
+      "generationLabel": "5",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197411",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005180A",
+      "name": "Crown Wagon",
+      "generationLabel": "6",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005370A",
+      "name": "Crown Wagon",
+      "generationLabel": "7",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005432A",
+      "name": "Crown Station Wagon",
+      "generationLabel": "8",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005480B",
+      "name": "Crown Station Wagon",
+      "generationLabel": "9",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199110",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005758",
+      "name": "Crown Estate",
+      "generationLabel": "10",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199912",
+      "endMonth": "200706"
+    },
+    {
+      "sourceId": "60015663A",
+      "name": "Toyopet Masterline Crown Van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "195511",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004734B",
+      "name": "Toyopet Masterline Crown Van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "196210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004845B",
+      "name": "Crown Van",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "196709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004950B",
+      "name": "Crown Van",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "197102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005047",
+      "name": "Crown Van",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "197411",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005180B",
+      "name": "Crown Van",
+      "generationLabel": "6",
+      "bodyType": "Van",
+      "introductionMonth": "197909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005370B",
+      "name": "Crown Van",
+      "generationLabel": "7",
+      "bodyType": "Van",
+      "introductionMonth": "198308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005432B",
+      "name": "Crown Van",
+      "generationLabel": "8",
+      "bodyType": "Van",
+      "introductionMonth": "198709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005486",
+      "name": "Crown Van",
+      "generationLabel": "9",
+      "bodyType": "Van",
+      "introductionMonth": "199110",
+      "endMonth": "199912"
+    },
+    {
+      "sourceId": "60015663B",
+      "name": "Toyopet Masterline Pickup",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195511",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015721",
+      "name": "Toyopet Masterline Pickup",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004845C",
+      "name": "Crown Pickup",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196709",
+      "endMonth": "197102"
+    },
+    {
+      "sourceId": "60005626",
+      "name": "Crown Comfort",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000339",
+      "name": "Windom",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000386",
+      "name": "Windom",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199608",
+      "endMonth": "200108"
+    },
+    {
+      "sourceId": "60000405",
+      "name": "Windom",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "200108",
+      "endMonth": "200511"
+    },
+    {
+      "sourceId": "60012500",
+      "name": "Progrès",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199805",
+      "endMonth": "200706"
+    },
+    {
+      "sourceId": "60012482",
+      "name": "Brevis",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200106",
+      "endMonth": "200706"
+    },
+    {
+      "sourceId": "60000023",
+      "name": "Avalon",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199505",
+      "endMonth": "200004"
+    },
+    {
+      "sourceId": "60012545",
+      "name": "Pronard",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200004",
+      "endMonth": "200403"
+    },
+    {
+      "sourceId": "60012868A",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "196809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012964",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "197201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013044A",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "197612",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013153A",
+      "name": "Corona Mark II",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "198010",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013049A",
+      "name": "Mark II",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "198408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013050A",
+      "name": "Mark II",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "198808",
+      "endMonth": "199512"
+    },
+    {
+      "sourceId": "60013047",
+      "name": "Mark II",
+      "generationLabel": "9",
+      "bodyType": "Sedan",
+      "introductionMonth": "200010",
+      "endMonth": "200411"
+    },
+    {
+      "sourceId": "60012868B",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "196809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012958",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013044B",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197612",
+      "endMonth": "197902"
+    },
+    {
+      "sourceId": "60013153B",
+      "name": "Corona Mark II",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198010",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013049B",
+      "name": "Mark II",
+      "generationLabel": "5",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013050B",
+      "name": "Mark II",
+      "generationLabel": "6",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013051",
+      "name": "Mark II",
+      "generationLabel": "7",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013052",
+      "name": "Mark II",
+      "generationLabel": "8",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199609",
+      "endMonth": "200106"
+    },
+    {
+      "sourceId": "60013542",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "196809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013055A",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013056A",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197612",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013666",
+      "name": "Corona Mark II",
+      "generationLabel": "4",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198011",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013058A",
+      "name": "Mark II",
+      "generationLabel": "5",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198411",
+      "endMonth": "199704"
+    },
+    {
+      "sourceId": "60013046",
+      "name": "Mark II Qualis",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199704",
+      "endMonth": "200201"
+    },
+    {
+      "sourceId": "60013045",
+      "name": "Mark II Blit",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200201",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60013053",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "196809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013055B",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013056B",
+      "name": "Toyopet Corona Mark II",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "197612",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013057",
+      "name": "Corona Mark II",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "198011",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013058B",
+      "name": "Mark II",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "198411",
+      "endMonth": "199408"
+    },
+    {
+      "sourceId": "60013054",
+      "name": "Mark II pickup",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196809",
+      "endMonth": "197102"
+    },
+    {
+      "sourceId": "60012595",
+      "name": "Mark X",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200411",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010392",
+      "name": "Mark X",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "200910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012596",
+      "name": "Mark X ZiO",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005630",
+      "name": "Comfort",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010862A",
+      "name": "Chaser",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "197706",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010891A",
+      "name": "Chaser",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198010",
+      "endMonth": "198408"
+    },
+    {
+      "sourceId": "60010862B",
+      "name": "Chaser",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197706",
+      "endMonth": "198010"
+    },
+    {
+      "sourceId": "60010891B",
+      "name": "Chaser",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198010",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010941",
+      "name": "Chaser",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010983",
+      "name": "Chaser",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011019",
+      "name": "Chaser",
+      "generationLabel": "5",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011062",
+      "name": "Chaser",
+      "generationLabel": "6",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199609",
+      "endMonth": "200106"
+    },
+    {
+      "sourceId": "60006067",
+      "name": "Cresta",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198004",
+      "endMonth": "198408"
+    },
+    {
+      "sourceId": "60006162",
+      "name": "Cresta",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006182",
+      "name": "Cresta",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "198808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006213",
+      "name": "Cresta",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "199210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006247",
+      "name": "Cresta",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "199609",
+      "endMonth": "200106"
+    },
+    {
+      "sourceId": "60000414",
+      "name": "Verossa",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200107",
+      "endMonth": "200404"
+    },
+    {
+      "sourceId": "60010264",
+      "name": "Celica Camry",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "198001",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002022",
+      "name": "Camry",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198203",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002069",
+      "name": "Camry",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "198608",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002106",
+      "name": "Camry",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "199007",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002144",
+      "name": "Camry",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "199407",
+      "endMonth": "199806"
+    },
+    {
+      "sourceId": "60002190A",
+      "name": "Camry Gracia",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "199612",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002178",
+      "name": "Camry",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "200109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002185",
+      "name": "Camry",
+      "generationLabel": "8",
+      "bodyType": "Sedan",
+      "introductionMonth": "200601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017422",
+      "name": "Camry",
+      "generationLabel": "9",
+      "bodyType": "Sedan",
+      "introductionMonth": "201109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002190B",
+      "name": "Camry Gracia",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199612",
+      "endMonth": "200109"
+    },
+    {
+      "sourceId": "60002095",
+      "name": "Camry Hardtop",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002111",
+      "name": "Camry Hardtop",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199007",
+      "endMonth": "199407"
+    },
+    {
+      "sourceId": "60012049",
+      "name": "Vista",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "198203",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012094A",
+      "name": "Vista",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198608",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012122A",
+      "name": "Vista",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "199007",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012128A",
+      "name": "Vista",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "199407",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012165",
+      "name": "Vista",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "199807",
+      "endMonth": "200310"
+    },
+    {
+      "sourceId": "60012094B",
+      "name": "Vista",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198608",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012122B",
+      "name": "Vista",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199007",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012128B",
+      "name": "Vista",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199407",
+      "endMonth": "199807"
+    },
+    {
+      "sourceId": "60012171",
+      "name": "Vista Ardeo",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199807",
+      "endMonth": "200310"
+    },
+    {
+      "sourceId": "60009791",
+      "name": "Scepter",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199209",
+      "endMonth": "199612"
+    },
+    {
+      "sourceId": "60009803",
+      "name": "Scepter",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199211",
+      "endMonth": "199612"
+    },
+    {
+      "sourceId": "60009821",
+      "name": "Scepter",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "199311",
+      "endMonth": "199612"
+    },
+    {
+      "sourceId": "60000060A",
+      "name": "Avensis",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200310",
+      "endMonth": "200808"
+    },
+    {
+      "sourceId": "60000060B",
+      "name": "Avensis",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200310",
+      "endMonth": "200808"
+    },
+    {
+      "sourceId": "60017410",
+      "name": "Avensis",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "201109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000174",
+      "name": "Altezza",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199810",
+      "endMonth": "200507"
+    },
+    {
+      "sourceId": "60000183",
+      "name": "Altezza Gita",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200107",
+      "endMonth": "200507"
+    },
+    {
+      "sourceId": "60012619",
+      "name": "Lexus IS (IS350/IS250)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200509",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008980",
+      "name": "Lexus IS F",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200712",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000984",
+      "name": "Lexus IS C (IS350C/IS250C)",
+      "generationLabel": "1",
+      "bodyType": "Convertible",
+      "introductionMonth": "200905",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010407",
+      "name": "SAI",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200912",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001608",
+      "name": "Lexus HS (HS250h)",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200907",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017370",
+      "name": "Lexus CT (CT200h)",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201101",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007281",
+      "name": "Toyopet Corona",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "195707",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007295",
+      "name": "Toyopet Corona",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "196004",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007352",
+      "name": "Toyopet Corona",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "196409",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007539",
+      "name": "Toyopet Corona",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "197002",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007675A",
+      "name": "Toyopet Corona",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "197308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008032A",
+      "name": "Corona",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "197809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008149A",
+      "name": "Corona",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "198201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007840",
+      "name": "Toyopet Corona 2door Sedan",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "197310",
+      "endMonth": "197809"
+    },
+    {
+      "sourceId": "60008259",
+      "name": "Corona",
+      "generationLabel": "8",
+      "bodyType": "Sedan",
+      "introductionMonth": "198310",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008397",
+      "name": "Corona",
+      "generationLabel": "9",
+      "bodyType": "Sedan",
+      "introductionMonth": "198712",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008512A",
+      "name": "Corona",
+      "generationLabel": "10",
+      "bodyType": "Sedan",
+      "introductionMonth": "199202",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008553",
+      "name": "Corona Premio",
+      "generationLabel": "11",
+      "bodyType": "Sedan",
+      "introductionMonth": "199601",
+      "endMonth": "200112"
+    },
+    {
+      "sourceId": "60008307",
+      "name": "Corona",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "198508",
+      "endMonth": "198909"
+    },
+    {
+      "sourceId": "60007380",
+      "name": "Toyopet Corona",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "196507",
+      "endMonth": "196808"
+    },
+    {
+      "sourceId": "60007569",
+      "name": "Toyopet Corona",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007675B",
+      "name": "Toyopet Corona",
+      "generationLabel": "5",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008032B",
+      "name": "Corona",
+      "generationLabel": "6",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008149B",
+      "name": "Corona",
+      "generationLabel": "7",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198201",
+      "endMonth": "198711"
+    },
+    {
+      "sourceId": "60008587",
+      "name": "Corona Exiv",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008611",
+      "name": "Corona Exiv",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199310",
+      "endMonth": "199804"
+    },
+    {
+      "sourceId": "60007391",
+      "name": "Toyopet Corona",
+      "generationLabel": "3",
+      "bodyType": "Liftback",
+      "introductionMonth": "196511",
+      "endMonth": "196808"
+    },
+    {
+      "sourceId": "60008056",
+      "name": "Corona",
+      "generationLabel": "6",
+      "bodyType": "Liftback",
+      "introductionMonth": "197810",
+      "endMonth": "198212"
+    },
+    {
+      "sourceId": "60008245",
+      "name": "Corona",
+      "generationLabel": "7",
+      "bodyType": "Liftback",
+      "introductionMonth": "198301",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008388",
+      "name": "Corona",
+      "generationLabel": "9",
+      "bodyType": "Liftback",
+      "introductionMonth": "198712",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008512B",
+      "name": "Corona",
+      "generationLabel": "10",
+      "bodyType": "Liftback",
+      "introductionMonth": "199202",
+      "endMonth": "199601"
+    },
+    {
+      "sourceId": "60007286",
+      "name": "Toyopet Coronaline",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "195810",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007304",
+      "name": "Toyopet Coronaline",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "196007",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007362A",
+      "name": "Toyopet Corona",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "196409",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007555",
+      "name": "Toyopet Corona",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "197002",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007692",
+      "name": "Toyopet Corona",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "197308",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008067",
+      "name": "Corona",
+      "generationLabel": "6",
+      "bodyType": "Van",
+      "introductionMonth": "197809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008155",
+      "name": "Corona",
+      "generationLabel": "7",
+      "bodyType": "Van",
+      "introductionMonth": "198201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008404",
+      "name": "Corona",
+      "generationLabel": "9",
+      "bodyType": "Van",
+      "introductionMonth": "198712",
+      "endMonth": "199211"
+    },
+    {
+      "sourceId": "60007307",
+      "name": "Toyopet Coronaline Pickup",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007362",
+      "name": "Toyopet Corona",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196409",
+      "endMonth": "196808"
+    },
+    {
+      "sourceId": "60008568",
+      "name": "Premio",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200112",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008578",
+      "name": "Premio",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "200706",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002214",
+      "name": "Carina",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "197012",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002368A",
+      "name": "Carina",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "197708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002453A",
+      "name": "Carina",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "198109",
+      "endMonth": "198712"
+    },
+    {
+      "sourceId": "60002570",
+      "name": "Carina",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "198405",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002628",
+      "name": "Carina",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "198805",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002691",
+      "name": "Carina",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "199208",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002728",
+      "name": "Carina",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "199608",
+      "endMonth": "200112"
+    },
+    {
+      "sourceId": "60002754",
+      "name": "Carina ED",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002789",
+      "name": "Carina ED",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "198909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002820",
+      "name": "Carina ED",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199310",
+      "endMonth": "199804"
+    },
+    {
+      "sourceId": "60002292",
+      "name": "Carina Hardtop",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197212",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002368B",
+      "name": "Carina Hardtop",
+      "generationLabel": "2",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197708",
+      "endMonth": "198109"
+    },
+    {
+      "sourceId": "60002453B",
+      "name": "Carina Coupé",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "198109",
+      "endMonth": "198508"
+    },
+    {
+      "sourceId": "60002376",
+      "name": "Carina Van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002469",
+      "name": "Carina Van",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "198109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002636A",
+      "name": "Carina Van",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "198805",
+      "endMonth": "199211"
+    },
+    {
+      "sourceId": "60002477",
+      "name": "Carina Wagon Surf",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198202",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002636B",
+      "name": "Carina Wagon",
+      "generationLabel": "4",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198805",
+      "endMonth": "199211"
+    },
+    {
+      "sourceId": "60000074",
+      "name": "Allion",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200112",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008987",
+      "name": "Allion",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "200706",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003001",
+      "name": "Caldina",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199211",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003059",
+      "name": "Caldina",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003079",
+      "name": "Caldina",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200209",
+      "endMonth": "200706"
+    },
+    {
+      "sourceId": "60003009",
+      "name": "Caldina van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "199211",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60006139A",
+      "name": "Succeed",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006139B",
+      "name": "Succeed",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "200207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012360",
+      "name": "Prius",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199712",
+      "endMonth": "200302"
+    },
+    {
+      "sourceId": "60012399",
+      "name": "Prius",
+      "generationLabel": "2",
+      "bodyType": "Liftback",
+      "introductionMonth": "200309",
+      "endMonth": "201112"
+    },
+    {
+      "sourceId": "60000972",
+      "name": "Prius",
+      "generationLabel": "3",
+      "bodyType": "Liftback",
+      "introductionMonth": "200905",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017382",
+      "name": "Prius a",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "201105",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017474",
+      "name": "Prius PHV",
+      "generationLabel": "1",
+      "bodyType": "Liftback",
+      "introductionMonth": "201201",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017505",
+      "name": "Aqua",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201112",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012474",
+      "name": "Blade",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200612",
+      "endMonth": "201206"
+    },
+    {
+      "sourceId": "60003154",
+      "name": "Corolla",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "196611",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003253",
+      "name": "Corolla",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "197005",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003402",
+      "name": "Corolla",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "197404",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003543",
+      "name": "Corolla",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003705A",
+      "name": "Corolla",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "198305",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003780",
+      "name": "Corolla",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "198705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003908",
+      "name": "Corolla",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "199106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004075",
+      "name": "Corolla",
+      "generationLabel": "8",
+      "bodyType": "Sedan",
+      "introductionMonth": "199505",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004185A",
+      "name": "Corolla",
+      "generationLabel": "9",
+      "bodyType": "Sedan",
+      "introductionMonth": "200008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004229",
+      "name": "Corolla Axio",
+      "generationLabel": "10",
+      "bodyType": "Sedan",
+      "introductionMonth": "200610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017608",
+      "name": "Corolla Axio",
+      "generationLabel": "11",
+      "bodyType": "Sedan",
+      "introductionMonth": "201205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003288",
+      "name": "Corolla coupé",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "197005",
+      "endMonth": "197404"
+    },
+    {
+      "sourceId": "60003503",
+      "name": "Corolla coupé",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "197701",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003545",
+      "name": "Corolla coupé",
+      "generationLabel": "4",
+      "bodyType": "Coupé",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003763",
+      "name": "Corolla Levin",
+      "generationLabel": "5",
+      "bodyType": "Coupé",
+      "introductionMonth": "198305",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003784",
+      "name": "Corolla Levin",
+      "generationLabel": "6",
+      "bodyType": "Coupé",
+      "introductionMonth": "198705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003913",
+      "name": "Corolla Levin",
+      "generationLabel": "7",
+      "bodyType": "Coupé",
+      "introductionMonth": "199106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004085B",
+      "name": "Corolla Levin",
+      "generationLabel": "8",
+      "bodyType": "Coupé",
+      "introductionMonth": "199505",
+      "endMonth": "200007"
+    },
+    {
+      "sourceId": "60003407",
+      "name": "Corolla Hardtop",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197404",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003563A",
+      "name": "Corolla Hardtop",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197903",
+      "endMonth": "198305"
+    },
+    {
+      "sourceId": "60004525",
+      "name": "Corolla Ceres",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199205",
+      "endMonth": "199806"
+    },
+    {
+      "sourceId": "60003472",
+      "name": "Corolla Liftback",
+      "generationLabel": "3",
+      "bodyType": "Liftback",
+      "introductionMonth": "197601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003563B",
+      "name": "Corolla Liftback",
+      "generationLabel": "4",
+      "bodyType": "Liftback",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003705B",
+      "name": "Corolla Liftback",
+      "generationLabel": "5",
+      "bodyType": "Liftback",
+      "introductionMonth": "198305",
+      "endMonth": "198705"
+    },
+    {
+      "sourceId": "60003729",
+      "name": "Corolla FX",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198410",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003790",
+      "name": "Corolla FX",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003954",
+      "name": "Corolla FX",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199205",
+      "endMonth": "199505"
+    },
+    {
+      "sourceId": "60004276",
+      "name": "Corolla Runx",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200101",
+      "endMonth": "200609"
+    },
+    {
+      "sourceId": "60004316",
+      "name": "Corolla Spacio",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "199701",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004359",
+      "name": "Corolla Spacio",
+      "generationLabel": "2",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200105",
+      "endMonth": "200706"
+    },
+    {
+      "sourceId": "60008997",
+      "name": "Corolla Rumion",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200710",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003189",
+      "name": "Corolla van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "196705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003265",
+      "name": "Corolla van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197005",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003414",
+      "name": "Corolla van",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "197404",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003567",
+      "name": "Corolla van",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "197908",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003801A",
+      "name": "Corolla van",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "198708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003931A",
+      "name": "Corolla van",
+      "generationLabel": "6",
+      "bodyType": "Van",
+      "introductionMonth": "199109",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60003633",
+      "name": "Corolla wagon",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198205",
+      "endMonth": "198708"
+    },
+    {
+      "sourceId": "60003801B",
+      "name": "Corolla wagon",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60003931B",
+      "name": "Corolla wagon",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199109",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60004239",
+      "name": "Corolla Fielder",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004263",
+      "name": "Corolla Fielder",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017618",
+      "name": "Corolla Fielder",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "201205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004291",
+      "name": "Allex",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200101",
+      "endMonth": "200610"
+    },
+    {
+      "sourceId": "60001525",
+      "name": "Auris",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017710",
+      "name": "Auris",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201208",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012554A",
+      "name": "Probox",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012554B",
+      "name": "Probox",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "200207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008676",
+      "name": "Corolla Sprinter",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "196805",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008708",
+      "name": "Sprinter Coupé",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "197005",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008793",
+      "name": "Sprinter Coupé",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "197404",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008904A",
+      "name": "Sprinter Coupé",
+      "generationLabel": "4",
+      "bodyType": "Coupé",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009032",
+      "name": "Sprinter Trueno",
+      "generationLabel": "5",
+      "bodyType": "Coupé",
+      "introductionMonth": "198305",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009147",
+      "name": "Sprinter Trueno",
+      "generationLabel": "6",
+      "bodyType": "Coupé",
+      "introductionMonth": "198705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009233B",
+      "name": "Sprinter Trueno",
+      "generationLabel": "7",
+      "bodyType": "Coupé",
+      "introductionMonth": "199106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009347",
+      "name": "Sprinter Trueno",
+      "generationLabel": "8",
+      "bodyType": "Coupé",
+      "introductionMonth": "199505",
+      "endMonth": "200007"
+    },
+    {
+      "sourceId": "60008742",
+      "name": "Sprinter",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "197108",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008781",
+      "name": "Sprinter",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "197404",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008894",
+      "name": "Sprinter",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009026A",
+      "name": "Sprinter",
+      "generationLabel": "5",
+      "bodyType": "Sedan",
+      "introductionMonth": "198305",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009134",
+      "name": "Sprinter",
+      "generationLabel": "6",
+      "bodyType": "Sedan",
+      "introductionMonth": "198705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009223",
+      "name": "Sprinter",
+      "generationLabel": "7",
+      "bodyType": "Sedan",
+      "introductionMonth": "199106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009339",
+      "name": "Sprinter",
+      "generationLabel": "8",
+      "bodyType": "Sedan",
+      "introductionMonth": "199505",
+      "endMonth": "200007"
+    },
+    {
+      "sourceId": "60008852",
+      "name": "Sprinter Hardtop",
+      "generationLabel": "3",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197701",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008904B",
+      "name": "Sprinter Hardtop",
+      "generationLabel": "4",
+      "bodyType": "Hardtop",
+      "introductionMonth": "197903",
+      "endMonth": "198305"
+    },
+    {
+      "sourceId": "60009561",
+      "name": "Sprinter Marino",
+      "generationLabel": "1",
+      "bodyType": "Hardtop",
+      "introductionMonth": "199205",
+      "endMonth": "199806"
+    },
+    {
+      "sourceId": "60008838",
+      "name": "Sprinter Liftback",
+      "generationLabel": "3",
+      "bodyType": "Liftback",
+      "introductionMonth": "197601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60008898",
+      "name": "Sprinter Liftback",
+      "generationLabel": "4",
+      "bodyType": "Liftback",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009026B",
+      "name": "Sprinter Liftback",
+      "generationLabel": "5",
+      "bodyType": "Liftback",
+      "introductionMonth": "198305",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009141",
+      "name": "Sprinter Cielo",
+      "generationLabel": "6",
+      "bodyType": "Liftback",
+      "introductionMonth": "198705",
+      "endMonth": "199106"
+    },
+    {
+      "sourceId": "60009426",
+      "name": "Sprinter Carib",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198208",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009465",
+      "name": "Sprinter Carib",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009497",
+      "name": "Sprinter Carib",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199508",
+      "endMonth": "200208"
+    },
+    {
+      "sourceId": "60009177",
+      "name": "Sprinter Van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "198808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009249A",
+      "name": "Sprinter Van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "199109",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60009249B",
+      "name": "Sprinter Wagon",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199109",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60000430",
+      "name": "Voltz",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200208",
+      "endMonth": "200405"
+    },
+    {
+      "sourceId": "60000805",
+      "name": "iQ",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200811",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006293B",
+      "name": "Corsa",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "197808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006375B",
+      "name": "Corsa",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006486B",
+      "name": "Corsa",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "199009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006517B",
+      "name": "Corsa",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "199409",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60006293A",
+      "name": "Corsa Hatchback",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "197808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006375A",
+      "name": "Corsa Hatchback",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006410",
+      "name": "Corsa Hatchback",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006486A",
+      "name": "Corsa Hatchback",
+      "generationLabel": "4",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006517A",
+      "name": "Corsa Hatchback",
+      "generationLabel": "5",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199409",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60010650A",
+      "name": "Tercel",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "197808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010722A",
+      "name": "Tercel",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010812A",
+      "name": "Tercel",
+      "generationLabel": "3",
+      "bodyType": "Sedan",
+      "introductionMonth": "199009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010850",
+      "name": "Tercel",
+      "generationLabel": "4",
+      "bodyType": "Sedan",
+      "introductionMonth": "199409",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60010650B",
+      "name": "Tercel Hatchback",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "197808",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010722B",
+      "name": "Tercel Hatchback",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010771",
+      "name": "Tercel Hatchback",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010812B",
+      "name": "Tercel Hatchback",
+      "generationLabel": "4",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010827",
+      "name": "Tercel Hatchback",
+      "generationLabel": "5",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199409",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60004378",
+      "name": "Corolla II",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004412",
+      "name": "Corolla II",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004441",
+      "name": "Corolla II",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199009",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60004457",
+      "name": "Corolla II",
+      "generationLabel": "4",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199409",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60006888",
+      "name": "Publica Starlet",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "197304",
+      "endMonth": "197802"
+    },
+    {
+      "sourceId": "60006903",
+      "name": "Publica Starlet",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "197310",
+      "endMonth": "197802"
+    },
+    {
+      "sourceId": "60006941",
+      "name": "Starlet",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "197802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007017",
+      "name": "Starlet",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198410",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007105",
+      "name": "Starlet",
+      "generationLabel": "4",
+      "bodyType": "Hatchback",
+      "introductionMonth": "198912",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007154",
+      "name": "Starlet",
+      "generationLabel": "5",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199601",
+      "endMonth": "199908"
+    },
+    {
+      "sourceId": "60006953",
+      "name": "Starlet Van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197810",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007024",
+      "name": "Starlet Van",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "198410",
+      "endMonth": "198912"
+    },
+    {
+      "sourceId": "60007881",
+      "name": "Vitz",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199901",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007906",
+      "name": "Vitz",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200502",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017358",
+      "name": "Vitz",
+      "generationLabel": "3",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201012",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012328",
+      "name": "Platz",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199908",
+      "endMonth": "200511"
+    },
+    {
+      "sourceId": "60012570",
+      "name": "Belta",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200511",
+      "endMonth": "201205"
+    },
+    {
+      "sourceId": "60011104",
+      "name": "Duet",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "199809",
+      "endMonth": "200406"
+    },
+    {
+      "sourceId": "60011283",
+      "name": "Passo",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200406",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017159",
+      "name": "Passo",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201002",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011574",
+      "name": "Publica",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "196106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011785",
+      "name": "Publica",
+      "generationLabel": "2",
+      "bodyType": "Sedan",
+      "introductionMonth": "196904",
+      "endMonth": "197712"
+    },
+    {
+      "sourceId": "60011658",
+      "name": "Publica Convertible",
+      "generationLabel": "1",
+      "bodyType": "Convertible",
+      "introductionMonth": "196310",
+      "endMonth": "196904"
+    },
+    {
+      "sourceId": "60011675",
+      "name": "Publica Van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "196206",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011909",
+      "name": "Publica Van",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "196904",
+      "endMonth": "197906"
+    },
+    {
+      "sourceId": "60011672",
+      "name": "Publica Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196402",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011914",
+      "name": "Publica Pickup",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196910",
+      "endMonth": "198808"
+    },
+    {
+      "sourceId": "60015836",
+      "name": "Mini Ace",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196711",
+      "endMonth": "197511"
+    },
+    {
+      "sourceId": "60015837A",
+      "name": "Mini Ace",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "196808",
+      "endMonth": "197511"
+    },
+    {
+      "sourceId": "60015837B",
+      "name": "Mini Ace",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "196808",
+      "endMonth": "197511"
+    },
+    {
+      "sourceId": "60017442",
+      "name": "Pixis Space",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "201109",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017484",
+      "name": "Pixis Van",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "201112",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017488",
+      "name": "Pixis Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "201112",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017591",
+      "name": "Pixis Epoch",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "201205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012817",
+      "name": "Toyota 2000GT",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "196705",
+      "endMonth": "197010"
+    },
+    {
+      "sourceId": "60007472",
+      "name": "1600GT",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "196708",
+      "endMonth": "196809"
+    },
+    {
+      "sourceId": "60009017",
+      "name": "Toyota Sports 800",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "196504",
+      "endMonth": "196912"
+    },
+    {
+      "sourceId": "60017188",
+      "name": "Lexus LFA",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "200910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017692",
+      "name": "86",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "201204",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010493",
+      "name": "Soarer",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "198102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010557",
+      "name": "Soarer",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "198601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010598",
+      "name": "Soarer",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "199105",
+      "endMonth": "200012"
+    },
+    {
+      "sourceId": "60010645",
+      "name": "Soarer",
+      "generationLabel": "4",
+      "bodyType": "Convertible",
+      "introductionMonth": "200104",
+      "endMonth": "200507"
+    },
+    {
+      "sourceId": "60012618",
+      "name": "Lexus SC (SC430)",
+      "generationLabel": "1",
+      "bodyType": "Convertible",
+      "introductionMonth": "200508",
+      "endMonth": "201007"
+    },
+    {
+      "sourceId": "60006816",
+      "name": "Supra",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "198602",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006850",
+      "name": "Supra",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "199305",
+      "endMonth": "200207"
+    },
+    {
+      "sourceId": "60009901",
+      "name": "Celica",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "197012",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009986A",
+      "name": "Celica",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "197708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010026A",
+      "name": "Celica",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "198107",
+      "endMonth": "198508"
+    },
+    {
+      "sourceId": "60009942",
+      "name": "Celica Liftback",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "197304",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009986B",
+      "name": "Celica Liftback",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "197708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010026B",
+      "name": "Celica Liftback",
+      "generationLabel": "3",
+      "bodyType": "Coupé",
+      "introductionMonth": "198107",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010055",
+      "name": "Celica Liftback",
+      "generationLabel": "4",
+      "bodyType": "Coupé",
+      "introductionMonth": "198508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010093",
+      "name": "Celica Liftback",
+      "generationLabel": "5",
+      "bodyType": "Coupé",
+      "introductionMonth": "198909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010117",
+      "name": "Celica Liftback",
+      "generationLabel": "6",
+      "bodyType": "Coupé",
+      "introductionMonth": "199310",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010173",
+      "name": "Celica Liftback",
+      "generationLabel": "7",
+      "bodyType": "Coupé",
+      "introductionMonth": "199909",
+      "endMonth": "200604"
+    },
+    {
+      "sourceId": "60010071",
+      "name": "Celica GT-Four",
+      "generationLabel": "4",
+      "bodyType": "Coupé",
+      "introductionMonth": "198610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010085",
+      "name": "Celica GT-Four",
+      "generationLabel": "5",
+      "bodyType": "Coupé",
+      "introductionMonth": "198909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010126",
+      "name": "Celica GT-Four",
+      "generationLabel": "6",
+      "bodyType": "Coupé",
+      "introductionMonth": "199402",
+      "endMonth": "199807"
+    },
+    {
+      "sourceId": "60010076",
+      "name": "Celica Convertible",
+      "generationLabel": "1",
+      "bodyType": "Convertible",
+      "introductionMonth": "198710",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010096",
+      "name": "Celica Convertible",
+      "generationLabel": "2",
+      "bodyType": "Convertible",
+      "introductionMonth": "199008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010136",
+      "name": "Celica Convertible",
+      "generationLabel": "3",
+      "bodyType": "Convertible",
+      "introductionMonth": "199409",
+      "endMonth": "199807"
+    },
+    {
+      "sourceId": "60010185",
+      "name": "Celica XX",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "197804",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60010216",
+      "name": "Celica XX",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "198107",
+      "endMonth": "198602"
+    },
+    {
+      "sourceId": "60003092",
+      "name": "Curren",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "199401",
+      "endMonth": "199807"
+    },
+    {
+      "sourceId": "60000661",
+      "name": "MR2",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "198406",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000728",
+      "name": "MR2",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "198910",
+      "endMonth": "199910"
+    },
+    {
+      "sourceId": "60000647",
+      "name": "MR-S",
+      "generationLabel": "1",
+      "bodyType": "Roadster",
+      "introductionMonth": "199910",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60006108",
+      "name": "Cynos",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "199101",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006127",
+      "name": "Cynos",
+      "generationLabel": "2",
+      "bodyType": "Coupé",
+      "introductionMonth": "199509",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60006132",
+      "name": "Cynos Convertible",
+      "generationLabel": "2",
+      "bodyType": "Convertible",
+      "introductionMonth": "199610",
+      "endMonth": "199907"
+    },
+    {
+      "sourceId": "60009860",
+      "name": "SERA",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "199003",
+      "endMonth": "199512"
+    },
+    {
+      "sourceId": "60011190",
+      "name": "Nadia",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "199808",
+      "endMonth": "200307"
+    },
+    {
+      "sourceId": "60001507",
+      "name": "Opa",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200005",
+      "endMonth": "200404"
+    },
+    {
+      "sourceId": "60012598",
+      "name": "Raum",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "199705",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012599",
+      "name": "Raum",
+      "generationLabel": "2",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200305",
+      "endMonth": "201103"
+    },
+    {
+      "sourceId": "60012578",
+      "name": "Porte",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200407",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017662",
+      "name": "Porte",
+      "generationLabel": "2",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "201207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017650",
+      "name": "Spade",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "201207",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012290",
+      "name": "Fun Cargo",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "199908",
+      "endMonth": "200510"
+    },
+    {
+      "sourceId": "60012601",
+      "name": "Ractis",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200510",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017308",
+      "name": "Ractis",
+      "generationLabel": "2",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "201011",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012257",
+      "name": "bB",
+      "generationLabel": "1",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200002",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012274",
+      "name": "bB",
+      "generationLabel": "2",
+      "bodyType": "Tall Wagon",
+      "introductionMonth": "200512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000221",
+      "name": "ist",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007699",
+      "name": "ist",
+      "generationLabel": "2",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200707",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000003",
+      "name": "Isis",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200409",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60002006",
+      "name": "Gaia",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199805",
+      "endMonth": "200409"
+    },
+    {
+      "sourceId": "60007858",
+      "name": "WISH",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200301",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000991",
+      "name": "WISH",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200904",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000241",
+      "name": "Ipsum",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000277",
+      "name": "Ipsum",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200105",
+      "endMonth": "201001"
+    },
+    {
+      "sourceId": "60008649",
+      "name": "Sparky",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200009",
+      "endMonth": "200309"
+    },
+    {
+      "sourceId": "60006788",
+      "name": "Sienta",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200309",
+      "endMonth": "201008"
+    },
+    {
+      "sourceId": "60000841",
+      "name": "Passo Sette",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200812",
+      "endMonth": "201203"
+    },
+    {
+      "sourceId": "60001521",
+      "name": "Origin",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200011",
+      "endMonth": "200104"
+    },
+    {
+      "sourceId": "60000306",
+      "name": "WiLL Vi",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "200001",
+      "endMonth": "200112"
+    },
+    {
+      "sourceId": "60000312",
+      "name": "WiLL VS",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "200104",
+      "endMonth": "200404"
+    },
+    {
+      "sourceId": "60000321",
+      "name": "WiLL Cypha",
+      "generationLabel": "1",
+      "bodyType": "Hatchback",
+      "introductionMonth": "200210",
+      "endMonth": "200507"
+    },
+    {
+      "sourceId": "60004497A",
+      "name": "Toyota Cavalier",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199601",
+      "endMonth": "200007"
+    },
+    {
+      "sourceId": "60004497B",
+      "name": "Toyota Cavalier",
+      "generationLabel": "1",
+      "bodyType": "Coupé",
+      "introductionMonth": "199601",
+      "endMonth": "200007"
+    },
+    {
+      "sourceId": "60011116",
+      "name": "Toyota Classic",
+      "generationLabel": "1",
+      "bodyType": "Sedan",
+      "introductionMonth": "199606",
+      "endMonth": "199606"
+    },
+    {
+      "sourceId": "60012597",
+      "name": "Mega Cruiser",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199601",
+      "endMonth": "200208"
+    },
+    {
+      "sourceId": "60012609",
+      "name": "Land Cruiser (BJ)",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "195108",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012610",
+      "name": "Land Cruiser (20)",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "195511",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012611",
+      "name": "Land Cruiser (40)",
+      "generationLabel": "3",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "196008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012612",
+      "name": "Land Cruiser (70)",
+      "generationLabel": "4",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198411",
+      "endMonth": "200408"
+    },
+    {
+      "sourceId": "60017153",
+      "name": "Land Cruiser (50)",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "196708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013889",
+      "name": "Land Cruiser (60)",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198008",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013935",
+      "name": "Land Cruiser (80)",
+      "generationLabel": "3",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012613",
+      "name": "Land Cruiser (100)",
+      "generationLabel": "4",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199801",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60013330",
+      "name": "Land Cruiser (200)",
+      "generationLabel": "5",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200709",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012614",
+      "name": "Land Cruiser Prado (70)",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199004",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012615",
+      "name": "Land Cruiser Prado (90)",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014203",
+      "name": "Land Cruiser Prado (120)",
+      "generationLabel": "3",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200210",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001931",
+      "name": "Land Cruiser Prado (150)",
+      "generationLabel": "4",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200909",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017326",
+      "name": "FJ Cruiser",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "201012",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011997",
+      "name": "Harrier",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199712",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012014",
+      "name": "Harrier",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200302",
+      "endMonth": "201206"
+    },
+    {
+      "sourceId": "60012039",
+      "name": "Harrier Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200503",
+      "endMonth": "201206"
+    },
+    {
+      "sourceId": "60000818A",
+      "name": "Lexus RX (RX350)",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200901",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000818B",
+      "name": "Lexus RX Hybrid (RX450h)",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200904",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006037",
+      "name": "Kluger V",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200011",
+      "endMonth": "200705"
+    },
+    {
+      "sourceId": "60006055",
+      "name": "Kluger Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200503",
+      "endMonth": "200705"
+    },
+    {
+      "sourceId": "60007850",
+      "name": "Vanguard",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012604",
+      "name": "RAV4 L",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199405",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012606",
+      "name": "RAV4 L",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200005",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012608",
+      "name": "RAV4",
+      "generationLabel": "3",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200511",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012605",
+      "name": "RAV4 J",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199405",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012607",
+      "name": "RAV4 J",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200005",
+      "endMonth": "200511"
+    },
+    {
+      "sourceId": "60012419",
+      "name": "Blizzard",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198004",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012437",
+      "name": "Blizzard",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198405",
+      "endMonth": "199004"
+    },
+    {
+      "sourceId": "60004485",
+      "name": "Cami",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199905",
+      "endMonth": "200512"
+    },
+    {
+      "sourceId": "60012600",
+      "name": "Rush",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014785",
+      "name": "Toyoda Model G1 Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "193508",
+      "endMonth": "193608"
+    },
+    {
+      "sourceId": "60014788",
+      "name": "Toyota Model GA Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "193609",
+      "endMonth": "194009"
+    },
+    {
+      "sourceId": "60014793",
+      "name": "Toyota Model GY Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "193705",
+      "endMonth": "194011"
+    },
+    {
+      "sourceId": "60014795",
+      "name": "Toyota Model GB Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "193812",
+      "endMonth": "194204"
+    },
+    {
+      "sourceId": "70000004",
+      "name": "Toyota Model HB Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "193911",
+      "endMonth": "194105"
+    },
+    {
+      "sourceId": "60014807",
+      "name": "Toyota Model KB Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194203",
+      "endMonth": "194403"
+    },
+    {
+      "sourceId": "70000005",
+      "name": "Toyota Model LB Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194204",
+      "endMonth": "194312"
+    },
+    {
+      "sourceId": "70000002",
+      "name": "Toyota Model KC Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194311",
+      "endMonth": "194703"
+    },
+    {
+      "sourceId": "60014823",
+      "name": "Toyota Model BM Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194703",
+      "endMonth": "195107"
+    },
+    {
+      "sourceId": "70000006",
+      "name": "Toyota Model BS Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194907",
+      "endMonth": "195101"
+    },
+    {
+      "sourceId": "70000007",
+      "name": "Toyota Model FS Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194911",
+      "endMonth": "195006"
+    },
+    {
+      "sourceId": "70000008",
+      "name": "Toyota Model BX Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195106",
+      "endMonth": "195403"
+    },
+    {
+      "sourceId": "70000014",
+      "name": "Toyota Model BA Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195402",
+      "endMonth": "195602"
+    },
+    {
+      "sourceId": "70000011",
+      "name": "Toyota Model FX Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195110",
+      "endMonth": "195403"
+    },
+    {
+      "sourceId": "70000009",
+      "name": "Toyota Model FA Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195402",
+      "endMonth": null
+    },
+    {
+      "sourceId": "70000010",
+      "name": "Toyota Model FA100 Truck",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196409",
+      "endMonth": "197806"
+    },
+    {
+      "sourceId": "70000012",
+      "name": "Toyota Model FZ Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195110",
+      "endMonth": "196303"
+    },
+    {
+      "sourceId": "70000013",
+      "name": "Toyota Model BZ Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195110",
+      "endMonth": "195403"
+    },
+    {
+      "sourceId": "70000016",
+      "name": "Toyota Model BC Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195403",
+      "endMonth": "195607"
+    },
+    {
+      "sourceId": "70000015",
+      "name": "Toyota Model FC Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195406",
+      "endMonth": "195806"
+    },
+    {
+      "sourceId": "60014963",
+      "name": "Toyota Model DA Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195703",
+      "endMonth": null
+    },
+    {
+      "sourceId": "70000018",
+      "name": "Toyota Model DA115C Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196409",
+      "endMonth": "197506"
+    },
+    {
+      "sourceId": "70000019",
+      "name": "Toyota Model DC80C Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196310",
+      "endMonth": "196906"
+    },
+    {
+      "sourceId": "60007245",
+      "name": "Toyopet Truck Model SB",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "194704",
+      "endMonth": "195202"
+    },
+    {
+      "sourceId": "60007266",
+      "name": "Toyopet Truck Model SG",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195202",
+      "endMonth": "195309"
+    },
+    {
+      "sourceId": "60007272",
+      "name": "Toyopet Truck Model RK",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195310",
+      "endMonth": "195503"
+    },
+    {
+      "sourceId": "60007715",
+      "name": "Toyopet Truck Model RK1.5",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195503",
+      "endMonth": "195604"
+    },
+    {
+      "sourceId": "70000020",
+      "name": "Toyota Model SK Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195308",
+      "endMonth": "195409"
+    },
+    {
+      "sourceId": "60014598",
+      "name": "Toyopet Light Truck SKB (Toyoace)",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195409",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006564",
+      "name": "Toyoace",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001583",
+      "name": "Toyoace",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197108",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014640",
+      "name": "Toyoace",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197903",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001680",
+      "name": "Toyoace",
+      "generationLabel": "5",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001807",
+      "name": "Toyoace",
+      "generationLabel": "6",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199505",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017147",
+      "name": "Toyoace",
+      "generationLabel": "7",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199905",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014225",
+      "name": "Toyota RK52 Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195605",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016269",
+      "name": "Dyna",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195701",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014241",
+      "name": "Dyna",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195904",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016305",
+      "name": "Dyna",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196304",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016340",
+      "name": "Dyna",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196902",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014348",
+      "name": "Dyna",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016639",
+      "name": "Dyna",
+      "generationLabel": "5",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198409",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001001",
+      "name": "Dyna",
+      "generationLabel": "6",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199505",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014469",
+      "name": "Dyna",
+      "generationLabel": "7",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199905",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015814",
+      "name": "Massy Dyna",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196909",
+      "endMonth": "197612"
+    },
+    {
+      "sourceId": "60016151",
+      "name": "Quick Delivery 100 (Hiace / Toyoace)",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "198209",
+      "endMonth": "200106"
+    },
+    {
+      "sourceId": "60014407",
+      "name": "Quick Delivery 200 (Dyna / Toyoace)",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "198512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016142",
+      "name": "Quick Delivery 200",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "199908",
+      "endMonth": "201107"
+    },
+    {
+      "sourceId": "60014740",
+      "name": "Urban Supporter (Dyna / Toyoace)",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "200107",
+      "endMonth": "200407"
+    },
+    {
+      "sourceId": "60007730",
+      "name": "Toyopet RK23 truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195604",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007770",
+      "name": "Toyopet Stout",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "195906",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007764",
+      "name": "Stout",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196007",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60007816",
+      "name": "Stout",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197903",
+      "endMonth": "198903"
+    },
+    {
+      "sourceId": "60016044",
+      "name": "Toyopet Light Stout",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196309",
+      "endMonth": "196803"
+    },
+    {
+      "sourceId": "70000034",
+      "name": "Briska",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196705",
+      "endMonth": "196803"
+    },
+    {
+      "sourceId": "60015512",
+      "name": "Hilux",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196803",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015479",
+      "name": "Hilux",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015540",
+      "name": "Hilux",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015530",
+      "name": "Hilux",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198311",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015538",
+      "name": "Hilux",
+      "generationLabel": "5",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015606",
+      "name": "Hilux",
+      "generationLabel": "6",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199709",
+      "endMonth": "200407"
+    },
+    {
+      "sourceId": "60011317",
+      "name": "Hilux Surf",
+      "generationLabel": "1",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198405",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011351",
+      "name": "Hilux Surf",
+      "generationLabel": "2",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "198905",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011420",
+      "name": "Hilux Surf",
+      "generationLabel": "3",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "199512",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60011561",
+      "name": "Hilux Surf",
+      "generationLabel": "4",
+      "bodyType": "Sports Utility Vehicle",
+      "introductionMonth": "200211",
+      "endMonth": "200909"
+    },
+    {
+      "sourceId": "60015020",
+      "name": "Hiace",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "196710",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001848",
+      "name": "Hiace",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197702",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015273",
+      "name": "Hiace",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198508",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015363",
+      "name": "Hiace",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199505",
+      "endMonth": "199612"
+    },
+    {
+      "sourceId": "60015079",
+      "name": "Hiace",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "196710",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001848B",
+      "name": "Hiace",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197702",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015287",
+      "name": "Hiace",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "198212",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001935",
+      "name": "Hiace",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "198908",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015464",
+      "name": "Hiace",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "200408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015447",
+      "name": "Regius Ace",
+      "generationLabel": "1",
+      "bodyType": "1BOX",
+      "introductionMonth": "199907",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015495",
+      "name": "Regius Ace",
+      "generationLabel": "2",
+      "bodyType": "1BOX",
+      "introductionMonth": "200408",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60005969",
+      "name": "Granvia",
+      "generationLabel": "1",
+      "bodyType": "1BOX",
+      "introductionMonth": "199508",
+      "endMonth": "200204"
+    },
+    {
+      "sourceId": "60015450",
+      "name": "Hiace Regius",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199704",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015439",
+      "name": "Touring Hiace",
+      "generationLabel": "1",
+      "bodyType": "1BOX",
+      "introductionMonth": "199908",
+      "endMonth": "200205"
+    },
+    {
+      "sourceId": "60005944",
+      "name": "Grand Hiace",
+      "generationLabel": "1",
+      "bodyType": "1BOX",
+      "introductionMonth": "199908",
+      "endMonth": "200205"
+    },
+    {
+      "sourceId": "60000194",
+      "name": "Alphard G",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000926",
+      "name": "Alphard",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200805",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000198",
+      "name": "Alphard V",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200205",
+      "endMonth": "200805"
+    },
+    {
+      "sourceId": "60000203",
+      "name": "Alphard Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200307",
+      "endMonth": "200803"
+    },
+    {
+      "sourceId": "60017497",
+      "name": "Alphard Hybrid",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "201111",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000914",
+      "name": "Vellfire",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200805",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60017496",
+      "name": "Vellfire Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "201111",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015857",
+      "name": "Light Ace Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197011",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015868",
+      "name": "Light Ace Truck",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015861",
+      "name": "Light Ace Truck",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015744",
+      "name": "Light Ace Truck",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199906",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60019187",
+      "name": "Light Ace Truck",
+      "generationLabel": "5",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "200802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015946A",
+      "name": "Light Ace",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "197102",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015748",
+      "name": "Light Ace",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "197910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015984A",
+      "name": "Light Ace",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "198509",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60019879A",
+      "name": "Light Ace",
+      "generationLabel": "4",
+      "bodyType": "Van",
+      "introductionMonth": "199610",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60017089",
+      "name": "Light Ace",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "200802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015946B",
+      "name": "Light Ace",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197102",
+      "endMonth": "197511"
+    },
+    {
+      "sourceId": "60015749",
+      "name": "Light Ace",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197910",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60015984B",
+      "name": "Light Ace",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198509",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60019879B",
+      "name": "Light Ace NOAH",
+      "generationLabel": "4",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199610",
+      "endMonth": "200110"
+    },
+    {
+      "sourceId": "60001200",
+      "name": "Townace Truck",
+      "generationLabel": "1",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "197809",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014528",
+      "name": "Townace Truck",
+      "generationLabel": "2",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198211",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001491",
+      "name": "Townace Truck",
+      "generationLabel": "3",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "198610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001574",
+      "name": "Townace Truck",
+      "generationLabel": "4",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "199906",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60001606",
+      "name": "Townace Truck",
+      "generationLabel": "5",
+      "bodyType": "Truck/Picup",
+      "introductionMonth": "200802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001188A",
+      "name": "Townace",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "197610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60014528B",
+      "name": "Townace",
+      "generationLabel": "2",
+      "bodyType": "Van",
+      "introductionMonth": "198211",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001375A",
+      "name": "Townace",
+      "generationLabel": "3",
+      "bodyType": "Van",
+      "introductionMonth": "199610",
+      "endMonth": "200707"
+    },
+    {
+      "sourceId": "60001395",
+      "name": "Townace",
+      "generationLabel": "5",
+      "bodyType": "Van",
+      "introductionMonth": "200802",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001188B",
+      "name": "Townace",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "197610",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001321",
+      "name": "Townace",
+      "generationLabel": "2",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198211",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60001375B",
+      "name": "Townace NOAH",
+      "generationLabel": "3",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "199610",
+      "endMonth": "200111"
+    },
+    {
+      "sourceId": "60011236",
+      "name": "NOAH",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200111",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009041",
+      "name": "NOAH",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200706",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000418",
+      "name": "VOXY",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200111",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60009785",
+      "name": "VOXY",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200706",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60012603",
+      "name": "Masterace Surf",
+      "generationLabel": "1",
+      "bodyType": "Station Wagon",
+      "introductionMonth": "198211",
+      "endMonth": "199201"
+    },
+    {
+      "sourceId": "60000446",
+      "name": "Estima",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199005",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000594",
+      "name": "Estima T / Estima L",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200001",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000619",
+      "name": "Estima",
+      "generationLabel": "3",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200601",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000626",
+      "name": "Estima Hybrid",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200106",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000632",
+      "name": "Estima Hybrid",
+      "generationLabel": "2",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "200606",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60000467",
+      "name": "Estima Emina",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199201",
+      "endMonth": "199912"
+    },
+    {
+      "sourceId": "60000479",
+      "name": "Estima Lucida",
+      "generationLabel": "1",
+      "bodyType": "Mini Van/Cab Wagon",
+      "introductionMonth": "199201",
+      "endMonth": "199912"
+    },
+    {
+      "sourceId": "60016082",
+      "name": "Deliboy",
+      "generationLabel": "1",
+      "bodyType": "Van",
+      "introductionMonth": "198907",
+      "endMonth": "199512"
+    },
+    {
+      "sourceId": "70000022",
+      "name": "Model DA Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "193601",
+      "endMonth": "194009"
+    },
+    {
+      "sourceId": "60014873",
+      "name": "Model DB Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "193906",
+      "endMonth": "194109"
+    },
+    {
+      "sourceId": "70000024",
+      "name": "Model FL Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "194909",
+      "endMonth": "195105"
+    },
+    {
+      "sourceId": "70000025",
+      "name": "Model BL Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "194910",
+      "endMonth": "195105"
+    },
+    {
+      "sourceId": "70000026",
+      "name": "Model BY Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195106",
+      "endMonth": "195403"
+    },
+    {
+      "sourceId": "70000027",
+      "name": "Model FY Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195108",
+      "endMonth": "195403"
+    },
+    {
+      "sourceId": "70000028",
+      "name": "Model FR Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195308",
+      "endMonth": "195404"
+    },
+    {
+      "sourceId": "60014871",
+      "name": "Model FB Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195403",
+      "endMonth": "197304"
+    },
+    {
+      "sourceId": "70000029",
+      "name": "Model BB Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195405",
+      "endMonth": "195507"
+    },
+    {
+      "sourceId": "60016079",
+      "name": "Model DB70 Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195708",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60016081A",
+      "name": "Model DB100 Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "196412",
+      "endMonth": "197507"
+    },
+    {
+      "sourceId": "60016081B",
+      "name": "Model DR10 Bus",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "195809",
+      "endMonth": "196902"
+    },
+    {
+      "sourceId": "60006593",
+      "name": "Coaster",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "196902",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006636",
+      "name": "Coaster",
+      "generationLabel": "2",
+      "bodyType": "Bus",
+      "introductionMonth": "198205",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006680",
+      "name": "Coaster",
+      "generationLabel": "3",
+      "bodyType": "Bus",
+      "introductionMonth": "199301",
+      "endMonth": null
+    },
+    {
+      "sourceId": "60006703",
+      "name": "Coaster R",
+      "generationLabel": "1",
+      "bodyType": "Bus",
+      "introductionMonth": "199605",
+      "endMonth": "200408"
+    }
+  ]
+}

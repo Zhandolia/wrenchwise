@@ -31,3 +31,7 @@ Never include credentials, private identifying vehicle/owner data or restricted 
 Implemented a make-independent evidence schema, deterministic v5 migration, separate geometry and validation states, ten quantity claims with explicit hardware subjects, and inspector integration. All 759 legacy IDs are preserved: 513 modeled groups, 240 absent-geometry records and six partial/unresolved records. None of the six was certified complete. Added negative validation tests and GitHub CI; physical reference acquisition and complete inventory reconciliation remain pending. The reference configuration remains a target, not a physically identified car.
 
 GitHub attribution diagnosis: GitHub reported `author: null` and `committer: null` for the previous planning commit. Set repository-local identity to the authenticated Zhandolia account's numeric noreply address for future commits. Existing shared commits were preserved. This is a software/evidence checkpoint, with no new geometry or mechanical approval.
+
+## Catalog foundation — 2026-10-06
+
+C1a evidence migration pushed as `d50aa3ee6501bec586e832bbff49b05bd55a94af`; GitHub confirms author and committer are Zhandolia. Its CI run passed. Expanded manufacturer catalog, shared upload/comment registry and paginated vehicle selection are recorded in the next catalog checkpoint. See `docs/toyota-lexus-catalog.md` for source scope and outstanding worldwide coverage. This expansion does not complete measured geometry milestones C2–C7.

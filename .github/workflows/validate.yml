@@ -17,6 +17,7 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: node scripts/migrate-s160-evidence.mjs --check
+      - run: node scripts/build-vehicle-catalog.mjs --check
       - run: node --test tests/*.test.mjs
       - run: node modeling/s160/validate_web.mjs
       - run: npx tsc --noEmit

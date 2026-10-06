@@ -71,3 +71,5 @@ Run `node modeling/s160/validate_web.mjs` with Node 24 to check manifest/mesh ID
 The [prioritized S160 roadmap](docs/s160-roadmap.md) defines detailed solutions, dependencies and acceptance checks, beginning with reference evidence and inventory reconciliation, then measured timing/pump service geometry. The [baseline audit](docs/s160-priority-audit.md) explains the current blockers.
 
 Record each major step in the [progress ledger](docs/s160-progress.md), run relevant checks, commit it with a descriptive message and push to the GitHub remote. Confirm the pushed SHA. A planning or software checkpoint does not establish mechanical verification.
+
+Toyota and Lexus are now the first makes in the extensible vehicle registry. See [catalog coverage](docs/toyota-lexus-catalog.md) and `/catalog`. Nameplate discovery and verified 3D coverage are separate.
