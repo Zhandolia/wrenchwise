@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2jz-ge-vvti",
+    "name": "2JZ-GE VVT-i",
+    "architecture": "3.0 L inline-six",
+    "status": "provisional-component",
+    "assetUrl": "/models/components/2jz-ge-vvti.glb",
+    "recordIds": [
+      "gs300"
+    ],
+    "sourceUrl": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf",
+    "sourceScope": "Archived manufacturer US 2000 GS specifications; code and installed geometry tracked in the S160 evidence ledger.",
+    "reuseStatus": "GS300 study only; no other installation approved",
+    "notes": "Keep non-VVT-i and turbocharged 2JZ variants separate. Mounts, sump, intake, wiring and accessories require installation-specific validation."
+  },
+  {
+    "id": "1uz-fe-vvti",
+    "name": "1UZ-FE VVT-i",
+    "architecture": "4.0 L V8",
+    "status": "not-built",
+    "assetUrl": null,
+    "recordIds": [
+      "gs400"
+    ],
+    "sourceUrl": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf",
+    "sourceScope": "Archived manufacturer US 2000 GS specifications; working target, physical vehicle unidentified.",
+    "reuseStatus": "No shared geometry approved",
+    "notes": "Different engine from the 3UZ-FE. Do not assign the GS300 inline-six assembly to this option."
+  },
+  {
+    "id": "3uz-fe",
+    "name": "3UZ-FE",
+    "architecture": "4.3 L V8",
+    "status": "not-built",
+    "assetUrl": null,
+    "recordIds": [
+      "gs430",
+      "ls430"
+    ],
+    "sourceUrl": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/GS430-GS300-UK-launch-pack-2000.pdf",
+    "sourceScope": "UK October 2000 launch pack explicitly connects GS430 and LS430 engine family. US installation interchangeability remains unverified.",
+    "reuseStatus": "Shared engine family candidate; installation variants unresolved",
+    "notes": "Model the engine core once after references are validated; retain separate sump, mount, accessory, harness, exhaust and transmission-interface variants. No complete installation interchangeability claimed."
+  }
+]

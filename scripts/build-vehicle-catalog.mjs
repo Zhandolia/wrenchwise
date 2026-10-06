@@ -1,4 +1,7 @@
 import fs from 'node:fs';
+import {buildFamilies} from './catalog-families.mjs';
+const rules=JSON.parse(fs.readFileSync('research/catalog/family-rules.json'));
+const engines=JSON.parse(fs.readFileSync('research/catalog/engines.json'));
 const history=JSON.parse(fs.readFileSync('research/catalog/toyota-lineage-facts.json'));
 const regional=JSON.parse(fs.readFileSync('research/catalog/regional-nameplates.json'));
 const assets=JSON.parse(fs.readFileSync('research/catalog/asset-targets.json'));
@@ -23,7 +26,8 @@ for(const [id,name,bodyType,generation] of targets)records.unshift({id,make:'Lex
  notes:id==='gs300'?'User-confirmed target. V5 assembly has no measured, verified parts. Physical reference and production month remain unidentified.':'Working target from initial catalog audit. Exact trim and installed components are unverified.'});
 records.push(...assets.records);
 records.sort((a,b)=>a.id==='gs300'?-1:b.id==='gs300'?1:a.kind==='workshop-target'&&b.kind!=='workshop-target'?-1:b.kind==='workshop-target'&&a.kind!=='workshop-target'?1:a.make.localeCompare(b.make)||a.name.localeCompare(b.name)||(a.introductionMonth||'').localeCompare(b.introductionMonth||''));
-const data={schemaVersion:1,updatedAt:'2026-10-06',makes:[{id:'toyota',name:'Toyota'},{id:'lexus',name:'Lexus'}],
+const families=buildFamilies(records,rules);
+const data={families,engines,schemaVersion:2,updatedAt:'2026-10-06',makes:[{id:'toyota',name:'Toyota'},{id:'lexus',name:'Lexus'}],
  coverage:{status:'incomplete',historicalRecords:history.records.length,scope:'Toyota and Lexus road-vehicle discovery: historical lineage plus selected regional manufacturer catalogs. Records include generations, body variants and regional nameplate overviews; they are not a count of unique models.',
  gaps:['Complete worldwide generation, facelift and powertrain mapping','Historical export-market aliases and discontinued regional models','China and other regional lineups beyond the cited sources','Exact production months, trims, emissions and driveline configurations','Measured/licensed geometry and physical validation for every vehicle'],excluded:['Concept-only vehicles','Competition-only vehicles','Marine products','Other makes until scope expands']},sources,records};
 const out=JSON.stringify(data,null,2)+'\n',path='public/research/vehicle-catalog.json';

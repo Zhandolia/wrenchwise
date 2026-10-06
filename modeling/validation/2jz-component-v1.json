@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "component": "2jz-ge-vvti",
+  "revision": 1,
+  "sourceRevision": "S160 v5",
+  "sourceSha256": "d3ef33072ae0383a5d0b5b13ec3956e921620cdfd27676f6215c8806973728d8",
+  "webSha256": "9d7e19f8e2532f43dbc4ff599354ff6751c691ba6f24c55020463a1350ba5c18",
+  "bytes": 3723168,
+  "modeledGroups": 212,
+  "layers": {
+    "installation": 94,
+    "core": 118
+  },
+  "verifiedParts": 0,
+  "reviewedViews": [
+    "front",
+    "rear",
+    "left",
+    "right",
+    "top",
+    "bottom"
+  ],
+  "changes": [
+    "Extracted existing engine-mounted geometry; excluded chassis, transmission, airbox, radiator and fuel tank",
+    "Baked source transforms before detaching parents, kept metric scale and stable part IDs",
+    "Separated engine core study from GS installation equipment; moved sump and accessories out of core layer after review",
+    "Compressed without mesh simplification"
+  ],
+  "observedIssues": [
+    "Simplified block/head castings and faceted surfaces",
+    "Belt route, pulley geometry and timing marks not validated",
+    "Mechanical interfaces and mounting datums unmeasured",
+    "No complete harness or full hydraulic/coolant/oil passage model",
+    "Open tube ends and approximate accessory attachment geometry"
+  ],
+  "acceptance": "Reusable provisional modeling component only. No additional vehicle installation or repair procedure approved."
+}

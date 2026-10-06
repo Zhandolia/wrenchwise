@@ -1,0 +1,2359 @@
+{
+  "componentId": "2jz-ge-vvti",
+  "revision": 1,
+  "sourceRevision": "S160 v5",
+  "sourceSha256": "d3ef33072ae0383a5d0b5b13ec3956e921620cdfd27676f6215c8806973728d8",
+  "units": "metres",
+  "origin": "Visual bounding box base center; not a measured mount datum",
+  "boundsMetres": [
+    0.8174999952316284,
+    0.9492161273956299,
+    0.8212015628814697
+  ],
+  "approvedVehicleIds": [],
+  "studyVehicleIds": [
+    "gs300"
+  ],
+  "verifiedParts": 0,
+  "parts": [
+    {
+      "id": "ac-compressor",
+      "name": "Ac Compressor",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ac-compressor-pulley",
+      "name": "Accessory pulley",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ac-compressor-ribs",
+      "name": "Accessory casing ribs",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "accessory-belt",
+      "name": "Accessory belt / route awaiting validation",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "accessory-tensioner",
+      "name": "Accessory drive belt tensioner",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "accessory-tensioner-arm",
+      "name": "Accessory tensioner arm",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "accessory-tensioner-pulley",
+      "name": "Accessory tensioner pulley",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "acis-actuator",
+      "name": "ACIS vacuum actuator",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "acis-link",
+      "name": "ACIS actuator linkage",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "alternator",
+      "name": "Alternator",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "alternator-pulley",
+      "name": "Accessory pulley",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "alternator-ribs",
+      "name": "Accessory casing ribs",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "block-casting-ribs",
+      "name": "Block cast webs",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "block-core-plugs",
+      "name": "Block core plugs",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "block-deck",
+      "name": "Block deck side rail",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cam-bearing-caps",
+      "name": "Camshaft bearing cap study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cam-cap-fasteners",
+      "name": "Cam cap fastener study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cam-lobes--1",
+      "name": "Camshaft lobes",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cam-lobes-1",
+      "name": "Camshaft lobes",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "camshaft--1",
+      "name": "Exhaust camshaft",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "camshaft-1",
+      "name": "Intake camshaft",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "camshaft-seals",
+      "name": "Intake/exhaust camshaft seals",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "crank-counterweights",
+      "name": "Crankshaft counterweight study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "crank-damper",
+      "name": "Crankshaft harmonic damper",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "crank-damper-bolt",
+      "name": "Crankshaft pulley retaining bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "crank-pulley",
+      "name": "Crankshaft timing pulley",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "crank-pulley-center",
+      "name": "Crankshaft timing pulley center fastener",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "crank-pulley-seal",
+      "name": "Crankshaft timing pulley shaft seal",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "crankshaft",
+      "name": "Crankshaft main axis",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cylinder-head",
+      "name": "Cylinder head casting",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "cylinder-liners",
+      "name": "Six cylinder bore surfaces",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "drain-plug",
+      "name": "Engine oil drain plug",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "engine-block",
+      "name": "2JZ-GE cylinder block casting",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "engine-cover",
+      "name": "Engine appearance cover / forward head",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "engine-cover-lettering",
+      "name": "VVT-i",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "engine-cover-nut-1",
+      "name": "Engine cover retaining nut 1",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "engine-cover-nut-2",
+      "name": "Engine cover retaining nut 2",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "engine-cover-nut-3",
+      "name": "Engine cover retaining nut 3",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "engine-cover-nut-4",
+      "name": "Engine cover retaining nut 4",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "exhaust-cam-sprocket",
+      "name": "Exhaust cam timing pulley",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "exhaust-cam-sprocket-center",
+      "name": "Exhaust cam timing pulley center fastener",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "exhaust-cam-sprocket-seal",
+      "name": "Exhaust cam timing pulley shaft seal",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "exhaust-runner-1",
+      "name": "Exhaust manifold runner 1",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "exhaust-runner-2",
+      "name": "Exhaust manifold runner 2",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "exhaust-runner-3",
+      "name": "Exhaust manifold runner 3",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "exhaust-runner-4",
+      "name": "Exhaust manifold runner 4",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "exhaust-runner-5",
+      "name": "Exhaust manifold runner 5",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "exhaust-runner-6",
+      "name": "Exhaust manifold runner 6",
+      "system": "exhaust",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "fuel-pulsation-damper",
+      "name": "Fuel pressure pulsation damper",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "fuel-rail",
+      "name": "Fuel delivery rail",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-0",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-1",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-2",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-3",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-4",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt--1-5",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-0",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-1",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-2",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-3",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-4",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-cover-bolt-1-5",
+      "name": "Cylinder head cover bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-gasket",
+      "name": "Cylinder head gasket / bore fire rings",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "head-port-faces",
+      "name": "Cylinder head port flanges",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "injector-1",
+      "name": "Fuel injector 1",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-2",
+      "name": "Fuel injector 2",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-3",
+      "name": "Fuel injector 3",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-4",
+      "name": "Fuel injector 4",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-5",
+      "name": "Fuel injector 5",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-6",
+      "name": "Fuel injector 6",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-1",
+      "name": "Injector connector 1",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-2",
+      "name": "Injector connector 2",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-3",
+      "name": "Injector connector 3",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-4",
+      "name": "Injector connector 4",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-5",
+      "name": "Injector connector 5",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-connector-6",
+      "name": "Injector connector 6",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-seals",
+      "name": "Injector O-rings",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "injector-wiring",
+      "name": "Injector harness branches",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "intake-casting-ribs",
+      "name": "Intake connector cast ribs",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-crossover",
+      "name": "Intake air connector crossover",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-1",
+      "name": "Intake runner seal 1",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-2",
+      "name": "Intake runner seal 2",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-3",
+      "name": "Intake runner seal 3",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-4",
+      "name": "Intake runner seal 4",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-5",
+      "name": "Intake runner seal 5",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-gasket-6",
+      "name": "Intake runner seal 6",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-plenum",
+      "name": "ACIS intake air chamber",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-1",
+      "name": "Lower intake runner 1",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-2",
+      "name": "Lower intake runner 2",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-3",
+      "name": "Lower intake runner 3",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-4",
+      "name": "Lower intake runner 4",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-5",
+      "name": "Lower intake runner 5",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "intake-runner-6",
+      "name": "Lower intake runner 6",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "main-bearing-caps",
+      "name": "Main bearing cap study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-cap",
+      "name": "Oil filler cap",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "oil-dipstick-handle",
+      "name": "Engine dipstick handle",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-dipstick-tube",
+      "name": "Engine oil level gauge tube",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-pan-lower",
+      "name": "Stamped lower sump",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-pan-upper",
+      "name": "Cast upper oil pan",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-pickup",
+      "name": "Oil pickup tube",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-1",
+      "name": "Oil control ring 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-2",
+      "name": "Oil control ring 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-3",
+      "name": "Oil control ring 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-4",
+      "name": "Oil control ring 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-5",
+      "name": "Oil control ring 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-rings-6",
+      "name": "Oil control ring 6",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "oil-strainer-engine",
+      "name": "Engine oil pickup screen",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "pcv-hose",
+      "name": "PCV hose",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "pcv-valve",
+      "name": "PCV valve",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "piston-1",
+      "name": "Piston 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-2",
+      "name": "Piston 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-3",
+      "name": "Piston 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-4",
+      "name": "Piston 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-5",
+      "name": "Piston 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-6",
+      "name": "Piston 6",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-1",
+      "name": "Compression rings 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-2",
+      "name": "Compression rings 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-3",
+      "name": "Compression rings 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-4",
+      "name": "Compression rings 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-5",
+      "name": "Compression rings 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "piston-rings-6",
+      "name": "Compression rings 6",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "ps-pump",
+      "name": "Ps Pump",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ps-pump-pulley",
+      "name": "Accessory pulley",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ps-pump-ribs",
+      "name": "Accessory casing ribs",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ps-reservoir",
+      "name": "Power steering reservoir",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "ps-reservoir-cap",
+      "name": "Power steering reservoir cap",
+      "system": "engine",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "pump-block-oring",
+      "name": "Water pump block O-ring",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "pump-impeller",
+      "name": "Water pump impeller study",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "pump-pulley-lip",
+      "name": "Water pump pulley rim",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "rod-1",
+      "name": "Connecting rod 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-2",
+      "name": "Connecting rod 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-3",
+      "name": "Connecting rod 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-4",
+      "name": "Connecting rod 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-5",
+      "name": "Connecting rod 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-6",
+      "name": "Connecting rod 6",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-1",
+      "name": "Rod big end 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-2",
+      "name": "Rod big end 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-3",
+      "name": "Rod big end 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-4",
+      "name": "Rod big end 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-5",
+      "name": "Rod big end 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "rod-bearing-6",
+      "name": "Rod big end 6",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "sump-fasteners",
+      "name": "Sump perimeter fasteners / placement estimated",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "thermostat",
+      "name": "Thermostat element",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "thermostat-seal",
+      "name": "Thermostat rubber seal",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "throttle",
+      "name": "ETCS-i throttle body",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "throttle-flange",
+      "name": "Throttle body flange",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "throttle-motor",
+      "name": "Throttle actuator motor",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "throttle-plate",
+      "name": "Throttle butterfly plate / illustrative opening",
+      "system": "intake",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "throttle-sensor",
+      "name": "Throttle position sensor",
+      "system": "electrical",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "gs300-engine-photo"
+      ]
+    },
+    {
+      "id": "timing-belt",
+      "name": "Timing belt \u2014 routing study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower",
+      "name": "No.1 timing belt cover",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower-bolt-1",
+      "name": "timing cover lower bolt 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower-bolt-2",
+      "name": "timing cover lower bolt 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower-bolt-3",
+      "name": "timing cover lower bolt 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower-bolt-4",
+      "name": "timing cover lower bolt 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-lower-bolt-5",
+      "name": "timing cover lower bolt 5",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-rear",
+      "name": "No.4 rear timing cover",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-top",
+      "name": "No.3 timing belt cover / plug valley",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-top-bolt-1",
+      "name": "No.3 timing cover bolt 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-top-bolt-2",
+      "name": "No.3 timing cover bolt 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-top-bolt-3",
+      "name": "No.3 timing cover bolt 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-top-bolt-4",
+      "name": "No.3 timing cover bolt 4",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-upper",
+      "name": "No.2 timing belt cover",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-upper-bolt-1",
+      "name": "timing cover upper bolt 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-upper-bolt-2",
+      "name": "timing cover upper bolt 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-cover-upper-bolt-3",
+      "name": "timing cover upper bolt 3",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-idler",
+      "name": "Timing-belt idler pulley",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-idler-arm",
+      "name": "Timing idler pivot arm",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-idler-bearing",
+      "name": "Idler bearing seal",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-idler-bolt",
+      "name": "Timing idler pivot bolt",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-tensioner",
+      "name": "Hydraulic timing-belt tensioner",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-tensioner-bolt-1",
+      "name": "Timing tensioner mounting bolt 1",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-tensioner-bolt-2",
+      "name": "Timing tensioner mounting bolt 2",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-tensioner-boot",
+      "name": "Tensioner dust boot",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "timing-tensioner-rod",
+      "name": "Tensioner pushrod",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "valve-cover-exhaust",
+      "name": "Cylinder head cover exhaust",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-cover-gaskets",
+      "name": "Cylinder head cover gaskets",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-cover-intake",
+      "name": "Cylinder head cover intake",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-heads",
+      "name": "24 valve heads",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-lifters",
+      "name": "Valve lifter buckets",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-retainers",
+      "name": "Valve spring retainers",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-springs",
+      "name": "24 valve springs",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "valve-stems",
+      "name": "24 valve stems",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    },
+    {
+      "id": "vvti-filter-screen",
+      "name": "VVT-i filter screen study",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-gear",
+      "name": "VVT-i intake timing pulley",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-gear-center",
+      "name": "VVT-i intake timing pulley center fastener",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-gear-locked-fasteners",
+      "name": "VVT-i pulley factory-set bolts \u2014 do not loosen",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-gear-seal",
+      "name": "VVT-i intake timing pulley shaft seal",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-oil-control-valve",
+      "name": "VVT-i camshaft timing oil control valve",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-oil-filter",
+      "name": "VVT-i oil control filter housing",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "vvti-oil-pipe",
+      "name": "No.1 VVT-i oil supply pipe",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-timing"
+      ]
+    },
+    {
+      "id": "water-bypass-outlet",
+      "name": "Water bypass outlet",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-bypass-pipe-1",
+      "name": "No.1 water bypass pipe",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-bypass-pipe-2",
+      "name": "No.2 water bypass pipe",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-inlet",
+      "name": "Water inlet housing",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-inlet-fasteners",
+      "name": "Water inlet retaining nuts",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump",
+      "name": "Water pump casting",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-1",
+      "name": "Water pump mounting bolt 1",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-2",
+      "name": "Water pump mounting bolt 2",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-3",
+      "name": "Water pump mounting bolt 3",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-4",
+      "name": "Water pump mounting bolt 4",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-5",
+      "name": "Water pump mounting bolt 5",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-bolt-6",
+      "name": "Water pump mounting bolt 6",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-drain",
+      "name": "Water pump drain hose",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-gasket",
+      "name": "Water pump gasket",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-hub",
+      "name": "Water pump shaft and hub",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-pulley",
+      "name": "Water pump accessory pulley",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-pulley-nut-1",
+      "name": "Water pump pulley nut 1",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-pulley-nut-2",
+      "name": "Water pump pulley nut 2",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-pulley-nut-3",
+      "name": "Water pump pulley nut 3",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "water-pump-pulley-nut-4",
+      "name": "Water pump pulley nut 4",
+      "system": "cooling",
+      "layer": "installation",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-pump"
+      ]
+    },
+    {
+      "id": "wrist-pins",
+      "name": "Piston wrist pins",
+      "system": "engine",
+      "layer": "core",
+      "accuracy": "unverified",
+      "evidenceUrl": "/models/gs300-evidence.json",
+      "sourceRefs": [
+        "rm718u-engine"
+      ]
+    }
+  ],
+  "limitations": [
+    "Extracted and modularized existing study; no new dimensional evidence",
+    "Timing geometry, clearances, interfaces and hardware locations unverified",
+    "Installation layer belongs to the GS300 study only",
+    "Core layer is a modeling separation, not proof of interchangeable parts",
+    "Full gap/evidence ledger remains linked to the S160 source"
+  ]
+}
