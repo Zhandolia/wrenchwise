@@ -25,3 +25,9 @@ Working rule from the project owner: push each major completed step to the GitHu
 - Reviewer/approval record before promoting any geometry, fitment or procedure status.
 
 Never include credentials, private identifying vehicle/owner data or restricted source media in a public commit. Keep user changes outside the task intact. Use a normal follow-up commit for corrections; do not rewrite shared progress history.
+
+## C1a — evidence migration, 2026-10-06
+
+Implemented a make-independent evidence schema, deterministic v5 migration, separate geometry and validation states, ten quantity claims with explicit hardware subjects, and inspector integration. All 759 legacy IDs are preserved: 513 modeled groups, 240 absent-geometry records and six partial/unresolved records. None of the six was certified complete. Added negative validation tests and GitHub CI; physical reference acquisition and complete inventory reconciliation remain pending. The reference configuration remains a target, not a physically identified car.
+
+GitHub attribution diagnosis: GitHub reported `author: null` and `committer: null` for the previous planning commit. Set repository-local identity to the authenticated Zhandolia account's numeric noreply address for future commits. Existing shared commits were preserved. This is a software/evidence checkpoint, with no new geometry or mechanical approval.
