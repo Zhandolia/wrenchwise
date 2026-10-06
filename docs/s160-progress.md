@@ -47,3 +47,13 @@ Validation for Toyota reference: five catalog/evidence/GLB tests passed locally;
 Toyota reference checkpoint pushed as `913370c63b850146f279c80f4386726afdc2b726`; GitHub confirms author/committer Zhandolia. The Sites production deployment of that exact source succeeded at 2026-10-06 15:49 UTC. The site's access audience was preserved. Catalog/evidence software is updated; GS300 geometry remains model v5. The GR Supra is a newly added CC BY visual reference, with no verified mechanical content.
 
 Completed software checks: deterministic evidence/catalog generation, five regression tests, GLB ID/license/embedding checks, TypeScript and production build. Full 1:1 geometry, complete worldwide Toyota/Lexus configuration coverage, measured performance and physical repair review remain outstanding.
+
+## 2026-10-06 — Family catalog and reusable component publication
+
+- App source: `46f606070cdedfc09d463b113090657173746c12`, pushed to GitHub main with author/committer Zhandolia. GitHub validation: https://github.com/Zhandolia/wrenchwise/actions/runs/37499986889 — passed.
+- 817 source records organized into 356 browsing families; legacy storage IDs preserved. S160 GS displacement badges are configuration options. Different engine codes remain distinct. Historical source generations remain explicitly unresolved.
+- Added `/components` with a standalone 2JZ study, extracted from S160 v5: 212 groups (118 core / 94 installation), 3,723,168-byte compressed GLB, six reviewed views. This is existing geometry modularized, not a new verified engine or 212 new parts.
+- Verified grouped search and configuration switching, V8 missing-geometry state, component mesh selection, layer filtering, casing hiding and browser error log. Twelve tests, evidence reconciliation, assembly validation, TypeScript and production build passed. Fixed false-positive GS400 search matching flagship LS400 text.
+- Saved version: `appgprj_6ac44070db5881918afa76b61fb84388~appgver_0b4bbe4173b8819182b1b8e149aed835`.
+- Deployment: `appgdep_6ac529f0c6f08191956ff2811ab11f99`; succeeded 2026-10-06T17:04:00Z at https://wrenchwise-workshop.zhandolia.chatgpt.site. Existing owner-private access preserved.
+- No complete part or vehicle gained dimensional/fitment/procedure verification. Other catalog families and engine reuse mappings remain unfinished. Priority remains measured component geometry and installation interfaces, followed by reviewed UZ/MZ reuse candidates.
