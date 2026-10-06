@@ -1,0 +1,3406 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-05",
+  "photoCount": 230,
+  "scope": "11 catalog vehicles; OEM photo source audit and licensed model candidates. No six-view set is complete.",
+  "vehicles": [
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/1998/1998-lexus-gs-300400.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "1998 Lexus GS 300 400 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "9a2d5551eb9787a5c6296fc0164374f0d0765e18cc3b6680952b4d29592903db",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "1998 Lexus GS 300 400 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "29801a14df078f422c00b5f97934a44ef126285abb1a6871e95c3b140d945e45",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "1998 Lexus GS 300 400 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "5403ad9a78f98abcaff849a718090e63e721d665095b3fdfd6eced82d267d0c7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "1998 Lexus GS 300 400 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "d481b6591e3ca39b9254168d9aa43c704417bf4048adb2f0f52354c05dcac28d",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "1998 Lexus GS 300 400 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "13950674ee8956323d1f6a70a88949a6bf3b3fff49465b00815e3765fb0e6abc",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "1998 Lexus GS 300 400 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_06.jpg",
+          "view": "near-front",
+          "sha256": "cfe8fac90934e24c063ab85b5c6e7f764c5406be8d7c21d070af1120bac37b06",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "1998 Lexus GS 300 400 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_07.jpg",
+          "view": "front-three-quarter",
+          "sha256": "d59d7543b952e2f56f8231907b9bbf14d4606429f638eae219b0499dcf810d1f",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "1998 Lexus GS 300 400 08",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_08.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "b541904cf9320e2e0485fdc35da6965d3c9d53f93ea2bc392abb4abd2fd6a9ad",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 9,
+          "title": "1998 Lexus GS 300 400 09",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_09?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_09.jpg",
+          "view": "side-profile",
+          "sha256": "281ce2a5fbd11ae31a8feab427aba7cd40e152ae9d959ed1ea206094f6f00180",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 10,
+          "title": "1998 Lexus GS 300 400 10",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_10?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_10.jpg",
+          "view": "interior",
+          "sha256": "efeab5ba02a754c84ce334476db17910e70885dff7864dfb222f2c7efe57cbda",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 11,
+          "title": "1998 Lexus GS 300 400 11",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_11?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_11.jpg",
+          "view": "interior",
+          "sha256": "861b559aa538b6549b9a969db9b4272d6dc20327519730d094c5f193bc3aac41",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 12,
+          "title": "1998 Lexus GS 300 400 12",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_12?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_12.jpg",
+          "view": "interior",
+          "sha256": "9c1621f03baf7d613419b033a184c5e3c591265487dae5d6d3b4a9b2399b26f9",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 13,
+          "title": "1998 Lexus GS 300 400 13",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_13?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_13.jpg",
+          "view": "interior",
+          "sha256": "5bc67e30de13efac06bef6eca3807a8e0bca972cecea2377b4b20ce61e30d1bd",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 14,
+          "title": "1998 Lexus GS 300 400 14",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/1998_Lexus_GS_300_400_14?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/1998-lexus-gs-300-400/1998_Lexus_GS_300_400_14.jpg",
+          "view": "interior",
+          "sha256": "193fae51b6ab6d61baf6753a77aa124ecc07cf3812cfa02a4f59bdab769bb412",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "gs300",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": true,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 189.2,
+        "bodyWidthIn": 70.9,
+        "heightIn": 55.9,
+        "wheelbaseIn": 110.2
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf",
+      "engine": "2JZ-GE VVT-i inline six",
+      "drivetrain": "RWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/0bc00c7cd32c4d6da2098fbc2ab1eff0",
+          "license": "CC BY 4.0",
+          "status": "acquired",
+          "fitmentNote": "S160 exterior and approximate interior; trim correction required"
+        },
+        {
+          "url": "https://sketchfab.com/3d-models/lexus-gs300-7a7e13c0aeb641b68d6ee72ee4ab8cf6",
+          "license": "CC BY 4.0",
+          "status": "login-required",
+          "fitmentNote": "Alternate source; geometry not acquired"
+        }
+      ],
+      "photoYearNote": "1998 shared GS300/400 reference, not exact 2000",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            8
+          ]
+        },
+        "left": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            9
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "right": {
+          "status": "side-candidates-awaiting-handedness-review",
+          "photoIndices": [
+            9
+          ]
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        9
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2000/2000-lexus-gs-400.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2000 Lexus GS 400 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "2426b4b34bbfba2f621acabd67d12dd7a43530beb07f7f71db6da801f6968e8a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2000 Lexus GS 400 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "9a2d5551eb9787a5c6296fc0164374f0d0765e18cc3b6680952b4d29592903db",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2000 Lexus GS 400 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "446fbfaff68eefbacda14d078e0707a6b1de90f0d78925d8cc2bbdfbefbb429a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2000 Lexus GS 400 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "c96cbcbb805af169f32a0931f594fbf47c2e798d3264cfbe3dd13c2917f34045",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2000 Lexus GS 400 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_05.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "c37ac20ab49da82440903337bf40094b9e1bac1845600e0488704ba83d9dc86d",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2000 Lexus GS 400 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_06.jpg",
+          "view": "front-three-quarter",
+          "sha256": "2109a019179411c265a9f37738388afc07e6a59f63fb285300bc66894465242d",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2000 Lexus GS 400 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_07.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "f568a59952b89faad52cad5436d2045a503d72a23bea95a44e12b3a897dc8eb6",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2000 Lexus GS 400 08",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_GS_400_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2000-lexus-gs-400/2000_Lexus_GS_400_08.jpg",
+          "view": "interior",
+          "sha256": "30ec423868d32fdbf9543cdf123e859c50de3782c2cdc0f5c9ed036866e2b2cf",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "gs400",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 189.2,
+        "bodyWidthIn": 70.9,
+        "heightIn": 55.9,
+        "wheelbaseIn": 110.2
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf",
+      "engine": "1UZ-FE VVT-i V8",
+      "drivetrain": "RWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://embed-3dwarehouse-classic.sketchup.com/model/6b7b6f5863625d2c374462542bf2aa29/1UZ-FE",
+          "license": "unverified",
+          "status": "rejected-for-stock",
+          "fitmentNote": "Modified K&N intake; engine only"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            7
+          ]
+        },
+        "left": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "right": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "top": {
+          "status": "oblique-roof-only",
+          "photoIndices": [
+            5
+          ]
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2001/2001-lexus-gs-430.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2001 Lexus GS 430 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "572902cb9bceb2b77aa1999c3d66db801aa7f3229081a5b610045762ba41a1bb",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2001 Lexus GS 430 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "68bfcb0b7d2410067bf24f4b0c77661354839bb0a74f06a8d815d2136b95855e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2001 Lexus GS 430 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "45314842a30595b22217140f83c7acb64b1f898e1f3bb774dcb5052af2e32203",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2001 Lexus GS 430 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "229097d3a428c797ba90f90969f7cfa6de5deb9a9a5a5dc935ad447f8d7c7e65",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2001 Lexus GS 430 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "a9609c49a000b876135151c8e120aa48ed202ea33e4df3709ee32cb93f9a1d3e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2001 Lexus GS 430 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_06.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "1a24216b0193bee0037f48568e53dd48250e7168f7d3a7255e40e2a739ef6416",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2001 Lexus GS 430 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_07.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "1e84adbc421595a1b7d4ace3a8c3a6a21aad904d12732ed37ad3b7296a2b7572",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2001 Lexus GS 430 08",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_GS_430_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gs/2001-lexus-gs-430/2001_Lexus_GS_430_08.jpg",
+          "view": "engine-bay",
+          "sha256": "92cfe8f01d7acb614e87380fccd678688f9d5f23cd3ee98c29e731c39e881e9b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "gs430",
+      "targetYear": 2001,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 189.2,
+        "bodyWidthIn": 70.9,
+        "heightIn": 55.9,
+        "wheelbaseIn": 110.2
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2001-Lexus-GS-Specs.pdf",
+      "engine": "3UZ-FE VVT-i V8",
+      "drivetrain": "RWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/2004-lexus-gs-430-a9f5713e8a4349458085b96d9fea4000",
+          "license": "CC BY-NC-SA",
+          "status": "restricted-candidate",
+          "fitmentNote": "2004 European-market variant; not the 2001 US target"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            7
+          ]
+        },
+        "left": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "right": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "top": {
+          "status": "oblique-roof-only",
+          "photoIndices": [
+            6
+          ]
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2000/2000-lexus-ls-400.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2000 Lexus LS 400 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_01.jpg",
+          "view": "near-front",
+          "sha256": "62fca53cbf75628aa4f12e180403ea33bbdcded4b0321e44d8e39333e58a3559",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2000 Lexus LS 400 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "e386ac6dbed982004070bd8aa35c7e9bb3847df6ddbffd17b5e35cb2624de3cc",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2000 Lexus LS 400 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_03.jpg",
+          "view": "side-profile",
+          "sha256": "9f54ed86b0182f61b675a770b53073d02a050102d19f12a4e701f9117fcf6276",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2000 Lexus LS 400 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "b39e2d224c352fbf6e5974d10f6f58f33297964c788c845d8c2bddb141195354",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2000 Lexus LS 400 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "36a3d62cfc1a497fde45ad44c023e4588d68b12c1ae7306c499b79fea8f3e5af",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2000 Lexus LS 400 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_06.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "f3dd73f0c6de81b5cb660702bf008971f83417ce8db75584a011c6b23afa2d8f",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2000 Lexus LS 400 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LS_400_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2000-lexus-ls-400/2000_Lexus_LS_400_07.jpg",
+          "view": "wrong-vehicle",
+          "sha256": "fae54ff9ef86af5993721aeaad4828f4896bd2fb8a2869ca05c560c738677203",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Visual audit: GS interior, not this LS model"
+        }
+      ],
+      "vehicle": "ls400",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 196.7,
+        "bodyWidthIn": 72,
+        "heightIn": 56.5,
+        "wheelbaseIn": 112.2
+      },
+      "specificationSource": "https://www.auto-brochures.com/makes/lexus/LS/Lexus_US%20LS_2000.pdf",
+      "engine": "1UZ-FE VVT-i V8",
+      "drivetrain": "RWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://www.cgtrader.com/free-3d-models/car/luxury-car/lexus-ls400-e78b026f-413e-4660-a501-5ba125fd45c9",
+          "license": "Royalty Free / no AI",
+          "status": "restricted-candidate",
+          "fitmentNote": "Redistribution not established; exact generation unverified"
+        },
+        {
+          "url": "https://sketchfab.com/3d-models/vip-yakuza-lexus-ls400-5cdef78a0ccc43b8a1d28d0acd70acac",
+          "license": "CC BY 4.0",
+          "status": "rejected-for-stock",
+          "fitmentNote": "Modified VIP vehicle, wrong reference for stock trim"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            4,
+            5
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            6
+          ]
+        },
+        "left": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            3
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "right": {
+          "status": "side-candidates-awaiting-handedness-review",
+          "photoIndices": [
+            3
+          ]
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        3
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2001/2001-lexus-ls-430.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2001 Lexus LS 430 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "46a7d01d10ac168323cf58f7ebd389b0ed9dc374238f9acb1327b908f4323588",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2001 Lexus LS 430 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "9417cad84fbb38e228bc94eda46b6926c91b376612827754acc539593cf7f1fa",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2001 Lexus LS 430 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "7e335cdd44f640cc9d1dccaa786a1fcbd315afb654677caf71e580a6249d1d6b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2001 Lexus LS 430 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "1397134ec124336303569f77d5f2712ddb24143d6a2247084b4f241cefb52844",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2001 Lexus LS 430 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "245ab1c5de5d571fe4457969298b74937574f1be68ed063c84d89ff62917cfbf",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2001 Lexus LS 430 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_06.jpg",
+          "view": "front-three-quarter",
+          "sha256": "0222c6670b5322593eb9a259399c1d84c12ba60d4e60a4ac52e557ed8eb89538",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2001 Lexus LS 430 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_07.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "0d8d725b266acfe6a6a24d50a4756ef46c6650b524ec9e5ec35baa37c0b98001",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2001 Lexus LS 430 08",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_08.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "702ff000267363e799b98ee1920ff6f659281b7a91ace2dc25af0573438e05d5",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 9,
+          "title": "2001 Lexus LS 430 09",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_09?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_09.jpg",
+          "view": "near-front",
+          "sha256": "d7d72fb051d6ce8788f164ef71b2bd9a31c04006d85206daa6ebbdbfe0996b30",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 10,
+          "title": "2001 Lexus LS 430 10",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_10?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_10.jpg",
+          "view": "front-three-quarter",
+          "sha256": "ef0ce24404111b22c2757cebadd6dfe29ed808f55b3758e983ab95fa5f209b2a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 11,
+          "title": "2001 Lexus LS 430 11",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_11?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_11.jpg",
+          "view": "front-three-quarter",
+          "sha256": "8e3edc89f24c45e252bc0d9236662d437946e5309a87881023f26483fd2f8390",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 12,
+          "title": "2001 Lexus LS 430 12",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_12?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_12.jpg",
+          "view": "front",
+          "sha256": "a7ee3cb6a959f88ddb83a835059597e75272e218cdcd50e8defdd0ddb2ca6f69",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 13,
+          "title": "2001 Lexus LS 430 13",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_13?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_13.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "e3b523a4957a7ad949a1c66f7550118e1b3b1bf46366eff52698ca5749a23ef1",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 14,
+          "title": "2001 Lexus LS 430 14",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_14?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_14.jpg",
+          "view": "side-profile",
+          "sha256": "48ea2ec601ed6287dd2859103c4cc66ce1d85e639ea597b3fff9aff1a73a493c",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 15,
+          "title": "2001 Lexus LS 430 15",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_15?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_15.jpg",
+          "view": "side-profile",
+          "sha256": "0fb5ae37da73d69551f3f34ead1ca4e2ef685de40a6aeeb5e9a6bf7347d132dd",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 16,
+          "title": "2001 Lexus LS 430 16",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_16?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_16.jpg",
+          "view": "front-three-quarter",
+          "sha256": "13dfddfcd606dca8d4b23a42c409b1cda6985d86099c866baf739b71c4bac659",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 17,
+          "title": "2001 Lexus LS 430 17",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_17?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_17.jpg",
+          "view": "front-three-quarter",
+          "sha256": "90d2cce216e4a9a97f737dc4e8b3d40467fffaba46b0d27aa8e5bce2d65fe646",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 18,
+          "title": "2001 Lexus LS 430 18",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_18?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_18.jpg",
+          "view": "front-three-quarter",
+          "sha256": "721d8d5917a80e3a3b3c2d48471100810302a78b069a1cb576f6cd5683d37730",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 19,
+          "title": "2001 Lexus LS 430 19",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_19?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_19.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "39d9f4d71e75a6556501cb78f0d2496d88c7630e7a09a018ab1fbd9c94fdab30",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 20,
+          "title": "2001 Lexus LS 430 20",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_20?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_20.jpg",
+          "view": "high-rear-three-quarter",
+          "sha256": "3e39e0810111e8386527cb882fc65a8f632f5911d3fa3b0ba4d5af9501ec32a2",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 21,
+          "title": "2001 Lexus LS 430 21",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_21?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_21.jpg",
+          "view": "interior",
+          "sha256": "55ba82dc6b9453bb158700e2e59968bed48512a838b09c410f5e429da41b0b6e",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 22,
+          "title": "2001 Lexus LS 430 22",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_22?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_22.jpg",
+          "view": "wrong-vehicle",
+          "sha256": "8a1fd9e85119b7770777cd6905a76e942accf525e75d019026b79ecc66b43325",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Visual audit: GS interior, not this LS model"
+        },
+        {
+          "index": 23,
+          "title": "2001 Lexus LS 430 23",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_23?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_23.jpg",
+          "view": "interior",
+          "sha256": "065d8bb6dadce94e894def62b07532f307a465681f1a5ff5776b8d1adc3ae826",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 24,
+          "title": "2001 Lexus LS 430 24",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_24?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_24.jpg",
+          "view": "badge-detail",
+          "sha256": "e7a84b16343dbbfaf36a03e755465d9a2d7d6d4d102b5b19c5562e6d6b9db201",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 25,
+          "title": "2001 Lexus LS 430 25",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2001_Lexus_LS_430_25?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/ls/2001-lexus-ls-430/2001_Lexus_LS_430_25.jpg",
+          "view": "grille-detail",
+          "sha256": "3ad23a1a01a1c13b540d572e519edfe819e6200c79e906854167759c72d5384d",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "ls430",
+      "targetYear": 2001,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 196.7,
+        "bodyWidthIn": 72,
+        "heightIn": 57.9,
+        "wheelbaseIn": 115.2
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2001-Lexus-LS-Specs.pdf",
+      "engine": "3UZ-FE VVT-i V8",
+      "drivetrain": "RWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/6d0660bb631b40f9b74c1dfc4e829393",
+          "license": "CC BY 4.0",
+          "status": "login-required",
+          "fitmentNote": "Title spans 2000\u20132006; pre-facelift fitment must be visually checked"
+        },
+        {
+          "url": "https://www.3dcadbrowser.com/3d-model/lexus-ls430-2003",
+          "license": "Royalty Free",
+          "status": "restricted-candidate",
+          "fitmentNote": "2003 model; raw asset redistribution not permitted"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "photographic-view",
+          "photoIndices": [
+            12
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            7,
+            8,
+            13,
+            20
+          ]
+        },
+        "left": {
+          "status": "side-candidates-awaiting-handedness-review",
+          "photoIndices": [
+            14,
+            15
+          ]
+        },
+        "right": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            14,
+            15
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "top": {
+          "status": "oblique-roof-only",
+          "photoIndices": [
+            19,
+            20
+          ]
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        14,
+        15
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2000/2000-lexus-es-300.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2000 Lexus ES 300 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_ES_300_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2000-lexus-es-300/2000_Lexus_ES_300_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "ebb8d04c606e4bc4dc242b04f9337869a36827101470b4bbd24132d8f4e41194",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2000 Lexus ES 300 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_ES_300_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2000-lexus-es-300/2000_Lexus_ES_300_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "5460156d7e81334de9e1f4d7797d29cf88397761e5eb78d8d306094966276fa4",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2000 Lexus ES 300 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_ES_300_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2000-lexus-es-300/2000_Lexus_ES_300_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "617047ccef7613ba2ad8a4e21bb2e8ea50ed2c0527361337d1d5fe57edd5aa40",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2000 Lexus ES 300 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_ES_300_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2000-lexus-es-300/2000_Lexus_ES_300_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "f67d9fbf26d84edc437e2cf9e6c881ab5e678b992728c85fd7f2c0e3b5e7ff1c",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2000 Lexus ES 300 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_ES_300_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2000-lexus-es-300/2000_Lexus_ES_300_05.jpg",
+          "view": "interior",
+          "sha256": "0261d87e390cc6ca1ad22d7ee153c1385ee2f27a9366f60a7227b5531bc4a432",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "es300",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 190.2,
+        "bodyWidthIn": 70.5,
+        "heightIn": 54.9,
+        "wheelbaseIn": 105.1
+      },
+      "specificationSource": "https://www.auto-brochures.com/makes/lexus/ES/Lexus_US%20ES_2000.pdf",
+      "engine": "1MZ-FE VVT-i V6",
+      "drivetrain": "FWD, four-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/1997-lexus-es-300-photoscan-5eaed54fd300415a9ea88505a15cc750",
+          "license": "CC BY 4.0",
+          "status": "login-required",
+          "fitmentNote": "1997 pre-facelift scan; 2000 grille, lamps, bumper and badge differ"
+        },
+        {
+          "url": "https://3dmodels.org/3d-models/lexus-es-1997/",
+          "license": "commercial",
+          "status": "paid-candidate",
+          "fitmentNote": "Page title says 2001; inspect before acquisition"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "rear": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "left": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "right": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2004/2004-lexus-es-330.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2004 Lexus ES 330 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "86fcb82fe6dd8560aa77cd35ad332fd7fbe0e1e581b64b5f502ed0f545a8db23",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2004 Lexus ES 330 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "d9d55f8bb470129192169402da3fc02dd9e006a8edbbafcada3574567d5a7d22",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2004 Lexus ES 330 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "6794b36c7f82163eaa3ae64040a53ab685bcc8a9dc0e4ebf5470a92b9738d11e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2004 Lexus ES 330 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "6aabb993d7fe6adb11f31cbd05292cd7fa51374fcf826515437f384f75623908",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2004 Lexus ES 330 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_05.jpg",
+          "view": "side-profile",
+          "sha256": "3efdd3637a001d84546e986b24d7e428220084e57aabad1a6359d5a1ba7d412b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2004 Lexus ES 330 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_06.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "c02b19b839888998d6bb9e2d0188179d2638ba49cdf42e8ee285a793a59c64e8",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2004 Lexus ES 330 Sport Design",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_07.jpg",
+          "view": "front-three-quarter",
+          "sha256": "b983b135e6997802982a0cc23c92ef284af5f88db1ac79ecd24da8de18828f82",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2004 Lexus ES 330 Sport Design",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_08.jpg",
+          "view": "front-three-quarter",
+          "sha256": "a214ed047f4148e738c646f1c621b866f5b0849bf721153fa9068883ba0e0c4e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 9,
+          "title": "2004 Lexus ES 330 09",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_09?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_09.jpg",
+          "view": "front",
+          "sha256": "942ae9ed2dba2f6ba49b4c45dd693a25a7e1efb9593c628e3f908ea1d11aa1a0",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 10,
+          "title": "2004 Lexus ES 330 10",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_10?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_10.jpg",
+          "view": "front-three-quarter",
+          "sha256": "55712d43aecddf48a9b1b5780076639da7dae67fa940a9013c714fba2a4c21ed",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 11,
+          "title": "2004 Lexus ES 330 11",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_11?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_11.jpg",
+          "view": "near-rear",
+          "sha256": "00ca7d95162e6d8e84c6b71141506d995681f6d273fb0b424bd8a67857be15a7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 12,
+          "title": "2004 Lexus ES 330 12",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_12?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_12.jpg",
+          "view": "front-three-quarter",
+          "sha256": "498436d83f11472e4bbb8d8b4b78eb6b953ae7f8250fdfbd397a019678d8b2b2",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 13,
+          "title": "2004 Lexus ES 330 13",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_13?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_13.jpg",
+          "view": "front-three-quarter",
+          "sha256": "78b57dd1437c8f79a556c8c28e4f67f453ce251bfdfdf98552ccddba42ea4105",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 14,
+          "title": "2004 Lexus ES 330 14",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_14?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_14.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "6634a2f42820085c557c1126bab13f15d84301fd9e1f031bc78f6a2e60fd0ccf",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 15,
+          "title": "2004 Lexus ES 330 15",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_15?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_15.jpg",
+          "view": "front-three-quarter",
+          "sha256": "d3045a9c13794ec9becf1844a93ea7dffeb9301b5ce81f9630abf96fe0b508a3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 16,
+          "title": "2004 Lexus ES 330 16",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_16?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_16.jpg",
+          "view": "front-three-quarter",
+          "sha256": "58b67519b0a5743a0d9e57044c39b17473a67e66d20b6437ca2e3ef928dcc1e8",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 17,
+          "title": "2004 Lexus ES 330 17",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_17?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_17.jpg",
+          "view": "side-profile",
+          "sha256": "b2636a6085faa19a2f19632bf738657be04469fe88cd28ebc5083f42db946614",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 18,
+          "title": "2004 Lexus ES 330 18",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_18?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_18.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "499de0039b266f92bebb9991592371eb5d409defc99d3235fbf65fff5c5ac095",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 19,
+          "title": "2004 Lexus ES 330 19",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_19?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_19.jpg",
+          "view": "front-three-quarter",
+          "sha256": "21b0f23bdc779365490902300183e199a5fec76e80787cb9df9e675f18eb3a4c",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 20,
+          "title": "2004 Lexus ES 330 20",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_20?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_20.jpg",
+          "view": "side-profile",
+          "sha256": "518d613e62b0d3f6253a8550100a5ad76c9ae9995c0c3e6252a894d76218de22",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 21,
+          "title": "2004 Lexus ES 330 21",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_21?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_21.jpg",
+          "view": "side-profile",
+          "sha256": "5876ea14fe65d8b1f40436f080960cc0d5711e7b94c2ade8139f670845ba6ffb",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 22,
+          "title": "2004 Lexus ES 330 22",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_22?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_22.jpg",
+          "view": "front-three-quarter",
+          "sha256": "44ceab0bd311ff252c0fdf2c3d2deb2199bd1a86fedba3c73be94530cb29601e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 23,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_23?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_23.jpg",
+          "view": "variant-uncertain",
+          "sha256": "545d5911695836dfb6318f44902da7d0ecb1f727794361ec4243205dbcbfe727",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 24,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_24?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_24.jpg",
+          "view": "variant-uncertain",
+          "sha256": "5a162161eec36ca81e470e037f3ded4eab1765b8731f69c812b79299be3e2c8c",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 25,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_25?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_25.jpg",
+          "view": "variant-uncertain",
+          "sha256": "5a0854d416f6497446f07ae43cd5861be6f4f9f0cc5677b17bcb772091c1456b",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 26,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_26?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_26.jpg",
+          "view": "variant-uncertain",
+          "sha256": "6bb1bfaecfa7ffd45da46732df59fc936c61412c5872f9c1bc8d9c80b833dc07",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 27,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_27?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_27.jpg",
+          "view": "variant-uncertain",
+          "sha256": "f1b81a12235117fbdf267a1adb0dd80f2af99c8fb09061f7a45d2df9fec73766",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 28,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_28?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_28.jpg",
+          "view": "variant-uncertain",
+          "sha256": "4ca4e2e1cb013d0a16867d17ab70b7f1dc9689728a8b29c2258d8d486dcefce0",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 29,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_29?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_29.jpg",
+          "view": "variant-uncertain",
+          "sha256": "c28cb2479f4151255584e30dc8a682729a57fc6bde07fb8dc54ab149c942e0af",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 30,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_30?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_30.jpg",
+          "view": "variant-uncertain",
+          "sha256": "2421000f7754eb42175df2236fd939a07f3f7b303806b1cd8af762e39a0ddbc2",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 31,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_31?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_31.jpg",
+          "view": "variant-uncertain",
+          "sha256": "dd64f27587db4697c575f29b051c6a952b58c5132fdffa27347b545713d6d3ef",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 32,
+          "title": "2004 Lexus ES 330 32",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_32?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_32.jpg",
+          "view": "interior",
+          "sha256": "165ad795f364738f271b7f800197292eced14cd181c96e22b0d91dad2130c9c8",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 33,
+          "title": "2004 Lexus ES 330 33",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_33?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_33.jpg",
+          "view": "variant-uncertain",
+          "sha256": "0498ad0d7bcd625fb14faf1bf7e73b6ede353c9bbd69aa4c7eca65f28ad33d57",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 34,
+          "title": "2004 Lexus ES 330 34",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_34?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_34.jpg",
+          "view": "interior",
+          "sha256": "964c4b1fd040a3ab19a14114c945b069dfe12c16aa0d9c6952d989d62e546fa4",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 35,
+          "title": "2004 Lexus ES 330 35",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_35?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_35.jpg",
+          "view": "interior",
+          "sha256": "315b946f606171fe50957530288d45286d47df12cfad8338296c5a384f50dddf",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 36,
+          "title": "2004 Lexus ES 330 36",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_36?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_36.jpg",
+          "view": "interior",
+          "sha256": "b1476e6c0b7e5e31b4ef0ad039f56ffaa03961e6b0f32c063a90b04960a4fbe7",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 37,
+          "title": "2004 Lexus ES 330 37",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_37?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_37.jpg",
+          "view": "interior",
+          "sha256": "eba08216d72e17bee0934e71376ac92c173752b63e037e9bb70e4b2f204fc2f3",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 38,
+          "title": "2004 Lexus ES 330 38",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_38?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_38.jpg",
+          "view": "interior",
+          "sha256": "e7eec49da04f4307144d86cd6381244b15c418cb36afd18880bc6482c1d0bfac",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 39,
+          "title": "2004 Lexus ES 330 39",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_39?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_39.jpg",
+          "view": "interior",
+          "sha256": "7a756e34a1ed1d39786f50f098e985e971cee35bceccf8e326c5fbd03b849c94",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 40,
+          "title": "2004 Lexus ES 330 40",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_40?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_40.jpg",
+          "view": "interior",
+          "sha256": "ad8f02c88c732ea97d0dfaf230db67ad9cd51030103997c1d11831daa1d24c53",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 41,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_41?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_41.jpg",
+          "view": "variant-uncertain",
+          "sha256": "b137655477e6b72e5c7d92ed3d6bec138d94ea459a42d27221ecf6d405fccd43",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 42,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_42?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_42.jpg",
+          "view": "variant-uncertain",
+          "sha256": "b68667d6028c500e19523fc0f678a393fd9c0873d0fd442e28d3911010f0c7f4",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Quarantined pending year/trim/interior identity check."
+        },
+        {
+          "index": 43,
+          "title": "2004 Lexus ES 330 43",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_43?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_43.jpg",
+          "view": "interior",
+          "sha256": "1c231239c9e15b973cb7920b38f3f246ab6ab80cc6e91bca787f0af95a8c7d8e",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 44,
+          "title": "2004 Lexus ES 330 44",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_44?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_44.jpg",
+          "view": "interior",
+          "sha256": "660f56d2d422712d96aeba8725c0c9d5b7758a1864df5426661b83cdcf33c440",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 45,
+          "title": "2004 Lexus ES 330 45",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_45?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_45.jpg",
+          "view": "interior",
+          "sha256": "cd1ec2b310fe7701ad144df7f6024ab272c13ab04e5f66ff6fd8b405c67b2da1",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 46,
+          "title": "2004 Lexus ES 330 46",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_46?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_46.jpg",
+          "view": "interior",
+          "sha256": "595958f67adc63c152b59b25d6c794d9963edc966bc792cb81eb5651149cd7c5",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 47,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_47?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_47.jpg",
+          "view": "wrong-engine-badge",
+          "sha256": "f19e708619618303b5a62212deeb16bcfeaa30d4e6097827bd967f4a22f681d4",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Badge reads ES300, not ES330."
+        },
+        {
+          "index": 48,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_48?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_48.jpg",
+          "view": "badge-detail",
+          "sha256": "9e021242db4d2c1f3763008368622a79780f61b31626b46ca93d28496cb46a5b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 49,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_49?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_49.jpg",
+          "view": "wrong-engine-badge",
+          "sha256": "0985d1411a028db64798e4c9b6e9c6e75e8522daf314a986addd64bf6aacd1ce",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Engine cover reads 3.0, not the target 3.3."
+        },
+        {
+          "index": 50,
+          "title": "2004 Lexus ES 330",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_ES_330_50?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/es/2004-lexus-es-330/2004_Lexus_ES_330_50.jpg",
+          "view": "engine-bay",
+          "sha256": "f2bb5657b965decd2c4d209cf1131a214659e7f5f46fd34ec31e5430bcadbd2b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "es330",
+      "targetYear": 2004,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 191.1,
+        "bodyWidthIn": 71.3,
+        "heightIn": 57.3,
+        "wheelbaseIn": 107.1
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2004-Lexus-ES.pdf",
+      "engine": "3MZ-FE VVT-i V6",
+      "drivetrain": "FWD, five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://cults3d.com/pt/modelo-3d/jogo/toyota-windom-mcv30-lexus-es300-es330-2001-2006-3d-printable-car-model-for-pri",
+          "license": "private-use",
+          "status": "rejected-license",
+          "fitmentNote": "Printable Windom derivative; not US fitment or open redistribution"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "photographic-view",
+          "photoIndices": [
+            9
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            6,
+            11,
+            14
+          ]
+        },
+        "left": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            5,
+            21
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "right": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            17,
+            20
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "top": {
+          "status": "oblique-roof-only",
+          "photoIndices": [
+            18
+          ]
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        5,
+        17,
+        20,
+        21
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2000/2000-lexus-rx-300.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2000 Lexus RX 300 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "46b62d6d26113e141570605ae1f88043901964e7fb0bc82e3377048f3ba389ed",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2000 Lexus RX 300 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "5cfb19e3d3184c081ab78b12254572bbfd05a532279b5c1190c736e503d07e58",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2000 Lexus RX 300 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_03.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "9c684486135f86177bb9369a2702ea11edfceb18a1bd57da777712de57da3b83",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2000 Lexus RX 300 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_04.jpg",
+          "view": "near-rear",
+          "sha256": "88103bdfcd29d04a278adf1dae256b04b92e78bb444f795050d059e4badb2336",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2000 Lexus RX 300 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_05.jpg",
+          "view": "side-profile",
+          "sha256": "fdead2fbc9f2457ea389e3f4d774f5e30ab6e9a67ddf38a083c73193221be94c",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2000 Lexus RX 300 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_RX_300_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2000-lexus-rx-300/2000_Lexus_RX_300_06.jpg",
+          "view": "interior",
+          "sha256": "915499bc68c9928ecdc1e46e42dced3a40eb666e4c3e27c3042b187682625426",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "rx300",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 180.1,
+        "bodyWidthIn": 71.5,
+        "heightIn": 65.7,
+        "wheelbaseIn": 103.1
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-RX-Specs.pdf",
+      "engine": "1MZ-FE VVT-i V6",
+      "drivetrain": "FWD or AWD; exact drive variant unresolved; four-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/lexus-rx300-6f2f754c78794734b794237913ba97cc",
+          "license": "CC BY 4.0",
+          "status": "acquired",
+          "fitmentNote": "First-generation exterior/interior; lamp trim and US equipment unverified"
+        },
+        {
+          "url": "https://www.3dcadbrowser.com/3d-model/lexus-rx300-1998",
+          "license": "Royalty Free",
+          "status": "restricted-candidate",
+          "fitmentNote": "Raw asset redistribution not permitted"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            3,
+            4
+          ]
+        },
+        "left": {
+          "status": "side-candidates-awaiting-handedness-review",
+          "photoIndices": [
+            5
+          ]
+        },
+        "right": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            5
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        5
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2004/2004-lexus-rx-330.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2004 Lexus LX RX 330 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_01.jpg",
+          "view": "side-profile",
+          "sha256": "ebc815620cefe6db4c316f860049cf85dff8c61f83eb3cdeac3869f6a2b4c396",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2004 Lexus LX RX 330 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_02.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "cfab6b39a69897b85639270c1b33a33f707853040ba8af2260343a2e5900d290",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2004 Lexus LX RX 330 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "bac454b69ee5e0329d3c2434853dc88629c3e465e9212fe28544994c648a2133",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2004 Lexus LX RX 330 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "9f3245c6c3cd4a1a25c2237dc1144030aaf8b6bcf7927f29a8191182f824f7e8",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2004 Lexus LX RX 330 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "f466cf27f4bf67b13ab17e86d772471924041ef40071a31d8892919046926ab0",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2004 Lexus LX RX 330 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_06.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "34198fbca4848103f6a036fc6d5babaccfe3361fd21a52791272c11f94194c34",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2004 Lexus LX RX 330 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_07.jpg",
+          "view": "front-three-quarter",
+          "sha256": "1e97ebf87242fc09c2d78246d0b0d855ae9ed6b2a3b78a275268b57f14cb40a3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2004 Lexus LX RX 330 08",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_08.jpg",
+          "view": "front-three-quarter",
+          "sha256": "08714bfdfccb268c2d4bd09ebe1108731cc4d0f56a768b433d55e8cc39b8a393",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 9,
+          "title": "2004 Lexus LX RX 330 09",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_09?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_09.jpg",
+          "view": "front-three-quarter",
+          "sha256": "3bb83f10c1ef88d8af816c59f151ca66b6bcb6c76ef9945769907d89b4ee3a52",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 10,
+          "title": "2004 Lexus LX RX 330 10",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_10?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_10.jpg",
+          "view": "front",
+          "sha256": "1ecd9eb17416113357c59ba261896bc5a42c39b19aa4b7ff1bb192a0710bcd0c",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 11,
+          "title": "2004 Lexus LX RX 330 11",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_11?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_11.jpg",
+          "view": "side-profile",
+          "sha256": "2acdae0c5cd406e38094444b2f94458b4bcb4af980c1c971de6214b566b97e9b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 12,
+          "title": "2004 Lexus LX RX 330 12",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_12?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_12.jpg",
+          "view": "front-three-quarter",
+          "sha256": "ef2d47d19d5cb5859f3f990ba5faf3bd5625c78e8ccac9cb5d3e0e5915fa20e6",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 13,
+          "title": "2004 Lexus LX RX 330 13",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_13?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_13.jpg",
+          "view": "side-profile",
+          "sha256": "3b0ac668a0213ae417240e806243377e094c818d0327b55a9012f7bd8285389a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 14,
+          "title": "2004 Lexus LX RX 330 14",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_14?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_14.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "90252bc2f58841a31f1d599cf55a58a9ff463da72626017ec7382558b33c9849",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 15,
+          "title": "2004 Lexus LX RX 330 15",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_15?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_15.jpg",
+          "view": "front-three-quarter",
+          "sha256": "51975aaa00a41b1633aa1bf6e4a757198f50e096f887866f05b4aca90ac520db",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 16,
+          "title": "2004 Lexus LX RX 330 16",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_16?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_16.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "0df20582a8b20f644194913f11b18d8a4a80f4b82fb1771ea82ab7da84fcf864",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 17,
+          "title": "2004 Lexus LX RX 330 17",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_17?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_17.jpg",
+          "view": "side-profile",
+          "sha256": "686b5a9474002fa6e59a91f607772401501759d005d37720666d8a42789d562b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 18,
+          "title": "2004 Lexus LX RX 330 18",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_18?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_18.jpg",
+          "view": "front-three-quarter",
+          "sha256": "122160c5bc5d9963f408e557364a1629d6b195101aeb107f506596e7872bbb15",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 19,
+          "title": "2004 Lexus LX RX 330 19",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_19?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_19.jpg",
+          "view": "front-three-quarter",
+          "sha256": "03804d5198d52f8744da68868719c9600c2d3f99db80fe18e2410a6eaeba7c3e",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 20,
+          "title": "2004 Lexus LX RX 330 20",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_20?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_20.jpg",
+          "view": "side-profile",
+          "sha256": "3665d957ad9bd06a87d8f7d71b0fb400fddd470c7c729003fe189a1ca10ec393",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 21,
+          "title": "2004 Lexus LX RX 330 21",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_21?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_21.jpg",
+          "view": "front-three-quarter",
+          "sha256": "4377f77a4f2b5537d859d812e5b8dd894fdf83f087b7c21441ec23e154a24319",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 22,
+          "title": "2004 Lexus LX RX 330 22",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_22?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_22.jpg",
+          "view": "high-front-three-quarter",
+          "sha256": "3f411b70f5ca3b434527e53cf8b01f7af50196a954f456939e7264bc4506bd26",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 23,
+          "title": "2004 Lexus LX RX 330 23",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_23?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_23.jpg",
+          "view": "front-three-quarter",
+          "sha256": "6a06e100ae44f6911b6aa1726e1cb7b30677f2653a7c21a7f5f176ea2d869d97",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 24,
+          "title": "2004 Lexus LX RX 330 24",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_24?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_24.jpg",
+          "view": "side-profile",
+          "sha256": "510dae53930ac27f39161341f70b02dd384a50153577870525e951de205ab986",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 25,
+          "title": "2004 Lexus LX RX 330 25",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_25?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_25.jpg",
+          "view": "front-three-quarter",
+          "sha256": "04d14721e214da410e87afc4f97df4cdac39baa505208a161629329c0837592f",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 26,
+          "title": "2004 Lexus LX RX 330 26",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_26?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_26.jpg",
+          "view": "interior",
+          "sha256": "f38d4b9421994f2433b105f3ebec2c40fa6762557d6b151c57720db47f1efa89",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 27,
+          "title": "2004 Lexus LX RX 330 27",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_27?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_27.jpg",
+          "view": "interior",
+          "sha256": "bec5179cfaea861388af6d480b02ab899cb6af77a89e02e9b78a1bbde122ae81",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 28,
+          "title": "2004 Lexus LX RX 330 28",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_28?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_28.jpg",
+          "view": "interior",
+          "sha256": "aa44abcb9282e10941dab34e6780efb32b9eafb93b8f6e8b784647e3d52d47e7",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 29,
+          "title": "2004 Lexus LX RX 330 29",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_29?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_29.jpg",
+          "view": "interior",
+          "sha256": "06188f258595dffac365c25d540bc9ae14e1bbbbf443a3ecd80db16b98caf895",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 30,
+          "title": "2004 Lexus LX RX 330 30",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_30?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_30.jpg",
+          "view": "interior",
+          "sha256": "2a14dbbee02aa9f15dc8d6dc06f04aef0d4a97c568f3ba380d1b922bbd573aae",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 31,
+          "title": "2004 Lexus LX RX 330 31",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_31?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_31.jpg",
+          "view": "interior",
+          "sha256": "e1a736139be0502b5ab15bc7fc7bbfc880cf051e7f134e7eb076adda6daa8ccd",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 32,
+          "title": "2004 Lexus LX RX 330 32",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_32?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_32.jpg",
+          "view": "interior",
+          "sha256": "e17e2476b2f515502391cdd563146f3e06704f5c59afd9ba3bdf92e2edde6090",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 33,
+          "title": "2004 Lexus LX RX 330 33",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_33?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_33.jpg",
+          "view": "interior",
+          "sha256": "234897e5456b9a2a42ad61b88b170281913b65c745dab987e997b88f4f2dab13",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 34,
+          "title": "2004 Lexus LX RX 330 34",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_34?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_34.jpg",
+          "view": "interior",
+          "sha256": "c2c1dad82de4e32a3ace675412340283c8b983b8bef852c33da6806a5a9c6f59",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 35,
+          "title": "2004 Lexus LX RX 330 35",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_35?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_35.jpg",
+          "view": "interior",
+          "sha256": "0e1cea89c71e003f688d50ce277ded9a0d84a9f169242c5a34c57b0e23f388c0",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 36,
+          "title": "2004 Lexus LX RX 330 36",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_36?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_36.jpg",
+          "view": "interior",
+          "sha256": "881df3ac45162f7b4512db7f805b0e000af99d547663be6a1f4f3f144674ab88",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 37,
+          "title": "2004 Lexus LX RX 330 37",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_37?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_37.jpg",
+          "view": "interior",
+          "sha256": "2470409418831ef3494bb4dcec0f0cd919e67c68972c81168cf6dadb02b5a05a",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 38,
+          "title": "2004 Lexus LX RX 330 38",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_38?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_38.jpg",
+          "view": "interior",
+          "sha256": "3c734d7eb8fd6f511140d325a297d99f70fa284e92e07772aefee8428c40df9c",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 39,
+          "title": "2004 Lexus LX RX 330 39",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_39?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_39.jpg",
+          "view": "interior",
+          "sha256": "1caf59dcf759a2e74400973dfabd2a2bfdd355a9baeb11cbdebf19ddb05f7683",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 40,
+          "title": "2004 Lexus LX RX 330 40",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_40?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_40.jpg",
+          "view": "interior",
+          "sha256": "c80bbcca17cfac4e6cd1ccb86532a1e57a66579a6304474f61bd76a7ed810b32",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 41,
+          "title": "2004 Lexus LX RX 330 41",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_41?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_41.jpg",
+          "view": "interior",
+          "sha256": "aa8d4d12e086f2542fc8d34dc1f42e3f030cdf4911bead42330448a1c89a275a",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 42,
+          "title": "2004 Lexus LX RX 330 42",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_42?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_42.jpg",
+          "view": "interior",
+          "sha256": "7156d18a146e0b5bf60ed971fa700067c1cdbbd2946ff58211a09eb61a5083f4",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 43,
+          "title": "2004 Lexus LX RX 330 43",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_43?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_43.jpg",
+          "view": "roof-detail",
+          "sha256": "26af487bf243ff18521a59bf7df3a27c5748a282b4980703b8530c11df8d1f46",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 44,
+          "title": "2004 Lexus LX RX 330 44",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_44?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_44.jpg",
+          "view": "high-rear-three-quarter",
+          "sha256": "0677c3e3f8af32499f0ec8b71a3fde3f1bf7599d0a3988cf0c473add3b432842",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 45,
+          "title": "2004 Lexus LX RX 330 45",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_45?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_45.jpg",
+          "view": "headlamp-detail",
+          "sha256": "4225f1e580ebb76607f26783f136ae15fa5b3afcd6773ecd25ae85a27d4ef1ad",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 46,
+          "title": "2004 Lexus LX RX 330 46",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_46?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_46.jpg",
+          "view": "headlamp-detail",
+          "sha256": "b639662084a92aaeaaebfcdade2df8d0b3b24a85027780ca9daf436911dc1cc7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 47,
+          "title": "2004 Lexus LX RX 330 47",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_47?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_47.jpg",
+          "view": "headlamp-detail",
+          "sha256": "cfe5e666cc357b272475367572497a16e3f06cc6710e4766cd207019672fc4db",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 48,
+          "title": "2004 Lexus LX RX 330 48",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_48?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_48.jpg",
+          "view": "cargo-door-open",
+          "sha256": "2953ab3dbbf8a2613cbe597876561860e7051e011bb0ce18b10a9ab6a15c8d0b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 49,
+          "title": "2004 Lexus LX RX 330 49",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_49?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_49.jpg",
+          "view": "engine-bay",
+          "sha256": "fafef0dc213f3c2981dd6637ad158f099182c33d1317c8160e4613067c59801f",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 50,
+          "title": "2004 Lexus LX RX 330 50",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_LX_RX_330_50?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/rx/2004-lexus-rx-330/2004_Lexus_LX_RX_330_50.jpg",
+          "view": "engine-bay",
+          "sha256": "b95859f6330295740a996c437cb8efd98c009eebf71a458fbb7c59f1acedf32b",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "rx330",
+      "targetYear": 2004,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 186.2,
+        "bodyWidthIn": 72.6,
+        "heightIn": 66.1,
+        "wheelbaseIn": 106.9
+      },
+      "specificationSource": "https://manuals.plus/m/84740d8a1a1ef84a17044e3ebb896d914e1d1ead0d079012495d5eab3f4b34ed",
+      "engine": "3MZ-FE VVT-i V6",
+      "drivetrain": "FWD or AWD; exact drive variant unresolved; five-speed automatic",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/photoscanned-lexus-rx330-7b7ad2fd3bb74273b2e4f7befe821d18",
+          "license": "CC BY 4.0",
+          "status": "login-required",
+          "fitmentNote": "2005 photoscan intended for retopology; compare to 2004 target"
+        },
+        {
+          "url": "https://www.turbosquid.com/pl/3d-models/car-interior-3d-model/240871",
+          "license": "editorial",
+          "status": "paid-candidate",
+          "fitmentNote": "RX300 2004 international trim; not automatically US RX330"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "photographic-view",
+          "photoIndices": [
+            10
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            6,
+            14,
+            44
+          ]
+        },
+        "left": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            13
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "right": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            1,
+            11,
+            17,
+            20,
+            24
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "top": {
+          "status": "oblique-roof-only",
+          "photoIndices": [
+            2,
+            16,
+            22,
+            43,
+            44
+          ]
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        1,
+        11,
+        13,
+        17,
+        20,
+        24
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2004/2004-lexus-gx-470.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "367129f028b8a520d2a3137728a9d65469c484611ca63709b2376ccde0d88ed5",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_02.jpg",
+          "view": "side-profile",
+          "sha256": "3418788f00f24818ca676fe9b239be50d2f7ab6cc6768d51f1473415c2c80eb9",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_03.jpg",
+          "view": "side-profile",
+          "sha256": "e12a635c4f3628f2435601dcbff78cefd59b64cb417c8345a5e867a925e7e487",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_04.jpg",
+          "view": "front-three-quarter",
+          "sha256": "3ccbeff141690edf1ce784c1370efd857942613f0ac31f484b3f624ca6e663d0",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "6356152a01b8a65d26d094c1d82309b98595a909cbb2716faeca6629da44bcb9",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_06.jpg",
+          "view": "front-three-quarter",
+          "sha256": "85688696d34b93af841c4278e55daa3b54f64c88f7467e4f3a177ef38ab8dfbb",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 7,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_07.jpg",
+          "view": "side-profile",
+          "sha256": "685ab1cebecb1b66a7c7a54a3c4986430f222c20a001691b127e325cac97bb73",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 8,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_08?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_08.jpg",
+          "view": "front-three-quarter",
+          "sha256": "d838ee250dc04c7133c5a0a22a5f5031abf61e8e1cf69ff63df21a144eb46141",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 9,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_09?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_09.jpg",
+          "view": "front-three-quarter",
+          "sha256": "001c73e1250018284880f4f664f2cfac42e4bdf886fe9c56ab977eed0e7dc086",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 10,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_10?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_10.jpg",
+          "view": "side-profile",
+          "sha256": "985ab966b588222d8a0c8b7792d789c02e063401e17cb978c62f037c9ed844b3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 11,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_11?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_11.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "1c0b7e0e47b473ba66d32aae274c9972b7ab2c35ecc315d4f2ee92042efea62a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 12,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_12?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_12.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "524dd62ec13c860528cb049e670a2f26adf772a6ba027995b46a7c6787c36c57",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 13,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_13?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_13.jpg",
+          "view": "side-profile",
+          "sha256": "26f3e55c74640c51a3fdaaffd4ec5968b5eaeb3be7d2c9d905311d2527e010d7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 14,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_14?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_14.jpg",
+          "view": "front-three-quarter",
+          "sha256": "4685f9add0ba8c2d3b273cce5bb9a68eab3f3a5456b94422555c4762ad910720",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 15,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_15?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_15.jpg",
+          "view": "front-three-quarter",
+          "sha256": "c4f8344d7b41d70ea955772a8eb037581d97cdec8b12d45b97bc0e9a83dbd5d9",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 16,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_16?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_16.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "86605f367a9748aefeafc59cbc7aed506635c7ac8244a9e03b339c43335d3ecc",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 17,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_17?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_17.jpg",
+          "view": "front-three-quarter",
+          "sha256": "da29e98cb1790baeed539e276eb6ea755f303ed1aa908ce70b8bf3c57098e858",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 18,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_18?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_18.jpg",
+          "view": "front-three-quarter",
+          "sha256": "f378396e7c2d22012ca728c9add24f46222cca70c7184dd3aa36927f8cbe2107",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 19,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_19?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_19.jpg",
+          "view": "front-three-quarter",
+          "sha256": "0dc17366dad0ce90b4a189f45732f0e635ebd44de4bf45071b69f590c722040a",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 20,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_20?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_20.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "da3f0086ec1d590e62cc1edc463070a8b07942b3340eff50c53c34da452ebec3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 21,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_21?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_21.jpg",
+          "view": "front-three-quarter",
+          "sha256": "44bbc0dee7dbc4afbbd6fd770d8a76e98cbf9dd4a383a695f7fff57b0ac90951",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 22,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_22?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_22.jpg",
+          "view": "front-three-quarter",
+          "sha256": "fe8d15a95db78d4227071dfa669446127b4473ab48d83470158c0327353a2890",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 23,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_23?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_23.jpg",
+          "view": "front",
+          "sha256": "52ce8b63c6353d998e2eaaad46f6d055b38e054af8899fc0cacf21b5616c4815",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 24,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_24?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_24.jpg",
+          "view": "front-three-quarter",
+          "sha256": "f2506e38d10fcad770a3744af1b8bca8645088ee0fde2110371b2533912dac67",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 25,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_25?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_25.jpg",
+          "view": "side-profile",
+          "sha256": "9ef09437459ede0c16b07616933b8b12899db1fc1758d3266844cabf55904b51",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 26,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_26?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_26.jpg",
+          "view": "side-profile",
+          "sha256": "1feff599556205294f1346b3b640ed91282891f0eaaa80ec70e4338149935ee7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 27,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_27?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_27.jpg",
+          "view": "side-profile",
+          "sha256": "f70e59617f0863c8099a31a2f4c6e622c72f53bd1c20a26003b3eaba5c0d3a23",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 28,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_28?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_28.jpg",
+          "view": "side-profile",
+          "sha256": "62418be2f3ba86326a8fb17c35e631f2248f6e0b45720ed3d8634a56bee3f951",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 29,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_29?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_29.jpg",
+          "view": "front-three-quarter",
+          "sha256": "7c04e7d45143a34dd12c6a9a3afb749c8bc7eaa29eef85a9b9d57fc3908d5296",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 30,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_30?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_30.jpg",
+          "view": "front-three-quarter",
+          "sha256": "1ce76a04812fce455b3d7d0d48cf60e6726415cc5ffa774001d812ed0e6b87e3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 31,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_31?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_31.jpg",
+          "view": "interior",
+          "sha256": "7779795c6c4976447be93b24738a2c76fdd4879a182eb0f79e43efedd3eef507",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 32,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_32?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_32.jpg",
+          "view": "interior",
+          "sha256": "69c34d3c4ac28644323fb4c5b05887954d7ede5ab00c14d7f06a7f7016cbb207",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 33,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_33?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_33.jpg",
+          "view": "interior",
+          "sha256": "1b55129bf7ce48bc4a390d4632700f0a0709737c3095ef842acc87de8656a49b",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 34,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_34?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_34.jpg",
+          "view": "interior",
+          "sha256": "c7abd1e3cb83249589ef93108ceb222035bcef852c7a87657718313ca0c3fe97",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 35,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_35?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_35.jpg",
+          "view": "interior",
+          "sha256": "d58af8e0d37bb9fc8129dc9e0b75c2621f63444f3f55e3dc3c52ac1f21046b76",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 36,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_36?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_36.jpg",
+          "view": "interior",
+          "sha256": "d4dab9f964231ff953e38d117d02da8adb7822fb8298c2ae752a81fe09b73183",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 37,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_37?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_37.jpg",
+          "view": "interior",
+          "sha256": "b45a1424fcc92ffaa34649acfeaae447e3b9ebef605629e436ae8755accdc6b5",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 38,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_38?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_38.jpg",
+          "view": "interior",
+          "sha256": "759f20a4d9acde67e7f105a7725c573b8cd77e8e320a6ed3faeaedc30f3d1e12",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 39,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_39?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_39.jpg",
+          "view": "interior",
+          "sha256": "c60a5dd36cad7659104963eb02fc653c4ba5d20590bdaa4d3e66e14de53db836",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 40,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_40?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_40.jpg",
+          "view": "interior",
+          "sha256": "8bf249bf23f52c48a04384a47b3403690d65683aca7c641aaff87519770c23ed",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 41,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_41?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_41.jpg",
+          "view": "interior",
+          "sha256": "c035a47f151d1cf537d4d28a8931506c7e6eb69a2e7578883847f3604dde56a0",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 42,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_42?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_42.jpg",
+          "view": "cargo-door-open",
+          "sha256": "e2705c9c700b7915eec98d8649c863cfe3b1bff88dde8190d9c9a78790be9ca5",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 43,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_43?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_43.jpg",
+          "view": "cargo-door-open",
+          "sha256": "4e6001a3d67ae45ad4fcebf91b4b39eb9af620d29e8772efe45fd2e70c0368c7",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 44,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_44?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_44.jpg",
+          "view": "cargo-door-open",
+          "sha256": "c287ab66469cf0ab69eba09119812e846dbd5237e8e37450f6673732dfebda63",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 45,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_45?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_45.jpg",
+          "view": "cargo-door-open",
+          "sha256": "89b75842b9df52072603f4b7aa151154a37e4184db8432c8d8e9655887ca6ace",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 46,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_46?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_46.jpg",
+          "view": "cargo-door-open",
+          "sha256": "2d9a14554ee061c392b2c264ebef195bac0ae19d14345d8e2a6798691491f904",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 47,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_47?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_47.jpg",
+          "view": "interior",
+          "sha256": "11b661eb87f2de1709defd7d88783a45b844e52047191887004dd4f6d7bdb144",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 48,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_48?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_48.jpg",
+          "view": "interior",
+          "sha256": "9c791313a6b2ec7c6a72ae80304db303c0a3559391989fbdb5aad5f80d7113c9",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 49,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_49?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_49.jpg",
+          "view": "badge-detail",
+          "sha256": "5b0eb65e40b73587e13e8d3d873ee94738222ce389da7444a69e0778e48c19f4",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 50,
+          "title": "2004 Lexus GX 470",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2004_Lexus_GX_470_50?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/gx/2004-lexus-gx-470/2004_Lexus_GX_470_50.jpg",
+          "view": "engine-bay",
+          "sha256": "fadfe31da29c684c1e47c83b147a81667ee8b0325da464390d654e5bc382b5df",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "gx470",
+      "targetYear": 2003,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 188.2,
+        "bodyWidthIn": 74,
+        "heightIn": 74.6,
+        "wheelbaseIn": 109.8
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2003-Lexus-GX-Specs.pdf",
+      "engine": "2UZ-FE V8, non-VVT-i",
+      "drivetrain": "Full-time 4WD, five-speed automatic, two-speed transfer case",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/f75e8c35e855405183481df495e791b9",
+          "license": "none-listed",
+          "status": "not-downloadable",
+          "fitmentNote": "Custom off-road miniature, not stock"
+        },
+        {
+          "url": "https://www.etsy.com/listing/1835840949/3d-scan-of-lexus-gx470-for-roof-rack-and",
+          "license": "unverified",
+          "status": "paid-candidate",
+          "fitmentNote": "Body scan, interior/powertrain coverage unspecified"
+        }
+      ],
+      "photoYearNote": "2004 photos used as adjacent-year references for 2003; trim differences unresolved",
+      "sixViewCoverage": {
+        "front": {
+          "status": "photographic-view",
+          "photoIndices": [
+            23
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            11,
+            12,
+            16,
+            20
+          ]
+        },
+        "left": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            3,
+            26,
+            28
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "right": {
+          "status": "photographic-side-view",
+          "photoIndices": [
+            2,
+            10,
+            25,
+            27
+          ],
+          "note": "Perspective photograph; not a calibrated orthographic blueprint."
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [
+        2,
+        3,
+        7,
+        10,
+        13,
+        25,
+        26,
+        27,
+        28
+      ],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    },
+    {
+      "albumUrl": "https://media.lexus.ca/en/albums/2000/2000-lexus-lx-470.html",
+      "source": "Lexus Canada manufacturer media archive",
+      "market": "Canada; US equipment differences require verification",
+      "photos": [
+        {
+          "index": 1,
+          "title": "2000 Lexus LX 470 01",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_01?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_01.jpg",
+          "view": "front-three-quarter",
+          "sha256": "bdf0e3c7398e0be2128af547cff82f6d5768d1a987fefd34b59b39436d29e2e2",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 2,
+          "title": "2000 Lexus LX 470 02",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_02?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_02.jpg",
+          "view": "front-three-quarter",
+          "sha256": "12aa04dfd64de8e504d9ee69cac4d03056059c8a330cacc792951ba93f31c5f3",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 3,
+          "title": "2000 Lexus LX 470 03",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_03?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_03.jpg",
+          "view": "front-three-quarter",
+          "sha256": "b5dd7ba9eff6fc34090ff854256a9dbe6dc2e345e80f930cd0cd58701dd08cee",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 4,
+          "title": "2000 Lexus LX 470 04",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_04?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_04.jpg",
+          "view": "rear-three-quarter",
+          "sha256": "d622daf61b206fcdc75195af700ba17cad72237e1767a01b2a59dc92fb4f2669",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 5,
+          "title": "2000 Lexus LX 470 05",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_05?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_05.jpg",
+          "view": "front-three-quarter",
+          "sha256": "84ab52e2f1f9a005d66487c17d2a4b5d25f5b58e4811e639687b552ad4a51348",
+          "acceptedAsGeometryReference": true,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        },
+        {
+          "index": 6,
+          "title": "2000 Lexus LX 470 06",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_06?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_06.jpg",
+          "view": "wrong-vehicle",
+          "sha256": "fdead2fbc9f2457ea389e3f4d774f5e30ab6e9a67ddf38a083c73193221be94c",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": "Visual audit: RX300 side profile, not LX470"
+        },
+        {
+          "index": 7,
+          "title": "2000 Lexus LX 470 07",
+          "imageUrl": "https://toyotacanada.scene7.com/is/image/toyotacanada/2000_Lexus_LX_470_07?$Media-Large$",
+          "originalUrl": "https://media.lexus.ca/content/dam/media-lexus/lexus-models/lx/2000-lexus-lx-470/2000_Lexus_LX_470_07.jpg",
+          "view": "interior",
+          "sha256": "11de6ad8e98624c3142ad3f7fd1a626eb189f511012787761f765e0233e47acb",
+          "acceptedAsGeometryReference": false,
+          "rights": "Manufacturer press photograph; reference only; not included in the MIT source or public asset bundle.",
+          "reviewNote": ""
+        }
+      ],
+      "vehicle": "lx470",
+      "targetYear": 2000,
+      "targetMarket": "US",
+      "targetYearConfirmed": false,
+      "targetConfiguration": "stock automatic",
+      "dimensions": {
+        "lengthIn": 192.5,
+        "bodyWidthIn": 76.4,
+        "heightIn": 72.8,
+        "wheelbaseIn": 112.2
+      },
+      "specificationSource": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-LX-Specs.pdf",
+      "engine": "2UZ-FE V8, non-VVT-i",
+      "drivetrain": "Full-time 4WD, four-speed automatic, two-speed transfer case",
+      "modelCandidates": [
+        {
+          "url": "https://sketchfab.com/3d-models/2002-lexus-lx470-0828e94759cb4ff084f8f6781a4f10de",
+          "license": "Free Standard",
+          "status": "restricted-candidate",
+          "fitmentNote": "Author reports broken textures; 2002/2003 fitment inconsistency"
+        }
+      ],
+      "photoYearNote": "Archive album year matches target; individual photos still require validation",
+      "sixViewCoverage": {
+        "front": {
+          "status": "perspective-only",
+          "photoIndices": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        "rear": {
+          "status": "perspective-only",
+          "photoIndices": [
+            4
+          ]
+        },
+        "left": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "right": {
+          "status": "perspective-only",
+          "photoIndices": []
+        },
+        "top": {
+          "status": "missing",
+          "photoIndices": []
+        },
+        "underbody": {
+          "status": "missing",
+          "photoIndices": []
+        }
+      },
+      "sideProfileCandidates": [],
+      "repairGrade": false,
+      "completeSixViewSet": false
+    }
+  ],
+  "uniquePhotoFileHashes": 228
+}

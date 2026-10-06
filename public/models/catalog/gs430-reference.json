@@ -1,0 +1,266 @@
+{
+  "vehicle": "gs430",
+  "sourceUID": "0bc00c7cd32c4d6da2098fbc2ab1eff0",
+  "units": "m",
+  "uniformScale": 0.29761622758785405,
+  "boundsXYZ": [
+    2.0505635738372803,
+    4.805679798126221,
+    1.4526174265192822
+  ],
+  "parts": [
+    {
+      "id": "gs430-chrome",
+      "label": "Gs430 Chrome",
+      "system": "body",
+      "faces": 9326
+    },
+    {
+      "id": "gs430-paint",
+      "label": "Gs430 Paint",
+      "system": "body",
+      "faces": 20137
+    },
+    {
+      "id": "hood",
+      "label": "Hood",
+      "system": "body",
+      "faces": 1110
+    },
+    {
+      "id": "gs430-left-rear-wheel",
+      "label": "Gs430 Left Rear Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs430-left-front-wheel",
+      "label": "Gs430 Left Front Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs430-right-rear-wheel",
+      "label": "Gs430 Right Rear Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs430-right-front-wheel",
+      "label": "Gs430 Right Front Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs430-cabin-interior",
+      "label": "Gs430 Cabin Interior",
+      "system": "interior",
+      "faces": 4902
+    },
+    {
+      "id": "gs430-reflector",
+      "label": "Gs430 Reflector",
+      "system": "body",
+      "faces": 5198
+    },
+    {
+      "id": "gs430-trim",
+      "label": "Gs430 Trim",
+      "system": "body",
+      "faces": 1504
+    },
+    {
+      "id": "gs430-badge",
+      "label": "Gs430 Badge",
+      "system": "body",
+      "faces": 1434
+    }
+  ],
+  "removed": [
+    [
+      "Object_2",
+      567,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5718,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      555,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      715,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      575,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      583,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      6045,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      595,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      603,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5958,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5818,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5711,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      764,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5893,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5819,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5788,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5739,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5605,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5833,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      643,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      655,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5631,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5796,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      847,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5591,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      5293,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_2",
+      6084,
+      "GS300 badge replaced for exterior variant"
+    ],
+    [
+      "Object_3",
+      67,
+      "optional spoiler"
+    ],
+    [
+      "Object_3",
+      13490,
+      "optional spoiler"
+    ],
+    [
+      "Object_3",
+      7691,
+      "optional spoiler"
+    ],
+    [
+      "Object_9",
+      135,
+      "optional spoiler"
+    ],
+    [
+      "Object_9",
+      154,
+      "optional spoiler"
+    ],
+    [
+      "Object_10",
+      31,
+      "optional spoiler"
+    ],
+    [
+      "Object_10",
+      24,
+      "optional spoiler"
+    ],
+    [
+      "Object_11",
+      47,
+      "optional spoiler"
+    ]
+  ],
+  "notValidated": [
+    "exact market/trim",
+    "wheel/tire option",
+    "top geometry",
+    "underbody",
+    "engine",
+    "transmission",
+    "fasteners",
+    "repair procedures"
+  ]
+}

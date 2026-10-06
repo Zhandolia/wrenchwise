@@ -55,3 +55,7 @@ blender --background --factory-startup --python modeling/build_gs300.py -- /abso
 ```
 
 Keep `modeling/gs300_exterior.py` alongside the build script. It exports the named GLB, native Blender file, inventory JSON, perspective render and front/side/rear orthographic renders. Rebuild time depends on CPU/GPU. `public/models/` contains the current web export; `modeling/validation/` records review renders. Dimensions and photographs are references, not certification.
+
+## Catalog reconstruction audit
+
+See [the 11-vehicle research audit](docs/catalog-research.md) and [third-party asset licenses](THIRD_PARTY_ASSETS.md). The current build includes four exterior references derived from two CC BY sources, with seven vehicles still awaiting accepted geometry. No model or repair procedure is mechanically verified.

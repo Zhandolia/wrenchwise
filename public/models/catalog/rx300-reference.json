@@ -1,0 +1,84 @@
+{
+  "vehicle": "rx300",
+  "sourceUID": "6f2f754c78794734b794237913ba97cc",
+  "units": "m",
+  "uniformScale": 0.30632606782512106,
+  "boundsXYZ": [
+    2.064956545829773,
+    4.57453989982605,
+    1.6693494877696438
+  ],
+  "parts": [
+    {
+      "id": "rx300-trim",
+      "label": "Rx300 Trim",
+      "system": "body",
+      "faces": 6842
+    },
+    {
+      "id": "rx300-paint",
+      "label": "Rx300 Paint",
+      "system": "body",
+      "faces": 12296
+    },
+    {
+      "id": "rx300-cabin-interior",
+      "label": "Rx300 Cabin Interior",
+      "system": "interior",
+      "faces": 9998
+    },
+    {
+      "id": "rx300-left-rear-wheel",
+      "label": "Rx300 Left Rear Wheel",
+      "system": "wheels",
+      "faces": 1886
+    },
+    {
+      "id": "rx300-left-front-wheel",
+      "label": "Rx300 Left Front Wheel",
+      "system": "wheels",
+      "faces": 1886
+    },
+    {
+      "id": "rx300-right-rear-wheel",
+      "label": "Rx300 Right Rear Wheel",
+      "system": "wheels",
+      "faces": 1886
+    },
+    {
+      "id": "rx300-right-front-wheel",
+      "label": "Rx300 Right Front Wheel",
+      "system": "wheels",
+      "faces": 1886
+    },
+    {
+      "id": "rx300-chrome",
+      "label": "Rx300 Chrome",
+      "system": "body",
+      "faces": 10023
+    },
+    {
+      "id": "rx300-cladding",
+      "label": "Rx300 Cladding",
+      "system": "body",
+      "faces": 6052
+    },
+    {
+      "id": "rx300-red",
+      "label": "Rx300 Red",
+      "system": "body",
+      "faces": 400
+    }
+  ],
+  "removed": [],
+  "notValidated": [
+    "exact market/trim",
+    "wheel/tire option",
+    "top geometry",
+    "underbody",
+    "engine",
+    "transmission",
+    "fasteners",
+    "repair procedures"
+  ]
+}

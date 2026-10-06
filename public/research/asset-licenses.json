@@ -1,0 +1,48 @@
+[
+  {
+    "vehicle": "gs300",
+    "title": "Lexus GS300",
+    "author": "David_Holiday",
+    "authorUrl": "https://sketchfab.com/David_Holiday",
+    "sourceUrl": "https://sketchfab.com/3d-models/0bc00c7cd32c4d6da2098fbc2ab1eff0",
+    "license": "CC BY 4.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "publicMirror": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-082/0bc00c7cd32c4d6da2098fbc2ab1eff0.glb",
+    "sourceSha256": "bdb8bd8392c5da44e1bcd32c9a1c5928f1afa08c59ac39df9e010c6d75e74080",
+    "sourceUID": "0bc00c7cd32c4d6da2098fbc2ab1eff0",
+    "changes": [
+      "Uniform length normalization to published brochure target, no measurement validation",
+      "PBR paint, glass, lamp, rubber, trim and alloy material assignment",
+      "Decorative mesh batching and stable component IDs",
+      "GS optional spoiler removal and dark pre-facelift grille finish"
+    ],
+    "limitations": [
+      "No exact US-market/year certification",
+      "Wheels, markers, lamp internals and trim require further correction",
+      "No usable engine or transmission anatomy in this source"
+    ]
+  },
+  {
+    "vehicle": "rx300",
+    "title": "Lexus RX300",
+    "author": "David_Holiday",
+    "authorUrl": "https://sketchfab.com/David_Holiday",
+    "sourceUrl": "https://sketchfab.com/3d-models/6f2f754c78794734b794237913ba97cc",
+    "license": "CC BY 4.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "publicMirror": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-080/6f2f754c78794734b794237913ba97cc.glb",
+    "sourceSha256": "10d5956cb57243ec7aab35f0da0934a886160c5e1f440f8dc2ef4d7779a21e78",
+    "sourceUID": "6f2f754c78794734b794237913ba97cc",
+    "changes": [
+      "Uniform length normalization to published brochure target, no measurement validation",
+      "PBR paint, glass, lamp, rubber, trim and alloy material assignment",
+      "Decorative mesh batching and stable component IDs",
+      "Two-tone cladding material restoration"
+    ],
+    "limitations": [
+      "No exact US-market/year certification",
+      "Wheels, markers, lamp internals and trim require further correction",
+      "No usable engine or transmission anatomy in this source"
+    ]
+  }
+]

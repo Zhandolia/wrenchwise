@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-06",
+  "technicalChecksPassed": true,
+  "geometryVerified": false,
+  "assets": [
+    {
+      "asset": "gs300-assembly.glb",
+      "bytes": 8688540,
+      "selectableGroups": 256,
+      "primitives": 271,
+      "embeddedCopyright": true,
+      "externalBufferDependencies": false
+    },
+    {
+      "asset": "gs300-reference.glb",
+      "bytes": 1310504,
+      "selectableGroups": 10,
+      "primitives": 20,
+      "embeddedCopyright": true,
+      "externalBufferDependencies": false
+    },
+    {
+      "asset": "gs400-reference.glb",
+      "bytes": 1356856,
+      "selectableGroups": 11,
+      "primitives": 21,
+      "embeddedCopyright": true,
+      "externalBufferDependencies": false
+    },
+    {
+      "asset": "gs430-reference.glb",
+      "bytes": 1364516,
+      "selectableGroups": 11,
+      "primitives": 21,
+      "embeddedCopyright": true,
+      "externalBufferDependencies": false
+    },
+    {
+      "asset": "rx300-reference.glb",
+      "bytes": 1302616,
+      "selectableGroups": 10,
+      "primitives": 22,
+      "embeddedCopyright": true,
+      "externalBufferDependencies": false
+    }
+  ]
+}

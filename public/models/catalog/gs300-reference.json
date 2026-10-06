@@ -1,0 +1,125 @@
+{
+  "vehicle": "gs300",
+  "sourceUID": "0bc00c7cd32c4d6da2098fbc2ab1eff0",
+  "units": "m",
+  "uniformScale": 0.29761622758785405,
+  "boundsXYZ": [
+    2.0505635738372803,
+    4.805679798126221,
+    1.4520173665252187
+  ],
+  "parts": [
+    {
+      "id": "gs300-chrome",
+      "label": "Gs300 Chrome",
+      "system": "body",
+      "faces": 10081
+    },
+    {
+      "id": "gs300-paint",
+      "label": "Gs300 Paint",
+      "system": "body",
+      "faces": 20137
+    },
+    {
+      "id": "hood",
+      "label": "Hood",
+      "system": "body",
+      "faces": 1110
+    },
+    {
+      "id": "gs300-left-rear-wheel",
+      "label": "Gs300 Left Rear Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs300-left-front-wheel",
+      "label": "Gs300 Left Front Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs300-right-rear-wheel",
+      "label": "Gs300 Right Rear Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs300-right-front-wheel",
+      "label": "Gs300 Right Front Wheel",
+      "system": "wheels",
+      "faces": 1864
+    },
+    {
+      "id": "gs300-cabin-interior",
+      "label": "Gs300 Cabin Interior",
+      "system": "interior",
+      "faces": 4902
+    },
+    {
+      "id": "gs300-reflector",
+      "label": "Gs300 Reflector",
+      "system": "body",
+      "faces": 5198
+    },
+    {
+      "id": "gs300-trim",
+      "label": "Gs300 Trim",
+      "system": "body",
+      "faces": 1504
+    }
+  ],
+  "removed": [
+    [
+      "Object_3",
+      67,
+      "optional spoiler"
+    ],
+    [
+      "Object_3",
+      13490,
+      "optional spoiler"
+    ],
+    [
+      "Object_3",
+      7691,
+      "optional spoiler"
+    ],
+    [
+      "Object_9",
+      135,
+      "optional spoiler"
+    ],
+    [
+      "Object_9",
+      154,
+      "optional spoiler"
+    ],
+    [
+      "Object_10",
+      31,
+      "optional spoiler"
+    ],
+    [
+      "Object_10",
+      24,
+      "optional spoiler"
+    ],
+    [
+      "Object_11",
+      47,
+      "optional spoiler"
+    ]
+  ],
+  "notValidated": [
+    "exact market/trim",
+    "wheel/tire option",
+    "top geometry",
+    "underbody",
+    "engine",
+    "transmission",
+    "fasteners",
+    "repair procedures"
+  ]
+}
