@@ -1,0 +1,3 @@
+import { sqliteTable, text, integer, index } from 'drizzle-orm/sqlite-core';
+export const comments=sqliteTable('comments',{id:text('id').primaryKey(),vehicle:text('vehicle').notNull(),chapter:integer('chapter').notNull(),author:text('author').notNull(),body:text('body').notNull(),createdAt:integer('created_at').notNull()},t=>[index('idx_comments_vehicle_created').on(t.vehicle,t.createdAt)]);
+export const models=sqliteTable('models',{id:text('id').primaryKey(),vehicle:text('vehicle').notNull(),name:text('name').notNull(),fitment:text('fitment').notNull(),source:text('source').notNull(),license:text('license').notNull(),size:integer('size').notNull(),createdAt:integer('created_at').notNull()},t=>[index('idx_models_vehicle_created').on(t.vehicle,t.createdAt)]);
