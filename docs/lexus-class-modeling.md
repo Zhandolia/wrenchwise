@@ -47,3 +47,12 @@ Use `is` with its separately hash-gated source to reproduce the rejected develop
 Acceptance checks: source attribution, GLB integrity, embedded geometry, material-group IDs, web size, metric envelope (checked against decoded exported vertices), family/generation separation, and no promotion of rejected candidates. Application checks include all tests, generated catalog/evidence consistency, assembly validation, TypeScript and production build. Browser QA checks the rendered ES, selection and keyboard orbit. None of these software checks validates mechanical accuracy.
 
 Remaining vehicle work requires exact configuration references and measured interfaces, plus engine, transmission, suspension, brakes, wiring, cooling, fuel and underbody geometry. Exterior photographs cannot establish hidden mechanical geometry. Do not enable repair procedures from this visual-only checkpoint.
+
+## Published checkpoint
+
+- Modeling/source milestone: `adae328461625b370e10ede0370ecf2470b2c95c`.
+- Published validation/provenance revision: `1aef451146182d25d116e3dd3ccb90337dc7a2da`.
+- GitHub Actions: https://github.com/Zhandolia/wrenchwise/actions/runs/37505233269 — successful (15 tests, consistency/assembly checks, TypeScript and production build).
+- Site deployment: `appgdep_6ac532843a888191abd173e11db417dc` — succeeded 2026-10-06.
+- Live ES: https://wrenchwise-workshop.zhandolia.chatgpt.site/?vehicle=lexus-es-xv70-reference
+- Browser review: mesh visible, selection returns source ID, keyboard orbit and reset work. No mechanical accuracy validation was performed.
