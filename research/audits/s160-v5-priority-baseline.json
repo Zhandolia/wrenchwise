@@ -1,0 +1,116 @@
+{
+  "auditDate": "2026-10-06",
+  "baselineCommit": "58a0019a3d4b8d5cc91d3b376abbf97913a85659",
+  "scope": "Read-only audit for next implementation priorities; no new mechanical validation performed.",
+  "vehicle": "2000 Lexus GS300 / JZS160 / US / LHD / stock automatic / 2JZ-GE VVT-i",
+  "manifestVersion": 5,
+  "modeledGroups": 513,
+  "gapRecords": 246,
+  "verifiedParts": 0,
+  "triangleCount": 895338,
+  "webAssetBytes": 6725604,
+  "webAssetSha256": "8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4",
+  "gapsBySystem": {
+    "body": 41,
+    "engine": 31,
+    "transmission": 12,
+    "driveline": 17,
+    "suspension": 20,
+    "brakes": 19,
+    "wheels": 10,
+    "cooling": 13,
+    "intake": 11,
+    "exhaust": 10,
+    "electrical": 20,
+    "interior": 28,
+    "structure": 14
+  },
+  "findings": [
+    {
+      "id": "A01",
+      "priority": "P0",
+      "finding": "No complete component has measured geometry or physical fitment validation.",
+      "evidence": [
+        "public/models/gs300-parts.json: validation",
+        "docs/s160-mechanical-v5.md: What still prevents 1:1 status"
+      ],
+      "consequence": "Mesh count and recognizable appearance cannot establish repair readiness."
+    },
+    {
+      "id": "A02",
+      "priority": "P0",
+      "finding": "Timing pulley teeth, belt path and A650E clutch/planetary counts are procedural estimates.",
+      "evidence": [
+        "modeling/s160/build_mechanical.py:154",
+        "modeling/s160/build_mechanical.py:174",
+        "modeling/s160/build_mechanical.py:393",
+        "modeling/s160/build_mechanical.py:397"
+      ],
+      "consequence": "These details must not be treated as synchronization, rebuild or ordering specifications."
+    },
+    {
+      "id": "A03",
+      "priority": "P0",
+      "finding": "The fit check casts rays to the provisional hood only and checks selected v5 systems; it is not an assembly collision or clearance test.",
+      "evidence": [
+        "modeling/s160/check_fit.py"
+      ],
+      "consequence": "Passing this check does not establish mounting, underbody clearance, mating fit or tool access."
+    },
+    {
+      "id": "A04",
+      "priority": "P0",
+      "finding": "Inventory gaps mix absent geometry, unknown fitment, incomplete detail and unverified dimensions.",
+      "evidence": [
+        "pending-engine-19 vs crank-pulley-seal",
+        "pending-engine-32 vs vvti-filter-screen",
+        "pending-transmission-4 vs output-shaft-splines",
+        "pending-transmission-12 vs valve-body-separator",
+        "pending-suspension-18 vs ps-reservoir",
+        "pending-cooling-9"
+      ],
+      "consequence": "246 is a count of gap records, not the number of physical parts left to model. These pairs require reconciliation, not automatic gap closure."
+    },
+    {
+      "id": "A05",
+      "priority": "P1",
+      "finding": "Some sources are family-level or adjacent-year references; no actual reference-car build identity is recorded.",
+      "evidence": [
+        "research/s160-mechanical-sources.json: a650e-valve-overhaul",
+        "research/s160-mechanical-sources.json: transtar-a650e",
+        "public/models/gs300-parts.json: sources"
+      ],
+      "consequence": "Source applicability must be recorded at feature level; family evidence cannot silently verify the 2000 US variant."
+    },
+    {
+      "id": "A06",
+      "priority": "P1",
+      "finding": "Exploration offsets and hidden-part lists describe presentation states, not reviewed removal/reassembly dependencies.",
+      "evidence": [
+        "lib/s160-service.ts",
+        "components/assembly-viewer.tsx:17"
+      ],
+      "consequence": "A service procedure needs separate dependency, fastener, connector, tool, fluid and verification records."
+    },
+    {
+      "id": "A07",
+      "priority": "P1",
+      "finding": "Validation currently checks metadata and selected counts; it rejects any part marked verified rather than testing evidence for verified status. No GitHub Actions workflow is present.",
+      "evidence": [
+        "modeling/s160/validate_web.mjs",
+        ".github/workflows (absent at baseline)"
+      ],
+      "consequence": "Add evidence gates and automated regression reports before progressing to measured/validated parts."
+    },
+    {
+      "id": "A08",
+      "priority": "P1",
+      "finding": "895338 triangles and a compressed file size are recorded, but device frame-time, picking latency and memory measurements are absent.",
+      "evidence": [
+        "modeling/validation/s160-v5-web.json",
+        "modeling/validation/s160-v5-review.json: notValidated"
+      ],
+      "consequence": "Compression reduces transfer size; runtime responsiveness needs separate measurement."
+    }
+  ]
+}
