@@ -73,3 +73,7 @@ The [prioritized S160 roadmap](docs/s160-roadmap.md) defines detailed solutions,
 Record each major step in the [progress ledger](docs/s160-progress.md), run relevant checks, commit it with a descriptive message and push to the GitHub remote. Confirm the pushed SHA. A planning or software checkpoint does not establish mechanical verification.
 
 Toyota and Lexus are now the first makes in the extensible vehicle registry. See [catalog coverage](docs/toyota-lexus-catalog.md) and `/catalog`. Nameplate discovery and verified 3D coverage are separate.
+
+## Lexus class modeling checkpoint
+
+The ES XV70 exterior/cabin reference is available at `/?vehicle=lexus-es-xv70-reference` (490,894 triangles, 42 selectable material groups, 3.94 MB). An Altezza-derived IS development mesh failed stock identity review and remains outside the catalog. LS, GX and LX source candidates are tracked, not represented as finished cars. See [modeling checkpoint](docs/lexus-class-modeling.md) for geometry, provenance, errors, reproduction and next steps. No new engine or transmission geometry was added in this checkpoint.

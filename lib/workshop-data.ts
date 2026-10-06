@@ -1,3 +1,4 @@
+import assetLicenses from '../research/asset-licenses.json';
 import {vehicleCatalog} from './vehicle-catalog';
 export {catalogVehicles as vehicles} from './vehicle-catalog';
 export const chapters=[
@@ -12,4 +13,4 @@ export type ModelRecord={id:string;vehicle:string;name:string;fitment:string;sou
 export type CommentRecord={id:string;chapter:number;author:string;body:string;created_at:number};
 
 export const catalogExteriors:Record<string,string>=Object.fromEntries(vehicleCatalog.records.filter(r=>r.assetStatus==='exterior-reference'&&r.assetUrl).map(r=>[r.id,r.assetUrl!]));
-export const exteriorCredits:Record<string,{author:string;source:string}>=Object.fromEntries(vehicleCatalog.records.filter(r=>r.assetStatus==='exterior-reference').map(r=>[r.id,{author:r.id==='toyota-gr-supra-reference'?'3dmodels.cars':'David_Holiday',source:r.sourceUrl}]));
+export const exteriorCredits:Record<string,{author:string;source:string}>=Object.fromEntries(assetLicenses.map(a=>[a.vehicle,{author:a.author,source:a.sourceUrl}]));

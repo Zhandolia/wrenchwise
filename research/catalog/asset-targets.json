@@ -11,6 +11,18 @@
       "title": "Toyota 2020 Supra product information",
       "url": "https://pressroom.toyota.com/2020-supra-product-supra/",
       "scope": "Rounded overall length used for uniform normalization only; not dimensional validation."
+    },
+    {
+      "id": "es-xv70-ccby",
+      "title": "2021 Lexus ES350 F Sport by David_Holiday \u2014 CC BY 4.0",
+      "url": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+      "scope": "Community exterior and cabin geometry; exact configuration unverified."
+    },
+    {
+      "id": "es-xv70-oem-spec",
+      "title": "2021 Lexus ES / ESh US brochure",
+      "url": "https://www.lexus.com/content/dam/lexus/documents/brochures/models/2021/MY21-Lexus-ES-ESh-Brochure.pdf",
+      "scope": "195.9-inch overall length used only for uniform normalization; no measurement validation."
     }
   ],
   "records": [
@@ -34,6 +46,27 @@
       "assetStatus": "exterior-reference",
       "assetUrl": "/models/catalog/gr-supra-reference.glb",
       "notes": "Exterior and cabin reference by 3dmodels.cars, CC BY 4.0. Engine and transmission absent; flat underbody shell. Uniform scale and PBR materials adapted; exact year, trim and fitment unverified."
+    },
+    {
+      "id": "lexus-es-xv70-reference",
+      "make": "Lexus",
+      "name": "ES",
+      "kind": "workshop-target",
+      "bodyType": "Sedan",
+      "region": "Market unverified",
+      "generation": "XV70 visual reference \u00b7 source labeled 2021 ES 350 F Sport",
+      "introductionMonth": null,
+      "endMonth": null,
+      "configurationStatus": "unresolved",
+      "sourceIds": [
+        "es-xv70-ccby",
+        "es-xv70-oem-spec"
+      ],
+      "sourceRecordId": null,
+      "sourceUrl": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+      "assetStatus": "exterior-reference",
+      "assetUrl": "/models/catalog/es-xv70-reference.glb",
+      "notes": "Detailed exterior and approximate cabin reference by David_Holiday, CC BY 4.0. No engine or transmission; flat underbody. Source labeled 2021 ES 350 F Sport, with exact year, market, wheels and trim unverified. Uniform length normalization and PBR/shading corrections are adaptations, not dimensional validation."
     }
   ]
 }

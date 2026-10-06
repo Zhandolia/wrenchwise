@@ -1,0 +1,403 @@
+{
+  "id": "es-xv70-reference",
+  "sourceTitle": "2021 Lexus ES350 F Sport",
+  "sourceUID": "ec3a23f5653d44a68b4b2d5d6c3a582b",
+  "sourceUrl": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+  "author": "David_Holiday",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "sourceSha256": "b908984f9ae2c513bc88cff7b6265b490bffe43453cebb324cbb421ee3bf05c3",
+  "boundsMetres": [
+    2.198493719100952,
+    4.975860118865967,
+    1.4495775699615479
+  ],
+  "parts": [
+    {
+      "id": "es-xv70-reference-mesh-001",
+      "name": "Metal_Dark 1",
+      "system": "body",
+      "sourceMesh": "Material2",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowmetal_dark",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-002",
+      "name": "Tire 2",
+      "system": "wheels",
+      "sourceMesh": "Material2.002",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowtire",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-003",
+      "name": "Tire 3",
+      "system": "wheels",
+      "sourceMesh": "Material2.003",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowtire",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-004",
+      "name": "Tire 4",
+      "system": "wheels",
+      "sourceMesh": "Material2.004",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowtire",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-005",
+      "name": "Metal_Def 5",
+      "system": "body",
+      "sourceMesh": "Material2.005",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowmetal_def",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-006",
+      "name": "Chrome_Brushed_ 6",
+      "system": "body",
+      "sourceMesh": "Material2.006",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowchrome_brushed_",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-007",
+      "name": "Black 7",
+      "system": "body",
+      "sourceMesh": "Material2.007",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowblack",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-008",
+      "name": "Glass_Clear 8",
+      "system": "body",
+      "sourceMesh": "Material2.008",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_clear",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-009",
+      "name": "Rimbright 9",
+      "system": "wheels",
+      "sourceMesh": "Material2.009",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowrimbright",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-010",
+      "name": "Chrome 10",
+      "system": "body",
+      "sourceMesh": "Material2.010",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowchrome",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-011",
+      "name": "Plastic_Int 11",
+      "system": "interior",
+      "sourceMesh": "Material2.011",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowplastic_int",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-012",
+      "name": "Reflectbumpa 12",
+      "system": "body",
+      "sourceMesh": "Material2.012",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowreflectbumpa",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-013",
+      "name": "Glass_Bumpa 13",
+      "system": "body",
+      "sourceMesh": "Material2.013",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_bumpa",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-014",
+      "name": "Int1 14",
+      "system": "interior",
+      "sourceMesh": "Material2.014",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowint1",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-015",
+      "name": "Glass_Bumpa_Dar 15",
+      "system": "body",
+      "sourceMesh": "Material2.015",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_bumpa_dar",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-016",
+      "name": "Plasticglossy 16",
+      "system": "body",
+      "sourceMesh": "Material2.016",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowplasticglossy",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-017",
+      "name": "Reflect 17",
+      "system": "body",
+      "sourceMesh": "Material2.017",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowreflect",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-018",
+      "name": "Plasticblack 18",
+      "system": "body",
+      "sourceMesh": "Material2.018",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowplasticblack",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-019",
+      "name": "Plasticbb 19",
+      "system": "body",
+      "sourceMesh": "Material2.019",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowplasticbb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-020",
+      "name": "Plasticbb 20",
+      "system": "body",
+      "sourceMesh": "Material2.020",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowplasticbb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-021",
+      "name": "Leather 21",
+      "system": "interior",
+      "sourceMesh": "Material2.021",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowleather",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-022",
+      "name": "Glass_Red_Bumpb 22",
+      "system": "body",
+      "sourceMesh": "Material2.022",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_red_bumpb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-023",
+      "name": "Glass_Darkb 23",
+      "system": "body",
+      "sourceMesh": "Material2.023",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_darkb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-024",
+      "name": "Interiora 24",
+      "system": "interior",
+      "sourceMesh": "Material2.024",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowinteriora",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-025",
+      "name": "Glass_Dark 25",
+      "system": "body",
+      "sourceMesh": "Material2.025",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_dark",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-026",
+      "name": "Glass_Orange_Bu 26",
+      "system": "body",
+      "sourceMesh": "Material2.026",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_orange_bu",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-027",
+      "name": "Glass_Lens 27",
+      "system": "body",
+      "sourceMesh": "Material2.027",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_lens",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-028",
+      "name": "Glass_Bumpa2 28",
+      "system": "body",
+      "sourceMesh": "Material2.028",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_bumpa2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-029",
+      "name": "Glass_Orange_B 29",
+      "system": "body",
+      "sourceMesh": "Material2.029",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_orange_b",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-030",
+      "name": "Glass_Red 30",
+      "system": "body",
+      "sourceMesh": "Material2.030",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_red",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-031",
+      "name": "Glass_Bumpc 31",
+      "system": "body",
+      "sourceMesh": "Material2.031",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_bumpc",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-032",
+      "name": "Glass_Red_Illum 32",
+      "system": "body",
+      "sourceMesh": "Material2.032",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowglass_red_illum",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-033",
+      "name": "Reflectbumph 33",
+      "system": "body",
+      "sourceMesh": "Material2.033",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowreflectbumph",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-034",
+      "name": "Rimb 34",
+      "system": "wheels",
+      "sourceMesh": "Material2.034",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowrimb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-035",
+      "name": "Reflectdark 35",
+      "system": "body",
+      "sourceMesh": "Material2.035",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowreflectdark",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-036",
+      "name": "Led 36",
+      "system": "body",
+      "sourceMesh": "Material2.036",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowled",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-037",
+      "name": "Interiorb 37",
+      "system": "interior",
+      "sourceMesh": "Material2.037",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowinteriorb",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-038",
+      "name": "Grey 38",
+      "system": "body",
+      "sourceMesh": "Material2.038",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowgrey",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-039",
+      "name": "Carpaint 39",
+      "system": "body",
+      "sourceMesh": "Material2.039",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowcarpaint",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-040",
+      "name": "Chromedark 40",
+      "system": "body",
+      "sourceMesh": "Material2.040",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowchromedark",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-041",
+      "name": "White 41",
+      "system": "body",
+      "sourceMesh": "Material2.041",
+      "sourceMaterial": "2021_lexus_es350_f_sport_lexuses_f_sport2019_lowwhite",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "es-xv70-reference-mesh-042",
+      "name": "Material 42",
+      "system": "body",
+      "sourceMesh": "Material2.042",
+      "sourceMaterial": "material",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    }
+  ],
+  "verifiedParts": 0,
+  "limits": [
+    "No verified engine/transmission or repair anatomy",
+    "Uniform length normalization is not dimensional validation",
+    "Mesh groups are not OEM part identities",
+    "PBR materials adapted; source has no bitmap texture maps",
+    "Market, trim, wheel option and production month unverified"
+  ]
+}

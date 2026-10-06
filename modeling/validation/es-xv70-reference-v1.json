@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-06",
+  "family": "Lexus ES",
+  "generation": "XV70 source reference; exact configuration unresolved",
+  "asset": "public/models/catalog/es-xv70-reference.glb",
+  "sourceSha256": "b908984f9ae2c513bc88cff7b6265b490bffe43453cebb324cbb421ee3bf05c3",
+  "webSha256": "9c1a1019d1e0051d8e5a57e9561a7ba3bd7090aede0d37930c874d43724ec425",
+  "bytes": 3940344,
+  "triangles": 490894,
+  "meshGroups": 42,
+  "boundsMetres": [
+    2.198493719100952,
+    4.975860118865967,
+    1.4495775699615479
+  ],
+  "verifiedParts": 0,
+  "reviewedViews": [
+    "front oblique",
+    "rear oblique",
+    "left",
+    "right",
+    "top",
+    "underbody"
+  ],
+  "corrections": [
+    "Snapshot source world transforms and duplicate shared mesh data before coordinate baking",
+    "Measure actual world vertices rather than stale imported bounding boxes",
+    "Remove four empty mesh groups",
+    "Revise paint, rubber, glazing and metal PBR values",
+    "Recalculate paint normals without welding source panel vertices",
+    "Compress with Meshopt and 16-bit position quantization; no simplification"
+  ],
+  "rejectedIterations": [
+    "Initial bounds from imported caches were inconsistent; replaced with vertex measurements",
+    "Paint-vertex welding trial created severe shading artifacts; reverted and rerendered"
+  ],
+  "remainingIssues": [
+    "Residual surface shading and approximate cabin geometry",
+    "Flat underbody; no engine, transmission or service hardware",
+    "Wheel/trim, exact model year and market unverified",
+    "Overall length is normalized; width includes mirrors and no dimensions have been validated"
+  ],
+  "decision": "Accepted only as an unverified exterior/cabin reference, not a complete replica"
+}

@@ -30,12 +30,20 @@
       "make": "Lexus",
       "name": "ES",
       "recordIds": [
+        "lexus-es-xv70-reference",
         "es300",
         "es330",
         "lexus-eu-es",
         "lexus-us-history-es"
       ],
       "generations": [
+        {
+          "id": "xv70-reference",
+          "label": "XV70 visual reference · exact configuration unresolved",
+          "recordIds": [
+            "lexus-es-xv70-reference"
+          ]
+        },
         {
           "id": "target-es300",
           "label": "2000 target",
@@ -9380,6 +9388,18 @@
       "scope": "Rounded overall length used for uniform normalization only; not dimensional validation."
     },
     {
+      "id": "es-xv70-ccby",
+      "title": "2021 Lexus ES350 F Sport by David_Holiday — CC BY 4.0",
+      "url": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+      "scope": "Community exterior and cabin geometry; exact configuration unverified."
+    },
+    {
+      "id": "es-xv70-oem-spec",
+      "title": "2021 Lexus ES / ESh US brochure",
+      "url": "https://www.lexus.com/content/dam/lexus/documents/brochures/models/2021/MY21-Lexus-ES-ESh-Brochure.pdf",
+      "scope": "195.9-inch overall length used only for uniform normalization; no measurement validation."
+    },
+    {
       "id": "toyota-lineage",
       "title": "Toyota 75-year vehicle lineage (2012 snapshot)",
       "url": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/family_tree/index.html",
@@ -9481,6 +9501,30 @@
       "familyId": "lexus-gs",
       "generationId": "s160",
       "engineId": "2jz-ge-vvti"
+    },
+    {
+      "id": "lexus-es-xv70-reference",
+      "make": "Lexus",
+      "name": "ES",
+      "kind": "workshop-target",
+      "bodyType": "Sedan",
+      "region": "Market unverified",
+      "generation": "XV70 visual reference · source labeled 2021 ES 350 F Sport",
+      "introductionMonth": null,
+      "endMonth": null,
+      "configurationStatus": "unresolved",
+      "sourceIds": [
+        "es-xv70-ccby",
+        "es-xv70-oem-spec"
+      ],
+      "sourceRecordId": null,
+      "sourceUrl": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+      "assetStatus": "exterior-reference",
+      "assetUrl": "/models/catalog/es-xv70-reference.glb",
+      "notes": "Detailed exterior and approximate cabin reference by David_Holiday, CC BY 4.0. No engine or transmission; flat underbody. Source labeled 2021 ES 350 F Sport, with exact year, market, wheels and trim unverified. Uniform length normalization and PBR/shading corrections are adaptations, not dimensional validation.",
+      "familyId": "lexus-es",
+      "generationId": "xv70-reference",
+      "engineId": null
     },
     {
       "id": "es300",

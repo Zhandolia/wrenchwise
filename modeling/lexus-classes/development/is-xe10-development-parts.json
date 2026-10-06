@@ -1,0 +1,577 @@
+{
+  "id": "is-xe10-development",
+  "sourceTitle": "Draft request: Toyota Altezza 2001",
+  "sourceUID": "0396aafda6294dc4843250d979783656",
+  "sourceUrl": "https://sketchfab.com/3d-models/0396aafda6294dc4843250d979783656",
+  "author": "BaizilikoVIIChai",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "sourceSha256": "dbde431554c4ef1f1236a894bb0dbb761501283c41cdeb448dd4a22f38e1368e",
+  "boundsMetres": [
+    2.0155630111694336,
+    4.400000095367432,
+    1.3896864652633667
+  ],
+  "parts": [
+    {
+      "id": "is-xe10-development-mesh-001",
+      "name": "Body Panels 1",
+      "system": "body",
+      "sourceMesh": "Object_4",
+      "sourceMaterial": "material",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-002",
+      "name": "Panel Borders 2",
+      "system": "body",
+      "sourceMesh": "Object_5",
+      "sourceMaterial": "material_1",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-003",
+      "name": "Source Surface 3",
+      "system": "body",
+      "sourceMesh": "Object_6",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-004",
+      "name": "Dark Trim 4",
+      "system": "body",
+      "sourceMesh": "Object_7",
+      "sourceMaterial": "material_3",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-005",
+      "name": "Glazing 5",
+      "system": "body",
+      "sourceMesh": "Object_8",
+      "sourceMaterial": "material_4",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-006",
+      "name": "Source Surface 6",
+      "system": "body",
+      "sourceMesh": "Object_9",
+      "sourceMaterial": "material_5",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-007",
+      "name": "Source Surface 7",
+      "system": "body",
+      "sourceMesh": "Object_10",
+      "sourceMaterial": ".001",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-008",
+      "name": "Source Surface 8",
+      "system": "body",
+      "sourceMesh": "Object_11",
+      "sourceMaterial": ".002",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-009",
+      "name": "Source Surface 9",
+      "system": "body",
+      "sourceMesh": "Object_12",
+      "sourceMaterial": ".001_0",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-010",
+      "name": "Source Surface 10",
+      "system": "body",
+      "sourceMesh": "Object_13",
+      "sourceMaterial": "material_9",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-011",
+      "name": "Source Surface 11",
+      "system": "body",
+      "sourceMesh": "Object_14",
+      "sourceMaterial": "material.001",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-012",
+      "name": "Tire Geometry 12",
+      "system": "wheels",
+      "sourceMesh": "Object_16",
+      "sourceMaterial": "material_11",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-013",
+      "name": "Brake Finish 13",
+      "system": "wheels",
+      "sourceMesh": "Object_18",
+      "sourceMaterial": "material_12",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-014",
+      "name": "Dark Trim 14",
+      "system": "wheels",
+      "sourceMesh": "Object_19",
+      "sourceMaterial": "material_3",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-015",
+      "name": "Source Surface 15",
+      "system": "wheels",
+      "sourceMesh": "Object_21",
+      "sourceMaterial": "material_5",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-016",
+      "name": "Wheel And Mechanical Surfaces 16",
+      "system": "wheels",
+      "sourceMesh": "Object_23",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-017",
+      "name": "Source Surface 17",
+      "system": "wheels",
+      "sourceMesh": "Object_24",
+      "sourceMaterial": "material_14",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-018",
+      "name": "Wheel And Mechanical Surfaces 18",
+      "system": "wheels",
+      "sourceMesh": "Object_26",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-019",
+      "name": "Source Surface 19",
+      "system": "wheels",
+      "sourceMesh": "Object_27",
+      "sourceMaterial": "material_14",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-020",
+      "name": "Wheel And Mechanical Surfaces 20",
+      "system": "wheels",
+      "sourceMesh": "Object_29",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-021",
+      "name": "Brake Finish 21",
+      "system": "wheels",
+      "sourceMesh": "Object_31",
+      "sourceMaterial": "material_12",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-022",
+      "name": "Source Surface 22",
+      "system": "wheels",
+      "sourceMesh": "Object_33",
+      "sourceMaterial": "material_15",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-023",
+      "name": "Wheel And Mechanical Surfaces 23",
+      "system": "wheels",
+      "sourceMesh": "Object_35",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-024",
+      "name": "Wheel And Mechanical Surfaces 24",
+      "system": "wheels",
+      "sourceMesh": "Object_37",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-025",
+      "name": "Wheel And Mechanical Surfaces 25",
+      "system": "wheels",
+      "sourceMesh": "Object_39",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-026",
+      "name": "Wheel And Mechanical Surfaces 26",
+      "system": "wheels",
+      "sourceMesh": "Object_41",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-027",
+      "name": "Wheel And Mechanical Surfaces 27",
+      "system": "wheels",
+      "sourceMesh": "Object_43",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-028",
+      "name": "Wheel And Mechanical Surfaces 28",
+      "system": "wheels",
+      "sourceMesh": "Object_45",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-029",
+      "name": "Wheel And Mechanical Surfaces 29",
+      "system": "wheels",
+      "sourceMesh": "Object_47",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-030",
+      "name": "Tire Geometry 30",
+      "system": "wheels",
+      "sourceMesh": "Object_49",
+      "sourceMaterial": "material_11",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-031",
+      "name": "Brake Finish 31",
+      "system": "wheels",
+      "sourceMesh": "Object_51",
+      "sourceMaterial": "material_12",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-032",
+      "name": "Dark Trim 32",
+      "system": "wheels",
+      "sourceMesh": "Object_52",
+      "sourceMaterial": "material_3",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-033",
+      "name": "Source Surface 33",
+      "system": "wheels",
+      "sourceMesh": "Object_54",
+      "sourceMaterial": "material_5",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-034",
+      "name": "Wheel And Mechanical Surfaces 34",
+      "system": "wheels",
+      "sourceMesh": "Object_56",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-035",
+      "name": "Source Surface 35",
+      "system": "wheels",
+      "sourceMesh": "Object_57",
+      "sourceMaterial": "material_14",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-036",
+      "name": "Wheel And Mechanical Surfaces 36",
+      "system": "wheels",
+      "sourceMesh": "Object_59",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-037",
+      "name": "Source Surface 37",
+      "system": "wheels",
+      "sourceMesh": "Object_60",
+      "sourceMaterial": "material_14",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-038",
+      "name": "Wheel And Mechanical Surfaces 38",
+      "system": "wheels",
+      "sourceMesh": "Object_62",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-039",
+      "name": "Brake Finish 39",
+      "system": "wheels",
+      "sourceMesh": "Object_64",
+      "sourceMaterial": "material_12",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-040",
+      "name": "Source Surface 40",
+      "system": "wheels",
+      "sourceMesh": "Object_66",
+      "sourceMaterial": "material_15",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-041",
+      "name": "Body Panels 41",
+      "system": "body",
+      "sourceMesh": "Object_68",
+      "sourceMaterial": "material",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-042",
+      "name": "Source Surface 42",
+      "system": "body",
+      "sourceMesh": "Object_69",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-043",
+      "name": "Source Surface 43",
+      "system": "body",
+      "sourceMesh": "Object_71",
+      "sourceMaterial": "material_14",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-044",
+      "name": "Wheel And Mechanical Surfaces 44",
+      "system": "body",
+      "sourceMesh": "Object_73",
+      "sourceMaterial": "material_13",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-045",
+      "name": "Dark Trim 45",
+      "system": "body",
+      "sourceMesh": "Object_75",
+      "sourceMaterial": "material_3",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-046",
+      "name": "Body Panels 46",
+      "system": "body",
+      "sourceMesh": "Object_77",
+      "sourceMaterial": "material",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-047",
+      "name": "Panel Borders 47",
+      "system": "body",
+      "sourceMesh": "Object_78",
+      "sourceMaterial": "material_1",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-048",
+      "name": "Source Surface 48",
+      "system": "body",
+      "sourceMesh": "Object_79",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-049",
+      "name": "Source Surface 49",
+      "system": "body",
+      "sourceMesh": "Object_81",
+      "sourceMaterial": "material_9",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-050",
+      "name": "Source Surface 50",
+      "system": "body",
+      "sourceMesh": "Object_83",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-051",
+      "name": "Source Surface 51",
+      "system": "body",
+      "sourceMesh": "Object_85",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-052",
+      "name": "Source Surface 52",
+      "system": "body",
+      "sourceMesh": "Object_87",
+      "sourceMaterial": "material_2",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-053",
+      "name": "Source Surface 53",
+      "system": "body",
+      "sourceMesh": "Object_89",
+      "sourceMaterial": "material_9",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-054",
+      "name": "Source Surface 54",
+      "system": "body",
+      "sourceMesh": "Object_91",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-055",
+      "name": "Source Surface 55",
+      "system": "body",
+      "sourceMesh": "Object_93",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-056",
+      "name": "Source Surface 56",
+      "system": "body",
+      "sourceMesh": "Object_95",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-057",
+      "name": "Source Surface 57",
+      "system": "body",
+      "sourceMesh": "Object_96",
+      "sourceMaterial": ".003",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-058",
+      "name": "Source Surface 58",
+      "system": "body",
+      "sourceMesh": "Object_98",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-059",
+      "name": "Source Surface 59",
+      "system": "body",
+      "sourceMesh": "Object_100",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-060",
+      "name": "Source Surface 60",
+      "system": "body",
+      "sourceMesh": "Object_102",
+      "sourceMaterial": ".004",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    },
+    {
+      "id": "is-xe10-development-mesh-061",
+      "name": "Source Surface 61",
+      "system": "body",
+      "sourceMesh": "Object_103",
+      "sourceMaterial": ".003",
+      "accuracy": "unverified",
+      "identification": "Material-group label; not an OEM part identity"
+    }
+  ],
+  "verifiedParts": 0,
+  "limits": [
+    "No verified engine/transmission or repair anatomy",
+    "Uniform length normalization is not dimensional validation",
+    "Mesh groups are not OEM part identities",
+    "PBR materials adapted; source has no bitmap texture maps",
+    "Market, trim, wheel option and production month unverified",
+    "Source is Toyota Altezza, not a validated Lexus IS configuration",
+    "Modified wheels, bumper/trim, blank lamp surfaces and missing cabin detail require reconstruction",
+    "This development study must not be labeled a stock Lexus replica"
+  ]
+}

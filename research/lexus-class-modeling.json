@@ -1,0 +1,122 @@
+{
+  "updatedAt": "2026-10-06",
+  "requestedFamilies": [
+    "LS",
+    "IS",
+    "ES",
+    "GX",
+    "LX"
+  ],
+  "completeReplicas": 0,
+  "candidates": [
+    {
+      "family": "LS",
+      "candidateTitle": "LEXUS LS 500",
+      "url": "https://sketchfab.com/3d-models/lexus-ls-500-1f475e4be63541a7a7d05b0834ac89b9",
+      "author": "Es-star kings",
+      "listedLicense": "by",
+      "triangles": 1730055,
+      "status": "download-and-provenance-review-needed",
+      "assetImported": false,
+      "notes": "Candidate identified, not downloaded or accepted. Requires normal download access, source provenance review, exact configuration identification and six-view inspection before integration."
+    },
+    {
+      "family": "IS",
+      "candidateTitle": "Lexus IS300/200",
+      "url": "https://sketchfab.com/3d-models/lexus-is300200-281a547f226543d680e4f27ae0304278",
+      "author": "BlackHorn860",
+      "listedLicense": "free-st",
+      "triangles": 94753,
+      "status": "development-study-rejected-for-stock-catalog",
+      "assetImported": true,
+      "notes": "Separate CC BY 4.0 Toyota Altezza source acquired and prepared. Modified wheels/trim, blank lamp surfaces and missing cabin fail stock Lexus identity review. The listed alternate source uses Free Standard licensing, not CC BY; redistribution requires review.",
+      "developmentSourceUrl": "https://sketchfab.com/3d-models/0396aafda6294dc4843250d979783656"
+    },
+    {
+      "family": "GX",
+      "candidateTitle": "2023_lexus_gx_550_h_overtrail",
+      "url": "https://sketchfab.com/3d-models/2023-lexus-gx-550-h-overtrail-cd5524d02ac1477e9df0bddffe65551a",
+      "author": "007",
+      "listedLicense": "by",
+      "triangles": 517104,
+      "status": "download-and-provenance-review-needed",
+      "assetImported": false,
+      "notes": "Candidate identified, not downloaded or accepted. Requires normal download access, source provenance review, exact configuration identification and six-view inspection before integration. Uploader title says 2023 GX 550 h; official US GX 550 starts with model year 2024 and a 3.4L twin-turbo V6. Do not import the uploader title as a verified vehicle specification."
+    },
+    {
+      "family": "LX",
+      "candidateTitle": "LEXUS LX 600",
+      "url": "https://sketchfab.com/3d-models/lexus-lx-600-3780684a306b4549af6a258036d7ab27",
+      "author": "Es-star kings",
+      "listedLicense": "by",
+      "triangles": 1254818,
+      "status": "download-and-provenance-review-needed",
+      "assetImported": false,
+      "notes": "Candidate identified, not downloaded or accepted. Requires normal download access, source provenance review, exact configuration identification and six-view inspection before integration."
+    },
+    {
+      "family": "ES",
+      "candidateTitle": "2021 Lexus ES350 F Sport",
+      "url": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+      "author": "David_Holiday",
+      "listedLicense": "by",
+      "triangles": 490894,
+      "status": "exterior-reference",
+      "assetImported": true,
+      "notes": "XV70 body, lamps, wheels and approximate cabin imported and adapted. Material-group selection only; flat underbody; no engine/transmission. Exact trim and dimensions unverified.",
+      "viewerUrl": "/?vehicle=lexus-es-xv70-reference"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://sketchfab.com/3d-models/52819f40ae6344b98c1113299d92a863",
+      "reason": "Uploader lists CC BY, but visible HUMSTER3D branding raises unresolved third-party provenance; not imported."
+    }
+  ],
+  "limits": [
+    "Free-download label does not establish dimensional accuracy",
+    "No complete family is marked modeled from a source candidate",
+    "No six-view OEM set currently establishes internal assemblies"
+  ],
+  "nextSteps": [
+    {
+      "family": "ES",
+      "tasks": [
+        "Validate wheelbase, tracks, body width and ride height against a specific configuration",
+        "Separate panels and cabin components from material batches without inventing OEM part identities",
+        "Model engine, transmission, suspension and underbody from measured/service references"
+      ]
+    },
+    {
+      "family": "IS",
+      "tasks": [
+        "Obtain a stock XE10 Lexus-specific source or reconstruct the lamps, bumpers, wheel and cabin geometry from exact references",
+        "Validate the corrected body before enabling a catalog model"
+      ]
+    },
+    {
+      "family": "LS",
+      "tasks": [
+        "Acquire a source with clear author provenance; exclude the HUMSTER3D-branded reupload",
+        "Keep XF50 candidate distinct from existing UCF20/UCF30 targets",
+        "Inspect body, cabin and mechanical completeness before accepting"
+      ]
+    },
+    {
+      "family": "GX",
+      "tasks": [
+        "Resolve candidate to a specific J250 model-year/market/trim",
+        "Keep J250 geometry separate from J120 GX470 targets",
+        "Acquire and inspect source including underbody before accepting"
+      ]
+    },
+    {
+      "family": "LX",
+      "tasks": [
+        "Confirm J310 LX600 configuration and original creator",
+        "Keep J310 geometry separate from J100 LX470 targets",
+        "Acquire and inspect source including underbody before accepting"
+      ]
+    }
+  ]
+}

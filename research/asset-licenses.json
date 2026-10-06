@@ -67,5 +67,29 @@
       "Flat approximate underbody",
       "No dimensional or procedure validation"
     ]
+  },
+  {
+    "vehicle": "lexus-es-xv70-reference",
+    "title": "2021 Lexus ES350 F Sport",
+    "author": "David_Holiday",
+    "authorUrl": "https://sketchfab.com/David_Holiday",
+    "sourceUrl": "https://sketchfab.com/3d-models/ec3a23f5653d44a68b4b2d5d6c3a582b",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "publicMirror": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-140/ec3a23f5653d44a68b4b2d5d6c3a582b.glb",
+    "sourceSha256": "b908984f9ae2c513bc88cff7b6265b490bffe43453cebb324cbb421ee3bf05c3",
+    "sourceUID": "ec3a23f5653d44a68b4b2d5d6c3a582b",
+    "changes": [
+      "Uniform normalization to 195.9-inch brochure length",
+      "PBR paint, glass, rubber and metal corrections; recalculated paint normals",
+      "Empty mesh removal, stable material-group IDs and web compression"
+    ],
+    "limitations": [
+      "No exact year/market/trim validation",
+      "No usable engine or transmission geometry",
+      "Approximate cabin and flat underbody",
+      "No dimensional or procedure validation",
+      "No source bitmap texture maps"
+    ]
   }
 ]

@@ -95,6 +95,11 @@
       "generationId": "a90-reference",
       "generationLabel": "A90 visual reference \u00b7 exact configuration unresolved",
       "engineId": null
+    },
+    "lexus-es-xv70-reference": {
+      "generationId": "xv70-reference",
+      "generationLabel": "XV70 visual reference \u00b7 exact configuration unresolved",
+      "engineId": null
     }
   }
 }
