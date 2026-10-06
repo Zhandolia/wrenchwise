@@ -23,3 +23,17 @@ test('class audit does not promote candidates or the modified Altezza to stock L
  assert(!c.records.some(r=>r.assetUrl?.includes('is-xe10-development')));
  const licenses=read('research/asset-licenses.json');assert(licenses.some(a=>a.vehicle===es.id&&a.sourceUrl===es.sourceUrl));
 });
+test('decoded compressed ES and IS geometry matches its manifest envelope',async()=>{
+ const {GLTFLoader}=await import('three/addons/loaders/GLTFLoader.js');
+ const {MeshoptDecoder}=await import('three/addons/libs/meshopt_decoder.module.js');
+ const {Box3,Vector3,MeshBasicMaterial}=await import('three');
+ for(const [file,manifest] of [['public/models/catalog/es-xv70-reference.glb','public/models/catalog/es-xv70-parts.json'],['modeling/lexus-classes/development/is-xe10-development.glb','modeling/lexus-classes/development/is-xe10-development-parts.json']]){
+  const b=fs.readFileSync(file);
+  // Skip browser-only image decoding; preserve and decode all actual mesh buffers.
+  const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).register(()=>({name:'geometry-validation',loadMaterial:()=>Promise.resolve(new MeshBasicMaterial())})).parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),'');
+  gltf.scene.updateMatrixWorld(true);const box=new Box3().setFromObject(gltf.scene,true),size=box.getSize(new Vector3());
+  const actual=[size.x,size.z,size.y],expected=read(manifest).boundsMetres;
+  actual.forEach((n,i)=>assert(Math.abs(n-expected[i])<.003,`${file}: exported dimension ${i}`));
+  assert(Math.abs(box.min.y)<.003,`${file}: ground alignment`);
+ }
+});

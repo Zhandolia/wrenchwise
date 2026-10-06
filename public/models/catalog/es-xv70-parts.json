@@ -397,7 +397,7 @@
     "No verified engine/transmission or repair anatomy",
     "Uniform length normalization is not dimensional validation",
     "Mesh groups are not OEM part identities",
-    "PBR materials adapted; source has no bitmap texture maps",
+    "PBR materials adapted; one source JPEG retained, no complete PBR texture set supplied",
     "Market, trim, wheel option and production month unverified"
   ]
 }

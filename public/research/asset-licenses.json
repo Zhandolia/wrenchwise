@@ -89,7 +89,7 @@
       "No usable engine or transmission geometry",
       "Approximate cabin and flat underbody",
       "No dimensional or procedure validation",
-      "No source bitmap texture maps"
+      "One embedded JPEG retained; no complete PBR texture set supplied"
     ]
   }
 ]

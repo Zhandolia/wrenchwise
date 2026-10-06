@@ -40,5 +40,18 @@
     "Wheel/trim, exact model year and market unverified",
     "Overall length is normalized; width includes mirrors and no dimensions have been validated"
   ],
-  "decision": "Accepted only as an unverified exterior/cabin reference, not a complete replica"
+  "decision": "Accepted only as an unverified exterior/cabin reference, not a complete replica",
+  "embeddedImages": 1,
+  "decodedExportBoundsMetres": [
+    2.1985687673861345,
+    4.975860118865967,
+    1.4495741198206655
+  ],
+  "decodedGroundOffsetMetres": -2.524132374515098e-05,
+  "browserChecks": [
+    "GLB renders in existing explorer",
+    "Mesh picking returns the selected source ID",
+    "Keyboard orbit works",
+    "Reset view fits model"
+  ]
 }

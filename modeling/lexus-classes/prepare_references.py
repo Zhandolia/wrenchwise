@@ -60,7 +60,7 @@ if kind=='es':
    o.data.normals_split_custom_set([(0,0,0)]*len(o.data.loops))
    for p in o.data.polygons:p.use_smooth=True
 # Preserve source topology; no fictitious engine, transmission or service hardware.
-limits=['No verified engine/transmission or repair anatomy','Uniform length normalization is not dimensional validation','Mesh groups are not OEM part identities','PBR materials adapted; source has no bitmap texture maps','Market, trim, wheel option and production month unverified']
+limits=['No verified engine/transmission or repair anatomy','Uniform length normalization is not dimensional validation','Mesh groups are not OEM part identities',('PBR materials adapted; one source JPEG retained, no complete PBR texture set supplied' if kind=='es' else 'PBR materials adapted; source has no bitmap texture maps'),'Market, trim, wheel option and production month unverified']
 if kind=='is':limits+=['Source is Toyota Altezza, not a validated Lexus IS configuration','Modified wheels, bumper/trim, blank lamp surfaces and missing cabin detail require reconstruction','This development study must not be labeled a stock Lexus replica']
 bpy.context.view_layer.update()
 pts=[o.matrix_world@v.co for o in obs for v in o.data.vertices];low=Vector([min(v[i]for v in pts)for i in range(3)]);high=Vector([max(v[i]for v in pts)for i in range(3)])
