@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 const base=process.env.PAGES_BASE_PATH||'/wrenchwise/';
 for(const path of ['index.html','catalog/index.html','assembly/index.html','components/index.html','research/index.html','library/index.html','404.html']){
  const html=fs.readFileSync('dist-pages/'+path,'utf8');
@@ -21,3 +22,7 @@ console.log('Pages routes, repo-prefixed entrypoints, model assets and host inde
 
 const library=JSON.parse(fs.readFileSync("public/research/model-library.json"));
 for(const m of library.models)assert(fs.existsSync("dist-pages"+m.assetUrl),`Missing library model ${m.id}`);
+const buildInfo=JSON.parse(fs.readFileSync('dist-pages/build-info.json'));
+assert(/^[a-f0-9]{40}$/.test(buildInfo.revision));
+assert.equal(buildInfo.libraryModels,library.models.length);
+assert.equal(buildInfo.libraryManifestSha256,createHash('sha256').update(fs.readFileSync('dist-pages/research/model-library.json')).digest('hex'));
