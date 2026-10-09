@@ -32,7 +32,8 @@ The new **Air duct, bellows & MAF** study provides a close camera view, separate
 Rebuild from the original GLB in the baseline commit (extract the Git blob as binary, never through a text redirect):
 
 ```sh
-node modeling/s160/refine_intake.mjs BASE_V5.glb public/models/gs300-assembly.glb public/models/gs300-parts.json > modeling/validation/s160-intake-2026-10-09.json
+node modeling/s160/refine_intake.mjs BASE_V5.glb INTAKE_STAGE.glb public/models/gs300-parts.json > modeling/validation/s160-intake-2026-10-09.json
+node modeling/s160/refine_airbox.mjs INTAKE_STAGE.glb public/models/gs300-assembly.glb public/models/gs300-parts.json > modeling/validation/s160-airbox-2026-10-09.json
 node scripts/migrate-s160-evidence.mjs
 ```
 
@@ -46,4 +47,6 @@ The builder refuses a changed base hash and records source/output hashes. Manife
 4. Obtain the permitted repair manual and parts diagrams for that configuration. Record part identity, mating faces, fastener/connector locations and hose/wire endpoints separately from their appearances.
 5. Compare model renders against the references from matched camera views. Check placement and clearance on the physical car. Use an independent mechanic to review each eventual procedure, including preparation, removal, reassembly and final checks.
 
-Next modeling priority is the GS300 airbox/inlet connection and surrounding bay packaging, followed by measured battery, cooling and accessory assemblies. Timing marks, belt teeth, torque values and removal sequences must wait for exact source and physical review. Exterior refinements can continue from photographs; interior work is deferred per the requested priority. No web-photo-only workflow can honestly guarantee a 100% replica.
+The first air-cleaner anatomy revision now provides a hollow tapered lower housing, an open-bottom lid with an outlet matching the intake-stage endpoint, a filter frame and pleated media. The legacy `airbox-ribs` ID is retained but renamed to an estimated lid seam bead; unsupported parallel decorative ribs were removed. Internal surfaces and pleat density are authored estimates, not observations from the exterior photograph. The `/assembly/?study=air-cleaner` view lifts the lid and filter for inspection and isolates their five groups. It is not a removal sequence. Mounts, clips, the snorkel-side opening, dimensional matching and installed clearances remain unresolved.
+
+Next work is reference acquisition for those interfaces and surrounding bay packaging, followed by measured battery, cooling and accessory assemblies. Timing marks, belt teeth, torque values and removal sequences must wait for exact source and physical review. Exterior refinements can continue from photographs; interior work is deferred per the requested priority. No web-photo-only workflow can honestly guarantee a 100% replica.

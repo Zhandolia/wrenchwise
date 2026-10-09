@@ -5,7 +5,7 @@
   "modelRevision": "5",
   "origin": {
     "path": "public/models/gs300-parts.json",
-    "sha256": "619e97b1b8bcb55f9430264d84fcbcb590059d1dff854e484b6691823fcde8cd",
+    "sha256": "ec7aa6a80bff71ad68750b9ffc5d2867dfdbeb249b48b2f201cbae763217bd74",
     "baselineCommit": "58a0019a3d4b8d5cc91d3b376abbf97913a85659"
   },
   "configuration": {
@@ -25397,7 +25397,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path."
     },
     {
       "id": "airbox-lid",
@@ -25445,7 +25445,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path."
     },
     {
       "id": "air-filter",
@@ -25493,7 +25493,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path."
     },
     {
       "id": "air-filter-pleats",
@@ -25541,11 +25541,11 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path."
     },
     {
       "id": "airbox-ribs",
-      "name": "Airbox lid molded ribs",
+      "name": "Air-cleaner lid seam bead (estimated)",
       "assemblyId": "gs300:intake",
       "recordKind": "modeled-group",
       "geometry": "present",
@@ -25589,7 +25589,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path."
     },
     {
       "id": "air-intake-duct",

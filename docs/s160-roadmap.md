@@ -7,8 +7,8 @@ The first intake revision is published as `084d1ef`. Continue in this order; the
 | Priority | Next work | State / completion criteria |
 |---|---|---|
 | 1 | Reference configuration and capture records (S160-01/03) | Configuration record, four capture requests and six measurement requests added. Validation rejects empty or untraceable completion. Physical identification and acquisition remain pending. |
-| 2 | Air-cleaner housing, lid and duct interface (S160-04a) | Next geometry checkpoint. Retain selectable IDs, compare against photographed form, check modeled joint continuity, record all estimated dimensions. |
-| 3 | Engine-bay inspection (S160-09) | Add air-cleaner layers view; ensure camera, highlighting and isolated components remain useful. Software checks do not establish a real removal sequence. |
+| 2 | Air-cleaner housing, lid and duct interface (S160-04a) | Initial anatomy revision complete: hollow housing, separate lid with open outlet, filter frame/media. Five IDs retained. Dimensions, clips/mounts, inlet joint and physical fit remain unresolved. |
+| 3 | Engine-bay inspection (S160-09) | Air-cleaner layers view, outlet-facing camera and explicit part isolation implemented. Inspect other service areas next. Software checks do not establish a real removal sequence. |
 | 4 | Cooling, battery and accessory installation (S160-03/04a) | Obtain exact-target views and measurements before correcting mounting and hose/connector endpoints. |
 | 5 | Timing/water-pump service geometry and procedure (S160-04/05/06) | Exact service sources, measured interfaces, physical fit/access review and qualified mechanic review required. |
 | 6 | Next vehicle configuration | Select exact year/engine/market after the GS300 modeling/verification process works. Interior work remains deferred. |

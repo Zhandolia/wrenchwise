@@ -154,7 +154,7 @@
     }
   ],
   "meshCount": 513,
-  "triangleCount": 912186,
+  "triangleCount": 915794,
   "parts": [
     {
       "id": "floor",
@@ -8080,17 +8080,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "airbox",
       "dimensionsMetres": [
-        0.27000001072883606,
-        0.33000001311302185,
-        0.17000000178813934
-      ]
+        0.2759999632835388,
+        0.3009999990463257,
+        0.12300002574920654
+      ],
+      "surfaceRevision": "airbox-2026-10-09"
     },
     {
       "id": "airbox-lid",
@@ -8100,7 +8101,7 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
@@ -8108,9 +8109,10 @@
       "meshName": "airbox-lid",
       "dimensionsMetres": [
         0.2849999964237213,
-        0.3449999988079071,
-        0.05000000074505806
-      ]
+        0.3588271141052246,
+        0.11400002241134644
+      ],
+      "surfaceRevision": "airbox-2026-10-09"
     },
     {
       "id": "air-filter",
@@ -8120,17 +8122,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "air-filter",
       "dimensionsMetres": [
-        0.25,
-        0.30000001192092896,
-        0.02800000086426735
-      ]
+        0.257999986410141,
+        0.28299999237060547,
+        0.013000011444091797
+      ],
+      "surfaceRevision": "airbox-2026-10-09"
     },
     {
       "id": "air-filter-pleats",
@@ -8140,37 +8143,39 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "air-filter-pleats",
       "dimensionsMetres": [
-        0.2370000034570694,
-        0.2803999185562134,
-        0.01899999938905239
-      ]
+        0.2279999852180481,
+        0.24800002574920654,
+        0.013000011444091797
+      ],
+      "surfaceRevision": "airbox-2026-10-09"
     },
     {
       "id": "airbox-ribs",
-      "name": "Airbox lid molded ribs",
+      "name": "Air-cleaner lid seam bead (estimated)",
       "system": "intake",
       "status": "modeled",
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 air-cleaner anatomy study: hollow tapered housing, separate cover with open duct neck, filter frame and illustrative pleats. Photo-informed external arrangement; internal shape, wall thickness, pleat count, all dimensions and fitment are estimates. Separation is illustrative, not an approved removal path.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "airbox-ribs",
       "dimensionsMetres": [
-        0.1979999840259552,
-        0.2800000011920929,
-        0.006000000052154064
-      ]
+        0.2880000174045563,
+        0.2979999780654907,
+        0.003000020980834961
+      ],
+      "surfaceRevision": "airbox-2026-10-09"
     },
     {
       "id": "air-intake-duct",
@@ -12946,6 +12951,16 @@
     "baseSha256": "8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4",
     "sha256": "cf060bc0b3ace52b83a0ebc91189f11f5c85dbbccdf09cd708c81a07bb6a314a",
     "triangleDelta": 16848,
+    "sourceIds": [
+      "gs300-engine-photo"
+    ],
+    "verified": false
+  },
+  "airboxSurfaceRevision": {
+    "revision": "airbox-2026-10-09",
+    "baseSha256": "cf060bc0b3ace52b83a0ebc91189f11f5c85dbbccdf09cd708c81a07bb6a314a",
+    "sha256": "f3d75a0637002ce2458d7676b5ccd962b5d3a88fd1f4178986f5eaccb5b9f514",
+    "triangleDelta": 3608,
     "sourceIds": [
       "gs300-engine-photo"
     ],

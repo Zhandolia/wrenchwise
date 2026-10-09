@@ -1,0 +1,59 @@
+{
+  "revision": "airbox-2026-10-09",
+  "baseSha256": "cf060bc0b3ace52b83a0ebc91189f11f5c85dbbccdf09cd708c81a07bb6a314a",
+  "sha256": "f3d75a0637002ce2458d7676b5ccd962b5d3a88fd1f4178986f5eaccb5b9f514",
+  "bytes": 8592728,
+  "parts": [
+    {
+      "id": "airbox",
+      "triangles": 128,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.2759999632835388,
+        0.12300002574920654,
+        0.3009999990463257
+      ]
+    },
+    {
+      "id": "airbox-lid",
+      "triangles": 6796,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.2849999964237213,
+        0.11400002241134644,
+        0.3588271141052246
+      ]
+    },
+    {
+      "id": "air-filter",
+      "triangles": 64,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.257999986410141,
+        0.013000011444091797,
+        0.28299999237060547
+      ]
+    },
+    {
+      "id": "air-filter-pleats",
+      "triangles": 120,
+      "previousTriangles": 2700,
+      "boundsMetres": [
+        0.2279999852180481,
+        0.013000011444091797,
+        0.24800002574920654
+      ]
+    },
+    {
+      "id": "airbox-ribs",
+      "triangles": 64,
+      "previousTriangles": 540,
+      "boundsMetres": [
+        0.2880000174045563,
+        0.003000020980834961,
+        0.2979999780654907
+      ]
+    }
+  ],
+  "verifiedParts": 0
+}

@@ -68,11 +68,12 @@ export function createIntakeGeometry(){
  return new Map([['air-intake-duct',duct],['intake-bellows',merge(bellows)],['intake-clamps',merge(clamps)],['maf',merge(maf)],['maf-connector',merge(connector)]]);
 }
 
-export function refine(input,output){
+export function refine(input,output,options={}){
+ const revision=options.revision||'intake-2026-10-09';
  const raw=fs.readFileSync(input), jsonLength=raw.readUInt32LE(12);
- assert.equal(crypto.createHash('sha256').update(raw).digest('hex'),'8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4','Re-review changed base asset before rebuilding');
+ assert.equal(crypto.createHash('sha256').update(raw).digest('hex'),options.expectedSha256||'8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4','Re-review changed base asset before rebuilding');
  const g=JSON.parse(raw.toString('utf8',20,20+jsonLength));
- assert(!g.asset.extras?.intakeRevision,'Use the original v5 asset, not an already refined export');
+ if(!options.revision)assert(!g.asset.extras?.intakeRevision,'Use the original v5 asset, not an already refined export');
  assert.equal(g.asset.version,'2.0');
  const binOffset=20+jsonLength+8, binary=raw.subarray(binOffset,binOffset+raw.readUInt32LE(20+jsonLength));
  let length=binary.length;const chunks=[binary];
@@ -85,7 +86,7 @@ export function refine(input,output){
   return g.accessors.push({bufferView:view,componentType:array instanceof Float32Array?5126:5125,count,type,...(min?{min,max}:{})})-1;
  }
  const report=[];
- for(const [id,geometry] of createIntakeGeometry()){
+ for(const [id,geometry] of options.geometry||createIntakeGeometry()){
   const index=g.nodes.findIndex(n=>n.extras?.partId===id);assert(index>=0,id);
   const node=g.nodes[index], mesh=g.meshes[node.mesh];assert.equal(mesh.primitives.length,1);
   geometry.computeBoundingBox();const bounds=geometry.boundingBox.getSize(new T.Vector3()).toArray();
@@ -95,16 +96,16 @@ export function refine(input,output){
   const pos=geometry.getAttribute('position'), normal=geometry.getAttribute('normal');
   const indices=geometry.index?new Uint32Array(geometry.index.array):Uint32Array.from({length:pos.count},(_,i)=>i);
   const primitive={attributes:{POSITION:accessor(new Float32Array(pos.array),'VEC3',pos.count,34962,geometry.boundingBox.min.toArray(),geometry.boundingBox.max.toArray()),NORMAL:accessor(new Float32Array(normal.array),'VEC3',normal.count,34962)},indices:accessor(indices,'SCALAR',indices.length,34963),material:mesh.primitives[0].material,mode:4};
-  mesh.primitives=[primitive];node.extras.surfaceRevision='intake-2026-10-09';node.extras.accuracy='unverified';
+  mesh.primitives=[primitive];node.extras.surfaceRevision=revision;node.extras.accuracy='unverified';
   report.push({id,triangles:indices.length/3,previousTriangles:originalTriangles,boundsMetres:bounds});
  }
  const pad=(4-length%4)%4;if(pad){chunks.push(Buffer.alloc(pad));length+=pad;}
- g.buffers[0].byteLength=length;g.asset.extras={...g.asset.extras,intakeRevision:'2026-10-09',baseSha256:crypto.createHash('sha256').update(raw).digest('hex'),basis:'Photo-informed original surface study; dimensions and installation estimated'};
+ g.buffers[0].byteLength=length;g.asset.extras=options.revision?{...g.asset.extras,surfaceRevision:revision,parentSha256:options.expectedSha256}:{...g.asset.extras,intakeRevision:'2026-10-09',baseSha256:crypto.createHash('sha256').update(raw).digest('hex'),basis:'Photo-informed original surface study; dimensions and installation estimated'};
  let json=Buffer.from(JSON.stringify(g));const padding=(4-json.length%4)%4;json=Buffer.concat([json,Buffer.alloc(padding,32)]);
  const header=Buffer.alloc(20);header.write('glTF');header.writeUInt32LE(2,4);header.writeUInt32LE(28+json.length+length,8);header.writeUInt32LE(json.length,12);header.writeUInt32LE(0x4e4f534a,16);
  const bh=Buffer.alloc(8);bh.writeUInt32LE(length);bh.writeUInt32LE(0x004e4942,4);
  fs.writeFileSync(output,Buffer.concat([header,json,bh,...chunks]));
- return {revision:'intake-2026-10-09',baseSha256:g.asset.extras.baseSha256,sha256:crypto.createHash('sha256').update(fs.readFileSync(output)).digest('hex'),bytes:fs.statSync(output).size,parts:report,verifiedParts:0};
+ return {revision,baseSha256:options.expectedSha256||g.asset.extras.baseSha256,sha256:crypto.createHash('sha256').update(fs.readFileSync(output)).digest('hex'),bytes:fs.statSync(output).size,parts:report,verifiedParts:0};
 }
 if(process.argv[1]?.endsWith('refine_intake.mjs')){
  const [input,output,manifestPath]=process.argv.slice(2);assert(input&&output,'Supply input and output GLB paths');

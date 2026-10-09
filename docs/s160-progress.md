@@ -1,5 +1,13 @@
 # S160 progress ledger
 
+## 2026-10-09 — Air-cleaner anatomy and isolated inspection
+
+Rebuilt five existing groups as a tapered hollow housing, open-bottom lid with an open outlet to the existing duct endpoint, separate filter frame/media and estimated seam bead. Preserved all inventory IDs and exterior attribution. Added the `air-cleaner` study with paired lid/filter offsets, an outlet-facing camera and explicit part isolation; selecting an unrelated part or changing system visibility exits the isolation. The interpretation remains unverified: mounts/clips, snorkel opening, exact internal form and physical fit need references.
+
+Current GLB: 915,794 triangles, 8,592,728 bytes, zero verified parts. Builders reproduce the intake stage from the v5 hash, then the airbox stage from the intake hash; both stage reports retain provenance. No third-party photos are redistributed. Blender ZIP remains the v5 baseline.
+
+Validation: 22 tests, mesh/bounds/inventory and quantity checks, deterministic evidence/catalog checks, TypeScript and Pages production build/route validation passed. New ray tests distinguish an open housing/outlet/filter frame from solid obstructing geometry. Browser checks covered the isolated study, selected-part inspector, keyboard orbit/zoom and return to the installed intake study with no console warnings/errors. This completes the first visual geometry and inspection checkpoints in priorities 2/3, not measured realism or a repair procedure.
+
 ## 2026-10-09 — Reference acquisition foundation
 
 Added a single configuration source for evidence generation, unresolved production/emissions/unit/modification questions, four specified photo captures and six empty air-cleaner measurements. Added capture validation and negative tests for invented completion, missing datums and mismatched parts/configurations. Updated the active priority queue. No physical reference was identified and no measurements were filled. This completes the record/validation preparation portion of S160-01/03, not physical acquisition.
