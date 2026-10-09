@@ -5,7 +5,7 @@
   "modelRevision": "5",
   "origin": {
     "path": "public/models/gs300-parts.json",
-    "sha256": "8b550bc393645d2bc4cef4fe6e77939746614cab9d5595f13451bd88d4f08df2",
+    "sha256": "619e97b1b8bcb55f9430264d84fcbcb590059d1dff854e484b6691823fcde8cd",
     "baselineCommit": "58a0019a3d4b8d5cc91d3b376abbf97913a85659"
   },
   "configuration": {
@@ -25637,7 +25637,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated."
     },
     {
       "id": "intake-bellows",
@@ -25685,7 +25685,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated."
     },
     {
       "id": "intake-clamps",
@@ -25733,7 +25733,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated."
     },
     {
       "id": "maf",
@@ -25781,7 +25781,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated."
     },
     {
       "id": "maf-connector",
@@ -25829,7 +25829,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated."
     },
     {
       "id": "intake-resonator",

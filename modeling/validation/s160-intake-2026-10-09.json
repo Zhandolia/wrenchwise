@@ -1,0 +1,59 @@
+{
+  "revision": "intake-2026-10-09",
+  "baseSha256": "8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4",
+  "sha256": "cf060bc0b3ace52b83a0ebc91189f11f5c85dbbccdf09cd708c81a07bb6a314a",
+  "bytes": 7987348,
+  "parts": [
+    {
+      "id": "air-intake-duct",
+      "triangles": 15360,
+      "previousTriangles": 384,
+      "boundsMetres": [
+        0.31443074345588684,
+        0.27858954668045044,
+        0.34094250202178955
+      ]
+    },
+    {
+      "id": "intake-bellows",
+      "triangles": 6912,
+      "previousTriangles": 6912,
+      "boundsMetres": [
+        0.11954629421234131,
+        0.12118571996688843,
+        0.11669719219207764
+      ]
+    },
+    {
+      "id": "intake-clamps",
+      "triangles": 1720,
+      "previousTriangles": 1536,
+      "boundsMetres": [
+        0.3063387870788574,
+        0.2785489559173584,
+        0.3099879026412964
+      ]
+    },
+    {
+      "id": "maf",
+      "triangles": 1304,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.04462850093841553,
+        0.06878530979156494,
+        0.08126485347747803
+      ]
+    },
+    {
+      "id": "maf-connector",
+      "triangles": 600,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.03014501929283142,
+        0.03478896617889404,
+        0.03588247299194336
+      ]
+    }
+  ],
+  "verifiedParts": 0
+}

@@ -1,5 +1,5 @@
 {
-  "title": "2000 Lexus GS 300 US automatic \u2014 provisional assembly",
+  "title": "2000 Lexus GS 300 US automatic — provisional assembly",
   "version": 5,
   "units": "metres",
   "coordinateSystem": "Blender X lateral, Y rearward, Z up; GLB uses Y up",
@@ -63,17 +63,17 @@
     },
     {
       "id": "lexus-us-gallery",
-      "title": "Lexus USA 1998\u20132000 GS 300 reference album",
+      "title": "Lexus USA 1998–2000 GS 300 reference album",
       "url": "https://pressroom.lexus.com/album/1998-2000-lexus-gs-300-second-2nd-generation/"
     },
     {
       "id": "ccby-exterior",
-      "title": "David_Holiday GS300 reference mesh \u2014 CC BY 4.0",
+      "title": "David_Holiday GS300 reference mesh — CC BY 4.0",
       "url": "https://sketchfab.com/3d-models/0bc00c7cd32c4d6da2098fbc2ab1eff0"
     },
     {
       "id": "rm718u-engine",
-      "title": "Lexus RM718U \u2014 2JZ-GE cylinder head, EM-29\u201332 and EM-55 (manufacturer manual mirror)",
+      "title": "Lexus RM718U — 2JZ-GE cylinder head, EM-29–32 and EM-55 (manufacturer manual mirror)",
       "url": "https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/54",
       "kind": "manufacturer service manual",
       "fitment": "2000 GS300/GS400; only 2JZ-GE sections used",
@@ -81,7 +81,7 @@
     },
     {
       "id": "rm718u-head-page",
-      "title": "Lexus RM718U sample \u2014 EM-55 cylinder head assembly",
+      "title": "Lexus RM718U sample — EM-55 cylinder head assembly",
       "url": "https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf",
       "kind": "manufacturer service manual excerpt",
       "fitment": "2000 GS300/GS400, EM-55 2JZ-GE",
@@ -89,7 +89,7 @@
     },
     {
       "id": "rm718u-timing",
-      "title": "2000 GS300 timing belt \u2014 manufacturer procedure reproduced by Operation CHARM",
+      "title": "2000 GS300 timing belt — manufacturer procedure reproduced by Operation CHARM",
       "url": "https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Maintenance/Timing%20Belt/Service%20and%20Repair/",
       "kind": "manufacturer service procedure mirror",
       "fitment": "2000 GS300 2JZ-GE VVT-i",
@@ -97,7 +97,7 @@
     },
     {
       "id": "rm718u-pump",
-      "title": "Lexus RM718U \u2014 2JZ-GE water pump CO-5\u20139",
+      "title": "Lexus RM718U — 2JZ-GE water pump CO-5–9",
       "url": "https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/50",
       "kind": "manufacturer service manual mirror",
       "fitment": "2000 GS300/GS400; 2JZ-GE water-pump section",
@@ -105,7 +105,7 @@
     },
     {
       "id": "rm718u-cooling",
-      "title": "Lexus RM718U \u2014 GS300 timing-access and cooling components",
+      "title": "Lexus RM718U — GS300 timing-access and cooling components",
       "url": "https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/?srch=timing",
       "kind": "manufacturer service manual mirror",
       "fitment": "2000 GS300 2JZ-GE, EM-14",
@@ -113,7 +113,7 @@
     },
     {
       "id": "rm718u-at-service",
-      "title": "2000 GS300 \u2014 A/T pan, strainer and temperature-sensor service",
+      "title": "2000 GS300 — A/T pan, strainer and temperature-sensor service",
       "url": "https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Transmission%20and%20Drivetrain/Sensors%20and%20Switches%20-%20A%2FT/Transmission%20Temperature%20Sensor%2FSwitch/Service%20and%20Repair/",
       "kind": "manufacturer service procedure mirror",
       "fitment": "2000 GS300 automatic",
@@ -121,7 +121,7 @@
     },
     {
       "id": "rm718u-at-valve",
-      "title": "Lexus RM718U \u2014 automatic transmission valve body AT-8",
+      "title": "Lexus RM718U — automatic transmission valve body AT-8",
       "url": "https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/?srch=transmission+oil",
       "kind": "manufacturer service manual mirror",
       "fitment": "2000 GS300/GS400 automatic",
@@ -129,15 +129,15 @@
     },
     {
       "id": "a650e-valve-overhaul",
-      "title": "1999 GS300 A650E valve body \u2014 family reference",
+      "title": "1999 GS300 A650E valve body — family reference",
       "url": "https://charm.li/Lexus/1999/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Transmission%20and%20Drivetrain/Automatic%20Transmission%2FTransaxle/Service%20and%20Repair/Unit%20Overhaul/A650E%20Transmission/Valve%20Body/",
       "kind": "manufacturer overhaul procedure mirror",
       "fitment": "Adjacent model year; A650E family only",
-      "usedFor": "S1\u2013S4, SLN, SLU and SLT identities and stacked valve-body sections. Not proof of 2000 port positions or calibration."
+      "usedFor": "S1–S4, SLN, SLU and SLT identities and stacked valve-body sections. Not proof of 2000 port positions or calibration."
     },
     {
       "id": "transtar-a650e",
-      "title": "Transtar 2011 Professional Automatic Transmission Parts Catalog \u2014 A650E pp.598\u2013600",
+      "title": "Transtar 2011 Professional Automatic Transmission Parts Catalog — A650E pp.598–600",
       "url": "https://file.euroauto.ru/file/catalogs/firms/4423.pdf",
       "kind": "parts manufacturer catalog mirror",
       "fitment": "A650E family; catalog distinguishes GS300 kit applications",
@@ -145,7 +145,7 @@
     },
     {
       "id": "gs300-engine-photo",
-      "title": "Victory Motors \u2014 photographed 2000 GS300 engine bay",
+      "title": "Victory Motors — photographed 2000 GS300 engine bay",
       "url": "https://www.victorymotorsofcolorado.com/inventory/2000-lexus-gs-300-/136475",
       "kind": "first-party vehicle photograph",
       "fitment": "2000 GS300 US dealer listing; vehicle condition/stock status not independently certified",
@@ -154,7 +154,7 @@
     }
   ],
   "meshCount": 513,
-  "triangleCount": 895338,
+  "triangleCount": 912186,
   "parts": [
     {
       "id": "floor",
@@ -203,7 +203,7 @@
       "meshName": "rail--1__Longitudinal_rail_-1",
       "dimensionsMetres": [
         0.11,
-        4.0,
+        4,
         0.12
       ]
     },
@@ -237,7 +237,7 @@
       "meshName": "rail-1__Longitudinal_rail_1",
       "dimensionsMetres": [
         0.11,
-        4.0,
+        4,
         0.12
       ]
     },
@@ -1528,7 +1528,7 @@
       "source": "Original Blender geometry",
       "meshName": "fuel-tank__Fuel_tank_envelope",
       "dimensionsMetres": [
-        1.0,
+        1,
         0.58,
         0.2
       ]
@@ -6264,7 +6264,7 @@
     },
     {
       "id": "vvti-gear-locked-fasteners",
-      "name": "VVT-i pulley factory-set bolts \u2014 do not loosen",
+      "name": "VVT-i pulley factory-set bolts — do not loosen",
       "system": "engine",
       "status": "modeled",
       "accuracy": "unverified",
@@ -6478,7 +6478,7 @@
       "quantityEvidence": {
         "count": 2,
         "sourceId": "rm718u-timing",
-        "section": "EM timing belt \u2014 tensioner mounting bolts",
+        "section": "EM timing belt — tensioner mounting bolts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "timing-tensioner",
@@ -6570,7 +6570,7 @@
     },
     {
       "id": "timing-belt",
-      "name": "Timing belt \u2014 routing study",
+      "name": "Timing belt — routing study",
       "system": "engine",
       "status": "modeled",
       "accuracy": "unverified",
@@ -6604,7 +6604,7 @@
       "quantityEvidence": {
         "count": 3,
         "sourceId": "rm718u-timing",
-        "section": "EM timing belt \u2014 cover fasteners",
+        "section": "EM timing belt — cover fasteners",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "timing-cover-upper",
@@ -6630,7 +6630,7 @@
       "quantityEvidence": {
         "count": 5,
         "sourceId": "rm718u-timing",
-        "section": "EM timing belt \u2014 cover fasteners",
+        "section": "EM timing belt — cover fasteners",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "timing-cover-lower",
@@ -6836,7 +6836,7 @@
       "quantityEvidence": {
         "count": 4,
         "sourceId": "rm718u-timing",
-        "section": "EM cylinder head \u2014 appearance cover nuts",
+        "section": "EM cylinder head — appearance cover nuts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "engine-cover",
@@ -6862,7 +6862,7 @@
       "quantityEvidence": {
         "count": 4,
         "sourceId": "rm718u-timing",
-        "section": "EM timing belt \u2014 No.3 cover bolts",
+        "section": "EM timing belt — No.3 cover bolts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "timing-cover-top",
@@ -8180,17 +8180,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "air-intake-duct",
       "dimensionsMetres": [
-        0.31369057297706604,
-        0.34102511405944824,
-        0.27862071990966797
-      ]
+        0.31443074345588684,
+        0.34094250202178955,
+        0.27858954668045044
+      ],
+      "surfaceRevision": "intake-2026-10-09"
     },
     {
       "id": "intake-bellows",
@@ -8200,17 +8201,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "intake-bellows",
       "dimensionsMetres": [
-        0.09800004959106445,
-        0.06700003147125244,
-        0.14600002765655518
-      ]
+        0.11954629421234131,
+        0.11669719219207764,
+        0.12118571996688843
+      ],
+      "surfaceRevision": "intake-2026-10-09"
     },
     {
       "id": "intake-clamps",
@@ -8220,17 +8222,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "intake-clamps",
       "dimensionsMetres": [
-        0.3020000457763672,
-        0.28999996185302734,
-        0.2850000858306885
-      ]
+        0.3063387870788574,
+        0.3099879026412964,
+        0.2785489559173584
+      ],
+      "surfaceRevision": "intake-2026-10-09"
     },
     {
       "id": "maf",
@@ -8240,17 +8243,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "maf",
       "dimensionsMetres": [
-        0.04500000178813934,
-        0.06599999964237213,
-        0.024000000208616257
-      ]
+        0.04462850093841553,
+        0.08126485347747803,
+        0.06878530979156494
+      ],
+      "surfaceRevision": "intake-2026-10-09"
     },
     {
       "id": "maf-connector",
@@ -8260,17 +8264,18 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
+      "notes": "October 2026 intake surface study: smoother duct, path-aligned bellows and bands, attached MAF housing/connector. Photo-informed appearance only. Installation endpoints inherited from v5; diameter, ridge count, fastening details, pinout and dimensions remain estimates. No physical fit or removal procedure validated.",
       "source": "Original Wrenchwise geometry; gs300-engine-photo",
       "sourceRefs": [
         "gs300-engine-photo"
       ],
       "meshName": "maf-connector",
       "dimensionsMetres": [
-        0.024000000208616257,
-        0.03099999949336052,
-        0.017999999225139618
-      ]
+        0.03014501929283142,
+        0.03588247299194336,
+        0.03478896617889404
+      ],
+      "surfaceRevision": "intake-2026-10-09"
     },
     {
       "id": "intake-resonator",
@@ -8968,7 +8973,7 @@
       "quantityEvidence": {
         "count": 6,
         "sourceId": "rm718u-pump",
-        "section": "CO-6/CO-8 \u2014 water pump mounting bolts",
+        "section": "CO-6/CO-8 — water pump mounting bolts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "water-pump",
@@ -9034,7 +9039,7 @@
       "quantityEvidence": {
         "count": 4,
         "sourceId": "rm718u-pump",
-        "section": "CO-5 \u2014 pulley retaining nuts",
+        "section": "CO-5 — pulley retaining nuts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "water-pump-pulley",
@@ -11160,7 +11165,7 @@
       "quantityEvidence": {
         "count": 19,
         "sourceId": "rm718u-at-service",
-        "section": "AT-5/AT-7 \u2014 pan bolts",
+        "section": "AT-5/AT-7 — pan bolts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "transmission-pan",
@@ -11686,7 +11691,7 @@
       "quantityEvidence": {
         "count": 21,
         "sourceId": "rm718u-at-valve",
-        "section": "AT-8 \u2014 valve body removal",
+        "section": "AT-8 — valve body removal",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "valve-body",
@@ -11738,7 +11743,7 @@
     },
     {
       "id": "valve-body-channel-study",
-      "name": "Valve body surface ribs \u2014 not hydraulic routing",
+      "name": "Valve body surface ribs — not hydraulic routing",
       "system": "transmission",
       "status": "modeled",
       "accuracy": "unverified",
@@ -12492,7 +12497,7 @@
       "quantityEvidence": {
         "count": 4,
         "sourceId": "rm718u-at-service",
-        "section": "AT-5/AT-7 \u2014 strainer bolts",
+        "section": "AT-5/AT-7 — strainer bolts",
         "scope": "Documented quantity; 3D placement and fastener dimensions are estimates."
       },
       "meshName": "trans-strainer",
@@ -12935,5 +12940,15 @@
     ],
     "referenceDate": "2026-10-06",
     "basis": "RM718U component identities and service fastener counts, stock GS300 engine-bay photograph, Transtar A650E family exploded parts plate. Geometry remains original and estimated."
+  },
+  "intakeSurfaceRevision": {
+    "revision": "intake-2026-10-09",
+    "baseSha256": "8bb801e2ac2a2412119def71374ec5974ef2300d3507918c21d8c8bfdaaef5b4",
+    "sha256": "cf060bc0b3ace52b83a0ebc91189f11f5c85dbbccdf09cd708c81a07bb6a314a",
+    "triangleDelta": 16848,
+    "sourceIds": [
+      "gs300-engine-photo"
+    ],
+    "verified": false
   }
 }

@@ -63,6 +63,8 @@ See STARTER.md for the underlying framework and hosting integration.
 
 ## GS 300 model development
 
+The October 9 intake surface revision rebuilds five existing engine-bay groups and adds an [intake close-up study](https://zhandolia.github.io/wrenchwise/assembly/?study=air-intake). Read the [engine-bay audit and reproduction notes](docs/engine-bay-research-2026-10-09.md). It improves visual continuity, not dimensional verification. The downloadable Blender archive remains the v5 baseline; the current GLB contains the newer intake surfaces.
+
 Revision 3 replaces the generic exterior with an S160 pre-facelift photographic surface study. Both workshop views now use the same versioned model. This is still **not a verified 1:1 car**. Read [vehicle accuracy](docs/vehicle-accuracy.md) before contributing geometry. The searchable manifest distinguishes modeled groups from missing items; modeled groups may contain multiple physical pieces.
 
 Build with Blender 4.5:

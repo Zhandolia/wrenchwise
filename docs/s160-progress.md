@@ -1,5 +1,11 @@
 # S160 progress ledger
 
+## 2026-10-09 — Intake surface correction and engine-bay source audit
+
+Rebuilt five existing intake/MAF groups from the v5 installation estimates: smoother duct, path-aligned bellows and clamp bands, and attached sensor/connector detail. Added an intake-focused assembly study and the cross-vehicle source audit in `docs/engine-bay-research-2026-10-09.md`. Preserved all 759 inventory IDs and exterior attribution. Current GLB: 912,186 triangles, 7,987,348 bytes; still zero verified parts. The reusable 2JZ export excludes these groups and is unchanged. Blender ZIP is labeled as the earlier v5 baseline.
+
+Checks: 18 regression tests, mesh/inventory reconciliation, eight documented quantity groups, evidence/catalog generation, TypeScript and GitHub Pages production build. Local catalog check initially encountered checkout line endings; deterministic regeneration resolved it with no catalog content change. Browser inspection confirmed the revised intake renders and its dedicated camera frames the duct. This is a visual modeling checkpoint, not measured installation or procedure completion. The committing revision records the checkpoint; GitHub Actions records publication separately.
+
 Working rule from the project owner: push each major completed step to the GitHub repository to preserve progress. Keep commits descriptive and independently reviewable. Update this ledger when a milestone changes state. Planning a milestone does not complete it.
 
 | Date | Checkpoint | State | Evidence / commit |
