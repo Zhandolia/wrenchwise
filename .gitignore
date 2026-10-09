@@ -50,3 +50,5 @@ next-env.d.ts
 __pycache__/
 *.pyc
 *.blend1
+
+/dist-pages/

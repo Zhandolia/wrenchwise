@@ -21,4 +21,5 @@ jobs:
       - run: node --test tests/*.test.mjs
       - run: node modeling/s160/validate_web.mjs
       - run: npx tsc --noEmit
-      - run: npm run build
+      - run: npm run build:pages
+      - run: node scripts/validate-pages.mjs

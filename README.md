@@ -2,18 +2,35 @@
 
 An open-source 3D automotive learning workshop. The first experience is an illustrative inline-six anatomy exploration for the 2000 Lexus GS 300 concept. **It is not a dimensionally accurate 2JZ-GE model or a verified repair procedure.**
 
+**Website:** https://zhandolia.github.io/wrenchwise/
+
+GitHub Pages builds and publishes this repository on every push to `main`, using `.github/workflows/pages.yml`. The public site runs entirely on GitHub Pages, with no dependency on ChatGPT hosting.
+
 ## Included
 
 - Three.js orbit, zoom, touch, keyboard controls and named component selection.
 - Shared GS 300 vehicle/engine assembly, removable hood, timing cover visibility, exploded assembly and chapter-linked highlighting.
 - Six anatomy chapters, parts-planning checklist and link to Toyota/Lexus TIS.
 - Lexus sedan/SUV collection with explicit model-needed states.
-- Durable GLB storage in R2, source/fitment/license metadata in D1, and persistent vehicle/chapter comments.
+- Browser-local GLB imports, source/fitment/license metadata, and persistent local vehicle/chapter notes using IndexedDB. Files and notes stay on the current browser/device; they are not shared or synced. Clearing site storage removes them.
 - GLB 2.0 upload validation, 20 MB size limit, self-contained assets, no required compression extensions, vertex/node limits.
 - Feature-detected WebMCP tools for reading workshop state and navigating the demo chapters.
 - MIT license for application code and original procedural geometry. Dependencies and uploaded assets keep their own licenses.
 
-## Develop
+## Develop the GitHub Pages site
+
+```sh
+npm ci
+npm run dev:pages
+# Production artifact and local preview:
+npm run build:pages
+node scripts/validate-pages.mjs
+npm run preview:pages
+```
+
+The default base path is `/wrenchwise/`. Direct links to `/catalog/`, `/assembly/`, `/components/` and `/research/` have real static directory entrypoints beneath that prefix. Set `PAGES_BASE_PATH=/` only when deploying to a domain root. `dist-pages/` contains only public assets and the static application; server routes, credentials and the earlier database are not included.
+
+## Legacy server development
 
 Use Node 24 LTS (validated on 24.19.0). Node 26 caused a Vite initialization hang in the development environment.
 
@@ -28,13 +45,13 @@ Apply the initial migration once per local database. Do not replay it. Later sch
 
 ## Architecture
 
-React 19 / TypeScript, Vinext / Vite, Three.js, Shadcn/Radix UI; Cloudflare Worker-compatible server; D1 + R2. `app/page.tsx` owns the workshop interface, `components/assembly-viewer.tsx` renders the GS 300 asset, `components/workshop-viewer.tsx` renders community uploads, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, and `app/api/` contains storage routes. The viewer renders on camera/scene changes and caps the assembly pixel ratio at 1.6. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
+React 19 / TypeScript, Vite, Three.js and Shadcn/Radix UI. `pages/main.tsx` routes the static application; `lib/app-path.ts` resolves repository-relative URLs, and `lib/workshop-client.ts` provides IndexedDB storage for GitHub Pages. A legacy Vinext / Cloudflare Worker server with D1 + R2 is retained for reference. `app/page.tsx` owns the workshop interface, `components/assembly-viewer.tsx` renders the GS 300 asset, `components/workshop-viewer.tsx` renders community uploads, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, and `app/api/` contains storage routes. The viewer renders on camera/scene changes and caps the assembly pixel ratio at 1.6. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
 
-This first hosted build is owner-private. Storage endpoints rely on that platform access boundary and enforce same-origin browser writes. Before opening community writes publicly, add verified contributor identity, moderation, quotas/rate limiting, ownership checks and deletion controls. Names on current comments are display names, not verified identities.
+The earlier owner-private server build remains in the source for reference, but it is not part of the GitHub Pages deployment. Its D1/R2 records have not been copied into the public site. GitHub Pages has no shared write API. Restoring public community submissions requires a separately configured backend with identity, moderation and ownership controls.
 
 ## Add a model
 
-Upload a self-contained, uncompressed GLB via **Contribute a model**. Include year, engine, market, original source/creator and asset license. Use named meshes, embedded textures preferably <= 2K, fewer than one million vertices and 1,500 nodes. Imported geometry can be inspected; guide authoring and mapping are not included in this first version. No upload is automatically verified. Uploads and comments are not bundled in the source archive.
+Import a self-contained, uncompressed GLB via **Import a model**. The model is stored locally in the browser. To add a model for everyone, contribute licensed assets and source metadata through a repository pull request. Include year, engine, market, original source/creator and asset license. Use named meshes, embedded textures preferably <= 2K, fewer than one million vertices and 1,500 nodes. Imported geometry can be inspected; guide authoring and mapping are not included in this first version. No upload is automatically verified. Uploads and comments are not bundled in the source archive.
 
 ## Repair-grade content gate
 
