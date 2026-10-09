@@ -1,13 +1,29 @@
 import {appPath} from '@/lib/app-path';
+import lexusExpansion from '@/research/lexus-expansion-2026-10-09.json';
 import classAudit from '@/research/lexus-class-modeling.json';
 import audit from '@/research/vehicle-sources.json';
 import licenses from '@/research/asset-licenses.json';
 import {Wrench,ChevronLeft,ExternalLink} from 'lucide-react';
 import '../assembly/assembly.css';
+import './research.css';
 const ready=new Set(['gs300','gs400','gs430','rx300']);
 const label=(id:string)=>id.replace(/([a-z]+)(\d+)/,'$1 $2').toUpperCase();
 const status=(value:string)=>({'missing':'Missing','perspective-only':'Oblique only','photographic-view':'Photo found','photographic-side-view':'Photo found','oblique-roof-only':'Roof angle only','side-candidates-awaiting-handedness-review':'Needs review'}[value]||value);
 export default function ResearchPage(){return <div className="assembly-app"><header className="assembly-header"><a className="brand" href={appPath("/")}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><a className="back-workshop" href={appPath("/assembly")}><ChevronLeft size={15}/>GS 300 assembly</a></header><main className="assembly-main"><div className="assembly-heading"><div><div className="eyebrow orange">VEHICLE GEOMETRY / SOURCE AUDIT</div><h1>Evidence for every Lexus.</h1><p>Lexus model sources, accepted visual references and unfinished geometry</p></div></div><div className="accuracy-banner"><span><strong>The full catalog is not complete.</strong> The ES XV70 now has an exterior and cabin reference. LS, IS, GX and LX still lack accepted stock reference geometry. No model is approved as a 1:1 or repair-grade replica, and no complete set of six OEM views has been found.</span></div>
+<section id="requested-lexus-models" style={{marginTop:32}}>
+<div className="eyebrow orange">LS 400 / LS 430 / ES 300 / ES 330 · OCTOBER 9 RESEARCH</div>
+<h2>Four targets, four distinct engine installations.</h2>
+<p>Manufacturer specifications, engine-bay photos and six asset candidates reviewed. These are working model years from the existing catalog. No new vehicle mesh has passed review; none is a verified 1:1 replica.</p>
+<div className="research-grid">{lexusExpansion.targets.map(t=><article key={t.id}>
+<span className="source-chip">{t.workingYear} · US / LHD TARGET</span><h3>Lexus {t.name}</h3>
+<p>{t.generation}<br/>{t.engine} · {t.transmission}</p>
+<p><strong>{t.modelStatus}</strong></p>
+<p>Nominal body: {t.nominalEnvelopeInches.length} × {t.nominalEnvelopeInches.bodyWidth} × {t.nominalEnvelopeInches.height} in; wheelbase {t.nominalEnvelopeInches.wheelbase} in. Published dimensions do not validate a mesh.</p>
+<details><summary>Findings and next modeling work</summary><ul>{t.findings.map(f=><li key={f}>{f}</li>)}</ul><h4>Next modeling work</h4><ol>{t.firstModelingWork.map(f=><li key={f}>{f}</li>)}</ol><h4>Missing evidence</h4><ul>{t.blockers.map(b=><li key={b}>{b}</li>)}</ul></details>
+<details><summary>Research sources</summary><ul>{t.sourceIds.map(id=>{const s=lexusExpansion.sources.find(s=>s.id===id)!;return <li key={id}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a><p>{s.review}</p></li>})}</ul></details>
+</article>)}</div>
+<p><a className="evidence-link" href={appPath('/research/lexus-expansion-2026-10-09.json')} download>Download research, candidate reviews and measurement requirements</a></p>
+</section>
 <section style={{marginTop:24}}><h2>LS · IS · ES · GX · LX</h2><div style={{overflowX:'auto'}}><table style={{width:'100%',borderCollapse:'collapse',fontSize:14}}><thead><tr>{['Family','Current result','Remaining work'].map(t=><th key={t} style={{textAlign:'left',padding:12}}>{t}</th>)}</tr></thead><tbody>{classAudit.candidates.map(c=><tr key={c.family}><td style={{padding:12}}>Lexus {c.family}</td><td style={{padding:12}}>{c.family==='ES'?<a href={appPath("/?vehicle=lexus-es-xv70-reference")}>Explore XV70 exterior reference</a>:c.family==='IS'?'Development mesh fails stock-vehicle review':'Source candidate only'}</td><td style={{padding:12}}>{c.notes}</td></tr>)}</tbody></table></div><p><a className="evidence-link" href={appPath("/research/lexus-class-modeling.json")}>Download class modeling status and next steps</a></p><h2>Initial sedan and SUV photo audit</h2><p>11 initial targets · 230 OEM photo records · 228 distinct files. The newer ES XV70 reference does not replace the ES 300 or ES 330 targets below.</p></section>
 <p>The confirmed GS 300 target is a stock US-market 2000 automatic; mesh fitment remains unverified. The other model years below are working targets. Canadian manufacturer photos help establish body shape; US equipment and adjacent-year differences remain explicit. “Photo found” means a photographic view, not a calibrated blueprint.</p>
 <div style={{overflowX:'auto',margin:'24px 0'}}><table style={{width:'100%',borderCollapse:'collapse',fontSize:14}}><thead><tr>{['Vehicle target','Photos','Front','Rear','Left','Right','Top','Underbody','Geometry'].map(x=><th key={x} style={{textAlign:'left',padding:12,borderBottom:'1px solid #38424b'}}>{x}</th>)}</tr></thead><tbody>{audit.vehicles.map(v=><tr key={v.vehicle}><td style={{padding:12}}><a href={'#'+v.vehicle}>{v.targetYear} {label(v.vehicle)}</a></td><td>{v.photos.length}</td>{Object.values(v.sixViewCoverage).map((c,i)=><td key={i} style={{padding:8,color:c.status==='missing'?'#eeac83':undefined}}>{status(c.status)}</td>)}<td>{ready.has(v.vehicle)?'Exterior reference':'Not accepted'}</td></tr>)}</tbody></table></div>

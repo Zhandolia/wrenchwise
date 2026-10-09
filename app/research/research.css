@@ -1,0 +1,10 @@
+#requested-lexus-models .research-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+#requested-lexus-models details { margin-top: 12px; }
+#requested-lexus-models summary { cursor: pointer; }
+#requested-lexus-models summary:focus-visible { outline: 2px solid #ffab76; outline-offset: 4px; }
+#requested-lexus-models details ul, #requested-lexus-models details ol { padding-left: 22px; margin: 12px 0; }
+#requested-lexus-models details ul { list-style: disc; }
+#requested-lexus-models details ol { list-style: decimal; }
+#requested-lexus-models details li { margin: 10px 0; }
+#requested-lexus-models details a { color: #ffab76; text-decoration: underline; overflow-wrap: anywhere; }
+@media (max-width: 700px) { #requested-lexus-models .research-grid { grid-template-columns: 1fr; } }

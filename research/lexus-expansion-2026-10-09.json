@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09",
+  "scope": "LS400, LS430, ES300 and ES330 acquisition and modeling research. Builds on the existing photo audit. This is not a completed geometry delivery or an exhaustive asset-market survey.",
+  "completeVehicleModels": 0,
+  "physicallyVerifiedParts": 0,
+  "yearDecision": "Existing catalog years are preserved. Alternative 2004 LS430 and 2003 ES300 years were proposed in the conversation but have not been selected by the owner.",
+  "sources": [
+    {
+      "id": "ls400-us-2000",
+      "title": "Lexus US 2000 LS400 brochure, pp. 1–2",
+      "url": "https://www.auto-brochures.com/makes/lexus/LS/Lexus_US%20LS_2000.pdf",
+      "kind": "manufacturer-document-mirror",
+      "review": "Document text reviewed; identifies nominal body dimensions, VVT-i V8, five-speed transmission and suspension-height options. No part coordinates."
+    },
+    {
+      "id": "ls400-us-gallery",
+      "title": "Lexus US second-generation LS400 archive",
+      "url": "https://pressroom.lexus.com/album/1995-2000-lexus-ls-400-second-2nd-generation/",
+      "kind": "manufacturer-gallery",
+      "review": "Archive includes a labeled 2000 engine image and several 1998 engine images. Direct 2000 image fetch returned 403; its pixels were not reviewed in this pass."
+    },
+    {
+      "id": "ls400-ca-gallery",
+      "title": "Lexus Canada 2000 LS400 photo archive",
+      "url": "https://media.lexus.ca/en/albums/2000/2000-lexus-ls-400.html",
+      "kind": "manufacturer-gallery",
+      "review": "Side-profile image 03 re-downloaded and visually inspected. Perspective and Canadian-market applicability remain limits. Existing audit rejects image 07 as a GS interior."
+    },
+    {
+      "id": "ls430-us-2001",
+      "title": "Lexus US 2001 LS specifications, pp. 1–2",
+      "url": "https://xr793.com/wp-content/uploads/2022/01/2001-Lexus-LS-Specs.pdf",
+      "kind": "manufacturer-document-mirror",
+      "review": "Document text reviewed. Earlier LS430: five-speed automatic, standard and air-suspension dimensions distinguished."
+    },
+    {
+      "id": "ls430-ca-2004",
+      "title": "Lexus Canada 2004 LS430 specifications",
+      "url": "https://media.lexus.ca/en/specifications/2004/2004-lexus-ls-430-specifications.html",
+      "kind": "manufacturer-document",
+      "review": "Six-speed transmission confirmed. Published 4995 mm length conflicts with the 5025 mm UK facelift specification; do not combine them into an exact US target."
+    },
+    {
+      "id": "ls430-uk-facelift",
+      "title": "Lexus UK LS430 facelift launch pack, technical specifications pp. 36–37",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/Gen3-MC-LS-UK-launch-pack-2003.pdf",
+      "kind": "manufacturer-document",
+      "review": "3UZ-FE and A761E six-speed identified. UK specification: length 5025 mm, width 1830 mm, wheelbase 2925 mm. UK equipment is not proof of US installation."
+    },
+    {
+      "id": "ls430-2004-photo",
+      "title": "Victory Motors photographed 2004 LS430",
+      "url": "https://www.victorymotorsofcolorado.com/inventory/2004-lexus-ls-430-/930947",
+      "kind": "first-party-used-vehicle-photography",
+      "review": "Engine-bay photograph inspected. Battery behind the right-side intake trim, central silver/black 4.3 cover and curved forward intake visible. Aftermarket battery and hidden hardware cannot establish original specification."
+    },
+    {
+      "id": "es300-us-2000",
+      "title": "Lexus US 2000 ES300 brochure, pp. 1–2",
+      "url": "https://www.auto-brochures.com/makes/lexus/ES/Lexus_US%20ES_2000.pdf",
+      "kind": "manufacturer-document-mirror",
+      "review": "Nominal dimensions, four-speed transmission and revised 2000 grille/bumper confirmed. This is XV20, separate from the proposed 2003 XV30 target."
+    },
+    {
+      "id": "es300-2000-photo",
+      "title": "Victory Motors photographed 2000 ES300",
+      "url": "https://www.victorymotorsofcolorado.com/inventory/2000-lexus-es-300-base/470189",
+      "kind": "first-party-used-vehicle-photography",
+      "review": "Engine-bay photograph downloaded and inspected. Silver/grey VVT-i cover with oil-cap opening and lower slots, rear cast intake runners, right-side airbox in the image, forward heat shield and radiator hose are visible. Replacement battery and service labels do not establish original equipment; hidden dimensions remain unknown."
+    },
+    {
+      "id": "es300-2003-vin",
+      "title": "Toyota manufacturer 2003 VDS filing held by NHTSA",
+      "url": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/01-022-N11B-9550.pdf",
+      "kind": "manufacturer-filing",
+      "review": "Engine/model identification reference for the proposed 2003 alternative. It does not measure the installation or establish compatibility with the 2000 car."
+    },
+    {
+      "id": "es330-us-2004",
+      "title": "Lexus US 2004 ES brochure, performance and specifications",
+      "url": "https://xr793.com/wp-content/uploads/2022/01/2004-Lexus-ES.pdf",
+      "kind": "manufacturer-document-mirror",
+      "review": "3.3-litre V6, five-speed automatic, ETCS-i and ACIS documented. Exterior uses the pre-2005 facelift appearance. Nominal US dimensions on printed p. 13: 191.1 × 71.3 × 57.3 inches; wheelbase 107.1 inches."
+    },
+    {
+      "id": "es330-ca-2004",
+      "title": "Lexus Canada 2004 ES330 specifications, p. 5",
+      "url": "https://media.lexus.ca/en/specifications/2004/2004-lexus-es-330-specifications.html",
+      "kind": "manufacturer-document",
+      "review": "Nominal dimensions 4855 × 1810 × 1455 mm; wheelbase 2720 mm. Canadian equipment/options must remain separate from US fitment."
+    },
+    {
+      "id": "es330-2004-photo",
+      "title": "Victory Motors photographed 2004 ES330",
+      "url": "https://www.victorymotorsofcolorado.com/inventory/2004-lexus-es-330-/144465",
+      "kind": "first-party-used-vehicle-photography",
+      "review": "Engine-bay photograph inspected. Silver 3.3 cover with oil-cap opening, rear cross-bay brace, rear intake, front exhaust heat shield and exposed alternator are visible. Green replacement battery is not an OEM color/size reference."
+    },
+    {
+      "id": "lexus-tis",
+      "title": "Toyota/Lexus Technical Information System",
+      "url": "https://techinfo.toyota.com/",
+      "kind": "service-document-access-route",
+      "review": "Access route only. No subscription purchased, no restricted manual retrieved and no repair procedure certified."
+    },
+    {
+      "id": "es330-2004-vds",
+      "title": "Toyota/Lexus 2004 manufacturer VDS filing, p. 3",
+      "url": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/01-022-N11B-9601.pdf",
+      "kind": "manufacturer-filing",
+      "review": "Identifies ES330 as MCV31L with 3MZ-FE. Identification only; no component dimensions or installation interchangeability."
+    },
+    {
+      "id": "ls400-uk-facelift",
+      "title": "Lexus UK revised LS400 launch pack, technical specifications p. 19",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/Gen2-LS-MC-launch-pack.pdf",
+      "kind": "manufacturer-document",
+      "review": "Indexed technical specification identifies 1UZ-FE 90-degree V8 with VVT-i and five-speed automatic. US-specific equipment and dimensions use the US brochure instead."
+    }
+  ],
+  "targets": [
+    {
+      "id": "ls400",
+      "name": "LS 400",
+      "workingYear": 2000,
+      "generation": "UCF20 facelift",
+      "market": "US / LHD / stock automatic; physical vehicle unidentified",
+      "engineId": "1uz-fe-vvti",
+      "engine": "1UZ-FE VVT-i V8",
+      "transmission": "Five-speed automatic; exact unit identification pending",
+      "sourceIds": [
+        "ls400-us-2000",
+        "ls400-us-gallery",
+        "ls400-ca-gallery",
+        "ls400-uk-facelift"
+      ],
+      "nominalEnvelopeInches": {
+        "length": 196.7,
+        "bodyWidth": 72,
+        "height": 56.5,
+        "wheelbase": 112.2
+      },
+      "dimensionSourceId": "ls400-us-2000",
+      "dimensionStatus": "published nominal values, not measured geometry",
+      "modelStatus": "No accepted stock vehicle mesh",
+      "assetUrl": null,
+      "findings": [
+        "Preserve the 1998–2000 facelift lamps, grille and bumpers; first-generation and earlier UCF20 shapes are different references.",
+        "The US brochure lists 55.9-inch height with optional air suspension versus 56.5 inches unloaded standard; do not average or stretch the mesh to both.",
+        "The inspected side photograph is useful for silhouette and wheel-center comparison, but provides neither the hidden side nor a calibrated top view.",
+        "The existing GS400 engine-family record can be linked for research. It cannot establish LS400 sump, mount, intake or wiring interchangeability."
+      ],
+      "firstModelingWork": [
+        "Acquire or author a stock facelift body with separately modeled hood and inner fenders.",
+        "Establish engine/crank, strut-tower and radiator datums from a measured reference car.",
+        "Model the intake, cover, radiator/fan pack, battery tray and reservoirs from matched installed and removed-part views."
+      ],
+      "blockers": [
+        "Reviewed LS400 candidate is modified VIP trim.",
+        "No calibrated bay scan or measured installation interfaces.",
+        "No accepted exterior topology; the prior procedural trial failed visual review."
+      ]
+    },
+    {
+      "id": "ls430",
+      "name": "LS 430",
+      "workingYear": 2001,
+      "generation": "UCF30 before facelift",
+      "market": "US / LHD / stock automatic; physical vehicle unidentified",
+      "engineId": "3uz-fe",
+      "engine": "3UZ-FE V8",
+      "transmission": "Five-speed automatic for current target; 2004 alternative has six speeds",
+      "sourceIds": [
+        "ls430-us-2001",
+        "ls430-ca-2004",
+        "ls430-uk-facelift",
+        "ls430-2004-photo"
+      ],
+      "nominalEnvelopeInches": {
+        "length": 196.7,
+        "bodyWidth": 72,
+        "height": 57.9,
+        "wheelbase": 115.2
+      },
+      "dimensionSourceId": "ls430-us-2001",
+      "dimensionStatus": "published nominal values, not measured geometry",
+      "modelStatus": "Downloadable candidate awaiting file and provenance review",
+      "assetUrl": null,
+      "findings": [
+        "Keep 2001–2003 appearance and five-speed transmission separate from the later facelift and six-speed installation.",
+        "The current US target has a 57.9-inch standard-suspension height; the brochure lists 57.7 inches with optional air suspension.",
+        "A candidate preview shows a green exterior with unresolved glass/lamp materials. The thumbnail does not reveal engine, underbody or topology quality.",
+        "The inspected 2004 bay photograph supports a later installation study only. Do not transplant its cover/duct coordinates into the 2001 target.",
+        "For the proposed 2004 target, reconcile the Canadian 4995 mm and UK 5025 mm length claims against the exact US brochure before choosing scale."
+      ],
+      "firstModelingWork": [
+        "Obtain the candidate through its normal download; inspect creator attribution, hidden meshes, orientation, scale and six views.",
+        "Resolve the facelift and suspension package, then validate wheelbase, body width and multiple independent dimensions.",
+        "Separate the engine appearance cover and surrounding bay trim; capture the intake, cooling, belt-drive and electrical components underneath."
+      ],
+      "blockers": [
+        "Sketchfab download opens a login form; file not acquired.",
+        "Uploader title spans 2000–2006 and does not establish exact year.",
+        "No measured under-hood components or interfaces."
+      ]
+    },
+    {
+      "id": "es300",
+      "name": "ES 300",
+      "workingYear": 2000,
+      "generation": "XV20 facelift",
+      "market": "US / LHD / stock automatic; physical vehicle unidentified",
+      "engineId": "1mz-fe-vvti",
+      "engine": "1MZ-FE VVT-i V6",
+      "transmission": "Four-speed automatic; proposed 2003 alternative belongs to a different generation",
+      "sourceIds": [
+        "es300-us-2000",
+        "es300-2000-photo",
+        "es300-2003-vin"
+      ],
+      "nominalEnvelopeInches": {
+        "length": 190.2,
+        "bodyWidth": 70.5,
+        "height": 54.9,
+        "wheelbase": 105.1
+      },
+      "dimensionSourceId": "es300-us-2000",
+      "dimensionStatus": "published nominal values, not measured geometry",
+      "modelStatus": "Earlier-year photoscan is reference-only candidate",
+      "assetUrl": null,
+      "findings": [
+        "The 1997 photoscan is XV20 before the 2000 grille and lower-bumper changes; it is not the proposed 2003 XV30 car either.",
+        "The scan preview has missing/distorted roof and windshield areas and includes ground geometry. It needs reconstruction, not just a material change.",
+        "The current target has front-wheel drive and a transverse engine bay; GS or LS longitudinal installation geometry is unsuitable.",
+        "Retain the VVT-i variant distinction. A shared engine-family name alone does not confirm accessory, throttle, sump or harness layout."
+      ],
+      "firstModelingWork": [
+        "Acquire the scan as a reference if access is supplied, then inspect scale and topology before accepting any part of it.",
+        "Reconstruct stock 2000 fascia, lamps and damaged scan regions against exact-year references.",
+        "Capture rear-bank clearance, intake and throttle connections, front accessory drive, radiator fans and battery tray."
+      ],
+      "blockers": [
+        "Available scan is a different model year and visibly incomplete.",
+        "No exact-target complete licensed source was identified in this search.",
+        "No calibrated dimensions for internal or mating surfaces."
+      ]
+    },
+    {
+      "id": "es330",
+      "name": "ES 330",
+      "workingYear": 2004,
+      "generation": "XV30 / MCV31 before 2005 facelift",
+      "market": "US / LHD / stock automatic; physical vehicle unidentified",
+      "engineId": "3mz-fe",
+      "engine": "3MZ-FE VVT-i V6",
+      "transmission": "Five-speed automatic; exact unit identification pending",
+      "sourceIds": [
+        "es330-us-2004",
+        "es330-ca-2004",
+        "es330-2004-photo",
+        "es330-2004-vds"
+      ],
+      "nominalEnvelopeInches": {
+        "length": 191.1,
+        "bodyWidth": 71.3,
+        "height": 57.3,
+        "wheelbase": 107.1
+      },
+      "dimensionSourceId": "es330-us-2004",
+      "dimensionStatus": "published nominal values, not measured geometry",
+      "modelStatus": "No accepted redistributable vehicle mesh",
+      "assetUrl": null,
+      "findings": [
+        "Do not substitute the existing XV70 ES350 mesh; its body and powertrain belong to another generation.",
+        "The existing manufacturer-photo audit rejects a 3.0 engine image and ES300 badge inside the ES330 album; retain those exclusions.",
+        "The inspected dealer photograph supports separate modeling of the oil-cap opening, intake duct, rear brace, front heat shield and alternator; occluded geometry remains unknown.",
+        "A printable Windom/ES listing has private-use terms in the previous audit. Reuse in a public downloadable GLB is not established.",
+        "Keep 1MZ and 3MZ engine records separate. Similar exterior packaging does not prove identical castings, ports, fasteners or wiring."
+      ],
+      "firstModelingWork": [
+        "Author or acquire a stock 2004 body and hood with redistribution rights.",
+        "Model the 3.3 cover and intake from matched views with physical dimensions, then the accessory/cooling/electrical assemblies.",
+        "Capture the engine with the appearance cover removed and the firewall-side bank from both sides."
+      ],
+      "blockers": [
+        "Exact-target public vehicle mesh not found in the sampled sources.",
+        "Printable source license does not establish public asset redistribution.",
+        "The engine photograph does not expose hidden casting or installation dimensions."
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "vehicle": "ls400",
+      "url": "https://sketchfab.com/3d-models/5cdef78a0ccc43b8a1d28d0acd70acac",
+      "author": "Drifter Models",
+      "listedLicense": "CC BY 4.0",
+      "status": "rejected-for-stock-target",
+      "fileAcquired": false,
+      "reason": "VIP-modified vehicle; existing audit already rejects stock fitment. Listing metadata rechecked."
+    },
+    {
+      "vehicle": "ls430",
+      "url": "https://sketchfab.com/3d-models/4cf8d47f47b941498b8c5b098bbb9431",
+      "author": "Merc_TV",
+      "listedLicense": "CC BY 4.0",
+      "status": "login-required-and-unreviewed",
+      "fileAcquired": false,
+      "reason": "805469 triangles stated by API. Thumbnail reviewed; download triggers login. No original-creator description, exact facelift, hidden geometry or measured accuracy established."
+    },
+    {
+      "vehicle": "ls430",
+      "url": "https://sketchfab.com/3d-models/6d0660bb631b40f9b74c1dfc4e829393",
+      "author": "Merc_TV",
+      "listedLicense": "CC BY 4.0 in existing audit; not newly rechecked",
+      "status": "possible-duplicate-candidate",
+      "fileAcquired": false,
+      "reason": "Search result has same title, author and triangle count as the other upload. These signals do not prove binary identity."
+    },
+    {
+      "vehicle": "es300",
+      "url": "https://sketchfab.com/3d-models/5eaed54fd300415a9ea88505a15cc750",
+      "author": "Giz",
+      "listedLicense": "CC BY 4.0",
+      "status": "different-year-reference-candidate",
+      "fileAcquired": false,
+      "reason": "Author describes a Polycam video scan intended as modeling reference. 79896 triangles; thumbnail shows roof/glass defects and ground plane. 1997, not 2000 or 2003."
+    },
+    {
+      "vehicle": "es300",
+      "url": "https://sketchfab.com/3d-models/a3dfa45bd50a44c68b6ab205af7bc327",
+      "author": "OUTPISTON",
+      "listedLicense": "not reviewed",
+      "status": "wrong-generation",
+      "fileAcquired": false,
+      "reason": "Search result is a 1992 ES300, not either working target. No import attempted."
+    },
+    {
+      "vehicle": "es330",
+      "url": "https://cults3d.com/pt/modelo-3d/jogo/toyota-windom-mcv30-lexus-es300-es330-2001-2006-3d-printable-car-model-for-pri",
+      "author": "not newly reviewed",
+      "listedLicense": "private-use in existing audit",
+      "status": "redistribution-not-established",
+      "fileAcquired": false,
+      "reason": "Prior audit rejects license; no purchase or new license grant in this pass."
+    }
+  ],
+  "captureRequirements": [
+    {
+      "id": "configuration",
+      "request": "Record exact year, production month, market, steering side, engine/transmission tags, suspension and modifications. Use a pseudonymous car reference; do not publish the owner's details or full VIN.",
+      "status": "pending"
+    },
+    {
+      "id": "body",
+      "request": "Front, rear, both sides, roof and underbody with calibrated cameras and multiple scale references. Record wheel centers, body width excluding mirrors, wheelbase and ride height.",
+      "status": "pending"
+    },
+    {
+      "id": "bay-installed",
+      "request": "Overhead bay, both front quarters, firewall and front accessory drive. Include radiator support, strut towers and engine mounting datums.",
+      "status": "pending"
+    },
+    {
+      "id": "bay-uncovered",
+      "request": "Same camera positions with appearance covers removed by an appropriately skilled person. Capture otherwise hidden hose, connector and fastener relationships.",
+      "status": "pending"
+    },
+    {
+      "id": "parts",
+      "request": "Multi-view captures of each removed component and its mating faces: bores, hole centers, mounting thicknesses, connector keying and hose diameters. Record uncertainty and measuring method.",
+      "status": "pending"
+    },
+    {
+      "id": "review",
+      "request": "Independent comparison of dimensions, stock identity, clearances and access on the reference vehicle before enabling repair instructions.",
+      "status": "pending"
+    }
+  ],
+  "acceptance": [
+    "Match a single year, market, facelift, engine, driveline and suspension configuration.",
+    "Establish original creator, license, permitted public GLB redistribution and required attribution.",
+    "Check front/rear/left/right/top/underbody against the reference before accepting a vehicle mesh.",
+    "Use metres without non-uniform stretching; compare several independent measured datums and report error and uncertainty.",
+    "Separate real selectable parts and mating faces; artistic material groups are not OEM parts.",
+    "Review engine-bay placement and physical access separately from exterior appearance.",
+    "Keep unmeasured surfaces explicitly provisional and prevent them from enabling repair procedures."
+  ],
+  "publication": {
+    "newVehicleMeshesUploaded": 0,
+    "reason": "No candidate has passed configuration, source-file, rights/provenance and geometry review. Photos and nominal dimensions alone do not establish 1:1 parts.",
+    "sourceImagesRedistributed": false
+  }
+}

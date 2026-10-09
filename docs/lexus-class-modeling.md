@@ -1,5 +1,13 @@
 # Lexus LS / IS / ES / GX / LX modeling checkpoint — 2026-10-06
 
+## October 9: LS400, LS430, ES300 and ES330 research
+
+The requested four-car expansion is **not a completed model delivery**. Six candidates and sixteen source records are tracked in `research/lexus-expansion-2026-10-09.json`, published at `/research/#requested-lexus-models`. Existing working years remain 2000 LS400, 2001 LS430, 2000 ES300 and 2004 ES330. The proposed 2004 LS430 and 2003 ES300 alternatives have not been selected. Generation and engine-family links now distinguish UCF20/1UZ, UCF30/3UZ, XV20/1MZ and XV30/3MZ; none enables shared installation geometry.
+
+Manufacturer brochures establish nominal envelopes and configuration differences. Matched dealer engine photographs were inspected for 2000 ES300, 2004 ES330 and the alternative 2004 LS430. The 1997 ES300 scan has visible roof/glass defects and predates the current target's facelift. The LS430 download requires login, and its broad year label and uploader license still require source-file and provenance review. The modified LS400 and private-use ES/Windom candidates do not establish suitable stock, redistributable meshes.
+
+The ledger records source scope, incompatible references, unresolved dimensions, per-car modeling work and capture requirements. No new meshes were uploaded; no physical parts were verified. Next: obtain acceptable source files or calibrated reference captures, inspect the exterior from six views, then model and measure the installed engine bay and separate parts. Engine labels and brochure dimensions alone cannot certify a 1:1 vehicle.
+
 This checkpoint adds one accepted **visual reference**, not five completed replicas. No complete 1:1 or service-ready model is established. Generations remain separate within each family; engine badges do not create duplicate body families, and shared families do not establish compatible engines or parts.
 
 ## ES: XV70 exterior and cabin

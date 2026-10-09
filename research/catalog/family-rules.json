@@ -2,11 +2,11 @@
   "scope": "Navigation aliases only. Body styles, source generations, markets and configuration records remain distinct. No shared fitment inferred.",
   "aliases": {
     "Toyota": {
-      "Supra": [
-        "GR Supra"
-      ],
       "86": [
         "GR86"
+      ],
+      "Supra": [
+        "GR Supra"
       ],
       "Noah": [
         "NOAH"
@@ -73,33 +73,48 @@
   "targets": {
     "gs300": {
       "generationId": "s160",
-      "generationLabel": "S160 \u00b7 second generation",
+      "generationLabel": "S160 · second generation",
       "engineId": "2jz-ge-vvti"
     },
     "gs400": {
       "generationId": "s160",
-      "generationLabel": "S160 \u00b7 second generation",
+      "generationLabel": "S160 · second generation",
       "engineId": "1uz-fe-vvti"
     },
     "gs430": {
       "generationId": "s160",
-      "generationLabel": "S160 \u00b7 second generation",
+      "generationLabel": "S160 · second generation",
       "engineId": "3uz-fe"
     },
     "ls430": {
-      "generationId": "2001-target",
-      "generationLabel": "2001 target \u00b7 generation identification pending",
+      "generationId": "ucf30",
+      "generationLabel": "UCF30 · third generation · 2001 target",
       "engineId": "3uz-fe"
     },
     "toyota-gr-supra-reference": {
       "generationId": "a90-reference",
-      "generationLabel": "A90 visual reference \u00b7 exact configuration unresolved",
+      "generationLabel": "A90 visual reference · exact configuration unresolved",
       "engineId": null
     },
     "lexus-es-xv70-reference": {
       "generationId": "xv70-reference",
-      "generationLabel": "XV70 visual reference \u00b7 exact configuration unresolved",
+      "generationLabel": "XV70 visual reference · exact configuration unresolved",
       "engineId": null
+    },
+    "ls400": {
+      "generationId": "ucf20",
+      "generationLabel": "UCF20 · second generation · 2000 facelift target",
+      "engineId": "1uz-fe-vvti"
+    },
+    "es300": {
+      "generationId": "xv20",
+      "generationLabel": "XV20 · third generation · 2000 facelift target",
+      "engineId": "1mz-fe-vvti"
+    },
+    "es330": {
+      "generationId": "xv30",
+      "generationLabel": "XV30 · fourth generation · 2004 target",
+      "engineId": "3mz-fe"
     }
   }
 }

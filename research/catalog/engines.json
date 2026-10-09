@@ -20,12 +20,13 @@
     "status": "not-built",
     "assetUrl": null,
     "recordIds": [
-      "gs400"
+      "gs400",
+      "ls400"
     ],
     "sourceUrl": "https://xr793.com/wp-content/uploads/2022/01/2000-Lexus-GS-Specs.pdf",
-    "sourceScope": "Archived manufacturer US 2000 GS specifications; working target, physical vehicle unidentified.",
+    "sourceScope": "Archived manufacturer US 2000 GS specifications; working target, physical vehicle unidentified. LS400 family identification: Lexus UK revised LS400 launch pack, technical specifications p. 19; US fitment is a separate installation.",
     "reuseStatus": "No shared geometry approved",
-    "notes": "Different engine from the 3UZ-FE. Do not assign the GS300 inline-six assembly to this option."
+    "notes": "Different engine from the 3UZ-FE. Do not assign the GS300 inline-six assembly to this option. LS400 installation research is recorded at /research/lexus-expansion-2026-10-09.json; shared mounts, sump and accessories are not established."
   },
   {
     "id": "3uz-fe",
@@ -41,5 +42,33 @@
     "sourceScope": "UK October 2000 launch pack explicitly connects GS430 and LS430 engine family. US installation interchangeability remains unverified.",
     "reuseStatus": "Shared engine family candidate; installation variants unresolved",
     "notes": "Model the engine core once after references are validated; retain separate sump, mount, accessory, harness, exhaust and transmission-interface variants. No complete installation interchangeability claimed."
+  },
+  {
+    "id": "1mz-fe-vvti",
+    "name": "1MZ-FE VVT-i",
+    "architecture": "3.0 L V6",
+    "status": "not-built",
+    "assetUrl": null,
+    "recordIds": [
+      "es300"
+    ],
+    "sourceUrl": "https://www.auto-brochures.com/makes/lexus/ES/Lexus_US%20ES_2000.pdf",
+    "sourceScope": "US 2000 brochure confirms the 3.0 VVT-i V6 and four-speed transverse installation. Family code reference: Toyota 2003 VDS filing; the later car does not establish identical installed components.",
+    "reuseStatus": "No shared geometry approved",
+    "notes": "Working XV20 ES300 target. Keep non-VVT-i 1MZ variants, later XV30 packaging and the larger 3MZ separate; physical engine identification remains pending."
+  },
+  {
+    "id": "3mz-fe",
+    "name": "3MZ-FE VVT-i",
+    "architecture": "3.3 L V6",
+    "status": "not-built",
+    "assetUrl": null,
+    "recordIds": [
+      "es330"
+    ],
+    "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/01-022-N11B-9601.pdf",
+    "sourceScope": "Toyota/Lexus 2004 VDS filing explicitly identifies ES330 MCV31L and 3MZ-FE; US 2004 brochure documents displacement and VVT-i.",
+    "reuseStatus": "No shared geometry approved",
+    "notes": "Working 2004 ES330 target. Similarity to 1MZ or other 3MZ vehicles does not establish identical accessories, castings, wiring or installation. No repair-grade model exists."
   }
 ]
