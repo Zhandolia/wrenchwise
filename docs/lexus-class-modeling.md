@@ -2,6 +2,12 @@
 
 ## October 9: LS400, LS430, ES300 and ES330 research
 
+After sign-in, the LS430 GLB and original 1997 ES300 scan were acquired and inspected. The LS430 has missing wheels, a roll cage, an intercooler and multiple alternative engine groups. Its `pessima` group names and `2jz_gte.011` material raise unresolved provenance questions; it fails stock 3UZ-FE installation review. The file is retained locally, not redistributed. `modeling/validation/ls430-candidate-review.json` records its hash and findings.
+
+The ES300 scan is now downloadable and interactive at `/research/#es300-source-scan`, clearly labeled **1997 research reference only**. It preserves 79,896 triangles and the author's embedded JPEG. Roof/windshield damage, fused ground and missing mechanical underside are visible. Attribution and viewer metadata were added without changing the binary geometry or texture. Reproduce with `node modeling/lexus-classes/prepare_es300_scan.mjs /path/to/original.glb`; the script rejects a different source hash. It does not replace the 2000 target or enable repair instructions. All four requested complete stock models remain unfinished.
+
+### Initial research checkpoint (before sign-in)
+
 The requested four-car expansion is **not a completed model delivery**. Six candidates and sixteen source records are tracked in `research/lexus-expansion-2026-10-09.json`, published at `/research/#requested-lexus-models`. Existing working years remain 2000 LS400, 2001 LS430, 2000 ES300 and 2004 ES330. The proposed 2004 LS430 and 2003 ES300 alternatives have not been selected. Generation and engine-family links now distinguish UCF20/1UZ, UCF30/3UZ, XV20/1MZ and XV30/3MZ; none enables shared installation geometry.
 
 Manufacturer brochures establish nominal envelopes and configuration differences. Matched dealer engine photographs were inspected for 2000 ES300, 2004 ES330 and the alternative 2004 LS430. The 1997 ES300 scan has visible roof/glass defects and predates the current target's facelift. The LS430 download requires login, and its broad year label and uploader license still require source-file and provenance review. The modified LS400 and private-use ES/Windom candidates do not establish suitable stock, redistributable meshes.

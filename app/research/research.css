@@ -8,3 +8,9 @@
 #requested-lexus-models details li { margin: 10px 0; }
 #requested-lexus-models details a { color: #ffab76; text-decoration: underline; overflow-wrap: anywhere; }
 @media (max-width: 700px) { #requested-lexus-models .research-grid { grid-template-columns: 1fr; } }
+.research-scan { margin: 32px 0; padding: 24px; border: 1px solid #384b59; border-radius: 12px; background: #17242d; }
+.research-scan h2 { font-size: 22px; margin: 12px 0; }
+.research-scan p { line-height: 1.7; margin: 12px 0; }
+.research-scan a { color: #ffab76; text-decoration: underline; }
+.research-scan-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.research-scan-canvas { position: relative; height: 440px; margin-top: 18px; border: 1px solid #384b59; border-radius: 8px; overflow: hidden; background: #101a22; }

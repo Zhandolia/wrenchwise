@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-10-09",
+  "sourceUrl": "https://sketchfab.com/3d-models/4cf8d47f47b941498b8c5b098bbb9431",
+  "sourceSha256": "737696bfc662e941378af6283ca20069ba6a22af9bcf0acd6838d442d54c47c1",
+  "sourceBytes": 47068484,
+  "listedLicense": "CC BY 4.0; original authorship of mixed source unresolved",
+  "sourceMeshDefinitions": 119,
+  "renderedMeshObjects": 118,
+  "triangles": 805432,
+  "sourceTriangleCountClaim": 805469,
+  "materialCount": 37,
+  "nodeCount": 176,
+  "disposition": "rejected-stock-fitment-provenance-unresolved",
+  "publishedAsset": null,
+  "findings": [
+    "Downloaded source contains 119 mesh definitions and 805432 triangles. Local rendering shows missing wheels, a roll cage, intercooler and overlapping alternative engine groups. It does not represent the stock 3UZ-FE installation.",
+    "Many groups are named pessima and a material is named 2jz_gte.011. These are provenance flags, not proof of original authorship; uploader rights remain unresolved."
+  ],
+  "previewMethod": "Temporary specular/glossiness-to-PBR approximation for local inspection only. No source geometry modified or redistributed."
+}

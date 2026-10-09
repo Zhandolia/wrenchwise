@@ -185,23 +185,24 @@
       },
       "dimensionSourceId": "ls430-us-2001",
       "dimensionStatus": "published nominal values, not measured geometry",
-      "modelStatus": "Downloadable candidate awaiting file and provenance review",
+      "modelStatus": "Downloaded candidate rejected for stock fitment",
       "assetUrl": null,
       "findings": [
         "Keep 2001–2003 appearance and five-speed transmission separate from the later facelift and six-speed installation.",
         "The current US target has a 57.9-inch standard-suspension height; the brochure lists 57.7 inches with optional air suspension.",
-        "A candidate preview shows a green exterior with unresolved glass/lamp materials. The thumbnail does not reveal engine, underbody or topology quality.",
         "The inspected 2004 bay photograph supports a later installation study only. Do not transplant its cover/duct coordinates into the 2001 target.",
-        "For the proposed 2004 target, reconcile the Canadian 4995 mm and UK 5025 mm length claims against the exact US brochure before choosing scale."
+        "For the proposed 2004 target, reconcile the Canadian 4995 mm and UK 5025 mm length claims against the exact US brochure before choosing scale.",
+        "Downloaded source contains 119 mesh definitions and 805432 triangles. Local rendering shows missing wheels, a roll cage, intercooler and overlapping alternative engine groups. It does not represent the stock 3UZ-FE installation.",
+        "Many groups are named pessima and a material is named 2jz_gte.011. These are provenance flags, not proof of original authorship; uploader rights remain unresolved."
       ],
       "firstModelingWork": [
-        "Obtain the candidate through its normal download; inspect creator attribution, hidden meshes, orientation, scale and six views.",
+        "Replace the rejected mixed-part candidate with a stock source whose authorship and public redistribution rights are established.",
         "Resolve the facelift and suspension package, then validate wheelbase, body width and multiple independent dimensions.",
         "Separate the engine appearance cover and surrounding bay trim; capture the intake, cooling, belt-drive and electrical components underneath."
       ],
       "blockers": [
-        "Sketchfab download opens a login form; file not acquired.",
-        "Uploader title spans 2000–2006 and does not establish exact year.",
+        "Acquired mesh fails stock equipment and completeness review.",
+        "Original authorship of the mixed source parts remains unresolved.",
         "No measured under-hood components or interfaces."
       ]
     },
@@ -227,16 +228,17 @@
       },
       "dimensionSourceId": "es300-us-2000",
       "dimensionStatus": "published nominal values, not measured geometry",
-      "modelStatus": "Earlier-year photoscan is reference-only candidate",
+      "modelStatus": "1997 source scan available for research only",
       "assetUrl": null,
       "findings": [
         "The 1997 photoscan is XV20 before the 2000 grille and lower-bumper changes; it is not the proposed 2003 XV30 car either.",
         "The scan preview has missing/distorted roof and windshield areas and includes ground geometry. It needs reconstruction, not just a material change.",
         "The current target has front-wheel drive and a transverse engine bay; GS or LS longitudinal installation geometry is unsuitable.",
-        "Retain the VVT-i variant distinction. A shared engine-family name alone does not confirm accessory, throttle, sump or harness layout."
+        "Retain the VVT-i variant distinction. A shared engine-family name alone does not confirm accessory, throttle, sump or harness layout.",
+        "Original GLB acquired: one mesh, 79896 triangles and one embedded JPEG. Local review confirms severe roof/windshield defects, fused ground and an incomplete underside. No separately modeled engine bay."
       ],
       "firstModelingWork": [
-        "Acquire the scan as a reference if access is supplied, then inspect scale and topology before accepting any part of it.",
+        "Use the acquired 1997 scan only as a secondary shape reference; its damaged surfaces and unverified scale require independent reconstruction.",
         "Reconstruct stock 2000 fascia, lamps and damaged scan regions against exact-year references.",
         "Capture rear-bank clearance, intake and throttle connections, front accessory drive, radiator fans and battery tray."
       ],
@@ -305,9 +307,11 @@
       "url": "https://sketchfab.com/3d-models/4cf8d47f47b941498b8c5b098bbb9431",
       "author": "Merc_TV",
       "listedLicense": "CC BY 4.0",
-      "status": "login-required-and-unreviewed",
-      "fileAcquired": false,
-      "reason": "805469 triangles stated by API. Thumbnail reviewed; download triggers login. No original-creator description, exact facelift, hidden geometry or measured accuracy established."
+      "status": "rejected-stock-fitment-provenance-unresolved",
+      "fileAcquired": true,
+      "reason": "GLB inspected and rendered locally: missing wheels, roll cage, intercooler and alternative engine groups. Source contains pessima names and 2jz_gte.011 material; stock 3UZ-FE fitment and original authorship not established. Raw asset withheld from public repository.",
+      "sourceSha256": "737696bfc662e941378af6283ca20069ba6a22af9bcf0acd6838d442d54c47c1",
+      "sourceBytes": 47068484
     },
     {
       "vehicle": "ls430",
@@ -323,9 +327,12 @@
       "url": "https://sketchfab.com/3d-models/5eaed54fd300415a9ea88505a15cc750",
       "author": "Giz",
       "listedLicense": "CC BY 4.0",
-      "status": "different-year-reference-candidate",
-      "fileAcquired": false,
-      "reason": "Author describes a Polycam video scan intended as modeling reference. 79896 triangles; thumbnail shows roof/glass defects and ground plane. 1997, not 2000 or 2003."
+      "status": "acquired-research-reference-only",
+      "fileAcquired": true,
+      "reason": "Original one-mesh Polycam scan reviewed locally. Roof/glass damage, fused ground and missing mechanical underside confirmed. Published separately as a 1997 research reference with CC BY attribution; not a stock 2000 model or a repair assembly.",
+      "sourceSha256": "8e4af2bef0657a53478ee3dcae2fdee6d67843e3889c5d503399167e2e725c0b",
+      "sourceBytes": 4635648,
+      "referenceAssetUrl": "/models/research/es300-1997-source-scan.glb"
     },
     {
       "vehicle": "es300",
@@ -389,7 +396,8 @@
   ],
   "publication": {
     "newVehicleMeshesUploaded": 0,
-    "reason": "No candidate has passed configuration, source-file, rights/provenance and geometry review. Photos and nominal dimensions alone do not establish 1:1 parts.",
-    "sourceImagesRedistributed": false
+    "reason": "One earlier-year ES300 scan published in research only. No requested stock vehicle or engine bay completed. LS430 mixed-part mesh rejected; LS400 and ES330 remain without accepted geometry.",
+    "sourceImagesRedistributed": false,
+    "researchReferenceScansUploaded": 1
   }
 }

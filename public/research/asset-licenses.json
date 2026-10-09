@@ -91,5 +91,27 @@
       "No dimensional or procedure validation",
       "One embedded JPEG retained; no complete PBR texture set supplied"
     ]
+  },
+  {
+    "vehicle": "es300-1997-source-scan",
+    "title": "1997 Lexus ES 300 Photoscan",
+    "author": "Giz",
+    "authorUrl": "https://sketchfab.com/Gizmitt",
+    "sourceUrl": "https://sketchfab.com/3d-models/5eaed54fd300415a9ea88505a15cc750",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceSha256": "8e4af2bef0657a53478ee3dcae2fdee6d67843e3889c5d503399167e2e725c0b",
+    "sourceUID": "5eaed54fd300415a9ea88505a15cc750",
+    "changes": [
+      "Attribution and stable viewer metadata only; original binary geometry and texture retained"
+    ],
+    "limitations": [
+      "1997 source scan, not the 2000 workshop target",
+      "One fused mesh; no individual service parts",
+      "Roof and windshield have severe scan defects",
+      "Closed hood; no usable engine-bay geometry",
+      "Ground slab and incomplete underside; no mechanical underbody",
+      "Source scale is unverified; no dimensions or surfaces certified"
+    ]
   }
 ]

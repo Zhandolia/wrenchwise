@@ -1,0 +1,29 @@
+{
+  "title": "1997 Lexus ES 300 Photoscan",
+  "author": "Giz",
+  "authorUrl": "https://sketchfab.com/Gizmitt",
+  "sourceUrl": "https://sketchfab.com/3d-models/5eaed54fd300415a9ea88505a15cc750",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "sourceSha256": "8e4af2bef0657a53478ee3dcae2fdee6d67843e3889c5d503399167e2e725c0b",
+  "outputSha256": "0baa067517686976ce6e6e1f4f7b001a6718afd094d3cac8dcab46283878cb6e",
+  "binaryChunkSha256": "28c24474d6e5b80a11bd11dc24bc7c051dce784128ebbe4e269890f29f5c6c42",
+  "sourceBytes": 4635648,
+  "outputBytes": 4636544,
+  "triangles": 79896,
+  "meshCount": 1,
+  "verifiedParts": 0,
+  "assetUrl": "/models/research/es300-1997-source-scan.glb",
+  "status": "research-reference-only",
+  "changes": [
+    "Attribution and stable viewer metadata only; original binary geometry and texture retained"
+  ],
+  "limitations": [
+    "1997 source scan, not the 2000 workshop target",
+    "One fused mesh; no individual service parts",
+    "Roof and windshield have severe scan defects",
+    "Closed hood; no usable engine-bay geometry",
+    "Ground slab and incomplete underside; no mechanical underbody",
+    "Source scale is unverified; no dimensions or surfaces certified"
+  ]
+}

@@ -1,0 +1,22 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+test('ES300 reference retains original binary geometry and attribution without enabling workshop fitment',()=>{
+ const manifest=read('public/models/research/es300-1997-source-scan.json');
+ const b=fs.readFileSync('public'+manifest.assetUrl),len=b.readUInt32LE(12),g=JSON.parse(b.subarray(20,20+len));
+ assert.equal(b.readUInt32LE(0),0x46546c67);assert.equal(b.readUInt32LE(8),b.length);
+ assert.equal(sha(b),manifest.outputSha256);
+ assert.equal(sha(b.subarray(20+len)),manifest.binaryChunkSha256);
+ assert.equal(g.asset.extras.sourceSha256,manifest.sourceSha256);
+ assert.equal(g.asset.extras.license,'CC BY 4.0');assert.equal(g.asset.extras.author,'Giz');
+ assert.equal(g.meshes.length,1);assert.equal(g.images.length,1);assert.equal(g.images[0].mimeType,'image/jpeg');
+ const triangles=g.meshes.flatMap(m=>m.primitives).reduce((n,p)=>n+g.accessors[p.indices].count/3,0);
+ assert.equal(triangles,79896);
+ const meshNode=g.nodes.find(n=>n.mesh!==undefined);assert.equal(meshNode.extras.system,'body');assert.equal(meshNode.extras.accuracy,'unverified');
+ const catalog=read('public/research/vehicle-catalog.json');assert(!catalog.records.some(r=>r.assetUrl===manifest.assetUrl));assert.equal(catalog.records.find(r=>r.id==='es300').assetUrl,null);
+ const audit=read('research/lexus-expansion-2026-10-09.json');assert.equal(audit.publication.researchReferenceScansUploaded,1);
+ assert.equal(audit.candidates.find(c=>c.vehicle==='ls430'&&c.fileAcquired).status,'rejected-stock-fitment-provenance-unresolved');
+});

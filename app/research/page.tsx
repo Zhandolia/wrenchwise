@@ -1,5 +1,6 @@
 import {appPath} from '@/lib/app-path';
 import lexusExpansion from '@/research/lexus-expansion-2026-10-09.json';
+import ResearchScanViewer from '@/components/research-scan-viewer';
 import classAudit from '@/research/lexus-class-modeling.json';
 import audit from '@/research/vehicle-sources.json';
 import licenses from '@/research/asset-licenses.json';
@@ -24,6 +25,7 @@ export default function ResearchPage(){return <div className="assembly-app"><hea
 </article>)}</div>
 <p><a className="evidence-link" href={appPath('/research/lexus-expansion-2026-10-09.json')} download>Download research, candidate reviews and measurement requirements</a></p>
 </section>
+<ResearchScanViewer/>
 <section style={{marginTop:24}}><h2>LS · IS · ES · GX · LX</h2><div style={{overflowX:'auto'}}><table style={{width:'100%',borderCollapse:'collapse',fontSize:14}}><thead><tr>{['Family','Current result','Remaining work'].map(t=><th key={t} style={{textAlign:'left',padding:12}}>{t}</th>)}</tr></thead><tbody>{classAudit.candidates.map(c=><tr key={c.family}><td style={{padding:12}}>Lexus {c.family}</td><td style={{padding:12}}>{c.family==='ES'?<a href={appPath("/?vehicle=lexus-es-xv70-reference")}>Explore XV70 exterior reference</a>:c.family==='IS'?'Development mesh fails stock-vehicle review':'Source candidate only'}</td><td style={{padding:12}}>{c.notes}</td></tr>)}</tbody></table></div><p><a className="evidence-link" href={appPath("/research/lexus-class-modeling.json")}>Download class modeling status and next steps</a></p><h2>Initial sedan and SUV photo audit</h2><p>11 initial targets · 230 OEM photo records · 228 distinct files. The newer ES XV70 reference does not replace the ES 300 or ES 330 targets below.</p></section>
 <p>The confirmed GS 300 target is a stock US-market 2000 automatic; mesh fitment remains unverified. The other model years below are working targets. Canadian manufacturer photos help establish body shape; US equipment and adjacent-year differences remain explicit. “Photo found” means a photographic view, not a calibrated blueprint.</p>
 <div style={{overflowX:'auto',margin:'24px 0'}}><table style={{width:'100%',borderCollapse:'collapse',fontSize:14}}><thead><tr>{['Vehicle target','Photos','Front','Rear','Left','Right','Top','Underbody','Geometry'].map(x=><th key={x} style={{textAlign:'left',padding:12,borderBottom:'1px solid #38424b'}}>{x}</th>)}</tr></thead><tbody>{audit.vehicles.map(v=><tr key={v.vehicle}><td style={{padding:12}}><a href={'#'+v.vehicle}>{v.targetYear} {label(v.vehicle)}</a></td><td>{v.photos.length}</td>{Object.values(v.sixViewCoverage).map((c,i)=><td key={i} style={{padding:8,color:c.status==='missing'?'#eeac83':undefined}}>{status(c.status)}</td>)}<td>{ready.has(v.vehicle)?'Exterior reference':'Not accepted'}</td></tr>)}</tbody></table></div>
