@@ -70,3 +70,45 @@ Remaining vehicle work requires exact configuration references and measured inte
 - Site deployment: `appgdep_6ac532843a888191abd173e11db417dc` — succeeded 2026-10-06.
 - Live ES: https://wrenchwise-workshop.zhandolia.chatgpt.site/?vehicle=lexus-es-xv70-reference
 - Browser review: mesh visible, selection returns source ID, keyboard orbit and reset work. No mechanical accuracy validation was performed.
+
+## Lexus / Toyota community library expansion (2026-10-09)
+
+The `/library/` route adds 17 downloadable visual references: six Lexus vehicles,
+ten Toyota vehicles (including two distinct AE86 interpretations), and one modified
+2JZ-GTE engine. These are separate from the exact-fitment vehicle catalog.
+`research/model-library.json` records original creator/source/license links, input
+and output SHA256, file sizes, conversion changes and limited visual review notes.
+Credits and adaptation notices are also embedded in each downloadable GLB.
+
+All included listings offered CC BY 4.0 downloads when checked. Source descriptions
+and mesh names were reviewed for obvious third-party provenance issues; this is not
+an independent authorship guarantee. Excluded candidates included game-derived
+CSR2/Real Racing 3 listings, noncommercial-only sources, an IS350 crediting Squir,
+and Hilux listings traced to another mod or an OEM website without clear rights.
+No listed year, physical dimension, trim, hidden component or service fitment has
+been verified. The LC500 is customized, one AE86 is stylized, and the Auris is a
+fused exterior photoscan. The RX350 adaptation removes the bundled skinned driver
+because it distorted framing. Original filenames/titles remain in the manifest.
+
+To reproduce, obtain the original GLB downloads through each source page and place
+them in a local directory using `sourceFilename`. The script rejects changed inputs.
+Install conversion tools outside the app's runtime dependencies and run from repo root:
+
+```sh
+npm install --prefix work/library-tools --no-audit --no-fund @gltf-transform/core@4.2.1 @gltf-transform/extensions@4.2.1 @gltf-transform/functions@4.2.1 meshoptimizer@0.23.0
+node modeling/library/prepare.mjs /path/to/downloads work/library-tools work/library-rebuilt
+node --test tests/model-library.test.mjs
+```
+
+The default output is `work/library-rebuilt`; the optional fourth argument selects
+one manifest ID. Compare `export-results.json` to the committed manifest before
+replacing published files. Uniform display normalization and 16-bit meshopt
+compression preserve polygon counts, but do not assert a metric scale. RX350 driver
+removal is the only deliberate geometry deletion. Materials using legacy specular /
+glossiness are converted for the web renderer. The HKS filter included in the 2JZ
+engine is separately credited to Reitax under CC BY 4.0.
+
+Validation covers all exported file hashes, embedded credits, polygon counts,
+self-contained textures and meshopt buffer decoding. Browser review loaded every
+model and inspected one representative view, plus search/filter/selection checks;
+this is not comprehensive multiview, dimensional or mechanical validation.

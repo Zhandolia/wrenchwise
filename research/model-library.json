@@ -1,0 +1,680 @@
+{
+  "updatedAt": "2026-10-09",
+  "scope": "Downloaded community visual references; no physical verification or repair fitment.",
+  "models": [
+    {
+      "id": "lexus-sc300-1993-2070ca",
+      "make": "Lexus",
+      "name": "Lexus SC300 1993",
+      "kind": "Vehicle reference",
+      "title": "Lexus SC300 1993",
+      "author": "Lexyc16",
+      "authorUrl": "https://sketchfab.com/Lexyc16",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-sc300-1993-2070ca6185464d8f9dd44a59e674392b",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "dea3970de068b08a4f6438469421344c2124c7c59e416b10eb73d41474bad6b5",
+      "assetUrl": "/models/library/lexus-sc300-1993-2070ca.glb",
+      "sourceBytes": 7094968,
+      "bytes": 4221568,
+      "sha256": "2b22538ca6470c00f2559bfaf32b4937ab0bae477a2a5ab0378a9a7193585e50",
+      "triangles": 95178,
+      "meshGroups": 17,
+      "sourceBounds": [
+        3.079002857208252,
+        2.0723465310442255,
+        7.55587974190712
+      ],
+      "displayScale": 0.6352668602410114,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Simplified exterior with opaque glazing. Interior and engine-bay detail are not established. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_sc300_1993.glb"
+    },
+    {
+      "id": "lexus-lc-500-3f6118",
+      "make": "Lexus",
+      "name": "Lexus LC-500",
+      "kind": "Modified vehicle",
+      "title": "Lexus LC-500",
+      "author": "Socksthecat",
+      "authorUrl": "https://sketchfab.com/Socksthecat",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-lc-500-3f6118da005a457a9ce6d737e5d1e37d",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "e0d90de1f990348dd97293008b9bb333d88b2ef2947d7755e857da6b5a77d2ab",
+      "assetUrl": "/models/library/lexus-lc-500-3f6118.glb",
+      "sourceBytes": 26456428,
+      "bytes": 9276096,
+      "sha256": "8e1ecb14d513fc368ccae80522b649812bf5f1014f91588d4941a6f815f59581",
+      "triangles": 283740,
+      "meshGroups": 45,
+      "sourceBounds": [
+        700.6491728160327,
+        411.10502310867395,
+        1629.9861104528704
+      ],
+      "displayScale": 0.0029448103693757136,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Customized wide-body appearance, lowered stance and aftermarket wheels. Not a stock LC500 configuration. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_lc-500.glb"
+    },
+    {
+      "id": "lexus-gs-350-2011-a89d18",
+      "make": "Lexus",
+      "name": "Lexus GS 350 2011",
+      "kind": "Vehicle reference",
+      "title": "Lexus GS 350 2011",
+      "author": "3DShowroom",
+      "authorUrl": "https://sketchfab.com/3dshowroom",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-gs-350-2011-a89d18432d5047549c4e8b9a66cb2d7d",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "d0dd7d677d86bf45b425196dba3cb18bac1ace7d28239035e8ca937e25b91183",
+      "assetUrl": "/models/library/lexus-gs-350-2011-a89d18.glb",
+      "sourceBytes": 18779720,
+      "bytes": 3828304,
+      "sha256": "a181e6faeb8182e999fb0758f06f09abe5135d47ef2334f05a7f25a36245f64d",
+      "triangles": 298616,
+      "meshGroups": 21,
+      "sourceBounds": [
+        3.0425655841827393,
+        2.0945673882961273,
+        7.121453523635864
+      ],
+      "displayScale": 0.6740197045545494,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior with visible cabin surfaces. Engine-bay contents and exact 2011 trim are not established. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_gs_350_2011.glb"
+    },
+    {
+      "id": "lexus-ls-500-f-sport-bc240e",
+      "make": "Lexus",
+      "name": "Lexus LS 500 F Sport",
+      "kind": "Vehicle reference",
+      "title": "Lexus LS 500 F Sport",
+      "author": "SeKali",
+      "authorUrl": "https://sketchfab.com/zh.200.c",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-ls-500-f-sport-bc240e796ced4190bedf123f77a140e9",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "bd983ef519e7f8fe6e74ae8610b176491716565dae87d729263666cceb208673",
+      "assetUrl": "/models/library/lexus-ls-500-f-sport-bc240e.glb",
+      "sourceBytes": 35187140,
+      "bytes": 5247304,
+      "sha256": "53dd99aeaa7e25b21c8b64afd469054c5df3571a0c6eac799521ec64b770d8e5",
+      "triangles": 1035399,
+      "meshGroups": 86,
+      "sourceBounds": [
+        1.3248297509678406,
+        0.9071115189861481,
+        3.2506685610943555
+      ],
+      "displayScale": 1.4766193199296989,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior-only source; creator states no interior. Flat white materials and opaque glazing limit detail. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification",
+        "Specular/glossiness materials converted to metal/roughness"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_ls_500_f_sport.glb"
+    },
+    {
+      "id": "lexus-lm-hybrid-67bb51",
+      "make": "Lexus",
+      "name": "Lexus LM Hybrid",
+      "kind": "Vehicle reference",
+      "title": "Lexus LM Hybrid",
+      "author": "Mona x Supercars",
+      "authorUrl": "https://sketchfab.com/Car2022",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-lm-hybrid-67bb5139c7594579860c21b88d8fa48b",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "8beafddcf8b3fadf03a406188b685f980aecb8bf4302999632e6727e44d6f4cf",
+      "assetUrl": "/models/library/lexus-lm-hybrid-67bb51.glb",
+      "sourceBytes": 23591256,
+      "bytes": 8493304,
+      "sha256": "1b9fcd25e224876d8c50b7de22a40dd19fbac22df54b87021bba33849992dd41",
+      "triangles": 528724,
+      "meshGroups": 66,
+      "sourceBounds": [
+        12.178001403808594,
+        7.122400283813478,
+        19.31500244140625
+      ],
+      "displayScale": 0.24851148813266888,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Van exterior reference. Exact year, hybrid equipment and engine-bay layout are not established. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_lm_hybrid.glb"
+    },
+    {
+      "id": "toyota-ae86-sprinter-trueno-zenki-a5737b",
+      "make": "Toyota",
+      "name": "Toyota AE86 Sprinter Trueno Zenki",
+      "kind": "Vehicle reference",
+      "title": "Toyota AE86 Sprinter Trueno Zenki",
+      "author": "Martin Trafas",
+      "authorUrl": "https://sketchfab.com/TinoD2",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-ae86-sprinter-trueno-zenki-a5737bf3cc9b4179a6e5ebe173ff70d9",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "35cdd3bf6f094f14ef34a60b37f454931bc50e2a60e5984542c2e0bf862a4e6a",
+      "assetUrl": "/models/library/toyota-ae86-sprinter-trueno-zenki-a5737b.glb",
+      "sourceBytes": 42895664,
+      "bytes": 15647072,
+      "sha256": "d9d249dc2e6bbe4992ff9ec9d43aca1a5735c58810cc054e61e3c6b6ccc26566",
+      "triangles": 706212,
+      "meshGroups": 37,
+      "sourceBounds": [
+        192.1792984008789,
+        127.53570265960909,
+        420.7183351129629
+      ],
+      "displayScale": 0.011409058268666136,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior and visible cabin with raised pop-up headlights. Mechanical contents and trim remain unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_ae86_sprinter_trueno_zenki.glb"
+    },
+    {
+      "id": "toyota-corolla-levin-ae92-gt-apex-kouki-66dcba",
+      "make": "Toyota",
+      "name": "Toyota Corolla Levin AE92 GT APEX Kouki",
+      "kind": "Vehicle reference",
+      "title": "Toyota Corolla Levin AE92 GT APEX Kouki",
+      "author": "Nix_Dektara",
+      "authorUrl": "https://sketchfab.com/Nix_Dektara",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-corolla-levin-ae92-gt-apex-kouki-66dcbaf822ae47468655a604a83af703",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "4959257cc0d27ea4f02a270755243f5f22f0ec37357b969bd40c5ad80bdd35fb",
+      "assetUrl": "/models/library/toyota-corolla-levin-ae92-gt-apex-kouki-66dcba.glb",
+      "sourceBytes": 20425500,
+      "bytes": 12473852,
+      "sha256": "d241d22f600e73ad7de99c77dba8047ca268e943bcf5ce66beb20fd11281c395",
+      "triangles": 253556,
+      "meshGroups": 257,
+      "sourceBounds": [
+        1.911851640329126,
+        1.2532156549541869,
+        4.265061187422173
+      ],
+      "displayScale": 1.1254234790711517,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior and visible cabin. Wheel material detail is limited; exact trim and mechanical contents are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_corolla_levin_ae92_gt_apex_kouki.glb"
+    },
+    {
+      "id": "toyota-supra-mk-iv-1994-eb9bb1",
+      "make": "Toyota",
+      "name": "Toyota Supra MK IV (1994)",
+      "kind": "Vehicle reference",
+      "title": "Toyota Supra MK IV (1994)",
+      "author": "Martin Trafas",
+      "authorUrl": "https://sketchfab.com/TinoD2",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-supra-mk-iv-1994-eb9bb1eb41db431cb078088ae1ce45f8",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "5d89018974826d553e43da49beab0e4e438fa7faa061c5d78c493f94436b892f",
+      "assetUrl": "/models/library/toyota-supra-mk-iv-1994-eb9bb1.glb",
+      "sourceBytes": 19153508,
+      "bytes": 11533988,
+      "sha256": "381f6f543e43a2bd5a2dcd7a3075d2fdbed8a958957304af17e50ef6dc5ef21f",
+      "triangles": 261960,
+      "meshGroups": 20,
+      "sourceBounds": [
+        1.9576040506362915,
+        1.2726789722219112,
+        4.512899160385132
+      ],
+      "displayScale": 1.0636178273459065,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Supra Mk IV exterior and visible cabin. Turbo/engine configuration and model-year fitment are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_supra_mk_iv_1994.glb"
+    },
+    {
+      "id": "1996-toyota-mr2-w20-f66020",
+      "make": "Toyota",
+      "name": "1996 Toyota MR2 W20",
+      "kind": "Vehicle reference",
+      "title": "1996 Toyota MR2 W20",
+      "author": "_shobh19",
+      "authorUrl": "https://sketchfab.com/s0h1o9b",
+      "sourceUrl": "https://sketchfab.com/3d-models/1996-toyota-mr2-w20-f66020ee62d741ebb0adc1ba351300db",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "3884fd04eb01f4279df0f947ac418d6d141f1534f6b011a7596b6f83fa2c121d",
+      "assetUrl": "/models/library/1996-toyota-mr2-w20-f66020.glb",
+      "sourceBytes": 1633876,
+      "bytes": 729100,
+      "sha256": "cebf490cad2fcb401de1b7e33f2b91e1d23313f7de6aba7d941f228e20e92958",
+      "triangles": 25268,
+      "meshGroups": 44,
+      "sourceBounds": [
+        4.801249980926514,
+        0.8206873384770006,
+        4.801249980926514
+      ],
+      "displayScale": 0.9997396551040917,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Compact, simplified MR2 exterior. Source scene produces conservative framing; zoom for detail. Mechanical contents are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "1996_toyota_mr2_w20.glb"
+    },
+    {
+      "id": "toyota-kijang-innova-zenix-2023-highpoly-c8e1bb",
+      "make": "Toyota",
+      "name": "Toyota Kijang Innova Zenix 2023 (highpoly)",
+      "kind": "Vehicle reference",
+      "title": "Toyota Kijang Innova Zenix 2023 (highpoly)",
+      "author": "3DShowroom",
+      "authorUrl": "https://sketchfab.com/3dshowroom",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-kijang-innova-zenix-2023-highpoly-c8e1bbc9292b4e198dba839c32f02fa9",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "322a60485d044d9e4f9a6ac259c87307fc144b59cac0f2585f49a127d9d03384",
+      "assetUrl": "/models/library/toyota-kijang-innova-zenix-2023-highpoly-c8e1bb.glb",
+      "sourceBytes": 31284716,
+      "bytes": 9496048,
+      "sha256": "046591114a6ef32b28e07382b2d18326a4236d998f6e3b95f8ec0b5d997d9ccc",
+      "triangles": 871556,
+      "meshGroups": 75,
+      "sourceBounds": [
+        2.0892534255981445,
+        1.754129946231842,
+        4.751531362533569
+      ],
+      "displayScale": 1.010200635072855,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "High-poly exterior with visible cabin. Source identifies Indonesian-market Kijang Innova Zenix; trim and powertrain are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_kijang_innova_zenix_2023_highpoly.glb"
+    },
+    {
+      "id": "toyota-auris-wagon-21b2d2",
+      "make": "Toyota",
+      "name": "Toyota Auris wagon",
+      "kind": "Photoscan",
+      "title": "Toyota Auris wagon",
+      "author": "Lassi Kaukonen",
+      "authorUrl": "https://sketchfab.com/thesidekick",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-auris-wagon-21b2d277397049879e2756b63199ded8",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "c8a6b367ace86267522d1e612336ff00bdc410e317f3fabe3184f5d4fff4008d",
+      "assetUrl": "/models/library/toyota-auris-wagon-21b2d2.glb",
+      "sourceBytes": 51693708,
+      "bytes": 19634412,
+      "sha256": "0a7fb9bfecca5383db64f71d30b955fedb55c57e4fca5c1f874148c57c67feab",
+      "triangles": 878442,
+      "meshGroups": 9,
+      "sourceBounds": [
+        10.258337020874023,
+        7.534073808230463,
+        23.80319309234619
+      ],
+      "displayScale": 0.2016536177049044,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior photoscan: photographic surface detail, fused geometry and opaque windows. Not a separable mechanical assembly. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_auris_wagon.glb"
+    },
+    {
+      "id": "toyota-2jz-gte-engine-free-7ebc97",
+      "make": "Toyota",
+      "name": "Toyota 2JZ GTE Engine [FREE]",
+      "kind": "Engine reference",
+      "title": "Toyota 2JZ GTE Engine [FREE]",
+      "author": "autoNgraphic",
+      "authorUrl": "https://sketchfab.com/autoNgraphic",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-2jz-gte-engine-free-7ebc9741434540c4831453066d7ae057",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "be6a7eaf02ce91ee229edf334b2a328b68f8210bef5077ff009cb1a78c0ddd5f",
+      "assetUrl": "/models/library/toyota-2jz-gte-engine-free-7ebc97.glb",
+      "sourceBytes": 6859960,
+      "bytes": 3255376,
+      "sha256": "00680a50f30cd596e3424d2af567dcb8629a9caa8b104a6ea028ba61eb0f2949",
+      "triangles": 99800,
+      "meshGroups": 12,
+      "sourceBounds": [
+        1.560970962047577,
+        0.7148090004920958,
+        1.225509971380234
+      ],
+      "displayScale": 3.0750091556499437,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Modified 2JZ-GTE engine illustration with aftermarket induction/filter components. Not an OEM engine-bay layout or service guide. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [
+        {
+          "title": "HKS Mushroom Filter.",
+          "author": "Reitax",
+          "authorUrl": "https://sketchfab.com/reitaxac",
+          "sourceUrl": "https://sketchfab.com/3d-models/2de170b9d33b46a99e3f0fa00fb94d71",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "sourceFilename": "toyota_2jz_gte_engine_free.glb"
+    },
+    {
+      "id": "toyota-camry-2020-236a5a",
+      "make": "Toyota",
+      "name": "Toyota Camry 2020",
+      "kind": "Vehicle reference",
+      "title": "Toyota Camry 2020",
+      "author": "ItsDiyor",
+      "authorUrl": "https://sketchfab.com/ItsDiyor",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-camry-2020-236a5a6e2fa6420fbdf641f4800cd544",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "bd875180723581cd95cb28d2de449415291cd758618cfd12016aa4966531e423",
+      "assetUrl": "/models/library/toyota-camry-2020-236a5a.glb",
+      "sourceBytes": 17691224,
+      "bytes": 7009712,
+      "sha256": "44a2be5593fcfda522925e8e421e63b15d8518c38f9a370d298f4003854d766c",
+      "triangles": 176591,
+      "meshGroups": 6,
+      "sourceBounds": [
+        2.1385193189757956,
+        1.4718825179618968,
+        4.887999035239204
+      ],
+      "displayScale": 0.9819969204975717,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior with dark glazing and simplified wheels. Exact trim, engine and engine-bay layout are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_camry_2020.glb"
+    },
+    {
+      "id": "toyota-prius-2012-04eaf6",
+      "make": "Toyota",
+      "name": "Toyota Prius 2012",
+      "kind": "Vehicle reference",
+      "title": "Toyota Prius 2012",
+      "author": "Doz3",
+      "authorUrl": "https://sketchfab.com/Doz3",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-prius-2012-04eaf6b288cc466785365b7d985e3b29",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "81aa100289ceb37d2d2c940f375c5e47a59f944723adb35f5d5098a791be3c85",
+      "assetUrl": "/models/library/toyota-prius-2012-04eaf6.glb",
+      "sourceBytes": 3594048,
+      "bytes": 2556956,
+      "sha256": "4d40c7190317496b627fb2af4ad8681f4f6c8e73cb3584070b633d04c2a145d6",
+      "triangles": 19068,
+      "meshGroups": 25,
+      "sourceBounds": [
+        8.537660121917725,
+        6.924759149551389,
+        19.030546188354492
+      ],
+      "displayScale": 0.2522260765661734,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Simplified Prius exterior with limited material detail. Hybrid system and engine-bay contents are not modeled for service. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_prius_2012.glb"
+    },
+    {
+      "id": "toyota-prius-2020-ad0d92",
+      "make": "Toyota",
+      "name": "Toyota Prius 2020",
+      "kind": "Vehicle reference",
+      "title": "Toyota Prius 2020",
+      "author": "ItsDiyor",
+      "authorUrl": "https://sketchfab.com/ItsDiyor",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-prius-2020-ad0d925cb51040798d96f166db8c7f80",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "f593e58e197d6a5cecc56f3a63030d14a5ce2e2ee6c641ab8e21a1ff86463433",
+      "assetUrl": "/models/library/toyota-prius-2020-ad0d92.glb",
+      "sourceBytes": 17578560,
+      "bytes": 6733624,
+      "sha256": "db122d913da135f8a7730449962c08171d7cbaa9530f7a33f932c8737e4b104a",
+      "triangles": 179511,
+      "meshGroups": 6,
+      "sourceBounds": [
+        2.1091766357421875,
+        1.4917317405343056,
+        4.571746826171875
+      ],
+      "displayScale": 1.0499269059523253,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Exterior reference with dark glazing. Exact trim, hybrid components and engine-bay layout are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_prius_2020.glb"
+    },
+    {
+      "id": "lexus-rx-350-rigged-rigged-driver-human-6b9a19",
+      "make": "Lexus",
+      "name": "Lexus RX 350 + rigged (+ rigged driver (human) )",
+      "kind": "Vehicle reference",
+      "title": "Lexus RX 350 + rigged (+ rigged driver (human) )",
+      "author": "menarzuw",
+      "authorUrl": "https://sketchfab.com/menarzuw",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-rx-350-rigged-rigged-driver-human-6b9a1994b2dd445c8248270c81eead6b",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "3a9e5c39fab397b38ebb049041d4ecc04ce66e31077096f6f499436c6d358724",
+      "assetUrl": "/models/library/lexus-rx-350-rigged-rigged-driver-human-6b9a19.glb",
+      "sourceBytes": 27337840,
+      "bytes": 2776488,
+      "sha256": "7fb35871d743b7e40d147223cfab7455f39ab7424bf256f3745cab3798f5eb09",
+      "triangles": 384567,
+      "meshGroups": 30,
+      "sourceBounds": [
+        17.30038324740589,
+        6.24102060283805,
+        7.710112781439241
+      ],
+      "displayScale": 0.27745050102978136,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Vehicle-only adaptation: bundled skinned driver removed to correct framing. Source rig animations are not played. Mechanical contents are unverified. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification",
+        "Bundled skinned driver removed; vehicle geometry retained"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "lexus_rx_350__rigged__rigged_driver_human.glb"
+    },
+    {
+      "id": "toyota-corolla-ae86-trueno-fe02fb",
+      "make": "Toyota",
+      "name": "Toyota Corolla AE86 Trueno",
+      "kind": "Stylized vehicle",
+      "title": "Toyota Corolla AE86 Trueno",
+      "author": "Lexyc16",
+      "authorUrl": "https://sketchfab.com/Lexyc16",
+      "sourceUrl": "https://sketchfab.com/3d-models/toyota-corolla-ae86-trueno-fe02fba6302e450ea8424591493341ea",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "84dd438e7b1fbc9b585b431ef8f9744b01f3ed6ae5604e77c6ea7b90b1a07ceb",
+      "assetUrl": "/models/library/toyota-corolla-ae86-trueno-fe02fb.glb",
+      "sourceBytes": 1604336,
+      "bytes": 604960,
+      "sha256": "bbbe87e78ec8792f760722ffc5a56006f9cb62ed091d6661c15155868a23b8c4",
+      "triangles": 26176,
+      "meshGroups": 28,
+      "sourceBounds": [
+        4.237889911073012,
+        2.8907724846916523,
+        9.655759360055072
+      ],
+      "displayScale": 0.4971126372367075,
+      "physicallyVerified": false,
+      "reviewStatus": "visual-preview-reviewed",
+      "notes": "Stylized Initial D-inspired AE86 with black bonnet and opaque glazing. Not a verified factory configuration. Source mesh groups are not identified OEM parts.",
+      "changes": [
+        "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
+        "Stable source-mesh selection IDs",
+        "Meshopt compression with 16-bit positions; no polygon simplification"
+      ],
+      "review": {
+        "date": "2026-10-09",
+        "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
+      },
+      "additionalCredits": [],
+      "sourceFilename": "toyota_corolla_ae86_trueno.glb"
+    }
+  ]
+}
