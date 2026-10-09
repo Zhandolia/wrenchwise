@@ -39,7 +39,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_sc300_1993.glb"
+      "sourceFilename": "lexus_sc300_1993.glb",
+      "family": "SC",
+      "bodyStyle": "Coupe",
+      "generation": "Z30 · first generation",
+      "bodyGroup": "Lexus SC · Z30 · first generation",
+      "sourceYear": 1993,
+      "bodyReferenceUrl": "https://sketchfab.com/3d-models/lexus-sc300-1993-2070ca6185464d8f9dd44a59e674392b",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "lexus-lc-500-3f6118",
@@ -78,7 +92,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_lc-500.glb"
+      "sourceFilename": "lexus_lc-500.glb",
+      "family": "LC",
+      "bodyStyle": "Coupe",
+      "generation": "First generation",
+      "bodyGroup": "Lexus LC · First generation",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://media.lexus.co.uk/the-lexus-timeline/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "lexus-gs-350-2011-a89d18",
@@ -117,7 +145,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_gs_350_2011.glb"
+      "sourceFilename": "lexus_gs_350_2011.glb",
+      "family": "GS",
+      "bodyStyle": "Sedan",
+      "generation": "S190 · third generation",
+      "bodyGroup": "Lexus GS · S190 · third generation",
+      "sourceYear": 2011,
+      "bodyReferenceUrl": "https://media.lexus.co.uk/vehicles/gs-2005-2012/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "lexus-ls-500-f-sport-bc240e",
@@ -157,7 +199,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_ls_500_f_sport.glb"
+      "sourceFilename": "lexus_ls_500_f_sport.glb",
+      "family": "LS",
+      "bodyStyle": "Sedan",
+      "generation": "Fifth generation",
+      "bodyGroup": "Lexus LS · Fifth generation",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://media.lexus.co.uk/the-lexus-timeline/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "lexus-lm-hybrid-67bb51",
@@ -196,7 +252,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_lm_hybrid.glb"
+      "sourceFilename": "lexus_lm_hybrid.glb",
+      "family": "LM",
+      "bodyStyle": "MPV",
+      "generation": "First generation",
+      "bodyGroup": "Lexus LM · First generation",
+      "sourceYear": 2021,
+      "bodyReferenceUrl": "https://global.toyota/en/newsroom/lexus/39084541.html",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 204,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-ae86-sprinter-trueno-zenki-a5737b",
@@ -235,7 +305,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_ae86_sprinter_trueno_zenki.glb"
+      "sourceFilename": "toyota_ae86_sprinter_trueno_zenki.glb",
+      "family": "Corolla / Sprinter Trueno",
+      "bodyStyle": "Liftback",
+      "generation": "AE86",
+      "bodyGroup": "Toyota Corolla / Sprinter Trueno · AE86",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://sketchfab.com/3d-models/toyota-ae86-sprinter-trueno-zenki-a5737bf3cc9b4179a6e5ebe173ff70d9",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-corolla-levin-ae92-gt-apex-kouki-66dcba",
@@ -274,7 +358,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_corolla_levin_ae92_gt_apex_kouki.glb"
+      "sourceFilename": "toyota_corolla_levin_ae92_gt_apex_kouki.glb",
+      "family": "Corolla Levin",
+      "bodyStyle": "Coupe",
+      "generation": "AE92",
+      "bodyGroup": "Toyota Corolla Levin · AE92",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60003784/index.html",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-supra-mk-iv-1994-eb9bb1",
@@ -313,7 +411,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_supra_mk_iv_1994.glb"
+      "sourceFilename": "toyota_supra_mk_iv_1994.glb",
+      "family": "Supra",
+      "bodyStyle": "Coupe",
+      "generation": "A80 · fourth generation",
+      "bodyGroup": "Toyota Supra · A80 · fourth generation",
+      "sourceYear": 1994,
+      "bodyReferenceUrl": "https://sketchfab.com/3d-models/toyota-supra-mk-iv-1994-eb9bb1eb41db431cb078088ae1ce45f8",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "1996-toyota-mr2-w20-f66020",
@@ -341,7 +453,7 @@
       "displayScale": 0.9997396551040917,
       "physicallyVerified": false,
       "reviewStatus": "visual-preview-reviewed",
-      "notes": "Compact, simplified MR2 exterior. Source scene produces conservative framing; zoom for detail. Mechanical contents are unverified. Source mesh groups are not identified OEM parts.",
+      "notes": "Compact, simplified MR2 exterior. Mechanical contents are unverified. Source mesh groups are not identified OEM parts.",
       "changes": [
         "Uniform display normalization to a 4.8-unit maximum extent; no physical scale asserted",
         "Stable source-mesh selection IDs",
@@ -352,7 +464,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "1996_toyota_mr2_w20.glb"
+      "sourceFilename": "1996_toyota_mr2_w20.glb",
+      "family": "MR2",
+      "bodyStyle": "Coupe",
+      "generation": "W20 · second generation",
+      "bodyGroup": "Toyota MR2 · W20 · second generation",
+      "sourceYear": 1996,
+      "bodyReferenceUrl": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/pdf/vehiclelineage.pdf",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 90,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-kijang-innova-zenix-2023-highpoly-c8e1bb",
@@ -391,7 +517,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_kijang_innova_zenix_2023_highpoly.glb"
+      "sourceFilename": "toyota_kijang_innova_zenix_2023_highpoly.glb",
+      "family": "Innova",
+      "bodyStyle": "MPV",
+      "generation": "Zenix · third generation",
+      "bodyGroup": "Toyota Innova · Zenix · third generation",
+      "sourceYear": 2023,
+      "bodyReferenceUrl": "https://pressroom.toyota.astra.co.id/48-tahun-toyota-kijang-memang-tiada-duanya-kisah-mobil-niaga-pick-yang-bertransformasi-menjadi-mpv",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-auris-wagon-21b2d2",
@@ -430,7 +570,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_auris_wagon.glb"
+      "sourceFilename": "toyota_auris_wagon.glb",
+      "family": "Auris",
+      "bodyStyle": "Wagon",
+      "generation": "Touring Sports · second generation",
+      "bodyGroup": "Toyota Auris · Touring Sports · second generation",
+      "sourceYear": 2017,
+      "bodyReferenceUrl": "https://mag.toyota.co.uk/toyota-auris-service-all-you-need-to-know/comment-page-1/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-2jz-gte-engine-free-7ebc97",
@@ -478,7 +632,21 @@
           "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
         }
       ],
-      "sourceFilename": "toyota_2jz_gte_engine_free.glb"
+      "sourceFilename": "toyota_2jz_gte_engine_free.glb",
+      "family": "2JZ-GTE",
+      "bodyStyle": "Engine",
+      "generation": "Modified engine reference",
+      "bodyGroup": "Toyota 2JZ-GTE · Modified engine reference",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://sketchfab.com/3d-models/toyota-2jz-gte-engine-free-7ebc9741434540c4831453066d7ae057",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 90,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-camry-2020-236a5a",
@@ -517,7 +685,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_camry_2020.glb"
+      "sourceFilename": "toyota_camry_2020.glb",
+      "family": "Camry",
+      "bodyStyle": "Sedan",
+      "generation": "XV70 · eighth generation",
+      "bodyGroup": "Toyota Camry · XV70 · eighth generation",
+      "sourceYear": 2020,
+      "bodyReferenceUrl": "https://media.toyota.co.uk/vehicles/camry-2019/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-prius-2012-04eaf6",
@@ -556,7 +738,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_prius_2012.glb"
+      "sourceFilename": "toyota_prius_2012.glb",
+      "family": "Prius",
+      "bodyStyle": "Liftback",
+      "generation": "XW30 · third generation",
+      "bodyGroup": "Toyota Prius · XW30 · third generation",
+      "sourceYear": 2012,
+      "bodyReferenceUrl": "https://mag.toyota.co.uk/toyota-hybrid/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 180,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-prius-2020-ad0d92",
@@ -595,12 +791,26 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_prius_2020.glb"
+      "sourceFilename": "toyota_prius_2020.glb",
+      "family": "Prius",
+      "bodyStyle": "Liftback",
+      "generation": "XW50 · fourth generation",
+      "bodyGroup": "Toyota Prius · XW50 · fourth generation",
+      "sourceYear": 2020,
+      "bodyReferenceUrl": "https://mag.toyota.co.uk/toyota-hybrid/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "lexus-rx-350-rigged-rigged-driver-human-6b9a19",
       "make": "Lexus",
-      "name": "Lexus RX 350 + rigged (+ rigged driver (human) )",
+      "name": "Lexus RX 350",
       "kind": "Vehicle reference",
       "title": "Lexus RX 350 + rigged (+ rigged driver (human) )",
       "author": "menarzuw",
@@ -635,7 +845,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "lexus_rx_350__rigged__rigged_driver_human.glb"
+      "sourceFilename": "lexus_rx_350__rigged__rigged_driver_human.glb",
+      "family": "RX",
+      "bodyStyle": "SUV",
+      "generation": "Third generation",
+      "bodyGroup": "Lexus RX · Third generation",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://mag.lexus.co.uk/history-lexus-rx/",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 90,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     },
     {
       "id": "toyota-corolla-ae86-trueno-fe02fb",
@@ -674,7 +898,21 @@
         "scope": "Browser load and representative exterior/engine view only; no measured or hidden-geometry verification"
       },
       "additionalCredits": [],
-      "sourceFilename": "toyota_corolla_ae86_trueno.glb"
+      "sourceFilename": "toyota_corolla_ae86_trueno.glb",
+      "family": "Corolla / Sprinter Trueno",
+      "bodyStyle": "Liftback",
+      "generation": "AE86",
+      "bodyGroup": "Toyota Corolla / Sprinter Trueno · AE86",
+      "sourceYear": null,
+      "bodyReferenceUrl": "https://sketchfab.com/3d-models/toyota-corolla-ae86-trueno-fe02fba6302e450ea8424591493341ea",
+      "bodyAssignment": "Browsing group inferred from source listing and appearance; not fitment verification",
+      "presentation": {
+        "yawDegrees": 0,
+        "view": "front-three-quarter",
+        "reviewStatus": "front-and-three-quarter-reviewed",
+        "reviewDate": "2026-10-09",
+        "scope": "Viewer-only orientation; +Z is the display front, +Y up. Screen fit excludes invisible helpers. Not a physical dimension claim."
+      }
     }
   ]
 }

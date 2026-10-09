@@ -112,3 +112,26 @@ Validation covers all exported file hashes, embedded credits, polygon counts,
 self-contained textures and meshopt buffer decoding. Browser review loaded every
 model and inspected one representative view, plus search/filter/selection checks;
 this is not comprehensive multiview, dimensional or mechanical validation.
+
+## Consistent library presentation and body browsing (2026-10-09)
+
+Each manifest model now has a body style, family, body-generation browsing group,
+source-listing year where known, and a linked body reference. These classifications
+are inferred browsing aids, not verification that an asset fits every year in that
+generation. Facelifts and custom variants share their body group; the two AE86
+sources form one group and the two Prius generations remain separate. Chassis codes,
+spaced badges and source years are searchable in both the library and catalog cards.
+
+`presentation.yawDegrees` applies a viewer-only rotation to standardize vehicle
+fronts along +Z with +Y up. Front and three-quarter previews were checked for all
+17 models. The LM needs approximately 204 degrees, MR2 and RX350 90 degrees, and
+2012 Prius 180 degrees. Downloaded source geometry is unchanged by these settings.
+
+`lib/model-presentation.mjs` fits the projected visible silhouette at 82 percent of
+the limiting viewport dimension and centers that silhouette. It ignores fully
+transparent helpers and unreferenced vertices; the MR2's transparent plane was the
+cause of its previously distant framing. The fit recalculates on viewport resize;
+zero-sized and detached viewer hosts are ignored. Existing assembly/service cameras
+retain their previous behavior. Tests cover hidden helpers, unused vertices,
+rotated/scaled models and narrow/wide viewports. Browser QA included all library
+models, camera presets, filtered next/previous, body grouping and a narrow MR2 view.
