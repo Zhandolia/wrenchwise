@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "configurationId": "lexus-gs-jzs160-us-2000-2jz-ge-auto",
+  "referenceId": null,
+  "coordinateConvention": "Vehicle left is +X, rearward is +Y, up is +Z; metres. Datums below are proposed until physically identified.",
+  "datums": [
+    {"id":"airbox-local","description":"Filter seating plane, rear edge and vehicle-left edge of the actual air cleaner; photograph marked landmarks before measuring."},
+    {"id":"duct-joint","description":"Centre and normal of air-cleaner outlet mating plane; record relative to the filter seating plane."},
+    {"id":"vehicle-bay","description":"Three repeatable body landmarks selected and photographed on the reference vehicle; actual locations pending."}
+  ],
+  "captures": [
+    {"id":"bay-overview","partIds":["airbox","air-intake-duct","battery","radiator"],"view":"Overhead and both front quarters, hood open, stock configuration documented","status":"pending","sourceId":null},
+    {"id":"airbox-installed","partIds":["airbox","airbox-lid","intake-snorkel"],"view":"Front, rear and both sides; outlet, lid seam, retainers and mounting feet visible; scale in same plane","status":"pending","sourceId":null},
+    {"id":"filter-seat","partIds":["air-filter","air-filter-pleats","airbox-lid"],"view":"Filter seating plane and lid underside after appropriate access by a qualified person","status":"pending","sourceId":null},
+    {"id":"duct-interface","partIds":["air-intake-duct","intake-clamps","maf","maf-connector"],"view":"Outlet mating face, clamp seat, sensor mounting and connector from several angles","status":"pending","sourceId":null}
+  ],
+  "measurements": [
+    {"id":"housing-width","partId":"airbox","feature":"Housing outside width at filter seating plane","datumId":"airbox-local","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null},
+    {"id":"housing-length","partId":"airbox","feature":"Housing outside length at filter seating plane","datumId":"airbox-local","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null},
+    {"id":"outlet-diameter","partId":"airbox-lid","feature":"Outlet outside diameter at clamp seat","datumId":"duct-joint","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null},
+    {"id":"outlet-wall","partId":"airbox-lid","feature":"Outlet wall thickness at accessible mating lip","datumId":"duct-joint","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null},
+    {"id":"filter-seat-width","partId":"air-filter","feature":"Filter sealing-seat width; separate from nominal replacement-filter size","datumId":"airbox-local","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null},
+    {"id":"housing-height","partId":"airbox","feature":"Independent housing-height check against the reconstructed mesh","datumId":"airbox-local","unit":"mm","status":"pending","value":null,"uncertainty":null,"method":null,"sourceId":null,"measuredBy":null}
+  ],
+  "limitations": [
+    "No requested capture or measurement is complete.",
+    "Do not copy current mesh bounds into measured values.",
+    "Proposed local datums do not establish engine/body installation coordinates.",
+    "No torque, engine timing, electrical pinout or removal instruction is provided."
+  ]
+}

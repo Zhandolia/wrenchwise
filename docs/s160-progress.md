@@ -1,5 +1,9 @@
 # S160 progress ledger
 
+## 2026-10-09 — Reference acquisition foundation
+
+Added a single configuration source for evidence generation, unresolved production/emissions/unit/modification questions, four specified photo captures and six empty air-cleaner measurements. Added capture validation and negative tests for invented completion, missing datums and mismatched parts/configurations. Updated the active priority queue. No physical reference was identified and no measurements were filled. This completes the record/validation preparation portion of S160-01/03, not physical acquisition.
+
 ## 2026-10-09 — Intake surface correction and engine-bay source audit
 
 Rebuilt five existing intake/MAF groups from the v5 installation estimates: smoother duct, path-aligned bellows and clamp bands, and attached sensor/connector detail. Added an intake-focused assembly study and the cross-vehicle source audit in `docs/engine-bay-research-2026-10-09.md`. Preserved all 759 inventory IDs and exterior attribution. Current GLB: 912,186 triangles, 7,987,348 bytes; still zero verified parts. The reusable 2JZ export excludes these groups and is unchanged. Blender ZIP is labeled as the earlier v5 baseline.

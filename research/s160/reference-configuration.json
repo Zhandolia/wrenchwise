@@ -1,0 +1,23 @@
+{
+  "configurationId": "lexus-gs-jzs160-us-2000-2jz-ge-auto",
+  "configuration": {
+    "make": "Lexus",
+    "model": "GS 300",
+    "modelYear": 2000,
+    "market": "US",
+    "steering": "LHD",
+    "engine": "2JZ-GE VVT-i",
+    "transmission": "Stock automatic; A650E reference, unit identification pending",
+    "productionMonth": null,
+    "referenceId": null,
+    "identificationStatus": "target-only"
+  },
+  "unresolvedVariants": [
+    {"id":"production","question":"Production month and applicable parts-catalog range","status":"pending"},
+    {"id":"emissions","question":"Federal/California emissions specification and hose/connector differences","status":"pending"},
+    {"id":"transmission","question":"Actual transmission identification and original versus replacement unit","status":"pending"},
+    {"id":"modifications","question":"Stock status of intake, battery, cooling and electrical equipment","status":"pending"}
+  ],
+  "privacy": "Use a non-identifying reference ID in public records. Keep owner/contact details and full vehicle identifiers outside the public repository.",
+  "notes": "This specifies the modeling target. No physical reference car or donor component has been identified or measured. The dealer photograph is visual evidence of one vehicle, not the measurement reference."
+}

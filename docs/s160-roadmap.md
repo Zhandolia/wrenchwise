@@ -1,5 +1,20 @@
 # GS S160 priorities and implementation plan
 
+## Active queue — 9 October 2026
+
+The first intake revision is published as `084d1ef`. Continue in this order; the older task specifications below remain the acceptance criteria, not a statement that their work is done.
+
+| Priority | Next work | State / completion criteria |
+|---|---|---|
+| 1 | Reference configuration and capture records (S160-01/03) | Configuration record, four capture requests and six measurement requests added. Validation rejects empty or untraceable completion. Physical identification and acquisition remain pending. |
+| 2 | Air-cleaner housing, lid and duct interface (S160-04a) | Next geometry checkpoint. Retain selectable IDs, compare against photographed form, check modeled joint continuity, record all estimated dimensions. |
+| 3 | Engine-bay inspection (S160-09) | Add air-cleaner layers view; ensure camera, highlighting and isolated components remain useful. Software checks do not establish a real removal sequence. |
+| 4 | Cooling, battery and accessory installation (S160-03/04a) | Obtain exact-target views and measurements before correcting mounting and hose/connector endpoints. |
+| 5 | Timing/water-pump service geometry and procedure (S160-04/05/06) | Exact service sources, measured interfaces, physical fit/access review and qualified mechanic review required. |
+| 6 | Next vehicle configuration | Select exact year/engine/market after the GS300 modeling/verification process works. Interior work remains deferred. |
+
+Reference records: `research/s160/reference-configuration.json` and `research/s160/capture-plan.json`. Fill measured values only from actual observations with uncertainty, source and measurer recorded; the current mesh bounds are not measurements. These records feed the evidence configuration and are checked by CI. Keep each completed checkpoint in a descriptive commit and confirm its GitHub push and deployment.
+
 Planning checkpoint: 2026-10-06. Target: 2000 Lexus GS300 / JZS160 / US / LHD / stock automatic / 2JZ-GE VVT-i. Baseline model: v5, commit `58a0019a3d4b8d5cc91d3b376abbf97913a85659`.
 
 The next product milestone is a **measured and physically reviewed timing-belt/water-pump service assembly** for this configuration, including everything that must be accessed or removed. Complete vehicle coverage remains the longer-term objective. This plan does not mark any component or procedure verified.
