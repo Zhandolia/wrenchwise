@@ -129,7 +129,8 @@ export function refineUcf20({root,c,parts,add,box,tube,cyl,ring,mat,surface,fron
   box('fog-lamp-'+s,'Rectangular fog lamp','body',[s*.61,.382,wrap(s*.61,front)+.012],[.23,.081,.01],white,.008);
   for(let i=0;i<9;i++)box(`fog-rib-${s}-${i}`,'Fog lamp optical rib','body',[s*.61-.097+i*.024,.382,wrap(s*.61,front)+.019],[.0015,.068,.002],reflector,.0005);
   // Tail lamps turn around the rear corners. Outer signal band and inner reverse lens.
-  const tailPoint=(u,v)=>{const x=s*mix(.282,.882,u),y=mix(.674,.876,v);return[x,y,wrap(x,rear)+.025];};
+  // Stock walkaround shows the outer lamp tapering down into the rear wing.
+  const tailPoint=(u,v)=>{const x=s*mix(.282,.882,u),y=mix(.674,.876-.064*u**5,v);return[x,y,wrap(x,rear)+.025];};
   add('tail-lamp-'+s,'Wraparound rear combination lamp','body',surface(tailPoint,48,24),red);
   add('tail-indicator-'+s,'Amber rear signal band','body',surface((u,v)=>{const p=tailPoint(.46+.54*u,.48+.22*v);p[2]-=.004;return p;},24,5),amber);
   add('tail-reverse-'+s,'Inner reverse lamp','body',surface((u,v)=>{const p=tailPoint(.035+.18*u,.32+.30*v);p[2]-=.005;return p;},12,6),white);
@@ -138,6 +139,9 @@ export function refineUcf20({root,c,parts,add,box,tube,cyl,ring,mat,surface,fron
   tube('tailpipe-'+s,'Tucked exhaust outlet','exhaust',[[s*.61,.30,rear+.40],[s*.61,.29,rear+.19]],.026,black);
  }
  box('front-plate-recess','Front plate mounting pad','body',[0,.529,front-.002],[.49,.129,.012],black,.009);
+ // Fuel flap belongs to vehicle-left. Its outline is photo-derived, not measured.
+ const fuelFlap=roundedPath([[-1.69,.779],[-1.87,.779],[-1.87,.906],[-1.69,.906]],.24);
+ tube('fuel-flap-gap','Fuel filler flap perimeter','body',fuelFlap.getPoints(12).map(p=>[side(p.x,p.y)+.004,p.y,p.x]),.0015,rubber,true);
  box('front-plate','Neutral front registration plate','body',[0,.534,front+.005],[.452,.103,.007],white,.003);
  box('rear-plate-recess','Rear plate recess','body',[0,.768,rear+.026],[.486,.215,.015],black,.016);
  box('rear-plate','Neutral rear registration plate','body',[0,.77,rear+.014],[.425,.13,.006],mat('UK rear plate','#c7a635',.05,.5),.003);

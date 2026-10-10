@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-10",
+  "target": "1998 Lexus LS400 UCF20, UK RHD facelift, 1UZ-FE VVT-i",
+  "status": "Exact 1:1 reconstruction not established",
+  "physicallyVerifiedParts": 0,
+  "evidence": [
+    {"url":"https://getoutlines.com/blueprints/7496/1997-lexus-ls400-ucf20-ii-sedan-blueprints","review":"Inspected the linked 508 x 149 GIF. It shows a modified car with aftermarket wheels and body kit; only a side view is present despite the page listing four views. Rejected for stock geometry and dimensional measurements."},
+    {"url":"https://getoutlines.com/vector-drawings/4520/1997-2000-lexus-ls-drawings","review":"Inspected public facelift preview: left/right side, front and rear. No top view, panel sections, survey tolerance or engine-bay dimensions in the preview. High-resolution vector advertised for $24; not purchased. Useful candidate for silhouette work, not manufacturer CAD or proof of 1:1 accuracy."},
+    {"url":"https://model-copy.info/product_info.php?products_id=33234","review":"Product explicitly lists arbitrary scale. Not accepted as measured geometry; no purchase."},
+    {"url":"https://bringatrailer.com/listing/1998-lexus-ls400-40/","review":"Inspected actual 44-second Walkaround player at 0:00, 0:23 and 0:33: stock-looking white US LHD facelift, silver lower cladding and five-opening wheels. Confirms rounded rear lamp ends, body contour and fuel flap. Use shared body observations only; do not transplant US wheels, lighting or brake installation into the UK target. No footage redistributed."},
+    {"url":"https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/Gen2-LS-MC-launch-pack.pdf","review":"Manufacturer nominal envelope remains the dimensional reference. Overall dimensions do not determine local panel curvature or engine component clearances."},
+    {"url":"https://www.carandclassic.com/au/auctions/1998-lexus-ls400-xf20-n0wYxg","review":"Existing UK RHD engine-bay photographs remain configuration-matched layout references; no surveyed dimensions or lens calibration."}
+  ],
+  "requiredForValidatedReplica": [
+    "Configuration-matched exterior scan or manufacturer surface CAD with a documented unit scale and rights to publish derived assets.",
+    "Measured engine-bay/part scans and reference datums; external walkaround footage cannot recover hidden components.",
+    "Calibrated multi-view photographs, camera information and scale targets if photogrammetry is used; reflective paint and glass require controlled capture.",
+    "Independent deviation checks against measured points and a declared tolerance; unit-test success is not real-car accuracy certification."
+  ],
+  "silverPresentation": {
+    "scope":"15 vehicle assets have approved separate paint materials. Default viewer finish is silver; original asset geometry, textures and provenance remain intact.",
+    "remaining":["SC300 generic material assignments need visual segmentation","LM textured body and door surfaces need paint masks","AE92 textured body needs a paint mask","Innova generic material assignments need visual segmentation","Auris uses one shared texture atlas","Second AE86 generic material assignments need visual segmentation"],
+    "excluded":"The standalone modified 2JZ engine retains its component materials."
+  }
+}

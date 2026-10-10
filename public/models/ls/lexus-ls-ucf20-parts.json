@@ -28,10 +28,11 @@
     "ucf20-spec",
     "ucf20-1998-front",
     "ucf20-1998-rear",
-    "ucf20-rhd-bay"
+    "ucf20-rhd-bay",
+    "ucf20-stock-walkaround"
   ],
   "verifiedParts": 0,
-  "triangleCount": 610976,
+  "triangleCount": 613280,
   "parts": [
     {
       "id": "wheel-liner--1-0",
@@ -3664,6 +3665,12 @@
       "accuracy": "estimated"
     },
     {
+      "id": "fuel-flap-gap",
+      "name": "Fuel filler flap perimeter",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
       "id": "front-plate",
       "name": "Neutral front registration plate",
       "system": "body",
@@ -4518,7 +4525,7 @@
     "A single representative configuration does not cover every year, market, facelift, wheel option or powertrain in the generation."
   ],
   "refinement": "1998 UK facelift: crowned panels, clear combination headlights, horizontal grille, seven-opening 16-inch wheels and RHD VVT-i bay",
-  "bytes": 1860648,
-  "sha256": "b1e1b0db31f4e073f0af05c60fed6b67e7ef7f6803f0ddf3e214967a6dd2d458",
+  "bytes": 1947668,
+  "sha256": "df6e162b27a3179f5c7f7af60a736b68ca84d5e28a375b7f5cf8f25c5b212dc8",
   "encoding": "EXT_meshopt_compression"
 }

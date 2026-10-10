@@ -5,6 +5,12 @@
   "scope": "Original, provisional Lexus LS generation studies. Not approved repair replicas.",
   "sources": [
     {
+      "id": "ucf20-stock-walkaround",
+      "title": "1998 LS400 stock-car walkaround — Bring a Trailer",
+      "url": "https://bringatrailer.com/listing/1998-lexus-ls400-40/",
+      "scope": "Actual 44-second walkaround reviewed at 0:00, 0:23 and 0:33. Shared facelift body contour, outer tail-lamp taper and fuel flap only. US LHD car with five-opening wheels; not evidence for UK wheel choice or engine-bay installation. No surveyed measurements."
+    },
+    {
       "id": "ucf10-1990-front",
       "title": "Lexus 1990 UK LS400 G227 XPK — front three-quarter photograph",
       "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/2015/06/LS-400-1990-2-1024x683.jpg",
@@ -2050,13 +2056,14 @@
       "assetUrl": "/models/ls/lexus-ls-ucf20.glb",
       "manifestUrl": "/models/ls/lexus-ls-ucf20-parts.json",
       "kind": "Original anatomy study",
-      "sha256": "b1e1b0db31f4e073f0af05c60fed6b67e7ef7f6803f0ddf3e214967a6dd2d458",
-      "bytes": 1860648,
+      "sha256": "df6e162b27a3179f5c7f7af60a736b68ca84d5e28a375b7f5cf8f25c5b212dc8",
+      "bytes": 1947668,
       "sourceIds": [
         "ucf20-spec",
         "ucf20-1998-front",
         "ucf20-1998-rear",
-        "ucf20-rhd-bay"
+        "ucf20-rhd-bay",
+        "ucf20-stock-walkaround"
       ],
       "nominalDimensionsMetres": {
         "length": 5.005,
@@ -3358,6 +3365,12 @@
         {
           "id": "front-plate-recess",
           "name": "Front plate mounting pad",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fuel-flap-gap",
+          "name": "Fuel filler flap perimeter",
           "system": "body",
           "accuracy": "estimated"
         },
