@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
-import {Box3,Vector3,MeshBasicMaterial} from 'three';
+import {Box3,Vector3,MeshBasicMaterial,Raycaster,DoubleSide} from 'three';
 import {matchesLibraryModel} from '../lib/library-search.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const index=read('research/lexus-ls-originals.json');
@@ -43,5 +43,28 @@ test('decoded LS assets preserve finite geometry, envelope targets, wheelbase an
   assert(position('cam-cover--1').x<0);assert(position('cam-cover-1').x>0);
   assert(position('radiator').z>position('engine-block').z);assert(position('hood').y>position('engine-block').y);
   assert.equal(byId.get('battery').userData.system,'electrical');assert.equal(byId.get('hood').userData.system,'body');
+  if(model.id==='lexus-ls-ucf10'){
+   assert.equal(manifest.revision,2);
+   for(const source of ['ucf10-1990-front','ucf10-1990-rear','ucf10-rhd-bay'])assert(model.sourceIds.includes(source));
+   assert(position('washer-cap').x>0,'RHD photo places washer filler beside vehicle-left battery');
+   assert(position('washer-cap').z>position('battery').z);
+   assert(position('coolant-cap').z<position('battery').z,'Coolant tank behind battery');
+   assert(position('oil-cap').x<0&&position('oil-cap').z>position('engine-block').z,'Oil filler on forward vehicle-right cam cover');
+   assert(position('throttle-body').x<-.1,'Early 1UZ uses side-entry intake');
+   // Detect an opaque fascia accidentally masking the inset lamp, as in the old study.
+   const body=[...byId.values()].filter(m=>m.userData.system==='body');
+   for(const mesh of body)mesh.material.side=DoubleSide;
+   const ray=new Raycaster(new Vector3(.60,.74,3),new Vector3(0,0,-1));
+   const hit=ray.intersectObjects(body,false)[0];
+   assert(hit&&/headlamp|lens-flute|reflector-chamber/.test(hit.object.userData.partId),'Front lamp must not be occluded by the fascia');
+   const wheelFace=byId.get('wheel-0-1-disc-face'),hub=position('wheel-0-1-hub');
+   wheelFace.material.side=DoubleSide;
+   for(let i=0;i<15;i++){
+    const angle=i*Math.PI*2/15;
+    const holeRay=new Raycaster(new Vector3(2,hub.y+.148*Math.cos(angle),hub.z+.148*Math.sin(angle)),new Vector3(-1,0,0));
+    assert.equal(holeRay.intersectObject(wheelFace,false).length,0,'Factory wheel openings must remain open after compression');
+   }
+   assert(Math.abs(size.z-model.nominalDimensionsMetres.length)<.035,'Refined UCF10 exterior length within 35 mm including trim');
+  }
  }
 });

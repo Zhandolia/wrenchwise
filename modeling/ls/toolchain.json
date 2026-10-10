@@ -1,6 +1,9 @@
 {
   "build": "node modeling/ls/build.mjs",
   "compression": "node modeling/ls/compress.mjs work/tools/gltf",
+  "firstGenerationBuild": "node modeling/ls/build.mjs lexus-ls-ucf10",
+  "firstGenerationCompression": "node modeling/ls/compress.mjs work/tools/gltf lexus-ls-ucf10",
+  "firstGenerationReferencePass": "Revision 2 uses dated Lexus 1990 G227 XPK front/rear photographs and a 1990 UK RHD engine-bay photograph. Curvature is authored from visual comparison, not recovered from a scan. Shared-generation meshes are preserved when building only UCF10.",
   "toolInstall": "npm install --prefix work/tools/gltf @gltf-transform/core@4.2.1 @gltf-transform/extensions@4.2.1 @gltf-transform/functions@4.2.1 meshoptimizer@0.25.0 --no-audit --no-fund",
   "runtime": "Repository-pinned Three.js 0.186.1 and Node.js 24",
   "verification": "node --test tests/ls-originals.test.mjs",

@@ -8,6 +8,7 @@ import * as T from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
 import {configurations,sources} from './config.mjs';
+import {refineUcf10} from './ucf10-refinement.mjs';
 globalThis.FileReader=class {readAsArrayBuffer(blob){blob.arrayBuffer().then(value=>{this.result=value;this.onloadend?.();});}};
 const lerp=T.MathUtils.lerp, vec=a=>new T.Vector3(...a);
 const out='public/models/ls';fs.mkdirSync(out,{recursive:true});
@@ -33,7 +34,7 @@ export function buildCar(c){
  const rubber=mat('tyre rubber','#17191b',.03,.91),rubberRib=mat('tread ribs','#26292b',.05,.87),boltmat=mat('plated fasteners','#9facae',.8,.3);
  const add=(id,name,system,g,m,position=[0,0,0],rotation=[0,0,0])=>{const mesh=new T.Mesh(g,m);mesh.name=id;mesh.position.set(...position);mesh.rotation.set(...rotation);mesh.userData={partId:id,system,accuracy:'estimated',displayName:name};root.add(mesh);parts.push({id,name,system,accuracy:'estimated'});tri+=(g.index?g.index.count:g.attributes.position.count)/3;return mesh;};
  const box=(id,name,system,p,size,m,r=.012,rotation=[0,0,0])=>add(id,name,system,new RoundedBoxGeometry(...size,3,Math.min(r,...size.map(x=>x/3))),m,p,rotation);
- const tube=(id,name,system,pts,r,m,closed=false)=>{let curve;if(closed){curve=new T.CurvePath();for(let i=0;i<pts.length;i++)curve.add(new T.LineCurve3(vec(pts[i]),vec(pts[(i+1)%pts.length])));}else curve=new T.CatmullRomCurve3(pts.map(vec),false,'centripetal');return add(id,name,system,new T.TubeGeometry(curve,Math.max(16,pts.length*8),r,8,closed),m);};
+ const tube=(id,name,system,pts,r,m,closed=false)=>{let curve;if(closed){curve=new T.CurvePath();for(let i=0;i<pts.length;i++)curve.add(new T.LineCurve3(vec(pts[i]),vec(pts[(i+1)%pts.length])));}else curve=new T.CatmullRomCurve3(pts.map(vec),false,'centripetal');return add(id,name,system,new T.TubeGeometry(curve,c.gen===1?Math.min(144,Math.max(16,pts.length*4)):Math.max(16,pts.length*8),r,8,closed),m);};
  const cyl=(id,name,system,p,r,h,m,axis='y',segments=32)=>add(id,name,system,new T.CylinderGeometry(r,r,h,segments),m,p,axis==='x'?[0,0,Math.PI/2]:axis==='z'?[Math.PI/2,0,0]:[0,0,0]);
  const ring=(id,name,system,p,r,t,m,axis='z')=>add(id,name,system,new T.TorusGeometry(r,t,8,64),m,p,axis==='x'?[0,Math.PI/2,0]:axis==='y'?[Math.PI/2,0,0]:[0,0,0]);
  const bolts=(prefix,system,pts)=>pts.forEach((p,i)=>cyl(prefix+'-'+i,'Fastener (illustrative)',system,p,.007,.006,boltmat,'y',6));
@@ -236,14 +237,21 @@ export function buildCar(c){
   for(let j=0;j<5;j++)box('engine-cover-rib-'+j,'Decorative engine cover ridge','engine',[0,.922,1.10+j*.086],[.21,.007,.007],c.gen===2?alloy:black,.002);
  }
  if(c.gen===4){for(const s of [-1,1])box('bay-shroud-'+s,'Engine-bay side finishing panel','structure',[s*.57,.845,1.57],[.28,.03,1.06],black,.02);box('bay-front-shroud','Engine-bay front finishing panel','structure',[0,.825,1.97],[1.40,.025,.22],black,.025);}
+ if(c.gen===1)refineUcf10({root,c,parts,add,box,tube,cyl,ring,mat,surface,front,rear,fw,rw,rad,wr});
+ tri=0;root.traverse(o=>{if(o.isMesh)tri+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;});
  root.updateMatrixWorld(true);
  const bounds=new T.Box3().setFromObject(root),size=bounds.getSize(new T.Vector3());
  return {root,manifest:{id:c.id,revision:1,author:'Wrenchwise',license:'MIT',kind:'original-provisional-study',target:{year:c.year,market:c.market,engine:c.engine},nominalDimensionsMetres:{length:c.length,widthExcludingMirrors:c.width,height:c.height,wheelbase:c.wheelbase},wheelCentersMetres:{front:fw,rear:rw},boundsMetres:{x:size.x,y:size.y,z:size.z},sourceIds:c.sourceIds,verifiedParts:0,triangleCount:tri,parts,limitations:['Original photo-informed approximation, not a scan, manufacturer CAD, or validated 1:1 replica.','Published overall dimensions constrain the envelope; panel curvature, clearances and local part dimensions are estimates.','Engine-bay component placement, hidden geometry, wiring and hose routing remain provisional; do not use for repair, fitment or torque decisions.','Cabin, underside and suspension are incomplete. Decorative engine covers can be hidden as a learning view, not a service removal sequence.','A single representative configuration does not cover every year, market, facelift, wheel option or powertrain in the generation.']}};
 }
 if(process.argv[1]?.endsWith('build.mjs')){
+ const selected=process.argv[2];
+ if(selected&&!configurations.some(c=>c.id===selected))throw Error('Unknown LS generation: '+selected);
+ const previous=selected?JSON.parse(fs.readFileSync('research/lexus-ls-originals.json')):null;
  const index={version:1,author:'Wrenchwise',license:'MIT',scope:'Original, provisional Lexus LS generation studies. Not approved repair replicas.',sources,models:[]};
  for(const c of configurations){
+  if(selected&&c.id!==selected){index.models.push(previous.models.find(m=>m.id===c.id));continue;}
   const {root,manifest}=buildCar(c);
+  if(c.gen===1){manifest.revision=2;manifest.refinement='1990 UK pre-facelift: rounded body surfaces, lattice grille, wraparound lamps, pierced alloy faces and RHD engine bay';}
   root.traverse(o=>{if(!o.isMesh)return;const g=o.geometry,pos=g.attributes.position,idx=g.index,keep=[],a=new T.Vector3(),b=new T.Vector3(),d=new T.Vector3();for(let i=0;i<(idx?idx.count:pos.count);i+=3){const ids=[0,1,2].map(k=>idx?idx.getX(i+k):i+k);a.fromBufferAttribute(pos,ids[0]);b.fromBufferAttribute(pos,ids[1]);d.fromBufferAttribute(pos,ids[2]);if(b.sub(a).cross(d.sub(a)).lengthSq()>1e-20)keep.push(...ids);}g.setIndex(keep);g.computeVertexNormals();const n=g.attributes.normal;for(let i=0;i<n.count;i++)if(n.getX(i)**2+n.getY(i)**2+n.getZ(i)**2<.01)n.setXYZ(i,0,1,0);});
   const buffer=Buffer.from(await new GLTFExporter().parseAsync(root,{binary:true,onlyVisible:false}));
   // Embed explicit provenance in the asset header without adding external dependencies.

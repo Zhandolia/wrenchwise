@@ -14,6 +14,7 @@ await Promise.all([MeshoptEncoder.ready,MeshoptDecoder.ready]);
 const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.encoder':MeshoptEncoder,'meshopt.decoder':MeshoptDecoder});
 const index=JSON.parse(fs.readFileSync('research/lexus-ls-originals.json'));
 for(const model of index.models){
+ if(process.argv[3]&&model.id!==process.argv[3])continue;
  const file='public'+model.assetUrl,doc=await io.read(file);
  await doc.transform(weld(),dedup(),prune(),meshopt({encoder:MeshoptEncoder,level:'high'}));
  const bytes=await io.writeBinary(doc);fs.writeFileSync(file,bytes);
