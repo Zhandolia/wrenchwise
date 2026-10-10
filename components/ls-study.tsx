@@ -22,8 +22,8 @@ export default function LSStudy({model}:{model:Model}){
  const [mode,setMode]=useState('exterior'),[camera,setCamera]=useState('all'),[cover,setCover]=useState(true),[selected,setSelected]=useState<string|null>(null),[reset,setReset]=useState(0),[filter,setFilter]=useState('all');
  const part=model.parts.find(p=>p.id===selected);
  const engineOnly=mode==='engine';
- const hidden=[...(mode!=='exterior'?['hood']:[]),...(!cover?['engine-cover',...Array.from({length:5},(_,i)=>'engine-cover-rib-'+i),'bay-shroud--1','bay-shroud-1','bay-front-shroud']:[])];
- const choices=model.parts.filter(p=>['engine','intake','electrical','cooling','brakes'].includes(p.system)).filter(p=>filter==='all'||p.system===filter).filter(p=>!p.id.startsWith('wheel-')).filter((p,i,all)=>all.findIndex(x=>x.name===p.name)===i);
+ const hidden=[...(mode!=='exterior'?['hood']:[]),...(!cover?['engine-cover',...model.parts.filter(p=>p.id.startsWith('engine-cover-')).map(p=>p.id),...Array.from({length:5},(_,i)=>'engine-cover-rib-'+i),'bay-shroud--1','bay-shroud-1','bay-front-shroud']:[])];
+ const choices=model.parts.filter(p=>['engine','intake','electrical','cooling','brakes'].includes(p.system)).filter(p=>filter==='all'||p.system===filter).filter(p=>!p.id.startsWith('wheel-')&&!p.id.startsWith('engine-cover-')).filter((p,i,all)=>all.findIndex(x=>x.name===p.name)===i);
  return <div className="ls-study">
   <div className="ls-study-title"><div><span className="source-chip">ORIGINAL WRENCHWISE STUDY</span><h2>{model.name} · {model.sourceYear}</h2><p>{model.generation} · {model.market}</p></div><strong>{model.engineName}</strong></div>
   <div className="ls-modes" role="group" aria-label="Study view">{[['exterior','Exterior'],['bay','Under the hood'],['engine','Engine anatomy']].map(([id,label])=><button key={id} aria-pressed={mode===id} onClick={()=>{setMode(id);setCamera('all');setReset(n=>n+1);setSelected(null);}}>{label}</button>)}</div>

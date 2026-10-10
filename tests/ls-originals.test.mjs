@@ -43,6 +43,27 @@ test('decoded LS assets preserve finite geometry, envelope targets, wheelbase an
   assert(position('cam-cover--1').x<0);assert(position('cam-cover-1').x>0);
   assert(position('radiator').z>position('engine-block').z);assert(position('hood').y>position('engine-block').y);
   assert.equal(byId.get('battery').userData.system,'electrical');assert.equal(byId.get('hood').userData.system,'body');
+  if(model.id==='lexus-ls-ucf20'){
+   assert.equal(manifest.revision,2);
+   for(const source of ['ucf20-1998-front','ucf20-1998-rear','ucf20-rhd-bay'])assert(model.sourceIds.includes(source));
+   assert(position('coolant-cap').x<0,'1998 RHD coolant tank belongs on vehicle-right');
+   assert(position('fuse-box').x>0&&position('fuse-box').z<position('battery').z,'Fuse box behind vehicle-left battery');
+   assert(position('throttle-body').z>position('intake-plenum').z,'VVT-i front-entry throttle');
+   assert(!byId.has('grille-upright-0'),'Facelift grille must not inherit early vertical lattice');
+   const body=[...byId.values()].filter(m=>m.userData.system==='body');
+   for(const mesh of body)mesh.material.side=DoubleSide;
+   const hit=new Raycaster(new Vector3(.60,.78,3),new Vector3(0,0,-1)).intersectObjects(body,false)[0];
+   assert(hit&&/headlamp|reflector/.test(hit.object.userData.partId),'Facelift lamps must remain exposed');
+   const face=byId.get('wheel-0-1-disc-face'),hub=position('wheel-0-1-hub');face.material.side=DoubleSide;
+   for(let i=0;i<7;i++){
+    const a=i*Math.PI*2/7;
+    assert.equal(new Raycaster(new Vector3(2,hub.y+.150*Math.cos(a),hub.z+.150*Math.sin(a)),new Vector3(-1,0,0)).intersectObject(face,false).length,0,'Seven alloy openings must remain open');
+   }
+   const cover=byId.get('engine-cover');cover.material.side=DoubleSide;
+   assert.equal(new Raycaster(new Vector3(0,1.5,1.2),new Vector3(0,-1,0)).intersectObject(cover,false).length,0,'Cover aperture must reveal ribbed intake');
+   assert(new Box3().setFromObject(cover,true).getSize(new Vector3()).x>.75,'VVT-i cover spans both banks');
+   assert(Math.abs(size.z-model.nominalDimensionsMetres.length)<.035,'Refined UCF20 trim envelope');
+  }
   if(model.id==='lexus-ls-ucf10'){
    assert.equal(manifest.revision,2);
    for(const source of ['ucf10-1990-front','ucf10-1990-rear','ucf10-rhd-bay'])assert(model.sourceIds.includes(source));
