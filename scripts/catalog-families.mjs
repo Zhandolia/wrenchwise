@@ -23,5 +23,10 @@ export function matchesCatalogRecord(r,query){
  const tokens=query.trim().toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
  const words=`${r.make} ${r.name} ${r.generation??''} ${r.introductionMonth??''} ${r.region} ${r.bodyType} ${r.engineId??''}`.toLowerCase().split(/[^a-z0-9]+/);
  const compactName=r.name.toLowerCase().replace(/[^a-z0-9]/g,'');
- return tokens.every(t=>words.some(w=>w.startsWith(t))||compactName.startsWith(t));
+ // A closed source date range supports discovery, not model-year fitment.
+ // Never extend an introduction-only record through an invented end date.
+ const dates=[r.introductionMonth,r.endMonth];
+ const closedRange=dates.every(d=>typeof d==='string'&&/^\d{4}(0[1-9]|1[0-2])$/.test(d))&&dates[0]<=dates[1];
+ const inSourceRange=t=>closedRange&&/^\d{4}$/.test(t)&&t>=dates[0].slice(0,4)&&t<=dates[1].slice(0,4);
+ return tokens.every(t=>words.some(w=>w.startsWith(t))||compactName.startsWith(t)||inSourceRange(t));
 }

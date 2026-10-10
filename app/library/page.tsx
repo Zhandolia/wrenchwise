@@ -1,8 +1,8 @@
 'use client';
-import {lazy,Suspense,useState} from 'react';
+import {lazy,Suspense,useEffect,useState} from 'react';
 import {Wrench,Download,ExternalLink} from 'lucide-react';
 import {appPath} from '@/lib/app-path';
-import {matchesLibraryModel,compareLibraryEntries} from '@/lib/library-search.mjs';
+import {matchesLibraryModel,compareLibraryEntries,readLibrarySelection,librarySelectionUrl} from '@/lib/library-search.mjs';
 import library from '@/research/model-library.json';
 import generationReview from '@/research/lexus-ls-generation-review.json';
 import '../assembly/assembly.css';
@@ -11,8 +11,8 @@ const entries=[...library.models,...generationReview.generations];
 const Viewer=lazy(()=>import('@/components/assembly-viewer'));
 export default function LibraryPage(){
  const [query,setQuery]=useState(''),[make,setMake]=useState('All'),[body,setBody]=useState('All');
- const [group,setGroup]=useState(()=>{const id=typeof window==='undefined'?null:new URLSearchParams(location.search).get('model')||new URLSearchParams(location.search).get('generation');return entries.find(m=>m.id===id)?.bodyGroup||'All'});
- const [id,setId]=useState(()=>typeof window==='undefined'?library.models[0].id:new URLSearchParams(location.search).get('model')||new URLSearchParams(location.search).get('generation')||library.models[0].id);
+ const [initialSelection]=useState(()=>readLibrarySelection(entries,typeof window==='undefined'?'':window.location.search));
+ const [group,setGroup]=useState(initialSelection.group),[id,setId]=useState(initialSelection.id);
  const [reset,setReset]=useState(0),[selected,setSelected]=useState<string|null>(null),[view,setView]=useState('all');
  const entry=entries.find(m=>m.id===id)||entries[0];
  const missing=generationReview.generations.find(m=>m.id===entry.id);
@@ -21,7 +21,12 @@ export default function LibraryPage(){
  const groups=[...new Set(available.filter(m=>body==='All'||m.bodyStyle===body).sort(compareLibraryEntries).map(m=>m.bodyGroup))];
  const matches=available.filter(m=>(body==='All'||m.bodyStyle===body)&&(group==='All'||m.bodyGroup===group)&&matchesLibraryModel(m,query)).sort(compareLibraryEntries);
  const grouped=[...new Set(matches.map(m=>m.bodyGroup))];
- const choose=(next:string)=>{setId(next);setSelected(null);setReset(0);setView('all');history.replaceState(null,'','?'+(generationReview.generations.some(g=>g.id===next)?'generation':'model')+'='+encodeURIComponent(next))};
+ useEffect(()=>{
+  const restore=()=>{const next=readLibrarySelection(entries,window.location.search);setId(next.id);setGroup(next.group);setQuery('');setMake('All');setBody('All');setSelected(null);setReset(0);setView('all')};
+  window.addEventListener('popstate',restore);
+  return ()=>window.removeEventListener('popstate',restore);
+ },[]);
+ const choose=(next:string)=>{const target=entries.find(m=>m.id===next);if(!target)return;setId(next);setSelected(null);setReset(0);setView('all');const url=librarySelectionUrl(window.location.href,target);if(url!==window.location.pathname+window.location.search+window.location.hash)window.history.pushState(null,'',url)};
  const chooseGroup=(next:string)=>{setGroup(next);setQuery('');if(next!=='All'){const first=entries.find(m=>m.bodyGroup===next);if(first)choose(entry.bodyGroup===next?entry.id:first.id)}};
  const index=matches.findIndex(m=>m.id===entry.id);
  const adjacent=(delta:number)=>{if(matches.length)choose(matches[index<0?0:(index+delta+matches.length)%matches.length].id)};
@@ -40,7 +45,11 @@ export default function LibraryPage(){
      <div className="library-filter-summary"><p className="library-count" role="status">Models: {matches.filter(m=>'assetUrl' in m).length} · Generations: {grouped.length}</p><button onClick={clear}>Clear filters</button></div>
      {group==='All'?<div className="library-list" aria-label="Body generations">{grouped.map(g=>{const variants=matches.filter(m=>m.bodyGroup===g);return <button key={g} aria-pressed={g===entry.bodyGroup} onClick={()=>{setGroup(g);setQuery('');choose(variants.some(m=>m.id===entry.id)?entry.id:variants[0].id)}}><strong>{g}</strong><span>{variants[0].bodyStyle} · {!('assetUrl' in variants[0])?'3D model pending':variants.length===1?'Open 3D model':variants.length+' versions available'}</span></button>})}{!matches.length&&<p>No matching models. Try another body or clear the filters.</p>}</div>:matches.length>1?<div className="library-list" aria-label="Available versions"><p className="library-note">This body has {matches.length} versions. A model is already open; switch versions below.</p>{matches.map(m=><button key={m.id} aria-pressed={m.id===entry.id} onClick={()=>choose(m.id)}><strong>{m.name}</strong><small>{m.kind}{m.sourceYear?' · '+m.sourceYear:''}</small></button>)}</div>:<p className="library-note" role="status">{missing?'Generation selected. 3D model pending.':matches.length?'Generation selected. Your 3D model is open.':'No matching models. Clear the filters to browse again.'}</p>}
     </aside>
-    <section className="library-detail">{missing?<>
+    <section className="library-detail" aria-label="Selected vehicle">
+     <p className="library-selection-status" role="status">Selected: {entry.bodyGroup}{missing?' · 3D model pending':''}</p>
+     {index<0&&<p className="library-note">This selection is outside the current filters. Select a result to switch vehicles.</p>}
+     <div className="library-controls"><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(-1)}>Previous result</button><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(1)}>Next result</button></div>
+     {missing?<>
      <div className="library-title"><div><span className="source-chip">SEDAN · 3D MODEL PENDING</span><h2>{missing.name}</h2><p className="library-generation">{missing.bodyGroup} · {missing.years}</p></div></div>
      <div className="library-pending"><h3>This generation is on the list. Its 3D model is not available yet.</h3><p>{missing.reason}</p><p>{missing.nextStep}</p><a className="secondary-btn" href={missing.referenceUrl} target="_blank" rel="noreferrer">View Lexus generation reference <ExternalLink size={16}/></a></div>
      <p className="library-note">Pre-facelift and facelift versions belong to this body generation. A future model will identify the specific version it depicts.</p>
@@ -48,8 +57,7 @@ export default function LibraryPage(){
      <button className="secondary-btn" onClick={()=>{setGroup('All');setQuery('')}}>Browse other generations</button>
     </>:<>
      <div className="library-title"><div><span className="source-chip">{model.bodyStyle.toUpperCase()} · {model.kind.toUpperCase()}</span><h2>{model.name}</h2><p className="library-generation">{entry.bodyGroup}{model.sourceYear?' · Source year '+model.sourceYear:''}</p></div><a className="secondary-btn" href={appPath(model.assetUrl)} download><Download size={16}/>Download GLB · {(model.bytes/1e6).toFixed(1)} MB</a></div>
-     {index<0&&<p className="library-note">This model is outside the current filters. Select a result to switch models.</p>}
-     <div className="library-controls"><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(-1)}>Previous model</button><button className="secondary-btn" onClick={()=>{setView('all');setReset(r=>r+1)}}>Reset view</button><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(1)}>Next model</button></div>
+     <div className="library-controls"><button className="secondary-btn" onClick={()=>{setView('all');setReset(r=>r+1)}}>Reset view</button></div>
      <div className="library-views" role="group" aria-label="Camera views">{[['all','Three-quarter'],['front','Front'],['side','Side'],['rear','Rear']].map(([v,label])=><button key={v} aria-pressed={view===v} onClick={()=>{setView(v);setReset(r=>r+1)}}>{label}</button>)}<span>Drag to orbit · scroll to zoom</span></div>
      <div className="library-view"><Suspense fallback={<p role="status">Loading model viewer…</p>}><Viewer key={entry.id} presentationYaw={model.presentation.yawDegrees} modelUrl={model.assetUrl} label={model.name+' community reference'} showGrid={false} visible={['body']} selected={selected} onSelect={setSelected} reset={reset} explode={0} cutaway={false} cameraView={view}/></Suspense></div>
      <p className="library-note">{model.notes}</p>{selected&&<p className="library-note">Selected source mesh: {selected}. Material groups are not OEM part identities.</p>}
