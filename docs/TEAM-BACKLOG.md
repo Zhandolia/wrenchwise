@@ -33,7 +33,16 @@ Scope: live GitHub Pages flows, library/catalog/workshop code, GLB loading/impor
 | WW-009 | P2 | Workshop switches could retain old loading/error state; hidden containers could trigger zero-size resize work; graphics-context loss lacked usable feedback. | 3D platform | Reset state on asset switch, ignore inactive/zero-sized resize, and show context-loss/recovery feedback. |
 | WW-010 | P3 | Library selection changes were not announced; input/select focus styles were inconsistent. | Library frontend | Selected generation announced through a status region, with visible keyboard focus. |
 
-## Next batch — assigned, not yet implemented
+## Second batch — delivery status
+
+The next implementation batch is complete for WW-013, WW-014, WW-015, WW-016, WW-018, WW-019 and WW-020. WW-021 now has typed viewer lifecycle state and extracted interaction, lighting, lesson and selection helpers; wider component cleanup remains incremental. WW-017 has removed redundant selectors and clarified known versus unresolved records; 732 historical source groups still need documented chassis mapping.
+
+The product now prioritizes interactive learning: the existing S160 GS300 is in the vehicle chooser, a four-step sourced anatomy lesson includes selectable parts, knowledge checks and device-local progress, and raw exports are confined to contributor resources. Community exteriors remain explicitly limited to visual exploration. Existing model URLs are preserved.
+
+**External content gates remain open:** WW-011 cannot be marked complete without publishable LS1–4 assets. WW-012 now has the educational orientation pilot, but measured geometry, exact configuration/part verification and independent repair-procedure review remain outstanding. See [acquisition and pilot evidence](ls-acquisition-and-engine-pilot.md). No new LS model or verified repair procedure is claimed.
+
+Verification added: browser CI exercises one-click vehicle selection/history, pending/empty states, lesson-to-view synchronization and reload progress, compressed local import restoration, phone overflow, and failed route-chunk recovery. The deployment gate runs browser tests before publishing and hashes every public build file afterward.
+
 
 | ID | Priority | Bug / opportunity and evidence | Owner | Done when |
 |---|---|---|---|---|

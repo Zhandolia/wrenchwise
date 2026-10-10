@@ -21,7 +21,7 @@ export function buildFamilies(records,rules){
 }
 export function matchesCatalogRecord(r,query){
  const tokens=query.trim().toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
- const words=`${r.make} ${r.name} ${r.generation??''} ${r.introductionMonth??''} ${r.region} ${r.bodyType} ${r.engineId??''}`.toLowerCase().split(/[^a-z0-9]+/);
+ const words=`${r.make} ${r.name} ${r.generation??''} ${r.generationId??''} ${r.introductionMonth??''} ${r.region} ${r.bodyType} ${r.engineId??''}`.toLowerCase().split(/[^a-z0-9]+/);
  const compactName=r.name.toLowerCase().replace(/[^a-z0-9]/g,'');
  // A closed source date range supports discovery, not model-year fitment.
  // Never extend an introduction-only record through an invented end date.

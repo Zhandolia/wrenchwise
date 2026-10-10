@@ -26,6 +26,9 @@ jobs:
       - run: npx tsc --noEmit
       - run: npm run build:pages
       - run: node scripts/validate-pages.mjs
+      - run: npx playwright install --with-deps chromium
+      - name: Browser workshop regression checks
+        run: npx playwright test
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist-pages
@@ -47,5 +50,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify deployed revision and every model download
+      - name: Verify deployed revision and public asset inventory
         run: node scripts/verify-deployment.mjs "${{ steps.deployment.outputs.page_url }}" "$GITHUB_SHA"

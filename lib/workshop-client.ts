@@ -1,3 +1,4 @@
+import {isValidNoteChapter} from '@/lib/workshop-state.mjs';
 import {appPath,localWorkshop} from './app-path';
 import {inspectGlb} from './glb';
 import {vehicleCatalog} from './vehicle-catalog';
@@ -47,7 +48,7 @@ export async function listComments(vehicle:string,signal?:AbortSignal):Promise<C
 export async function saveComment(input:{vehicle:string;chapter:number;author:string;body:string}):Promise<CommentRecord>{
  if(!localWorkshop)return server('/api/comments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)});
  const author=input.author.trim(),body=input.body.trim();
- if(!vehicleCatalog.records.some(v=>v.id===input.vehicle)||!Number.isInteger(input.chapter)||input.chapter<0||input.chapter>5||!author||author.length>60||!body||body.length>2000)throw Error('Add your name and a note of up to 2,000 characters.');
+ if(!vehicleCatalog.records.some(v=>v.id===input.vehicle)||!isValidNoteChapter(input.chapter)||!author||author.length>60||!body||body.length>2000)throw Error('Add your name and a note of up to 2,000 characters.');
  const record={...input,author,body,id:crypto.randomUUID(),created_at:Date.now()};
  await stored('comments','readwrite',s=>s.add(record));return record;
 }

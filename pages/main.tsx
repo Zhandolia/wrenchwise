@@ -1,6 +1,9 @@
 import {lazy,Suspense} from 'react';
+import type {Root} from 'react-dom/client';
+type HotContext={data:{root?:Root};dispose:(callback:(data:{root?:Root})=>void)=>void};
 import {createRoot} from 'react-dom/client';
 import {appPath} from '../lib/app-path';
+import LoadingBoundary from '../components/loading-boundary';
 import '../app/globals.css';
 const Home=lazy(()=>import('../app/page'));
 const Catalog=lazy(()=>import('../app/catalog/page'));
@@ -12,4 +15,7 @@ const base=appPath('/');
 const route=location.pathname.slice(base.length).replace(/\/$/,'');
 const routes:Record<string,typeof Home>={'':Home,catalog:Catalog,assembly:Assembly,components:Components,research:Research,library:Library};
 const Page=routes[route];
-createRoot(document.getElementById('root')!).render(<Suspense fallback={<main aria-busy="true">Loading workshop…</main>}>{Page?<Page/>:<main><h1>Page not found</h1><a href={base}>Open the workshop</a></main>}</Suspense>);
+const hot = (import.meta as ImportMeta & {hot?:HotContext}).hot;
+const root = hot?.data.root ?? createRoot(document.getElementById('root')!);
+if (hot) hot.dispose(data => {data.root = root;});
+root.render(<LoadingBoundary><Suspense fallback={<main aria-busy="true">Loading workshop…</main>}>{Page?<Page/>:<main><h1>Page not found</h1><a href={base}>Open the workshop</a></main>}</Suspense></LoadingBoundary>);

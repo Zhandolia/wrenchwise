@@ -1,72 +1,83 @@
 'use client';
-import {lazy,Suspense,useEffect,useState} from 'react';
-import {Wrench,Download,ExternalLink} from 'lucide-react';
+import {lazy, Suspense, useEffect, useState} from 'react';
+import {Wrench, ArrowRight, BookOpen, RotateCcw} from 'lucide-react';
 import {appPath} from '@/lib/app-path';
-import {matchesLibraryModel,compareLibraryEntries,readLibrarySelection,librarySelectionUrl} from '@/lib/library-search.mjs';
+import {matchesLibraryModel, compareLibraryEntries, readLibrarySelection, librarySelectionUrl} from '@/lib/library-search.mjs';
+import {learningVehicles as entries, s160Vehicle} from '@/lib/learning-vehicles';
 import library from '@/research/model-library.json';
+import assetCredits from '@/research/asset-licenses.json';
+const gsCredit = assetCredits.find(item => item.vehicle === 'gs300')!;
 import generationReview from '@/research/lexus-ls-generation-review.json';
+import LoadingBoundary from '@/components/loading-boundary';
 import '../assembly/assembly.css';
 import './library.css';
-const entries=[...library.models,...generationReview.generations];
-const Viewer=lazy(()=>import('@/components/assembly-viewer'));
-export default function LibraryPage(){
- const [query,setQuery]=useState(''),[make,setMake]=useState('All'),[body,setBody]=useState('All');
- const [initialSelection]=useState(()=>readLibrarySelection(entries,typeof window==='undefined'?'':window.location.search));
- const [group,setGroup]=useState(initialSelection.group),[id,setId]=useState(initialSelection.id);
- const [reset,setReset]=useState(0),[selected,setSelected]=useState<string|null>(null),[view,setView]=useState('all');
- const entry=entries.find(m=>m.id===id)||entries[0];
- const missing=generationReview.generations.find(m=>m.id===entry.id);
- const model=library.models.find(m=>m.id===id)||library.models[0];
- const available=entries.filter(m=>make==='All'||m.make===make);
- const groups=[...new Set(available.filter(m=>body==='All'||m.bodyStyle===body).sort(compareLibraryEntries).map(m=>m.bodyGroup))];
- const matches=available.filter(m=>(body==='All'||m.bodyStyle===body)&&(group==='All'||m.bodyGroup===group)&&matchesLibraryModel(m,query)).sort(compareLibraryEntries);
- const grouped=[...new Set(matches.map(m=>m.bodyGroup))];
- useEffect(()=>{
-  const restore=()=>{const next=readLibrarySelection(entries,window.location.search);setId(next.id);setGroup(next.group);setQuery('');setMake('All');setBody('All');setSelected(null);setReset(0);setView('all')};
-  window.addEventListener('popstate',restore);
-  return ()=>window.removeEventListener('popstate',restore);
- },[]);
- const choose=(next:string)=>{const target=entries.find(m=>m.id===next);if(!target)return;setId(next);setSelected(null);setReset(0);setView('all');const url=librarySelectionUrl(window.location.href,target);if(url!==window.location.pathname+window.location.search+window.location.hash)window.history.pushState(null,'',url)};
- const chooseGroup=(next:string)=>{setGroup(next);setQuery('');if(next!=='All'){const first=entries.find(m=>m.bodyGroup===next);if(first)choose(entry.bodyGroup===next?entry.id:first.id)}};
- const index=matches.findIndex(m=>m.id===entry.id);
- const adjacent=(delta:number)=>{if(matches.length)choose(matches[index<0?0:(index+delta+matches.length)%matches.length].id)};
- const clear=()=>{setQuery('');setMake('All');setBody('All');setGroup('All')};
- return <div className="assembly-app">
-  <header className="assembly-header"><a className="brand" href={appPath('/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav><a href={appPath('/catalog')}>Vehicle catalog</a><a href={appPath('/research')}>Research</a><a href={appPath('/assembly')}>GS assembly</a></nav></header>
-  <main className="model-library"><div className="eyebrow orange">LEXUS + TOYOTA / 3D LIBRARY</div><h1>Find your body generation.</h1><p className="library-intro">Choose a generation to open it directly. {library.models.length} community models are available; the four earlier Lexus LS generations have reference entries while their 3D models are being sourced. Facelifts and custom versions stay together. Exact dimensions and repair fitment remain unverified.</p>
-   <div className="library-layout">
-    <aside className="library-sidebar">
-     <label>Find a model<input value={query} onChange={e=>{setQuery(e.target.value);setGroup('All')}} placeholder="SC300, AE86, sedan, 2012…"/></label>
-     <div className="library-filters">
-      <label>Make<select aria-label="Make" value={make} onChange={e=>{setMake(e.target.value);setBody('All');setGroup('All')}}>{['All','Lexus','Toyota'].map(v=><option key={v}>{v}</option>)}</select></label>
-      <label>Body style<select aria-label="Body style" value={body} onChange={e=>{setBody(e.target.value);setGroup('All')}}>{['All',...new Set(available.map(m=>m.bodyStyle))].map(v=><option key={v}>{v}</option>)}</select></label>
-     </div>
-     <label>Body generation<select aria-label="Body generation" value={group} onChange={e=>chooseGroup(e.target.value)}><option>All</option>{groups.map(v=><option key={v} value={v}>{v}{generationReview.generations.some(g=>g.bodyGroup===v)?' · 3D pending':''}</option>)}</select></label>
-     <div className="library-filter-summary"><p className="library-count" role="status">Models: {matches.filter(m=>'assetUrl' in m).length} · Generations: {grouped.length}</p><button onClick={clear}>Clear filters</button></div>
-     {group==='All'?<div className="library-list" aria-label="Body generations">{grouped.map(g=>{const variants=matches.filter(m=>m.bodyGroup===g);return <button key={g} aria-pressed={g===entry.bodyGroup} onClick={()=>{setGroup(g);setQuery('');choose(variants.some(m=>m.id===entry.id)?entry.id:variants[0].id)}}><strong>{g}</strong><span>{variants[0].bodyStyle} · {!('assetUrl' in variants[0])?'3D model pending':variants.length===1?'Open 3D model':variants.length+' versions available'}</span></button>})}{!matches.length&&<p>No matching models. Try another body or clear the filters.</p>}</div>:matches.length>1?<div className="library-list" aria-label="Available versions"><p className="library-note">This body has {matches.length} versions. A model is already open; switch versions below.</p>{matches.map(m=><button key={m.id} aria-pressed={m.id===entry.id} onClick={()=>choose(m.id)}><strong>{m.name}</strong><small>{m.kind}{m.sourceYear?' · '+m.sourceYear:''}</small></button>)}</div>:<p className="library-note" role="status">{missing?'Generation selected. 3D model pending.':matches.length?'Generation selected. Your 3D model is open.':'No matching models. Clear the filters to browse again.'}</p>}
-    </aside>
-    <section className="library-detail" aria-label="Selected vehicle">
-     <p className="library-selection-status" role="status">Selected: {entry.bodyGroup}{missing?' · 3D model pending':''}</p>
-     {index<0&&<p className="library-note">This selection is outside the current filters. Select a result to switch vehicles.</p>}
-     <div className="library-controls"><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(-1)}>Previous result</button><button className="secondary-btn" disabled={matches.length<2} onClick={()=>adjacent(1)}>Next result</button></div>
-     {missing?<>
-     <div className="library-title"><div><span className="source-chip">SEDAN · 3D MODEL PENDING</span><h2>{missing.name}</h2><p className="library-generation">{missing.bodyGroup} · {missing.years}</p></div></div>
-     <div className="library-pending"><h3>This generation is on the list. Its 3D model is not available yet.</h3><p>{missing.reason}</p><p>{missing.nextStep}</p><a className="secondary-btn" href={missing.referenceUrl} target="_blank" rel="noreferrer">View Lexus generation reference <ExternalLink size={16}/></a></div>
-     <p className="library-note">Pre-facelift and facelift versions belong to this body generation. A future model will identify the specific version it depicts.</p>
-     <p className="library-note"><a href={appPath('/research/lexus-ls-generation-review.json')}>View source review and acquisition status</a></p>
-     <button className="secondary-btn" onClick={()=>{setGroup('All');setQuery('')}}>Browse other generations</button>
-    </>:<>
-     <div className="library-title"><div><span className="source-chip">{model.bodyStyle.toUpperCase()} · {model.kind.toUpperCase()}</span><h2>{model.name}</h2><p className="library-generation">{entry.bodyGroup}{model.sourceYear?' · Source year '+model.sourceYear:''}</p></div><a className="secondary-btn" href={appPath(model.assetUrl)} download><Download size={16}/>Download GLB · {(model.bytes/1e6).toFixed(1)} MB</a></div>
-     <div className="library-controls"><button className="secondary-btn" onClick={()=>{setView('all');setReset(r=>r+1)}}>Reset view</button></div>
-     <div className="library-views" role="group" aria-label="Camera views">{[['all','Three-quarter'],['front','Front'],['side','Side'],['rear','Rear']].map(([v,label])=><button key={v} aria-pressed={view===v} onClick={()=>{setView(v);setReset(r=>r+1)}}>{label}</button>)}<span>Drag to orbit · scroll to zoom</span></div>
-     <div className="library-view"><Suspense fallback={<p role="status">Loading model viewer…</p>}><Viewer key={entry.id} presentationYaw={model.presentation.yawDegrees} modelUrl={model.assetUrl} label={model.name+' community reference'} showGrid={false} visible={['body']} selected={selected} onSelect={setSelected} reset={reset} explode={0} cutaway={false} cameraView={view}/></Suspense></div>
-     <p className="library-note">{model.notes}</p>{selected&&<p className="library-note">Selected source mesh: {selected}. Material groups are not OEM part identities.</p>}
-     <div className="library-credit"><a href={model.sourceUrl} target="_blank" rel="noreferrer">Original model <ExternalLink size={13}/></a><span>by <a href={model.authorUrl} target="_blank" rel="noreferrer">{model.author}</a></span><a href={model.licenseUrl} target="_blank" rel="noreferrer">{model.license}</a></div>
-     <p className="library-note">Body groups are browsing aids inferred from the source and appearance. Years identify the source model, not every year it fits. <a href={model.bodyReferenceUrl} target="_blank" rel="noreferrer">Body reference</a>. Models share a viewing angle and screen framing, not physical scale.</p>
-     <p className="library-note">Adapted for Wrenchwise: display normalization, material conversion where needed, source-mesh IDs and web compression. No endorsement implied.</p>
-     {model.additionalCredits.map(c=><p className="library-note" key={c.sourceUrl}>Includes <a href={c.sourceUrl} target="_blank" rel="noreferrer">{c.title}</a> by <a href={c.authorUrl} target="_blank" rel="noreferrer">{c.author}</a> · <a href={c.licenseUrl} target="_blank" rel="noreferrer">{c.license}</a>.</p>)}
-    </>}</section>
-   </div><p><a className="evidence-link" href={appPath('/research/model-library.json')} download>Download the complete source and export manifest</a></p>
-  </main>
- </div>;
+const Viewer = lazy(() => import('@/components/assembly-viewer'));
+const assemblySystems = ['body','engine','intake','electrical','cooling','exhaust','transmission','suspension','brakes','driveline','wheels','structure','interior'];
+
+export default function VehiclesPage() {
+  const [query, setQuery] = useState('');
+  const [make, setMake] = useState('All');
+  const [body, setBody] = useState('All');
+  const [id, setId] = useState(() => readLibrarySelection(entries, typeof window === 'undefined' ? '' : window.location.search).id);
+  const [reset, setReset] = useState(0);
+  const [view, setView] = useState('all');
+  const entry = entries.find(item => item.id === id) || entries[0];
+  const model = library.models.find(item => item.id === entry.id);
+  const missing = generationReview.generations.find(item => item.id === entry.id);
+  const isEngine = entry.bodyStyle === 'Engine';
+  const isAssembly = entry.id === s160Vehicle.id;
+  const available = entries.filter(item => make === 'All' || item.make === make);
+  const matches = available.filter(item => (body === 'All' || item.bodyStyle === body) && matchesLibraryModel(item, query)).sort(compareLibraryEntries);
+  const groups = [...new Set(matches.map(item => item.bodyGroup))];
+  useEffect(() => {
+    const restore = () => {setId(readLibrarySelection(entries, window.location.search).id); setQuery(''); setMake('All'); setBody('All'); setView('all'); setReset(0);};
+    window.addEventListener('popstate', restore);
+    return () => window.removeEventListener('popstate', restore);
+  }, []);
+  const choose = (next: string) => {
+    const target = entries.find(item => item.id === next);
+    if (!target) return;
+    setId(next); setView('all'); setReset(0);
+    const url = librarySelectionUrl(window.location.href, target);
+    if (url !== window.location.pathname + window.location.search + window.location.hash) window.history.pushState(null, '', url);
+  };
+  const clear = () => {setQuery(''); setMake('All'); setBody('All');};
+  return <div className="assembly-app">
+    <header className="assembly-header"><a className="brand" href={appPath('/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav aria-label="Main navigation"><a href={appPath('/')}>Workshop</a><a aria-current="page" href={appPath('/library')}>Choose vehicle</a><a href={appPath('/assembly')}>GS 300 learning lab</a></nav></header>
+    <main className="model-library">
+      <div className="eyebrow orange">YOUR INTERACTIVE WORKSHOP</div>
+      <h1>Choose a car. Understand how it works.</h1>
+      <p className="library-intro">Explore your vehicle in 3D, then learn one system at a time. The S160 GS 300 has guided mechanical studies. Other available vehicles currently support exterior exploration.</p>
+      <div className="learning-feature"><div><BookOpen size={24}/><div><strong>Start with the Lexus GS 300 · S160</strong><p>Explore the engine bay, follow the intake and check what you’ve learned.</p></div></div><a className="learn-primary" href={appPath('/assembly?lesson=engine-bay-orientation')}>Start guided learning <ArrowRight size={17}/></a></div>
+      <div className="library-layout">
+        <aside className="library-sidebar" aria-label="Choose a vehicle">
+          <label>Search vehicles<input value={query} onChange={event => setQuery(event.target.value)} placeholder="GS300, S160, LS400, 2000…"/></label>
+          <div className="library-filters"><label>Make<select aria-label="Make" value={make} onChange={event => {setMake(event.target.value); setBody('All');}}>{['All','Lexus','Toyota'].map(value => <option key={value}>{value}</option>)}</select></label><label>Body style<select aria-label="Body style" value={body} onChange={event => setBody(event.target.value)}>{['All', ...new Set(available.map(item => item.bodyStyle))].map(value => <option key={value}>{value}</option>)}</select></label></div>
+          <div className="library-filter-summary"><p className="library-count" role="status">{groups.length} vehicle & engine groups</p><button onClick={clear}>Clear filters</button></div>
+          <div className="library-list" aria-label="Vehicle generations">{groups.map(group => {
+            const variants = matches.filter(item => item.bodyGroup === group);
+            const active = variants.find(item => item.id === entry.id);
+            const target = active || variants[0];
+            const guided = variants.some(item => item.id === s160Vehicle.id);
+            return <button key={group} aria-pressed={!!active} onClick={() => choose(target.id)}><strong>{group}</strong><span>{guided ? 'Guided mechanical studies' : 'assetUrl' in target ? target.bodyStyle === 'Engine' ? 'Engine visual reference' : 'Exterior exploration' : 'Learning content in development'}</span></button>;
+          })}{!matches.length && <div className="library-note"><p>No vehicles match those filters.</p><button className="secondary-btn" onClick={clear}>Show all vehicles</button></div>}</div>
+          <a className="all-vehicles-link" href={appPath('/catalog')}>Browse all vehicle records →</a>
+        </aside>
+        <section className="library-detail" aria-label="Selected vehicle">
+          <p className="library-selection-status" role="status">Selected: {entry.bodyGroup}</p>
+          {!matches.some(item => item.id === entry.id) && <p className="library-note">Your current vehicle is outside these filters. Choose a result to switch.</p>}
+          <div className="library-title"><div><span className="source-chip">{isAssembly ? 'GUIDED MECHANICAL STUDIES' : missing ? 'IN DEVELOPMENT' : isEngine ? 'ENGINE VISUAL REFERENCE' : 'EXTERIOR EXPLORATION'}</span><h2>{entry.name}{isAssembly ? ' · S160' : ''}</h2><p className="library-generation">{entry.bodyGroup}{entry.sourceYear ? ' · ' + entry.sourceYear : ''}</p></div>{isAssembly && <a className="learn-primary" href={appPath('/assembly?lesson=engine-bay-orientation')}>Enter learning lab <ArrowRight size={16}/></a>}</div>
+          {matches.filter(item => item.bodyGroup === entry.bodyGroup).length > 1 && <label className="variant-choice">Visual version<select aria-label="Visual version" value={entry.id} onChange={event => choose(event.target.value)}>{matches.filter(item => item.bodyGroup === entry.bodyGroup).map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select></label>}
+          {missing ? <div className="library-pending"><h3>This generation’s learning workspace is in development.</h3><p>We don’t yet have an approved 3D model for {missing.name}. You can explore the GS 300’s mechanical studies while this vehicle is being prepared.</p><a className="learn-primary" href={appPath('/assembly?lesson=engine-bay-orientation')}>Try the GS 300 learning lab <ArrowRight size={16}/></a><details><summary>Vehicle reference and progress</summary><p>{missing.reason}</p><p>{missing.nextStep}</p><a href={missing.referenceUrl} target="_blank" rel="noreferrer">Lexus generation reference</a></details></div> : <>
+            <div className="library-views" role="group" aria-label="Camera views">{[['all','Three-quarter'],['front','Front'],['side','Side'],['rear','Rear']].map(([value,label]) => <button key={value} aria-pressed={view === value} onClick={() => {setView(value); setReset(count => count + 1);}}>{label}</button>)}<button aria-label="Reset view" onClick={() => {setView('all'); setReset(count => count + 1);}}><RotateCcw size={14}/></button></div>
+            <div className="library-view"><LoadingBoundary key={entry.id}><Suspense fallback={<p role="status">Opening your vehicle…</p>}><Viewer presentationYaw={model?.presentation.yawDegrees ?? 0} modelUrl={model?.assetUrl ?? s160Vehicle.assetUrl} label={entry.name + ' exploration'} showGrid={false} visible={isAssembly ? assemblySystems : ['body']} selected={null} onSelect={() => {}} reset={reset} explode={0} cutaway={false} cameraView={view}/></Suspense></LoadingBoundary></div>
+            <p className="viewer-instruction">Drag to rotate · Scroll or pinch to zoom · Use the views above to compare sides</p>
+            {isAssembly ? <div className="learning-next"><h3>What would you like to understand?</h3><div className="learning-actions"><a href={appPath('/assembly?lesson=engine-bay-orientation')}>Engine-bay orientation <span>Guided lesson + knowledge checks →</span></a><a href={appPath('/assembly?study=timing-drive')}>Timing system <span>Explore belt, idler and tensioner →</span></a><a href={appPath('/assembly?study=trans-case')}>Transmission <span>Explore the A650E anatomy →</span></a></div><p className="library-note">These are anatomy studies using provisional geometry. Repair procedures and measured component fitment are still being validated.</p></div> : <div className="learning-next"><h3>{isEngine ? "Explore the engine reference" : "Get familiar with the body"}</h3><p>{isEngine ? "Rotate this source model to inspect its visible shapes. This modified engine reference has no verified component identities or installation fitment." : "Compare the front, side and rear views. Identify the bonnet, cabin and luggage area, then rotate the car to understand their relationship."}</p><p className="library-note">{isEngine ? "This engine is a visual reference only." : "This vehicle currently has exterior exploration only."} Engine-bay anatomy and repair lessons are not available for it yet. Year and body labels do not establish parts compatibility.</p><a className="text-button" href={appPath('/assembly?lesson=engine-bay-orientation')}>Learn engine-bay anatomy with the GS 300 →</a></div>}
+            {isAssembly && <details className="vehicle-sources"><summary>Sources & credits</summary><p>Original mechanical study by Wrenchwise (MIT). Adapted exterior: <a href={gsCredit.sourceUrl}>{gsCredit.title}</a> by <a href={gsCredit.authorUrl}>{gsCredit.author}</a> · <a href={gsCredit.licenseUrl}>{gsCredit.license}</a>. Scale targets, materials and trim adapted; exact surfaces remain unverified.</p><a href={appPath("/research")}>Full source audit</a></details>}
+            {model && <details className="vehicle-sources"><summary>About this visual reference & credits</summary><p>{model.notes}</p><p>Source: <a href={model.sourceUrl} target="_blank" rel="noreferrer">{model.title}</a> by <a href={model.authorUrl} target="_blank" rel="noreferrer">{model.author}</a> · <a href={model.licenseUrl} target="_blank" rel="noreferrer">{model.license}</a></p><p>Adapted with display normalization, source-mesh IDs, material conversion where needed and web compression. No endorsement implied. Shared screen framing does not establish physical scale.</p>{model.additionalCredits.map(credit => <p key={credit.sourceUrl}>Includes <a href={credit.sourceUrl} target="_blank" rel="noreferrer">{credit.title}</a> by <a href={credit.authorUrl} target="_blank" rel="noreferrer">{credit.author}</a> · <a href={credit.licenseUrl} target="_blank" rel="noreferrer">{credit.license}</a>.</p>)}</details>}
+          </>}
+        </section>
+      </div>
+    </main>
+  </div>;
 }

@@ -21,3 +21,8 @@ test('missing, reversed or malformed end dates do not invent year coverage',()=>
  }
  assert(!matchesCatalogRecord({...sc,introductionMonth:null},'SC430 2006'));
 });
+
+test('known chassis identifiers find the existing S160 study without inventing mappings',()=>{
+ const gs=records.find(r=>r.id==='gs300');assert(matchesCatalogRecord(gs,'S160'));
+ assert(!matchesCatalogRecord(records.find(r=>r.id==='ls400'),'S160'));
+});
