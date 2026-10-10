@@ -2,6 +2,7 @@ import {collectDeploymentFiles,digest,validateDeploymentManifest} from './deploy
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
+assert(fs.existsSync('dist-pages/.nojekyll'),'Missing Pages build-control marker');
 const base=process.env.PAGES_BASE_PATH||'/wrenchwise/';
 for(const path of ['index.html','catalog/index.html','assembly/index.html','components/index.html','research/index.html','library/index.html','404.html']){
  const html=fs.readFileSync('dist-pages/'+path,'utf8');

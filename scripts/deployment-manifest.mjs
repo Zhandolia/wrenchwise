@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
 export const digest=bytes=>createHash('sha256').update(bytes).digest('hex');
-const metadata=new Set(['build-info.json','deployment-manifest.json']);
+const metadata=new Set(['build-info.json','deployment-manifest.json','.nojekyll']);
 export async function collectDeploymentFiles(root){
  const files=[];
  async function walk(relative=''){
@@ -28,7 +28,7 @@ export function validateDeploymentManifest(manifest){
  for(const file of manifest.files){
   assert(typeof file.path==='string'&&/^[a-zA-Z0-9_./-]+$/.test(file.path),'Unsafe deployment path');
   assert(!file.path.split('/').some(p=>!p||p==='.'||p==='..'),'Unsafe deployment path');
-  assert(!metadata.has(file.path),'Recursive deployment metadata');
+  assert(!metadata.has(file.path),'Build-only or recursive deployment metadata');
   assert(!paths.has(file.path),'Duplicate deployment file');paths.add(file.path);
   assert(Number.isSafeInteger(file.bytes)&&file.bytes>=0,'Invalid deployment file size');
   assert(/^[a-f0-9]{64}$/.test(file.sha256),'Invalid deployment file hash');
