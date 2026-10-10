@@ -5,11 +5,12 @@ import crypto from 'node:crypto';
 import * as T from 'three';
 import {revisedIds as intakeIds} from '../modeling/s160/refine_intake.mjs';
 import {revisedIds as airboxIds} from '../modeling/s160/refine_airbox.mjs';
-const revisedIds=[...intakeIds,...airboxIds];
+import {revisedIds as factoryIds} from '../modeling/s160/refine_factory_details.mjs';
+const revisedIds=[...intakeIds,...airboxIds,...factoryIds];
 const raw=fs.readFileSync('public/models/gs300-assembly.glb');
 const jsonLength=raw.readUInt32LE(12),g=JSON.parse(raw.toString('utf8',20,20+jsonLength));
 const bin=raw.subarray(28+jsonLength);
-const report=JSON.parse(fs.readFileSync('modeling/validation/s160-airbox-2026-10-09.json'));
+const report=JSON.parse(fs.readFileSync('modeling/validation/s160-factory-2026-10-10.json'));
 test('revised GLB retains attribution and valid embedded mesh data',()=>{
  assert.equal(raw.readUInt32LE(8),raw.length);
  assert.equal(g.buffers[0].byteLength,bin.length);

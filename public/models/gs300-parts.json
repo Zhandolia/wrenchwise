@@ -151,10 +151,50 @@
       "fitment": "2000 GS300 US dealer listing; vehicle condition/stock status not independently certified",
       "usedFor": "Intake crossover, right-side airbox and battery, compact forward cover, left-side brake reservoir. Dealer text incorrectly says V6; that text is rejected. Photo used as visual evidence only.",
       "imageUrl": "https://cdn.dealrimages.com/YP/OX/BU/V3ZTAH1DHV0P54.jpg?h=1000"
+    },
+    {
+      "id": "toyota-tis-library",
+      "title": "Toyota / Lexus Technical Information System",
+      "url": "https://techinfo.toyota.com/",
+      "kind": "Official factory service portal",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Primary acquisition route for configuration-specific repair manuals, electrical wiring diagrams, New Car Features and technical training. Select Lexus, 2000, GS300 and the 2JZ-GE sections; GS400 V8 sections do not apply. No paid access purchased. Do not mark unviewed manual pages as inspected."
+    },
+    {
+      "id": "lexus-oem-parts",
+      "title": "Lexus Parts Center Online",
+      "url": "https://parts.lexus.com/models",
+      "kind": "Official OEM parts catalog",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Confirm component identities, assemblies, production applicability and supersessions against a privately held VIN or confirmed production date. Exploded parts drawings establish relationships, not surveyed dimensions. No exact OEM part numbers newly assigned."
+    },
+    {
+      "id": "lexus-factory-vvti",
+      "title": "Lexus GS300 factory VVT-i cutaway photograph (1997–2000)",
+      "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-engine/",
+      "kind": "Manufacturer photograph",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Compact forward cover and VVT-i mechanism orientation. Confirms that a display cutaway removes portions of protective shells; it is not the appearance of an intact engine. UK archive, engine-family reference only. Not evidence for US installation coordinates, hidden passages or tolerances. Source image is linked, not redistributed."
+    },
+    {
+      "id": "rm718u-pcv-page",
+      "title": "Lexus RM718U excerpt: EC-4 PCV system and EM-55 cylinder head",
+      "url": "https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf",
+      "kind": "Manufacturer manual on a third-party mirror",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "PCV elbow/seat and hose connection; separate head covers and manifold; existing four appearance-cover nuts corroborated. Source header explicitly identifies 2000 GS300/GS400 and the relevant 2JZ-GE sections. Excerpt is incomplete. Modeled valve port sizes, spring/flow behavior, hose routing and all installation measurements remain unverified. No repair instructions or page images copied into the site."
+    },
+    {
+      "id": "lexus-gs300-factory-spec",
+      "title": "Lexus second-generation GS300 launch technical specification",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/GS300-Gen2-1997.pdf",
+      "kind": "Manufacturer specification",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Engine-family identity: inline six, DOHC 24 valves, 2997 cc, nominal 86 mm bore and 86 mm stroke. UK launch specification, not a US 2000 parts-fit record. Bore/stroke do not determine casting shape, bore spacing or piston clearance."
     }
   ],
   "meshCount": 513,
-  "triangleCount": 915794,
+  "triangleCount": 936388,
   "parts": [
     {
       "id": "floor",
@@ -6828,10 +6868,12 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
-      "source": "Original Wrenchwise geometry; rm718u-timing",
+      "notes": "Factory-cutaway and stock-photo-informed crowned forward cover, open underside and oil-cap opening. Outer contour, wall thickness and inherited mounting coordinates are estimates. No measured fit.",
+      "source": "Original Wrenchwise geometry; lexus-factory-vvti, gs300-engine-photo",
       "sourceRefs": [
-        "rm718u-timing"
+        "rm718u-timing",
+        "lexus-factory-vvti",
+        "gs300-engine-photo"
       ],
       "quantityEvidence": {
         "count": 4,
@@ -6841,10 +6883,11 @@
       },
       "meshName": "engine-cover",
       "dimensionsMetres": [
-        0.38999998569488525,
-        0.28999999165534973,
-        0.0729999989271164
-      ]
+        0.4285970777273178,
+        0.35201168060302734,
+        0.07299613952636719
+      ],
+      "surfaceRevision": "factory-details-2026-10-10"
     },
     {
       "id": "timing-cover-top",
@@ -8040,17 +8083,19 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
-      "source": "Original Wrenchwise geometry; gs300-engine-photo",
+      "notes": "RM718U EC-4-informed elbow PCV valve and connected hose. Port form is referenced; diameter, hidden valve internals, position and hose route remain estimated. No flow calibration or service validation.",
+      "source": "Original Wrenchwise geometry; rm718u-pcv-page, gs300-engine-photo",
       "sourceRefs": [
-        "gs300-engine-photo"
+        "gs300-engine-photo",
+        "rm718u-pcv-page"
       ],
       "meshName": "pcv-hose",
       "dimensionsMetres": [
-        0.19834481179714203,
-        0.08483046293258667,
-        0.07594895362854004
-      ]
+        0.16799509525299072,
+        0.04258394241333008,
+        0.047251343727111816
+      ],
+      "surfaceRevision": "factory-details-2026-10-10"
     },
     {
       "id": "pcv-valve",
@@ -8060,17 +8105,19 @@
       "accuracy": "unverified",
       "oemPartNumber": null,
       "quantityVerified": false,
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated.",
-      "source": "Original Wrenchwise geometry; gs300-engine-photo",
+      "notes": "RM718U EC-4-informed elbow PCV valve and connected hose. Port form is referenced; diameter, hidden valve internals, position and hose route remain estimated. No flow calibration or service validation.",
+      "source": "Original Wrenchwise geometry; rm718u-pcv-page, gs300-engine-photo",
       "sourceRefs": [
-        "gs300-engine-photo"
+        "gs300-engine-photo",
+        "rm718u-pcv-page"
       ],
       "meshName": "pcv-valve",
       "dimensionsMetres": [
-        0.017999999225139618,
-        0.017999999225139618,
-        0.026000000536441803
-      ]
+        0.0390009880065918,
+        0.026000022888183594,
+        0.05000048875808716
+      ],
+      "surfaceRevision": "factory-details-2026-10-10"
     },
     {
       "id": "airbox",
@@ -12962,6 +13009,18 @@
     "sha256": "f3d75a0637002ce2458d7676b5ccd962b5d3a88fd1f4178986f5eaccb5b9f514",
     "triangleDelta": 3608,
     "sourceIds": [
+      "gs300-engine-photo"
+    ],
+    "verified": false
+  },
+  "factorySurfaceRevision": {
+    "revision": "factory-details-2026-10-10",
+    "baseSha256": "f3d75a0637002ce2458d7676b5ccd962b5d3a88fd1f4178986f5eaccb5b9f514",
+    "sha256": "17a7c99bf7f26300cc70007729ed5a76abb19e24c356bc0a6bf57fe597cff636",
+    "triangleDelta": 20594,
+    "sourceIds": [
+      "lexus-factory-vvti",
+      "rm718u-pcv-page",
       "gs300-engine-photo"
     ],
     "verified": false

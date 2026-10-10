@@ -97,6 +97,7 @@ export function refine(input,output,options={}){
   const indices=geometry.index?new Uint32Array(geometry.index.array):Uint32Array.from({length:pos.count},(_,i)=>i);
   const primitive={attributes:{POSITION:accessor(new Float32Array(pos.array),'VEC3',pos.count,34962,geometry.boundingBox.min.toArray(),geometry.boundingBox.max.toArray()),NORMAL:accessor(new Float32Array(normal.array),'VEC3',normal.count,34962)},indices:accessor(indices,'SCALAR',indices.length,34963),material:mesh.primitives[0].material,mode:4};
   mesh.primitives=[primitive];node.extras.surfaceRevision=revision;node.extras.accuracy='unverified';
+  if(options.sourceRefs?.[id])node.extras.sourceRef=options.sourceRefs[id].join(',');
   report.push({id,triangles:indices.length/3,previousTriangles:originalTriangles,boundsMetres:bounds});
  }
  const pad=(4-length%4)%4;if(pad){chunks.push(Buffer.alloc(pad));length+=pad;}

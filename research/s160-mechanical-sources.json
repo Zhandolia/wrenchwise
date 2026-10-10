@@ -3,18 +3,140 @@
   "reviewDate": "2026-10-06",
   "scope": "Mechanical component identities, layout relationships and selected documented quantities. These references do not establish dimensionally accurate surfaces or a complete repair procedure.",
   "sources": [
-    {"id":"rm718u-engine","title":"Lexus RM718U — 2JZ-GE cylinder head, EM-29–32 and EM-55 (manufacturer manual mirror)","url":"https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/54","kind":"manufacturer service manual","fitment":"2000 GS300/GS400; only 2JZ-GE sections used","usedFor":"Head covers, VVT-i oil supply, intake, coils, gasket and valve anatomy; source labels distinguish the GS300 engine from 1UZ sections."},
-    {"id":"rm718u-head-page","title":"Lexus RM718U sample — EM-55 cylinder head assembly","url":"https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf","kind":"manufacturer service manual excerpt","fitment":"2000 GS300/GS400, EM-55 2JZ-GE","usedFor":"Visual inspection of head-cover, intake manifold and injector-connector arrangement. No pages redistributed."},
-    {"id":"rm718u-timing","title":"2000 GS300 timing belt — manufacturer procedure reproduced by Operation CHARM","url":"https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Maintenance/Timing%20Belt/Service%20and%20Repair/","kind":"manufacturer service procedure mirror","fitment":"2000 GS300 2JZ-GE VVT-i","usedFor":"Separate hydraulic tensioner/idler; No.1, 2, 3 and 4 covers; VVT-i oil-control hardware; 5/3/4 cover bolts and 2 hydraulic tensioner bolts. No torque or alignment simulator published."},
-    {"id":"rm718u-pump","title":"Lexus RM718U — 2JZ-GE water pump CO-5–9","url":"https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/50","kind":"manufacturer service manual mirror","fitment":"2000 GS300/GS400; 2JZ-GE water-pump section","usedFor":"Accessory-driven water-pump pulley, 4 retaining nuts, 6 pump bolts, gasket, block O-ring, bypass pipes, thermostat and drain hose."},
-    {"id":"rm718u-cooling","title":"Lexus RM718U — GS300 timing-access and cooling components","url":"https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/?srch=timing","kind":"manufacturer service manual mirror","fitment":"2000 GS300 2JZ-GE, EM-14","usedFor":"Radiator, electric fan connections, ATF cooler hoses and intake components in the timing-access area."},
-    {"id":"rm718u-at-service","title":"2000 GS300 — A/T pan, strainer and temperature-sensor service","url":"https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Transmission%20and%20Drivetrain/Sensors%20and%20Switches%20-%20A%2FT/Transmission%20Temperature%20Sensor%2FSwitch/Service%20and%20Repair/","kind":"manufacturer service procedure mirror","fitment":"2000 GS300 automatic","usedFor":"19 pan bolts; 3 magnets; 4 strainer bolts; 3 strainer seals; 7 solenoid connectors; temperature sensor and harness. FIPG is specified, not an assumed pre-cut OEM pan gasket."},
-    {"id":"rm718u-at-valve","title":"Lexus RM718U — automatic transmission valve body AT-8","url":"https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/?srch=transmission+oil","kind":"manufacturer service manual mirror","fitment":"2000 GS300/GS400 automatic","usedFor":"21 valve-body retaining bolts and separate check-ball body/spring; positions and lengths not validated."},
-    {"id":"a650e-valve-overhaul","title":"1999 GS300 A650E valve body — family reference","url":"https://charm.li/Lexus/1999/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Transmission%20and%20Drivetrain/Automatic%20Transmission%2FTransaxle/Service%20and%20Repair/Unit%20Overhaul/A650E%20Transmission/Valve%20Body/","kind":"manufacturer overhaul procedure mirror","fitment":"Adjacent model year; A650E family only","usedFor":"S1–S4, SLN, SLU and SLT identities and stacked valve-body sections. Not proof of 2000 port positions or calibration."},
-    {"id":"transtar-a650e","title":"Transtar 2011 Professional Automatic Transmission Parts Catalog — A650E pp.598–600","url":"https://file.euroauto.ru/file/catalogs/firms/4423.pdf","kind":"parts manufacturer catalog mirror","fitment":"A650E family; catalog distinguishes GS300 kit applications","usedFor":"Directly inspected exploded parts plate: bell, case, extension, clutch drums, friction/steel plates, planetary sets, front pump, strainer and pan. No exact internal stack count or calibrated hydraulic geometry claimed."},
-    {"id":"gs300-engine-photo","title":"Victory Motors — photographed 2000 GS300 engine bay","url":"https://www.victorymotorsofcolorado.com/inventory/2000-lexus-gs-300-/136475","kind":"first-party vehicle photograph","fitment":"2000 GS300 US dealer listing; vehicle condition/stock status not independently certified","usedFor":"Intake crossover, right-side airbox and battery, compact forward cover, left-side brake reservoir. Dealer text incorrectly says V6; that text is rejected. Photo used as visual evidence only.","imageUrl":"https://cdn.dealrimages.com/YP/OX/BU/V3ZTAH1DHV0P54.jpg?h=1000"}
+    {
+      "id": "rm718u-engine",
+      "title": "Lexus RM718U — 2JZ-GE cylinder head, EM-29–32 and EM-55 (manufacturer manual mirror)",
+      "url": "https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/54",
+      "kind": "manufacturer service manual",
+      "fitment": "2000 GS300/GS400; only 2JZ-GE sections used",
+      "usedFor": "Head covers, VVT-i oil supply, intake, coils, gasket and valve anatomy; source labels distinguish the GS300 engine from 1UZ sections."
+    },
+    {
+      "id": "rm718u-head-page",
+      "title": "Lexus RM718U sample — EM-55 cylinder head assembly",
+      "url": "https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf",
+      "kind": "manufacturer service manual excerpt",
+      "fitment": "2000 GS300/GS400, EM-55 2JZ-GE",
+      "usedFor": "Visual inspection of head-cover, intake manifold and injector-connector arrangement. No pages redistributed."
+    },
+    {
+      "id": "rm718u-timing",
+      "title": "2000 GS300 timing belt — manufacturer procedure reproduced by Operation CHARM",
+      "url": "https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Maintenance/Timing%20Belt/Service%20and%20Repair/",
+      "kind": "manufacturer service procedure mirror",
+      "fitment": "2000 GS300 2JZ-GE VVT-i",
+      "usedFor": "Separate hydraulic tensioner/idler; No.1, 2, 3 and 4 covers; VVT-i oil-control hardware; 5/3/4 cover bolts and 2 hydraulic tensioner bolts. No torque or alignment simulator published."
+    },
+    {
+      "id": "rm718u-pump",
+      "title": "Lexus RM718U — 2JZ-GE water pump CO-5–9",
+      "url": "https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/50",
+      "kind": "manufacturer service manual mirror",
+      "fitment": "2000 GS300/GS400; 2JZ-GE water-pump section",
+      "usedFor": "Accessory-driven water-pump pulley, 4 retaining nuts, 6 pump bolts, gasket, block O-ring, bypass pipes, thermostat and drain hose."
+    },
+    {
+      "id": "rm718u-cooling",
+      "title": "Lexus RM718U — GS300 timing-access and cooling components",
+      "url": "https://www.carmanualsonline.info/amp/lexus-gs400-2000-service-repair-manual/?srch=timing",
+      "kind": "manufacturer service manual mirror",
+      "fitment": "2000 GS300 2JZ-GE, EM-14",
+      "usedFor": "Radiator, electric fan connections, ATF cooler hoses and intake components in the timing-access area."
+    },
+    {
+      "id": "rm718u-at-service",
+      "title": "2000 GS300 — A/T pan, strainer and temperature-sensor service",
+      "url": "https://charm.li/Lexus/2000/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Transmission%20and%20Drivetrain/Sensors%20and%20Switches%20-%20A%2FT/Transmission%20Temperature%20Sensor%2FSwitch/Service%20and%20Repair/",
+      "kind": "manufacturer service procedure mirror",
+      "fitment": "2000 GS300 automatic",
+      "usedFor": "19 pan bolts; 3 magnets; 4 strainer bolts; 3 strainer seals; 7 solenoid connectors; temperature sensor and harness. FIPG is specified, not an assumed pre-cut OEM pan gasket."
+    },
+    {
+      "id": "rm718u-at-valve",
+      "title": "Lexus RM718U — automatic transmission valve body AT-8",
+      "url": "https://www.carmanualsonline.info/lexus-gs400-2000-service-repair-manual/?srch=transmission+oil",
+      "kind": "manufacturer service manual mirror",
+      "fitment": "2000 GS300/GS400 automatic",
+      "usedFor": "21 valve-body retaining bolts and separate check-ball body/spring; positions and lengths not validated."
+    },
+    {
+      "id": "a650e-valve-overhaul",
+      "title": "1999 GS300 A650E valve body — family reference",
+      "url": "https://charm.li/Lexus/1999/GS%20300%20L6-3.0L%20%282JZ-GE%29/Repair%20and%20Diagnosis/Transmission%20and%20Drivetrain/Automatic%20Transmission%2FTransaxle/Service%20and%20Repair/Unit%20Overhaul/A650E%20Transmission/Valve%20Body/",
+      "kind": "manufacturer overhaul procedure mirror",
+      "fitment": "Adjacent model year; A650E family only",
+      "usedFor": "S1–S4, SLN, SLU and SLT identities and stacked valve-body sections. Not proof of 2000 port positions or calibration."
+    },
+    {
+      "id": "transtar-a650e",
+      "title": "Transtar 2011 Professional Automatic Transmission Parts Catalog — A650E pp.598–600",
+      "url": "https://file.euroauto.ru/file/catalogs/firms/4423.pdf",
+      "kind": "parts manufacturer catalog mirror",
+      "fitment": "A650E family; catalog distinguishes GS300 kit applications",
+      "usedFor": "Directly inspected exploded parts plate: bell, case, extension, clutch drums, friction/steel plates, planetary sets, front pump, strainer and pan. No exact internal stack count or calibrated hydraulic geometry claimed."
+    },
+    {
+      "id": "gs300-engine-photo",
+      "title": "Victory Motors — photographed 2000 GS300 engine bay",
+      "url": "https://www.victorymotorsofcolorado.com/inventory/2000-lexus-gs-300-/136475",
+      "kind": "first-party vehicle photograph",
+      "fitment": "2000 GS300 US dealer listing; vehicle condition/stock status not independently certified",
+      "usedFor": "Intake crossover, right-side airbox and battery, compact forward cover, left-side brake reservoir. Dealer text incorrectly says V6; that text is rejected. Photo used as visual evidence only.",
+      "imageUrl": "https://cdn.dealrimages.com/YP/OX/BU/V3ZTAH1DHV0P54.jpg?h=1000"
+    },
+    {
+      "id": "toyota-tis-library",
+      "title": "Toyota / Lexus Technical Information System",
+      "url": "https://techinfo.toyota.com/",
+      "kind": "Official factory service portal",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Primary acquisition route for configuration-specific repair manuals, electrical wiring diagrams, New Car Features and technical training. Select Lexus, 2000, GS300 and the 2JZ-GE sections; GS400 V8 sections do not apply. No paid access purchased. Do not mark unviewed manual pages as inspected."
+    },
+    {
+      "id": "lexus-oem-parts",
+      "title": "Lexus Parts Center Online",
+      "url": "https://parts.lexus.com/models",
+      "kind": "Official OEM parts catalog",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Confirm component identities, assemblies, production applicability and supersessions against a privately held VIN or confirmed production date. Exploded parts drawings establish relationships, not surveyed dimensions. No exact OEM part numbers newly assigned."
+    },
+    {
+      "id": "lexus-factory-vvti",
+      "title": "Lexus GS300 factory VVT-i cutaway photograph (1997–2000)",
+      "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-engine/",
+      "kind": "Manufacturer photograph",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Compact forward cover and VVT-i mechanism orientation. Confirms that a display cutaway removes portions of protective shells; it is not the appearance of an intact engine. UK archive, engine-family reference only. Not evidence for US installation coordinates, hidden passages or tolerances. Source image is linked, not redistributed."
+    },
+    {
+      "id": "rm718u-pcv-page",
+      "title": "Lexus RM718U excerpt: EC-4 PCV system and EM-55 cylinder head",
+      "url": "https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf",
+      "kind": "Manufacturer manual on a third-party mirror",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "PCV elbow/seat and hose connection; separate head covers and manifold; existing four appearance-cover nuts corroborated. Source header explicitly identifies 2000 GS300/GS400 and the relevant 2JZ-GE sections. Excerpt is incomplete. Modeled valve port sizes, spring/flow behavior, hose routing and all installation measurements remain unverified. No repair instructions or page images copied into the site."
+    },
+    {
+      "id": "lexus-gs300-factory-spec",
+      "title": "Lexus second-generation GS300 launch technical specification",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/GS300-Gen2-1997.pdf",
+      "kind": "Manufacturer specification",
+      "fitment": "2000 Lexus GS300 JZS160, US LHD, naturally aspirated 2JZ-GE VVT-i, stock automatic target",
+      "usedFor": "Engine-family identity: inline six, DOHC 24 valves, 2997 cc, nominal 86 mm bore and 86 mm stroke. UK launch specification, not a US 2000 parts-fit record. Bore/stroke do not determine casting shape, bore spacing or piston clearance."
+    }
   ],
-  "rejectedSources": [{"url":"https://2jz.se/application/files/1814/3781/4794/2JZ-GE_Engine_Mechanical.pdf","reason":"PDF identifies 1997 Supra RM502U and distributor ignition. Not the GS300 VVT-i reference."}],
+  "rejectedSources": [
+    {
+      "url": "https://2jz.se/application/files/1814/3781/4794/2JZ-GE_Engine_Mechanical.pdf",
+      "reason": "PDF identifies 1997 Supra RM502U and distributor ignition. Not the GS300 VVT-i reference."
+    }
+  ],
   "accessNotes": "Some source hosts blocked direct downloads. Indexed manufacturer text was available; the RM718U sample, Transtar pages and dealer photograph were downloaded and visually inspected. Source media are not included in the site or public repository.",
-  "validationRemaining": ["Physical engine and transmission measurements or scans","Correct belt pitch, pulley tooth count, wraps and factory timing marks","Mating surfaces, bolt coordinates, thread sizes and torque applicability","A650E clutch quantities, hydraulic channels and clearances","Complete service sequence and independent mechanic review"]
+  "validationRemaining": [
+    "Physical engine and transmission measurements or scans",
+    "Correct belt pitch, pulley tooth count, wraps and factory timing marks",
+    "Mating surfaces, bolt coordinates, thread sizes and torque applicability",
+    "A650E clutch quantities, hydraulic channels and clearances",
+    "Complete service sequence and independent mechanic review"
+  ]
 }

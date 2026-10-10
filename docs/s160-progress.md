@@ -75,3 +75,13 @@ Completed software checks: deterministic evidence/catalog generation, five regre
 - Saved version: `appgprj_6ac44070db5881918afa76b61fb84388~appgver_0b4bbe4173b8819182b1b8e149aed835`.
 - Deployment: `appgdep_6ac529f0c6f08191956ff2811ab11f99`; succeeded 2026-10-06T17:04:00Z at https://wrenchwise-workshop.zhandolia.chatgpt.site. Existing owner-private access preserved.
 - No complete part or vehicle gained dimensional/fitment/procedure verification. Other catalog families and engine reuse mappings remain unfinished. Priority remains measured component geometry and installation interfaces, followed by reviewed UZ/MZ reuse candidates.
+
+## 2026-10-10 — Factory-reference audit and installed engine-bay study
+
+Reviewed the official Toyota TIS public scope, Lexus OEM parts portal, Lexus GS300 VVT-i cutaway photograph, stock US GS300 bay photograph, and the RM718U excerpt (rendered EC-4 and EM-55). TIS subscription pages were not accessed; the OEM portal vehicle selector did not resolve. The official technical illustration inspected was a VSC diagram and was excluded from engine modeling. Sources, access state and limitations are recorded in `research/s160-factory-reference-audit.json` and surfaced on the research page.
+
+Rebuilt three existing groups: a contoured open-bottom appearance cover with an oil-filler aperture, an elbow PCV valve, and its connected hose. Existing quantities and stable inventory IDs remain unchanged. No measured dimensions or physical verification were added. The source GLB for this stage is the airbox revision at commit `fd81ab4`; the builder requires its recorded SHA-256 and writes a new provenance report. The standalone 2JZ export and Blender source ZIP retain their earlier geometry and are not representations of this new surface pass.
+
+Added installed S160 body context with the hood hidden, a separated-cover study, a direct library entry, versioned GS300 mesh/evidence requests, and a fixed desktop canvas height so long evidence notes do not change camera framing. Current assembly: 936,388 triangles, 9,406,016 bytes, 513 modeled groups, zero verified parts.
+
+Validation: 80 automated tests and nine browser tests passed, including open-cover ray checks, geometry/manifest agreement, source and quantity checks, deterministic evidence/catalog checks, TypeScript, production build and Pages inventory validation. Compared the installed and separated-cover views visually. Physical engine internals, casting dimensions, hose routing, installation coordinates, clearances and repair procedures remain unverified. This ledger entry's commit records the source/model checkpoint; GitHub Actions separately records deployment verification.

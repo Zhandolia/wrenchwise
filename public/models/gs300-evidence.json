@@ -5,7 +5,7 @@
   "modelRevision": "5",
   "origin": {
     "path": "public/models/gs300-parts.json",
-    "sha256": "ec7aa6a80bff71ad68750b9ffc5d2867dfdbeb249b48b2f201cbae763217bd74",
+    "sha256": "411d8e1d87cc1611003238768a6d19abd4efb6ce30ce6ee0d12da4d81db35aaf",
     "baselineCommit": "58a0019a3d4b8d5cc91d3b376abbf97913a85659"
   },
   "configuration": {
@@ -184,6 +184,41 @@
       "id": "gs300-engine-photo",
       "title": "Victory Motors — photographed 2000 GS300 engine bay",
       "url": "https://www.victorymotorsofcolorado.com/inventory/2000-lexus-gs-300-/136475",
+      "applicability": "visual-reference",
+      "rights": "Reference link only; no source media redistribution"
+    },
+    {
+      "id": "toyota-tis-library",
+      "title": "Toyota / Lexus Technical Information System",
+      "url": "https://techinfo.toyota.com/",
+      "applicability": "visual-reference",
+      "rights": "Reference link only; no source media redistribution"
+    },
+    {
+      "id": "lexus-oem-parts",
+      "title": "Lexus Parts Center Online",
+      "url": "https://parts.lexus.com/models",
+      "applicability": "visual-reference",
+      "rights": "Reference link only; no source media redistribution"
+    },
+    {
+      "id": "lexus-factory-vvti",
+      "title": "Lexus GS300 factory VVT-i cutaway photograph (1997–2000)",
+      "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-engine/",
+      "applicability": "visual-reference",
+      "rights": "Reference link only; no source media redistribution"
+    },
+    {
+      "id": "rm718u-pcv-page",
+      "title": "Lexus RM718U excerpt: EC-4 PCV system and EM-55 cylinder head",
+      "url": "https://krutilvertel.com/pdf/demo/motorist/service-manual-lexus-gs300-demo.pdf",
+      "applicability": "exact-target",
+      "rights": "Reference link only; no source media redistribution"
+    },
+    {
+      "id": "lexus-gs300-factory-spec",
+      "title": "Lexus second-generation GS300 launch technical specification",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/GS300-Gen2-1997.pdf",
       "applicability": "visual-reference",
       "rights": "Reference link only; no source media redistribution"
     }
@@ -22417,7 +22452,7 @@
       "claimIds": [
         "engine-cover:quantity"
       ],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "Factory-cutaway and stock-photo-informed crowned forward cover, open underside and oil-cap opening. Outer contour, wall thickness and inherited mounting coordinates are estimates. No measured fit."
     },
     {
       "id": "timing-cover-top",
@@ -25301,7 +25336,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "RM718U EC-4-informed elbow PCV valve and connected hose. Port form is referenced; diameter, hidden valve internals, position and hose route remain estimated. No flow calibration or service validation."
     },
     {
       "id": "pcv-valve",
@@ -25349,7 +25384,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "RM718U EC-4-informed elbow PCV valve and connected hose. Port form is referenced; diameter, hidden valve internals, position and hose route remain estimated. No flow calibration or service validation."
     },
     {
       "id": "airbox",

@@ -1,6 +1,18 @@
 import {test,expect} from '@playwright/test';
 import path from 'node:path';
 
+test('GS300 hood-hidden study opens in body context and links factory references',async({page})=>{
+ const model=page.waitForResponse(r=>r.url().includes('gs300-assembly.glb?v=')&&r.status()===200);
+ await page.goto('assembly/?study=under-hood');await model;
+ await expect(page.getByRole('button',{name:'Engine bay Under the hood · installed layout',exact:true})).toHaveAttribute('aria-pressed','true');
+ await expect(page.getByText('The hood is hidden so you can inspect the 2JZ-GE inside the S160 body.',{exact:false})).toBeVisible();
+ await page.getByRole('button',{name:'Engine bay Engine cover & PCV connection',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Engine cover & PCV connection',exact:true})).toBeVisible();
+ const stage=await page.locator('.assembly-stage').boundingBox();expect(stage?.height).toBeLessThanOrEqual(800);
+ await page.goto('research/#s160-factory-references');
+ await expect(page.getByRole('link',{name:'Toyota / Lexus Technical Information System',exact:true})).toHaveAttribute('href','https://techinfo.toyota.com/');
+});
+
 test('one vehicle choice opens the correct viewer and browser history restores it',async({page})=>{
  await page.goto('library/');
  await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();

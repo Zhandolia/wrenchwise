@@ -1,0 +1,39 @@
+{
+  "revision": "factory-details-2026-10-10",
+  "baseSha256": "f3d75a0637002ce2458d7676b5ccd962b5d3a88fd1f4178986f5eaccb5b9f514",
+  "sha256": "17a7c99bf7f26300cc70007729ed5a76abb19e24c356bc0a6bf57fe597cff636",
+  "bytes": 9406016,
+  "parts": [
+    {
+      "id": "engine-cover",
+      "triangles": 14746,
+      "previousTriangles": 108,
+      "boundsMetres": [
+        0.4285970777273178,
+        0.07299613952636719,
+        0.35201168060302734
+      ]
+    },
+    {
+      "id": "pcv-valve",
+      "triangles": 4032,
+      "previousTriangles": 380,
+      "boundsMetres": [
+        0.0390009880065918,
+        0.05000048875808716,
+        0.026000022888183594
+      ]
+    },
+    {
+      "id": "pcv-hose",
+      "triangles": 2560,
+      "previousTriangles": 256,
+      "boundsMetres": [
+        0.16799509525299072,
+        0.047251343727111816,
+        0.04258394241333008
+      ]
+    }
+  ],
+  "verifiedParts": 0
+}
