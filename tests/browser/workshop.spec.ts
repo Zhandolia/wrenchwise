@@ -35,7 +35,8 @@ test('lesson check advances the anatomy view and survives reload',async({page})=
 
 test('compressed personal import stays selected on reload',async({page})=>{
  await page.goto('');
- await page.getByRole('button',{name:'Import a model',exact:true}).first().click();
+ await page.locator('.vehicle-picker').click();
+ await page.getByRole('button',{name:'Import a model',exact:true}).click();
  await page.getByLabel('Model name').fill('Browser regression reference');
  await page.getByLabel('Year, engine & market').fill('Test reference only');
  await page.getByLabel('Source / creator').fill('Existing licensed SC300 fixture');
