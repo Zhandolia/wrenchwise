@@ -1,0 +1,36 @@
+'use client';
+import {lazy,Suspense,useState} from 'react';
+import {appPath} from '@/lib/app-path';
+import originals from '@/research/lexus-ls-originals.json';
+import LoadingBoundary from '@/components/loading-boundary';
+import '@/app/ls-study.css';
+const Viewer=lazy(()=>import('@/components/assembly-viewer'));
+type Model=typeof originals.models[number];
+const systems=['body','wheels','brakes','structure','engine','intake','electrical','cooling','exhaust'];
+const descriptions:Record<string,string>={
+ engine:'The engine converts fuel energy into rotation. This study shows a longitudinal V8: two banks of four cylinders arranged along the car.',
+ intake:'The intake carries filtered air toward the engine. Follow the housing, duct, throttle and manifold to see their relationship.',
+ electrical:'The battery stores electrical energy; the alternator generates electricity while the engine runs. Wiring shown here is an illustrative route.',
+ cooling:'The cooling system carries heat away from the engine. Identify the radiator, hoses and reservoir; the model does not establish a service procedure.',
+ brakes:'The braking system slows the vehicle. Reservoir and wheel component shapes are provisional; this view does not establish brake-service instructions.',
+ body:'Exterior panel and trim study. Curvature and local gaps are photo-informed estimates.',
+ structure:'These surrounding panels help explain the engine-bay space. Hidden structure and mounting locations have not been measured.',
+ exhaust:'The exhaust carries combustion gases away from the engine. Hidden routing is an approximation.',
+ wheels:'Wheel and tyre detail is illustrative; confirm the actual wheel and tyre specification on the vehicle.',
+};
+export default function LSStudy({model}:{model:Model}){
+ const [mode,setMode]=useState('exterior'),[camera,setCamera]=useState('all'),[cover,setCover]=useState(true),[selected,setSelected]=useState<string|null>(null),[reset,setReset]=useState(0),[filter,setFilter]=useState('all');
+ const part=model.parts.find(p=>p.id===selected);
+ const engineOnly=mode==='engine';
+ const hidden=[...(mode!=='exterior'?['hood']:[]),...(!cover?['engine-cover',...Array.from({length:5},(_,i)=>'engine-cover-rib-'+i),'bay-shroud--1','bay-shroud-1','bay-front-shroud']:[])];
+ const choices=model.parts.filter(p=>['engine','intake','electrical','cooling','brakes'].includes(p.system)).filter(p=>filter==='all'||p.system===filter).filter(p=>!p.id.startsWith('wheel-')).filter((p,i,all)=>all.findIndex(x=>x.name===p.name)===i);
+ return <div className="ls-study">
+  <div className="ls-study-title"><div><span className="source-chip">ORIGINAL WRENCHWISE STUDY</span><h2>{model.name} · {model.sourceYear}</h2><p>{model.generation} · {model.market}</p></div><strong>{model.engineName}</strong></div>
+  <div className="ls-modes" role="group" aria-label="Study view">{[['exterior','Exterior'],['bay','Under the hood'],['engine','Engine anatomy']].map(([id,label])=><button key={id} aria-pressed={mode===id} onClick={()=>{setMode(id);setCamera('all');setReset(n=>n+1);setSelected(null);}}>{label}</button>)}</div>
+  <div className="ls-study-layout"><div><div className="ls-stage"><LoadingBoundary key={model.id}><Suspense fallback={<p role="status">Opening the LS study…</p>}><Viewer neutralLighting exposure={.85} modelUrl={model.assetUrl} label={model.name+' '+model.sourceYear+' '+mode+' study'} visible={engineOnly?['engine','intake','electrical','cooling']:systems} selected={selected} onSelect={setSelected} hiddenParts={hidden} explode={0} cutaway={false} showGrid={false} cameraView={engineOnly?'engine-study':mode==='bay'?'bay-study':camera} presentationYaw={mode==='exterior'?0:undefined} focusIds={mode!=='exterior'?['engine-block','cam-cover--1','cam-cover-1','intake-plenum','air-cleaner','battery','radiator']:undefined} reset={reset}/></Suspense></LoadingBoundary><span className="ls-stage-caption">{mode==='exterior'?'BODY STUDY':mode==='bay'?'HOOD HIDDEN · ILLUSTRATIVE VIEW':'V8 ANATOMY · APPROXIMATE GEOMETRY'}</span></div>
+  <div className="ls-camera" role="group" aria-label="LS camera views">{mode==='exterior'&&[['all','Three-quarter'],['front','Front'],['side','Side'],['rear','Rear']].map(([id,label])=><button key={id} aria-pressed={camera===id} onClick={()=>{setCamera(id);setReset(n=>n+1);}}>{label}</button>)}<button onClick={()=>setReset(n=>n+1)}>Reset view</button>{mode!=='exterior'&&model.sourceYear!==1990&&<button aria-pressed={!cover} onClick={()=>setCover(v=>!v)}>{cover?'Hide finishing covers':'Restore finishing covers'}</button>}</div><p className="viewer-instruction">Drag to orbit · Scroll or pinch to zoom · Select a component to inspect it</p></div>
+  <aside className="ls-inspector" aria-label="LS component inspector"><span className="source-chip">LOOK / IDENTIFY / UNDERSTAND</span><h3>{part?.name|| (selected?'Selected surface':'Meet the '+model.engine)}</h3><p>{part?descriptions[part.system]:selected?'This is part of the original provisional body or mechanical study. Select a named component below for its system context.':'Choose Under the hood to look into the bay, or Engine anatomy to remove the surrounding body from view. Select a part in 3D or from the list.'}</p><p className="ls-estimate">Geometry and placement are estimates. This is an anatomy study, not a repair guide.</p><label>Explore a system<select aria-label="LS component system" value={filter} onChange={e=>setFilter(e.target.value)}>{[['all','All bay components'],['engine','Engine'],['intake','Air intake'],['electrical','Electrical'],['cooling','Cooling'],['brakes','Brakes']].map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label><div className="ls-parts">{choices.map(p=><button key={p.id} aria-pressed={selected===p.id} onClick={()=>{setSelected(p.id);if(mode==='exterior'||p.system==='brakes')setMode('bay');if(p.id==='intake-plenum'||p.id.startsWith('cam-cover'))setCover(false);}}>{p.name}</button>)}</div></aside></div>
+  <div className="ls-dimensions" aria-label="Manufacturer nominal dimensions"><span><b>{Math.round(model.nominalDimensionsMetres.length*1000)} mm</b> length</span><span><b>{Math.round(model.nominalDimensionsMetres.widthExcludingMirrors*1000)} mm</b> body width</span><span><b>{Math.round(model.nominalDimensionsMetres.height*1000)} mm</b> height</span><span><b>{Math.round(model.nominalDimensionsMetres.wheelbase*1000)} mm</b> wheelbase</span></div>
+  <details className="vehicle-sources"><summary>Model scope, sources & credits</summary><p>Original geometry by Wrenchwise, MIT. Manufacturer dimensions set the target envelope; they do not validate the local panel surfaces, parts or fitment. No manufacturer CAD, scan or third-party vehicle mesh is included.</p><p>This model represents the configuration above. Other facelifts, markets and powertrains—including LS460L and LS600h—are not represented. Cabin, underside and suspension are incomplete. Hidden hardware, wiring and hose routing remain approximations. Zero parts are physically verified.</p>{originals.sources.filter(s=>model.sourceIds.includes(s.id)).map(s=><p key={s.id}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> — {s.scope}</p>)}<a href={appPath(model.manifestUrl)}>Geometry and evidence inventory</a></details>
+ </div>;
+}

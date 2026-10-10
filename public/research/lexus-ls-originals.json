@@ -1,0 +1,5198 @@
+{
+  "version": 1,
+  "author": "Wrenchwise",
+  "license": "MIT",
+  "scope": "Original, provisional Lexus LS generation studies. Not approved repair replicas.",
+  "sources": [
+    {
+      "id": "ucf10-bay",
+      "title": "1990 LS400 owner/seller engine-bay photography",
+      "url": "https://bringatrailer.com/listing/1990-lexus-ls400-10/",
+      "scope": "Photo of a US LHD vehicle: central V8 and intake, side air cleaner, forward battery and radiator air guide. Used only for shared visual layout; it does not establish the UK RHD brake installation or original replacement parts."
+    },
+    {
+      "id": "ucf10-spec",
+      "title": "Lexus UK 1990 LS400 launch specifications",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/LS400-Gen1-UK-launch-pack-1990.pdf",
+      "scope": "Length, width excluding mirrors, height, wheelbase, track, overhangs and 1UZ-FE architecture."
+    },
+    {
+      "id": "ucf10-photo",
+      "title": "Lexus first-generation exterior archive",
+      "url": "https://media.lexus.co.uk/images/ls-400-exterior-1990-1995/",
+      "scope": "Body proportions, rectangular lamps, grille, two-tone lower trim and window outline. Multi-year gallery; individual trim details remain provisional."
+    },
+    {
+      "id": "ucf20-spec",
+      "title": "Lexus UK revised second-generation launch specifications",
+      "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/Gen2-LS-MC-launch-pack.pdf",
+      "scope": "1998 revision: nominal envelope, 2850 mm wheelbase, 1UZ-FE with VVT-i and five-speed automatic."
+    },
+    {
+      "id": "ucf20-photo",
+      "title": "Lexus 1998–2000 exterior archive",
+      "url": "https://media.lexus.co.uk/images/ls-400-1998-2001-exterior/",
+      "scope": "Revised headlamp outline, bonnet, side profile and rear silhouette."
+    },
+    {
+      "id": "ucf30-spec",
+      "title": "Lexus LS430 launch specifications",
+      "url": "https://media.lexus.co.uk/lexus-ls430-redefining-automotive-perfection/",
+      "scope": "5005 × 1830 × 1490 mm steel-spring version, 2925 mm wheelbase, 3UZ-FE."
+    },
+    {
+      "id": "ucf30-photo",
+      "title": "Lexus early LS430 exterior archive",
+      "url": "https://media.lexus.co.uk/images/ls-430-2000-2003-exterior/",
+      "scope": "Taller cabin, larger lamps, roof and side-glass outline; pre-facelift."
+    },
+    {
+      "id": "usf40-spec",
+      "title": "Lexus Canada 2007 LS460 specifications",
+      "url": "https://media.lexus.ca/content/dam/media-lexus/general/unassigned/20145/LS460_Spec_and_Features_Eng.pdf",
+      "scope": "Standard wheelbase, RWD: 5030 × 1875 × 1475 mm, 2969 mm wheelbase, 18-inch wheels; not LS460L, AWD or LS600h."
+    },
+    {
+      "id": "usf40-photo",
+      "title": "Lexus 2007–2010 LS460 exterior archive",
+      "url": "https://media.lexus.co.uk/images/ls-460-exterior-2007-2010/",
+      "scope": "Launch-era grille, swept lamps, shoulder and roof silhouette. UK photos used only as visual references for shared body shape."
+    },
+    {
+      "id": "usf40-engine",
+      "title": "Lexus LS460 engine archive",
+      "url": "https://media.lexus.co.uk/images/ls-460-engine-2007-2010/",
+      "scope": "Engine cover and longitudinal V8 visual arrangement; no dimensional survey."
+    }
+  ],
+  "models": [
+    {
+      "id": "lexus-ls-ucf10",
+      "name": "Lexus LS400",
+      "make": "Lexus",
+      "family": "LS",
+      "author": "Wrenchwise",
+      "bodyStyle": "Sedan",
+      "generation": "UCF10 · first generation",
+      "bodyGroup": "Lexus LS · UCF10 · first generation",
+      "sourceYear": 1990,
+      "years": "1990–1994",
+      "market": "UK · RHD",
+      "engine": "1UZ-FE",
+      "engineName": "4.0-litre V8 · non-VVT-i",
+      "assetUrl": "/models/ls/lexus-ls-ucf10.glb",
+      "manifestUrl": "/models/ls/lexus-ls-ucf10-parts.json",
+      "kind": "Original anatomy study",
+      "sha256": "86b3523b898ec07454160fe9cda37a2b90376eb4f6012878ef09180e918fa760",
+      "bytes": 1267420,
+      "sourceIds": [
+        "ucf10-spec",
+        "ucf10-photo",
+        "ucf10-bay"
+      ],
+      "nominalDimensionsMetres": {
+        "length": 4.995,
+        "widthExcludingMirrors": 1.82,
+        "height": 1.425,
+        "wheelbase": 2.815
+      },
+      "parts": [
+        {
+          "id": "body-side--1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding--1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim--1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding--1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "body-side-1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding-1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim-1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding-1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood",
+          "name": "Bonnet / hood panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top--1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap--1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top-1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap-1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "trunk",
+          "name": "Boot lid / rear deck",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "floor",
+          "name": "Passenger compartment floor",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof",
+          "name": "Crowned roof panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield",
+          "name": "Windscreen",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar--1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar-1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass",
+          "name": "Rear window",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar--1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar-1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side--1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip--1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar--1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot--1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror--1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass--1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side-1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip-1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar-1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot-1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass-1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "sunroof",
+          "name": "Sunroof glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper--1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper-1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-bumper",
+          "name": "front bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-upper-fascia",
+          "name": "front upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-bumper",
+          "name": "rear bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-upper-fascia",
+          "name": "rear upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille-frame",
+          "name": "Grille surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille",
+          "name": "Grille recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-0",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-1",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-2",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-3",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-4",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-5",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-6",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-7",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem-ring",
+          "name": "Oval grille emblem surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem",
+          "name": "Stylized L emblem",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing--1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp--1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-marker--1",
+          "name": "Front marker lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess--1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp--1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp--1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse--1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe--1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing-1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-marker-1",
+          "name": "Front marker lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess-1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp-1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp-1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse-1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe-1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-lower-intake",
+          "name": "Lower bumper intake",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "nose-top",
+          "name": "Bonnet leading edge and nose panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "firewall",
+          "name": "Engine-bay rear bulkhead",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-support",
+          "name": "Upper radiator support",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender--1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower--1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount--1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail--1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender-1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount-1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail-1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-block",
+          "name": "V8 crankcase",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-pan",
+          "name": "Engine oil sump",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank--1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover--1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert--1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-0",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead--1-0",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-1",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead--1-1",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-2",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead--1-2",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-3",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead--1-3",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover--1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank-1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert-1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-0",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead-1-0",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-1",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead-1-1",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-2",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead-1-2",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-3",
+          "name": "Spark plug lead boot",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lead-1-3",
+          "name": "Ignition lead (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover-1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-plenum",
+          "name": "Intake manifold / plenum",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "throttle-body",
+          "name": "Throttle body study",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-duct",
+          "name": "Air intake duct (route estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-0",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-1",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-2",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-3",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-4",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-5",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-6",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-7",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner",
+          "name": "Air-cleaner housing",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-lid",
+          "name": "Air-cleaner lid",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip--1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip-1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery",
+          "name": "12-volt battery",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-lid",
+          "name": "Battery top cover",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal--1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable--1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal-1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable-1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-retainer",
+          "name": "Battery hold-down (illustrative)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fuse-box",
+          "name": "Engine-bay fuse box",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-booster",
+          "name": "Brake booster study",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir",
+          "name": "Brake fluid reservoir (location estimated)",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir-cap",
+          "name": "Brake fluid cap",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-reservoir",
+          "name": "Coolant expansion tank (location estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-cap",
+          "name": "Coolant tank cap",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-neck",
+          "name": "Windscreen washer filler (location estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-cap",
+          "name": "Washer filler cap",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-cap",
+          "name": "Oil filler cap",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "dipstick",
+          "name": "Oil dipstick handle (approximate)",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator",
+          "name": "Radiator core",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-top",
+          "name": "Radiator upper tank",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "upper-hose",
+          "name": "Upper radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-hose",
+          "name": "Lower radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-0",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-0",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "crank-pulley",
+          "name": "Crankshaft pulley",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator",
+          "name": "Alternator body (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator-pulley",
+          "name": "Alternator pulley",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "accessory-belt",
+          "name": "Accessory belt schematic route",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-air-guide",
+          "name": "Radiator upper air guide",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-fan-guard--1",
+          "name": "Condenser fan guard",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring--1-0",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring--1-1",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring--1-2",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-fan-guard-1",
+          "name": "Condenser fan guard",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring-1-0",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring-1-1",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "condenser-guard-ring-1-2",
+          "name": "Condenser fan guard ring",
+          "system": "cooling",
+          "accuracy": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "lexus-ls-ucf20",
+      "name": "Lexus LS400",
+      "make": "Lexus",
+      "family": "LS",
+      "author": "Wrenchwise",
+      "bodyStyle": "Sedan",
+      "generation": "UCF20 · second generation",
+      "bodyGroup": "Lexus LS · UCF20 · second generation",
+      "sourceYear": 1998,
+      "years": "1995–2000",
+      "market": "UK · RHD",
+      "engine": "1UZ-FE VVT-i",
+      "engineName": "4.0-litre V8 · VVT-i",
+      "assetUrl": "/models/ls/lexus-ls-ucf20.glb",
+      "manifestUrl": "/models/ls/lexus-ls-ucf20-parts.json",
+      "kind": "Original anatomy study",
+      "sha256": "1009058c783dc3895eb87a44a6449cb7896b644b473788966b8f6290dba72cdf",
+      "bytes": 1273696,
+      "sourceIds": [
+        "ucf20-spec",
+        "ucf20-photo"
+      ],
+      "nominalDimensionsMetres": {
+        "length": 5.005,
+        "widthExcludingMirrors": 1.83,
+        "height": 1.435,
+        "wheelbase": 2.85
+      },
+      "parts": [
+        {
+          "id": "body-side--1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding--1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim--1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding--1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "body-side-1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding-1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim-1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding-1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood",
+          "name": "Bonnet / hood panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top--1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap--1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top-1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap-1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "trunk",
+          "name": "Boot lid / rear deck",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "floor",
+          "name": "Passenger compartment floor",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof",
+          "name": "Crowned roof panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield",
+          "name": "Windscreen",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar--1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar-1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass",
+          "name": "Rear window",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar--1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar-1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side--1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip--1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar--1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot--1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror--1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass--1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side-1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip-1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar-1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot-1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass-1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "sunroof",
+          "name": "Sunroof glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper--1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper-1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-bumper",
+          "name": "front bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-upper-fascia",
+          "name": "front upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-bumper",
+          "name": "rear bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-upper-fascia",
+          "name": "rear upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille-frame",
+          "name": "Grille surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille",
+          "name": "Grille recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-0",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-1",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-2",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-3",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-4",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-5",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-6",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-7",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem-ring",
+          "name": "Oval grille emblem surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem",
+          "name": "Stylized L emblem",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing--1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp--1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess--1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp--1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp--1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse--1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe--1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing-1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess-1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp-1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp-1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse-1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe-1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-lower-intake",
+          "name": "Lower bumper intake",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "nose-top",
+          "name": "Bonnet leading edge and nose panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "firewall",
+          "name": "Engine-bay rear bulkhead",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-support",
+          "name": "Upper radiator support",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender--1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower--1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount--1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail--1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender-1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount-1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail-1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-block",
+          "name": "V8 crankcase",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-pan",
+          "name": "Engine oil sump",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank--1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover--1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert--1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover--1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank-1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert-1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover-1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-plenum",
+          "name": "Intake manifold / plenum",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "throttle-body",
+          "name": "Throttle body study",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-duct",
+          "name": "Air intake duct (route estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-0",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-1",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-2",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-3",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-4",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-5",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-6",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-7",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner",
+          "name": "Air-cleaner housing",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-lid",
+          "name": "Air-cleaner lid",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip--1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip-1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery",
+          "name": "12-volt battery",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-lid",
+          "name": "Battery top cover",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal--1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable--1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal-1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable-1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-retainer",
+          "name": "Battery hold-down (illustrative)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fuse-box",
+          "name": "Engine-bay fuse box",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-booster",
+          "name": "Brake booster study",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir",
+          "name": "Brake fluid reservoir (location estimated)",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir-cap",
+          "name": "Brake fluid cap",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-reservoir",
+          "name": "Coolant expansion tank (location estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-cap",
+          "name": "Coolant tank cap",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-neck",
+          "name": "Windscreen washer filler (location estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-cap",
+          "name": "Washer filler cap",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-cap",
+          "name": "Oil filler cap",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "dipstick",
+          "name": "Oil dipstick handle (approximate)",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator",
+          "name": "Radiator core",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-top",
+          "name": "Radiator upper tank",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "upper-hose",
+          "name": "Upper radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-hose",
+          "name": "Lower radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-0",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-0",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-1",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-1",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "crank-pulley",
+          "name": "Crankshaft pulley",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator",
+          "name": "Alternator body (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator-pulley",
+          "name": "Alternator pulley",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "accessory-belt",
+          "name": "Accessory belt schematic route",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-cover",
+          "name": "Removable decorative engine cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "lexus-ls-ucf30",
+      "name": "Lexus LS430",
+      "make": "Lexus",
+      "family": "LS",
+      "author": "Wrenchwise",
+      "bodyStyle": "Sedan",
+      "generation": "UCF30 · third generation",
+      "bodyGroup": "Lexus LS · UCF30 · third generation",
+      "sourceYear": 2001,
+      "years": "2001–2006",
+      "market": "UK · RHD · steel springs",
+      "engine": "3UZ-FE",
+      "engineName": "4.3-litre V8 · VVT-i",
+      "assetUrl": "/models/ls/lexus-ls-ucf30.glb",
+      "manifestUrl": "/models/ls/lexus-ls-ucf30-parts.json",
+      "kind": "Original anatomy study",
+      "sha256": "2906a7f58262def29209956aa6d7119dd126e45df62967d6b9cf2b484600f5dc",
+      "bytes": 1278140,
+      "sourceIds": [
+        "ucf30-spec",
+        "ucf30-photo"
+      ],
+      "nominalDimensionsMetres": {
+        "length": 5.005,
+        "widthExcludingMirrors": 1.83,
+        "height": 1.49,
+        "wheelbase": 2.925
+      },
+      "parts": [
+        {
+          "id": "body-side--1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding--1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim--1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding--1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "body-side-1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding-1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim-1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding-1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood",
+          "name": "Bonnet / hood panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top--1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap--1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top-1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap-1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "trunk",
+          "name": "Boot lid / rear deck",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "floor",
+          "name": "Passenger compartment floor",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof",
+          "name": "Crowned roof panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield",
+          "name": "Windscreen",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar--1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar-1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass",
+          "name": "Rear window",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar--1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar-1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side--1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip--1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar--1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot--1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror--1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass--1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side-1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip-1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar-1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot-1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass-1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "sunroof",
+          "name": "Sunroof glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper--1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper-1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-bumper",
+          "name": "front bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-upper-fascia",
+          "name": "front upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-bumper",
+          "name": "rear bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-upper-fascia",
+          "name": "rear upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille-frame",
+          "name": "Grille surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille",
+          "name": "Grille recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-0",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-1",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-2",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-3",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-4",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-5",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-6",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-7",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem-ring",
+          "name": "Oval grille emblem surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem",
+          "name": "Stylized L emblem",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing--1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp--1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess--1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp--1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp--1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse--1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe--1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing-1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess-1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp-1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp-1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse-1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe-1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-lower-intake",
+          "name": "Lower bumper intake",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "nose-top",
+          "name": "Bonnet leading edge and nose panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "firewall",
+          "name": "Engine-bay rear bulkhead",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-support",
+          "name": "Upper radiator support",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender--1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower--1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount--1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail--1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender-1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount-1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail-1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-block",
+          "name": "V8 crankcase",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-pan",
+          "name": "Engine oil sump",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank--1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover--1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert--1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover--1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank-1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert-1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover-1",
+          "name": "Timing-belt cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-plenum",
+          "name": "Intake manifold / plenum",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "throttle-body",
+          "name": "Throttle body study",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-duct",
+          "name": "Air intake duct (route estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-0",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-1",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-2",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-3",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-4",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-5",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-6",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-7",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner",
+          "name": "Air-cleaner housing",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-lid",
+          "name": "Air-cleaner lid",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip--1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip-1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery",
+          "name": "12-volt battery",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-lid",
+          "name": "Battery top cover",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal--1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable--1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal-1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable-1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-retainer",
+          "name": "Battery hold-down (illustrative)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fuse-box",
+          "name": "Engine-bay fuse box",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-booster",
+          "name": "Brake booster study",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir",
+          "name": "Brake fluid reservoir (location estimated)",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir-cap",
+          "name": "Brake fluid cap",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-reservoir",
+          "name": "Coolant expansion tank (location estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-cap",
+          "name": "Coolant tank cap",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-neck",
+          "name": "Windscreen washer filler (location estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-cap",
+          "name": "Washer filler cap",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-cap",
+          "name": "Oil filler cap",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "dipstick",
+          "name": "Oil dipstick handle (approximate)",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator",
+          "name": "Radiator core",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-top",
+          "name": "Radiator upper tank",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "upper-hose",
+          "name": "Upper radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-hose",
+          "name": "Lower radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-0",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-0",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-1",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-1",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "crank-pulley",
+          "name": "Crankshaft pulley",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator",
+          "name": "Alternator body (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator-pulley",
+          "name": "Alternator pulley",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "accessory-belt",
+          "name": "Accessory belt schematic route",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-cover",
+          "name": "Removable decorative engine cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "lexus-ls-xf40",
+      "name": "Lexus LS460",
+      "make": "Lexus",
+      "family": "LS",
+      "author": "Wrenchwise",
+      "bodyStyle": "Sedan",
+      "generation": "USF40 / XF40 · fourth generation",
+      "bodyGroup": "Lexus LS · XF40 · fourth generation",
+      "sourceYear": 2007,
+      "years": "2007–2017",
+      "market": "Canada · LHD · standard wheelbase · RWD",
+      "engine": "1UR-FSE",
+      "engineName": "4.6-litre V8 · eight-speed automatic",
+      "assetUrl": "/models/ls/lexus-ls-xf40.glb",
+      "manifestUrl": "/models/ls/lexus-ls-xf40-parts.json",
+      "kind": "Original anatomy study",
+      "sha256": "bb931df27e6054369a13d84fa799769864856bfe928b8ff97a02ac37f2670bf4",
+      "bytes": 1270124,
+      "sourceIds": [
+        "usf40-spec",
+        "usf40-photo",
+        "usf40-engine"
+      ],
+      "nominalDimensionsMetres": {
+        "length": 5.03,
+        "widthExcludingMirrors": 1.875,
+        "height": 1.475,
+        "wheelbase": 2.969
+      },
+      "parts": [
+        {
+          "id": "body-side--1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding--1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip--1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim--1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding--1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "body-side-1",
+          "name": "Sculpted side shell",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-cladding-1",
+          "name": "Lower door and sill cladding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-0",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "arch-lip-1-1",
+          "name": "Rolled wheel-arch lip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "belt-trim-1",
+          "name": "Beltline chrome trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "side-moulding-1",
+          "name": "Side protective moulding",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood",
+          "name": "Bonnet / hood panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top--1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap--1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fender-top-1",
+          "name": "Front wing shoulder",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "hood-gap-1",
+          "name": "Bonnet perimeter gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "trunk",
+          "name": "Boot lid / rear deck",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "floor",
+          "name": "Passenger compartment floor",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof",
+          "name": "Crowned roof panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield",
+          "name": "Windscreen",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar--1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "windshield-pillar-1",
+          "name": "A-pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass",
+          "name": "Rear window",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar--1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-glass-pillar-1",
+          "name": "Rear roof pillar",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side--1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip--1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass--1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar--1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam--1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess--1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle--1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot--1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror--1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass--1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cabin-side-1",
+          "name": "Roof and door window frame",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "roof-drip-1",
+          "name": "Roof edge weatherstrip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-door-glass-1",
+          "name": "Side glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "b-pillar-1",
+          "name": "B-pillar trim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-0",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-1",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "door-seam-1-2",
+          "name": "Door panel gap",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-0",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-0",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-recess-1-1",
+          "name": "Door handle recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "handle-1-1",
+          "name": "Door pull",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-foot-1",
+          "name": "Mirror base",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-1",
+          "name": "Door mirror housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "mirror-glass-1",
+          "name": "Door mirror glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "sunroof",
+          "name": "Sunroof glass",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper--1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "wiper-1",
+          "name": "Windscreen wiper",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-bumper",
+          "name": "front bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-upper-fascia",
+          "name": "front upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-bumper",
+          "name": "rear bumper skin",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-upper-fascia",
+          "name": "rear upper body fascia",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-impact-strip",
+          "name": "Bumper protective strip",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate-recess",
+          "name": "Registration plate recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "rear-plate",
+          "name": "Neutral registration plate",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille-frame",
+          "name": "Grille surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-grille",
+          "name": "Grille recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-0",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-1",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-2",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-3",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-slat-4",
+          "name": "Horizontal grille slat",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem-ring",
+          "name": "Oval grille emblem surround",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "grille-emblem",
+          "name": "Stylized L emblem",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing--1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp--1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector--1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic--1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess--1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp--1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp--1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse--1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe--1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-housing-1",
+          "name": "Headlamp reflector housing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "headlamp-1",
+          "name": "Headlamp glazing",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-0",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-0",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "projector-1-1",
+          "name": "Headlamp optic",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "optic-1-1",
+          "name": "Optic lens rim",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-recess-1",
+          "name": "Fog lamp recess",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fog-lamp-1",
+          "name": "Fog lamp lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-lamp-1",
+          "name": "Rear combination lamp",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tail-reverse-1",
+          "name": "Rear reverse lens",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tailpipe-1",
+          "name": "Exhaust outlet",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "front-lower-intake",
+          "name": "Lower bumper intake",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "nose-top",
+          "name": "Bonnet leading edge and nose panel",
+          "system": "body",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "firewall",
+          "name": "Engine-bay rear bulkhead",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-support",
+          "name": "Upper radiator support",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender--1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower--1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount--1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail--1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "inner-fender-1",
+          "name": "Inner wing",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-1",
+          "name": "Suspension tower (approximate)",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "tower-mount-1",
+          "name": "Suspension top mount",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "chassis-rail-1",
+          "name": "Engine-bay side rail",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-block",
+          "name": "V8 crankcase",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-pan",
+          "name": "Engine oil sump",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank--1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover--1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert--1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition--1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner--1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner--1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover--1",
+          "name": "Timing-chain housing study",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cylinder-bank-1",
+          "name": "V8 cylinder bank",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-1",
+          "name": "Cam / valve cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "cam-cover-insert-1",
+          "name": "Cam cover centre strip",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-0",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-0",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-0",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-1",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-1",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-1",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-2",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-2",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-2",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "ignition-1-3",
+          "name": "Ignition coil (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-runner-1-3",
+          "name": "Intake runner (shape estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "exhaust-runner-1-3",
+          "name": "Exhaust runner (route estimated)",
+          "system": "exhaust",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "timing-bank-cover-1",
+          "name": "Timing-chain housing study",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-plenum",
+          "name": "Intake manifold / plenum",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "throttle-body",
+          "name": "Throttle body study",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-duct",
+          "name": "Air intake duct (route estimated)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-0",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-1",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-2",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-3",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-4",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-5",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-6",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "intake-bellows-7",
+          "name": "Intake duct bellows",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner",
+          "name": "Air-cleaner housing",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-lid",
+          "name": "Air-cleaner lid",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip--1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "air-cleaner-clip-1",
+          "name": "Air-cleaner retaining clip (illustrative)",
+          "system": "intake",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery",
+          "name": "12-volt battery",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-lid",
+          "name": "Battery top cover",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal--1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable--1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-terminal-1",
+          "name": "Battery terminal",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-cable-1",
+          "name": "Battery cable (route estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "battery-retainer",
+          "name": "Battery hold-down (illustrative)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fuse-box",
+          "name": "Engine-bay fuse box",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-booster",
+          "name": "Brake booster study",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir",
+          "name": "Brake fluid reservoir (location estimated)",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "brake-reservoir-cap",
+          "name": "Brake fluid cap",
+          "system": "brakes",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-reservoir",
+          "name": "Coolant expansion tank (location estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "coolant-cap",
+          "name": "Coolant tank cap",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-neck",
+          "name": "Windscreen washer filler (location estimated)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "washer-cap",
+          "name": "Washer filler cap",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "oil-cap",
+          "name": "Oil filler cap",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "dipstick",
+          "name": "Oil dipstick handle (approximate)",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator",
+          "name": "Radiator core",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "radiator-top",
+          "name": "Radiator upper tank",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "upper-hose",
+          "name": "Upper radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "lower-hose",
+          "name": "Lower radiator hose (route estimated)",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-0",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-0",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-0-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-shroud-1",
+          "name": "Cooling fan shroud",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-hub-1",
+          "name": "Cooling fan hub",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-0",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-1",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-2",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-3",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-4",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-5",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "fan-blade-1-6",
+          "name": "Cooling fan blade",
+          "system": "cooling",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "crank-pulley",
+          "name": "Crankshaft pulley",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator",
+          "name": "Alternator body (approximate)",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "alternator-pulley",
+          "name": "Alternator pulley",
+          "system": "electrical",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "accessory-belt",
+          "name": "Accessory belt schematic route",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "engine-cover",
+          "name": "Removable decorative engine cover",
+          "system": "engine",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "bay-shroud--1",
+          "name": "Engine-bay side finishing panel",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "bay-shroud-1",
+          "name": "Engine-bay side finishing panel",
+          "system": "structure",
+          "accuracy": "estimated"
+        },
+        {
+          "id": "bay-front-shroud",
+          "name": "Engine-bay front finishing panel",
+          "system": "structure",
+          "accuracy": "estimated"
+        }
+      ]
+    }
+  ]
+}

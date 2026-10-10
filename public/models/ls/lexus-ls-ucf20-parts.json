@@ -1,0 +1,3831 @@
+{
+  "id": "lexus-ls-ucf20",
+  "revision": 1,
+  "author": "Wrenchwise",
+  "license": "MIT",
+  "kind": "original-provisional-study",
+  "target": {
+    "year": 1998,
+    "market": "UK · RHD",
+    "engine": "1UZ-FE VVT-i"
+  },
+  "nominalDimensionsMetres": {
+    "length": 5.005,
+    "widthExcludingMirrors": 1.83,
+    "height": 1.435,
+    "wheelbase": 2.85
+  },
+  "wheelCentersMetres": {
+    "front": 1.5924999999999998,
+    "rear": -1.2575000000000003
+  },
+  "boundsMetres": {
+    "x": 2.151999998807907,
+    "y": 1.4399999431595205,
+    "z": 5.052353620529175
+  },
+  "sourceIds": [
+    "ucf20-spec",
+    "ucf20-photo"
+  ],
+  "verifiedParts": 0,
+  "triangleCount": 432460,
+  "parts": [
+    {
+      "id": "body-side--1",
+      "name": "Sculpted side shell",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "lower-cladding--1",
+      "name": "Lower door and sill cladding",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "arch-lip--1-0",
+      "name": "Rolled wheel-arch lip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-liner--1-0",
+      "name": "Wheel-house liner",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "arch-lip--1-1",
+      "name": "Rolled wheel-arch lip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-liner--1-1",
+      "name": "Wheel-house liner",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "belt-trim--1",
+      "name": "Beltline chrome trim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "side-moulding--1",
+      "name": "Side protective moulding",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "body-side-1",
+      "name": "Sculpted side shell",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "lower-cladding-1",
+      "name": "Lower door and sill cladding",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "arch-lip-1-0",
+      "name": "Rolled wheel-arch lip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-liner-1-0",
+      "name": "Wheel-house liner",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "arch-lip-1-1",
+      "name": "Rolled wheel-arch lip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-liner-1-1",
+      "name": "Wheel-house liner",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "belt-trim-1",
+      "name": "Beltline chrome trim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "side-moulding-1",
+      "name": "Side protective moulding",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "hood",
+      "name": "Bonnet / hood panel",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fender-top--1",
+      "name": "Front wing shoulder",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "hood-gap--1",
+      "name": "Bonnet perimeter gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fender-top-1",
+      "name": "Front wing shoulder",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "hood-gap-1",
+      "name": "Bonnet perimeter gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "trunk",
+      "name": "Boot lid / rear deck",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "floor",
+      "name": "Passenger compartment floor",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "roof",
+      "name": "Crowned roof panel",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "windshield",
+      "name": "Windscreen",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "windshield-pillar--1",
+      "name": "A-pillar",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "windshield-pillar-1",
+      "name": "A-pillar",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "windshield-seal-0",
+      "name": "Window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "windshield-seal-1",
+      "name": "Window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-glass",
+      "name": "Rear window",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-glass-pillar--1",
+      "name": "Rear roof pillar",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-glass-pillar-1",
+      "name": "Rear roof pillar",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-glass-seal-0",
+      "name": "Window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-glass-seal-1",
+      "name": "Window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cabin-side--1",
+      "name": "Roof and door window frame",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "roof-drip--1",
+      "name": "Roof edge weatherstrip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-door-glass--1",
+      "name": "Side glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-door-glass--1-surround",
+      "name": "Chrome window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-door-glass--1",
+      "name": "Side glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-door-glass--1-surround",
+      "name": "Chrome window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "b-pillar--1",
+      "name": "B-pillar trim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam--1-0",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam--1-1",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam--1-2",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-recess--1-0",
+      "name": "Door handle recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle--1-0",
+      "name": "Door pull",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-recess--1-1",
+      "name": "Door handle recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle--1-1",
+      "name": "Door pull",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror-foot--1",
+      "name": "Mirror base",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror--1",
+      "name": "Door mirror housing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror-glass--1",
+      "name": "Door mirror glass",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cabin-side-1",
+      "name": "Roof and door window frame",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "roof-drip-1",
+      "name": "Roof edge weatherstrip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-door-glass-1",
+      "name": "Side glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-door-glass-1-surround",
+      "name": "Chrome window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-door-glass-1",
+      "name": "Side glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-door-glass-1-surround",
+      "name": "Chrome window surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "b-pillar-1",
+      "name": "B-pillar trim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam-1-0",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam-1-1",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "door-seam-1-2",
+      "name": "Door panel gap",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-recess-1-0",
+      "name": "Door handle recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-1-0",
+      "name": "Door pull",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-recess-1-1",
+      "name": "Door handle recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "handle-1-1",
+      "name": "Door pull",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror-foot-1",
+      "name": "Mirror base",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror-1",
+      "name": "Door mirror housing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "mirror-glass-1",
+      "name": "Door mirror glass",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "sunroof-seal",
+      "name": "Sunroof perimeter",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "sunroof",
+      "name": "Sunroof glass",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wiper--1",
+      "name": "Windscreen wiper",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wiper-1",
+      "name": "Windscreen wiper",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-bumper",
+      "name": "front bumper skin",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-upper-fascia",
+      "name": "front upper body fascia",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-impact-strip",
+      "name": "Bumper protective strip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-plate-recess",
+      "name": "Registration plate recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-plate",
+      "name": "Neutral registration plate",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-bumper",
+      "name": "rear bumper skin",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-upper-fascia",
+      "name": "rear upper body fascia",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-impact-strip",
+      "name": "Bumper protective strip",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-plate-recess",
+      "name": "Registration plate recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "rear-plate",
+      "name": "Neutral registration plate",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-grille-frame",
+      "name": "Grille surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-grille",
+      "name": "Grille recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-0",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-1",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-2",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-3",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-4",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-5",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-6",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-slat-7",
+      "name": "Horizontal grille slat",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-emblem-ring",
+      "name": "Oval grille emblem surround",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "grille-emblem",
+      "name": "Stylized L emblem",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "headlamp-housing--1",
+      "name": "Headlamp reflector housing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "headlamp--1",
+      "name": "Headlamp glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "projector--1-0",
+      "name": "Headlamp optic",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "optic--1-0",
+      "name": "Optic lens rim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "projector--1-1",
+      "name": "Headlamp optic",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "optic--1-1",
+      "name": "Optic lens rim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fog-recess--1",
+      "name": "Fog lamp recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fog-lamp--1",
+      "name": "Fog lamp lens",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-lamp--1",
+      "name": "Rear combination lamp",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-reverse--1",
+      "name": "Rear reverse lens",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-0",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-1",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-2",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-3",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-4",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib--1-5",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tailpipe--1",
+      "name": "Exhaust outlet",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "headlamp-housing-1",
+      "name": "Headlamp reflector housing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "headlamp-1",
+      "name": "Headlamp glazing",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "projector-1-0",
+      "name": "Headlamp optic",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "optic-1-0",
+      "name": "Optic lens rim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "projector-1-1",
+      "name": "Headlamp optic",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "optic-1-1",
+      "name": "Optic lens rim",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fog-recess-1",
+      "name": "Fog lamp recess",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fog-lamp-1",
+      "name": "Fog lamp lens",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-lamp-1",
+      "name": "Rear combination lamp",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-reverse-1",
+      "name": "Rear reverse lens",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-0",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-1",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-2",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-3",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-4",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tail-rib-1-5",
+      "name": "Tail lamp lens rib",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tailpipe-1",
+      "name": "Exhaust outlet",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "front-lower-intake",
+      "name": "Lower bumper intake",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "nose-top",
+      "name": "Bonnet leading edge and nose panel",
+      "system": "body",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tyre",
+      "name": "Tyre",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-groove--0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-groove-0",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-groove-0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-0",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-1",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-2",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-3",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-4",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-5",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-6",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-7",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-8",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-9",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-10",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-11",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-12",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-13",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-14",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-15",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-16",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-17",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-18",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-19",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-20",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-21",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-22",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-23",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-24",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-25",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-26",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-27",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-28",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-29",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-30",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-31",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-32",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-33",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-34",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-35",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-36",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-37",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-38",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-39",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-40",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-41",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-42",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-43",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-44",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-45",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-46",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-47",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-48",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-49",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-50",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-51",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-52",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-53",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-54",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-tread-55",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-barrel",
+      "name": "Wheel barrel",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-dish",
+      "name": "Inset wheel face",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lip",
+      "name": "Machined rim lip",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-disc",
+      "name": "Brake disc",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-caliper",
+      "name": "Brake caliper (approximate)",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-hub",
+      "name": "Wheel centre cap",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-disc-face",
+      "name": "Alloy wheel dish",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-0",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-1",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-2",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-3",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-4",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-5",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-vent-6",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lug-0",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lug-1",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lug-2",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lug-3",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0--1-lug-4",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tyre",
+      "name": "Tyre",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-groove--0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-groove-0",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-groove-0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-0",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-1",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-2",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-3",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-4",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-5",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-6",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-7",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-8",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-9",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-10",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-11",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-12",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-13",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-14",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-15",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-16",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-17",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-18",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-19",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-20",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-21",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-22",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-23",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-24",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-25",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-26",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-27",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-28",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-29",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-30",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-31",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-32",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-33",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-34",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-35",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-36",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-37",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-38",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-39",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-40",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-41",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-42",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-43",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-44",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-45",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-46",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-47",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-48",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-49",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-50",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-51",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-52",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-53",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-54",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-tread-55",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-barrel",
+      "name": "Wheel barrel",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-dish",
+      "name": "Inset wheel face",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lip",
+      "name": "Machined rim lip",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-disc",
+      "name": "Brake disc",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-caliper",
+      "name": "Brake caliper (approximate)",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-hub",
+      "name": "Wheel centre cap",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-disc-face",
+      "name": "Alloy wheel dish",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-0",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-1",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-2",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-3",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-4",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-5",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-vent-6",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lug-0",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lug-1",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lug-2",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lug-3",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-0-1-lug-4",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tyre",
+      "name": "Tyre",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-groove--0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-groove-0",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-groove-0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-0",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-1",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-2",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-3",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-4",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-5",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-6",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-7",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-8",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-9",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-10",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-11",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-12",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-13",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-14",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-15",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-16",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-17",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-18",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-19",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-20",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-21",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-22",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-23",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-24",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-25",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-26",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-27",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-28",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-29",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-30",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-31",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-32",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-33",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-34",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-35",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-36",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-37",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-38",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-39",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-40",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-41",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-42",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-43",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-44",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-45",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-46",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-47",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-48",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-49",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-50",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-51",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-52",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-53",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-54",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-tread-55",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-barrel",
+      "name": "Wheel barrel",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-dish",
+      "name": "Inset wheel face",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lip",
+      "name": "Machined rim lip",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-disc",
+      "name": "Brake disc",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-caliper",
+      "name": "Brake caliper (approximate)",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-hub",
+      "name": "Wheel centre cap",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-disc-face",
+      "name": "Alloy wheel dish",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-0",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-1",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-2",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-3",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-4",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-5",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-vent-6",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lug-0",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lug-1",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lug-2",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lug-3",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1--1-lug-4",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tyre",
+      "name": "Tyre",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-groove--0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-groove-0",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-groove-0.0585",
+      "name": "Circumferential tyre tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-0",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-1",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-2",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-3",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-4",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-5",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-6",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-7",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-8",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-9",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-10",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-11",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-12",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-13",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-14",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-15",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-16",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-17",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-18",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-19",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-20",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-21",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-22",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-23",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-24",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-25",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-26",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-27",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-28",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-29",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-30",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-31",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-32",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-33",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-34",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-35",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-36",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-37",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-38",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-39",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-40",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-41",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-42",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-43",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-44",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-45",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-46",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-47",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-48",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-49",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-50",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-51",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-52",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-53",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-54",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-tread-55",
+      "name": "Tyre shoulder tread",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-barrel",
+      "name": "Wheel barrel",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-dish",
+      "name": "Inset wheel face",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lip",
+      "name": "Machined rim lip",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-disc",
+      "name": "Brake disc",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-caliper",
+      "name": "Brake caliper (approximate)",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-hub",
+      "name": "Wheel centre cap",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-disc-face",
+      "name": "Alloy wheel dish",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-0",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-1",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-2",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-3",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-4",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-5",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-vent-6",
+      "name": "Wheel-face ventilation pocket",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lug-0",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lug-1",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lug-2",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lug-3",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "wheel-1-1-lug-4",
+      "name": "Wheel fastener",
+      "system": "wheels",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "firewall",
+      "name": "Engine-bay rear bulkhead",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-support",
+      "name": "Upper radiator support",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "inner-fender--1",
+      "name": "Inner wing",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower--1",
+      "name": "Suspension tower (approximate)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-mount--1",
+      "name": "Suspension top mount",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt--1-0",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt--1-1",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt--1-2",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "chassis-rail--1",
+      "name": "Engine-bay side rail",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "inner-fender-1",
+      "name": "Inner wing",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-1",
+      "name": "Suspension tower (approximate)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-mount-1",
+      "name": "Suspension top mount",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt-1-0",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt-1-1",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "tower-bolt-1-2",
+      "name": "Fastener (illustrative)",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "chassis-rail-1",
+      "name": "Engine-bay side rail",
+      "system": "structure",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-block",
+      "name": "V8 crankcase",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "oil-pan",
+      "name": "Engine oil sump",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cylinder-bank--1",
+      "name": "V8 cylinder bank",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cam-cover--1",
+      "name": "Cam / valve cover",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cam-cover-insert--1",
+      "name": "Cam cover centre strip",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition--1-0",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner--1-0",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner--1-0",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition--1-1",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner--1-1",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner--1-1",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition--1-2",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner--1-2",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner--1-2",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition--1-3",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner--1-3",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner--1-3",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-0",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-1",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-2",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-3",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-4",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener--1-5",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "timing-bank-cover--1",
+      "name": "Timing-belt cover",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cylinder-bank-1",
+      "name": "V8 cylinder bank",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cam-cover-1",
+      "name": "Cam / valve cover",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cam-cover-insert-1",
+      "name": "Cam cover centre strip",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition-1-0",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner-1-0",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner-1-0",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition-1-1",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner-1-1",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner-1-1",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition-1-2",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner-1-2",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner-1-2",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "ignition-1-3",
+      "name": "Ignition coil (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-runner-1-3",
+      "name": "Intake runner (shape estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "exhaust-runner-1-3",
+      "name": "Exhaust runner (route estimated)",
+      "system": "exhaust",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-0",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-1",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-2",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-3",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-4",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "cover-fastener-1-5",
+      "name": "Fastener (illustrative)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "timing-bank-cover-1",
+      "name": "Timing-belt cover",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-plenum",
+      "name": "Intake manifold / plenum",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-0",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-1",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-2",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-3",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-4",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-5",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "plenum-rib-6",
+      "name": "Cast intake rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "throttle-body",
+      "name": "Throttle body study",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-duct",
+      "name": "Air intake duct (route estimated)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-0",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-1",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-2",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-3",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-4",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-5",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-6",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "intake-bellows-7",
+      "name": "Intake duct bellows",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner",
+      "name": "Air-cleaner housing",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-lid",
+      "name": "Air-cleaner lid",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-0",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-1",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-2",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-3",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-4",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-5",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-rib-6",
+      "name": "Air-cleaner reinforcing rib",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-clip--1",
+      "name": "Air-cleaner retaining clip (illustrative)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "air-cleaner-clip-1",
+      "name": "Air-cleaner retaining clip (illustrative)",
+      "system": "intake",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery",
+      "name": "12-volt battery",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-lid",
+      "name": "Battery top cover",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-terminal--1",
+      "name": "Battery terminal",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-cable--1",
+      "name": "Battery cable (route estimated)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-terminal-1",
+      "name": "Battery terminal",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-cable-1",
+      "name": "Battery cable (route estimated)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "battery-retainer",
+      "name": "Battery hold-down (illustrative)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fuse-box",
+      "name": "Engine-bay fuse box",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "brake-booster",
+      "name": "Brake booster study",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "brake-reservoir",
+      "name": "Brake fluid reservoir (location estimated)",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "brake-reservoir-cap",
+      "name": "Brake fluid cap",
+      "system": "brakes",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "coolant-reservoir",
+      "name": "Coolant expansion tank (location estimated)",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "coolant-cap",
+      "name": "Coolant tank cap",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "washer-neck",
+      "name": "Windscreen washer filler (location estimated)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "washer-cap",
+      "name": "Washer filler cap",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "oil-cap",
+      "name": "Oil filler cap",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "dipstick",
+      "name": "Oil dipstick handle (approximate)",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator",
+      "name": "Radiator core",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-0",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-1",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-2",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-3",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-4",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-5",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-6",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-7",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-8",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-9",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-10",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-11",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-12",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-13",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-14",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-15",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-16",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-17",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-18",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-19",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-20",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-21",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-22",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-23",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-24",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-25",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-26",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-27",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-28",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-29",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-30",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-31",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-32",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-33",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-34",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-fin-35",
+      "name": "Radiator fin study",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "radiator-top",
+      "name": "Radiator upper tank",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "upper-hose",
+      "name": "Upper radiator hose (route estimated)",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "lower-hose",
+      "name": "Lower radiator hose (route estimated)",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-shroud-0",
+      "name": "Cooling fan shroud",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-hub-0",
+      "name": "Cooling fan hub",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-0",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-1",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-2",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-3",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-4",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-5",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-0-6",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-shroud-1",
+      "name": "Cooling fan shroud",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-hub-1",
+      "name": "Cooling fan hub",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-0",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-1",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-2",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-3",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-4",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-5",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "fan-blade-1-6",
+      "name": "Cooling fan blade",
+      "system": "cooling",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "crank-pulley",
+      "name": "Crankshaft pulley",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator",
+      "name": "Alternator body (approximate)",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-0",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-1",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-2",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-3",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-4",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-5",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-6",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-7",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-slot-8",
+      "name": "Alternator housing vent study",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "alternator-pulley",
+      "name": "Alternator pulley",
+      "system": "electrical",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "accessory-belt",
+      "name": "Accessory belt schematic route",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover",
+      "name": "Removable decorative engine cover",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover-rib-0",
+      "name": "Decorative engine cover ridge",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover-rib-1",
+      "name": "Decorative engine cover ridge",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover-rib-2",
+      "name": "Decorative engine cover ridge",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover-rib-3",
+      "name": "Decorative engine cover ridge",
+      "system": "engine",
+      "accuracy": "estimated"
+    },
+    {
+      "id": "engine-cover-rib-4",
+      "name": "Decorative engine cover ridge",
+      "system": "engine",
+      "accuracy": "estimated"
+    }
+  ],
+  "limitations": [
+    "Original photo-informed approximation, not a scan, manufacturer CAD, or validated 1:1 replica.",
+    "Published overall dimensions constrain the envelope; panel curvature, clearances and local part dimensions are estimates.",
+    "Engine-bay component placement, hidden geometry, wiring and hose routing remain provisional; do not use for repair, fitment or torque decisions.",
+    "Cabin, underside and suspension are incomplete. Decorative engine covers can be hidden as a learning view, not a service removal sequence.",
+    "A single representative configuration does not cover every year, market, facelift, wheel option or powertrain in the generation."
+  ],
+  "bytes": 1273696,
+  "sha256": "1009058c783dc3895eb87a44a6449cb7896b644b473788966b8f6290dba72cdf",
+  "encoding": "EXT_meshopt_compression"
+}

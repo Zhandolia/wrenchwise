@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-10-09",
-  "scope": "Generation references and acquisition status. Pending entries are not downloadable 3D models.",
+  "scope": "Original provisional studies are available for all four early LS generations. Third-party acquisition findings are preserved separately.",
   "generations": [
     {
       "id": "lexus-ls-ucf10",
@@ -13,11 +13,12 @@
       "bodyGroup": "Lexus LS · UCF10 · first generation",
       "sourceYear": null,
       "years": "1990–1994 US model years",
-      "kind": "3D model pending",
+      "kind": "Original anatomy study",
       "referenceUrl": "https://pressroom.lexus.com/album/1990-1994-lexus-ls-400-first-1st-generation/",
-      "status": "awaiting-redistributable-model",
-      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
-      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+      "status": "original-provisional-study",
+      "reason": "An original Wrenchwise body and V8 anatomy study is now available. It is not a verified 1:1 or repair-grade replica.",
+      "nextStep": "Refine against configuration-matched orthographic photographs and measured parts; complete interior, suspension and hidden mechanical detail.",
+      "studyUrl": "/library/?model=lexus-ls-ucf10"
     },
     {
       "id": "lexus-ls-ucf20",
@@ -30,11 +31,12 @@
       "bodyGroup": "Lexus LS · UCF20 · second generation",
       "sourceYear": null,
       "years": "1995–2000 US model years",
-      "kind": "3D model pending",
+      "kind": "Original anatomy study",
       "referenceUrl": "https://pressroom.lexus.com/album/1995-2000-lexus-ls-400-second-2nd-generation/",
-      "status": "awaiting-redistributable-model",
-      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
-      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+      "status": "original-provisional-study",
+      "reason": "An original Wrenchwise body and V8 anatomy study is now available. It is not a verified 1:1 or repair-grade replica.",
+      "nextStep": "Refine against configuration-matched orthographic photographs and measured parts; complete interior, suspension and hidden mechanical detail.",
+      "studyUrl": "/library/?model=lexus-ls-ucf20"
     },
     {
       "id": "lexus-ls-ucf30",
@@ -47,11 +49,12 @@
       "bodyGroup": "Lexus LS · UCF30 · third generation",
       "sourceYear": null,
       "years": "2001–2006",
-      "kind": "3D model pending",
+      "kind": "Original anatomy study",
       "referenceUrl": "https://media.lexus.co.uk/vehicles/ls-2001-2006/",
-      "status": "awaiting-redistributable-model",
-      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
-      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+      "status": "original-provisional-study",
+      "reason": "An original Wrenchwise body and V8 anatomy study is now available. It is not a verified 1:1 or repair-grade replica.",
+      "nextStep": "Refine against configuration-matched orthographic photographs and measured parts; complete interior, suspension and hidden mechanical detail.",
+      "studyUrl": "/library/?model=lexus-ls-ucf30"
     },
     {
       "id": "lexus-ls-xf40",
@@ -64,11 +67,12 @@
       "bodyGroup": "Lexus LS · XF40 · fourth generation",
       "sourceYear": null,
       "years": "2006–2017 generation; introduced as 2007 US model year",
-      "kind": "3D model pending",
+      "kind": "Original anatomy study",
       "referenceUrl": "https://media.lexus.co.uk/vehicles/ls-2006-2017/",
-      "status": "awaiting-redistributable-model",
-      "reason": "No suitable model with confirmed public redistribution rights has been found yet.",
-      "nextStep": "Obtain a model licensed for browser delivery and public GLB downloads, or commission an original model."
+      "status": "original-provisional-study",
+      "reason": "An original Wrenchwise body and V8 anatomy study is now available. It is not a verified 1:1 or repair-grade replica.",
+      "nextStep": "Refine against configuration-matched orthographic photographs and measured parts; complete interior, suspension and hidden mechanical detail.",
+      "studyUrl": "/library/?model=lexus-ls-xf40"
     }
   ],
   "candidates": [

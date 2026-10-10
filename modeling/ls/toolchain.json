@@ -1,0 +1,16 @@
+{
+  "build": "node modeling/ls/build.mjs",
+  "compression": "node modeling/ls/compress.mjs work/tools/gltf",
+  "toolInstall": "npm install --prefix work/tools/gltf @gltf-transform/core@4.2.1 @gltf-transform/extensions@4.2.1 @gltf-transform/functions@4.2.1 meshoptimizer@0.25.0 --no-audit --no-fund",
+  "runtime": "Repository-pinned Three.js 0.186.1 and Node.js 24",
+  "verification": "node --test tests/ls-originals.test.mjs",
+  "coordinateSystem": "metres; +Y up; +Z forward; +X vehicle left",
+  "geometryOrigin": "Original procedural surfaces and meshes; no downloaded vehicle mesh, photo texture or manufacturer CAD.",
+  "publicationClass": "provisional educational study",
+  "notComplete": [
+    "Photorealistic surface reconstruction and validated 1:1 part geometry",
+    "Configuration-matched orthographic reference set and local component measurements",
+    "Full cabin, underside, suspension and hidden mechanical systems",
+    "Validated repair steps, fastener identities, hose routing and service clearances"
+  ]
+}

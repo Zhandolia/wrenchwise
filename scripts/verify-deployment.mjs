@@ -47,4 +47,4 @@ await Promise.all(Array.from({length:3},async()=>{
   verifyFileBytes(file,await get(file.path));
  }
 }));
-console.log(`Verified deployed commit ${revision}: six routes and all ${files.length} files, including lazy page chunks and ${manifest.models.length} library models.`);
+console.log(`Verified deployed commit ${revision}: seven routes and all ${files.length} files, including lazy page chunks and ${manifest.models.length} library models.`);

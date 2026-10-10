@@ -14,7 +14,7 @@ test('one vehicle choice opens the correct viewer and browser history restores i
  await expect(page.getByRole('heading',{name:'Lexus GS 300 · S160',exact:true})).toBeVisible();
  await page.getByLabel('Search vehicles').fill('LS400 1997');
  await page.getByRole('button',{name:/Lexus LS · UCF20/}).click();
- await expect(page.getByRole('heading',{name:'This generation’s learning workspace is in development.'})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Lexus LS400 · 1998',exact:true})).toBeVisible();
  await expect(page.getByRole('link',{name:/Download GLB/})).toHaveCount(0);
  await page.getByLabel('Search vehicles').fill('definitely-no-car');
  await expect(page.getByText('No vehicles match those filters.')).toBeVisible();
@@ -98,4 +98,27 @@ test('legacy vehicle links still open the selected workshop',async({page})=>{
  await page.goto('?vehicle=gs300');
  await expect(page.locator('.vehicle-picker')).toContainText('GS 300');
  await expect(page.locator('canvas')).toBeVisible();
+});
+
+test('all four original LS studies open and retain generation-specific anatomy controls',async({page})=>{
+ test.setTimeout(120000);
+ for(const [id,title] of [['ucf10','Lexus LS400 · 1990'],['ucf20','Lexus LS400 · 1998'],['ucf30','Lexus LS430 · 2001'],['xf40','Lexus LS460 · 2007']]){
+  await page.goto('library/?model=lexus-ls-'+id);
+  await expect(page.getByRole('heading',{name:title,exact:true})).toBeVisible();
+  await expect(page.locator('canvas')).toBeVisible();
+  await expect(page.getByText('Loading the 3D model…',{exact:true})).toHaveCount(0);
+  await page.getByRole('button',{name:'Under the hood',exact:true}).click();
+  await expect(page.getByRole('button',{name:'Under the hood',exact:true})).toHaveAttribute('aria-pressed','true');
+  await page.getByRole('combobox',{name:'LS component system'}).selectOption('electrical');
+  await page.getByRole('button',{name:'12-volt battery',exact:true}).click();
+  await expect(page.getByRole('heading',{name:'12-volt battery',exact:true})).toBeVisible();
+  await page.getByRole('button',{name:'Engine anatomy',exact:true}).click();
+  await expect(page.getByRole('img',{name:/engine study/})).toBeVisible();
+  if(id!=='ucf10'){
+   await page.getByRole('button',{name:'Hide finishing covers',exact:true}).click();
+   await expect(page.getByRole('button',{name:'Restore finishing covers',exact:true})).toHaveAttribute('aria-pressed','true');
+  }
+ }
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
 });

@@ -3,6 +3,7 @@ import lexusExpansion from '@/research/lexus-expansion-2026-10-09.json';
 import ResearchScanViewer from '@/components/research-scan-viewer';
 import classAudit from '@/research/lexus-class-modeling.json';
 import audit from '@/research/vehicle-sources.json';
+import lsOriginals from '@/research/lexus-ls-originals.json';
 import licenses from '@/research/asset-licenses.json';
 import {Wrench,ChevronLeft,ExternalLink} from 'lucide-react';
 import '../assembly/assembly.css';
@@ -10,11 +11,12 @@ import './research.css';
 const ready=new Set(['gs300','gs400','gs430','rx300']);
 const label=(id:string)=>id.replace(/([a-z]+)(\d+)/,'$1 $2').toUpperCase();
 const status=(value:string)=>({'missing':'Missing','perspective-only':'Oblique only','photographic-view':'Photo found','photographic-side-view':'Photo found','oblique-roof-only':'Roof angle only','side-candidates-awaiting-handedness-review':'Needs review'}[value]||value);
-export default function ResearchPage(){return <div className="assembly-app"><header className="assembly-header"><a className="brand" href={appPath("/")}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><a className="back-workshop" href={appPath("/library")}><ChevronLeft size={15}/>Choose vehicle</a></header><main className="assembly-main"><div className="assembly-heading"><div><div className="eyebrow orange">VEHICLE GEOMETRY / SOURCE AUDIT</div><h1>Evidence for every Lexus.</h1><p>Lexus model sources, accepted visual references and unfinished geometry</p></div></div><div className="accuracy-banner"><span><strong>The full catalog is not complete.</strong> The ES XV70 now has an exterior and cabin reference. LS, IS, GX and LX still lack accepted stock reference geometry. No model is approved as a 1:1 or repair-grade replica, and no complete set of six OEM views has been found.</span></div>
+export default function ResearchPage(){return <div className="assembly-app"><header className="assembly-header"><a className="brand" href={appPath("/")}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><a className="back-workshop" href={appPath("/library")}><ChevronLeft size={15}/>Choose vehicle</a></header><main className="assembly-main"><div className="assembly-heading"><div><div className="eyebrow orange">VEHICLE GEOMETRY / SOURCE AUDIT</div><h1>Evidence for every Lexus.</h1><p>Lexus model sources, accepted visual references and unfinished geometry</p></div></div><div className="accuracy-banner"><span><strong>The full catalog is not complete.</strong> The ES XV70 now has an exterior and cabin reference. Four original LS body and engine studies are available, with provisional geometry. IS, GX and LX still lack accepted stock reference geometry. No model is approved as a 1:1 or repair-grade replica, and no complete set of six OEM views has been found.</span></div>
+<section style={{marginTop:32}}><div className="eyebrow orange">ORIGINAL LS MODELING</div><h2>Four generations, four original studies.</h2><p>Original body surfaces and V8 anatomy, constrained by published vehicle dimensions. Local part dimensions, hidden routes and fitment remain estimates; none is an approved repair replica.</p>{lsOriginals.models.map(m=><p key={m.id}><a className="evidence-link" href={appPath("/library/?model="+m.id)}>{m.name} · {m.sourceYear} · {m.generation}</a></p>)}</section>
 <section id="requested-lexus-models" style={{marginTop:32}}>
 <div className="eyebrow orange">LS 400 / LS 430 / ES 300 / ES 330 · OCTOBER 9 RESEARCH</div>
 <h2>Four targets, four distinct engine installations.</h2>
-<p>Manufacturer specifications, engine-bay photos and six asset candidates reviewed. These are working model years from the existing catalog. No new vehicle mesh has passed review; none is a verified 1:1 replica.</p>
+<p>Manufacturer specifications, engine-bay photos and six asset candidates reviewed. These are working model years from the existing catalog. This earlier acquisition audit is retained as history. The original LS studies above supersede its no-geometry status; none is a verified 1:1 replica.</p>
 <div className="research-grid">{lexusExpansion.targets.map(t=><article key={t.id}>
 <span className="source-chip">{t.workingYear} · US / LHD TARGET</span><h3>Lexus {t.name}</h3>
 <p>{t.generation}<br/>{t.engine} · {t.transmission}</p>

@@ -23,6 +23,12 @@ for(const file of fs.readdirSync('dist-pages/assets').filter(f=>f.endsWith('.js'
 console.log('Pages routes, repo-prefixed entrypoints, model assets and host independence verified.');
 
 const library=JSON.parse(fs.readFileSync("public/research/model-library.json"));
+const ls=JSON.parse(fs.readFileSync('public/research/lexus-ls-originals.json'));
+for(const m of ls.models){
+ assert(fs.existsSync('dist-pages'+m.manifestUrl),`Missing original study inventory ${m.id}`);
+ const bytes=fs.readFileSync('dist-pages'+m.assetUrl);
+ assert.equal(bytes.length,m.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),m.sha256);
+}
 for(const m of library.models)assert(fs.existsSync("dist-pages"+m.assetUrl),`Missing library model ${m.id}`);
 const buildInfo=JSON.parse(fs.readFileSync('dist-pages/build-info.json'));
 assert(/^[a-f0-9]{40}$/.test(buildInfo.revision));

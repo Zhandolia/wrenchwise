@@ -7,6 +7,7 @@ import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue} from '@/compo
 import {assetLabels,findCatalogFamilies,vehicleCatalog,CatalogFamily} from '@/lib/vehicle-catalog';
 import ModelLibraryCards from '@/components/model-library-cards';
 import library from '@/research/model-library.json';
+import originals from '@/research/lexus-ls-originals.json';
 import '@/app/workshop-learning.css';
 const records=new Map(vehicleCatalog.records.map(r=>[r.id,r]));
 const generationLabel=(label:string)=>label.replace(/Source lineage \d+/g,'historical source entry');
@@ -16,15 +17,16 @@ function FamilyCard({family,onChoose,currentId}:{family:CatalogFamily;onChoose?:
  const id=family.recordIds.includes(chosen)?chosen:preferred,r=records.get(id)!;
  const generation=family.generations.find(g=>g.recordIds.includes(id))!;
  const engine=vehicleCatalog.engines.find(e=>e.id===r.engineId);
- const action=r.assetStatus==='provisional-assembly'?'Learn with the GS 300 workshop':r.assetUrl?'Explore vehicle reference':'View planned workshop';
+ const original=family.make==='Lexus'&&family.name==='LS'?originals.models.find(m=>m.generation.toLowerCase().includes((r.generationId||'not-mapped').toLowerCase())):undefined;
+ const action=original?'Explore original '+original.sourceYear+' study':r.assetStatus==='provisional-assembly'?'Learn with the GS 300 workshop':r.assetUrl?'Explore vehicle reference':'View planned workshop';
  return <article className={'catalog-record '+(currentId===id?'current':'')}>
   <div className="catalog-record-heading"><span className="vehicle-series">{family.make}</span><CarFront size={20}/></div><h3>{family.name}</h3>
   {family.generations.length>1?<label className="family-field">Body generation / source group<select aria-label={family.make+' '+family.name+' generation'} value={generation.id} onChange={e=>{const g=family.generations.find(g=>g.id===e.target.value)!;setChosen(g.recordIds.find(id=>records.get(id)?.assetUrl)||g.recordIds[0])}}>{family.generations.map(g=><option key={g.id} value={g.id}>{generationLabel(g.label)}</option>)}</select></label>:<span className="catalog-single-value">{generationLabel(generation.label)}</span>}
   {generation.recordIds.length>1?<label className="family-field">Engine / regional configuration<select aria-label={family.make+' '+family.name+' configuration'} value={id} onChange={e=>setChosen(e.target.value)}>{generation.recordIds.map(id=>{const r=records.get(id)!;return <option key={id} value={id}>{r.name} · {generationLabel(r.generation||r.region)}{r.engineId?' · '+r.engineId.toUpperCase():''}</option>})}</select></label>:<span className="catalog-single-value">{r.name}{r.engineId?' · '+r.engineId.toUpperCase():''}</span>}
   {(generation.id.startsWith('source-')||generation.id==='unresolved')&&<p className="catalog-reference-note">Historical reference; exact chassis generation is not mapped yet.</p>}
-  <p>{r.region}</p><span className="catalog-asset-status">{assetLabels[r.assetStatus]}</span>
+  <p>{r.region}</p><span className="catalog-asset-status">{original?'Original anatomy study available':assetLabels[r.assetStatus]}</span>
   {engine&&<p className="family-engine">{engine.name} · {engine.architecture}<br/><a href={appPath('/components?engine='+engine.id)}>Explore engine systems & coverage</a></p>}
-  {onChoose?<button className="secondary-btn" onClick={()=>onChoose(id)}>{action}</button>:<a className="secondary-btn" href={appPath('/workshop?vehicle='+encodeURIComponent(id))}>{action}</a>}
+  {onChoose?<button className="secondary-btn" onClick={()=>onChoose(id)}>{action}</button>:<a className="secondary-btn" href={appPath(original?'/library/?model='+original.id:'/workshop?vehicle='+encodeURIComponent(id))}>{action}</a>}
   <a className="catalog-source" href={appPath(r.sourceUrl)} target="_blank" rel="noreferrer">Reference source <ExternalLink size={13}/></a>
  </article>;
 }
