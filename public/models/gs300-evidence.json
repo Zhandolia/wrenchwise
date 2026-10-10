@@ -5,7 +5,7 @@
   "modelRevision": "5",
   "origin": {
     "path": "public/models/gs300-parts.json",
-    "sha256": "411d8e1d87cc1611003238768a6d19abd4efb6ce30ce6ee0d12da4d81db35aaf",
+    "sha256": "5e5db792b275748a14087877e084c3ca272d671af08a7d0608e6d76256f9cea3",
     "baselineCommit": "58a0019a3d4b8d5cc91d3b376abbf97913a85659"
   },
   "configuration": {
@@ -21428,7 +21428,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "RM718U-informed surface study with recessed idler surfaces, hydraulic-body mounting ears or flexible boot folds. Dimensions, hole positions, working clearances and materials remain estimated."
     },
     {
       "id": "timing-idler-bearing",
@@ -21624,7 +21624,7 @@
       "claimIds": [
         "timing-tensioner:quantity"
       ],
-      "notes": "Hydraulic actuator separated from the idler and accessory tensioner. Two mounting bolts are documented; bore, rod stroke and installation position remain estimated."
+      "notes": "RM718U-informed surface study with recessed idler surfaces, hydraulic-body mounting ears or flexible boot folds. Dimensions, hole positions, working clearances and materials remain estimated."
     },
     {
       "id": "timing-tensioner-rod",
@@ -21720,7 +21720,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Part identity/layout referenced; surface dimensions, mating faces and installation clearances remain estimated."
+      "notes": "RM718U-informed surface study with recessed idler surfaces, hydraulic-body mounting ears or flexible boot folds. Dimensions, hole positions, working clearances and materials remain estimated."
     },
     {
       "id": "timing-tensioner-bolt-1",
@@ -21864,7 +21864,7 @@
         }
       ],
       "claimIds": [],
-      "notes": "Flat ribbon replaces the old tube. Pulley relationship is referenced; pitch, tooth count, wrap angles, tension and timing marks are not validated. Not an alignment tool."
+      "notes": "Smooth ribbon with illustrative internal teeth. Tooth count, pitch, width, wrap, routing, tension and pulley orientation are unverified. Not an alignment reference."
     },
     {
       "id": "timing-cover-upper",

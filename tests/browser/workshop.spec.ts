@@ -70,7 +70,7 @@ test('compressed personal import stays selected on reload',async({page})=>{
 
 test('phone layouts fit the viewport',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const route of ['','library/','assembly/?lesson=engine-bay-orientation','catalog/','workshop/?vehicle=gs300']){
+ for(const route of ['','library/','assembly/?lesson=engine-bay-orientation','assembly/?lesson=timing-belt','catalog/','workshop/?vehicle=gs300']){
   await page.goto(route);await expect(page.locator('h1')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
  }
@@ -85,27 +85,42 @@ test('a failed route chunk offers a usable reload recovery',async({page})=>{
  await expect(page.getByRole('heading',{name:'Choose a car. Understand how it works.'})).toBeVisible();
 });
 
-test('homepage is vehicle-neutral and system preview and search work',async({page})=>{
+test('homepage leads directly into mechanical jobs while retaining the reference archive',async({page})=>{
  await page.goto('');
- await expect(page.locator('h1')).toContainText('KNOW YOUR');
- await expect(page.getByText(/GS 300|GS300|S160/)).toHaveCount(0);
+ await expect(page.locator('h1')).toContainText('REAL PARTS.');
  await expect(page.locator('canvas')).toHaveCount(0);
- await page.getByRole('button',{name:'Separate layers',exact:true}).click();
- await expect(page.getByRole('button',{name:'Bring layers together'})).toHaveAttribute('aria-pressed','true');
- await page.getByRole('button',{name:'Electrical',exact:true}).click();
- await expect(page.getByRole('img',{name:'Illustrative electrical system diagram',exact:true})).toBeVisible();
- await page.getByRole('button',{name:'Brakes',exact:true}).click();
- await expect(page.getByRole('img',{name:'Illustrative brakes system diagram',exact:true})).toBeVisible();
- await page.getByLabel('Find a make, model or body generation').fill('Camry');
- await page.getByRole('button',{name:'Search vehicles',exact:true}).click();
- await expect(page).toHaveURL(/library\/\?q=Camry/);
- await expect(page.getByLabel('Search vehicles')).toHaveValue('Camry');
+ await page.getByRole('link',{name:'START THE TIMING-BELT WALKTHROUGH',exact:false}).click();
+ await expect(page).toHaveURL(/assembly\/\?lesson=timing-belt/);
+ await expect(page.getByRole('heading',{name:'Understand a timing-belt replacement',exact:true})).toBeVisible();
+ await page.getByRole('link',{name:'Choose a job',exact:true}).click();
+ await page.getByRole('link',{name:'Vehicle reference archive',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
- await page.getByRole('button',{name:/Toyota Camry · XV70/}).click();
- await expect(page.getByRole('heading',{name:'Toyota Camry 2020',exact:true})).toBeVisible();
- await page.goBack();
- await expect(page.getByLabel('Search vehicles')).toHaveValue('Camry');
- await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
+});
+
+test('timing walkthrough synchronizes geometry, allows inspection and restores reviewed progress',async({page})=>{
+ await page.goto('assembly/?lesson=timing-belt');
+ const phases=page.getByRole('complementary',{name:'Walkthrough phases'});
+ await phases.getByRole('button',{name:/POSITIONING Understand the timing references/i}).click();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-step','position');
+ await expect(page.locator('canvas')).toBeVisible();
+ const guide=page.getByRole('region',{name:'Current walkthrough phase'});
+ await guide.getByRole('button',{name:'Exhaust cam timing pulley',exact:true}).click();
+ await expect(page.locator('.mechanical-part h2')).toHaveText('Exhaust cam timing pulley');
+ await page.getByRole('button',{name:'Isolate selected part',exact:true}).click();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-isolated','true');
+ await page.getByRole('button',{name:'Underside',exact:true}).click();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-camera','mechanical-bottom');
+ await page.getByRole('button',{name:'Return to assembly',exact:true}).click();
+ await page.getByRole('button',{name:'Separate belt & tensioner',exact:true}).click();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-separated','true');
+ await guide.getByRole('checkbox',{name:'I have reviewed this phase'}).check();
+ await guide.getByRole('button',{name:'Next phase'}).click();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-step','remove');
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-separated','false');
+ await page.reload();
+ await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-step','remove');
+ await expect(phases.getByText('1 / 8 reviewed')).toBeVisible();
+ await expect(guide.getByRole('link',{name:/RM718U/})).toHaveAttribute('href',/131.htm/);
 });
 
 test('legacy vehicle links still open the selected workshop',async({page})=>{

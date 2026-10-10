@@ -10,12 +10,17 @@ import { Input } from '@/components/ui/input';
 import { Select,SelectTrigger,SelectValue,SelectContent,SelectItem } from '@/components/ui/select';
 import AssemblyViewer from '@/components/assembly-viewer';
 import GuidedLesson from '@/components/guided-lesson';
+import MechanicalWorkspace from '@/components/mechanical-workspace';
 import './assembly.css';
 import {serviceStudies} from '@/lib/s160-service';
 import {evidenceCounts, type VehicleEvidence} from '@/lib/vehicle-evidence';
 type Part={id:string;name:string;system:string;status:string;notes:string;accuracy:string;dimensionsMetres?:number[];source:string;sourceRefs?:string[];quantityEvidence?:{count:number;section:string;scope:string}};
 type Manifest={title:string;systems:Record<string,string>;parts:Part[];meshCount:number;triangleCount:number;openIssues:string[];sources:{id:string;title:string;url:string}[];dimensionTargets:{lengthMetres:number;bodyWidthMetres:number;heightMetres:number;wheelbaseMetres:number;basis:string}};
-export default function AssemblyPage(){const [learning,setLearning]=useState(()=>typeof window==='undefined'||!new URLSearchParams(window.location.search).has('study'));const [evidence,setEvidence]=useState<VehicleEvidence|null>(null);const [evidenceError,setEvidenceError]=useState('');const [data,setData]=useState<Manifest|null>(null),[error,setError]=useState(''),[visible,setVisible]=useState<string[]>([]),[selected,setSelected]=useState<string|null>(null),[explode,setExplode]=useState(0),[cutaway,setCutaway]=useState(false),[view,setView]=useState('vehicle'),[reset,setReset]=useState(0),[query,setQuery]=useState(''),[filter,setFilter]=useState('all'),[systemFilter,setSystemFilter]=useState('all'),[bottomTab,setBottomTab]=useState('inventory'),[studyId,setStudyId]=useState<string|null>(null);
+export default function AssemblyPage(){
+ const params=typeof window==='undefined'?new URLSearchParams():new URLSearchParams(window.location.search);
+ return params.get('lesson')==='timing-belt'||(!params.has('study')&&!params.has('lesson'))?<MechanicalWorkspace/>:<AssemblyExplorer/>;
+}
+function AssemblyExplorer(){const [learning,setLearning]=useState(()=>typeof window==='undefined'||!new URLSearchParams(window.location.search).has('study'));const [evidence,setEvidence]=useState<VehicleEvidence|null>(null);const [evidenceError,setEvidenceError]=useState('');const [data,setData]=useState<Manifest|null>(null),[error,setError]=useState(''),[visible,setVisible]=useState<string[]>([]),[selected,setSelected]=useState<string|null>(null),[explode,setExplode]=useState(0),[cutaway,setCutaway]=useState(false),[view,setView]=useState('vehicle'),[reset,setReset]=useState(0),[query,setQuery]=useState(''),[filter,setFilter]=useState('all'),[systemFilter,setSystemFilter]=useState('all'),[bottomTab,setBottomTab]=useState('inventory'),[studyId,setStudyId]=useState<string|null>(null);
  const study=serviceStudies.find(s=>s.id===studyId);
  const selectStudy=(id:string)=>{const s=serviceStudies.find(s=>s.id===id);if(!s)return;setStudyId(id);setVisible(s.visible);setView(s.camera);setSelected(id==='under-hood'?null:s.parts[0]);setExplode(0);setCutaway(false);setReset(r=>r+1)};
  useEffect(()=>{fetch(appPath(versionS160Asset('/models/gs300-parts.json'))).then(async r=>{if(!r.ok)throw new Error('The assembly index could not be loaded.');const j=await r.json() as Manifest;setData(j);setVisible(Object.keys(j.systems));const initial=new URLSearchParams(window.location.search).get('study');if(initial)selectStudy(initial)}).catch(e=>setError(e.message))},[]);

@@ -1,0 +1,49 @@
+{
+  "revision": "timing-detail-2026-10-10",
+  "baseSha256": "17a7c99bf7f26300cc70007729ed5a76abb19e24c356bc0a6bf57fe597cff636",
+  "sha256": "941eb2116f5e51e21ec390e79be2acd2b18973ee23b88abe75816baac6e6c7b2",
+  "bytes": 10675324,
+  "parts": [
+    {
+      "id": "timing-belt",
+      "triangles": 7632,
+      "previousTriangles": 144,
+      "boundsMetres": [
+        0.3475036174058914,
+        0.4976609945297241,
+        0.02799999713897705
+      ]
+    },
+    {
+      "id": "timing-idler",
+      "triangles": 4096,
+      "previousTriangles": 380,
+      "boundsMetres": [
+        0.06800000742077827,
+        0.06800001859664917,
+        0.03399991989135742
+      ]
+    },
+    {
+      "id": "timing-tensioner",
+      "triangles": 2968,
+      "previousTriangles": 380,
+      "boundsMetres": [
+        0.06599999964237213,
+        0.0769999623298645,
+        0.03600001335144043
+      ]
+    },
+    {
+      "id": "timing-tensioner-boot",
+      "triangles": 1280,
+      "previousTriangles": 380,
+      "boundsMetres": [
+        0.02199999988079071,
+        0.011999964714050293,
+        0.02200007438659668
+      ]
+    }
+  ],
+  "verifiedParts": 0
+}

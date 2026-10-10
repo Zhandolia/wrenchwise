@@ -3,8 +3,8 @@ import "./globals.css";
 import "./garage-theme.css";
 
 export const metadata: Metadata = {
-  title: "Wrenchwise — The interactive workshop",
-  description: "Explore an interactive 3D automotive workshop. Learn vehicle anatomy, inspect parts, and contribute models.",
+  title: "Wrenchwise — Learn the mechanics",
+  description: "Understand under-the-hood repairs with interactive 3D components and factory-referenced mechanical walkthroughs.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

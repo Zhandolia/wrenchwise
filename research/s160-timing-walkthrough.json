@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-10-10",
+  "configurationId": "lexus-gs-jzs160-us-2000-2jz-ge-auto",
+  "manual": "2000 Lexus GS300/GS400 RM718U, Engine Mechanical (2JZ-GE), EM-14–28",
+  "publicRoute": "/assembly/?lesson=timing-belt",
+  "content": "Original summaries across eight learning phases. Not a complete executable repair procedure; exact substeps, torque values, equipment, orientation diagrams and cross-referenced procedures remain in the factory manual.",
+  "inspectedSources": [
+    {"pages":"EM-14–17","url":"https://zinref.ru/avtomobili/Lexus/190_Lexus%20GS300_400_2000%20year_english/130.htm","content":"Factory component drawings, access sequence and removal positioning"},
+    {"pages":"EM-18–21","url":"https://zinref.ru/avtomobili/Lexus/190_Lexus%20GS300_400_2000%20year_english/131.htm","content":"Full disassembly branch including VVT-i oil hardware; inspection"},
+    {"pages":"EM-22–25","url":"https://zinref.ru/avtomobili/Lexus/190_Lexus%20GS300_400_2000%20year_english/132.htm","content":"Tensioner protrusion inspection; lower-drive and cam-pulley installation; read in browser after web reader failed"},
+    {"pages":"EM-26–28","url":"https://zinref.ru/avtomobili/Lexus/190_Lexus%20GS300_400_2000%20year_english/133.htm","content":"Belt connection, hydraulic tensioner setup, valve-timing verification and reassembly"}
+  ],
+  "sourceCaveats": ["Manufacturer-authored content is available on a third-party mirror; it may become unavailable.","Current TIS subscription content was not accessed.","The manual covers deeper disassembly than a minimal belt-only replacement. The walkthrough retains that distinction.","IS300 RM870E, non-VVT-i Supra RM502U and GS400 V8 procedures were not substituted."],
+  "geometryRevision": "timing-detail-2026-10-10",
+  "geometryBasis": "Original interpretation of the factory exploded component illustration and previously modeled layout. Smooth belt backing with illustrative teeth; recessed idler, hydraulic housing mounting ears and boot folds.",
+  "verifiedGeometry": false,
+  "unresolved": ["OEM CAD or scan and dimensional metrology", "Exact belt pitch and tooth count", "Pulley marks and angular relationships", "Belt routing and contact", "Installed clearances", "Seal and bore dimensions", "Independent technician review of an executable procedure"],
+  "releaseBoundary": "Learning acknowledgements never represent completion of vehicle work. Separation offsets and arbitrary view rotation are inspection tools, not mechanical simulation or removal instructions."
+}
