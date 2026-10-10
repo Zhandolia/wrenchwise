@@ -112,6 +112,7 @@ test('all four original LS studies open and retain generation-specific anatomy c
   await page.getByRole('combobox',{name:'LS component system'}).selectOption('electrical');
   await page.getByRole('button',{name:'12-volt battery',exact:true}).click();
   await expect(page.getByRole('heading',{name:'12-volt battery',exact:true})).toBeVisible();
+  if(id!=='ucf10'){await expect(page.getByRole('button',{name:'Restore finishing covers',exact:true})).toHaveAttribute('aria-pressed','true');await page.getByRole('button',{name:'Restore finishing covers',exact:true}).click();}
   await page.getByRole('button',{name:'Engine anatomy',exact:true}).click();
   await expect(page.getByRole('img',{name:/engine study/})).toBeVisible();
   if(id!=='ucf10'){
