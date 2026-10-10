@@ -4,6 +4,7 @@ import path from 'node:path';
 test('GS300 hood-hidden study opens in body context and links factory references',async({page})=>{
  const model=page.waitForResponse(r=>r.url().includes('gs300-assembly.glb?v=')&&r.status()===200);
  await page.goto('assembly/?study=under-hood');await model;
+ await page.getByText('Change component view',{exact:true}).click();
  await expect(page.getByRole('button',{name:'Engine bay Under the hood · installed layout',exact:true})).toHaveAttribute('aria-pressed','true');
  await expect(page.getByText('The hood is hidden so you can inspect the 2JZ-GE inside the S160 body.',{exact:false})).toBeVisible();
  await page.getByRole('button',{name:'Engine bay Engine cover & PCV connection',exact:true}).click();
@@ -87,12 +88,19 @@ test('a failed route chunk offers a usable reload recovery',async({page})=>{
 
 test('homepage leads directly into mechanical jobs while retaining the reference archive',async({page})=>{
  await page.goto('');
- await expect(page.locator('h1')).toContainText('REAL PARTS.');
+ await expect(page.locator('h1')).toHaveText('Guides & parts');
+ await page.getByRole('textbox',{name:'Search guides and parts'}).fill('water');
+ await expect(page.locator('.reference-row')).toHaveCount(1);
+ await expect(page.locator('.reference-row')).toContainText('Water pump & seals');
+ await page.getByRole('button',{name:'Clear search'}).click();
+ await page.getByRole('combobox',{name:'Filter guides by system'}).selectOption('Cooling');
+ await expect(page.locator('.reference-row')).toHaveCount(1);
+ await page.getByRole('combobox',{name:'Filter guides by system'}).selectOption('All systems');
  await expect(page.locator('canvas')).toHaveCount(0);
- await page.getByRole('link',{name:'START THE TIMING-BELT WALKTHROUGH',exact:false}).click();
+ await page.getByRole('link',{name:/Timing-belt replacement 8 sections/}).click();
  await expect(page).toHaveURL(/assembly\/\?lesson=timing-belt/);
- await expect(page.getByRole('heading',{name:'Understand a timing-belt replacement',exact:true})).toBeVisible();
- await page.getByRole('link',{name:'Choose a job',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Timing-belt replacement',exact:true})).toBeVisible();
+ await page.getByRole('link',{name:'Guides & parts',exact:true}).click();
  await page.getByRole('link',{name:'Vehicle reference archive',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
 });
@@ -100,7 +108,7 @@ test('homepage leads directly into mechanical jobs while retaining the reference
 test('timing walkthrough synchronizes geometry, allows inspection and restores reviewed progress',async({page})=>{
  await page.goto('assembly/?lesson=timing-belt');
  const phases=page.getByRole('complementary',{name:'Walkthrough phases'});
- await phases.getByRole('button',{name:/POSITIONING Understand the timing references/i}).click();
+ await phases.getByRole('button',{name:/03 Timing references/i}).click();
  await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-step','position');
  await expect(page.locator('canvas')).toBeVisible();
  const guide=page.getByRole('region',{name:'Current walkthrough phase'});
@@ -113,8 +121,8 @@ test('timing walkthrough synchronizes geometry, allows inspection and restores r
  await page.getByRole('button',{name:'Return to assembly',exact:true}).click();
  await page.getByRole('button',{name:'Separate belt & tensioner',exact:true}).click();
  await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-separated','true');
- await guide.getByRole('checkbox',{name:'I have reviewed this phase'}).check();
- await guide.getByRole('button',{name:'Next phase'}).click();
+ await guide.getByRole('checkbox',{name:'Section reviewed'}).check();
+ await guide.getByRole('button',{name:'Next section'}).click();
  await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-step','remove');
  await expect(page.locator('.mechanical-stage')).toHaveAttribute('data-separated','false');
  await page.reload();
@@ -151,4 +159,27 @@ test('all four original LS studies open and retain generation-specific anatomy c
  }
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
+});
+
+test('phone guide keeps instructions first and opens the selected part in the 3D tab',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('assembly/?lesson=timing-belt');
+ const guide=page.getByRole('region',{name:'Current walkthrough phase'});
+ await expect(guide).toBeVisible();
+ await expect(page.getByRole('region',{name:'Mechanical inspection'})).toBeHidden();
+ await page.getByRole('combobox',{name:'Jump to section'}).selectOption('remove');
+ await guide.getByRole('button',{name:'Hydraulic timing-belt tensioner',exact:true}).click();
+ await expect(page.getByRole('region',{name:'Mechanical inspection'})).toBeVisible();
+ await expect(guide).toBeHidden();
+ await expect(page.locator('.mechanical-part h2')).toHaveText('Hydraulic timing-belt tensioner');
+ await page.getByRole('button',{name:'Guide',exact:true}).click();
+ await expect(guide.getByRole('heading',{name:'Removal',exact:true})).toBeVisible();
+ await page.getByRole('link',{name:'Guides & parts',exact:true}).click();
+ await expect(page.locator('.reference-resume')).toContainText('Removal');
+ await page.getByRole('textbox',{name:'Search guides and parts'}).fill('does-not-exist');
+ await expect(page.getByRole('heading',{name:'No matching guides'})).toBeVisible();
+ await page.getByRole('button',{name:'Show all guides'}).click();
+ await expect(page.locator('.reference-row')).toHaveCount(6);
+ await page.locator('.reference-resume').click();
+ await expect(guide.getByRole('heading',{name:'Removal',exact:true})).toBeVisible();
 });
