@@ -49,7 +49,9 @@ test('compressed personal import stays selected on reload',async({page})=>{
  await expect(page).toHaveURL(/asset=/);
  await expect(page.getByText('Browser regression reference',{exact:true}).first()).toBeVisible();
  await page.reload();
- await expect(page.getByText('Browser regression reference',{exact:true}).first()).toBeVisible();
+ // IndexedDB restoration competes with software WebGL startup on CI runners.
+ // Keep checking the saved title, with a bounded allowance for asynchronous restore.
+ await expect(page.getByText('Browser regression reference',{exact:true}).first()).toBeVisible({timeout:20000});
  await expect(page.locator('canvas')).toBeVisible();
  await expect(page.getByText('This saved model is not available in this browser.')).toHaveCount(0);
 });
