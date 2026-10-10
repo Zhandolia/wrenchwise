@@ -22,3 +22,7 @@ The existing 20 MB GLB limit, embedded-asset restriction, vertex/node checks and
 - Browser QA covered the ES viewer, assembly/evidence loading, local note persistence after reload and importing/reopening a generated test GLB from the local model library.
 - The static bundle is checked for dependence on the prior ChatGPT host and accidental root API requests.
 - Model geometry remains provisional. Hosting migration does not change its accuracy or turn the studies into repair procedures.
+
+### Complete deployed-file verification
+
+The Pages build now writes `deployment-manifest.json`, containing the size and SHA-256 of every deployable file except the two self-referential metadata files. `build-info.json` binds that manifest to the Git revision. Local artifact validation recalculates the inventory; post-deploy validation downloads every listed file with bounded concurrency and checks its size and hash. This includes lazy route JavaScript, CSS, evidence JSON, assembly models and library models. A successful check demonstrates file integrity and availability; browser interaction checks remain separate.

@@ -1,3 +1,4 @@
+import {validateDeploymentManifest,verifyFileBytes} from './deployment-manifest.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {setTimeout} from 'node:timers/promises';
@@ -30,14 +31,20 @@ for(const route of ['','catalog/','library/','assembly/','components/','research
   await get(src.slice(base.pathname.length));
  }
 }
-const queue=[...manifest.models];
+const inventoryBytes=await get('deployment-manifest.json');
+assert.equal(sha(inventoryBytes),info.deploymentManifestSha256,'Deployed inventory differs from build');
+const files=validateDeploymentManifest(JSON.parse(inventoryBytes));
+assert.equal(files.length,info.deploymentFiles);
+for(const model of manifest.models){
+ const file=files.find(f=>f.path===model.assetUrl.slice(1));
+ assert(file,`Missing library model in deployment inventory: ${model.id}`);
+ assert.equal(file.sha256,model.sha256);assert.equal(file.bytes,model.bytes);
+}
+const queue=[...files];
 await Promise.all(Array.from({length:3},async()=>{
  while(queue.length){
-  const model=queue.shift();
-  assert(/^\/models\/library\/[a-z0-9-]+\.glb$/.test(model.assetUrl));
-  const bytes=await get(model.assetUrl.slice(1));
-  assert.equal(bytes.length,model.bytes,`${model.id}: truncated download`);
-  assert.equal(sha(bytes),model.sha256,`${model.id}: deployed model hash mismatch`);
+  const file=queue.shift();
+  verifyFileBytes(file,await get(file.path));
  }
 }));
-console.log(`Verified deployed commit ${revision}: six routes and all ${manifest.models.length} model downloads match the published manifest.`);
+console.log(`Verified deployed commit ${revision}: six routes and all ${files.length} files, including lazy page chunks and ${manifest.models.length} library models.`);

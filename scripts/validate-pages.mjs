@@ -1,3 +1,4 @@
+import {collectDeploymentFiles,digest,validateDeploymentManifest} from './deployment-manifest.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -26,3 +27,11 @@ const buildInfo=JSON.parse(fs.readFileSync('dist-pages/build-info.json'));
 assert(/^[a-f0-9]{40}$/.test(buildInfo.revision));
 assert.equal(buildInfo.libraryModels,library.models.length);
 assert.equal(buildInfo.libraryManifestSha256,createHash('sha256').update(fs.readFileSync('dist-pages/research/model-library.json')).digest('hex'));
+
+const deploymentBytes=fs.readFileSync('dist-pages/deployment-manifest.json');
+const deployment=JSON.parse(deploymentBytes);
+validateDeploymentManifest(deployment);
+assert.equal(buildInfo.deploymentManifestSha256,digest(deploymentBytes));
+assert.equal(buildInfo.deploymentFiles,deployment.files.length);
+assert.deepEqual(deployment.files,await collectDeploymentFiles('dist-pages'),'Build files differ from deployment inventory');
+console.log(`Verified complete deployment inventory: ${deployment.files.length} files, including all lazy chunks and evidence assets.`);
