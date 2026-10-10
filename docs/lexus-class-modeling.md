@@ -135,3 +135,11 @@ zero-sized and detached viewer hosts are ignored. Existing assembly/service came
 retain their previous behavior. Tests cover hidden helpers, unused vertices,
 rotated/scaled models and narrow/wide viewports. Browser QA included all library
 models, camera presets, filtered next/previous, body grouping and a narrow MR2 view.
+
+## LS generation sourcing and direct selection (2026-10-09)
+
+The library now opens a model when its body generation is selected. A single-model generation has no duplicate model card. Multiple versions (currently AE86) remain optional choices after a model has already opened. Searching clears the generation filter; direct model links restore the appropriate generation. LS generation entries sort first through fifth.
+
+The first four LS generations are reference/status entries, not new downloadable geometry. `research/lexus-ls-generation-review.json` records official generation references and acquisition findings. Three CC BY-labeled Sketchfab candidates were downloaded and converted for local inspection, but all displayed HUMSTER3D license-plate branding without original-creator attribution or permission in their listings. They remain outside public assets. A separate modified LS400 has an ownership dispute in the source comments. The LS430 drift candidate reviewed earlier is incomplete and mechanically modified. Located LS460 commercial listings do not establish public GLB redistribution rights.
+
+Completion requires original-creator permission covering public model-file delivery, a clearly licensed replacement, or commissioned original geometry. A retail rendering license alone is not treated as authorization to publish source geometry. No 1:1 dimensions or repair-ready engine bays are asserted.

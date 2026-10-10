@@ -1,0 +1,121 @@
+{
+  "updatedAt": "2026-10-09",
+  "scope": "Generation references and acquisition status. Pending entries are not downloadable 3D models.",
+  "generations": [
+    {
+      "id": "lexus-ls-ucf10",
+      "make": "Lexus",
+      "family": "LS",
+      "name": "Lexus LS400",
+      "author": "",
+      "bodyStyle": "Sedan",
+      "generation": "UCF10 · first generation",
+      "bodyGroup": "Lexus LS · UCF10 · first generation",
+      "sourceYear": null,
+      "years": "1990–1994 US model years",
+      "kind": "3D model pending",
+      "referenceUrl": "https://pressroom.lexus.com/album/1990-1994-lexus-ls-400-first-1st-generation/",
+      "status": "awaiting-redistributable-model",
+      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
+      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+    },
+    {
+      "id": "lexus-ls-ucf20",
+      "make": "Lexus",
+      "family": "LS",
+      "name": "Lexus LS400",
+      "author": "",
+      "bodyStyle": "Sedan",
+      "generation": "UCF20 · second generation",
+      "bodyGroup": "Lexus LS · UCF20 · second generation",
+      "sourceYear": null,
+      "years": "1995–2000 US model years",
+      "kind": "3D model pending",
+      "referenceUrl": "https://pressroom.lexus.com/album/1995-2000-lexus-ls-400-second-2nd-generation/",
+      "status": "awaiting-redistributable-model",
+      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
+      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+    },
+    {
+      "id": "lexus-ls-ucf30",
+      "make": "Lexus",
+      "family": "LS",
+      "name": "Lexus LS430",
+      "author": "",
+      "bodyStyle": "Sedan",
+      "generation": "UCF30 · third generation",
+      "bodyGroup": "Lexus LS · UCF30 · third generation",
+      "sourceYear": null,
+      "years": "2001–2006",
+      "kind": "3D model pending",
+      "referenceUrl": "https://media.lexus.co.uk/vehicles/ls-2001-2006/",
+      "status": "awaiting-redistributable-model",
+      "reason": "A candidate model was reviewed, but its creator and redistribution rights need confirmation before publication.",
+      "nextStep": "Obtain permission from the original creator or acquire an independently licensed model."
+    },
+    {
+      "id": "lexus-ls-xf40",
+      "make": "Lexus",
+      "family": "LS",
+      "name": "Lexus LS460 / LS600h",
+      "author": "",
+      "bodyStyle": "Sedan",
+      "generation": "XF40 · fourth generation",
+      "bodyGroup": "Lexus LS · XF40 · fourth generation",
+      "sourceYear": null,
+      "years": "2006–2017 generation; introduced as 2007 US model year",
+      "kind": "3D model pending",
+      "referenceUrl": "https://media.lexus.co.uk/vehicles/ls-2006-2017/",
+      "status": "awaiting-redistributable-model",
+      "reason": "No suitable model with confirmed public redistribution rights has been found yet.",
+      "nextStep": "Obtain a model licensed for browser delivery and public GLB downloads, or commission an original model."
+    }
+  ],
+  "candidates": [
+    {
+      "generationId": "lexus-ls-ucf10",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-ls-mk1-1989-d4d188d5786a415bbeeac3083da2b891",
+      "listingAuthor": "Nieve5677",
+      "listingLicense": "CC BY 4.0",
+      "sourceSha256": "1b78a77e339696d64d28b79d69969691456d713c5491e52d0297e626f19209c8",
+      "disposition": "held-not-published",
+      "finding": "Visual browser inspection found HUMSTER3D branding on the vehicle license plate. The listing names a different uploader and provides no original-creator permission or credits; provenance remains unresolved."
+    },
+    {
+      "generationId": "lexus-ls-ucf20",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-ls-mk2-1997-ab0ced1a02da4cada957f48a4fdda173",
+      "listingAuthor": "Nieve5677",
+      "listingLicense": "CC BY 4.0",
+      "sourceSha256": "d21ddc2cb40c36ad8eb9a8e7140e9b43fe59fe2cf4f5e88e68d0a40d50da41c3",
+      "disposition": "held-not-published",
+      "finding": "Visual browser inspection found HUMSTER3D branding on the vehicle license plate. The listing names a different uploader and provides no original-creator permission or credits; provenance remains unresolved."
+    },
+    {
+      "generationId": "lexus-ls-ucf30",
+      "sourceUrl": "https://sketchfab.com/3d-models/lexus-ls-xf30-2003-52819f40ae6344b98c1113299d92a863",
+      "listingAuthor": "Nieve5677",
+      "listingLicense": "CC BY 4.0",
+      "sourceSha256": "ab7aebf7ea98cd222ddb76a7fe14dfe7d91ff82bf90d7b5b164da19687d850b8",
+      "disposition": "held-not-published",
+      "finding": "Visual browser inspection found HUMSTER3D branding on the vehicle license plate. The listing names a different uploader and provides no original-creator permission or credits; provenance remains unresolved."
+    },
+    {
+      "generationId": "lexus-ls-xf40",
+      "sourceUrl": "https://www.3dcadbrowser.com/3d-model/lexus-ls460",
+      "disposition": "not-acquired",
+      "finding": "Listing explicitly prohibits redistribution of source files."
+    },
+    {
+      "generationId": "lexus-ls-xf40",
+      "sourceUrl": "https://www.flatpyramid.com/3d-models/vehicles-3d-models/automobile/lexus-ls-460/",
+      "disposition": "not-acquired",
+      "finding": "Paid royalty-free asset; public GLB redistribution permission is not established."
+    },
+    {
+      "generationId": "lexus-ls-ucf10",
+      "sourceUrl": "https://sketchfab.com/3d-models/vip-yakuza-lexus-ls400-5cdef78a0ccc43b8a1d28d0acd70acac",
+      "disposition": "not-acquired",
+      "finding": "Source comments contain an unresolved ownership dispute. Modified vehicle."
+    }
+  ]
+}
