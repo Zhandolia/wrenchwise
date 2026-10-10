@@ -15,10 +15,10 @@ const Viewer = lazy(() => import('@/components/assembly-viewer'));
 const assemblySystems = ['body','engine','intake','electrical','cooling','exhaust','transmission','suspension','brakes','driveline','wheels','structure','interior'];
 
 export default function VehiclesPage() {
-  const [query, setQuery] = useState('');
-  const [make, setMake] = useState('All');
+  const [query, setQuery] = useState(() => typeof window === 'undefined' ? '' : new URLSearchParams(window.location.search).get('q') || '');
+  const [make, setMake] = useState(() => {const value=typeof window==='undefined'?'':new URLSearchParams(window.location.search).get('make');return value==='Lexus'||value==='Toyota'?value:'All';});
   const [body, setBody] = useState('All');
-  const [id, setId] = useState(() => readLibrarySelection(entries, typeof window === 'undefined' ? '' : window.location.search).id);
+  const [id, setId] = useState(() => typeof window !== 'undefined' && /(?:model|generation)=/.test(window.location.search) ? readLibrarySelection(entries, window.location.search).id : '');
   const [reset, setReset] = useState(0);
   const [view, setView] = useState('all');
   const entry = entries.find(item => item.id === id) || entries[0];
@@ -30,7 +30,7 @@ export default function VehiclesPage() {
   const matches = available.filter(item => (body === 'All' || item.bodyStyle === body) && matchesLibraryModel(item, query)).sort(compareLibraryEntries);
   const groups = [...new Set(matches.map(item => item.bodyGroup))];
   useEffect(() => {
-    const restore = () => {setId(readLibrarySelection(entries, window.location.search).id); setQuery(''); setMake('All'); setBody('All'); setView('all'); setReset(0);};
+    const restore = () => {setId(/(?:model|generation)=/.test(window.location.search) ? readLibrarySelection(entries, window.location.search).id : ''); setQuery(new URLSearchParams(window.location.search).get('q') || ''); const restoredMake=new URLSearchParams(window.location.search).get('make'); setMake(restoredMake==='Toyota'||restoredMake==='Lexus'?restoredMake:'All'); setBody('All'); setView('all'); setReset(0);};
     window.addEventListener('popstate', restore);
     return () => window.removeEventListener('popstate', restore);
   }, []);
@@ -43,12 +43,11 @@ export default function VehiclesPage() {
   };
   const clear = () => {setQuery(''); setMake('All'); setBody('All');};
   return <div className="assembly-app">
-    <header className="assembly-header"><a className="brand" href={appPath('/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav aria-label="Main navigation"><a href={appPath('/')}>Workshop</a><a aria-current="page" href={appPath('/library')}>Choose vehicle</a><a href={appPath('/assembly')}>GS 300 learning lab</a></nav></header>
+    <header className="assembly-header"><a className="brand" href={appPath('/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav aria-label="Main navigation"><a href={appPath('/')}>Home</a><a aria-current="page" href={appPath('/library')}>Choose vehicle</a><a href={appPath('/components')}>Explore systems</a></nav></header>
     <main className="model-library">
       <div className="eyebrow orange">YOUR INTERACTIVE WORKSHOP</div>
       <h1>Choose a car. Understand how it works.</h1>
-      <p className="library-intro">Explore your vehicle in 3D, then learn one system at a time. The S160 GS 300 has guided mechanical studies. Other available vehicles currently support exterior exploration.</p>
-      <div className="learning-feature"><div><BookOpen size={24}/><div><strong>Start with the Lexus GS 300 · S160</strong><p>Explore the engine bay, follow the intake and check what you’ve learned.</p></div></div><a className="learn-primary" href={appPath('/assembly?lesson=engine-bay-orientation')}>Start guided learning <ArrowRight size={17}/></a></div>
+      <p className="library-intro">Find your vehicle, open the available 3D views, and see which systems and lessons you can explore. Coverage grows one car at a time.</p>
       <div className="library-layout">
         <aside className="library-sidebar" aria-label="Choose a vehicle">
           <label>Search vehicles<input value={query} onChange={event => setQuery(event.target.value)} placeholder="GS300, S160, LS400, 2000…"/></label>
@@ -56,7 +55,7 @@ export default function VehiclesPage() {
           <div className="library-filter-summary"><p className="library-count" role="status">{groups.length} vehicle & engine groups</p><button onClick={clear}>Clear filters</button></div>
           <div className="library-list" aria-label="Vehicle generations">{groups.map(group => {
             const variants = matches.filter(item => item.bodyGroup === group);
-            const active = variants.find(item => item.id === entry.id);
+            const active = variants.find(item => item.id === id);
             const target = active || variants[0];
             const guided = variants.some(item => item.id === s160Vehicle.id);
             return <button key={group} aria-pressed={!!active} onClick={() => choose(target.id)}><strong>{group}</strong><span>{guided ? 'Guided mechanical studies' : 'assetUrl' in target ? target.bodyStyle === 'Engine' ? 'Engine visual reference' : 'Exterior exploration' : 'Learning content in development'}</span></button>;
@@ -64,6 +63,7 @@ export default function VehiclesPage() {
           <a className="all-vehicles-link" href={appPath('/catalog')}>Browse all vehicle records →</a>
         </aside>
         <section className="library-detail" aria-label="Selected vehicle">
+          {!id ? <div className="library-empty-prompt"><span className="source-chip">GARAGE / SELECT VEHICLE</span><span className="empty-cross" aria-hidden="true">[+]</span><h2>Your car. Your next discovery.</h2><p>Choose a body generation from the list to open its workspace. Available lessons and 3D coverage are labeled on each entry.</p></div> : <>
           <p className="library-selection-status" role="status">Selected: {entry.bodyGroup}</p>
           {!matches.some(item => item.id === entry.id) && <p className="library-note">Your current vehicle is outside these filters. Choose a result to switch.</p>}
           <div className="library-title"><div><span className="source-chip">{isAssembly ? 'GUIDED MECHANICAL STUDIES' : missing ? 'IN DEVELOPMENT' : isEngine ? 'ENGINE VISUAL REFERENCE' : 'EXTERIOR EXPLORATION'}</span><h2>{entry.name}{isAssembly ? ' · S160' : ''}</h2><p className="library-generation">{entry.bodyGroup}{entry.sourceYear ? ' · ' + entry.sourceYear : ''}</p></div>{isAssembly && <a className="learn-primary" href={appPath('/assembly?lesson=engine-bay-orientation')}>Enter learning lab <ArrowRight size={16}/></a>}</div>
@@ -76,6 +76,7 @@ export default function VehiclesPage() {
             {isAssembly && <details className="vehicle-sources"><summary>Sources & credits</summary><p>Original mechanical study by Wrenchwise (MIT). Adapted exterior: <a href={gsCredit.sourceUrl}>{gsCredit.title}</a> by <a href={gsCredit.authorUrl}>{gsCredit.author}</a> · <a href={gsCredit.licenseUrl}>{gsCredit.license}</a>. Scale targets, materials and trim adapted; exact surfaces remain unverified.</p><a href={appPath("/research")}>Full source audit</a></details>}
             {model && <details className="vehicle-sources"><summary>About this visual reference & credits</summary><p>{model.notes}</p><p>Source: <a href={model.sourceUrl} target="_blank" rel="noreferrer">{model.title}</a> by <a href={model.authorUrl} target="_blank" rel="noreferrer">{model.author}</a> · <a href={model.licenseUrl} target="_blank" rel="noreferrer">{model.license}</a></p><p>Adapted with display normalization, source-mesh IDs, material conversion where needed and web compression. No endorsement implied. Shared screen framing does not establish physical scale.</p>{model.additionalCredits.map(credit => <p key={credit.sourceUrl}>Includes <a href={credit.sourceUrl} target="_blank" rel="noreferrer">{credit.title}</a> by <a href={credit.authorUrl} target="_blank" rel="noreferrer">{credit.author}</a> · <a href={credit.licenseUrl} target="_blank" rel="noreferrer">{credit.license}</a>.</p>)}</details>}
           </>}
+        </>}
         </section>
       </div>
     </main>

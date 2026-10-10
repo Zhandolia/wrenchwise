@@ -6,7 +6,7 @@ import {collectDeploymentFiles,digest,validateDeploymentManifest} from './deploy
 await build({configFile:'vite.pages.config.ts'});
 // Real directory entrypoints make direct links and reloads work on GitHub Pages.
 const html=await fs.readFile('dist-pages/index.html');
-for(const route of ['catalog','assembly','components','research','library']){
+for(const route of ['workshop','catalog','assembly','components','research','library']){
  await fs.mkdir(`dist-pages/${route}`,{recursive:true});
  await fs.writeFile(`dist-pages/${route}/index.html`,html);
 }

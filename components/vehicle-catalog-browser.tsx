@@ -24,7 +24,7 @@ function FamilyCard({family,onChoose,currentId}:{family:CatalogFamily;onChoose?:
   {(generation.id.startsWith('source-')||generation.id==='unresolved')&&<p className="catalog-reference-note">Historical reference; exact chassis generation is not mapped yet.</p>}
   <p>{r.region}</p><span className="catalog-asset-status">{assetLabels[r.assetStatus]}</span>
   {engine&&<p className="family-engine">{engine.name} · {engine.architecture}<br/><a href={appPath('/components?engine='+engine.id)}>Explore engine systems & coverage</a></p>}
-  {onChoose?<button className="secondary-btn" onClick={()=>onChoose(id)}>{action}</button>:<a className="secondary-btn" href={appPath('/?vehicle='+encodeURIComponent(id))}>{action}</a>}
+  {onChoose?<button className="secondary-btn" onClick={()=>onChoose(id)}>{action}</button>:<a className="secondary-btn" href={appPath('/workshop?vehicle='+encodeURIComponent(id))}>{action}</a>}
   <a className="catalog-source" href={appPath(r.sourceUrl)} target="_blank" rel="noreferrer">Reference source <ExternalLink size={13}/></a>
  </article>;
 }

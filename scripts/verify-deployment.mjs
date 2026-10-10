@@ -23,7 +23,7 @@ const manifestBytes=await get('research/model-library.json');
 assert.equal(sha(manifestBytes),info.libraryManifestSha256,'Deployed manifest differs from the build');
 const manifest=JSON.parse(manifestBytes);
 assert.equal(manifest.models.length,info.libraryModels);
-for(const route of ['','catalog/','library/','assembly/','components/','research/']){
+for(const route of ['','workshop/','catalog/','library/','assembly/','components/','research/']){
  const html=(await get(route)).toString();
  assert(html.includes('id="root"'),`Missing app entrypoint: ${route}`);
  for(const [,src] of html.matchAll(/<script[^>]+src="([^"]+)"/g)){

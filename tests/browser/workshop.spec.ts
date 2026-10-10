@@ -3,6 +3,8 @@ import path from 'node:path';
 
 test('one vehicle choice opens the correct viewer and browser history restores it',async({page})=>{
  await page.goto('library/');
+ await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
+ await page.getByRole('button',{name:'Lexus GS · S160 · second generation Guided mechanical studies',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Lexus GS 300 · S160',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Toyota Camry · XV70 · eighth generation Exterior exploration',exact:true}).click();
  await expect(page).toHaveURL(/model=toyota-camry-2020-236a5a/);
@@ -34,7 +36,7 @@ test('lesson check advances the anatomy view and survives reload',async({page})=
 });
 
 test('compressed personal import stays selected on reload',async({page})=>{
- await page.goto('');
+ await page.goto('workshop/?vehicle=gs300');
  await page.locator('.vehicle-picker').click();
  await page.getByRole('button',{name:'Import a model',exact:true}).click();
  await page.getByLabel('Model name').fill('Browser regression reference');
@@ -54,7 +56,7 @@ test('compressed personal import stays selected on reload',async({page})=>{
 
 test('phone layouts fit the viewport',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const route of ['library/','assembly/?lesson=engine-bay-orientation','catalog/']){
+ for(const route of ['','library/','assembly/?lesson=engine-bay-orientation','catalog/','workshop/?vehicle=gs300']){
   await page.goto(route);await expect(page.locator('h1')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
  }
@@ -67,4 +69,33 @@ test('a failed route chunk offers a usable reload recovery',async({page})=>{
  await page.unroute('**/assets/page-*.js');
  await page.getByRole('button',{name:'Reload workspace'}).click();
  await expect(page.getByRole('heading',{name:'Choose a car. Understand how it works.'})).toBeVisible();
+});
+
+test('homepage is vehicle-neutral and system preview and search work',async({page})=>{
+ await page.goto('');
+ await expect(page.locator('h1')).toContainText('KNOW YOUR');
+ await expect(page.getByText(/GS 300|GS300|S160/)).toHaveCount(0);
+ await expect(page.locator('canvas')).toHaveCount(0);
+ await page.getByRole('button',{name:'Separate layers',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Bring layers together'})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:'Electrical',exact:true}).click();
+ await expect(page.getByRole('img',{name:'Illustrative electrical system diagram',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Brakes',exact:true}).click();
+ await expect(page.getByRole('img',{name:'Illustrative brakes system diagram',exact:true})).toBeVisible();
+ await page.getByLabel('Find a make, model or body generation').fill('Camry');
+ await page.getByRole('button',{name:'Search vehicles',exact:true}).click();
+ await expect(page).toHaveURL(/library\/\?q=Camry/);
+ await expect(page.getByLabel('Search vehicles')).toHaveValue('Camry');
+ await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
+ await page.getByRole('button',{name:/Toyota Camry · XV70/}).click();
+ await expect(page.getByRole('heading',{name:'Toyota Camry 2020',exact:true})).toBeVisible();
+ await page.goBack();
+ await expect(page.getByLabel('Search vehicles')).toHaveValue('Camry');
+ await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
+});
+
+test('legacy vehicle links still open the selected workshop',async({page})=>{
+ await page.goto('?vehicle=gs300');
+ await expect(page.locator('.vehicle-picker')).toContainText('GS 300');
+ await expect(page.locator('canvas')).toBeVisible();
 });

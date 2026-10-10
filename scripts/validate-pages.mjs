@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 assert(fs.existsSync('dist-pages/.nojekyll'),'Missing Pages build-control marker');
 const base=process.env.PAGES_BASE_PATH||'/wrenchwise/';
-for(const path of ['index.html','catalog/index.html','assembly/index.html','components/index.html','research/index.html','library/index.html','404.html']){
+for(const path of ['index.html','workshop/index.html','catalog/index.html','assembly/index.html','components/index.html','research/index.html','library/index.html','404.html']){
  const html=fs.readFileSync('dist-pages/'+path,'utf8');
  for(const match of html.matchAll(/(?:src|href)="([^\"]+)"/g)){
   assert(match[1].startsWith(base),`${path}: ${match[1]} escapes Pages base`);
