@@ -1,0 +1,28 @@
+{
+  "$schema": "../schema/engine.schema.json",
+  "id": "2jz-ge-vvti-jzs160",
+  "family": "JZ",
+  "code": "2JZ-GE",
+  "variant": "VVT-i (intake cam variable valve timing)",
+  "label": "2JZ-GE VVT-i",
+  "installedIn": ["lexus-gs300-jzs160-2000-us-lhd"],
+  "layout": "Inline six, DOHC, 24 valves, belt-driven camshafts",
+  "publishedSpecs": [
+    { "key": "displacement", "label": "Displacement", "value": 2997, "unit": "cm³", "sourceId": "lexus-uk-gs300-1997-spec", "status": "published" },
+    { "key": "bore", "label": "Bore (nominal)", "value": 86, "unit": "mm", "sourceId": "lexus-uk-gs300-1997-spec", "status": "published" },
+    { "key": "stroke", "label": "Stroke (nominal)", "value": 86, "unit": "mm", "sourceId": "lexus-uk-gs300-1997-spec", "status": "published" }
+  ],
+  "notEquivalentTo": [
+    { "variant": "2JZ-GE without VVT-i (1993–1997 GS300/SC300, Supra NA)", "reason": "Different intake camshaft pulley and oil-control hardware. Timing references and procedure pages differ." },
+    { "variant": "2JZ-GTE (Supra Turbo, Aristo)", "reason": "Different accessory layout, timing covers and procedures. Belt-drive similarity is not evidence of identical parts." },
+    { "variant": "2JZ-GE VVT-i in other chassis (e.g. IS300, SC300, Aristo, Crown)", "reason": "Accessory brackets, cooling and intake routing are chassis specific. Requires its own configuration record." }
+  ],
+  "frame": {
+    "units": "metres",
+    "origin": "Crankshaft axis at the front (timing-end) face of the cylinder block",
+    "axes": { "x": "Engine left (driver side in the LHD installation)", "y": "Up, parallel to the cylinder bores", "z": "Forward, along the crankshaft toward the timing drive" },
+    "handedness": "Right-handed, matching glTF. Blender authoring uses X = engine left, Z = up, -Y = forward; the glTF exporter converts it.",
+    "installationNotes": "Installed inclination, mount positions and body clearances are not modeled."
+  },
+  "sourceIds": ["lexus-uk-gs300-1997-spec", "rm718u"]
+}

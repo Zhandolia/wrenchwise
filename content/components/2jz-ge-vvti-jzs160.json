@@ -1,0 +1,4163 @@
+{
+  "$schema": "../schema/inventory.schema.json",
+  "engineVariantId": "2jz-ge-vvti-jzs160",
+  "revision": 1,
+  "units": "metres",
+  "frame": "See content/engines/2jz-ge-vvti-jzs160.json#frame",
+  "summary": "Service-relevant components for the timing-belt procedure, plus orientation context. Every dimension and placement is an estimate from photograph proportions scaled to the published 86 mm bore. No component is measured, fitment-confirmed or reviewed.",
+  "components": [
+    {
+      "id": "cylinder-block",
+      "name": "Cylinder block",
+      "description": "Shown as an orientation volume. Internal passages, ribs and mounts are not modeled.",
+      "system": "engine-structure",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "photo-us-gs300-bay",
+          "lexus-uk-vvti-cutaway"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.6,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.36,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.395,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.077,
+          -0.3
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "cylinder-block"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "photo-us-gs300-bay",
+        "lexus-uk-vvti-cutaway",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "photo-us-gs300-bay",
+            "lexus-uk-vvti-cutaway"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Casting shape, mounting bosses and bore spacing are not modeled."
+      ]
+    },
+    {
+      "id": "oil-pan",
+      "name": "Oil pan",
+      "description": "Orientation volume.",
+      "system": "engine-structure",
+      "parentId": "cylinder-block",
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "lexus-uk-vvti-cutaway"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.58,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.3,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.13,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          -0.185,
+          -0.31
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "oil-pan"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "lexus-uk-vvti-cutaway",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "lexus-uk-vvti-cutaway"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Upper/lower pan split not represented."
+      ]
+    },
+    {
+      "id": "cylinder-head",
+      "name": "Cylinder head",
+      "description": "Carries the intake and exhaust camshafts. Shown as an orientation volume with camshaft nose bosses.",
+      "system": "engine-structure",
+      "parentId": "cylinder-block",
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "photo-us-gs300-bay",
+          "lexus-uk-vvti-cutaway"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.6,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.34,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.135,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "camAxisY",
+            "value": 0.375,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "camSpacing",
+            "value": 0.135,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.3425,
+          -0.3
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "cylinder-head"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "photo-us-gs300-bay",
+        "lexus-uk-vvti-cutaway",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "photo-us-gs300-bay",
+            "lexus-uk-vvti-cutaway"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Camshaft spacing is estimated."
+      ]
+    },
+    {
+      "id": "cylinder-head-covers",
+      "name": "Cylinder head covers",
+      "description": "Intake-side and exhaust-side covers grouped as one record.",
+      "system": "engine-structure",
+      "parentId": "cylinder-head",
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "photo-us-gs300-bay"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.56,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.13,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "offsetX",
+            "value": 0.07,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.44,
+          -0.3
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "cylinder-head-cover-intake",
+          "cylinder-head-cover-exhaust"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "photo-us-gs300-bay",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "photo-us-gs300-bay"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Appearance cover not modeled."
+      ]
+    },
+    {
+      "id": "intake-manifold",
+      "name": "Intake manifold",
+      "description": "On the engine left side. Runners and plenum grouped.",
+      "system": "engine-structure",
+      "parentId": "cylinder-head",
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "photo-us-gs300-bay"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.5,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "plenumRadius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.3,
+          0.33,
+          -0.3
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "intake-manifold"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "photo-us-gs300-bay",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "photo-us-gs300-bay"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Runner shape and plenum routing are illustrative."
+      ]
+    },
+    {
+      "id": "exhaust-manifold",
+      "name": "Exhaust manifold",
+      "description": "On the engine right side. Heat shields omitted.",
+      "system": "engine-structure",
+      "parentId": "cylinder-head",
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "lexus-uk-vvti-cutaway"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "length",
+            "value": 0.52,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.2,
+          0.28,
+          -0.3
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "exhaust-manifold"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "lexus-uk-vvti-cutaway",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "lexus-uk-vvti-cutaway"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Split and collector arrangement not represented."
+      ]
+    },
+    {
+      "id": "water-pump",
+      "name": "Water pump",
+      "description": "Driven by the accessory belt on this engine, not by the timing belt.",
+      "system": "cooling",
+      "parentId": "cylinder-block",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-cooling"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.045,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "depth",
+            "value": 0.05,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.22,
+          0.01
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "water-pump"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "rm718u-mirror-cooling",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-cooling"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Mounting position estimated; body shape simplified."
+      ]
+    },
+    {
+      "id": "timing-belt",
+      "name": "Timing belt",
+      "description": "Toothed belt that connects the crankshaft timing pulley to both camshaft timing pulleys.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.026,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.004,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.035
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt"
+        ]
+      },
+      "procedureStepIds": [
+        "release-tensioner",
+        "lower-drive",
+        "inspect",
+        "install-lower",
+        "install-cam",
+        "tension",
+        "verify-timing"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Tooth count, pitch and length not established. The modeled path is the tangent hull of estimated pulley positions."
+      ]
+    },
+    {
+      "id": "crankshaft-timing-pulley",
+      "name": "Crankshaft timing pulley",
+      "description": "Keyed toothed pulley behind the external crankshaft pulley.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pitchRadius",
+            "value": 0.03,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.028,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.035
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "crankshaft-timing-pulley"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Radius set to half the camshaft pulley radius because the camshafts turn at half crankshaft speed. Absolute size not measured."
+      ]
+    },
+    {
+      "id": "crankshaft-timing-pulley-plate",
+      "name": "Crankshaft timing pulley retaining plate",
+      "description": "Plate installed with the crankshaft timing pulley.",
+      "system": "timing-drive",
+      "parentId": "crankshaft-timing-pulley",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.036,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.002,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.018
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "crankshaft-timing-pulley-plate"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Exact name, side and shape unconfirmed."
+      ]
+    },
+    {
+      "id": "timing-belt-guide",
+      "name": "Timing belt guide",
+      "description": "Dished washer in front of the crankshaft timing pulley.",
+      "system": "timing-drive",
+      "parentId": "crankshaft-timing-pulley",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.037,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.002,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.052
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-guide"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Dish orientation unconfirmed."
+      ]
+    },
+    {
+      "id": "camshaft-timing-pulley-exhaust",
+      "name": "Exhaust camshaft timing pulley",
+      "description": "Fixed-timing pulley on the exhaust camshaft.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pitchRadius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.028,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.0675,
+          0.375,
+          0.035
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "camshaft-timing-pulley-exhaust"
+        ]
+      },
+      "procedureStepIds": [
+        "set-position",
+        "cam-pulleys",
+        "install-cam",
+        "verify-timing"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Tooth count and timing mark not modeled."
+      ]
+    },
+    {
+      "id": "camshaft-timing-pulley-exhaust-bolt",
+      "name": "Exhaust camshaft pulley bolt",
+      "description": "Center bolt.",
+      "system": "timing-drive",
+      "parentId": "camshaft-timing-pulley-exhaust",
+      "kind": "fastener",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "headAcrossFlats",
+            "value": 0.017,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.0675,
+          0.375,
+          0.052
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "camshaft-timing-pulley-exhaust-bolt"
+        ]
+      },
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Size and thread not established."
+      ]
+    },
+    {
+      "id": "vvti-controller",
+      "name": "Intake camshaft timing pulley (VVT-i controller)",
+      "description": "Toothed pulley combined with the VVT-i phasing mechanism on the intake camshaft. The internal vanes are not modeled.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "lexus-uk-vvti-cutaway"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pitchRadius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.028,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "hubRadius",
+            "value": 0.04,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.0675,
+          0.375,
+          0.035
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "vvti-controller"
+        ]
+      },
+      "procedureStepIds": [
+        "set-position",
+        "cam-pulleys",
+        "install-cam",
+        "verify-timing"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "lexus-uk-vvti-cutaway",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "lexus-uk-vvti-cutaway"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Internal mechanism not modeled.",
+        "Housing depth estimated."
+      ]
+    },
+    {
+      "id": "vvti-controller-factory-bolts",
+      "name": "VVT-i pulley factory-set bolts",
+      "description": "Do not loosen. Shown so they can be recognized and left alone.",
+      "system": "timing-drive",
+      "parentId": "vvti-controller",
+      "kind": "fastener-set",
+      "quantity": {
+        "value": 5,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "boltCircleRadius",
+            "value": 0.024,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.0675,
+          0.375,
+          0.066
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "vvti-controller-bolt-1",
+          "vvti-controller-bolt-2",
+          "vvti-controller-bolt-3",
+          "vvti-controller-bolt-4",
+          "vvti-controller-bolt-5"
+        ]
+      },
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Bolt circle radius and angular spacing estimated."
+      ]
+    },
+    {
+      "id": "vvti-oil-hardware",
+      "name": "VVT-i oil control hardware",
+      "description": "Camshaft timing oil control valve and oil supply hardware, grouped.",
+      "system": "timing-drive",
+      "parentId": "cylinder-head",
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "valveRadius",
+            "value": 0.012,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "valveLength",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.15,
+          0.4,
+          -0.03
+        ],
+        "axis": "x",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "vvti-oil-control-valve",
+          "vvti-oil-pipe"
+        ]
+      },
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Location, pipe routing and the parts in this group are not confirmed."
+      ]
+    },
+    {
+      "id": "timing-belt-idler",
+      "name": "Timing belt idler",
+      "description": "Smooth idler loaded by the hydraulic tensioner. Pulley, bearing and bracket are grouped.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.031,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.028,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.112,
+          0.17,
+          0.035
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-idler"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "inspect",
+        "install-lower",
+        "tension"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Placed on the slack side inferred from clockwise rotation. Position unconfirmed.",
+        "Presence of a second idler unconfirmed."
+      ]
+    },
+    {
+      "id": "timing-belt-idler-bolt",
+      "name": "Idler bolt",
+      "description": "Idler pivot bolt.",
+      "system": "timing-drive",
+      "parentId": "timing-belt-idler",
+      "kind": "fastener",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "headAcrossFlats",
+            "value": 0.014,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.112,
+          0.17,
+          0.052
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-idler-bolt"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Size not established."
+      ]
+    },
+    {
+      "id": "timing-belt-tensioner",
+      "name": "Hydraulic timing belt tensioner",
+      "description": "Hydraulic actuator that loads the idler. It is retained with a pin during installation.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "rm718u-mirror-charm"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.016,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "length",
+            "value": 0.09,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.122,
+          0.06,
+          0.025
+        ],
+        "axis": "y",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-tensioner"
+        ]
+      },
+      "procedureStepIds": [
+        "release-tensioner",
+        "inspect",
+        "tension"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "rm718u-mirror-charm",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "rm718u-mirror-charm"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Position and length estimated."
+      ]
+    },
+    {
+      "id": "timing-belt-tensioner-boot",
+      "name": "Tensioner dust boot",
+      "description": "Rubber boot on the tensioner pushrod.",
+      "system": "timing-drive",
+      "parentId": "timing-belt-tensioner",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.011,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "length",
+            "value": 0.016,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.122,
+          0.112,
+          0.025
+        ],
+        "axis": "y",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-tensioner-boot"
+        ]
+      },
+      "procedureStepIds": [
+        "release-tensioner",
+        "tension"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": []
+    },
+    {
+      "id": "timing-belt-tensioner-bolts",
+      "name": "Tensioner mounting bolts",
+      "description": "Two bolts, tightened alternately during installation.",
+      "system": "timing-drive",
+      "parentId": "timing-belt-tensioner",
+      "kind": "fastener-set",
+      "quantity": {
+        "value": 2,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "rm718u-mirror-charm"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "spacing",
+            "value": 0.05,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.122,
+          0.035,
+          0.03
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-tensioner-bolt-1",
+          "timing-belt-tensioner-bolt-2"
+        ]
+      },
+      "procedureStepIds": [
+        "release-tensioner",
+        "tension"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "rm718u-mirror-charm",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "rm718u-mirror-charm"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Bolt positions estimated."
+      ]
+    },
+    {
+      "id": "timing-belt-rear-covers",
+      "name": "Rear timing belt covers",
+      "description": "Rear plates behind the camshaft pulleys. The source names covers No.1 to No.4; the numbering of these rear plates is unresolved.",
+      "system": "timing-drive",
+      "parentId": "cylinder-head",
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-charm"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.3,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.22,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.003,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.3,
+          0.016
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-rear-cover"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "rm718u-mirror-charm",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-charm"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Numbering and outline unconfirmed."
+      ]
+    },
+    {
+      "id": "timing-belt-cover-no1",
+      "name": "No.1 timing belt cover (lower)",
+      "description": "Lower cover behind the crankshaft pulley. Carries a reference used by the factory sequence.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "rm718u-mirror-charm"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.24,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.24,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "depth",
+            "value": 0.04,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.07,
+          0.06
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-cover-no1"
+        ]
+      },
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "rm718u-mirror-charm",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "rm718u-mirror-charm"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Outline and mounting points estimated."
+      ]
+    },
+    {
+      "id": "timing-belt-cover-no2",
+      "name": "Upper timing belt cover",
+      "description": "Upper cover over the camshaft pulleys. Recorded as No.2 pending confirmation.",
+      "system": "timing-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em",
+          "rm718u-mirror-charm"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.32,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.22,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "depth",
+            "value": 0.045,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.34,
+          0.06
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "timing-belt-cover-no2"
+        ]
+      },
+      "procedureStepIds": [
+        "upper-cover",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "rm718u-mirror-charm",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em",
+            "rm718u-mirror-charm"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Numbering (No.2/No.3) unconfirmed. May be two covers."
+      ]
+    },
+    {
+      "id": "crankshaft-pulley",
+      "name": "Crankshaft pulley",
+      "description": "External grooved pulley that drives the accessory belt. Separate from the toothed crankshaft timing pulley behind it.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.085,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.04,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "crankshaft-pulley"
+        ]
+      },
+      "procedureStepIds": [
+        "crank-bolt",
+        "set-position",
+        "lower-drive",
+        "install-lower",
+        "verify-timing"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Damper ring and groove count not established."
+      ]
+    },
+    {
+      "id": "crankshaft-pulley-bolt",
+      "name": "Crankshaft pulley bolt",
+      "description": "Loosened and tightened with the holding tool.",
+      "system": "accessory-drive",
+      "parentId": "crankshaft-pulley",
+      "kind": "fastener",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "headAcrossFlats",
+            "value": 0.022,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0,
+          0.125
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "core",
+        "meshIds": [
+          "crankshaft-pulley-bolt"
+        ]
+      },
+      "procedureStepIds": [
+        "crank-bolt",
+        "lower-drive",
+        "install-lower",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Size and torque not entered."
+      ]
+    },
+    {
+      "id": "accessory-drive-belt",
+      "name": "Accessory drive belt",
+      "description": "V-ribbed belt for the external accessories.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.022,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.005,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.1,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "accessory-drive-belt"
+        ]
+      },
+      "procedureStepIds": [
+        "accessory-belt",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Routing is the tangent hull of estimated pulley positions, not a routing diagram."
+      ]
+    },
+    {
+      "id": "accessory-belt-tensioner",
+      "name": "Accessory belt tensioner",
+      "description": "Spring-loaded tensioner for the accessory belt.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.03,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.12,
+          0.06,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "accessory-belt-tensioner"
+        ]
+      },
+      "procedureStepIds": [
+        "accessory-belt",
+        "upper-cover",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Position estimated."
+      ]
+    },
+    {
+      "id": "water-pump-pulley",
+      "name": "Water pump pulley",
+      "description": "Accessory-belt-driven pulley.",
+      "system": "cooling",
+      "parentId": "water-pump",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-cooling"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "width",
+            "value": 0.03,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.22,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "water-pump-pulley"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "rm718u-mirror-cooling",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-cooling"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Fan attachment not modeled."
+      ]
+    },
+    {
+      "id": "power-steering-pump",
+      "name": "Power-steering pump",
+      "description": "Moved for access to the upper timing cover.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pulleyRadius",
+            "value": 0.055,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyRadius",
+            "value": 0.045,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyLength",
+            "value": 0.1,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.18,
+          0.24,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "power-steering-pump"
+        ]
+      },
+      "procedureStepIds": [
+        "power-steering-pump",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Reservoir, lines and exact position not modeled."
+      ]
+    },
+    {
+      "id": "power-steering-pump-bracket",
+      "name": "Power-steering pump front bracket",
+      "description": "Front bracket removed with the pump.",
+      "system": "accessory-drive",
+      "parentId": "power-steering-pump",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.12,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.12,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.008,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.17,
+          0.22,
+          0.045
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "power-steering-pump-bracket"
+        ]
+      },
+      "procedureStepIds": [
+        "power-steering-pump",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Outline estimated."
+      ]
+    },
+    {
+      "id": "alternator",
+      "name": "Alternator",
+      "description": "Driven by the accessory belt. Not removed in this procedure.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "photo-us-gs300-bay"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pulleyRadius",
+            "value": 0.03,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyRadius",
+            "value": 0.065,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyLength",
+            "value": 0.12,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.19,
+          0.2,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "alternator"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "photo-us-gs300-bay",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "photo-us-gs300-bay"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Position estimated."
+      ]
+    },
+    {
+      "id": "ac-compressor",
+      "name": "A/C compressor",
+      "description": "Driven by the accessory belt. Not removed in this procedure.",
+      "system": "accessory-drive",
+      "parentId": null,
+      "kind": "assembly",
+      "quantity": {
+        "value": 1,
+        "status": "photographic",
+        "sourceIds": [
+          "photo-us-gs300-bay"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "pulleyRadius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyRadius",
+            "value": 0.06,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "bodyLength",
+            "value": 0.16,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.17,
+          -0.02,
+          0.1
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "ac-compressor"
+        ]
+      },
+      "procedureStepIds": [],
+      "sourceIds": [
+        "photo-us-gs300-bay",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "photographic",
+          "sourceIds": [
+            "photo-us-gs300-bay"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "not-applicable",
+          "sourceIds": []
+        }
+      },
+      "gaps": [
+        "Position estimated; refrigerant lines omitted."
+      ]
+    },
+    {
+      "id": "radiator-assembly",
+      "name": "Radiator assembly",
+      "description": "Radiator core, tanks and fan equipment grouped as one removal unit.",
+      "system": "cooling",
+      "parentId": null,
+      "kind": "group",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-cooling",
+          "photo-us-gs300-bay"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.68,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "height",
+            "value": 0.46,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "depth",
+            "value": 0.05,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          0.15,
+          0.42
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "radiator-assembly"
+        ]
+      },
+      "procedureStepIds": [
+        "under-cover-coolant",
+        "radiator",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-cooling",
+        "photo-us-gs300-bay",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-cooling",
+            "photo-us-gs300-bay"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Fans, shroud and cooler lines not separated."
+      ]
+    },
+    {
+      "id": "radiator-hose-upper",
+      "name": "Upper radiator hose",
+      "description": "Engine outlet to radiator inlet.",
+      "system": "cooling",
+      "parentId": "radiator-assembly",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-cooling"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.018,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0.18,
+          0.35,
+          0.2
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "radiator-hose-upper"
+        ]
+      },
+      "procedureStepIds": [
+        "radiator",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-cooling",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-cooling"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Routing illustrative."
+      ]
+    },
+    {
+      "id": "radiator-hose-lower",
+      "name": "Lower radiator hose",
+      "description": "Radiator outlet to engine inlet.",
+      "system": "cooling",
+      "parentId": "radiator-assembly",
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-cooling"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "radius",
+            "value": 0.018,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          -0.16,
+          0.03,
+          0.2
+        ],
+        "axis": "z",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "radiator-hose-lower"
+        ]
+      },
+      "procedureStepIds": [
+        "radiator",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-cooling",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-cooling"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Routing illustrative."
+      ]
+    },
+    {
+      "id": "engine-under-cover",
+      "name": "Engine under-cover",
+      "description": "Splash shield under the engine.",
+      "system": "body",
+      "parentId": null,
+      "kind": "part",
+      "quantity": {
+        "value": 1,
+        "status": "mirror-derived",
+        "sourceIds": [
+          "rm718u-mirror-em"
+        ]
+      },
+      "applicability": {
+        "configurationIds": [
+          "lexus-gs300-jzs160-2000-us-lhd"
+        ],
+        "engineVariantIds": [
+          "2jz-ge-vvti-jzs160"
+        ]
+      },
+      "oemPartNumber": {
+        "value": null,
+        "status": "not-established",
+        "sourceIds": [
+          "lexus-epc"
+        ]
+      },
+      "dimensions": {
+        "status": "estimated",
+        "sourceIds": [
+          "wrenchwise-layout-estimate",
+          "lexus-uk-gs300-1997-spec"
+        ],
+        "items": [
+          {
+            "key": "width",
+            "value": 0.7,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "length",
+            "value": 0.7,
+            "unit": "m",
+            "method": "photo-proportion"
+          },
+          {
+            "key": "thickness",
+            "value": 0.004,
+            "unit": "m",
+            "method": "photo-proportion"
+          }
+        ]
+      },
+      "placement": {
+        "status": "estimated",
+        "frame": "engine",
+        "position": [
+          0,
+          -0.3,
+          0.1
+        ],
+        "axis": "y",
+        "sourceIds": [
+          "wrenchwise-layout-estimate"
+        ]
+      },
+      "asset": {
+        "layer": "access",
+        "meshIds": [
+          "engine-under-cover"
+        ]
+      },
+      "procedureStepIds": [
+        "under-cover-coolant",
+        "reassemble"
+      ],
+      "sourceIds": [
+        "rm718u-mirror-em",
+        "wrenchwise-layout-estimate"
+      ],
+      "verification": {
+        "identity": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        },
+        "dimensions": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "placement": {
+          "status": "estimated",
+          "sourceIds": [
+            "wrenchwise-layout-estimate"
+          ]
+        },
+        "fitment": {
+          "status": "not-established",
+          "sourceIds": []
+        },
+        "procedure": {
+          "status": "mirror-derived",
+          "sourceIds": [
+            "rm718u-mirror-em"
+          ]
+        }
+      },
+      "gaps": [
+        "Outline and fastener count not established."
+      ]
+    }
+  ]
+}

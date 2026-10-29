@@ -1,0 +1,24 @@
+{
+  "$schema": "../schema/configuration.schema.json",
+  "id": "lexus-gs300-jzs160-2000-us-lhd",
+  "label": "2000 Lexus GS300",
+  "make": "Lexus",
+  "model": "GS300",
+  "chassis": "JZS160",
+  "generation": "Second generation (S160)",
+  "modelYear": 2000,
+  "market": "US",
+  "steering": "LHD",
+  "engineVariantId": "2jz-ge-vvti-jzs160",
+  "transmission": { "value": "Automatic (A650E family reference)", "status": "unconfirmed" },
+  "identificationStatus": "target-only",
+  "identificationNote": "This is the modeling target. No physical reference vehicle or donor engine has been identified or measured.",
+  "unresolvedVariants": [
+    { "id": "production-range", "question": "Production month range used to resolve OEM catalog applicability", "status": "open" },
+    { "id": "emissions", "question": "Federal vs California emissions equipment differences in hose and connector routing", "status": "open" },
+    { "id": "transmission", "question": "Transmission identification on a physical reference car", "status": "open" },
+    { "id": "stock-status", "question": "Stock status of intake, cooling and electrical equipment on any reference car", "status": "open" }
+  ],
+  "sourceIds": ["rm718u", "photo-us-gs300-bay", "lexus-epc"]
+}
+

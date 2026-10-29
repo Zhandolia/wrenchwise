@@ -1,0 +1,173 @@
+{
+  "$schema": "./schema/sources.schema.json",
+  "reviewedOn": "2026-10-29",
+  "policy": "Sources are cited, not redistributed. A source may only support the uses listed in permittedUses. Exploded diagrams support identity and relationships, never dimensions. Unauthorized mirrors are recorded for traceability and must be replaced by licensed access before any content is marked verified; they are never linked from the application.",
+  "sources": [
+    {
+      "id": "rm718u",
+      "title": "Lexus 2000 GS300/GS400 Repair Manual (RM718U)",
+      "publisher": "Toyota Motor Corporation",
+      "kind": "oem-service-manual",
+      "document": "RM718U",
+      "revision": "Model year 2000 edition; printed revision code not yet confirmed",
+      "applicability": {
+        "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+        "notes": "Covers GS300 (2JZ-GE) and GS400 (1UZ-FE). Only 2JZ-GE sections apply."
+      },
+      "access": {
+        "status": "not-accessed",
+        "via": "Toyota/Lexus TIS subscription",
+        "url": "https://techinfo.toyota.com/",
+        "notes": "Licensed copy not yet obtained. Page locators below were identified through the mirror records rm718u-mirror-*."
+      },
+      "usageRights": {
+        "status": "licensed-subscription",
+        "redistribution": false,
+        "notes": "Cite section and page locators only. Do not copy text, figures or specifications into the repository."
+      },
+      "permittedUses": ["identity", "relationship", "procedure", "specification", "quantity"]
+    },
+    {
+      "id": "rm718u-mirror-em",
+      "title": "RM718U EM-14 to EM-28 (timing belt) — third-party HTML mirror",
+      "publisher": "Unknown third party (zinref.ru)",
+      "kind": "unauthorized-mirror",
+      "document": "RM718U",
+      "revision": "Unknown",
+      "applicability": {
+        "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+        "notes": "Pages headed 2000 GS300/GS400, 2JZ-GE engine mechanical."
+      },
+      "access": {
+        "status": "inspected",
+        "inspectedOn": "2026-10-10",
+        "notes": "Read during the October 2026 timing walkthrough review. Used to locate page numbers and the phase order only."
+      },
+      "usageRights": {
+        "status": "unauthorized-mirror",
+        "redistribution": false,
+        "notes": "Not linked from the application. Content derived from it is marked 'mirror-derived' and must be re-checked against rm718u."
+      },
+      "permittedUses": ["identity", "relationship", "procedure", "quantity"]
+    },
+    {
+      "id": "rm718u-mirror-charm",
+      "title": "2000 GS300 L6-3.0L (2JZ-GE) Timing Belt Service and Repair — Operation CHARM",
+      "publisher": "Operation CHARM (charm.li)",
+      "kind": "unauthorized-mirror",
+      "document": "Manufacturer procedure as reproduced by a third-party database",
+      "revision": "Unknown",
+      "applicability": {
+        "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+        "notes": "Indexed under 2000 GS 300 L6-3.0L (2JZ-GE)."
+      },
+      "access": {
+        "status": "inspected",
+        "inspectedOn": "2026-10-06",
+        "notes": "Used for component identities and fastener-count corroboration (timing cover bolt groups, two hydraulic tensioner bolts)."
+      },
+      "usageRights": {
+        "status": "unauthorized-mirror",
+        "redistribution": false,
+        "notes": "Not linked from the application."
+      },
+      "permittedUses": ["identity", "relationship", "quantity"]
+    },
+    {
+      "id": "rm718u-mirror-cooling",
+      "title": "RM718U EM-14 timing access and CO-5 to CO-9 water pump — third-party mirror",
+      "publisher": "Unknown third party (carmanualsonline.info)",
+      "kind": "unauthorized-mirror",
+      "document": "RM718U",
+      "revision": "Unknown",
+      "applicability": {
+        "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+        "notes": "2JZ-GE sections only."
+      },
+      "access": { "status": "inspected", "inspectedOn": "2026-10-06" },
+      "usageRights": { "status": "unauthorized-mirror", "redistribution": false, "notes": "Not linked from the application." },
+      "permittedUses": ["identity", "relationship"]
+    },
+    {
+      "id": "lexus-uk-gs300-1997-spec",
+      "title": "Lexus GS300 (second generation) launch technical specification",
+      "publisher": "Lexus UK press office",
+      "kind": "manufacturer-specification",
+      "document": "GS300-Gen2-1997.pdf",
+      "revision": "1997 launch",
+      "applicability": {
+        "configurationIds": [],
+        "notes": "UK-market launch specification for the JZS160 GS300. Engine identity facts are shared with the US 2000 configuration; parts fitment is not."
+      },
+      "access": {
+        "status": "inspected",
+        "inspectedOn": "2026-10-06",
+        "url": "https://media.lexus.co.uk/wp-content/uploads/sites/3/pdf/GS300-Gen2-1997.pdf"
+      },
+      "usageRights": { "status": "reference-only", "redistribution": false, "notes": "Press material. Facts cited, document not copied." },
+      "permittedUses": ["identity", "specification"]
+    },
+    {
+      "id": "lexus-uk-vvti-cutaway",
+      "title": "Lexus GS300 VVT-i engine cutaway photograph (1997–2000)",
+      "publisher": "Lexus UK press office",
+      "kind": "photograph",
+      "document": "lex2601_gs6",
+      "revision": "Press image",
+      "applicability": { "configurationIds": [], "notes": "UK GS300 VVT-i engine-family reference. Display cutaway, not an intact engine." },
+      "access": { "status": "inspected", "inspectedOn": "2026-10-10", "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-engine/" },
+      "usageRights": { "status": "reference-only", "redistribution": false, "notes": "Linked, not redistributed." },
+      "permittedUses": ["appearance", "relationship"]
+    },
+    {
+      "id": "photo-us-gs300-bay",
+      "title": "Photographed 2000 US GS300 engine bay (dealer listing)",
+      "publisher": "Victory Motors of Colorado",
+      "kind": "photograph",
+      "document": "Listing 136475",
+      "revision": "Accessed 2026-10-10",
+      "applicability": {
+        "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+        "notes": "One vehicle. Stock status not certified; battery is aftermarket. Listing text incorrectly says V6 and is rejected."
+      },
+      "access": { "status": "inspected", "inspectedOn": "2026-10-10", "url": "https://www.victorymotorsofcolorado.com/inventory/2000-lexus-gs-300-/136475" },
+      "usageRights": { "status": "reference-only", "redistribution": false, "notes": "Visual reference only. Not redistributed." },
+      "permittedUses": ["appearance", "relationship"]
+    },
+    {
+      "id": "lexus-epc",
+      "title": "Lexus Parts Center Online (OEM parts catalog)",
+      "publisher": "Lexus / Toyota Motor Sales USA",
+      "kind": "oem-parts-catalog",
+      "document": "parts.lexus.com",
+      "revision": "Live catalog",
+      "applicability": { "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"], "notes": "Requires VIN or production date to resolve applicability." },
+      "access": { "status": "blocked", "url": "https://parts.lexus.com/models", "notes": "Vehicle selector did not load during the 2026-10-10 review. No part numbers established." },
+      "usageRights": { "status": "reference-only", "redistribution": false, "notes": "Part numbers are facts and can be cited once established. Diagrams are not redistributed." },
+      "permittedUses": ["identity", "relationship", "part-number", "quantity"]
+    },
+    {
+      "id": "wrenchwise-layout-estimate",
+      "title": "Wrenchwise layout estimate from photograph proportions",
+      "publisher": "Wrenchwise project",
+      "kind": "project-estimate",
+      "document": "modeling/wrenchwise/layout.json",
+      "revision": "r1",
+      "applicability": { "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"], "notes": "Uncalibrated proportions scaled from the published 86 mm bore. Not a measurement." },
+      "access": { "status": "inspected", "inspectedOn": "2026-10-29" },
+      "usageRights": { "status": "project-original", "redistribution": true, "notes": "MIT, with the repository code." },
+      "permittedUses": ["placement", "appearance"]
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://2jz.se/application/files/1814/3781/4794/2JZ-GE_Engine_Mechanical.pdf",
+      "reason": "Identifies the 1997 Supra manual RM502U with distributor ignition. Different engine variant; not applicable to the 2000 GS300 VVT-i."
+    },
+    {
+      "url": "https://media.lexus.co.uk/images/gs-300-1998-2000-technical-illustrations/",
+      "reason": "The inspected illustration covers VSC/ABS/TRC, not the engine."
+    }
+  ]
+}
+

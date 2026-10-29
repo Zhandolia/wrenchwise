@@ -1,0 +1,408 @@
+{
+  "$schema": "../schema/procedure.schema.json",
+  "id": "2jz-ge-vvti-timing-belt",
+  "revision": 1,
+  "title": "Timing belt replacement",
+  "system": "timing-drive",
+  "keywords": ["timing belt", "cam belt", "tensioner", "idler", "camshaft pulley", "VVT-i", "crankshaft pulley", "water pump access"],
+  "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+  "engineVariantId": "2jz-ge-vvti-jzs160",
+  "assembly": "2jz-ge-vvti-jzs160/r1",
+  "contentStatus": "educational-overview",
+  "statusNote": "Educational overview. The phase order and page locators come from a third-party mirror of RM718U and have not been checked against a licensed copy. No torque, force or dimension values are entered. Use the licensed factory manual for every sub-step, specification and diagram.",
+  "sources": [
+    { "sourceId": "rm718u", "locator": "EM-14 to EM-28 (timing belt)" },
+    { "sourceId": "rm718u-mirror-em", "locator": "EM-14 to EM-28" },
+    { "sourceId": "rm718u-mirror-charm", "locator": "Timing Belt — Service and Repair" }
+  ],
+  "tools": [
+    { "id": "factory-manual", "name": "RM718U repair manual (licensed copy)", "detail": "Required for specifications, diagrams and full sub-steps.", "status": "documented" },
+    { "id": "sst-crank-holding", "name": "Crankshaft pulley holding tool (SST)", "detail": "SST part numbers not entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-16" } },
+    { "id": "sst-puller", "name": "Pulley puller (SST)", "detail": "SST part numbers not entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-18–20" } },
+    { "id": "torque-wrench", "name": "Torque wrench", "detail": "Range depends on specifications not yet entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-23–28" } },
+    { "id": "hex-bits", "name": "Hex bit sockets", "detail": "Sizes not entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-14–15" } },
+    { "id": "press", "name": "Press for tensioner compression", "detail": "Force limit not entered. Compress slowly.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-26" } },
+    { "id": "retaining-pin", "name": "Tensioner retaining pin", "detail": "Pin diameter not entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-26" } },
+    { "id": "coolant-drain", "name": "Coolant drain pan and funnel", "detail": "Coolant capacity and type not entered.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-16; CO-section" } }
+  ],
+  "parts": [
+    { "id": "timing-belt-new", "name": "Timing belt", "componentId": "timing-belt", "partNumber": null, "status": "not-established", "note": "OEM part number must come from the Lexus EPC for the production range." },
+    { "id": "idler-if-required", "name": "Timing belt idler (if inspection fails)", "componentId": "timing-belt-idler", "partNumber": null, "status": "not-established", "note": "Replacement criteria are in the inspection pages." },
+    { "id": "tensioner-if-required", "name": "Hydraulic tensioner (if inspection fails)", "componentId": "timing-belt-tensioner", "partNumber": null, "status": "not-established", "note": "Replacement criteria are in the inspection pages." },
+    { "id": "seals-gaskets", "name": "Replacement seals and gaskets specified by the manual", "componentId": null, "partNumber": null, "status": "not-established", "note": "The installation pages specify replacement seals and adhesive. Exact items not entered." },
+    { "id": "coolant", "name": "Engine coolant", "componentId": null, "partNumber": null, "status": "not-established", "note": "Type and capacity not entered." }
+  ],
+  "preparation": {
+    "checklist": [
+      { "id": "confirm-engine", "text": "Confirm that the vehicle is a 2000 US GS300 with the 2JZ-GE VVT-i. This guide does not apply to non-VVT-i 2JZ-GE or 2JZ-GTE engines." },
+      { "id": "licensed-manual", "text": "Have the licensed RM718U timing-belt chapter and its linked cooling and charging pages available." },
+      { "id": "cold-engine", "text": "Plan the work on a cold engine.", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-23" } },
+      { "id": "tools-ready", "text": "Collect the tools listed below and look up every value the manual specifies for them." },
+      { "id": "parts-ready", "text": "Source the replacement belt and any parts that inspection may require by part number from the OEM catalog." }
+    ],
+    "cautions": [
+      { "level": "warning", "text": "Moving the crankshaft or camshafts with the belt removed can allow piston-to-valve contact. Follow the factory positioning sequence.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-17" } },
+      { "level": "caution", "text": "Do not loosen the factory-set bolts on the VVT-i camshaft timing pulley.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-18–20" } }
+    ]
+  },
+  "steps": [
+    {
+      "id": "under-cover-coolant",
+      "title": "Under-cover and coolant",
+      "phase": "access",
+      "instructions": [
+        "Remove the engine under-cover.",
+        "Drain the engine coolant as described in the linked cooling-system page."
+      ],
+      "prerequisites": [],
+      "componentIds": ["engine-under-cover", "radiator-assembly"],
+      "tools": ["coolant-drain"],
+      "replacementParts": [],
+      "specifications": [
+        { "id": "coolant-capacity", "label": "Coolant capacity", "value": null, "unit": "L", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "CO section" } }
+      ],
+      "view": { "camera": "lower-front", "remove": ["engine-under-cover"], "restore": [], "hide": [], "highlight": ["engine-under-cover", "radiator-assembly"] },
+      "cautions": [{ "level": "caution", "text": "Hot coolant is under pressure. Work on a cold engine." }],
+      "completionChecks": [
+        { "id": "cover-off", "text": "Under-cover removed and fasteners stored." },
+        { "id": "coolant-drained", "text": "Coolant drained into a container." }
+      ],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16, steps 1–9" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Drain plug location and coolant capacity not entered."]
+    },
+    {
+      "id": "radiator",
+      "title": "Radiator assembly",
+      "phase": "access",
+      "instructions": [
+        "Remove the radiator assembly following the linked cooling-system procedure (CO-18).",
+        "Disconnect the radiator hoses and the connections listed there before lifting the radiator out."
+      ],
+      "prerequisites": ["under-cover-coolant"],
+      "componentIds": ["radiator-assembly", "radiator-hose-upper", "radiator-hose-lower"],
+      "tools": [],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "front-left", "remove": ["radiator-assembly", "radiator-hose-upper", "radiator-hose-lower"], "restore": [], "hide": [], "highlight": ["radiator-assembly", "radiator-hose-upper", "radiator-hose-lower"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "radiator-out", "text": "Radiator assembly removed and openings protected from debris." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16; linked CO-18" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The radiator assembly is shown as one grouped model. Fans, shroud and cooler lines are not separated.", "Hose routing is illustrative."]
+    },
+    {
+      "id": "accessory-belt",
+      "title": "Accessory drive belt",
+      "phase": "access",
+      "instructions": [
+        "Release the accessory belt tensioner and remove the accessory drive belt (linked CH-1).",
+        "The accessory belt is separate from the timing belt. It drives external accessories and does not set valve timing."
+      ],
+      "prerequisites": ["radiator"],
+      "componentIds": ["accessory-drive-belt", "accessory-belt-tensioner"],
+      "tools": [],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "front", "remove": ["accessory-drive-belt"], "restore": [], "hide": [], "highlight": ["accessory-drive-belt", "accessory-belt-tensioner"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "belt-off", "text": "Accessory belt removed. Routing noted for reinstallation." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16; linked CH-1" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Accessory belt routing in the model is illustrative and must not be used as a routing diagram."]
+    },
+    {
+      "id": "power-steering-pump",
+      "title": "Power-steering pump and front bracket",
+      "phase": "access",
+      "instructions": [
+        "Detach the power-steering pump and its front bracket as the factory access sequence describes.",
+        "Check in the manual whether the pump stays connected to its lines and is set aside. The model only moves it out of view."
+      ],
+      "prerequisites": ["accessory-belt"],
+      "componentIds": ["power-steering-pump", "power-steering-pump-bracket"],
+      "tools": [],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "front-left", "remove": ["power-steering-pump", "power-steering-pump-bracket"], "restore": [], "hide": [], "highlight": ["power-steering-pump", "power-steering-pump-bracket"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "ps-clear", "text": "Pump and bracket clear of the upper timing cover. Hoses supported and not kinked." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Whether lines are disconnected is not established.", "Pump and bracket positions are estimated."]
+    },
+    {
+      "id": "upper-cover",
+      "title": "Upper timing cover and accessory tensioner",
+      "phase": "access",
+      "instructions": [
+        "Remove the upper timing belt cover(s).",
+        "Remove the accessory belt tensioner so the crankshaft pulley can be reached."
+      ],
+      "prerequisites": ["power-steering-pump"],
+      "componentIds": ["timing-belt-cover-no2", "accessory-belt-tensioner"],
+      "tools": ["hex-bits"],
+      "replacementParts": ["seals-gaskets"],
+      "specifications": [],
+      "view": { "camera": "front", "remove": ["timing-belt-cover-no2", "accessory-belt-tensioner"], "restore": [], "hide": [], "highlight": ["timing-belt-cover-no2", "accessory-belt-tensioner"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "cams-visible", "text": "Both camshaft timing pulleys are visible." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16" }, { "sourceId": "rm718u-mirror-charm", "locator": "cover bolt groups" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The source lists cover bolt groups of 5, 3 and 4. Their mapping to individual covers is unresolved, so cover bolts are not modeled.", "Numbering of the upper covers (No.2/No.3) is unconfirmed."]
+    },
+    {
+      "id": "crank-bolt",
+      "title": "Loosen the crankshaft pulley bolt",
+      "phase": "access",
+      "instructions": [
+        "Hold the crankshaft pulley with the specified holding tool and loosen the pulley bolt.",
+        "Do not remove the pulley yet. The factory sequence positions the engine first."
+      ],
+      "prerequisites": ["upper-cover"],
+      "componentIds": ["crankshaft-pulley", "crankshaft-pulley-bolt"],
+      "tools": ["sst-crank-holding"],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "lower-front", "remove": [], "restore": [], "hide": [], "highlight": ["crankshaft-pulley-bolt", "crankshaft-pulley"] },
+      "cautions": [{ "level": "caution", "text": "Use the holding tool. Do not hold the crankshaft through the timing belt or pulleys." }],
+      "completionChecks": [{ "id": "bolt-loose", "text": "Crankshaft pulley bolt loosened, pulley still in place." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-16, step 9" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["SST numbers not entered."]
+    },
+    {
+      "id": "set-position",
+      "title": "Set the removal position",
+      "phase": "positioning",
+      "instructions": [
+        "Set the engine to the factory compression reference, then rotate it to the removal position shown in EM-17.",
+        "Compare the real crankshaft and camshaft marks with the factory diagrams. Model teeth and pulley angles are not timing references."
+      ],
+      "prerequisites": ["crank-bolt"],
+      "componentIds": ["crankshaft-pulley", "camshaft-timing-pulley-exhaust", "vvti-controller"],
+      "tools": ["factory-manual"],
+      "replacementParts": [],
+      "specifications": [
+        { "id": "removal-position", "label": "Removal crankshaft position", "value": "Approximately 60° before TDC", "unit": null, "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-17, step 10 (diagrams A02656, A02671, A02660)" }, "note": "Read from a third-party mirror. Confirm the exact position, marks and rotation direction in the licensed manual." }
+      ],
+      "view": { "camera": "front", "remove": [], "restore": [], "hide": [], "highlight": ["crankshaft-pulley", "camshaft-timing-pulley-exhaust", "vvti-controller"] },
+      "cautions": [{ "level": "warning", "text": "Incorrect crankshaft position with the belt disengaged can allow piston-to-valve contact.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-17" } }],
+      "completionChecks": [{ "id": "marks-match", "text": "Crankshaft and camshaft marks match the factory diagram for removal." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-17, step 10" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Timing mark geometry is not modeled."]
+    },
+    {
+      "id": "release-tensioner",
+      "title": "Remove the hydraulic tensioner",
+      "phase": "removal",
+      "instructions": [
+        "Remove the two hydraulic tensioner bolts and the tensioner with its dust boot.",
+        "Disconnect the timing belt from the camshaft timing pulleys."
+      ],
+      "prerequisites": ["set-position"],
+      "componentIds": ["timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts", "timing-belt"],
+      "tools": [],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "front-right", "remove": ["timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts"], "restore": [], "hide": [], "highlight": ["timing-belt-tensioner", "timing-belt-tensioner-bolts", "timing-belt"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "tensioner-out", "text": "Tensioner, boot and both bolts removed and kept together." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-18" }, { "sourceId": "rm718u-mirror-charm", "locator": "2 tensioner bolts" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The tensioner and idler location is estimated. It is placed on the belt's slack side, inferred from clockwise crankshaft rotation."]
+    },
+    {
+      "id": "cam-pulleys",
+      "title": "Camshaft pulleys and VVT-i oil hardware",
+      "phase": "removal",
+      "instructions": [
+        "The full factory chapter removes the camshaft timing pulleys, provides intake and head-cover access, and removes the VVT-i oil hardware.",
+        "Leave the factory-set bolts on the VVT-i pulley untouched."
+      ],
+      "prerequisites": ["release-tensioner"],
+      "componentIds": ["camshaft-timing-pulley-exhaust", "camshaft-timing-pulley-exhaust-bolt", "vvti-controller", "vvti-controller-factory-bolts", "vvti-oil-hardware"],
+      "tools": ["sst-puller"],
+      "replacementParts": ["seals-gaskets"],
+      "specifications": [],
+      "view": { "camera": "top", "remove": ["camshaft-timing-pulley-exhaust", "camshaft-timing-pulley-exhaust-bolt", "vvti-controller", "vvti-controller-factory-bolts", "vvti-oil-hardware"], "restore": [], "hide": [], "highlight": ["vvti-controller-factory-bolts", "vvti-oil-hardware", "camshaft-timing-pulley-exhaust"] },
+      "cautions": [{ "level": "caution", "text": "Do not loosen the factory-set VVT-i pulley bolts.", "status": "mirror-derived", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-18–20" } }],
+      "completionChecks": [{ "id": "vvti-bolts-intact", "text": "The VVT-i pulley's factory-set bolts were not disturbed." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-18–20, removal steps 11–24" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Whether this step is required for a belt-only replacement is not established here.", "Factory-set bolt count (5) is mirror-derived.", "VVT-i oil hardware is one grouped model."]
+    },
+    {
+      "id": "lower-drive",
+      "title": "Lower drive, belt and idler",
+      "phase": "removal",
+      "instructions": [
+        "Remove the crankshaft pulley, the No.1 (lower) timing cover and the belt guide.",
+        "Remove the timing belt, then the idler and the crankshaft timing pulley as the chapter describes."
+      ],
+      "prerequisites": ["cam-pulleys"],
+      "componentIds": ["crankshaft-pulley", "crankshaft-pulley-bolt", "timing-belt-cover-no1", "timing-belt-guide", "timing-belt", "timing-belt-idler", "timing-belt-idler-bolt", "crankshaft-timing-pulley", "crankshaft-timing-pulley-plate"],
+      "tools": ["sst-crank-holding", "sst-puller"],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "lower-front", "remove": ["crankshaft-pulley", "crankshaft-pulley-bolt", "timing-belt-cover-no1", "timing-belt-guide", "timing-belt", "timing-belt-idler", "timing-belt-idler-bolt", "crankshaft-timing-pulley", "crankshaft-timing-pulley-plate"], "restore": [], "hide": [], "highlight": ["timing-belt", "timing-belt-idler", "crankshaft-timing-pulley", "timing-belt-guide"] },
+      "cautions": [{ "level": "caution", "text": "Do not twist, fold or turn the belt inside out, and keep oil and water off it." }],
+      "completionChecks": [{ "id": "lower-out", "text": "Belt, idler, guide and crankshaft timing pulley removed and laid out in order." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-18–20" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The source transcription lists one idler. Whether a second idler exists on this configuration is unconfirmed."]
+    },
+    {
+      "id": "inspect",
+      "title": "Inspect belt, idler and tensioner",
+      "phase": "inspection",
+      "instructions": [
+        "Inspect the belt for damage or contamination and find the cause of any abnormal wear.",
+        "Check that the idler turns smoothly. Inspect the hydraulic tensioner for leakage, pushrod resistance and the specified protrusion. Apply the manual's replacement criteria."
+      ],
+      "prerequisites": ["lower-drive"],
+      "componentIds": ["timing-belt", "timing-belt-idler", "timing-belt-tensioner"],
+      "tools": ["factory-manual"],
+      "replacementParts": ["idler-if-required", "tensioner-if-required"],
+      "specifications": [
+        { "id": "tensioner-protrusion", "label": "Tensioner pushrod protrusion", "value": null, "unit": "mm", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-21–22" } }
+      ],
+      "view": { "camera": "iso", "remove": [], "restore": [], "hide": [], "highlight": ["timing-belt", "timing-belt-idler", "timing-belt-tensioner"], "explode": true },
+      "cautions": [],
+      "completionChecks": [
+        { "id": "belt-inspected", "text": "Belt condition recorded." },
+        { "id": "idler-inspected", "text": "Idler rotation checked." },
+        { "id": "tensioner-inspected", "text": "Tensioner leakage, resistance and protrusion checked against the manual." }
+      ],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-21–22" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The viewer cannot assess bearing condition, belt wear or protrusion."]
+    },
+    {
+      "id": "install-lower",
+      "title": "Install the lower drive",
+      "phase": "installation",
+      "instructions": [
+        "On a cold engine, install the keyed crankshaft timing pulley, its retaining plate and the idler.",
+        "Place the clean belt on the lower drive, then fit the guide, the No.1 cover and the crankshaft pulley."
+      ],
+      "prerequisites": ["inspect"],
+      "componentIds": ["crankshaft-timing-pulley", "crankshaft-timing-pulley-plate", "timing-belt-idler", "timing-belt-idler-bolt", "timing-belt", "timing-belt-guide", "timing-belt-cover-no1", "crankshaft-pulley", "crankshaft-pulley-bolt"],
+      "tools": ["torque-wrench"],
+      "replacementParts": ["timing-belt-new"],
+      "specifications": [
+        { "id": "idler-bolt-torque", "label": "Idler bolt torque", "value": null, "unit": "N·m", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-23–25" } }
+      ],
+      "view": { "camera": "lower-front", "remove": [], "restore": ["crankshaft-timing-pulley", "crankshaft-timing-pulley-plate", "timing-belt-idler", "timing-belt-idler-bolt", "timing-belt", "timing-belt-guide", "timing-belt-cover-no1", "crankshaft-pulley", "crankshaft-pulley-bolt"], "hide": [], "highlight": ["crankshaft-timing-pulley", "crankshaft-timing-pulley-plate", "timing-belt-idler", "timing-belt"] },
+      "cautions": [],
+      "completionChecks": [
+        { "id": "keyed", "text": "Crankshaft timing pulley seated on its key." },
+        { "id": "idler-free", "text": "Idler turns freely after tightening." }
+      ],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-23–25, installation steps 1–13" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["The retaining plate's position is estimated."]
+    },
+    {
+      "id": "install-cam",
+      "title": "Install the camshaft pulleys",
+      "phase": "installation",
+      "instructions": [
+        "Install the VVT-i pulley and its oil hardware, then the exhaust camshaft timing pulley, with the orientation, seals and holding method in EM-23–25.",
+        "Reinstall the other assemblies removed for cam pulley access."
+      ],
+      "prerequisites": ["install-lower"],
+      "componentIds": ["vvti-controller", "vvti-controller-factory-bolts", "vvti-oil-hardware", "camshaft-timing-pulley-exhaust", "camshaft-timing-pulley-exhaust-bolt"],
+      "tools": ["torque-wrench"],
+      "replacementParts": ["seals-gaskets"],
+      "specifications": [
+        { "id": "cam-pulley-bolt-torque", "label": "Camshaft timing pulley bolt torque", "value": null, "unit": "N·m", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-23–25" } }
+      ],
+      "view": { "camera": "top", "remove": [], "restore": ["vvti-controller", "vvti-controller-factory-bolts", "vvti-oil-hardware", "camshaft-timing-pulley-exhaust", "camshaft-timing-pulley-exhaust-bolt"], "hide": ["timing-belt"], "highlight": ["vvti-controller", "camshaft-timing-pulley-exhaust", "vvti-oil-hardware"] },
+      "cautions": [],
+      "completionChecks": [{ "id": "cams-installed", "text": "Both camshaft timing pulleys installed and torqued to the manual's values." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-23–25" }],
+      "contentStatus": "mirror-derived",
+      "gaps": []
+    },
+    {
+      "id": "tension",
+      "title": "Connect the belt and set the tensioner",
+      "phase": "tensioning",
+      "instructions": [
+        "After the specified pulley positioning, connect the belt to the camshaft pulleys while keeping the crankshaft-to-intake run free of slack.",
+        "Compress the tensioner slowly in a press and hold it with the retaining pin. Fit it with the dust boot, tighten the two bolts alternately, then withdraw the pin."
+      ],
+      "prerequisites": ["install-cam"],
+      "componentIds": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts", "timing-belt-idler"],
+      "tools": ["press", "retaining-pin", "torque-wrench"],
+      "replacementParts": [],
+      "specifications": [
+        { "id": "press-force", "label": "Maximum tensioner press force", "value": null, "unit": "N", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-26" } },
+        { "id": "pin-diameter", "label": "Retaining pin diameter", "value": null, "unit": "mm", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-26" } },
+        { "id": "tensioner-bolt-torque", "label": "Tensioner bolt torque", "value": null, "unit": "N·m", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-26–27" } }
+      ],
+      "view": { "camera": "front-right", "remove": [], "restore": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts"], "hide": [], "highlight": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-bolts"] },
+      "cautions": [{ "level": "caution", "text": "Compress the tensioner slowly. Do not exceed the force in the manual." }],
+      "completionChecks": [
+        { "id": "pin-out", "text": "Retaining pin withdrawn after both bolts are tightened." },
+        { "id": "no-slack-intake-run", "text": "No slack between the crankshaft and intake camshaft pulleys." }
+      ],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-26–27, installation steps 14–16" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Belt tooth count, pitch and wrap angles are not modeled."]
+    },
+    {
+      "id": "verify-timing",
+      "title": "Verify valve timing",
+      "phase": "verification",
+      "instructions": [
+        "Turn the crankshaft slowly clockwise through two revolutions from TDC to TDC.",
+        "Check that every timing mark aligns as the manual shows. If any mark disagrees, remove and reinstall the belt."
+      ],
+      "prerequisites": ["tension"],
+      "componentIds": ["crankshaft-pulley", "camshaft-timing-pulley-exhaust", "vvti-controller", "timing-belt"],
+      "tools": ["factory-manual"],
+      "replacementParts": [],
+      "specifications": [],
+      "view": { "camera": "front", "remove": [], "restore": [], "hide": [], "highlight": ["crankshaft-pulley", "camshaft-timing-pulley-exhaust", "vvti-controller"] },
+      "cautions": [{ "level": "warning", "text": "Stop if you feel resistance while turning. Do not force the crankshaft." }],
+      "completionChecks": [{ "id": "marks-verified", "text": "All marks align after two revolutions." }],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-27" }],
+      "contentStatus": "mirror-derived",
+      "gaps": ["Timing marks are not modeled. Use the factory diagrams."]
+    },
+    {
+      "id": "reassemble",
+      "title": "Reassemble",
+      "phase": "reassembly",
+      "instructions": [
+        "Tighten the crankshaft pulley bolt with the holding tool to the specified torque.",
+        "Reinstall the upper cover, accessory tensioner, power-steering pump and bracket, accessory belt, radiator assembly and under-cover. Refill the coolant."
+      ],
+      "prerequisites": ["verify-timing"],
+      "componentIds": ["crankshaft-pulley-bolt", "timing-belt-cover-no2", "accessory-belt-tensioner", "power-steering-pump", "power-steering-pump-bracket", "accessory-drive-belt", "radiator-assembly", "radiator-hose-upper", "radiator-hose-lower", "engine-under-cover"],
+      "tools": ["sst-crank-holding", "torque-wrench", "coolant-drain"],
+      "replacementParts": ["seals-gaskets", "coolant"],
+      "specifications": [
+        { "id": "crank-bolt-torque", "label": "Crankshaft pulley bolt torque", "value": null, "unit": "N·m", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-27–28" } }
+      ],
+      "view": { "camera": "iso", "remove": [], "restore": ["timing-belt-cover-no2", "accessory-belt-tensioner", "power-steering-pump", "power-steering-pump-bracket", "accessory-drive-belt", "radiator-assembly", "radiator-hose-upper", "radiator-hose-lower", "engine-under-cover"], "hide": [], "highlight": ["crankshaft-pulley-bolt", "timing-belt-cover-no2", "accessory-drive-belt"] },
+      "cautions": [],
+      "completionChecks": [
+        { "id": "crank-torqued", "text": "Crankshaft pulley bolt torqued to the manual's value." },
+        { "id": "all-restored", "text": "All removed assemblies reinstalled." }
+      ],
+      "sourceRefs": [{ "sourceId": "rm718u-mirror-em", "locator": "EM-27–28, installation steps 17–29" }],
+      "contentStatus": "mirror-derived",
+      "gaps": []
+    }
+  ],
+  "finalChecks": [
+    { "id": "timing-rechecked", "text": "Valve timing verified after two crankshaft revolutions.", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-27" } },
+    { "id": "coolant-level", "text": "Coolant refilled, leaks checked and level rechecked as specified.", "sourceRef": { "sourceId": "rm718u-mirror-em", "locator": "EM-28" } },
+    { "id": "belts-routed", "text": "Accessory belt routed and tensioned per the manual." },
+    { "id": "bay-clear", "text": "No tools, rags or fasteners left in the engine bay (general workshop practice)." }
+  ]
+}
