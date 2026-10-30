@@ -1,0 +1,527 @@
+{
+  "revision": 1,
+  "engineVariantId": "2jz-ge-vvti-jzs160",
+  "frame": "See content/engines/2jz-ge-vvti-jzs160.json#frame. X = engine left, Y = up, Z = forward along the crankshaft. Metres.",
+  "evidence": {
+    "status": "illustrative",
+    "note": "Every dimension and position comes from the component inventory, where it is recorded as 'estimated' from photograph proportions. Shape constants in this file (wall thicknesses, tooth pitch, rib pitch, segment counts) are tessellation choices, not part data. Nothing here is measured, and no count in this file may be read as a fastener, tooth or groove count for the real engine.",
+    "sourceId": "wrenchwise-layout-estimate"
+  },
+  "parameterForms": {
+    "number": "A literal constant in metres (or a count/flag where the shape expects one).",
+    "dim": "{ \"dim\": \"<inventory dimension key>\", \"scale\"?: n, \"plus\"?: n, \"default\"?: n }",
+    "abs": "{ \"abs\": \"<inventory dimension key>\", \"default\"?: n } — an absolute frame coordinate; only valid in an offset slot, where it is converted to a local offset.",
+    "quantity": "{ \"quantity\": true, \"scale\"?: n }"
+  },
+  "materials": {
+    "cast-aluminum": { "baseColor": [0.72, 0.72, 0.73], "metallic": 1.0, "roughness": 0.5, "label": "Cast aluminium" },
+    "cast-iron": { "baseColor": [0.45, 0.45, 0.47], "metallic": 1.0, "roughness": 0.55, "label": "Cast iron" },
+    "dark-gray-metal": { "baseColor": [0.3, 0.3, 0.32], "metallic": 1.0, "roughness": 0.5, "label": "Dark metal" },
+    "dark-steel": { "baseColor": [0.22, 0.22, 0.24], "metallic": 1.0, "roughness": 0.3, "label": "Steel fastener" },
+    "bracket-steel": { "baseColor": [0.4, 0.4, 0.42], "metallic": 1.0, "roughness": 0.4, "label": "Steel bracket" },
+    "pulley-gray": { "baseColor": [0.5, 0.5, 0.52], "metallic": 1.0, "roughness": 0.35, "label": "Machined pulley" },
+    "rubber-black": { "baseColor": [0.05, 0.05, 0.05], "metallic": 0.0, "roughness": 0.8, "label": "Belt rubber" },
+    "rubber-dark": { "baseColor": [0.1, 0.1, 0.1], "metallic": 0.0, "roughness": 0.7, "label": "Hose rubber" },
+    "dark-plastic": { "baseColor": [0.12, 0.12, 0.14], "metallic": 0.0, "roughness": 0.6, "label": "Moulded cover" },
+    "radiator-copper": { "baseColor": [0.18, 0.12, 0.08], "metallic": 0.6, "roughness": 0.45, "label": "Radiator core" }
+  },
+  "components": {
+    "cylinder-block": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "cast-aluminum",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "height" }, "z": { "dim": "length" } }
+        }
+      ]
+    },
+    "oil-pan": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "dark-gray-metal",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "height" }, "z": { "dim": "length" } }
+        }
+      ]
+    },
+    "cylinder-head": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "cast-aluminum",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "height" }, "z": { "dim": "length" } }
+        },
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": 0.022, "length": 0.04, "axis": "z", "segments": 14 },
+          "repeat": { "axis": "x", "count": 2, "spacing": { "dim": "camSpacing" } },
+          "offset": [0, { "abs": "camAxisY" }, { "dim": "length", "scale": 0.5 }]
+        }
+      ]
+    },
+    "cylinder-head-covers": {
+      "instances": { "mode": "mirror-x", "offset": { "dim": "offsetX" } },
+      "parts": [
+        {
+          "shape": "archedShell",
+          "material": "cast-aluminum",
+          "params": {
+            "span": { "dim": "width" },
+            "archHeight": { "dim": "height" },
+            "extrude": { "dim": "length" },
+            "spanAxis": "x",
+            "archAxis": "y",
+            "extrudeAxis": "z"
+          }
+        }
+      ]
+    },
+    "intake-manifold": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "plenumRadius", "default": 0.06 }, "length": { "dim": "length" }, "axis": "z" }
+        },
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": {
+            "radius": { "dim": "plenumRadius", "default": 0.06, "scale": 0.35 },
+            "length": { "dim": "plenumRadius", "default": 0.06, "scale": 2.5 },
+            "axis": "x",
+            "segments": 10
+          },
+          "repeat": { "axis": "z", "count": 6, "spacing": { "dim": "length", "scale": 0.142857 } },
+          "offset": [{ "dim": "plenumRadius", "default": 0.06, "scale": 1.25 }, 0, 0]
+        }
+      ]
+    },
+    "exhaust-manifold": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-iron",
+          "params": { "radius": { "dim": "plenumRadius", "default": 0.05 }, "length": { "dim": "length" }, "axis": "z" }
+        },
+        {
+          "shape": "cylinder",
+          "material": "cast-iron",
+          "params": {
+            "radius": { "dim": "plenumRadius", "default": 0.05, "scale": 0.35 },
+            "length": { "dim": "plenumRadius", "default": 0.05, "scale": 2.5 },
+            "axis": "x",
+            "segments": 10
+          },
+          "repeat": { "axis": "z", "count": 6, "spacing": { "dim": "length", "scale": 0.142857 } },
+          "offset": [{ "dim": "plenumRadius", "default": 0.05, "scale": -1.25 }, 0, 0]
+        }
+      ]
+    },
+    "water-pump": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "radius" }, "length": { "dim": "depth" }, "axis": "z" }
+        },
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "radius", "scale": 1.3 }, "length": { "dim": "depth", "scale": 0.15 }, "axis": "z" },
+          "offset": [0, 0, { "dim": "depth", "scale": -0.5 }]
+        }
+      ]
+    },
+    "timing-belt": {
+      "parts": [
+        {
+          "shape": "beltPath",
+          "material": "rubber-black",
+          "params": {
+            "width": { "dim": "width" },
+            "thickness": { "dim": "thickness" },
+            "plane": "xy",
+            "segmentsPerArc": 10
+          },
+          "pulleys": [
+            { "component": "crankshaft-timing-pulley", "radiusDim": "pitchRadius" },
+            { "component": "vvti-controller", "radiusDim": "pitchRadius" },
+            { "component": "camshaft-timing-pulley-exhaust", "radiusDim": "pitchRadius" },
+            { "component": "timing-belt-idler", "radiusDim": "radius" }
+          ]
+        }
+      ]
+    },
+    "crankshaft-timing-pulley": {
+      "parts": [
+        {
+          "shape": "toothedPulley",
+          "material": "pulley-gray",
+          "params": { "pitchRadius": { "dim": "pitchRadius" }, "width": { "dim": "width" }, "toothPitch": 0.0095 }
+        }
+      ]
+    },
+    "crankshaft-timing-pulley-plate": {
+      "parts": [
+        {
+          "shape": "disc",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "thickness": { "dim": "thickness" } }
+        }
+      ]
+    },
+    "timing-belt-guide": {
+      "parts": [
+        {
+          "shape": "disc",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "thickness": { "dim": "thickness" } }
+        }
+      ]
+    },
+    "camshaft-timing-pulley-exhaust": {
+      "parts": [
+        {
+          "shape": "toothedPulley",
+          "material": "pulley-gray",
+          "params": { "pitchRadius": { "dim": "pitchRadius" }, "width": { "dim": "width" }, "toothPitch": 0.0095 }
+        }
+      ]
+    },
+    "camshaft-timing-pulley-exhaust-bolt": {
+      "parts": [
+        {
+          "shape": "hexBolt",
+          "material": "dark-steel",
+          "params": { "acrossFlats": { "dim": "headAcrossFlats" }, "axis": "z" }
+        }
+      ]
+    },
+    "vvti-controller": {
+      "parts": [
+        {
+          "shape": "toothedPulley",
+          "material": "pulley-gray",
+          "params": {
+            "pitchRadius": { "dim": "pitchRadius" },
+            "width": { "dim": "width" },
+            "hubRadius": { "dim": "hubRadius" },
+            "toothPitch": 0.0095
+          }
+        }
+      ]
+    },
+    "vvti-controller-factory-bolts": {
+      "instances": { "mode": "bolt-circle", "radius": { "dim": "boltCircleRadius" } },
+      "parts": [
+        { "shape": "hexBolt", "material": "dark-steel", "params": { "acrossFlats": 0.006, "axis": "z" } }
+      ]
+    },
+    "vvti-oil-hardware": {
+      "meshes": [
+        {
+          "offset": [0, 0, 0],
+          "parts": [
+            {
+              "shape": "cylinder",
+              "material": "cast-aluminum",
+              "params": { "radius": { "dim": "valveRadius" }, "length": { "dim": "valveLength" }, "axis": "x" }
+            }
+          ]
+        },
+        {
+          "offset": [0, 0.02, 0],
+          "parts": [
+            {
+              "shape": "cylinder",
+              "material": "dark-steel",
+              "params": {
+                "radius": { "dim": "valveRadius", "scale": 0.3 },
+                "length": { "dim": "valveLength", "scale": 1.5 },
+                "axis": "x",
+                "segments": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "timing-belt-idler": {
+      "parts": [
+        {
+          "shape": "idlerPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "width": { "dim": "width" } }
+        }
+      ]
+    },
+    "timing-belt-idler-bolt": {
+      "parts": [
+        {
+          "shape": "hexBolt",
+          "material": "dark-steel",
+          "params": { "acrossFlats": { "dim": "headAcrossFlats" }, "axis": "z" }
+        }
+      ]
+    },
+    "timing-belt-tensioner": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-iron",
+          "params": { "radius": { "dim": "radius" }, "length": { "dim": "length" }, "axis": "y" }
+        },
+        {
+          "shape": "cylinder",
+          "material": "dark-steel",
+          "params": { "radius": { "dim": "radius", "scale": 0.5 }, "length": { "dim": "length", "scale": 0.35 }, "axis": "y", "segments": 12 },
+          "offset": [0, { "dim": "length", "scale": 0.675 }, 0]
+        }
+      ]
+    },
+    "timing-belt-tensioner-boot": {
+      "parts": [
+        {
+          "shape": "cone",
+          "material": "rubber-black",
+          "params": {
+            "radius1": { "dim": "radius" },
+            "radius2": { "dim": "radius", "scale": 0.5 },
+            "length": { "dim": "length" },
+            "axis": "y",
+            "segments": 14
+          }
+        }
+      ]
+    },
+    "timing-belt-tensioner-bolts": {
+      "instances": { "mode": "linear-y", "spacing": { "dim": "spacing" } },
+      "parts": [
+        { "shape": "hexBolt", "material": "dark-steel", "params": { "acrossFlats": 0.01, "axis": "z" } }
+      ]
+    },
+    "timing-belt-rear-covers": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "dark-plastic",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "height" }, "z": { "dim": "thickness" } }
+        }
+      ]
+    },
+    "timing-belt-cover-no1": {
+      "parts": [
+        {
+          "shape": "archedShell",
+          "material": "dark-plastic",
+          "params": {
+            "span": { "dim": "width" },
+            "archHeight": { "dim": "depth" },
+            "extrude": { "dim": "height" },
+            "spanAxis": "x",
+            "archAxis": "z",
+            "extrudeAxis": "y"
+          }
+        }
+      ]
+    },
+    "timing-belt-cover-no2": {
+      "parts": [
+        {
+          "shape": "archedShell",
+          "material": "dark-plastic",
+          "params": {
+            "span": { "dim": "width" },
+            "archHeight": { "dim": "depth" },
+            "extrude": { "dim": "height" },
+            "spanAxis": "x",
+            "archAxis": "z",
+            "extrudeAxis": "y"
+          }
+        }
+      ]
+    },
+    "crankshaft-pulley": {
+      "parts": [
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "width": { "dim": "width" }, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "crankshaft-pulley-bolt": {
+      "parts": [
+        {
+          "shape": "hexBolt",
+          "material": "dark-steel",
+          "params": { "acrossFlats": { "dim": "headAcrossFlats" }, "axis": "z" }
+        }
+      ]
+    },
+    "accessory-drive-belt": {
+      "parts": [
+        {
+          "shape": "beltPath",
+          "material": "rubber-black",
+          "params": {
+            "width": { "dim": "width" },
+            "thickness": { "dim": "thickness" },
+            "plane": "xy",
+            "segmentsPerArc": 8
+          },
+          "pulleys": [
+            { "component": "crankshaft-pulley", "radiusDim": "radius" },
+            { "component": "water-pump-pulley", "radiusDim": "radius" },
+            { "component": "power-steering-pump", "radiusDim": "pulleyRadius" },
+            { "component": "alternator", "radiusDim": "pulleyRadius" },
+            { "component": "ac-compressor", "radiusDim": "pulleyRadius" },
+            { "component": "accessory-belt-tensioner", "radiusDim": "radius" }
+          ]
+        }
+      ]
+    },
+    "accessory-belt-tensioner": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "bracket-steel",
+          "params": { "x": 0.06, "y": 0.02, "z": 0.015 },
+          "offset": [-0.03, 0, -0.012]
+        },
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "width": 0.018, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "water-pump-pulley": {
+      "parts": [
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "radius" }, "width": { "dim": "width" }, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "power-steering-pump": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "bodyRadius" }, "length": { "dim": "bodyLength" }, "axis": "z" },
+          "offset": [0, 0, { "dim": "bodyLength", "scale": -0.5, "plus": -0.014 }]
+        },
+        {
+          "shape": "box",
+          "material": "cast-aluminum",
+          "params": {
+            "x": { "dim": "bodyLength", "scale": 0.5 },
+            "y": { "dim": "bodyRadius", "scale": 0.6 },
+            "z": { "dim": "bodyRadius", "scale": 0.9 }
+          },
+          "offset": [0, { "dim": "bodyRadius", "scale": 1.3 }, { "dim": "bodyLength", "scale": -0.5, "plus": -0.014 }]
+        },
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "pulleyRadius" }, "width": 0.022, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "power-steering-pump-bracket": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "bracket-steel",
+          "params": { "x": { "dim": "thickness" }, "y": { "dim": "height" }, "z": { "dim": "width", "scale": 0.5 } }
+        },
+        {
+          "shape": "box",
+          "material": "bracket-steel",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "thickness" }, "z": { "dim": "width", "scale": 0.5 } },
+          "offset": [
+            { "dim": "width", "scale": 0.5 },
+            { "dim": "height", "scale": -0.5 },
+            0
+          ]
+        }
+      ]
+    },
+    "alternator": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "bodyRadius" }, "length": { "dim": "bodyLength" }, "axis": "z" },
+          "offset": [0, 0, { "dim": "bodyLength", "scale": -0.5, "plus": -0.014 }]
+        },
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "pulleyRadius" }, "width": 0.02, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "ac-compressor": {
+      "parts": [
+        {
+          "shape": "cylinder",
+          "material": "cast-aluminum",
+          "params": { "radius": { "dim": "bodyRadius" }, "length": { "dim": "bodyLength" }, "axis": "z" },
+          "offset": [0, 0, { "dim": "bodyLength", "scale": -0.5, "plus": -0.014 }]
+        },
+        {
+          "shape": "groovedPulley",
+          "material": "pulley-gray",
+          "params": { "radius": { "dim": "pulleyRadius" }, "width": 0.024, "ribPitch": 0.0075 }
+        }
+      ]
+    },
+    "radiator-assembly": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "radiator-copper",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "height" }, "z": { "dim": "depth" } }
+        },
+        {
+          "shape": "box",
+          "material": "dark-plastic",
+          "params": { "x": 0.04, "y": { "dim": "height", "scale": 0.9 }, "z": { "dim": "depth", "scale": 1.3 } },
+          "repeat": { "axis": "x", "count": 2, "spacing": { "dim": "width", "plus": 0.04 } }
+        }
+      ]
+    },
+    "radiator-hose-upper": {
+      "parts": [
+        {
+          "shape": "curvedTube",
+          "material": "rubber-dark",
+          "params": { "tubeRadius": { "dim": "radius" }, "bendRadius": 0.12, "arcDegrees": 120, "plane": "xz" }
+        }
+      ]
+    },
+    "radiator-hose-lower": {
+      "parts": [
+        {
+          "shape": "curvedTube",
+          "material": "rubber-dark",
+          "params": { "tubeRadius": { "dim": "radius" }, "bendRadius": 0.12, "arcDegrees": 120, "plane": "xz" }
+        }
+      ]
+    },
+    "engine-under-cover": {
+      "parts": [
+        {
+          "shape": "box",
+          "material": "dark-plastic",
+          "params": { "x": { "dim": "width" }, "y": { "dim": "thickness" }, "z": { "dim": "length" } }
+        }
+      ]
+    }
+  }
+}

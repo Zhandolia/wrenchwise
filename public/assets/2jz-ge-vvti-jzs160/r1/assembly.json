@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "engineVariantId": "2jz-ge-vvti-jzs160",
+  "modelRevision": 1,
+  "units": "metres",
+  "frame": {
+    "x": "Engine left (driver side in the LHD installation)",
+    "y": "Up, parallel to the cylinder bores",
+    "z": "Forward, along the crankshaft toward the timing drive"
+  },
+  "generator": "modeling/wrenchwise/build_assembly.mjs",
+  "evidence": {
+    "status": "illustrative",
+    "note": "Every dimension and position comes from the component inventory, where it is recorded as 'estimated' from photograph proportions. Shape constants in this file (wall thicknesses, tooth pitch, rib pitch, segment counts) are tessellation choices, not part data. Nothing here is measured, and no count in this file may be read as a fastener, tooth or groove count for the real engine.",
+    "sourceId": "wrenchwise-layout-estimate"
+  },
+  "geometryNote": "Low-polygon procedural geometry for instruction. Tooth, groove and segment counts are tessellation choices derived from stated illustrative pitches, not part data. No dimension is measured.",
+  "loadOrder": [
+    "core",
+    "access"
+  ],
+  "bounds": {
+    "min": [
+      -0.38,
+      -0.302,
+      -0.6
+    ],
+    "max": [
+      0.45,
+      0.5,
+      0.4525
+    ]
+  },
+  "files": [
+    {
+      "layer": "core",
+      "file": "core.glb",
+      "byteLength": 441624,
+      "sha256": "bb437549548c16dfcf9f742320c708e63b882b0ef62d0773e4f46b62151c6df9",
+      "nodeCount": 33,
+      "triangleCount": 5168,
+      "vertexCount": 15504,
+      "componentIds": [
+        "cylinder-block",
+        "oil-pan",
+        "cylinder-head",
+        "cylinder-head-covers",
+        "intake-manifold",
+        "exhaust-manifold",
+        "water-pump",
+        "timing-belt",
+        "crankshaft-timing-pulley",
+        "crankshaft-timing-pulley-plate",
+        "timing-belt-guide",
+        "camshaft-timing-pulley-exhaust",
+        "camshaft-timing-pulley-exhaust-bolt",
+        "vvti-controller",
+        "vvti-controller-factory-bolts",
+        "vvti-oil-hardware",
+        "timing-belt-idler",
+        "timing-belt-idler-bolt",
+        "timing-belt-tensioner",
+        "timing-belt-tensioner-boot",
+        "timing-belt-tensioner-bolts",
+        "timing-belt-rear-covers",
+        "timing-belt-cover-no1",
+        "timing-belt-cover-no2",
+        "crankshaft-pulley",
+        "crankshaft-pulley-bolt"
+      ],
+      "meshIds": [
+        "cylinder-block",
+        "oil-pan",
+        "cylinder-head",
+        "cylinder-head-cover-intake",
+        "cylinder-head-cover-exhaust",
+        "intake-manifold",
+        "exhaust-manifold",
+        "water-pump",
+        "timing-belt",
+        "crankshaft-timing-pulley",
+        "crankshaft-timing-pulley-plate",
+        "timing-belt-guide",
+        "camshaft-timing-pulley-exhaust",
+        "camshaft-timing-pulley-exhaust-bolt",
+        "vvti-controller",
+        "vvti-controller-bolt-1",
+        "vvti-controller-bolt-2",
+        "vvti-controller-bolt-3",
+        "vvti-controller-bolt-4",
+        "vvti-controller-bolt-5",
+        "vvti-oil-control-valve",
+        "vvti-oil-pipe",
+        "timing-belt-idler",
+        "timing-belt-idler-bolt",
+        "timing-belt-tensioner",
+        "timing-belt-tensioner-boot",
+        "timing-belt-tensioner-bolt-1",
+        "timing-belt-tensioner-bolt-2",
+        "timing-belt-rear-cover",
+        "timing-belt-cover-no1",
+        "timing-belt-cover-no2",
+        "crankshaft-pulley",
+        "crankshaft-pulley-bolt"
+      ]
+    },
+    {
+      "layer": "access",
+      "file": "access.glb",
+      "byteLength": 271900,
+      "sha256": "2126dd70f42aa2db58d649eb8974b703f48c2beaaf4b2428e75634676af1159d",
+      "nodeCount": 11,
+      "triangleCount": 3288,
+      "vertexCount": 9864,
+      "componentIds": [
+        "accessory-drive-belt",
+        "accessory-belt-tensioner",
+        "water-pump-pulley",
+        "power-steering-pump",
+        "power-steering-pump-bracket",
+        "alternator",
+        "ac-compressor",
+        "radiator-assembly",
+        "radiator-hose-upper",
+        "radiator-hose-lower",
+        "engine-under-cover"
+      ],
+      "meshIds": [
+        "accessory-drive-belt",
+        "accessory-belt-tensioner",
+        "water-pump-pulley",
+        "power-steering-pump",
+        "power-steering-pump-bracket",
+        "alternator",
+        "ac-compressor",
+        "radiator-assembly",
+        "radiator-hose-upper",
+        "radiator-hose-lower",
+        "engine-under-cover"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "componentId": "cylinder-block",
+      "name": "Cylinder block",
+      "system": "engine-structure",
+      "kind": "assembly",
+      "layer": "core",
+      "meshIds": [
+        "cylinder-block"
+      ],
+      "triangleCount": 12,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "oil-pan",
+      "name": "Oil pan",
+      "system": "engine-structure",
+      "kind": "assembly",
+      "layer": "core",
+      "meshIds": [
+        "oil-pan"
+      ],
+      "triangleCount": 12,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "cylinder-head",
+      "name": "Cylinder head",
+      "system": "engine-structure",
+      "kind": "assembly",
+      "layer": "core",
+      "meshIds": [
+        "cylinder-head"
+      ],
+      "triangleCount": 124,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "cylinder-head-covers",
+      "name": "Cylinder head covers",
+      "system": "engine-structure",
+      "kind": "group",
+      "layer": "core",
+      "meshIds": [
+        "cylinder-head-cover-intake",
+        "cylinder-head-cover-exhaust"
+      ],
+      "triangleCount": 200,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "intake-manifold",
+      "name": "Intake manifold",
+      "system": "engine-structure",
+      "kind": "group",
+      "layer": "core",
+      "meshIds": [
+        "intake-manifold"
+      ],
+      "triangleCount": 320,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "exhaust-manifold",
+      "name": "Exhaust manifold",
+      "system": "engine-structure",
+      "kind": "group",
+      "layer": "core",
+      "meshIds": [
+        "exhaust-manifold"
+      ],
+      "triangleCount": 320,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "water-pump",
+      "name": "Water pump",
+      "system": "cooling",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "water-pump"
+      ],
+      "triangleCount": 160,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "timing-belt",
+      "name": "Timing belt",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt"
+      ],
+      "triangleCount": 352,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "release-tensioner",
+        "lower-drive",
+        "inspect",
+        "install-lower",
+        "install-cam",
+        "tension",
+        "verify-timing"
+      ]
+    },
+    {
+      "componentId": "crankshaft-timing-pulley",
+      "name": "Crankshaft timing pulley",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "crankshaft-timing-pulley"
+      ],
+      "triangleCount": 352,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ]
+    },
+    {
+      "componentId": "crankshaft-timing-pulley-plate",
+      "name": "Crankshaft timing pulley retaining plate",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "crankshaft-timing-pulley-plate"
+      ],
+      "triangleCount": 96,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ]
+    },
+    {
+      "componentId": "timing-belt-guide",
+      "name": "Timing belt guide",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-guide"
+      ],
+      "triangleCount": 96,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ]
+    },
+    {
+      "componentId": "camshaft-timing-pulley-exhaust",
+      "name": "Exhaust camshaft timing pulley",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "camshaft-timing-pulley-exhaust"
+      ],
+      "triangleCount": 592,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "set-position",
+        "cam-pulleys",
+        "install-cam",
+        "verify-timing"
+      ]
+    },
+    {
+      "componentId": "camshaft-timing-pulley-exhaust-bolt",
+      "name": "Exhaust camshaft pulley bolt",
+      "system": "timing-drive",
+      "kind": "fastener",
+      "layer": "core",
+      "meshIds": [
+        "camshaft-timing-pulley-exhaust-bolt"
+      ],
+      "triangleCount": 64,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ]
+    },
+    {
+      "componentId": "vvti-controller",
+      "name": "Intake camshaft timing pulley (VVT-i controller)",
+      "system": "timing-drive",
+      "kind": "assembly",
+      "layer": "core",
+      "meshIds": [
+        "vvti-controller"
+      ],
+      "triangleCount": 656,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "set-position",
+        "cam-pulleys",
+        "install-cam",
+        "verify-timing"
+      ]
+    },
+    {
+      "componentId": "vvti-controller-factory-bolts",
+      "name": "VVT-i pulley factory-set bolts",
+      "system": "timing-drive",
+      "kind": "fastener-set",
+      "layer": "core",
+      "meshIds": [
+        "vvti-controller-bolt-1",
+        "vvti-controller-bolt-2",
+        "vvti-controller-bolt-3",
+        "vvti-controller-bolt-4",
+        "vvti-controller-bolt-5"
+      ],
+      "triangleCount": 320,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ]
+    },
+    {
+      "componentId": "vvti-oil-hardware",
+      "name": "VVT-i oil control hardware",
+      "system": "timing-drive",
+      "kind": "group",
+      "layer": "core",
+      "meshIds": [
+        "vvti-oil-control-valve",
+        "vvti-oil-pipe"
+      ],
+      "triangleCount": 120,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "cam-pulleys",
+        "install-cam"
+      ]
+    },
+    {
+      "componentId": "timing-belt-idler",
+      "name": "Timing belt idler",
+      "system": "timing-drive",
+      "kind": "assembly",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-idler"
+      ],
+      "triangleCount": 144,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "inspect",
+        "install-lower",
+        "tension"
+      ]
+    },
+    {
+      "componentId": "timing-belt-idler-bolt",
+      "name": "Idler bolt",
+      "system": "timing-drive",
+      "kind": "fastener",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-idler-bolt"
+      ],
+      "triangleCount": 64,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ]
+    },
+    {
+      "componentId": "timing-belt-tensioner",
+      "name": "Hydraulic timing belt tensioner",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-tensioner"
+      ],
+      "triangleCount": 128,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "release-tensioner",
+        "inspect",
+        "tension"
+      ]
+    },
+    {
+      "componentId": "timing-belt-tensioner-boot",
+      "name": "Tensioner dust boot",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-tensioner-boot"
+      ],
+      "triangleCount": 56,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "release-tensioner",
+        "tension"
+      ]
+    },
+    {
+      "componentId": "timing-belt-tensioner-bolts",
+      "name": "Tensioner mounting bolts",
+      "system": "timing-drive",
+      "kind": "fastener-set",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-tensioner-bolt-1",
+        "timing-belt-tensioner-bolt-2"
+      ],
+      "triangleCount": 128,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "release-tensioner",
+        "tension"
+      ]
+    },
+    {
+      "componentId": "timing-belt-rear-covers",
+      "name": "Rear timing belt covers",
+      "system": "timing-drive",
+      "kind": "group",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-rear-cover"
+      ],
+      "triangleCount": 12,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "timing-belt-cover-no1",
+      "name": "No.1 timing belt cover (lower)",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-cover-no1"
+      ],
+      "triangleCount": 100,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "lower-drive",
+        "install-lower"
+      ]
+    },
+    {
+      "componentId": "timing-belt-cover-no2",
+      "name": "Upper timing belt cover",
+      "system": "timing-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "timing-belt-cover-no2"
+      ],
+      "triangleCount": 100,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "upper-cover",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "crankshaft-pulley",
+      "name": "Crankshaft pulley",
+      "system": "accessory-drive",
+      "kind": "part",
+      "layer": "core",
+      "meshIds": [
+        "crankshaft-pulley"
+      ],
+      "triangleCount": 576,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "crank-bolt",
+        "set-position",
+        "lower-drive",
+        "install-lower",
+        "verify-timing"
+      ]
+    },
+    {
+      "componentId": "crankshaft-pulley-bolt",
+      "name": "Crankshaft pulley bolt",
+      "system": "accessory-drive",
+      "kind": "fastener",
+      "layer": "core",
+      "meshIds": [
+        "crankshaft-pulley-bolt"
+      ],
+      "triangleCount": 64,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "crank-bolt",
+        "lower-drive",
+        "install-lower",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "accessory-drive-belt",
+      "name": "Accessory drive belt",
+      "system": "accessory-drive",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "accessory-drive-belt"
+      ],
+      "triangleCount": 432,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "accessory-belt",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "accessory-belt-tensioner",
+      "name": "Accessory belt tensioner",
+      "system": "accessory-drive",
+      "kind": "assembly",
+      "layer": "access",
+      "meshIds": [
+        "accessory-belt-tensioner"
+      ],
+      "triangleCount": 300,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "accessory-belt",
+        "upper-cover",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "water-pump-pulley",
+      "name": "Water pump pulley",
+      "system": "cooling",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "water-pump-pulley"
+      ],
+      "triangleCount": 480,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "power-steering-pump",
+      "name": "Power-steering pump",
+      "system": "accessory-drive",
+      "kind": "assembly",
+      "layer": "access",
+      "meshIds": [
+        "power-steering-pump"
+      ],
+      "triangleCount": 476,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "power-steering-pump",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "power-steering-pump-bracket",
+      "name": "Power-steering pump front bracket",
+      "system": "accessory-drive",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "power-steering-pump-bracket"
+      ],
+      "triangleCount": 24,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "power-steering-pump",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "alternator",
+      "name": "Alternator",
+      "system": "accessory-drive",
+      "kind": "assembly",
+      "layer": "access",
+      "meshIds": [
+        "alternator"
+      ],
+      "triangleCount": 464,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "ac-compressor",
+      "name": "A/C compressor",
+      "system": "accessory-drive",
+      "kind": "assembly",
+      "layer": "access",
+      "meshIds": [
+        "ac-compressor"
+      ],
+      "triangleCount": 464,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": []
+    },
+    {
+      "componentId": "radiator-assembly",
+      "name": "Radiator assembly",
+      "system": "cooling",
+      "kind": "group",
+      "layer": "access",
+      "meshIds": [
+        "radiator-assembly"
+      ],
+      "triangleCount": 36,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "under-cover-coolant",
+        "radiator",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "radiator-hose-upper",
+      "name": "Upper radiator hose",
+      "system": "cooling",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "radiator-hose-upper"
+      ],
+      "triangleCount": 300,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "radiator",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "radiator-hose-lower",
+      "name": "Lower radiator hose",
+      "system": "cooling",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "radiator-hose-lower"
+      ],
+      "triangleCount": 300,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "radiator",
+        "reassemble"
+      ]
+    },
+    {
+      "componentId": "engine-under-cover",
+      "name": "Engine under-cover",
+      "system": "body",
+      "kind": "part",
+      "layer": "access",
+      "meshIds": [
+        "engine-under-cover"
+      ],
+      "triangleCount": 12,
+      "dimensionStatus": "estimated",
+      "placementStatus": "estimated",
+      "procedureStepIds": [
+        "under-cover-coolant",
+        "reassemble"
+      ]
+    }
+  ],
+  "buildNotes": [],
+  "componentCount": 37,
+  "meshCount": 44,
+  "triangleCount": 8456
+}

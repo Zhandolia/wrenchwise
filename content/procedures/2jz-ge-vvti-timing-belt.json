@@ -343,7 +343,7 @@
         { "id": "pin-diameter", "label": "Retaining pin diameter", "value": null, "unit": "mm", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-26" } },
         { "id": "tensioner-bolt-torque", "label": "Tensioner bolt torque", "value": null, "unit": "N·m", "status": "not-entered", "sourceRef": { "sourceId": "rm718u", "locator": "EM-26–27" } }
       ],
-      "view": { "camera": "front-right", "remove": [], "restore": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts"], "hide": [], "highlight": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-bolts"] },
+      "view": { "camera": "front-right", "remove": [], "restore": ["timing-belt-tensioner", "timing-belt-tensioner-boot", "timing-belt-tensioner-bolts"], "hide": [], "highlight": ["timing-belt", "timing-belt-tensioner", "timing-belt-tensioner-bolts"] },
       "cautions": [{ "level": "caution", "text": "Compress the tensioner slowly. Do not exceed the force in the manual." }],
       "completionChecks": [
         { "id": "pin-out", "text": "Retaining pin withdrawn after both bolts are tightened." },
