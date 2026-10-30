@@ -143,9 +143,12 @@ if (check) {
       failures++;
     }
   }
+  // Compare with line endings normalised: a Windows checkout may hold CRLF
+  // even though .gitattributes asks for LF.
+  const normalise = (text) => text.replace(/\r\n/g, '\n');
   for (const [name, text] of [['assembly.json', manifestText], ['layout.svg', illustration]]) {
     const target = path.join(outDir, name);
-    if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8') !== text) {
+    if (!fs.existsSync(target) || normalise(fs.readFileSync(target, 'utf8')) !== normalise(text)) {
       console.error(`FAIL: ${name} is stale. Re-run build_assembly.mjs and commit the result.`);
       failures++;
     }

@@ -1,0 +1,5 @@
+# Generated browser assets are compared byte for byte against a fresh export
+# (modeling/wrenchwise/build_assembly.mjs --check), so they must never have
+# their line endings rewritten on checkout.
+public/assets/** -text
+*.glb binary
