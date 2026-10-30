@@ -133,15 +133,23 @@ are tessellation choices and are reported as such in the manifest, never as part
 - `pages/main.tsx` routes `/` (the reference-book index) and `/guide/` (procedure workspace). The earlier exploration
   workspace moved to `/archive/`; every other legacy route is unchanged and still linked from there.
 - `src/content/catalog.ts` discovers content with `import.meta.glob`, so adding a configuration, engine or procedure
-  needs no code change. `src/content/procedure-state.mjs` and `search.mjs` hold the pure logic, so both are unit
-  tested in Node without a browser.
+  needs no code change. `src/content/procedure-state.mjs`, `search.mjs` and `library.mjs` hold the pure logic, so all
+  three are unit tested in Node without a browser.
+- The library page is built from `library.mjs`: an engine appears once it has a component inventory, and every
+  variant an engine's `notEquivalentTo` rules out becomes a coverage entry with its reason. The unit of coverage is
+  an engine variant in a recorded configuration, so a vehicle is a property of an engine entry rather than the
+  subject of the interface, and the mechanical rule that a family name is not a parts list becomes navigation.
 - `src/viewer/assembly-scene.ts` is a framework-free Three.js controller: progressive layer loading, orbit, camera
   presets that frame the current step's components, raycast selection, highlight, isolate with ghosting, explanatory
   explode, keyboard and touch control. A neutral `RoomEnvironment` supplies the reflections metals need — without it
   every metallic material renders black. Materials are cloned per mesh so highlighting cannot leak between components.
-- `src/ui/*` holds the white, minimal UI. Desktop shows contents, instructions and 3D together. Below 960px the guide
-  becomes Guide and 3D tabs with large controls. Loading, error, retry and no-WebGL states all fall back to the
-  generated illustration plus the full step text.
+- `src/ui/*` holds the interface. Two surfaces carry the hierarchy: a light reading column and a dark stage, with the
+  contrast as the primary focus device (it is also what makes metallic materials read as metal). A phase rail gives
+  position in the job, the current step is the only large text, and supporting material sits in `<details>` folds —
+  except cautions and completion checks, which never collapse. The action bar is sticky. Systems are colour-coded
+  consistently across chips, the part callout and the generated illustration. Desktop shows contents, instructions
+  and the stage together; below 900px the guide becomes Guide and 3D tabs with large controls. Loading, error, retry
+  and no-WebGL states all fall back to the generated illustration plus the full step text.
 - Progress persists in `localStorage` under a key that includes the procedure id and revision. An incompatible
   revision, a corrupt value or an unknown check id starts clean rather than restoring the wrong step.
 

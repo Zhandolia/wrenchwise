@@ -1,21 +1,27 @@
-// The reference-book index: pick the configuration, then search jobs,
-// components and engines. No promotional copy, no second vehicle chooser.
+// The library: which engines Wrenchwise covers, what exists for each of them,
+// and what it deliberately does not cover.
+//
+// Nothing on this page is written per engine. The cards, the counts and the
+// excluded list are all derived from content/, so the first engine to be
+// carried through to a complete procedure is just the first row — not the
+// subject of the site.
 
 import { useMemo, useState } from 'react';
 import { appPath } from '../../lib/app-path';
 import {
   configurations,
   currentRelease,
-  enginesById,
-  inventoriesByEngine,
+  engines,
+  inventories,
   procedures,
   proceduresById,
   searchIndex,
   type Procedure,
 } from '../content/catalog';
+import { coveredEngines, excludedVariants, librarySummary } from '../content/library.mjs';
 import { indexSystems, searchEntries } from '../content/search.mjs';
 import { progressStorageKey, readProgress } from '../content/procedure-state.mjs';
-import { StatusPill } from './evidence';
+import { StatusPill, systemColor } from './evidence';
 import './reference.css';
 
 /** Mirrors the SearchEntry typedef in ../content/search.mjs. */
@@ -26,20 +32,30 @@ interface SearchEntry {
   detail: string;
   system: string;
   status: string;
-  /** Pre-compacted haystack used by searchEntries. */
   terms: string;
   procedureId?: string;
   stepId?: string;
 }
 
+interface CoveredEngine {
+  engine: (typeof engines)[number];
+  configurations: (typeof configurations)[number][];
+  jobs: Procedure[];
+  componentCount: number;
+  systems: string[];
+  status: 'jobs' | 'reference-only' | 'declared';
+}
+
 const KIND_LABEL: Record<string, string> = { job: 'Job', component: 'Part', engine: 'Engine' };
+
+const content = { engines, configurations, procedures, inventories };
 
 function guideHref(procedureId: string, params: Record<string, string> = {}): string {
   const search = new URLSearchParams({ job: procedureId, ...params });
   return `${appPath('/guide/')}?${search.toString()}`;
 }
 
-/** Saved progress for any procedure, so the index can offer to resume. */
+/** Saved progress for any procedure, so the library can offer to resume. */
 function resumableProcedures(): { procedure: Procedure; stepTitle: string; stepId: string }[] {
   const resumable: { procedure: Procedure; stepTitle: string; stepId: string }[] = [];
   for (const procedure of procedures) {
@@ -63,40 +79,27 @@ function resumableProcedures(): { procedure: Procedure; stepTitle: string; stepI
 }
 
 export default function IndexPage() {
-  const [configurationId, setConfigurationId] = useState(configurations[0].id);
   const [query, setQuery] = useState('');
   const [kind, setKind] = useState('all');
   const [system, setSystem] = useState('all');
   const [resume] = useState(resumableProcedures);
 
-  const configuration = configurations.find((entry) => entry.id === configurationId) ?? configurations[0];
-  const engine = enginesById.get(configuration.engineVariantId);
-  const inventory = engine ? inventoriesByEngine.get(engine.id) : undefined;
+  const summary = librarySummary(content) as ReturnType<typeof librarySummary>;
+  const covered = coveredEngines(content) as CoveredEngine[];
+  const excluded = excludedVariants(content) as {
+    id: string;
+    variant: string;
+    reason: string;
+    distinctFrom: string;
+  }[];
 
-  // Only content that applies to the chosen configuration is listed. A shared
-  // model or engine family name is never treated as applicability.
-  const applicable = useMemo(() => {
-    const procedureIds = new Set(
-      procedures.filter((procedure) => procedure.configurationIds.includes(configuration.id)).map((p) => p.id),
-    );
-    const componentIds = new Set(
-      (inventory?.components ?? [])
-        .filter((component) => component.applicability.configurationIds.includes(configuration.id))
-        .map((component) => component.id),
-    );
-    return (searchIndex as SearchEntry[]).filter((entry) => {
-      if (entry.kind === 'job') return procedureIds.has(entry.id);
-      if (entry.kind === 'component') return componentIds.has(entry.id);
-      return entry.id === configuration.engineVariantId;
-    });
-  }, [configuration.id, configuration.engineVariantId, inventory]);
-
+  const entries = searchIndex as SearchEntry[];
   const results = useMemo(
-    () => searchEntries(applicable, query, { kind, system }) as SearchEntry[],
-    [applicable, query, kind, system],
+    () => searchEntries(entries, query, { kind, system }) as SearchEntry[],
+    [entries, query, kind, system],
   );
-
-  const systems = indexSystems(applicable) as string[];
+  const filtered = Boolean(query) || kind !== 'all' || system !== 'all';
+  const systems = indexSystems(entries) as string[];
 
   return (
     <div className="wr">
@@ -106,49 +109,46 @@ export default function IndexPage() {
         </a>
         <nav aria-label="Main navigation">
           <a aria-current="page" href={appPath('/')}>
-            Jobs &amp; parts
+            Library
           </a>
+          <a href="#wr-search">Search</a>
+          <a href="#wr-coverage">Coverage</a>
           <a href={appPath('/archive/')}>Archive</a>
         </nav>
       </header>
 
-      <div className="wr-config">
-        {configurations.length > 1 ? (
-          <label>
-            <span className="wr-skip">Configuration</span>
-            <select
-              aria-label="Configuration"
-              value={configurationId}
-              onChange={(event) => setConfigurationId(event.target.value)}
-            >
-              {configurations.map((entry) => (
-                <option key={entry.id} value={entry.id}>
-                  {entry.label} · {entry.market} · {entry.steering}
-                </option>
-              ))}
-            </select>
-          </label>
-        ) : (
-          <strong>
-            {configuration.label} · {configuration.market} · {configuration.steering}
-          </strong>
-        )}
-        <span>{engine?.label}</span>
-        <StatusPill prefix="vehicle" status={configuration.identificationStatus} />
-        <StatusPill prefix="geometry" status={currentRelease.evidenceStatus} />
-      </div>
-
       <main className="wr-main">
-        <h1>Jobs &amp; parts</h1>
-        <p className="wr-sub">
-          {engine?.label} as fitted to the {configuration.label}. {applicable.filter((e) => e.kind === 'job').length}{' '}
-          job{applicable.filter((e) => e.kind === 'job').length === 1 ? '' : 's'},{' '}
-          {applicable.filter((e) => e.kind === 'component').length} components with geometry.
-        </p>
+        <div className="wr-hero">
+          <h1>Engines, components and the jobs done on them.</h1>
+          <p>
+            An interactive mechanical reference. Pick an engine, pick a job, and work through it with every
+            instruction tied to a part you can see, isolate and turn around. Each engine variant is covered on
+            its own terms — never by assuming that a shared family name means shared parts.
+          </p>
+        </div>
+
+        <div className="wr-stats">
+          <div className="wr-stat">
+            <b>{summary.engines}</b>
+            <span>engine variant{summary.engines === 1 ? '' : 's'} covered</span>
+          </div>
+          <div className="wr-stat">
+            <b>{summary.jobs}</b>
+            <span>job{summary.jobs === 1 ? '' : 's'}, {summary.steps} steps</span>
+          </div>
+          <div className="wr-stat">
+            <b>{summary.components}</b>
+            <span>components with geometry</span>
+          </div>
+          <div className="wr-stat">
+            <b>{summary.excluded}</b>
+            <span>variants ruled out by name</span>
+          </div>
+        </div>
 
         {resume.length ? (
           <div className="wr-resume">
-            <strong>Resume</strong>
+            <b>Pick up where you left off</b>
             {resume.map((entry) => (
               <a key={entry.procedure.id} href={guideHref(entry.procedure.id, { step: entry.stepId })}>
                 {entry.procedure.title} — {entry.stepTitle}
@@ -157,75 +157,133 @@ export default function IndexPage() {
           </div>
         ) : null}
 
-        <div className="wr-search">
-          <input
-            type="search"
-            aria-label="Search jobs, parts and engines"
-            placeholder="Search jobs, parts and engines"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          <select aria-label="Filter by type" value={kind} onChange={(event) => setKind(event.target.value)}>
-            <option value="all">All types</option>
-            <option value="job">Jobs</option>
-            <option value="component">Parts</option>
-            <option value="engine">Engines</option>
-          </select>
-          <select aria-label="Filter by system" value={system} onChange={(event) => setSystem(event.target.value)}>
-            <option value="all">All systems</option>
-            {systems.map((name) => (
-              <option key={name} value={name}>
-                {name}
-              </option>
+        <section className="wr-section" aria-labelledby="wr-engines-heading">
+          <h2 id="wr-engines-heading">Engines in the library</h2>
+          <p className="wr-lede">
+            An engine appears here once it has a component inventory built from recorded sources. Jobs are
+            added per engine, not per model name.
+          </p>
+          <ul className="wr-engines">
+            {covered.map((entry) => (
+              <EngineCard key={entry.engine.id} entry={entry} />
             ))}
-          </select>
-          {query || kind !== 'all' || system !== 'all' ? (
-            <button
-              className="wr-button"
-              type="button"
-              onClick={() => {
-                setQuery('');
-                setKind('all');
-                setSystem('all');
-              }}
-            >
-              Clear filters
-            </button>
-          ) : null}
-        </div>
+          </ul>
+        </section>
 
-        {results.length ? (
-          <ul className="wr-rows">
-            {results.map((entry) => (
-              <li className="wr-row" key={`${entry.kind}-${entry.id}`}>
-                <ResultRow entry={entry} />
+        <section className="wr-section" id="wr-search" aria-labelledby="wr-search-heading">
+          <h2 id="wr-search-heading">Search everything</h2>
+          <p className="wr-lede">Jobs, individual components and engine variants across the whole library.</p>
+          <div className="wr-search">
+            <input
+              type="search"
+              aria-label="Search jobs, parts and engines"
+              placeholder="Timing belt, tensioner, water pump, VVT-i…"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <select aria-label="Filter by type" value={kind} onChange={(event) => setKind(event.target.value)}>
+              <option value="all">All types</option>
+              <option value="job">Jobs</option>
+              <option value="component">Parts</option>
+              <option value="engine">Engines</option>
+            </select>
+            <select
+              aria-label="Filter by system"
+              value={system}
+              onChange={(event) => setSystem(event.target.value)}
+            >
+              <option value="all">All systems</option>
+              {systems.map((name) => (
+                <option key={name} value={name}>
+                  {name.replace(/-/g, ' ')}
+                </option>
+              ))}
+            </select>
+            {filtered ? (
+              <button
+                className="wr-button"
+                type="button"
+                onClick={() => {
+                  setQuery('');
+                  setKind('all');
+                  setSystem('all');
+                }}
+              >
+                Clear filters
+              </button>
+            ) : null}
+          </div>
+
+          {results.length ? (
+            <>
+              <p className="wr-result-count">
+                {results.length} of {entries.length} entries
+              </p>
+              <ul className="wr-rows">
+                {results.map((entry) => (
+                  <li className="wr-row" key={`${entry.kind}-${entry.id}`} style={systemColor(entry.system)}>
+                    <ResultRow entry={entry} />
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="wr-empty">
+              Nothing matches those filters.{' '}
+              <button
+                className="wr-chip"
+                data-plain=""
+                type="button"
+                onClick={() => {
+                  setQuery('');
+                  setKind('all');
+                  setSystem('all');
+                }}
+              >
+                Show everything
+              </button>
+            </p>
+          )}
+        </section>
+
+        <section className="wr-section" id="wr-coverage" aria-labelledby="wr-coverage-heading">
+          <h2 id="wr-coverage-heading">Named, and deliberately not covered</h2>
+          <p className="wr-lede">
+            These variants share a family name with something in the library and are <em>not</em>{' '}
+            interchangeable with it. Each needs its own configuration record, component inventory and
+            procedures before anything here applies to it.
+          </p>
+          <ul className="wr-excluded">
+            {excluded.map((entry) => (
+              <li key={entry.id}>
+                <b>{entry.variant}</b>
+                {entry.reason} <em>Distinct from {entry.distinctFrom}.</em>
               </li>
             ))}
           </ul>
-        ) : (
-          <p className="wr-empty">
-            Nothing matches those filters. <button className="wr-chip" type="button" onClick={() => { setQuery(''); setKind('all'); setSystem('all'); }}>Show everything</button>
-          </p>
-        )}
+        </section>
 
-        <section className="wr-release">
-          <h2>
+        <section className="wr-release" aria-labelledby="wr-release-heading">
+          <h2 id="wr-release-heading">
             Release {currentRelease.id} · model r{currentRelease.modelRevision} · {currentRelease.date}
           </h2>
           <p>{currentRelease.summary}</p>
-          <p>
+          <p style={{ marginTop: 8 }}>
             Evidence: <StatusPill status={currentRelease.evidenceStatus} /> · mechanical review:{' '}
-            <StatusPill status={currentRelease.mechanicalReview?.status === 'complete' ? 'reviewed' : 'not-established'} />
+            <StatusPill
+              status={currentRelease.mechanicalReview?.status === 'complete' ? 'reviewed' : 'not-established'}
+            />
             . {currentRelease.mechanicalReview?.note}
           </p>
-          <h2 style={{ marginTop: 14 }}>Unresolved gaps ({currentRelease.unresolvedGaps.length})</h2>
+          <h2 style={{ marginTop: 16 }}>Unresolved gaps ({currentRelease.unresolvedGaps.length})</h2>
           <ul>
             {currentRelease.unresolvedGaps.map((gap, index) => (
               <li key={index}>{gap}</li>
             ))}
           </ul>
-          <p style={{ marginTop: 14 }}>
-            Wrenchwise is independent of Lexus and Toyota. Factory service information:{' '}
+          <p style={{ marginTop: 16 }}>
+            Wrenchwise is independent of any manufacturer. Factory service information for the engines
+            currently in the library:{' '}
             <a href="https://techinfo.toyota.com/" rel="noreferrer noopener" target="_blank">
               techinfo.toyota.com
             </a>
@@ -237,13 +295,83 @@ export default function IndexPage() {
   );
 }
 
+function EngineCard({ entry }: { entry: CoveredEngine }) {
+  const { engine, jobs } = entry;
+  return (
+    <li className="wr-engine">
+      <div className="wr-engine-head">
+        <h3>{engine.label}</h3>
+        <StatusPill
+          status={entry.status === 'jobs' ? 'reviewed' : 'not-established'}
+          prefix={entry.status === 'jobs' ? undefined : 'no jobs'}
+        />
+      </div>
+
+      <dl>
+        <dt>Code</dt>
+        <dd>
+          {engine.code} · {engine.variant}
+        </dd>
+        <dt>Recorded in</dt>
+        <dd>
+          {entry.configurations.length
+            ? entry.configurations
+                .map((configuration) => `${configuration.label} · ${configuration.market} · ${configuration.steering}`)
+                .join('; ')
+            : 'No configuration record yet'}
+        </dd>
+        <dt>Layout</dt>
+        <dd>{engine.layout ?? '—'}</dd>
+        <dt>Components</dt>
+        <dd>{entry.componentCount} with geometry</dd>
+      </dl>
+
+      <div className="wr-systems">
+        {entry.systems.map((name) => (
+          <span className="wr-sys" key={name} style={systemColor(name)}>
+            {name.replace(/-/g, ' ')}
+          </span>
+        ))}
+      </div>
+
+      {jobs.length ? (
+        <ul className="wr-jobs">
+          {jobs.map((job) => (
+            <li key={job.id}>
+              <a className="wr-job" href={guideHref(job.id)} style={systemColor(job.system)}>
+                {job.title}
+                <small>
+                  {job.steps.length} steps ·{' '}
+                  {job.contentStatus === 'verified' ? 'verified' : 'educational overview'}
+                </small>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p style={{ margin: 0, fontSize: 13, color: 'var(--ink-faint)' }}>
+          Component reference only. No procedure has been written for this engine yet.
+        </p>
+      )}
+    </li>
+  );
+}
+
 function ResultRow({ entry }: { entry: SearchEntry }) {
+  const label = (
+    <>
+      <span className="wr-row-label">
+        <span className="wr-kind">{KIND_LABEL[entry.kind]}</span>
+        {entry.label}
+      </span>
+    </>
+  );
+
   if (entry.kind === 'job') {
     const procedure = proceduresById.get(entry.id);
     return (
       <a href={guideHref(entry.id)}>
-        <span className="wr-kind">{KIND_LABEL[entry.kind]}</span>
-        <span className="wr-row-label">{entry.label}</span>
+        {label}
         <StatusPill status={entry.status} />
         <span className="wr-row-detail">
           {entry.detail}
@@ -253,35 +381,27 @@ function ResultRow({ entry }: { entry: SearchEntry }) {
     );
   }
 
-  if (entry.kind === 'component' && entry.procedureId && entry.stepId) {
+  if (entry.kind === 'engine') {
     return (
-      <a href={guideHref(entry.procedureId, { step: entry.stepId, part: entry.id })}>
-        <span className="wr-kind">{KIND_LABEL[entry.kind]}</span>
-        <span className="wr-row-label">{entry.label}</span>
-        <StatusPill prefix="identity" status={entry.status} />
+      <a href="#wr-engines-heading">
+        {label}
+        <StatusPill status="reviewed" prefix="reference" />
         <span className="wr-row-detail">{entry.detail}</span>
       </a>
     );
   }
 
-  if (entry.kind === 'component') {
-    const procedure = procedures[0];
-    return (
-      <a href={guideHref(procedure.id, { part: entry.id })}>
-        <span className="wr-kind">{KIND_LABEL[entry.kind]}</span>
-        <span className="wr-row-label">{entry.label}</span>
-        <StatusPill prefix="identity" status={entry.status} />
-        <span className="wr-row-detail">{entry.detail} · not used by a procedure step</span>
-      </a>
-    );
-  }
-
+  const target = entry.procedureId
+    ? guideHref(entry.procedureId, entry.stepId ? { step: entry.stepId, part: entry.id } : { part: entry.id })
+    : guideHref(procedures[0].id, { part: entry.id });
   return (
-    <a href={guideHref(procedures[0].id, { step: 'preparation' })}>
-      <span className="wr-kind">{KIND_LABEL[entry.kind]}</span>
-      <span className="wr-row-label">{entry.label}</span>
-      <StatusPill status="reference" />
-      <span className="wr-row-detail">{entry.detail}</span>
+    <a href={target}>
+      {label}
+      <StatusPill prefix="identity" status={entry.status} />
+      <span className="wr-row-detail">
+        {entry.detail}
+        {entry.stepId ? '' : ' · not used by a procedure step'}
+      </span>
     </a>
   );
 }

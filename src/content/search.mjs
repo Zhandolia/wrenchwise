@@ -70,7 +70,7 @@ export function buildSearchIndex({ procedures, inventories, engines, configurati
         kind: 'component',
         id: component.id,
         label: component.name,
-        detail: `${component.system} · ${component.kind}${engine ? ` · ${engine.label}` : ''}`,
+        detail: `${component.system.replace(/-/g, ' ')} · ${component.kind}${engine ? ` · ${engine.label}` : ''}`,
         system: component.system,
         status: component.verification.identity.status,
         procedureId: step?.procedure.id,

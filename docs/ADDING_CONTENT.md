@@ -59,6 +59,13 @@ required and must have at least one entry: name the variants that share the
 family name but differ in parts, accessory layout or procedure, and say why.
 This is what stops "it's a 2JZ" from becoming "the parts are the same".
 
+These entries are not just documentation. The library page renders them as the
+"named, and deliberately not covered" list, with your reason as the
+explanation. Equally, adding an engine with a component inventory makes it
+appear as a card in the library — with the configurations it is installed in,
+its systems and its jobs — with no code change. Nothing on that page is written
+per engine.
+
 `frame` defines the coordinate system all geometry uses: metres, with
 `x` engine left, `y` up and `z` forward along the crankshaft toward the timing
 drive. Keep it identical across engines unless you have a reason not to.

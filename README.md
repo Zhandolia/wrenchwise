@@ -1,12 +1,14 @@
 # Wrenchwise
 
-An interactive mechanical reference for under-the-hood work. The flow is:
+An interactive mechanical reference for engines, their components, and the jobs done on them. The flow is:
 
-**configuration → job → preparation → steps linked to 3D components → final checks.**
+**engine → job → preparation → steps linked to 3D components → final checks.**
 
-Release `r1` covers one configuration: the **2JZ-GE VVT-i as installed in a 2000 US-market, left-hand-drive Lexus GS300 (JZS160)**, with a timing-belt walkthrough of 16 steps bound to a selectable 37-component assembly.
+The unit of coverage is an **engine variant in a recorded configuration**, never a model name. A shared family name is not shared parts, so each variant is covered on its own terms or not at all — and the library says which.
 
-> **This is an educational overview, not a verified repair procedure.** No dimension in the model is measured — every length and position is estimated from photograph proportions. No torque, timing or clearance value is entered. No qualified technician has reviewed the sequence, and nothing has been validated on a vehicle. `content/releases.json` lists all eleven open gaps, and the application shows them on the index page.
+The first variant carried all the way through is the **2JZ-GE VVT-i as installed in a 2000 US-market, left-hand-drive Lexus GS300 (JZS160)**, with a 16-step timing-belt walkthrough bound to a selectable 37-component assembly. That is the first entry in the library, not the subject of the project; adding the next engine is a content change, documented in [docs/ADDING_CONTENT.md](docs/ADDING_CONTENT.md).
+
+> **This is an educational overview, not a verified repair procedure.** No dimension in the model is measured — every length and position is estimated from photograph proportions. No torque, timing or clearance value is entered. No qualified technician has reviewed the sequence, and nothing has been validated on a vehicle. `content/releases.json` lists all eleven open gaps, and the application prints them on the library page.
 
 **Website:** https://zhandolia.github.io/wrenchwise/
 
@@ -16,9 +18,21 @@ GitHub Pages builds and publishes this repository on every push to `main`, using
 
 | Route | What it is |
 | --- | --- |
-| `/` | Jobs & parts index: configuration line, search across jobs, parts and engines, resume card, release record with its open gaps |
+| `/` | The library: engine cards with the vehicles each is recorded in and the jobs available, search across jobs, parts and engines, a resume card, the variants deliberately not covered, and the release record with its open gaps |
 | `/guide/` | Procedure workspace: contents, instructions and the 3D assembly together on desktop; Guide and 3D tabs on a phone |
 | `/archive/` | The earlier exploration workspace and its studies, kept working at their own routes |
+
+Both the engine cards and the "named, and deliberately not covered" list are derived from content: an engine appears once it has a component inventory, and every variant an engine's `notEquivalentTo` rules out becomes a coverage entry with its reason. Nothing on the library page is written per engine.
+
+## Interface
+
+Two surfaces, deliberately different. A **light reading column** holds the text you work from, and a **dark stage** holds the model — the contrast is the main focus device, and it is what makes silver and cast finishes read as metal rather than as shadow. Within the reading column exactly one thing is large: the step you are on.
+
+- A **phase rail** across the top shows the shape of the job (access → positioning → removal → inspection → installation → tensioning → verification → reassembly) and names the phase you are in.
+- Instructions are the biggest body text on the page. Tools, parts, sources, gaps and the assembly delta fold away until asked for; cautions and completion checks never do.
+- The action bar is pinned to the bottom of the column, so what to do next is always on screen.
+- Systems are colour-coded consistently across the part chips, the part callout and the generated illustration, so "the blue ones" means the same thing wherever you are looking.
+- Selecting a part opens a callout over the stage rather than a panel that eats the column.
 
 Each step drives the assembly state, and the assembly drives the instructions: clicking a component in 3D opens it in the inspector and puts it in the URL; clicking a component chip in the instructions selects it in the model. Procedural removal (what the step physically takes off, folded cumulatively over the steps so far) is rendered and labelled separately from viewing aids (hide, isolate, ghost, explanatory separation), so an exploded view is never mistaken for a removal sequence.
 
