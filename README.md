@@ -1,21 +1,59 @@
 # Wrenchwise
 
-An open-source 3D automotive learning workshop. The first experience is an illustrative inline-six anatomy exploration for the 2000 Lexus GS 300 concept. **It is not a dimensionally accurate 2JZ-GE model or a verified repair procedure.**
+An interactive mechanical reference for under-the-hood work. The flow is:
+
+**configuration → job → preparation → steps linked to 3D components → final checks.**
+
+Release `r1` covers one configuration: the **2JZ-GE VVT-i as installed in a 2000 US-market, left-hand-drive Lexus GS300 (JZS160)**, with a timing-belt walkthrough of 16 steps bound to a selectable 37-component assembly.
+
+> **This is an educational overview, not a verified repair procedure.** No dimension in the model is measured — every length and position is estimated from photograph proportions. No torque, timing or clearance value is entered. No qualified technician has reviewed the sequence, and nothing has been validated on a vehicle. `content/releases.json` lists all eleven open gaps, and the application shows them on the index page.
 
 **Website:** https://zhandolia.github.io/wrenchwise/
 
-GitHub Pages builds and publishes this repository on every push to `main`, using `.github/workflows/pages.yml`. The public site runs entirely on GitHub Pages, with no dependency on ChatGPT hosting.
+GitHub Pages builds and publishes this repository on every push to `main`, using `.github/workflows/pages.yml`.
 
-## Included
+## The primary flow
 
-- Three.js orbit, zoom, touch, keyboard controls and named component selection.
-- Shared GS 300 vehicle/engine assembly, removable hood, timing cover visibility, exploded assembly and chapter-linked highlighting.
-- Six anatomy chapters, parts-planning checklist and link to Toyota/Lexus TIS.
-- Lexus sedan/SUV collection with explicit model-needed states.
-- Browser-local GLB imports, source/fitment/license metadata, and persistent local vehicle/chapter notes using IndexedDB. Files and notes stay on the current browser/device; they are not shared or synced. Clearing site storage removes them.
-- GLB 2.0 upload validation, 20 MB size limit, self-contained assets, no required compression extensions, vertex/node limits.
-- Feature-detected WebMCP tools for reading workshop state and navigating the demo chapters.
-- MIT license for application code and original procedural geometry. Dependencies and uploaded assets keep their own licenses.
+| Route | What it is |
+| --- | --- |
+| `/` | Jobs & parts index: configuration line, search across jobs, parts and engines, resume card, release record with its open gaps |
+| `/guide/` | Procedure workspace: contents, instructions and the 3D assembly together on desktop; Guide and 3D tabs on a phone |
+| `/archive/` | The earlier exploration workspace and its studies, kept working at their own routes |
+
+Each step drives the assembly state, and the assembly drives the instructions: clicking a component in 3D opens it in the inspector and puts it in the URL; clicking a component chip in the instructions selects it in the model. Procedural removal (what the step physically takes off, folded cumulatively over the steps so far) is rendered and labelled separately from viewing aids (hide, isolate, ghost, explanatory separation), so an exploded view is never mistaken for a removal sequence.
+
+Progress — preparation checklist, per-step completion checks, final checks and position — is stored in `localStorage` per procedure **and revision**. A revision change, a corrupt value or an unknown check id starts clean rather than restoring the wrong step.
+
+Nothing in the interface states a mechanical fact without its source and status beside it. Components carry five independent verification axes (identity, dimensions, placement, fitment, procedure); a specification with no established value shows the empty slot, its status and where to look it up. Sources recorded as unauthorized mirrors are named for traceability and never linked.
+
+## How the content and the model fit together
+
+```
+content/            configurations, engines, component inventory, procedures,
+                    sources, releases — validated against content/schema/
+modeling/wrenchwise/ recipes.json (shape + material per component)
+                     build_assembly.mjs  → public/assets/<engine>/r<n>/   (served, CI-verified)
+                     build_timing_assembly.py → Blender authoring scene
+src/                content catalog, procedure state, search, Three.js controller, UI
+```
+
+Content is discovered with a glob, so adding a configuration, engine or procedure needs no code change. See **[docs/ADDING_CONTENT.md](docs/ADDING_CONTENT.md)** for the full recipe, including the evidence rules the validators enforce, and **[modeling/wrenchwise/README.md](modeling/wrenchwise/README.md)** for the geometry pipeline.
+
+Release `r1` assets: `core.glb` (33 meshes, engine structure and timing drive, loaded first) and `access.glb` (11 meshes, the assemblies removed for access), 8,456 triangles and 697 KB in total, plus `assembly.json` and a generated `layout.svg` used as the illustration when WebGL is unavailable.
+
+## Checks
+
+```sh
+node scripts/validate-content.mjs                    # schemas, cross-references, release record
+node modeling/wrenchwise/build_assembly.mjs --check  # the export is reproducible from the inventory
+node scripts/validate-assets.mjs                     # ids, scale, materials, budgets, procedure coverage
+node --test tests/*.test.mjs                         # needs Node 22.6+ for .ts imports; CI uses 24
+npx tsc --noEmit
+npm run build:pages && node scripts/validate-pages.mjs
+npx playwright test
+```
+
+Software checks confirm navigation, component mapping, visibility, camera framing, procedure state, persistence, mobile behaviour and loading failures. **They establish nothing about mechanical accuracy.** See the content gate below.
 
 ## Develop the GitHub Pages site
 
@@ -28,7 +66,7 @@ node scripts/validate-pages.mjs
 npm run preview:pages
 ```
 
-The default base path is `/wrenchwise/`. Direct links to `/catalog/`, `/assembly/`, `/components/` and `/research/` have real static directory entrypoints beneath that prefix. Set `PAGES_BASE_PATH=/` only when deploying to a domain root. `dist-pages/` contains only public assets and the static application; server routes, credentials and the earlier database are not included.
+The default base path is `/wrenchwise/`. Direct links to `/guide/`, `/archive/`, `/catalog/`, `/assembly/`, `/components/` and `/research/` have real static directory entrypoints beneath that prefix. Set `PAGES_BASE_PATH=/` only when deploying to a domain root. `dist-pages/` contains only public assets and the static application; server routes, credentials and the earlier database are not included.
 
 ## Legacy server development
 
@@ -45,21 +83,31 @@ Apply the initial migration once per local database. Do not replay it. Later sch
 
 ## Architecture
 
-React 19 / TypeScript, Vite, Three.js and Shadcn/Radix UI. `pages/main.tsx` routes the static application; `lib/app-path.ts` resolves repository-relative URLs, and `lib/workshop-client.ts` provides IndexedDB storage for GitHub Pages. A legacy Vinext / Cloudflare Worker server with D1 + R2 is retained for reference. `app/page.tsx` owns the workshop interface, `components/assembly-viewer.tsx` renders the GS 300 asset, `components/workshop-viewer.tsx` renders community uploads, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, and `app/api/` contains storage routes. The viewer renders on camera/scene changes and caps the assembly pixel ratio at 1.6. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
+React 19 / TypeScript, Vite, Three.js and Shadcn/Radix UI. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the repository audit, the content model and the prioritized plan.
+
+`pages/main.tsx` routes the static application; `lib/app-path.ts` resolves repository-relative URLs. The primary flow lives in `src/`: `src/content/catalog.ts` loads and indexes the content, `src/content/procedure-state.mjs` computes the scene state at a step and the resumable progress, `src/content/search.mjs` is the search, `src/viewer/assembly-scene.ts` is the framework-free Three.js controller, and `src/ui/` is the interface.
+
+The archive keeps its own code: `app/page.tsx` owns the earlier workshop interface, `components/assembly-viewer.tsx` renders the GS 300 asset, `components/workshop-viewer.tsx` renders community uploads, `lib/workshop-data.ts` holds vehicle/chapter content, `lib/glb.ts` checks assets, `lib/workshop-client.ts` provides IndexedDB storage, and `app/api/` contains the retained Vinext / Cloudflare Worker storage routes. The viewer renders on camera/scene changes and caps the assembly pixel ratio at 1.6. Zero lag on all devices is not guaranteed. Textures must be optimized; file/vertex caps do not guarantee a fixed GPU memory budget.
 
 The earlier owner-private server build remains in the source for reference, but it is not part of the GitHub Pages deployment. Its D1/R2 records have not been copied into the public site. GitHub Pages has no shared write API. Restoring public community submissions requires a separately configured backend with identity, moderation and ownership controls.
 
-## Add a model
-
-Import a self-contained, uncompressed GLB via **Import a model**. The model is stored locally in the browser. To add a model for everyone, contribute licensed assets and source metadata through a repository pull request. Include year, engine, market, original source/creator and asset license. Use named meshes, embedded textures preferably <= 2K, fewer than one million vertices and 1,500 nodes. Imported geometry can be inspected; guide authoring and mapping are not included in this first version. No upload is automatically verified. Uploads and comments are not bundled in the source archive.
-
 ## Repair-grade content gate
 
-Before publishing a real repair guide: obtain licensed model-specific CAD/scans; verify fitment by year/engine/market; capture fastener and connector locations; author sequencing, tools, parts, torque and timing specifications against authorized service information; obtain qualified mechanic review and validate on a physical vehicle; attach reviewer/source/version records. Never label a guide verified based solely on this demo.
+This applies to the primary flow as much as to the archive. Before publishing a real repair guide: obtain licensed model-specific CAD/scans; verify fitment by year/engine/market; capture fastener and connector locations; author sequencing, tools, parts, torque and timing specifications against authorized service information; obtain qualified mechanic review and validate on a physical vehicle; attach reviewer/source/version records. Never label a guide verified based solely on this demo. The validators enforce part of this: `validate-content` refuses a procedure marked `verified` unless `content/releases.json` records a completed mechanical review, and refuses a `measured` dimension whose sources do not permit dimensional use.
 
 Factory service information reference: https://techinfo.toyota.com/ . No factory manual pages, copied procedures, reference photographs or Lexus/Toyota CAD are redistributed. Original component studies cite manufacturer information and distinguish sourced quantities from estimated geometry. Wrenchwise is independent of Lexus/Toyota.
 
 See STARTER.md for the underlying framework and hosting integration.
+
+---
+
+# Archive
+
+Everything below documents the earlier exploration workspace, now served at `/archive/` and its own routes. It is kept working, and its research is cited by the source registry, but it is not part of the primary flow.
+
+## Add a model
+
+Import a self-contained, uncompressed GLB via **Import a model**. The model is stored locally in the browser. To add a model for everyone, contribute licensed assets and source metadata through a repository pull request. Include year, engine, market, original source/creator and asset license. Use named meshes, embedded textures preferably <= 2K, fewer than one million vertices and 1,500 nodes. Imported geometry can be inspected; guide authoring and mapping are not included in this first version. No upload is automatically verified. Uploads and comments are not bundled in the source archive.
 
 ## GS 300 model development
 

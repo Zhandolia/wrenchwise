@@ -15,7 +15,11 @@
     "build:pages": "node scripts/build-pages.mjs",
     "dev:pages": "vite --config vite.pages.config.ts",
     "preview:pages": "vite preview --config vite.pages.config.ts",
-    "test:browser": "playwright test"
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "build:assembly": "node modeling/wrenchwise/build_assembly.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "validate:assets": "node modeling/wrenchwise/build_assembly.mjs --check && node scripts/validate-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

@@ -54,23 +54,24 @@ flowchart LR
     P[procedures/]
     R[releases.json]
   end
-  subgraph Modeling["modeling/wrenchwise · Blender 4.5 + Python"]
-    L[layout.json · estimated parameters]
-    B[build_timing_assembly.py]
+  subgraph Modeling["modeling/wrenchwise"]
+    L[recipes.json · shape + material per component]
+    B[build_assembly.mjs · Node exporter]
+    BP[build_timing_assembly.py · Blender authoring]
   end
   subgraph Assets["public/assets/<engine>/<revision>/"]
     G1[core.glb]
     G2[access.glb]
     M[assembly.json manifest]
-    V[views/*.png]
+    V[layout.svg illustration]
   end
   subgraph App["src/ · React + TypeScript + Three.js"]
     D[content loader + state]
     SC[AssemblyScene]
     UI[Reference-book UI]
   end
-  I --> B
-  L --> B
+  I --> B & BP
+  L --> B & BP
   B --> G1 & G2 & M & V
   Content --> D
   Assets --> SC
@@ -109,39 +110,55 @@ rendered differently and listed separately in the UI.
 
 ### 2.3 Modeling pipeline
 
-`modeling/wrenchwise/build_timing_assembly.py` runs headless in Blender 4.5. It reads the component inventory and
-`layout.json`, then produces:
+Two builders read the same two inputs — the component inventory (every dimension and position, each with its
+evidence status) and `modeling/wrenchwise/recipes.json` (which shape and material each component uses):
 
-- Authoring output (`.blend`, not served) and browser output (`core.glb` for the timing drive, `access.glb` for
-  parts removed for access). Each output gets a manifest with revision, triangle counts and a SHA-256 hash.
-- One Blender object per selectable component. The object name equals the mesh id, and glTF `extras` carry
-  `componentId`, `meshId` and `modelRevision`. Repeated fasteners share mesh data, so the exporter de-duplicates them.
-- Neutral-lit review renders that also act as the static illustration fallback.
+- `build_assembly.mjs` (Node) produces the browser assets: `core.glb` for the engine structure and timing drive,
+  `access.glb` for the assemblies removed for access, `assembly.json` (hashes, triangle counts, per-component
+  records, build notes) and `layout.svg`, the front-elevation schematic used as the illustration fallback. It runs
+  in CI with `--check`, so a content change that was never re-exported fails the build.
+- `build_timing_assembly.py` runs headless in Blender 4.5 for authoring work that needs modifiers or rendering. Its
+  shape vocabulary mirrors `lib/primitives.mjs` vertex for vertex. The scene is authored directly in the glTF frame,
+  so the exporter runs with `export_yup=False`.
 
-`layout.json` holds every geometric parameter with an evidence status. Values marked `estimated` came from
-photograph proportions and can't be used for dimensional claims. The validator rejects any "measured" status that
-has no measurement source.
+One glTF node per selectable component mesh. The node name equals the mesh id, and `extras` carry `componentId`,
+`meshId` and `modelRevision`. No glTF extensions are used, so no decoder is required to open the asset.
+
+The recipe file contains no dimensions. Its constants — wall thicknesses, tooth pitch, rib pitch, segment counts —
+are tessellation choices and are reported as such in the manifest, never as part data. `validate-content` rejects a
+`measured` dimension status whose sources do not permit dimensional use.
 
 ### 2.4 Application
 
-- `pages/main.tsx` routes `/` (the reference-book index) and `/guide/` (procedure workspace). Legacy routes are unchanged.
-- `src/viewer/assembly-scene.ts` is a framework-free Three.js controller. It handles loading, orbit, camera presets,
-  raycast, highlight, isolate, ghost, visibility and explanatory explode. React talks to it through a small typed API.
-- `src/ui/*` holds the white, minimal UI. Desktop shows contents, instructions and 3D together. Mobile has Guide/3D tabs.
-- Progress persists in `localStorage` under a key that includes the procedure id and revision. An incompatible revision
-  starts clean rather than restoring the wrong step.
+- `pages/main.tsx` routes `/` (the reference-book index) and `/guide/` (procedure workspace). The earlier exploration
+  workspace moved to `/archive/`; every other legacy route is unchanged and still linked from there.
+- `src/content/catalog.ts` discovers content with `import.meta.glob`, so adding a configuration, engine or procedure
+  needs no code change. `src/content/procedure-state.mjs` and `search.mjs` hold the pure logic, so both are unit
+  tested in Node without a browser.
+- `src/viewer/assembly-scene.ts` is a framework-free Three.js controller: progressive layer loading, orbit, camera
+  presets that frame the current step's components, raycast selection, highlight, isolate with ghosting, explanatory
+  explode, keyboard and touch control. A neutral `RoomEnvironment` supplies the reflections metals need — without it
+  every metallic material renders black. Materials are cloned per mesh so highlighting cannot leak between components.
+- `src/ui/*` holds the white, minimal UI. Desktop shows contents, instructions and 3D together. Below 960px the guide
+  becomes Guide and 3D tabs with large controls. Loading, error, retry and no-WebGL states all fall back to the
+  generated illustration plus the full step text.
+- Progress persists in `localStorage` under a key that includes the procedure id and revision. An incompatible
+  revision, a corrupt value or an unknown check id starts clean rather than restoring the wrong step.
 
 ## 3. Prioritized plan
 
-| # | Deliverable | Acceptance |
-| --- | --- | --- |
-| 1 | This document | Audit and decisions recorded |
-| 2 | Schemas, source registry, configuration, engine variant, inventory | `validate-content` passes, every component traceable to sources, gaps explicit |
-| 3 | Prototype: timing-belt procedure ↔ selectable assembly | Step changes drive scene state, two-way selection |
-| 4 | Blender-built timing-drive geometry r1 + review renders | `validate-assets`: ids, scale, materials, budgets |
-| 5 | Responsive UI, persistence, search, text alternative | Desktop and mobile flows, resume after reload |
-| 6 | Unit, content, asset and browser tests, plus CI/Pages verification | Green CI, deployed SHA verified |
-| 7 | `docs/ADDING_CONTENT.md` | A new engine/procedure can be added without code changes |
+| # | Deliverable | Acceptance | Status |
+| --- | --- | --- | --- |
+| 1 | This document | Audit and decisions recorded | done |
+| 2 | Schemas, source registry, configuration, engine variant, inventory | `validate-content` passes, every component traceable to sources, gaps explicit | done — 6 schemas, 9 sources, 37 components |
+| 3 | Prototype: timing-belt procedure ↔ selectable assembly | Step changes drive scene state, two-way selection | done — 16 steps, 26 components bound |
+| 4 | Timing-drive geometry r1 + illustration | `validate-assets`: ids, scale, materials, budgets | done — 44 meshes, 8,456 triangles, 697 KB over two layers |
+| 5 | Responsive UI, persistence, search, text alternative | Desktop and mobile flows, resume after reload | done |
+| 6 | Unit, content, asset and browser tests, plus CI/Pages verification | Green CI, deployed SHA verified | done — 3 new unit suites, 6 new browser specs, 3 new CI steps |
+| 7 | `docs/ADDING_CONTENT.md` | A new engine/procedure can be added without code changes | done — content discovered by glob |
+
+Release contents, evidence status and open gaps for each release are recorded in `content/releases.json` and
+rendered on the index page.
 
 ### Next after r1 (requires physical evidence)
 

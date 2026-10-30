@@ -6,8 +6,12 @@ import {appPath} from '../lib/app-path';
 import LoadingBoundary from '../components/loading-boundary';
 import '../app/globals.css';
 import "../app/garage-theme.css";
+// Primary flow: the reference-book index and the procedure workspace.
+const Index=lazy(()=>import('../src/ui/index-page'));
+const Guide=lazy(()=>import('../src/ui/guide-page'));
+// Archive: the earlier exploration workspace, kept working at its own routes.
+const Archive=lazy(()=>import('../app/page'));
 const Workshop=lazy(()=>import('../app/workshop/page'));
-const Home=lazy(()=>import('../app/page'));
 const Catalog=lazy(()=>import('../app/catalog/page'));
 const Assembly=lazy(()=>import('../app/assembly/page'));
 const Components=lazy(()=>import('../app/components/page'));
@@ -15,9 +19,9 @@ const Library=lazy(()=>import('../app/library/page'));
 const Research=lazy(()=>import('../app/research/page'));
 const base=appPath('/');
 const route=location.pathname.slice(base.length).replace(/\/$/,'');
-const routes:Record<string,typeof Home>={'':Home,workshop:Workshop,catalog:Catalog,assembly:Assembly,components:Components,research:Research,library:Library};
+const routes:Record<string,typeof Index>={'':Index,guide:Guide,archive:Archive,workshop:Workshop,catalog:Catalog,assembly:Assembly,components:Components,research:Research,library:Library};
 const Page=routes[route];
 const hot = (import.meta as ImportMeta & {hot?:HotContext}).hot;
 const root = hot?.data.root ?? createRoot(document.getElementById('root')!);
 if (hot) hot.dispose(data => {data.root = root;});
-root.render(<LoadingBoundary><Suspense fallback={<main aria-busy="true">Loading workshop…</main>}>{Page?<Page/>:<main><h1>Page not found</h1><a href={base}>Open the workshop</a></main>}</Suspense></LoadingBoundary>);
+root.render(<LoadingBoundary><Suspense fallback={<main aria-busy="true">Loading…</main>}>{Page?<Page/>:<main><h1>Page not found</h1><a href={base}>Open the reference</a></main>}</Suspense></LoadingBoundary>);

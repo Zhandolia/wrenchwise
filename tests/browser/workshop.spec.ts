@@ -71,7 +71,7 @@ test('compressed personal import stays selected on reload',async({page})=>{
 
 test('phone layouts fit the viewport',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const route of ['','library/','assembly/?lesson=engine-bay-orientation','assembly/?lesson=timing-belt','catalog/','workshop/?vehicle=gs300']){
+ for(const route of ['','guide/','archive/','library/','assembly/?lesson=engine-bay-orientation','assembly/?lesson=timing-belt','catalog/','workshop/?vehicle=gs300']){
   await page.goto(route);await expect(page.locator('h1')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
  }
@@ -86,8 +86,8 @@ test('a failed route chunk offers a usable reload recovery',async({page})=>{
  await expect(page.getByRole('heading',{name:'Choose a car. Understand how it works.'})).toBeVisible();
 });
 
-test('homepage leads directly into mechanical jobs while retaining the reference archive',async({page})=>{
- await page.goto('');
+test('the archive index still leads into the earlier mechanical studies',async({page})=>{
+ await page.goto('archive/');
  await expect(page.locator('h1')).toHaveText('Guides & parts');
  await page.getByRole('textbox',{name:'Search guides and parts'}).fill('water');
  await expect(page.locator('.reference-row')).toHaveCount(1);
@@ -100,7 +100,7 @@ test('homepage leads directly into mechanical jobs while retaining the reference
  await page.getByRole('link',{name:/Timing-belt replacement 8 sections/}).click();
  await expect(page).toHaveURL(/assembly\/\?lesson=timing-belt/);
  await expect(page.getByRole('heading',{name:'Timing-belt replacement',exact:true})).toBeVisible();
- await page.getByRole('link',{name:'Guides & parts',exact:true}).click();
+ await page.getByRole('link',{name:'Archive index',exact:true}).click();
  await page.getByRole('link',{name:'Vehicle reference archive',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Your car. Your next discovery.'})).toBeVisible();
 });
@@ -132,7 +132,7 @@ test('timing walkthrough synchronizes geometry, allows inspection and restores r
 });
 
 test('legacy vehicle links still open the selected workshop',async({page})=>{
- await page.goto('?vehicle=gs300');
+ await page.goto('archive/?vehicle=gs300');
  await expect(page.locator('.vehicle-picker')).toContainText('GS 300');
  await expect(page.locator('canvas')).toBeVisible();
 });
@@ -174,7 +174,7 @@ test('phone guide keeps instructions first and opens the selected part in the 3D
  await expect(page.locator('.mechanical-part h2')).toHaveText('Hydraulic timing-belt tensioner');
  await page.getByRole('button',{name:'Guide',exact:true}).click();
  await expect(guide.getByRole('heading',{name:'Removal',exact:true})).toBeVisible();
- await page.getByRole('link',{name:'Guides & parts',exact:true}).click();
+ await page.getByRole('link',{name:'Archive index',exact:true}).click();
  await expect(page.locator('.reference-resume')).toContainText('Removal');
  await page.getByRole('textbox',{name:'Search guides and parts'}).fill('does-not-exist');
  await expect(page.getByRole('heading',{name:'No matching guides'})).toBeVisible();

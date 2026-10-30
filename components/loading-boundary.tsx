@@ -11,7 +11,7 @@ export default class LoadingBoundary extends Component<{children: ReactNode}, {f
       <h2>This workspace couldn’t load.</h2>
       <p>Your saved notes and local models are kept on this device. Reload to fetch the current application files.</p>
       <button className="secondary-btn" onClick={() => window.location.reload()}>Reload workspace</button>
-      <a href={appPath('/')}>Return to workshop</a>
+      <a href={appPath('/')}>Return to the reference</a>
     </section>;
   }
 }

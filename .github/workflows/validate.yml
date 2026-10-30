@@ -16,6 +16,12 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci --no-audit --no-fund
+      - name: Content schemas, cross-references and release record
+        run: node scripts/validate-content.mjs
+      - name: Assembly export is reproducible from the inventory
+        run: node modeling/wrenchwise/build_assembly.mjs --check
+      - name: Exported assembly matches the inventory and the procedures
+        run: node scripts/validate-assets.mjs
       - run: node scripts/migrate-s160-evidence.mjs --check
       - run: node scripts/build-vehicle-catalog.mjs --check
       - run: node --test tests/*.test.mjs

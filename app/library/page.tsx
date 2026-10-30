@@ -46,7 +46,7 @@ export default function VehiclesPage() {
   };
   const clear = () => {setQuery(''); setMake('All'); setBody('All');};
   return <div className="assembly-app">
-    <header className="assembly-header"><a className="brand" href={appPath('/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav aria-label="Main navigation"><a href={appPath('/')}>Home</a><a aria-current="page" href={appPath('/library')}>Choose vehicle</a><a href={appPath('/components')}>Explore systems</a></nav></header>
+    <header className="assembly-header"><a className="brand" href={appPath('/archive/')}><span className="brand-mark"><Wrench size={21}/></span>wrenchwise<span className="alpha">ALPHA</span></a><nav aria-label="Main navigation"><a href={appPath('/archive/')}>Archive index</a><a aria-current="page" href={appPath('/library')}>Choose vehicle</a><a href={appPath('/components')}>Explore systems</a></nav></header>
     <main className="model-library">
       <div className="eyebrow orange">YOUR INTERACTIVE WORKSHOP</div>
       <h1>Choose a car. Understand how it works.</h1>
