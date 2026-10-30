@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wrenchwise/engine.schema.json",
+  "title": "Engine variant",
+  "description": "An engine code plus its variant and the chassis it is recorded in. A family name alone is never an engine variant: notEquivalentTo records the variants this one must not be confused with.",
+  "type": "object",
+  "required": ["id", "family", "code", "variant", "label", "installedIn", "notEquivalentTo", "frame", "sourceIds"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "family": { "type": "string", "minLength": 1 },
+    "code": { "type": "string", "minLength": 1 },
+    "variant": { "type": "string", "minLength": 1 },
+    "label": { "type": "string", "minLength": 1 },
+    "installedIn": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "layout": { "type": "string" },
+    "publishedSpecs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "value", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string" },
+          "label": { "type": "string" },
+          "value": { "type": ["string", "number", "null"] },
+          "unit": { "type": ["string", "null"] },
+          "sourceId": { "type": "string" },
+          "status": { "type": "string", "enum": ["published", "measured", "not-entered"] }
+        }
+      }
+    },
+    "notEquivalentTo": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["variant", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "variant": { "type": "string", "minLength": 1 },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "frame": {
+      "type": "object",
+      "required": ["units", "origin", "axes"],
+      "additionalProperties": false,
+      "properties": {
+        "units": { "type": "string", "enum": ["metres"] },
+        "origin": { "type": "string", "minLength": 1 },
+        "axes": {
+          "type": "object",
+          "required": ["x", "y", "z"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "string" },
+            "y": { "type": "string" },
+            "z": { "type": "string" }
+          }
+        },
+        "handedness": { "type": "string" },
+        "installationNotes": { "type": "string" }
+      }
+    },
+    "sourceIds": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wrenchwise/sources.schema.json",
+  "title": "Source registry",
+  "description": "Every reference used to build content, with its applicable configurations, revision and usage rights. A source may only support the uses listed in permittedUses.",
+  "type": "object",
+  "required": ["reviewedOn", "policy", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "reviewedOn": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "policy": { "type": "string", "minLength": 1 },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source" } },
+    "rejected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reason"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string" },
+          "document": { "type": "string" },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["id", "title", "publisher", "kind", "revision", "applicability", "access", "usageRights", "permittedUses"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "oem-service-manual",
+            "oem-parts-catalog",
+            "manufacturer-specification",
+            "manufacturer-diagram",
+            "photograph",
+            "teardown-video",
+            "physical-measurement",
+            "licensed-cad",
+            "scan",
+            "project-estimate",
+            "unauthorized-mirror"
+          ]
+        },
+        "document": { "type": "string" },
+        "revision": { "type": "string", "minLength": 1 },
+        "applicability": {
+          "type": "object",
+          "required": ["configurationIds"],
+          "additionalProperties": false,
+          "properties": {
+            "configurationIds": { "type": "array", "items": { "type": "string" } },
+            "engineVariantIds": { "type": "array", "items": { "type": "string" } },
+            "notes": { "type": "string" }
+          }
+        },
+        "access": {
+          "type": "object",
+          "required": ["status"],
+          "additionalProperties": false,
+          "properties": {
+            "status": { "type": "string", "enum": ["not-accessed", "inspected", "licensed", "blocked", "withdrawn"] },
+            "inspectedOn": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "via": { "type": "string" },
+            "url": { "type": "string" },
+            "notes": { "type": "string" }
+          }
+        },
+        "usageRights": {
+          "type": "object",
+          "required": ["status", "redistribution"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["licensed-subscription", "licensed", "cc-by", "reference-only", "project-original", "unauthorized-mirror", "unknown"]
+            },
+            "redistribution": { "type": "boolean" },
+            "notes": { "type": "string" }
+          }
+        },
+        "permittedUses": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["identity", "relationship", "appearance", "routing", "placement", "dimensions", "procedure", "specification", "quantity", "part-number"]
+          }
+        }
+      }
+    }
+  }
+}

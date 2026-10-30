@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wrenchwise/procedure.schema.json",
+  "title": "Service procedure",
+  "description": "A job as structured content: preparation, steps bound to component identifiers and assembly state, and final checks. contentStatus must stay 'educational-overview' until a qualified mechanical review and physical validation are recorded.",
+  "type": "object",
+  "required": ["id", "revision", "title", "system", "configurationIds", "engineVariantId", "assembly", "contentStatus", "statusNote", "sources", "tools", "parts", "preparation", "steps", "finalChecks"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "revision": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "system": { "type": "string", "minLength": 1 },
+    "keywords": { "type": "array", "items": { "type": "string" } },
+    "configurationIds": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "engineVariantId": { "type": "string" },
+    "assembly": { "type": "string", "pattern": "^[a-z0-9-]+/r[0-9]+$" },
+    "contentStatus": { "type": "string", "enum": ["educational-overview", "verified"] },
+    "statusNote": { "type": "string", "minLength": 1 },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceRef" } },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "detail", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string", "minLength": 1 },
+          "detail": { "type": "string" },
+          "status": { "$ref": "#/$defs/contentStatus" },
+          "sourceRef": { "$ref": "#/$defs/sourceRef" }
+        }
+      }
+    },
+    "parts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "componentId", "partNumber", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string", "minLength": 1 },
+          "componentId": { "type": ["string", "null"] },
+          "partNumber": { "type": ["string", "null"] },
+          "status": { "type": "string", "enum": ["not-established", "catalog", "confirmed"] },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "preparation": {
+      "type": "object",
+      "required": ["checklist", "cautions"],
+      "additionalProperties": false,
+      "properties": {
+        "checklist": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/check" } },
+        "cautions": { "type": "array", "items": { "$ref": "#/$defs/caution" } }
+      }
+    },
+    "steps": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/step" } },
+    "finalChecks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/check" } }
+  },
+  "$defs": {
+    "contentStatus": {
+      "type": "string",
+      "enum": ["documented", "mirror-derived", "estimated", "not-entered", "verified"]
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": ["sourceId"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": { "type": "string" },
+        "locator": { "type": "string" }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": ["id", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string", "minLength": 1 },
+        "sourceRef": { "$ref": "#/$defs/sourceRef" }
+      }
+    },
+    "caution": {
+      "type": "object",
+      "required": ["level", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "level": { "type": "string", "enum": ["warning", "caution", "info"] },
+        "text": { "type": "string", "minLength": 1 },
+        "status": { "$ref": "#/$defs/contentStatus" },
+        "sourceRef": { "$ref": "#/$defs/sourceRef" }
+      }
+    },
+    "specification": {
+      "type": "object",
+      "required": ["id", "label", "value", "unit", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string", "minLength": 1 },
+        "value": { "type": ["string", "number", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "status": { "$ref": "#/$defs/contentStatus" },
+        "sourceRef": { "$ref": "#/$defs/sourceRef" },
+        "note": { "type": "string" }
+      }
+    },
+    "step": {
+      "type": "object",
+      "required": ["id", "title", "phase", "instructions", "prerequisites", "componentIds", "tools", "replacementParts", "specifications", "view", "cautions", "completionChecks", "sourceRefs", "contentStatus", "gaps"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "phase": {
+          "type": "string",
+          "enum": ["access", "positioning", "removal", "inspection", "installation", "tensioning", "verification", "reassembly"]
+        },
+        "instructions": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "prerequisites": { "type": "array", "items": { "type": "string" } },
+        "componentIds": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "replacementParts": { "type": "array", "items": { "type": "string" } },
+        "specifications": { "type": "array", "items": { "$ref": "#/$defs/specification" } },
+        "view": {
+          "type": "object",
+          "required": ["camera"],
+          "additionalProperties": false,
+          "properties": {
+            "camera": { "type": "string", "enum": ["iso", "front", "front-left", "front-right", "top", "lower-front"] },
+            "remove": { "type": "array", "items": { "type": "string" } },
+            "restore": { "type": "array", "items": { "type": "string" } },
+            "hide": { "type": "array", "items": { "type": "string" } },
+            "highlight": { "type": "array", "items": { "type": "string" } },
+            "explode": { "type": "boolean" }
+          }
+        },
+        "cautions": { "type": "array", "items": { "$ref": "#/$defs/caution" } },
+        "completionChecks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/check" } },
+        "sourceRefs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceRef" } },
+        "contentStatus": { "$ref": "#/$defs/contentStatus" },
+        "gaps": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wrenchwise/configuration.schema.json",
+  "title": "Vehicle configuration",
+  "description": "One vehicle as a mechanic would identify it: model year, market, steering and the installed engine variant. Applicability is never inferred from a shared model name.",
+  "type": "object",
+  "required": ["id", "label", "make", "model", "modelYear", "market", "steering", "engineVariantId", "identificationStatus", "sourceIds"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "label": { "type": "string", "minLength": 1 },
+    "make": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "chassis": { "type": "string" },
+    "generation": { "type": "string" },
+    "modelYear": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+    "market": { "type": "string", "minLength": 1 },
+    "steering": { "type": "string", "enum": ["LHD", "RHD"] },
+    "engineVariantId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "transmission": {
+      "type": "object",
+      "required": ["value", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "value": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["confirmed", "unconfirmed", "not-established"] }
+      }
+    },
+    "identificationStatus": {
+      "type": "string",
+      "enum": ["target-only", "photographed", "inspected", "measured"],
+      "description": "target-only means no physical reference vehicle has been identified."
+    },
+    "identificationNote": { "type": "string" },
+    "unresolvedVariants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "enum": ["open", "resolved"] },
+          "resolution": { "type": "string" }
+        }
+      }
+    },
+    "sourceIds": { "type": "array", "items": { "type": "string" } }
+  }
+}

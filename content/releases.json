@@ -1,0 +1,38 @@
+{
+  "$schema": "./schema/releases.schema.json",
+  "current": "r1",
+  "releases": [
+    {
+      "id": "r1",
+      "date": "2026-10-29",
+      "modelRevision": 1,
+      "configurationIds": ["lexus-gs300-jzs160-2000-us-lhd"],
+      "procedureIds": ["2jz-ge-vvti-timing-belt"],
+      "evidenceStatus": "illustrative",
+      "mechanicalReview": {
+        "status": "none",
+        "note": "No qualified technician has reviewed the sequence, and nothing has been validated on a physical vehicle. The timing-belt content is an educational overview."
+      },
+      "summary": "First complete path: configuration → job → preparation → 16 steps bound to a selectable 2JZ-GE VVT-i timing assembly → final checks. 37 components in the inventory, all 37 exported as selectable geometry across a core and an access layer.",
+      "assets": [
+        { "path": "public/assets/2jz-ge-vvti-jzs160/r1/core.glb", "role": "Engine structure and timing drive; loaded first." },
+        { "path": "public/assets/2jz-ge-vvti-jzs160/r1/access.glb", "role": "Assemblies removed for access; loaded after the core layer." },
+        { "path": "public/assets/2jz-ge-vvti-jzs160/r1/assembly.json", "role": "Export manifest: hashes, budgets, per-component records and build notes." },
+        { "path": "public/assets/2jz-ge-vvti-jzs160/r1/layout.svg", "role": "Static illustration and text alternative to the 3D view." }
+      ],
+      "unresolvedGaps": [
+        "No dimension is measured. Every length and position is estimated from photograph proportions, scaled against the published 86 mm bore.",
+        "RM718U has not been read from a licensed copy. Page locators and the phase order come from third-party mirrors and are marked mirror-derived.",
+        "No torque, force, clearance or timing specification is entered. 11 specification slots are present and empty.",
+        "No OEM part number is established; the Lexus EPC vehicle selector did not load during the source review.",
+        "Timing marks, belt tooth count and belt pitch are not modelled, so the model cannot be used as a timing reference.",
+        "Tooth, groove and rib counts in the geometry follow stated illustrative pitches and are not part data.",
+        "Grouped geometry (radiator assembly, VVT-i oil hardware, cylinder-head covers, manifolds, rear covers) stands in for several physical pieces each.",
+        "Timing-cover bolts are not modelled: the source lists bolt groups of 5, 3 and 4 without a mapping to individual covers.",
+        "Whether a second timing-belt idler exists on this configuration is unconfirmed.",
+        "Federal versus California emissions differences in hose and connector routing are unresolved, as is the production month range used for catalog applicability.",
+        "No physical access check has been performed: the model cannot show whether a tool actually fits."
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validate, unknownKeywords } from './lib/json-schema.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (rel) => JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
@@ -10,8 +11,33 @@ let errors = 0;
 const fail = (msg) => { console.error('FAIL:', msg); errors++; };
 const info = (msg) => console.log('  ok:', msg);
 
+// --- Schemas ---
+// Each content file declares its schema with $schema; the schema is applied
+// here so a typo in a field name fails the build rather than being ignored by
+// the loader at runtime.
+const schemaDir = path.join(root, 'content/schema');
+const schemas = {};
+for (const file of fs.readdirSync(schemaDir).filter((f) => f.endsWith('.schema.json'))) {
+  const schema = read(`content/schema/${file}`);
+  const unknown = unknownKeywords(schema);
+  if (unknown.length) {
+    fail(`Schema ${file}: keyword(s) the validator does not implement: ${unknown.join(', ')}`);
+  }
+  schemas[file.replace('.schema.json', '')] = schema;
+}
+info(`${Object.keys(schemas).length} schemas`);
+
+const checkSchema = (rel, schemaName, data) => {
+  const schema = schemas[schemaName];
+  if (!schema) { fail(`${rel}: no schema named "${schemaName}"`); return; }
+  for (const message of validate(data, schema)) fail(`${rel} ${message}`);
+};
+
 // --- Sources ---
 const sources = read('content/sources.json');
+checkSchema('content/sources.json', 'sources', sources);
+const releases = read('content/releases.json');
+checkSchema('content/releases.json', 'releases', releases);
 const sourceIds = new Set(sources.sources.map(s => s.id));
 info(`${sourceIds.size} sources`);
 for (const s of sources.sources) {
@@ -25,6 +51,7 @@ const configDir = path.join(root, 'content/configurations');
 const configIds = new Set();
 for (const f of fs.readdirSync(configDir).filter(f => f.endsWith('.json'))) {
   const cfg = read(`content/configurations/${f}`);
+  checkSchema(`content/configurations/${f}`, 'configuration', cfg);
   if (!cfg.id) { fail(`Config ${f}: missing id`); continue; }
   configIds.add(cfg.id);
   if (!cfg.engineVariantId) fail(`Config ${cfg.id}: missing engineVariantId`);
@@ -39,6 +66,7 @@ const engineDir = path.join(root, 'content/engines');
 const engineIds = new Set();
 for (const f of fs.readdirSync(engineDir).filter(f => f.endsWith('.json'))) {
   const eng = read(`content/engines/${f}`);
+  checkSchema(`content/engines/${f}`, 'engine', eng);
   if (!eng.id) { fail(`Engine ${f}: missing id`); continue; }
   engineIds.add(eng.id);
   for (const cid of eng.installedIn || []) {
@@ -54,8 +82,10 @@ for (const f of fs.readdirSync(engineDir).filter(f => f.endsWith('.json'))) {
 // --- Components ---
 const compDir = path.join(root, 'content/components');
 const allComponentIds = new Set();
+const componentStepIds = new Map();
 for (const f of fs.readdirSync(compDir).filter(f => f.endsWith('.json'))) {
   const inv = read(`content/components/${f}`);
+  checkSchema(`content/components/${f}`, 'components', inv);
   if (!inv.engineVariantId) { fail(`Inventory ${f}: missing engineVariantId`); continue; }
   if (!engineIds.has(inv.engineVariantId)) fail(`Inventory ${f}: unknown engine "${inv.engineVariantId}"`);
   const localIds = new Set();
@@ -64,6 +94,7 @@ for (const f of fs.readdirSync(compDir).filter(f => f.endsWith('.json'))) {
     if (localIds.has(c.id)) fail(`Component ${c.id}: duplicate in ${f}`);
     localIds.add(c.id);
     allComponentIds.add(c.id);
+    componentStepIds.set(c.id, c.procedureStepIds || []);
     if (!c.name) fail(`Component ${c.id}: missing name`);
     if (!c.system) fail(`Component ${c.id}: missing system`);
     if (!c.kind) fail(`Component ${c.id}: missing kind`);
@@ -97,8 +128,10 @@ for (const f of fs.readdirSync(compDir).filter(f => f.endsWith('.json'))) {
 
 // --- Procedures ---
 const procDir = path.join(root, 'content/procedures');
+const procedureIds = new Set();
 for (const f of fs.readdirSync(procDir).filter(f => f.endsWith('.json'))) {
   const proc = read(`content/procedures/${f}`);
+  checkSchema(`content/procedures/${f}`, 'procedure', proc);
   if (!proc.id) { fail(`Procedure ${f}: missing id`); continue; }
   if (!proc.configurationIds?.length) fail(`Procedure ${proc.id}: no configurations`);
   for (const cid of proc.configurationIds) {
@@ -136,7 +169,68 @@ for (const f of fs.readdirSync(procDir).filter(f => f.endsWith('.json'))) {
     const notEntered = (step.specifications || []).filter(s => s.status === 'not-entered');
     if (notEntered.length) info(`Procedure ${proc.id} step ${step.id}: ${notEntered.length} specifications not yet entered`);
   }
+  // A step may only list tools and replacement parts the procedure declares.
+  const toolIds = new Set(proc.tools.map((t) => t.id));
+  const partIds = new Set(proc.parts.map((p) => p.id));
+  for (const step of proc.steps) {
+    for (const id of step.tools || []) {
+      if (!toolIds.has(id)) fail(`Procedure ${proc.id} step ${step.id}: unknown tool "${id}"`);
+    }
+    for (const id of step.replacementParts || []) {
+      if (!partIds.has(id)) fail(`Procedure ${proc.id} step ${step.id}: unknown replacement part "${id}"`);
+    }
+    for (const ref of step.sourceRefs || []) {
+      if (!sourceIds.has(ref.sourceId)) fail(`Procedure ${proc.id} step ${step.id}: unknown source "${ref.sourceId}"`);
+    }
+    for (const spec of step.specifications || []) {
+      if (spec.sourceRef && !sourceIds.has(spec.sourceRef.sourceId)) {
+        fail(`Procedure ${proc.id} step ${step.id}: specification "${spec.id}" cites unknown source "${spec.sourceRef.sourceId}"`);
+      }
+      if (spec.status === 'verified' && !spec.sourceRef) {
+        fail(`Procedure ${proc.id} step ${step.id}: specification "${spec.id}" is marked verified with no source`);
+      }
+    }
+  }
+  // A procedure may not claim verified status without a recorded review.
+  if (proc.contentStatus === 'verified') {
+    const release = releases.releases.find((r) => r.procedureIds.includes(proc.id));
+    if (release?.mechanicalReview?.status !== 'complete') {
+      fail(`Procedure ${proc.id}: contentStatus "verified" requires a completed mechanical review in content/releases.json`);
+    }
+  }
+  // Each component's procedureStepIds must agree with the steps that use it.
+  for (const step of proc.steps) {
+    for (const compId of step.componentIds || []) {
+      const declared = componentStepIds.get(compId);
+      if (declared && !declared.includes(step.id)) {
+        fail(`Component ${compId}: step "${step.id}" references it but the inventory does not list that step`);
+      }
+    }
+  }
   info(`Procedure ${proc.id}: ${proc.steps.length} steps, ${proc.contentStatus}`);
+  procedureIds.add(proc.id);
+}
+
+// --- Releases ---
+for (const release of releases.releases) {
+  for (const cid of release.configurationIds) {
+    if (!configIds.has(cid)) fail(`Release ${release.id}: unknown configuration "${cid}"`);
+  }
+  for (const pid of release.procedureIds) {
+    if (!procedureIds.has(pid)) fail(`Release ${release.id}: unknown procedure "${pid}"`);
+  }
+  for (const asset of release.assets) {
+    if (!fs.existsSync(path.join(root, asset.path))) {
+      fail(`Release ${release.id}: asset "${asset.path}" does not exist`);
+    }
+  }
+  if (release.evidenceStatus !== 'illustrative' && release.mechanicalReview?.status === 'none') {
+    fail(`Release ${release.id}: claims "${release.evidenceStatus}" evidence with no mechanical review`);
+  }
+  info(`Release ${release.id}: ${release.procedureIds.length} procedure(s), ${release.unresolvedGaps.length} open gap(s)`);
+}
+if (!releases.releases.some((r) => r.id === releases.current)) {
+  fail(`content/releases.json: current release "${releases.current}" is not in the list`);
 }
 
 console.log(`\n${errors ? errors + ' error(s)' : 'All checks passed'}`);
