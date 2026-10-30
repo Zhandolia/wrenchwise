@@ -19,20 +19,23 @@ GitHub Pages builds and publishes this repository on every push to `main`, using
 | Route | What it is |
 | --- | --- |
 | `/` | The library: engine cards with the vehicles each is recorded in and the jobs available, search across jobs, parts and engines, a resume card, the variants deliberately not covered, and the release record with its open gaps |
-| `/guide/` | Procedure workspace: contents, instructions and the 3D assembly together on desktop; Guide and 3D tabs on a phone |
+| `/job/` | A job worked against the model. `/guide/` still resolves here, so links already shared keep working |
 | `/archive/` | The earlier exploration workspace and its studies, kept working at their own routes |
 
 Both the engine cards and the "named, and deliberately not covered" list are derived from content: an engine appears once it has a component inventory, and every variant an engine's `notEquivalentTo` rules out becomes a coverage entry with its reason. Nothing on the library page is written per engine.
 
 ## Interface
 
-Two surfaces, deliberately different. A **light reading column** holds the text you work from, and a **dark stage** holds the model — the contrast is the main focus device, and it is what makes silver and cast finishes read as metal rather than as shadow. Within the reading column exactly one thing is large: the step you are on.
+**The model is the page.** The engine fills the screen, dark and lit like a studio shot; everything else floats over it on glass and can be dismissed.
 
-- A **phase rail** across the top shows the shape of the job (access → positioning → removal → inspection → installation → tensioning → verification → reassembly) and names the phase you are in.
-- Instructions are the biggest body text on the page. Tools, parts, sources, gaps and the assembly delta fold away until asked for; cautions and completion checks never do.
-- The action bar is pinned to the bottom of the column, so what to do next is always on screen.
-- Systems are colour-coded consistently across the part chips, the part callout and the generated illustration, so "the blue ones" means the same thing wherever you are looking.
-- Selecting a part opens a callout over the stage rather than a panel that eats the column.
+- **One step at a time, in plain language.** A floating card carries the step you are on. It can be collapsed to hand the whole screen back to the model, and it becomes a bottom sheet on a phone.
+- **Simple first, dig deeper.** Instructions, the parts involved and the completion checks are on the surface. Specifications, tools, sources, gaps and what each step removes sit in disclosures. **Cautions and warnings are never folded away.**
+- **Parts are marked on the model.** The step's own parts get a hotspot with a label; tapping one flies the camera to it and opens what is known about it. Markers that are behind other geometry are drawn as outlines so they stay findable, and overlapping labels are nudged apart.
+- **The camera flies rather than cuts** between steps, so you do not lose where you were looking. Framing shifts automatically to keep the subject clear of whichever panels are open.
+- **You see what you are about to remove.** While you read a step, its own removals have not been applied yet — the parts it takes off are still fitted and highlighted. They disappear when you move on.
+- Systems are colour-coded consistently across the chips, the hotspots, the part panel and the generated illustration.
+
+The lighting is worth a note: metal has no diffuse term, so what you see in it is its surroundings. The scene reflects a purpose-built dark studio with a handful of bright panels, which is what makes machined surfaces read as metal instead of as light grey plastic.
 
 Each step drives the assembly state, and the assembly drives the instructions: clicking a component in 3D opens it in the inspector and puts it in the URL; clicking a component chip in the instructions selects it in the model. Procedural removal (what the step physically takes off, folded cumulatively over the steps so far) is rendered and labelled separately from viewing aids (hide, isolate, ghost, explanatory separation), so an exploded view is never mistaken for a removal sequence.
 

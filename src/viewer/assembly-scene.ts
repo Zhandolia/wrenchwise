@@ -1,54 +1,106 @@
-// Three.js assembly controller. Framework-free; React talks to it through this
-// typed API. Blender and modeling/wrenchwise build the geometry; this file only
-// displays and controls it.
+// The stage controller.
 //
-// Two kinds of change are rendered differently and must not be confused:
-//   * procedural removal (a step actually takes the part off) — the mesh is gone
-//   * viewing aids (hide, ghost, isolate, explode) — the part is still fitted
+// The model is the page here, so this class does more than display geometry:
+// it flies the camera between steps, projects part positions back to screen
+// space for the hotspot overlay, and reports what the pointer is over. React
+// never touches Three.js directly — it talks through this API.
+//
+// Two kinds of change stay visibly distinct:
+//   procedural removal — the step actually takes the part off
+//   viewing aids       — hide, isolate, ghost, separate; the part is still fitted
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 
-/** Direction to place the camera, in the engine frame (X left, Y up, Z forward). */
+/**
+ * A dark studio to reflect.
+ *
+ * Metal has no diffuse term: what you see in it is its surroundings. Reflecting
+ * a bright white room makes every machined surface read as light grey plastic.
+ * Reflecting a dark room with a few bright sources gives specular highlights
+ * with deep falloff between them — which is what reads as metal.
+ */
+function studioEnvironment(): THREE.Scene {
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x05070b);
+
+  const panel = (color: number, intensity: number, scale: [number, number, number], position: [number, number, number], lookAt = true) => {
+    const mesh = new THREE.Mesh(
+      new THREE.PlaneGeometry(1, 1),
+      new THREE.MeshBasicMaterial({ color: new THREE.Color(color).multiplyScalar(intensity), side: THREE.DoubleSide }),
+    );
+    mesh.scale.set(...scale);
+    mesh.position.set(...position);
+    if (lookAt) mesh.lookAt(0, 0, 0);
+    scene.add(mesh);
+  };
+
+  // Large soft key overhead, barely warm. This is the main source.
+  panel(0xfff6ec, 4.6, [9, 6, 1], [1.5, 7, 2.5]);
+  // Back-left rim that separates the part from the void. Kept close to neutral:
+  // a saturated strip turns every machined face blue.
+  panel(0xcfdef0, 3.0, [1.2, 7, 1], [-6, 1.2, -4]);
+  // Narrow warm kicker from the right, for the opposite edge.
+  panel(0xffc79a, 3.0, [0.9, 5, 1], [6, -0.5, -2.5]);
+  // Neutral front fill, so near faces are readable rather than black.
+  panel(0xa9b6c6, 1.9, [8, 5, 1], [0, 0.5, 8]);
+  // Faint floor bounce.
+  panel(0x47525f, 1.2, [10, 10, 1], [0, -5, 0]);
+
+  return scene;
+}
+
+/** Where to put the camera, in the engine frame (X left, Y up, Z forward). */
 const CAMERA_DIRECTIONS: Record<string, [number, number, number]> = {
-  iso: [0.62, 0.5, 1],
-  front: [0, 0.12, 1],
-  'front-left': [0.75, 0.22, 0.85],
-  'front-right': [-0.75, 0.22, 0.85],
-  top: [0, 1, 0.3],
-  'lower-front': [0, -0.45, 1],
+  iso: [0.62, 0.42, 1],
+  front: [0, 0.1, 1],
+  'front-left': [0.78, 0.2, 0.8],
+  'front-right': [-0.78, 0.2, 0.8],
+  top: [0, 1, 0.35],
+  'lower-front': [0, -0.4, 1],
 };
 
 export const CAMERA_PRESETS = Object.keys(CAMERA_DIRECTIONS);
 
-// Tuned for the dark stage: emissive tints have to carry against a near-black
-// background without washing the material out.
-const HIGHLIGHT_COLOR = new THREE.Color(0x3b82f6);
-const SELECT_COLOR = new THREE.Color(0xf97316);
-const GHOST_OPACITY = 0.13;
-const EXPLODE_DISTANCE = 0.14;
+export const CAMERA_LABELS: Record<string, string> = {
+  iso: 'Three-quarter',
+  front: 'Front',
+  'front-left': 'Left',
+  'front-right': 'Right',
+  top: 'Above',
+  'lower-front': 'Below',
+};
+
+const HIGHLIGHT_COLOR = new THREE.Color(0x38bdf8);
+const SELECT_COLOR = new THREE.Color(0xfb923c);
+const GHOST_OPACITY = 0.055;
+const EXPLODE_DISTANCE = 0.16;
+const FLIGHT_MS = 900;
 
 export interface SceneView {
-  /** Procedurally removed by the steps so far. */
   removed: ReadonlySet<string>;
-  /** Hidden as a viewing aid for this step. */
   hidden: ReadonlySet<string>;
   highlighted: ReadonlySet<string>;
-  camera: string;
-  explode: boolean;
-  /** When set, everything else is ghosted. */
   isolated: string | null;
   selected: string | null;
+  hovered: string | null;
+  explode: boolean;
 }
 
-export interface ComponentPick {
+export interface ScreenPoint {
   componentId: string;
-  meshId: string;
+  x: number;
+  y: number;
+  /** Behind other geometry, so the marker should recede. */
+  occluded: boolean;
+  /** Outside the frustum; the marker should be hidden entirely. */
+  offscreen: boolean;
 }
 
-export type SelectHandler = (pick: ComponentPick | null) => void;
-export type HoverHandler = (pick: ComponentPick | null) => void;
+export type SelectHandler = (componentId: string | null) => void;
+export type HoverHandler = (componentId: string | null) => void;
+export type ProjectionHandler = (points: ScreenPoint[]) => void;
 
 interface MeshRecord {
   mesh: THREE.Mesh;
@@ -56,7 +108,7 @@ interface MeshRecord {
   meshId: string;
   materials: THREE.MeshStandardMaterial[];
   basePosition: THREE.Vector3;
-  explodeOffset: THREE.Vector3;
+  explodeDirection: THREE.Vector3;
   centre: THREE.Vector3;
   radius: number;
 }
@@ -64,13 +116,17 @@ interface MeshRecord {
 export function webglSupported(): boolean {
   try {
     const canvas = document.createElement('canvas');
-    return Boolean(
-      window.WebGLRenderingContext &&
-        (canvas.getContext('webgl2') || canvas.getContext('webgl')),
-    );
+    return Boolean(window.WebGLRenderingContext && (canvas.getContext('webgl2') || canvas.getContext('webgl')));
   } catch {
     return false;
   }
+}
+
+const easeInOutCubic = (t: number): number => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+
+export interface SceneOptions {
+  /** Ambient mode: slow auto-rotation, no picking. Used for the landing hero. */
+  showpiece?: boolean;
 }
 
 export class AssemblyScene {
@@ -84,8 +140,6 @@ export class AssemblyScene {
   private pointer = new THREE.Vector2();
   private frame = 0;
   private needsRender = true;
-  private onSelect: SelectHandler | null = null;
-  private onHover: HoverHandler | null = null;
   private container: HTMLElement;
   private disposed = false;
   private loadedLayers = new Set<string>();
@@ -94,68 +148,95 @@ export class AssemblyScene {
   private lastView: SceneView | null = null;
   private pointerDownAt: { x: number; y: number } | null = null;
   private environment: THREE.Texture | null = null;
+  private options: SceneOptions;
 
-  constructor(container: HTMLElement) {
+  private onSelect: SelectHandler | null = null;
+  private onHover: HoverHandler | null = null;
+  private onProject: ProjectionHandler | null = null;
+  private hotspotIds: string[] = [];
+  private hovered: string | null = null;
+  private framingBias = 0;
+
+  private flight: {
+    from: THREE.Vector3;
+    to: THREE.Vector3;
+    fromTarget: THREE.Vector3;
+    toTarget: THREE.Vector3;
+    start: number;
+    duration: number;
+  } | null = null;
+
+  constructor(container: HTMLElement, options: SceneOptions = {}) {
     this.container = container;
+    this.options = options;
 
-    // Transparent clear, so the stage's own background shows through the canvas.
+    // Transparent clear, so the page's own gradient shows through the canvas.
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'default' });
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.6));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
     this.renderer.setClearColor(0x000000, 0);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
-    this.renderer.domElement.setAttribute('tabindex', '0');
-    this.renderer.domElement.setAttribute('role', 'application');
-    this.renderer.domElement.setAttribute(
-      'aria-label',
-      'Engine assembly. Drag to orbit, scroll to zoom, click a part to select it. Arrow keys orbit, plus and minus zoom, 0 resets the view.',
-    );
+    this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    this.renderer.toneMappingExposure = 1.0;
+    if (!options.showpiece) {
+      this.renderer.domElement.setAttribute('tabindex', '0');
+      this.renderer.domElement.setAttribute('role', 'application');
+      this.renderer.domElement.setAttribute(
+        'aria-label',
+        'Engine model. Drag to orbit, scroll to zoom, click a part to open it. Arrow keys orbit, plus and minus zoom, 0 resets the view.',
+      );
+    } else {
+      this.renderer.domElement.setAttribute('aria-hidden', 'true');
+    }
     container.appendChild(this.renderer.domElement);
 
-    this.camera = new THREE.PerspectiveCamera(38, 1, 0.01, 40);
-    this.camera.position.set(0.7, 0.5, 1.1);
+    this.camera = new THREE.PerspectiveCamera(36, 1, 0.01, 40);
+    this.camera.position.set(0.7, 0.45, 1.15);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
-    this.controls.dampingFactor = 0.12;
+    this.controls.dampingFactor = 0.08;
+    this.controls.rotateSpeed = 0.75;
     this.controls.addEventListener('change', () => {
       this.needsRender = true;
     });
+    if (options.showpiece) {
+      this.controls.enabled = false;
+      this.controls.autoRotate = true;
+      this.controls.autoRotateSpeed = 0.45;
+    }
 
-    // A neutral studio environment. Metal has no diffuse term, so without an
-    // environment every metallic part renders black; this is what makes the
-    // silver finishes read as metal rather than as shadow.
+    // The studio does most of the work; the directionals only add shape.
     const pmrem = new THREE.PMREMGenerator(this.renderer);
-    this.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.environment = pmrem.fromScene(studioEnvironment(), 0.03).texture;
     this.scene.environment = this.environment;
+    this.scene.environmentIntensity = 1;
     pmrem.dispose();
 
-    // Directional light on top of it, for shape readability. No coloured rim,
-    // so material contrast reads as material.
-    this.scene.add(new THREE.AmbientLight(0xffffff, 0.25));
-    const key = new THREE.DirectionalLight(0xffffff, 1.6);
-    key.position.set(0.8, 1.6, 1.4);
+    const key = new THREE.DirectionalLight(0xfff1dd, 1.1);
+    key.position.set(0.9, 1.5, 1.2);
     this.scene.add(key);
-    const fill = new THREE.DirectionalLight(0xffffff, 0.6);
-    fill.position.set(-1.2, 0.4, 0.6);
-    this.scene.add(fill);
-    const under = new THREE.DirectionalLight(0xffffff, 0.35);
-    under.position.set(0, -1, 0.4);
-    this.scene.add(under);
 
-    this.renderer.domElement.addEventListener('pointerdown', this.handlePointerDown);
-    this.renderer.domElement.addEventListener('pointerup', this.handlePointerUp);
-    this.renderer.domElement.addEventListener('pointermove', this.handlePointerMove);
-    this.renderer.domElement.addEventListener('keydown', this.handleKeyDown);
+    const coolRim = new THREE.DirectionalLight(0x8ec5ff, 0.55);
+    coolRim.position.set(-1.4, 0.5, -0.9);
+    this.scene.add(coolRim);
+
+    this.scene.add(new THREE.AmbientLight(0x56657d, 0.25));
+
+    if (!options.showpiece) {
+      const canvas = this.renderer.domElement;
+      canvas.addEventListener('pointerdown', this.handlePointerDown);
+      canvas.addEventListener('pointerup', this.handlePointerUp);
+      canvas.addEventListener('pointermove', this.handlePointerMove);
+      canvas.addEventListener('pointerleave', this.handlePointerLeave);
+      canvas.addEventListener('keydown', this.handleKeyDown);
+    }
     window.addEventListener('resize', this.handleResize);
 
     this.handleResize();
     this.animate();
   }
 
-  /**
-   * Load one asset layer additively. Call with the core layer first, then the
-   * access layer, so the timing drive is interactive before the rest arrives.
-   */
+  /** Load one asset layer additively, in the manifest's declared order. */
   async loadLayer(layer: string, url: string): Promise<void> {
     if (this.loadedLayers.has(layer)) return;
     this.loadedLayers.add(layer);
@@ -170,9 +251,8 @@ export class AssemblyScene {
 
     gltf.scene.traverse((object) => {
       if (!(object instanceof THREE.Mesh)) return;
-      // A node with several primitives (one per material) loads as a Group with
-      // Mesh children, and the glTF extras sit on the group. Climb to whichever
-      // ancestor carries them.
+      // A node with several primitives loads as a Group with Mesh children, and
+      // the glTF extras sit on the group. Climb to whichever ancestor has them.
       let holder: THREE.Object3D | null = object;
       while (holder && !(holder.userData as { componentId?: string })?.componentId) {
         holder = holder.parent;
@@ -200,7 +280,7 @@ export class AssemblyScene {
         meshId,
         materials,
         basePosition: object.position.clone(),
-        explodeOffset: new THREE.Vector3(),
+        explodeDirection: new THREE.Vector3(),
         centre,
         radius: sphere?.radius ?? 0.05,
       };
@@ -225,12 +305,12 @@ export class AssemblyScene {
     if (box.isEmpty()) return;
     box.getCenter(this.modelCentre);
     this.modelRadius = Math.max(0.2, box.getBoundingSphere(new THREE.Sphere()).radius);
-    this.controls.minDistance = this.modelRadius * 0.25;
+    this.controls.minDistance = this.modelRadius * 0.22;
     this.controls.maxDistance = this.modelRadius * 6;
     for (const record of this.records) {
-      record.explodeOffset = record.centre.clone().sub(this.modelCentre);
-      if (record.explodeOffset.lengthSq() < 1e-8) record.explodeOffset.set(0, 0, 0.01);
-      record.explodeOffset.normalize();
+      record.explodeDirection = record.centre.clone().sub(this.modelCentre);
+      if (record.explodeDirection.lengthSq() < 1e-8) record.explodeDirection.set(0, 0, 0.01);
+      record.explodeDirection.normalize();
     }
   }
 
@@ -242,6 +322,44 @@ export class AssemblyScene {
     this.onHover = handler;
   }
 
+  setProjectionHandler(handler: ProjectionHandler | null): void {
+    this.onProject = handler;
+  }
+
+  /**
+   * Push the subject sideways in frame, as a fraction of the viewport width.
+   * The step card floats over the left of the stage, so framing the model dead
+   * centre would put half of it under the card.
+   */
+  setFramingBias(fraction: number): void {
+    if (Math.abs(fraction - this.framingBias) < 0.001) return;
+    this.framingBias = fraction;
+  }
+
+  /** Shift a camera/target pair sideways so the subject clears the overlay. */
+  private applyBias(position: THREE.Vector3, target: THREE.Vector3): void {
+    if (!this.framingBias) return;
+    const distance = position.distanceTo(target);
+    const fov = (this.camera.fov * Math.PI) / 180;
+    const visibleWidth = 2 * distance * Math.tan(fov / 2) * this.camera.aspect;
+    const forward = target.clone().sub(position).normalize();
+    const right = forward.cross(this.camera.up).normalize();
+    const shift = right.multiplyScalar(-visibleWidth * this.framingBias);
+    position.add(shift);
+    target.add(shift);
+  }
+
+  /** Which components should get a screen-space marker. */
+  setHotspots(componentIds: readonly string[]): void {
+    this.hotspotIds = [...componentIds];
+    this.needsRender = true;
+    this.project();
+  }
+
+  hasComponent(componentId: string): boolean {
+    return this.byComponent.has(componentId);
+  }
+
   loadedComponentIds(): string[] {
     return [...this.byComponent.keys()];
   }
@@ -251,60 +369,102 @@ export class AssemblyScene {
     this.lastView = view;
     for (const record of this.records) {
       const id = record.componentId;
-      const gone = view.removed.has(id) || view.hidden.has(id);
-      if (gone) {
+      if (view.removed.has(id) || view.hidden.has(id)) {
         record.mesh.visible = false;
         continue;
       }
       record.mesh.visible = true;
 
-      const isolatedAway = view.isolated !== null && view.isolated !== id;
+      const ghosted = view.isolated !== null && view.isolated !== id;
       const selected = view.selected === id;
+      const hovered = view.hovered === id;
       const highlighted = view.highlighted.has(id);
 
       for (const material of record.materials) {
         material.emissive.setHex(0x000000);
         material.emissiveIntensity = 0;
-        if (isolatedAway) {
+        if (ghosted) {
           material.transparent = true;
           material.opacity = GHOST_OPACITY;
           material.depthWrite = false;
-          material.emissive.setHex(0x0a0e14);
-          material.emissiveIntensity = 1;
         } else {
           material.transparent = false;
           material.opacity = 1;
           material.depthWrite = true;
           if (selected) {
             material.emissive.copy(SELECT_COLOR);
-            material.emissiveIntensity = 0.5;
+            material.emissiveIntensity = 0.55;
+          } else if (hovered) {
+            material.emissive.copy(HIGHLIGHT_COLOR);
+            material.emissiveIntensity = 0.42;
           } else if (highlighted) {
             material.emissive.copy(HIGHLIGHT_COLOR);
-            material.emissiveIntensity = 0.34;
+            material.emissiveIntensity = 0.3;
           }
         }
         material.needsUpdate = true;
       }
 
       const distance = view.explode ? EXPLODE_DISTANCE : 0;
-      record.mesh.position.copy(record.basePosition).addScaledVector(record.explodeOffset, distance);
+      record.mesh.position.copy(record.basePosition).addScaledVector(record.explodeDirection, distance);
     }
     this.needsRender = true;
+    this.project();
   }
 
   /**
-   * Frame the model. When `focusComponentIds` is given, the camera targets the
-   * bounds of those components, so a step's parts fill the view.
+   * Move the camera to a preset, framing `focusComponentIds` if given. The move
+   * is animated unless `instant`, because a cut between steps loses the
+   * relationship between what you were looking at and what you are now.
    */
-  setCamera(preset: string, focusComponentIds: readonly string[] = []): void {
+  flyTo(preset: string, focusComponentIds: readonly string[] = [], instant = false): void {
     const direction = CAMERA_DIRECTIONS[preset] ?? CAMERA_DIRECTIONS.iso;
     const focus = this.focusBounds(focusComponentIds);
     const fov = (this.camera.fov * Math.PI) / 180;
-    const distance = Math.max(0.25, (focus.radius / Math.sin(fov / 2)) * 1.25);
-    const offset = new THREE.Vector3(...direction).normalize().multiplyScalar(distance);
-    this.camera.position.copy(focus.centre).add(offset);
-    this.controls.target.copy(focus.centre);
-    this.controls.update();
+    const distance = Math.max(0.22, (focus.radius / Math.sin(fov / 2)) * 1.08);
+    const destination = new THREE.Vector3(...direction).normalize().multiplyScalar(distance).add(focus.centre);
+    const lookAt = focus.centre.clone();
+    this.applyBias(destination, lookAt);
+
+    if (instant || this.options.showpiece) {
+      this.camera.position.copy(destination);
+      this.controls.target.copy(lookAt);
+      this.controls.update();
+      this.needsRender = true;
+      this.project();
+      return;
+    }
+
+    this.flight = {
+      from: this.camera.position.clone(),
+      to: destination,
+      fromTarget: this.controls.target.clone(),
+      toTarget: lookAt,
+      start: performance.now(),
+      duration: FLIGHT_MS,
+    };
+    this.needsRender = true;
+  }
+
+  /** Fly to one component, close in. Used when a part is opened from the list. */
+  focusComponent(componentId: string): void {
+    const records = this.byComponent.get(componentId);
+    if (!records?.length) return;
+    const direction = this.camera.position.clone().sub(this.controls.target).normalize();
+    const focus = this.focusBounds([componentId]);
+    const fov = (this.camera.fov * Math.PI) / 180;
+    const distance = Math.max(0.16, (focus.radius / Math.sin(fov / 2)) * 1.0);
+    const destination = direction.multiplyScalar(distance).add(focus.centre);
+    const lookAt = focus.centre.clone();
+    this.applyBias(destination, lookAt);
+    this.flight = {
+      from: this.camera.position.clone(),
+      to: destination,
+      fromTarget: this.controls.target.clone(),
+      toTarget: lookAt,
+      start: performance.now(),
+      duration: FLIGHT_MS * 0.7,
+    };
     this.needsRender = true;
   }
 
@@ -323,20 +483,68 @@ export class AssemblyScene {
       return { centre: this.modelCentre.clone(), radius: this.modelRadius };
     }
     const centre = box.getCenter(new THREE.Vector3());
-    // Keep enough of the surrounding engine in frame to stay oriented, however
-    // small the step's parts are.
+    // Keep enough of the surrounding engine in frame to stay oriented.
     const radius = Math.max(
-      box.getBoundingSphere(new THREE.Sphere()).radius * 1.6,
-      this.modelRadius * 0.38,
+      box.getBoundingSphere(new THREE.Sphere()).radius * 1.75,
+      this.modelRadius * 0.42,
     );
     return { centre, radius };
   }
 
   resetView(): void {
-    this.setCamera('iso');
+    this.flyTo('iso');
   }
 
-  private pickAt(clientX: number, clientY: number): ComponentPick | null {
+  /** Project hotspot anchors to screen space for the DOM overlay. */
+  private project(): void {
+    if (!this.onProject || !this.hotspotIds.length) {
+      this.onProject?.([]);
+      return;
+    }
+    const width = this.container.clientWidth;
+    const height = this.container.clientHeight;
+    if (width <= 0 || height <= 0) return;
+
+    const points: ScreenPoint[] = [];
+    for (const componentId of this.hotspotIds) {
+      const records = (this.byComponent.get(componentId) ?? []).filter((record) => record.mesh.visible);
+      if (!records.length) continue;
+
+      // Anchor on the largest visible mesh of the component.
+      const anchorRecord = records.reduce((best, record) => (record.radius > best.radius ? record : best));
+      const anchor = anchorRecord.centre
+        .clone()
+        .addScaledVector(anchorRecord.explodeDirection, this.lastView?.explode ? EXPLODE_DISTANCE : 0);
+
+      const projected = anchor.clone().project(this.camera);
+      const offscreen = projected.z > 1 || Math.abs(projected.x) > 1.25 || Math.abs(projected.y) > 1.25;
+
+      let occluded = false;
+      if (!offscreen) {
+        const toAnchor = anchor.clone().sub(this.camera.position);
+        const distance = toAnchor.length();
+        this.raycaster.set(this.camera.position, toAnchor.normalize());
+        this.raycaster.far = distance - 0.004;
+        const blockers = this.raycaster.intersectObjects(
+          this.records.filter((record) => record.mesh.visible && record.componentId !== componentId).map((r) => r.mesh),
+          false,
+        );
+        occluded = blockers.length > 0;
+        this.raycaster.far = Infinity;
+      }
+
+      points.push({
+        componentId,
+        x: (projected.x * 0.5 + 0.5) * width,
+        y: (-projected.y * 0.5 + 0.5) * height,
+        occluded,
+        offscreen,
+      });
+    }
+    this.onProject(points);
+  }
+
+  private pickAt(clientX: number, clientY: number): string | null {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.x = ((clientX - rect.left) / rect.width) * 2 - 1;
     this.pointer.y = -((clientY - rect.top) / rect.height) * 2 + 1;
@@ -344,8 +552,7 @@ export class AssemblyScene {
     const candidates = this.records.filter((record) => record.mesh.visible).map((record) => record.mesh);
     const hits = this.raycaster.intersectObjects(candidates, false);
     if (!hits.length) return null;
-    const record = this.records.find((entry) => entry.mesh === hits[0].object);
-    return record ? { componentId: record.componentId, meshId: record.meshId } : null;
+    return this.records.find((entry) => entry.mesh === hits[0].object)?.componentId ?? null;
   }
 
   private handlePointerDown = (event: PointerEvent): void => {
@@ -363,10 +570,18 @@ export class AssemblyScene {
   };
 
   private handlePointerMove = (event: PointerEvent): void => {
-    if (!this.onHover || event.pointerType === 'touch') return;
+    if (!this.onHover || event.pointerType === 'touch' || this.pointerDownAt) return;
     const pick = this.pickAt(event.clientX, event.clientY);
     this.renderer.domElement.style.cursor = pick ? 'pointer' : 'grab';
+    if (pick === this.hovered) return;
+    this.hovered = pick;
     this.onHover(pick);
+  };
+
+  private handlePointerLeave = (): void => {
+    if (this.hovered === null) return;
+    this.hovered = null;
+    this.onHover?.(null);
   };
 
   private handleKeyDown = (event: KeyboardEvent): void => {
@@ -403,6 +618,7 @@ export class AssemblyScene {
       default: return;
     }
     event.preventDefault();
+    this.flight = null;
   };
 
   private handleResize = (): void => {
@@ -413,6 +629,7 @@ export class AssemblyScene {
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height, false);
     this.needsRender = true;
+    this.project();
   };
 
   /** Call after a layout change that resizes the container. */
@@ -423,10 +640,21 @@ export class AssemblyScene {
   private animate = (): void => {
     if (this.disposed) return;
     this.frame = requestAnimationFrame(this.animate);
+
+    if (this.flight) {
+      const elapsed = (performance.now() - this.flight.start) / this.flight.duration;
+      const t = easeInOutCubic(Math.min(1, elapsed));
+      this.camera.position.lerpVectors(this.flight.from, this.flight.to, t);
+      this.controls.target.lerpVectors(this.flight.fromTarget, this.flight.toTarget, t);
+      if (elapsed >= 1) this.flight = null;
+      this.needsRender = true;
+    }
+
     if (this.controls.update()) this.needsRender = true;
     if (this.needsRender) {
       this.renderer.render(this.scene, this.camera);
       this.needsRender = false;
+      this.project();
     }
   };
 
@@ -437,6 +665,7 @@ export class AssemblyScene {
     canvas.removeEventListener('pointerdown', this.handlePointerDown);
     canvas.removeEventListener('pointerup', this.handlePointerUp);
     canvas.removeEventListener('pointermove', this.handlePointerMove);
+    canvas.removeEventListener('pointerleave', this.handlePointerLeave);
     canvas.removeEventListener('keydown', this.handleKeyDown);
     window.removeEventListener('resize', this.handleResize);
     this.controls.dispose();

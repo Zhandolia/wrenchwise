@@ -130,8 +130,9 @@ are tessellation choices and are reported as such in the manifest, never as part
 
 ### 2.4 Application
 
-- `pages/main.tsx` routes `/` (the reference-book index) and `/guide/` (procedure workspace). The earlier exploration
-  workspace moved to `/archive/`; every other legacy route is unchanged and still linked from there.
+- `pages/main.tsx` routes `/` (the library) and `/job/` (a job worked against the model; `/guide/` resolves to the
+  same page so shared links keep working). The earlier exploration workspace moved to `/archive/`; every other
+  legacy route is unchanged and still linked from there.
 - `src/content/catalog.ts` discovers content with `import.meta.glob`, so adding a configuration, engine or procedure
   needs no code change. `src/content/procedure-state.mjs`, `search.mjs` and `library.mjs` hold the pure logic, so all
   three are unit tested in Node without a browser.
@@ -139,17 +140,22 @@ are tessellation choices and are reported as such in the manifest, never as part
   variant an engine's `notEquivalentTo` rules out becomes a coverage entry with its reason. The unit of coverage is
   an engine variant in a recorded configuration, so a vehicle is a property of an engine entry rather than the
   subject of the interface, and the mechanical rule that a family name is not a parts list becomes navigation.
-- `src/viewer/assembly-scene.ts` is a framework-free Three.js controller: progressive layer loading, orbit, camera
-  presets that frame the current step's components, raycast selection, highlight, isolate with ghosting, explanatory
-  explode, keyboard and touch control. A neutral `RoomEnvironment` supplies the reflections metals need — without it
-  every metallic material renders black. Materials are cloned per mesh so highlighting cannot leak between components.
-- `src/ui/*` holds the interface. Two surfaces carry the hierarchy: a light reading column and a dark stage, with the
-  contrast as the primary focus device (it is also what makes metallic materials read as metal). A phase rail gives
-  position in the job, the current step is the only large text, and supporting material sits in `<details>` folds —
-  except cautions and completion checks, which never collapse. The action bar is sticky. Systems are colour-coded
-  consistently across chips, the part callout and the generated illustration. Desktop shows contents, instructions
-  and the stage together; below 900px the guide becomes Guide and 3D tabs with large controls. Loading, error, retry
-  and no-WebGL states all fall back to the generated illustration plus the full step text.
+- `src/viewer/assembly-scene.ts` is a framework-free Three.js controller and does more than display geometry, because
+  the model is the interface: progressive layer loading, animated camera flights between steps, screen-space
+  projection of part anchors for the DOM hotspot overlay (with an occlusion test), a lateral framing bias so the
+  subject clears whichever panels are open, raycast selection and hover, isolate with ghosting, explanatory
+  separation, keyboard and touch control. Lighting reflects a purpose-built **dark studio** environment: metal has no
+  diffuse term, so a bright environment makes every machined surface read as light grey plastic and no environment
+  at all makes it black. Materials are cloned per mesh so highlighting cannot leak between components.
+- `src/ui/*` holds the interface. The model fills the viewport; a floating glass card carries one step at a time and
+  can be collapsed, becoming a bottom sheet below 760px. Plain language and the step's own checks are on the surface;
+  specifications, tools, sources, gaps and the assembly delta sit in `<details>` folds — except cautions and
+  warnings, which never collapse. Hotspots are rendered by React but positioned imperatively from the render loop,
+  so orbiting costs no React renders; overlapping labels are de-collided vertically. Loading, error, retry and
+  no-WebGL states all fall back to the generated illustration plus the full step text.
+- While a step is open the scene shows the state *entering* it (`computeAssemblyState(..., { pending: true })`): the
+  parts the step removes are still fitted and highlighted, and they disappear on advancing. Without this the step
+  that names a part is the first step in which that part is already gone.
 - Progress persists in `localStorage` under a key that includes the procedure id and revision. An incompatible
   revision, a corrupt value or an unknown check id starts clean rather than restoring the wrong step.
 

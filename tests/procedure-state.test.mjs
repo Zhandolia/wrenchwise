@@ -35,6 +35,23 @@ test('removal is cumulative and viewing aids are step-local', () => {
   assert.ok(!next.hidden.has('timing-belt'), 'the viewing aid does not carry into the next step');
 });
 
+test('while reading a step, the parts it removes are still fitted', () => {
+  const index = procedure.steps.findIndex((step) => step.id === 'release-tensioner');
+  const settled = computeAssemblyState(procedure.steps, index);
+  const pending = computeAssemblyState(procedure.steps, index, { pending: true });
+
+  assert.ok(settled.removed.has('timing-belt-tensioner'), 'after the step, the tensioner is off');
+  assert.ok(!pending.removed.has('timing-belt-tensioner'), 'while reading it, the tensioner is still there');
+  // Everything earlier steps took off stays off either way.
+  assert.ok(pending.removed.has('radiator-assembly'));
+  assert.ok(pending.removed.has('engine-under-cover'));
+
+  // An installation step shows its refits in place, pending or not.
+  const install = procedure.steps.findIndex((step) => step.id === 'install-lower');
+  const pendingInstall = computeAssemblyState(procedure.steps, install, { pending: true });
+  assert.ok(!pendingInstall.removed.has('timing-belt-idler'), 'the idler is shown refitted');
+});
+
 test('the state at a step is the same whichever way it was reached', () => {
   const index = procedure.steps.findIndex((step) => step.id === 'inspect');
   const forward = computeAssemblyState(procedure.steps, index);

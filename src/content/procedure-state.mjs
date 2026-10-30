@@ -10,14 +10,24 @@ export const PROGRESS_VERSION = 2;
 
 /**
  * Scene state at `stepIndex`, folded over every step up to it.
+ *
+ * With `pending`, the current step's own removals are *not* applied: you are
+ * looking at the engine as it is in front of you, with the parts this step
+ * takes off still fitted. That is what you want while reading the step — they
+ * disappear when you move on. Its refits are applied either way, so an
+ * installation step shows the part in place.
+ *
  * @param {{id:string,view:{camera?:string,remove?:string[],restore?:string[],hide?:string[],highlight?:string[],explode?:boolean}}[]} steps
  * @param {number} stepIndex
+ * @param {{pending?:boolean}} [options]
  */
-export function computeAssemblyState(steps, stepIndex) {
+export function computeAssemblyState(steps, stepIndex, options = {}) {
   const index = Math.max(0, Math.min(steps.length - 1, stepIndex));
   const removed = new Set();
   for (let i = 0; i <= index; i++) {
-    for (const id of steps[i].view.remove ?? []) removed.add(id);
+    if (!(options.pending && i === index)) {
+      for (const id of steps[i].view.remove ?? []) removed.add(id);
+    }
     for (const id of steps[i].view.restore ?? []) removed.delete(id);
   }
   const view = steps[index].view;
