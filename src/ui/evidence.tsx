@@ -1,7 +1,7 @@
 // Shared pieces that show where a statement comes from, and how well it is
 // established. Nothing in the interface states a value without one of these.
 
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import {
   sourceIsLinkable,
   sourcesById,
@@ -34,6 +34,15 @@ const STATUS_LABEL: Record<string, string> = {
   'not-applicable': 'n/a',
   'educational-overview': 'educational overview',
 };
+
+/**
+ * Colour a chip, row or card by the system a component belongs to. The same
+ * hues are used in the inspector and the illustration legend, so "the blue
+ * ones" means the same thing wherever you are looking.
+ */
+export function systemColor(system: string | undefined): CSSProperties {
+  return { '--sys': `var(--sys-${system ?? 'body'}, var(--ink-faint))` } as CSSProperties;
+}
 
 export function StatusPill({ status, prefix }: { status: string; prefix?: string }) {
   const level = STATUS_LEVEL[status] ?? 'neutral';
@@ -110,7 +119,12 @@ export function Cautions({ cautions }: { cautions: Caution[] }) {
       <h2>Cautions</h2>
       <ul>
         {cautions.map((caution, index) => (
-          <li className="wr-banner" key={index} role={caution.level === 'warning' ? 'alert' : undefined}>
+          <li
+            className="wr-banner"
+            data-level={caution.level}
+            key={index}
+            role={caution.level === 'warning' ? 'alert' : undefined}
+          >
             <strong>{caution.level === 'warning' ? 'Warning' : 'Caution'}</strong>
             <span>{caution.text}</span>
             {caution.sourceRef ? (
@@ -132,7 +146,7 @@ export function Gaps({ gaps, label = 'Known gaps' }: { gaps: string[]; label?: s
       <h2>{label}</h2>
       <ul>
         {gaps.map((gap, index) => (
-          <li key={index} style={{ color: 'var(--ink-soft)', fontSize: 13.5 }}>
+          <li key={index} style={{ color: 'var(--ink-soft)' }}>
             {gap}
           </li>
         ))}

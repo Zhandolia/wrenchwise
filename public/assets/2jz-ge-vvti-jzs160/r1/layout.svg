@@ -5,50 +5,50 @@
   <text x="28" y="22" font-size="13" font-weight="600" fill="#111827">Front elevation — 2jz-ge-vvti-jzs160 r1</text>
   <text x="28" y="38" font-size="10.5" fill="#6b7280">Illustrative outlines from estimated placements. Not dimensionally accurate.</text>
   <g id="parts">
-    <rect x="28.0" y="168.7" width="192.3" height="109.9" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="intake-manifold"><title>Intake manifold</title></rect>
-    <rect x="577.4" y="223.7" width="160.2" height="91.6" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="exhaust-manifold"><title>Exhaust manifold</title></rect>
-    <rect x="261.5" y="138.1" width="82.4" height="6.3" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-oil-hardware"><title>VVT-i oil control hardware</title></rect>
-    <rect x="302.7" y="635.7" width="274.7" height="119.0" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="oil-pan"><title>Oil pan</title></rect>
-    <rect x="316.4" y="68.0" width="119.0" height="54.9" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="cylinder-head-covers"><title>Cylinder head covers</title></rect>
-    <rect x="444.6" y="68.0" width="119.0" height="54.9" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="cylinder-head-covers"><title>Cylinder head covers</title></rect>
-    <rect x="275.2" y="148.6" width="54.9" height="22.0" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-oil-hardware"><title>VVT-i oil control hardware</title></rect>
-    <rect x="275.2" y="274.5" width="329.6" height="361.7" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="cylinder-block"><title>Cylinder block</title></rect>
-    <rect x="302.7" y="150.4" width="274.7" height="201.4" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-rear-covers"><title>Rear timing belt covers</title></rect>
-    <rect x="407.1" y="492.9" width="65.9" height="65.9" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="crankshaft-timing-pulley-plate"><title>Crankshaft timing pulley retaining plate</title></rect>
-    <rect x="284.4" y="150.4" width="311.3" height="123.6" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7" data-component-id="cylinder-head"><title>Cylinder head</title></rect>
-    <rect x="386.5" y="270.8" width="107.1" height="107.1" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7" data-component-id="water-pump"><title>Water pump</title></rect>
-    <rect x="541.7" y="416.0" width="20.1" height="14.7" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-tensioner-boot"><title>Tensioner dust boot</title></rect>
-    <rect x="537.1" y="400.8" width="29.3" height="111.3" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-tensioner"><title>Hydraulic timing belt tensioner</title></rect>
-    <rect x="546.5" y="512.1" width="10.6" height="9.2" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-tensioner-bolts"><title>Tensioner mounting bolts</title></rect>
-    <rect x="546.5" y="466.3" width="10.6" height="9.2" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-tensioner-bolts"><title>Tensioner mounting bolts</title></rect>
-    <rect x="322.7" y="126.0" width="249.6" height="428.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt"><title>Timing belt</title></rect>
-    <rect x="410.4" y="496.2" width="59.3" height="59.3" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="crankshaft-timing-pulley"><title>Crankshaft timing pulley</title></rect>
-    <rect x="442.5" y="123.1" width="118.7" height="118.7" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="camshaft-timing-pulley-exhaust"><title>Exhaust camshaft timing pulley</title></rect>
-    <rect x="318.9" y="123.1" width="118.7" height="118.7" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller"><title>Intake camshaft timing pulley (VVT-i controller)</title></rect>
-    <rect x="514.2" y="341.8" width="56.8" height="56.8" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-idler"><title>Timing belt idler</title></rect>
-    <rect x="406.2" y="492.0" width="67.8" height="67.8" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-guide"><title>Timing belt guide</title></rect>
-    <rect x="535.2" y="363.8" width="14.8" height="12.8" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-idler-bolt"><title>Idler bolt</title></rect>
-    <rect x="353.1" y="179.7" width="6.3" height="5.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
-    <rect x="368.3" y="158.8" width="6.3" height="5.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
-    <rect x="392.8" y="166.8" width="6.3" height="5.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
-    <rect x="392.8" y="192.6" width="6.3" height="5.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
-    <rect x="368.3" y="200.6" width="6.3" height="5.5" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
-    <rect x="174.5" y="269.4" width="113.5" height="113.5" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="power-steering-pump-bracket"><title>Power-steering pump front bracket</title></rect>
-    <rect x="492.9" y="174.7" width="18.0" height="15.6" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="camshaft-timing-pulley-exhaust-bolt"><title>Exhaust camshaft pulley bolt</title></rect>
-    <rect x="330.2" y="351.9" width="219.8" height="219.8" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-cover-no1"><title>No.1 timing belt cover (lower)</title></rect>
-    <rect x="293.5" y="113.8" width="293.0" height="201.4" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7" data-component-id="timing-belt-cover-no2"><title>Upper timing belt cover</title></rect>
-    <rect x="301.1" y="441.8" width="84.1" height="58.2" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="accessory-belt-tensioner"><title>Accessory belt tensioner</title></rect>
-    <rect x="554.5" y="283.2" width="119.0" height="119.0" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="alternator"><title>Alternator</title></rect>
-    <rect x="222.6" y="255.0" width="427.8" height="350.1" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="accessory-drive-belt"><title>Accessory drive belt</title></rect>
-    <rect x="221.8" y="240.1" width="106.8" height="119.3" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="power-steering-pump"><title>Power-steering pump</title></rect>
-    <rect x="537.5" y="485.9" width="116.5" height="116.5" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="ac-compressor"><title>A/C compressor</title></rect>
-    <rect x="381.8" y="266.1" width="116.5" height="116.5" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7" data-component-id="water-pump-pulley"><title>Water pump pulley</title></rect>
-    <rect x="357.5" y="443.3" width="165.0" height="165.0" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="crankshaft-pulley"><title>Crankshaft pulley</title></rect>
-    <rect x="428.4" y="515.8" width="23.3" height="20.1" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7" data-component-id="crankshaft-pulley-bolt"><title>Crankshaft pulley bolt</title></rect>
-    <rect x="203.8" y="189.7" width="79.7" height="31.4" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7" data-component-id="radiator-hose-upper"><title>Upper radiator hose</title></rect>
-    <rect x="515.1" y="482.7" width="79.7" height="31.4" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7" data-component-id="radiator-hose-lower"><title>Lower radiator hose</title></rect>
-    <rect x="119.6" y="798.7" width="641.0" height="3.7" rx="2" fill="#ebe7f2" stroke="#6b7280" stroke-width="0.7" data-component-id="engine-under-cover"><title>Engine under-cover</title></rect>
-    <rect x="92.1" y="177.9" width="695.9" height="421.2" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7" data-component-id="radiator-assembly"><title>Radiator assembly</title></rect>
+    <rect x="28.0" y="168.7" width="192.3" height="109.9" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="intake-manifold"><title>Intake manifold</title></rect>
+    <rect x="577.4" y="223.7" width="160.2" height="91.6" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="exhaust-manifold"><title>Exhaust manifold</title></rect>
+    <rect x="261.5" y="138.1" width="82.4" height="6.3" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-oil-hardware"><title>VVT-i oil control hardware</title></rect>
+    <rect x="302.7" y="635.7" width="274.7" height="119.0" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="oil-pan"><title>Oil pan</title></rect>
+    <rect x="316.4" y="68.0" width="119.0" height="54.9" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="cylinder-head-covers"><title>Cylinder head covers</title></rect>
+    <rect x="444.6" y="68.0" width="119.0" height="54.9" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="cylinder-head-covers"><title>Cylinder head covers</title></rect>
+    <rect x="275.2" y="148.6" width="54.9" height="22.0" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-oil-hardware"><title>VVT-i oil control hardware</title></rect>
+    <rect x="275.2" y="274.5" width="329.6" height="361.7" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="cylinder-block"><title>Cylinder block</title></rect>
+    <rect x="302.7" y="150.4" width="274.7" height="201.4" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-rear-covers"><title>Rear timing belt covers</title></rect>
+    <rect x="407.1" y="492.9" width="65.9" height="65.9" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="crankshaft-timing-pulley-plate"><title>Crankshaft timing pulley retaining plate</title></rect>
+    <rect x="284.4" y="150.4" width="311.3" height="123.6" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.7" stroke-opacity="0.65" data-component-id="cylinder-head"><title>Cylinder head</title></rect>
+    <rect x="386.5" y="270.8" width="107.1" height="107.1" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.7" stroke-opacity="0.65" data-component-id="water-pump"><title>Water pump</title></rect>
+    <rect x="541.7" y="416.0" width="20.1" height="14.7" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-tensioner-boot"><title>Tensioner dust boot</title></rect>
+    <rect x="537.1" y="400.8" width="29.3" height="111.3" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-tensioner"><title>Hydraulic timing belt tensioner</title></rect>
+    <rect x="546.5" y="512.1" width="10.6" height="9.2" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-tensioner-bolts"><title>Tensioner mounting bolts</title></rect>
+    <rect x="546.5" y="466.3" width="10.6" height="9.2" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-tensioner-bolts"><title>Tensioner mounting bolts</title></rect>
+    <rect x="322.7" y="126.0" width="249.6" height="428.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt"><title>Timing belt</title></rect>
+    <rect x="410.4" y="496.2" width="59.3" height="59.3" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="crankshaft-timing-pulley"><title>Crankshaft timing pulley</title></rect>
+    <rect x="442.5" y="123.1" width="118.7" height="118.7" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="camshaft-timing-pulley-exhaust"><title>Exhaust camshaft timing pulley</title></rect>
+    <rect x="318.9" y="123.1" width="118.7" height="118.7" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller"><title>Intake camshaft timing pulley (VVT-i controller)</title></rect>
+    <rect x="514.2" y="341.8" width="56.8" height="56.8" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-idler"><title>Timing belt idler</title></rect>
+    <rect x="406.2" y="492.0" width="67.8" height="67.8" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-guide"><title>Timing belt guide</title></rect>
+    <rect x="535.2" y="363.8" width="14.8" height="12.8" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-idler-bolt"><title>Idler bolt</title></rect>
+    <rect x="353.1" y="179.7" width="6.3" height="5.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
+    <rect x="368.3" y="158.8" width="6.3" height="5.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
+    <rect x="392.8" y="166.8" width="6.3" height="5.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
+    <rect x="392.8" y="192.6" width="6.3" height="5.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
+    <rect x="368.3" y="200.6" width="6.3" height="5.5" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="vvti-controller-factory-bolts"><title>VVT-i pulley factory-set bolts</title></rect>
+    <rect x="174.5" y="269.4" width="113.5" height="113.5" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="power-steering-pump-bracket"><title>Power-steering pump front bracket</title></rect>
+    <rect x="492.9" y="174.7" width="18.0" height="15.6" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="camshaft-timing-pulley-exhaust-bolt"><title>Exhaust camshaft pulley bolt</title></rect>
+    <rect x="330.2" y="351.9" width="219.8" height="219.8" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-cover-no1"><title>No.1 timing belt cover (lower)</title></rect>
+    <rect x="293.5" y="113.8" width="293.0" height="201.4" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.7" stroke-opacity="0.65" data-component-id="timing-belt-cover-no2"><title>Upper timing belt cover</title></rect>
+    <rect x="301.1" y="441.8" width="84.1" height="58.2" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="accessory-belt-tensioner"><title>Accessory belt tensioner</title></rect>
+    <rect x="554.5" y="283.2" width="119.0" height="119.0" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="alternator"><title>Alternator</title></rect>
+    <rect x="222.6" y="255.0" width="427.8" height="350.1" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="accessory-drive-belt"><title>Accessory drive belt</title></rect>
+    <rect x="221.8" y="240.1" width="106.8" height="119.3" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="power-steering-pump"><title>Power-steering pump</title></rect>
+    <rect x="537.5" y="485.9" width="116.5" height="116.5" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="ac-compressor"><title>A/C compressor</title></rect>
+    <rect x="381.8" y="266.1" width="116.5" height="116.5" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.7" stroke-opacity="0.65" data-component-id="water-pump-pulley"><title>Water pump pulley</title></rect>
+    <rect x="357.5" y="443.3" width="165.0" height="165.0" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="crankshaft-pulley"><title>Crankshaft pulley</title></rect>
+    <rect x="428.4" y="515.8" width="23.3" height="20.1" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.7" stroke-opacity="0.65" data-component-id="crankshaft-pulley-bolt"><title>Crankshaft pulley bolt</title></rect>
+    <rect x="203.8" y="189.7" width="79.7" height="31.4" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.7" stroke-opacity="0.65" data-component-id="radiator-hose-upper"><title>Upper radiator hose</title></rect>
+    <rect x="515.1" y="482.7" width="79.7" height="31.4" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.7" stroke-opacity="0.65" data-component-id="radiator-hose-lower"><title>Lower radiator hose</title></rect>
+    <rect x="119.6" y="798.7" width="641.0" height="3.7" rx="2" fill="#eef0f3" stroke="#6b7280" stroke-width="0.7" stroke-opacity="0.65" data-component-id="engine-under-cover"><title>Engine under-cover</title></rect>
+    <rect x="92.1" y="177.9" width="695.9" height="421.2" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.7" stroke-opacity="0.65" data-component-id="radiator-assembly"><title>Radiator assembly</title></rect>
   </g>
   <g id="labels">
     <path d="M 440.0 214.5 L 834.0 76.0" fill="none" stroke="#9ca3af" stroke-width="0.6"/>
@@ -104,15 +104,15 @@
     <text x="844.0" y="431.5" font-size="11" fill="#111827">Tensioner mounting bolts</text>
   </g>
   <g id="legend">
-    <rect x="28" y="820" width="10" height="10" rx="2" fill="#e7e9ec" stroke="#6b7280" stroke-width="0.7"/>
-    <text x="43" y="829" font-size="10.5" fill="#374151">engine-structure</text>
-    <rect x="178" y="820" width="10" height="10" rx="2" fill="#cfe0f3" stroke="#6b7280" stroke-width="0.7"/>
-    <text x="193" y="829" font-size="10.5" fill="#374151">timing-drive</text>
-    <rect x="328" y="820" width="10" height="10" rx="2" fill="#dfe6dd" stroke="#6b7280" stroke-width="0.7"/>
-    <text x="343" y="829" font-size="10.5" fill="#374151">accessory-drive</text>
-    <rect x="478" y="820" width="10" height="10" rx="2" fill="#f3e2dc" stroke="#6b7280" stroke-width="0.7"/>
-    <text x="493" y="829" font-size="10.5" fill="#374151">cooling</text>
-    <rect x="628" y="820" width="10" height="10" rx="2" fill="#ebe7f2" stroke="#6b7280" stroke-width="0.7"/>
-    <text x="643" y="829" font-size="10.5" fill="#374151">body</text>
+    <rect x="28" y="820" width="10" height="10" rx="2" fill="#dcefe6" stroke="#2d8a63" stroke-width="0.9"/>
+    <text x="43" y="829" font-size="10.5" fill="#374151">accessory drive</text>
+    <rect x="178" y="820" width="10" height="10" rx="2" fill="#eef0f3" stroke="#6b7280" stroke-width="0.9"/>
+    <text x="193" y="829" font-size="10.5" fill="#374151">body</text>
+    <rect x="328" y="820" width="10" height="10" rx="2" fill="#f8e9d7" stroke="#c2772a" stroke-width="0.9"/>
+    <text x="343" y="829" font-size="10.5" fill="#374151">cooling</text>
+    <rect x="478" y="820" width="10" height="10" rx="2" fill="#eceef2" stroke="#8b93a2" stroke-width="0.9"/>
+    <text x="493" y="829" font-size="10.5" fill="#374151">engine structure</text>
+    <rect x="628" y="820" width="10" height="10" rx="2" fill="#dce8fa" stroke="#2f6fd0" stroke-width="0.9"/>
+    <text x="643" y="829" font-size="10.5" fill="#374151">timing drive</text>
   </g>
 </svg>

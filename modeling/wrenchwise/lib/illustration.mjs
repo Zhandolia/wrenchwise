@@ -6,12 +6,17 @@
 // X decreases (engine left is on the viewer's right), screen Y increases
 // downward as engine Y decreases.
 
+// Light tints of the interface's system hues, so "the blue ones" means the same
+// thing in the illustration as in the chips and the part callout.
 const SYSTEM_FILL = {
-  'engine-structure': '#e7e9ec',
-  'timing-drive': '#cfe0f3',
-  'accessory-drive': '#dfe6dd',
-  cooling: '#f3e2dc',
-  body: '#ebe7f2',
+  'engine-structure': ['#eceef2', '#8b93a2'],
+  'timing-drive': ['#dce8fa', '#2f6fd0'],
+  'accessory-drive': ['#dcefe6', '#2d8a63'],
+  cooling: ['#f8e9d7', '#c2772a'],
+  lubrication: ['#ece6f6', '#7a5bb5'],
+  intake: ['#ddeef3', '#3f8fa8'],
+  exhaust: ['#f5e4e4', '#a05252'],
+  body: ['#eef0f3', '#6b7280'],
 };
 
 const escape = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -63,14 +68,18 @@ export function buildIllustration({ layers, records, engineVariantId, modelRevis
   // Back to front, so the timing drive sits on top of the block.
   shapes.sort((a, b) => a.depth - b.depth);
 
+  const paint = (system) => SYSTEM_FILL[system] ?? ['#eef0f3', '#6b7280'];
+
   const parts = shapes
-    .map(
-      (s) =>
+    .map((s) => {
+      const [fill, stroke] = paint(s.system);
+      return (
         `    <rect x="${px(s.x).toFixed(1)}" y="${py(s.y).toFixed(1)}" ` +
         `width="${Math.max(1, s.width * scale).toFixed(1)}" height="${Math.max(1, s.height * scale).toFixed(1)}" ` +
-        `rx="2" fill="${SYSTEM_FILL[s.system] ?? '#eee'}" stroke="#6b7280" stroke-width="0.7" ` +
-        `data-component-id="${escape(s.componentId)}"><title>${escape(s.name)}</title></rect>`,
-    )
+        `rx="2" fill="${fill}" stroke="${stroke}" stroke-width="0.7" stroke-opacity="0.65" ` +
+        `data-component-id="${escape(s.componentId)}"><title>${escape(s.name)}</title></rect>`
+      );
+    })
     .join('\n');
 
   const labelled = [];
@@ -98,12 +107,14 @@ export function buildIllustration({ layers, records, engineVariantId, modelRevis
     })
     .join('\n');
 
-  const legend = Object.entries(SYSTEM_FILL)
-    .map(([system, fill], i) => {
+  const presentSystems = [...new Set(shapes.map((s) => s.system))].sort();
+  const legend = presentSystems
+    .map((system, i) => {
+      const [fill, stroke] = paint(system);
       const x = pad + i * 150;
       return (
-        `    <rect x="${x}" y="${height - 24}" width="10" height="10" rx="2" fill="${fill}" stroke="#6b7280" stroke-width="0.7"/>\n` +
-        `    <text x="${x + 15}" y="${height - 15}" font-size="10.5" fill="#374151">${escape(system)}</text>`
+        `    <rect x="${x}" y="${height - 24}" width="10" height="10" rx="2" fill="${fill}" stroke="${stroke}" stroke-width="0.9"/>\n` +
+        `    <text x="${x + 15}" y="${height - 15}" font-size="10.5" fill="#374151">${escape(system.replace(/-/g, ' '))}</text>`
       );
     })
     .join('\n');

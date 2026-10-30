@@ -1,16 +1,34 @@
 import {test,expect} from '@playwright/test';
 
-// The primary flow: configuration → job → preparation → steps linked to 3D
+// The primary flow: library → job → preparation → steps linked to 3D
 // components → final checks.
 
-test('the index finds a job by keyword and by part, and states what is applicable',async({page})=>{
+test('the library leads with engines and coverage, not with one vehicle',async({page})=>{
  await page.goto('');
- await expect(page.locator('h1')).toHaveText('Jobs & parts');
- await expect(page.locator('.wr-config')).toContainText('2000 Lexus GS300');
- await expect(page.locator('.wr-config')).toContainText('2JZ-GE VVT-i');
+ await expect(page.locator('h1')).toHaveText('Engines, components and the jobs done on them.');
 
+ // An engine card, with the vehicles it is recorded in as a property of the
+ // engine rather than the subject of the page.
+ const engine=page.locator('.wr-engine').filter({hasText:'2JZ-GE VVT-i'});
+ await expect(engine).toHaveCount(1);
+ await expect(engine).toContainText('2000 Lexus GS300');
+ await expect(engine).toContainText('37 with geometry');
+ await expect(engine.getByRole('link',{name:/Timing belt replacement/})).toBeVisible();
+
+ // Variants ruled out by name are first-class content, not a footnote.
+ await expect(page.getByRole('heading',{name:'Named, and deliberately not covered'})).toBeVisible();
+ await expect(page.locator('.wr-excluded li')).toHaveCount(3);
+ await expect(page.locator('.wr-excluded')).toContainText('2JZ-GTE');
+
+ await expect(page.getByRole('heading',{name:/Unresolved gaps \(\d+\)/})).toBeVisible();
+ await expect(page.getByText('No dimension is measured.',{exact:false})).toBeVisible();
+});
+
+test('search spans jobs, parts and engines and filters by type and system',async({page})=>{
+ await page.goto('');
  const search=page.getByRole('searchbox',{name:'Search jobs, parts and engines'});
  const kind=page.getByRole('combobox',{name:'Filter by type'});
+
  await kind.selectOption('job');
  await search.fill('cam belt');
  await expect(page.locator('.wr-row')).toHaveCount(1);
@@ -32,10 +50,7 @@ test('the index finds a job by keyword and by part, and states what is applicabl
  await page.getByRole('combobox',{name:'Filter by system'}).selectOption('cooling');
  await expect(page.locator('.wr-row').filter({hasText:'Radiator assembly'})).toHaveCount(1);
  await page.getByRole('button',{name:'Clear filters'}).click();
-
- // The release record is on the page, gaps and all.
- await expect(page.getByRole('heading',{name:/Unresolved gaps \(\d+\)/})).toBeVisible();
- await expect(page.getByText('No dimension is measured.',{exact:false})).toBeVisible();
+ await expect(page.locator('.wr-result-count')).toContainText('39 of 39');
 });
 
 test('a step drives the assembly, and the assembly drives the instructions',async({page})=>{
@@ -45,44 +60,60 @@ test('a step drives the assembly, and the assembly drives the instructions',asyn
  const core=page.waitForResponse(r=>r.url().endsWith('core.glb')&&r.status()===200);
  const access=page.waitForResponse(r=>r.url().endsWith('access.glb')&&r.status()===200);
  await page.goto('guide/?job=2jz-ge-vvti-timing-belt&step=preparation');
- await expect(page.getByRole('heading',{name:'Timing belt replacement'})).toBeVisible();
+ const instructions=page.getByRole('article',{name:'Instructions'});
+ await expect(instructions.getByRole('heading',{name:'Timing belt replacement'})).toBeVisible();
  await expect(page.getByText('Educational overview, not a verified repair procedure')).toBeVisible();
- await expect(page.getByText('2JZ-GE without VVT-i (1993–1997 GS300/SC300, Supra NA)',{exact:false})).toBeVisible();
+
+ // The engine leads the configuration line; the car qualifies it.
+ await expect(page.locator('.wr-config')).toContainText('2JZ-GE VVT-i');
+ await expect(page.locator('.wr-config')).toContainText('2000 Lexus GS300');
 
  await Promise.all([manifest,core,access]);
  await expect(page.locator('canvas')).toBeVisible();
- await expect(page.locator('.wr-inspector')).toContainText('37 components');
+ await expect(page.locator('.wr-stage-foot')).toContainText('37 components');
+ await expect(page.locator('.wr-stage-foot')).toContainText('no dimension measured');
 
- // Jump to a step from the contents. The step's own assembly change is listed.
+ // Jump to a step from the contents; the phase rail follows.
  await page.getByRole('navigation',{name:'Contents'}).getByRole('button',{name:'Remove the hydraulic tensioner'}).click();
  await expect(page.getByRole('heading',{name:'Remove the hydraulic tensioner'})).toBeVisible();
- await expect(page.locator('.wr-instructions')).toContainText('Removed: Hydraulic timing belt tensioner');
+ await expect(page.locator('.wr-rail-label')).toContainText('removal');
+ await expect(page.locator('.wr-rail-seg[data-state="current"]')).toHaveCount(1);
  await expect(page).toHaveURL(/step=release-tensioner/);
 
- // Instructions → model: selecting a component chip reaches the inspector.
+ // What the step changes is available, folded away until asked for.
+ const fold=page.locator('.wr-fold').filter({hasText:'What this step changes in the assembly'});
+ await expect(fold.locator('.wr-fold-body')).toBeHidden();
+ await fold.locator('summary').click();
+ await expect(fold).toContainText('Removed: Hydraulic timing belt tensioner');
+
+ // Instructions → model: a component chip reaches the part callout.
  await page.getByRole('button',{name:'Hydraulic timing belt tensioner',exact:true}).click();
- await expect(page.locator('.wr-inspector h2')).toHaveText('Hydraulic timing belt tensioner');
- await expect(page.locator('.wr-inspector')).toContainText('identity');
+ await expect(page.locator('.wr-callout h2')).toHaveText('Hydraulic timing belt tensioner');
+ await expect(page.locator('.wr-callout')).toContainText('identity');
  await expect(page).toHaveURL(/part=timing-belt-tensioner/);
 
- // Isolation and explanatory separation are labelled as viewing aids.
- await page.getByRole('button',{name:'Isolate selected'}).click();
- await expect(page.getByRole('button',{name:'Isolate selected'})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:'Isolate',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Isolate',exact:true})).toHaveAttribute('aria-pressed','true');
+
+ // Clearing the selection brings the hint back, which names the separation
+ // as explanatory rather than a removal sequence.
+ await page.getByRole('button',{name:'Clear selection'}).click();
  await page.getByRole('button',{name:'Separate for clarity'}).click();
- await expect(page.getByText('This is an explanatory separation, not a removal sequence',{exact:false})).toBeVisible();
+ await expect(page.locator('.wr-stage-hint')).toContainText('this is not a removal sequence');
 });
 
-test('checks persist across a reload and the index offers to resume',async({page})=>{
+test('checks persist across a reload and the library offers to resume',async({page})=>{
  await page.goto('guide/?job=2jz-ge-vvti-timing-belt&step=release-tensioner');
  await expect(page.getByRole('heading',{name:'Remove the hydraulic tensioner'})).toBeVisible();
  await page.getByRole('checkbox',{name:'Tensioner, boot and both bolts removed and kept together.'}).check();
  await expect(page.locator('.wr-nav-count')).toContainText('Step 8 of 16');
+ await expect(page.locator('.wr-meter-label')).toContainText('1 of 16 steps complete');
 
  await page.reload();
  await expect(page.getByRole('heading',{name:'Remove the hydraulic tensioner'})).toBeVisible();
  await expect(page.getByRole('checkbox',{name:'Tensioner, boot and both bolts removed and kept together.'})).toBeChecked();
 
- await page.getByRole('link',{name:'Jobs & parts',exact:true}).click();
+ await page.getByRole('link',{name:'Library',exact:true}).click();
  await expect(page.locator('.wr-resume')).toContainText('Remove the hydraulic tensioner');
  await page.locator('.wr-resume a').click();
  await expect(page.getByRole('heading',{name:'Remove the hydraulic tensioner'})).toBeVisible();
@@ -91,7 +122,7 @@ test('checks persist across a reload and the index offers to resume',async({page
 test('navigation runs preparation to final checks and specifications stay honest',async({page})=>{
  await page.goto('guide/?job=2jz-ge-vvti-timing-belt&step=preparation');
  await expect(page.locator('.wr-nav-count')).toContainText('Preparation');
- await page.getByRole('button',{name:'Back'}).first().isDisabled();
+ await expect(page.getByRole('button',{name:'Back'})).toBeDisabled();
 
  await page.getByRole('button',{name:'Next'}).click();
  await expect(page.locator('.wr-nav-count')).toContainText('Step 1 of 16');

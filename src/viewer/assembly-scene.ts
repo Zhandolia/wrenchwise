@@ -22,9 +22,11 @@ const CAMERA_DIRECTIONS: Record<string, [number, number, number]> = {
 
 export const CAMERA_PRESETS = Object.keys(CAMERA_DIRECTIONS);
 
-const HIGHLIGHT_COLOR = new THREE.Color(0x1d6fd0);
-const SELECT_COLOR = new THREE.Color(0xc2410c);
-const GHOST_OPACITY = 0.1;
+// Tuned for the dark stage: emissive tints have to carry against a near-black
+// background without washing the material out.
+const HIGHLIGHT_COLOR = new THREE.Color(0x3b82f6);
+const SELECT_COLOR = new THREE.Color(0xf97316);
+const GHOST_OPACITY = 0.13;
 const EXPLODE_DISTANCE = 0.14;
 
 export interface SceneView {
@@ -96,9 +98,10 @@ export class AssemblyScene {
   constructor(container: HTMLElement) {
     this.container = container;
 
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'default' });
+    // Transparent clear, so the stage's own background shows through the canvas.
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'default' });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.6));
-    this.renderer.setClearColor(0xf7f8fa);
+    this.renderer.setClearColor(0x000000, 0);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.domElement.setAttribute('tabindex', '0');
     this.renderer.domElement.setAttribute('role', 'application');
@@ -266,16 +269,18 @@ export class AssemblyScene {
           material.transparent = true;
           material.opacity = GHOST_OPACITY;
           material.depthWrite = false;
+          material.emissive.setHex(0x0a0e14);
+          material.emissiveIntensity = 1;
         } else {
           material.transparent = false;
           material.opacity = 1;
           material.depthWrite = true;
           if (selected) {
             material.emissive.copy(SELECT_COLOR);
-            material.emissiveIntensity = 0.42;
+            material.emissiveIntensity = 0.5;
           } else if (highlighted) {
             material.emissive.copy(HIGHLIGHT_COLOR);
-            material.emissiveIntensity = 0.26;
+            material.emissiveIntensity = 0.34;
           }
         }
         material.needsUpdate = true;
@@ -295,7 +300,7 @@ export class AssemblyScene {
     const direction = CAMERA_DIRECTIONS[preset] ?? CAMERA_DIRECTIONS.iso;
     const focus = this.focusBounds(focusComponentIds);
     const fov = (this.camera.fov * Math.PI) / 180;
-    const distance = Math.max(0.25, (focus.radius / Math.sin(fov / 2)) * 1.5);
+    const distance = Math.max(0.25, (focus.radius / Math.sin(fov / 2)) * 1.25);
     const offset = new THREE.Vector3(...direction).normalize().multiplyScalar(distance);
     this.camera.position.copy(focus.centre).add(offset);
     this.controls.target.copy(focus.centre);
